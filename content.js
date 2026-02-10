@@ -339,7 +339,7 @@ const CONTENT = {
 
     // Chatbot Widget
     chatbot: {
-        welcomeMessage: "Bonjour ! 👋 Je suis l'assistant Pulseo AI. Je peux t'aider à trouver la solution adaptée à ton besoin. Par où souhaites-tu commencer ?",
+        welcomeMessage: "Bonjour ! 👋 Je suis l'assistant Pulseo AI. Je peux vous aider à trouver la solution adaptée à votre besoin. Par où souhaitez-vous commencer ?",
         inputPlaceholder: "Écrivez votre message...",
         sendButtonLabel: "Envoyer",
         headerTitle: "Pulseo AI",
