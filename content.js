@@ -337,6 +337,20 @@ const CONTENT = {
         ]
     },
 
+    // Chatbot Widget
+    chatbot: {
+        welcomeMessage: "Bonjour ! 👋 Je suis l'assistant Pulseo AI. Je peux t'aider à trouver la solution adaptée à ton besoin. Par où souhaites-tu commencer ?",
+        inputPlaceholder: "Écrivez votre message...",
+        sendButtonLabel: "Envoyer",
+        headerTitle: "Pulseo AI",
+        headerSubtitle: "Assistant IA",
+        bubbleTooltip: "Discutez avec notre IA",
+        typingIndicator: "En train d'écrire...",
+        errorMessage: "Désolé, une erreur est survenue. Veuillez réessayer.",
+        apiEndpoint: "/api/chat",
+        poweredBy: "Propulsé par Pulseo AI"
+    },
+
     // Footer
     footer: {
         brand: "PULSEO AI",

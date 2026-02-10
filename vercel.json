@@ -2,6 +2,7 @@
     "buildCommand": "",
     "outputDirectory": ".",
     "rewrites": [
-        { "source": "/api/contact", "destination": "/api/contact" }
+        { "source": "/api/contact", "destination": "/api/contact" },
+        { "source": "/api/chat", "destination": "/api/chat" }
     ]
 }

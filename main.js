@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initMagneticButtons();
     initLegalModals();
     initFormSubmission();
+    initChatbot();
 });
 
 /* -----------------------------------------
@@ -531,4 +532,152 @@ function initFormSubmission() {
         submitBtn.textContent = originalText;
         submitBtn.disabled = false;
     });
+}
+
+/* -----------------------------------------
+   Chatbot Widget
+   ----------------------------------------- */
+
+function initChatbot() {
+    const C = CONTENT.chatbot;
+    if (!C) return;
+
+    // --- State ---
+    const state = {
+        isOpen: false,
+        isLoading: false,
+        sessionId: 'pulseo_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9),
+        messages: []
+    };
+
+    // --- DOM References ---
+    const widget = document.getElementById('chatbot-widget');
+    const bubble = document.getElementById('chatbot-bubble');
+    const messagesContainer = document.getElementById('chatbot-messages');
+    const input = document.getElementById('chatbot-input');
+    const sendBtn = document.getElementById('chatbot-send');
+    const closeBtn = document.getElementById('chatbot-close');
+
+    // --- Content injection ---
+    document.getElementById('chatbot-header-title').textContent = C.headerTitle;
+    document.getElementById('chatbot-header-subtitle').textContent = C.headerSubtitle;
+    input.placeholder = C.inputPlaceholder;
+
+    // --- Event listeners ---
+    bubble.addEventListener('click', toggleChat);
+    closeBtn.addEventListener('click', closeChat);
+    sendBtn.addEventListener('click', handleSend);
+    input.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' && !e.shiftKey) {
+            e.preventDefault();
+            handleSend();
+        }
+    });
+
+    // --- Functions ---
+    function toggleChat() {
+        if (state.isOpen) {
+            closeChat();
+        } else {
+            openChat();
+        }
+    }
+
+    function openChat() {
+        state.isOpen = true;
+        widget.classList.add('chatbot-open');
+
+        // Show welcome message on first open
+        if (state.messages.length === 0) {
+            addBotMessage(C.welcomeMessage);
+        }
+
+        setTimeout(() => input.focus(), 350);
+    }
+
+    function closeChat() {
+        state.isOpen = false;
+        widget.classList.remove('chatbot-open');
+    }
+
+    function handleSend() {
+        const text = input.value.trim();
+        if (!text || state.isLoading) return;
+
+        addUserMessage(text);
+        input.value = '';
+        sendToBackend(text);
+    }
+
+    function addUserMessage(text) {
+        state.messages.push({ role: 'user', text });
+        const msgEl = document.createElement('div');
+        msgEl.className = 'chatbot-msg chatbot-msg-user';
+        msgEl.textContent = text;
+        messagesContainer.appendChild(msgEl);
+        scrollToBottom();
+    }
+
+    function addBotMessage(text) {
+        state.messages.push({ role: 'bot', text });
+        const msgEl = document.createElement('div');
+        msgEl.className = 'chatbot-msg chatbot-msg-bot';
+        msgEl.textContent = text;
+        messagesContainer.appendChild(msgEl);
+        scrollToBottom();
+    }
+
+    function showTypingIndicator() {
+        const typing = document.createElement('div');
+        typing.className = 'chatbot-typing';
+        typing.id = 'chatbot-typing';
+        typing.innerHTML = '<div class="chatbot-typing-dot"></div><div class="chatbot-typing-dot"></div><div class="chatbot-typing-dot"></div>';
+        messagesContainer.appendChild(typing);
+        scrollToBottom();
+    }
+
+    function removeTypingIndicator() {
+        const typing = document.getElementById('chatbot-typing');
+        if (typing) typing.remove();
+    }
+
+    function scrollToBottom() {
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+
+    async function sendToBackend(text) {
+        state.isLoading = true;
+        sendBtn.disabled = true;
+        showTypingIndicator();
+
+        try {
+            const response = await fetch(C.apiEndpoint, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    sessionId: state.sessionId,
+                    message: text
+                })
+            });
+
+            removeTypingIndicator();
+
+            if (response.ok) {
+                const data = await response.json();
+                addBotMessage(data.reply || C.errorMessage);
+            } else {
+                addBotMessage(C.errorMessage);
+            }
+        } catch (err) {
+            removeTypingIndicator();
+            addBotMessage(C.errorMessage);
+        }
+
+        state.isLoading = false;
+        sendBtn.disabled = false;
+        input.focus();
+    }
 }

@@ -245,6 +245,42 @@
         </div>
     </div>
 
+    <!-- Chatbot Widget -->
+    <div id="chatbot-widget" class="chatbot-widget">
+        <!-- Floating Bubble -->
+        <button class="chatbot-bubble" id="chatbot-bubble" aria-label="Ouvrir le chat">
+            <svg class="chatbot-bubble-icon chatbot-icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+            </svg>
+            <svg class="chatbot-bubble-icon chatbot-icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+        </button>
+
+        <!-- Chat Window -->
+        <div class="chatbot-window" id="chatbot-window">
+            <div class="chatbot-header">
+                <div class="chatbot-header-info">
+                    <div class="chatbot-header-avatar">P</div>
+                    <div>
+                        <div class="chatbot-header-title" id="chatbot-header-title"></div>
+                        <div class="chatbot-header-subtitle" id="chatbot-header-subtitle"></div>
+                    </div>
+                </div>
+                <button class="chatbot-header-close" id="chatbot-close">&times;</button>
+            </div>
+            <div class="chatbot-messages" id="chatbot-messages"></div>
+            <div class="chatbot-input-area">
+                <input type="text" id="chatbot-input" class="chatbot-input" autocomplete="off">
+                <button id="chatbot-send" class="chatbot-send" aria-label="Envoyer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
     <!-- Scripts: content.js must load before main.js -->
     <script src="content.js"></script>
     <script src="main.js"></script>

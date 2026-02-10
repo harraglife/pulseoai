@@ -19,7 +19,7 @@ export default async function handler(req, res) {
         // Email sent to you (notification)
         await resend.emails.send({
             from: 'Pulseo AI <onboarding@resend.dev>',
-            to: 'avant.agence@outlook.com',
+            to: 'contact@pulseoai.fr',
             subject: `Nouvelle demande d'audit — ${name}`,
             html: `
                 <div style="font-family: Arial, sans-serif; max-width: 600px;">
