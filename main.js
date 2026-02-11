@@ -344,31 +344,45 @@ function initScrollNav() {
     // Mobile hamburger menu
     const toggle = document.getElementById('nav-mobile-toggle');
     const navLinks = document.getElementById('nav-links');
+    let scrollPos = 0;
+
+    function openMenu() {
+        scrollPos = window.pageYOffset;
+        navLinks.classList.add('mobile-open');
+        document.body.classList.add('menu-open');
+        document.body.style.top = `-${scrollPos}px`;
+        toggle.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>';
+    }
+
+    function closeMenu() {
+        navLinks.classList.remove('mobile-open');
+        document.body.classList.remove('menu-open');
+        document.body.style.top = '';
+        window.scrollTo(0, scrollPos);
+        toggle.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>';
+    }
+
     if (toggle && navLinks) {
         toggle.addEventListener('click', () => {
-            navLinks.classList.toggle('mobile-open');
-            // Change icon to X when open
             if (navLinks.classList.contains('mobile-open')) {
-                toggle.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>';
+                closeMenu();
             } else {
-                toggle.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>';
+                openMenu();
             }
         });
 
-        // Close menu when clicking a link
+        // Close menu and scroll to section when clicking a link
         navLinks.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
                 const href = link.getAttribute('href');
-                navLinks.classList.remove('mobile-open');
-                toggle.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>';
-                // Scroll to section after menu closes
+                closeMenu();
                 setTimeout(() => {
                     const target = document.querySelector(href);
                     if (target) {
                         target.scrollIntoView({ behavior: 'smooth' });
                     }
-                }, 100);
+                }, 150);
             });
         });
     }
