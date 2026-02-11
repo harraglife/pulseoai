@@ -429,6 +429,7 @@ input, select, textarea {
     background: #fff;
     opacity: 0;
     transition: opacity 0.2s;
+    pointer-events: none;
 }
 
 .hero-btn-primary:hover .overlay {
@@ -443,13 +444,11 @@ input, select, textarea {
 .hero-btn-secondary {
     display: inline-block;
     padding: 1rem 2rem;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 0.75rem;
     font-weight: 700;
     transition: all 0.2s;
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
 }
 
 .hero-btn-secondary:hover {
@@ -1199,26 +1198,26 @@ input, select, textarea {
     background: linear-gradient(to right, rgba(30, 58, 138, 0.2), rgba(88, 28, 135, 0.2));
     padding: 3rem;
     overflow: visible;
+    /* Override glass-card hover + backdrop — prevent stacking context on form */
+    transform: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    will-change: auto !important;
+}
+
+.contact-card:hover {
+    transform: none !important;
+    box-shadow: none !important;
 }
 
 .contact-glow {
-    position: absolute;
-    top: -6rem;
-    right: -6rem;
-    width: 24rem;
-    height: 24rem;
-    background: rgba(37, 99, 235, 0.2);
-    filter: blur(150px);
-    border-radius: 50%;
-    pointer-events: none;
+    display: none;
 }
 
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 4rem;
-    position: relative;
-    z-index: 10;
 }
 
 .contact-left h2 {
@@ -1283,10 +1282,6 @@ input, select, textarea {
     outline: none;
     transition: border-color 0.2s;
     color: #fff;
-    position: relative;
-    z-index: 10;
-    -webkit-tap-highlight-color: transparent;
-    touch-action: manipulation;
 }
 
 .contact-form input::placeholder,
@@ -1872,44 +1867,7 @@ input, select, textarea {
         display: none !important;
     }
 
-    /* === CONTACT SECTION: NUCLEAR RESET === */
-    /* Kill EVERYTHING on the section itself — no transform, no transition, nothing */
-    .contact-section,
-    .contact-section.reveal,
-    .contact-section.reveal.active {
-        transform: none !important;
-        transition: none !important;
-        opacity: 1 !important;
-        will-change: auto !important;
-        isolation: auto !important;
-        filter: none !important;
-    }
-
-    /* Kill ALL stacking context creators on contact-card */
-    .contact-card,
-    .contact-section .glass-card {
-        -webkit-backdrop-filter: none !important;
-        backdrop-filter: none !important;
-        overflow: visible !important;
-        transform: none !important;
-        filter: none !important;
-        will-change: auto !important;
-        isolation: auto !important;
-        transition: none !important;
-    }
-
-    .contact-card::before,
-    .contact-card::after {
-        display: none !important;
-    }
-
-    /* Form & inputs: maximum iOS compatibility */
-    .contact-form {
-        position: relative;
-        z-index: 10;
-        pointer-events: auto !important;
-    }
-
+    /* Form inputs: iOS compatibility */
     .contact-form input,
     .contact-form select,
     .contact-form textarea {
@@ -1917,35 +1875,8 @@ input, select, textarea {
         -webkit-appearance: none;
         appearance: none;
         touch-action: manipulation;
-        -webkit-tap-highlight-color: transparent;
-        -webkit-user-select: text;
-        user-select: text;
-        cursor: text;
-        pointer-events: auto !important;
-        position: relative;
-        z-index: 100;
     }
 
-    .contact-form select {
-        cursor: pointer;
-        -webkit-user-select: auto;
-        user-select: auto;
-    }
-
-    .contact-form-submit {
-        cursor: pointer;
-        -webkit-tap-highlight-color: transparent;
-        pointer-events: auto !important;
-        position: relative;
-        z-index: 100;
-    }
-
-    /* Ensure hero-btn overlay doesn't block */
-    .hero-btn-primary .overlay {
-        pointer-events: none;
-    }
-
-    /* Ensure service-email-icon doesn't block */
     .service-email-icon {
         pointer-events: none;
     }
