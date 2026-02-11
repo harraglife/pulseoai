@@ -635,23 +635,6 @@ function initChatbot() {
     document.getElementById('chatbot-header-subtitle').textContent = C.headerSubtitle;
     input.placeholder = C.inputPlaceholder;
 
-    // --- Hide chatbot when over contact form ---
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-        const hideObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    widget.classList.add('chatbot-hidden');
-                    // If chat is open and we scroll to contact, close it
-                    if (state.isOpen) closeChat();
-                } else {
-                    widget.classList.remove('chatbot-hidden');
-                }
-            });
-        }, { threshold: 0.15 });
-        hideObserver.observe(contactSection);
-    }
-
     // --- Event listeners ---
     bubble.addEventListener('click', toggleChat);
     closeBtn.addEventListener('click', closeChat);

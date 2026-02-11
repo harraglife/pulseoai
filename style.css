@@ -1903,11 +1903,9 @@ input, select, textarea {
     bottom: 1.5rem;
     right: 1.5rem;
     z-index: 9998;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 1rem;
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    /* Widget only takes the size of the bubble — window is position:absolute */
+    width: 3.5rem;
+    height: 3.5rem;
 }
 
 /* --- Floating Bubble --- */
@@ -1950,13 +1948,6 @@ input, select, textarea {
     transform: rotate(90deg);
 }
 
-.chatbot-widget.chatbot-hidden {
-    opacity: 0;
-    pointer-events: none;
-    transform: scale(0.5) translateY(20px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
 .chatbot-widget.chatbot-open .chatbot-icon-close {
     opacity: 1;
     transform: rotate(0deg);
@@ -1986,6 +1977,9 @@ input, select, textarea {
 
 /* --- Chat Window --- */
 .chatbot-window {
+    position: absolute;
+    bottom: calc(100% + 1rem);
+    right: 0;
     width: 380px;
     max-height: 520px;
     background: rgba(10, 10, 15, 0.95);
@@ -2228,6 +2222,8 @@ input, select, textarea {
     .chatbot-widget {
         bottom: 1rem;
         right: 1rem;
+        width: 3.25rem;
+        height: 3.25rem;
     }
 
     .chatbot-window {
