@@ -418,11 +418,22 @@ function initRevealAnimations() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('active');
+                // After animation completes, remove reveal classes entirely
+                // to kill any remaining compositing layers (iOS Safari fix)
+                setTimeout(() => {
+                    entry.target.classList.remove('reveal');
+                    entry.target.style.opacity = '';
+                    entry.target.style.transform = '';
+                }, 1000);
             }
         });
     }, observerOptions);
 
     sections.forEach(section => {
+        // Skip contact section — reveal creates compositing issues on iOS
+        if (section.classList.contains('contact-section')) {
+            return;
+        }
         section.classList.add('reveal');
         observer.observe(section);
     });

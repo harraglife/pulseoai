@@ -1872,6 +1872,19 @@ input, select, textarea {
         display: none !important;
     }
 
+    /* === CONTACT SECTION: NUCLEAR RESET === */
+    /* Kill EVERYTHING on the section itself — no transform, no transition, nothing */
+    .contact-section,
+    .contact-section.reveal,
+    .contact-section.reveal.active {
+        transform: none !important;
+        transition: none !important;
+        opacity: 1 !important;
+        will-change: auto !important;
+        isolation: auto !important;
+        filter: none !important;
+    }
+
     /* Kill ALL stacking context creators on contact-card */
     .contact-card,
     .contact-section .glass-card {
