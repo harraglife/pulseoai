@@ -341,59 +341,57 @@ function initScrollNav() {
         }
     }, { passive: true });
 
-    // Mobile hamburger menu
+    // Mobile menu — separate overlay (not nav-links)
     const toggle = document.getElementById('nav-mobile-toggle');
-    const navLinks = document.getElementById('nav-links');
-    let menuOpen = false;
+    const overlay = document.getElementById('mobile-menu-overlay');
+    const overlayClose = document.getElementById('mobile-menu-close');
+    const overlayNav = document.getElementById('mobile-menu-nav');
 
-    const hamburgerSVG = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>';
-    const closeSVG = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>';
+    // Inject links into mobile overlay
+    if (overlayNav && typeof CONTENT !== 'undefined') {
+        CONTENT.nav.links.forEach(link => {
+            const a = document.createElement('a');
+            a.href = link.href;
+            a.textContent = link.text;
+            overlayNav.appendChild(a);
+        });
+    }
 
-    function openMenu() {
-        menuOpen = true;
-        navLinks.classList.add('mobile-open');
+    function openMobileMenu() {
+        overlay.classList.add('active');
         document.body.style.overflow = 'hidden';
-        document.documentElement.style.overflow = 'hidden';
-        toggle.innerHTML = closeSVG;
     }
 
-    function closeMenu() {
-        menuOpen = false;
-        // Kill transition so it closes INSTANTLY
-        navLinks.style.transition = 'none';
-        navLinks.classList.remove('mobile-open');
-        // Force reflow then restore transition
-        void navLinks.offsetHeight;
-        navLinks.style.transition = '';
+    function closeMobileMenu() {
+        overlay.classList.remove('active');
         document.body.style.overflow = '';
-        document.documentElement.style.overflow = '';
-        toggle.innerHTML = hamburgerSVG;
     }
 
-    if (toggle && navLinks) {
-        // Toggle button
-        toggle.addEventListener('click', (e) => {
-            e.stopPropagation();
-            if (menuOpen) {
-                closeMenu();
+    if (toggle && overlay) {
+        // Hamburger button toggles overlay
+        toggle.addEventListener('click', () => {
+            if (overlay.classList.contains('active')) {
+                closeMobileMenu();
             } else {
-                openMenu();
+                openMobileMenu();
             }
         });
 
-        // Handle link clicks via event delegation
-        navLinks.addEventListener('click', (e) => {
+        // X close button
+        overlayClose.addEventListener('click', () => {
+            closeMobileMenu();
+        });
+
+        // Link clicks — close & scroll
+        overlayNav.addEventListener('click', (e) => {
             const link = e.target.closest('a');
             if (!link) return;
             e.preventDefault();
-            e.stopPropagation();
             const href = link.getAttribute('href');
             if (!href || !href.startsWith('#')) return;
 
-            // Close menu instantly
-            closeMenu();
+            closeMobileMenu();
 
-            // Scroll to section
             const target = document.querySelector(href);
             if (target) {
                 const y = target.getBoundingClientRect().top + window.pageYOffset - 80;
@@ -401,11 +399,9 @@ function initScrollNav() {
             }
         });
 
-        // Prevent scroll bleed when menu is open
-        navLinks.addEventListener('touchmove', (e) => {
-            if (menuOpen) {
-                e.preventDefault();
-            }
+        // Block scroll bleed
+        overlay.addEventListener('touchmove', (e) => {
+            e.preventDefault();
         }, { passive: false });
     }
 }

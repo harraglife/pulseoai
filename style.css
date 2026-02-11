@@ -1636,31 +1636,9 @@ input, select, textarea {
         align-items: flex-start;
     }
 
+    /* Desktop: show nav-links normally */
     .nav-links {
-        /* Reset mobile overlay styles for desktop */
-        position: static;
-        inset: auto;
-        opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
-        background: transparent;
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-        transition: none;
-    }
-
-    .nav-links li {
-        opacity: 1;
-        transform: none;
-        transition: none;
-    }
-
-    .nav-links li a {
-        font-size: 0.875rem;
-        font-weight: 500;
-        padding: 0;
-        color: #9ca3af;
+        display: flex !important;
     }
 
     .nav-cta-wrapper {
@@ -1668,7 +1646,7 @@ input, select, textarea {
     }
 
     .nav-mobile-toggle {
-        display: none;
+        display: none !important;
     }
 
     .contact-left h2 {
@@ -1791,70 +1769,65 @@ input, select, textarea {
 }
 
 /* =========================================
-   Mobile — Menu + Form Fix (max-width: 1023px)
+   Mobile Menu Overlay (separate element)
+   ========================================= */
+
+.mobile-menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 99999;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.mobile-menu-overlay.active {
+    display: flex;
+}
+
+.mobile-menu-overlay a {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.75rem 2rem;
+    -webkit-tap-highlight-color: rgba(59, 130, 246, 0.3);
+}
+
+.mobile-menu-overlay a:active {
+    color: var(--accent-blue);
+}
+
+.mobile-menu-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 100000;
+    padding: 0.5rem;
+    line-height: 1;
+}
+
+/* =========================================
+   Mobile — Nav + Form Fix (max-width: 1023px)
    ========================================= */
 
 @media (max-width: 1023px) {
-    /* --- Mobile Menu Overlay --- */
+    /* Hide desktop nav links — mobile overlay takes over */
     .nav-links {
-        position: fixed;
-        inset: 0;
-        z-index: 9999;
-        background: rgba(5, 5, 8, 0.98);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 0;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
-        transition: opacity 0.35s ease, visibility 0.35s ease;
-        overscroll-behavior: contain;
-        -webkit-overflow-scrolling: touch;
-    }
-
-    .nav-links.mobile-open {
-        opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
-    }
-
-    .nav-links li {
-        width: 100%;
-        text-align: center;
-        opacity: 0;
-        transform: translateY(20px);
-        transition: opacity 0.3s ease, transform 0.3s ease;
-    }
-
-    .nav-links.mobile-open li {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    .nav-links.mobile-open li:nth-child(1) { transition-delay: 0.08s; }
-    .nav-links.mobile-open li:nth-child(2) { transition-delay: 0.16s; }
-    .nav-links.mobile-open li:nth-child(3) { transition-delay: 0.24s; }
-    .nav-links.mobile-open li:nth-child(4) { transition-delay: 0.32s; }
-    .nav-links.mobile-open li:nth-child(5) { transition-delay: 0.40s; }
-
-    .nav-links li a {
-        font-size: 1.75rem;
-        font-weight: 600;
-        color: #fff;
-        text-decoration: none;
-        display: block;
-        padding: 1.25rem 2rem;
-        -webkit-tap-highlight-color: rgba(59, 130, 246, 0.3);
-        transition: color 0.2s;
-    }
-
-    .nav-links li a:active {
-        color: var(--accent-blue);
+        display: none !important;
     }
 
     .nav-cta-wrapper {
@@ -1863,11 +1836,11 @@ input, select, textarea {
 
     .nav-mobile-toggle {
         display: block;
-        z-index: 10001;
+        z-index: 51;
         position: relative;
     }
 
-    /* --- Disable hover transforms on touch --- */
+    /* Disable hover transforms on touch */
     .glass-card:hover {
         transform: none !important;
         box-shadow: none !important;
@@ -1879,17 +1852,16 @@ input, select, textarea {
    ========================================= */
 
 @media (max-width: 767px) {
-    /* ===== NUCLEAR FIX: kill EVERYTHING that creates stacking context on contact ===== */
-
-    /* Hide ALL decorative glows on mobile — they create stacking contexts via filter */
+    /* Hide ALL decorative glows — they create stacking contexts via filter */
     .contact-glow,
     .solution-glow,
     .hero-card-glow {
         display: none !important;
     }
 
-    /* Kill backdrop-filter, transform, filter on contact-card */
-    .contact-card {
+    /* Kill ALL stacking context creators on contact-card */
+    .contact-card,
+    .contact-section .glass-card {
         -webkit-backdrop-filter: none !important;
         backdrop-filter: none !important;
         overflow: visible !important;
@@ -1897,6 +1869,7 @@ input, select, textarea {
         filter: none !important;
         will-change: auto !important;
         isolation: auto !important;
+        transition: none !important;
     }
 
     .contact-card::before,
@@ -1904,20 +1877,13 @@ input, select, textarea {
         display: none !important;
     }
 
-    /* Kill transition on contact-card (transition: all causes transform) */
-    .contact-section .glass-card {
-        transition: none !important;
-        transform: none !important;
-        -webkit-backdrop-filter: none !important;
-        backdrop-filter: none !important;
-    }
-
-    /* Contact grid needs NO z-index games — just position relative */
-    .contact-grid {
+    /* Form & inputs: maximum iOS compatibility */
+    .contact-form {
         position: relative;
+        z-index: 10;
+        pointer-events: auto !important;
     }
 
-    /* Form inputs: maximum iOS compatibility */
     .contact-form input,
     .contact-form select,
     .contact-form textarea {
@@ -1929,17 +1895,33 @@ input, select, textarea {
         -webkit-user-select: text;
         user-select: text;
         cursor: text;
+        pointer-events: auto !important;
+        position: relative;
+        z-index: 100;
     }
 
     .contact-form select {
-        -webkit-appearance: none;
-        appearance: none;
         cursor: pointer;
+        -webkit-user-select: auto;
+        user-select: auto;
     }
 
     .contact-form-submit {
         cursor: pointer;
         -webkit-tap-highlight-color: transparent;
+        pointer-events: auto !important;
+        position: relative;
+        z-index: 100;
+    }
+
+    /* Ensure hero-btn overlay doesn't block */
+    .hero-btn-primary .overlay {
+        pointer-events: none;
+    }
+
+    /* Ensure service-email-icon doesn't block */
+    .service-email-icon {
+        pointer-events: none;
     }
 }
 
