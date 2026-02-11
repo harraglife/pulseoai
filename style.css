@@ -1189,7 +1189,7 @@ input, select, textarea {
     position: relative;
     background: linear-gradient(to right, rgba(30, 58, 138, 0.2), rgba(88, 28, 135, 0.2));
     padding: 3rem;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .contact-glow {
@@ -1271,10 +1271,13 @@ input, select, textarea {
     padding: 1rem 1.5rem;
     font-size: 16px;
     -webkit-appearance: none;
-    font-size: 1rem;
     outline: none;
     transition: border-color 0.2s;
     color: #fff;
+    position: relative;
+    z-index: 10;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
 }
 
 .contact-form input::placeholder,
