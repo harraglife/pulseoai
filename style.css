@@ -119,11 +119,17 @@ input, select, textarea {
 
 .glass-card {
     background: var(--glass);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
     border: 1px solid var(--glass-border);
     border-radius: 24px;
     transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* backdrop-filter only on desktop — kills stacking context on iOS mobile */
+@media (min-width: 768px) {
+    .glass-card {
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+    }
 }
 
 .glass-card:hover {
@@ -1873,13 +1879,24 @@ input, select, textarea {
    ========================================= */
 
 @media (max-width: 767px) {
-    /* Kill ALL backdrop-filter on contact area for iOS */
+    /* ===== NUCLEAR FIX: kill EVERYTHING that creates stacking context on contact ===== */
+
+    /* Hide ALL decorative glows on mobile — they create stacking contexts via filter */
+    .contact-glow,
+    .solution-glow,
+    .hero-card-glow {
+        display: none !important;
+    }
+
+    /* Kill backdrop-filter, transform, filter on contact-card */
     .contact-card {
         -webkit-backdrop-filter: none !important;
         backdrop-filter: none !important;
         overflow: visible !important;
-        /* Remove any transform that creates stacking context */
         transform: none !important;
+        filter: none !important;
+        will-change: auto !important;
+        isolation: auto !important;
     }
 
     .contact-card::before,
@@ -1887,13 +1904,20 @@ input, select, textarea {
         display: none !important;
     }
 
-    /* Ensure contact-grid is above decorative layers */
-    .contact-grid {
-        position: relative;
-        z-index: 10;
+    /* Kill transition on contact-card (transition: all causes transform) */
+    .contact-section .glass-card {
+        transition: none !important;
+        transform: none !important;
+        -webkit-backdrop-filter: none !important;
+        backdrop-filter: none !important;
     }
 
-    /* Form inputs: ensure clickable on iOS */
+    /* Contact grid needs NO z-index games — just position relative */
+    .contact-grid {
+        position: relative;
+    }
+
+    /* Form inputs: maximum iOS compatibility */
     .contact-form input,
     .contact-form select,
     .contact-form textarea {
@@ -1901,8 +1925,6 @@ input, select, textarea {
         -webkit-appearance: none;
         appearance: none;
         touch-action: manipulation;
-        position: relative;
-        z-index: 10;
         -webkit-tap-highlight-color: transparent;
         -webkit-user-select: text;
         user-select: text;
@@ -1916,23 +1938,8 @@ input, select, textarea {
     }
 
     .contact-form-submit {
-        position: relative;
-        z-index: 10;
         cursor: pointer;
         -webkit-tap-highlight-color: transparent;
-    }
-
-    /* Kill solution-glow and contact-glow pointer events */
-    .solution-glow,
-    .contact-glow,
-    .hero-card-glow {
-        pointer-events: none !important;
-    }
-
-    /* Kill backdrop-filter on all glass-cards on mobile to prevent stacking context */
-    .glass-card {
-        -webkit-backdrop-filter: none !important;
-        backdrop-filter: none !important;
     }
 }
 

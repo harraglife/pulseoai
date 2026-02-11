@@ -359,7 +359,12 @@ function initScrollNav() {
 
     function closeMenu() {
         menuOpen = false;
+        // Kill transition so it closes INSTANTLY
+        navLinks.style.transition = 'none';
         navLinks.classList.remove('mobile-open');
+        // Force reflow then restore transition
+        void navLinks.offsetHeight;
+        navLinks.style.transition = '';
         document.body.style.overflow = '';
         document.documentElement.style.overflow = '';
         toggle.innerHTML = hamburgerSVG;
@@ -385,16 +390,15 @@ function initScrollNav() {
             const href = link.getAttribute('href');
             if (!href || !href.startsWith('#')) return;
 
+            // Close menu instantly
             closeMenu();
 
-            // Wait for menu close animation, then scroll
-            setTimeout(() => {
-                const target = document.querySelector(href);
-                if (target) {
-                    const y = target.getBoundingClientRect().top + window.pageYOffset - 80;
-                    window.scrollTo({ top: y, behavior: 'smooth' });
-                }
-            }, 100);
+            // Scroll to section
+            const target = document.querySelector(href);
+            if (target) {
+                const y = target.getBoundingClientRect().top + window.pageYOffset - 80;
+                window.scrollTo({ top: y, behavior: 'smooth' });
+            }
         });
 
         // Prevent scroll bleed when menu is open
