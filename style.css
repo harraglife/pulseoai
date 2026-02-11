@@ -100,7 +100,7 @@ input, select, textarea {
     height: 100%;
     opacity: 0.03;
     pointer-events: none;
-    z-index: 1;
+    z-index: -1;
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
 }
 
@@ -438,7 +438,6 @@ input, select, textarea {
 
 .hero-btn-primary span {
     position: relative;
-    z-index: 10;
 }
 
 .hero-btn-secondary {
@@ -462,6 +461,7 @@ input, select, textarea {
     display: flex;
     align-items: center;
     justify-content: center;
+    pointer-events: none;
 }
 
 .hero-card-glow {
@@ -1877,6 +1877,18 @@ input, select, textarea {
         touch-action: manipulation;
     }
 
+    .contact-form-submit {
+        touch-action: manipulation;
+        -webkit-tap-highlight-color: rgba(59, 130, 246, 0.3);
+    }
+
+    /* Hero buttons: iOS tap fix */
+    .hero-btn-primary,
+    .hero-btn-secondary {
+        touch-action: manipulation;
+        -webkit-tap-highlight-color: rgba(59, 130, 246, 0.3);
+    }
+
     .service-email-icon {
         pointer-events: none;
     }
@@ -1978,6 +1990,7 @@ input, select, textarea {
     overflow: hidden;
     opacity: 0;
     visibility: hidden;
+    pointer-events: none;
     transform: translateY(20px) scale(0.95);
     transform-origin: bottom right;
     transition: opacity 0.3s ease, visibility 0.3s ease,
@@ -1989,6 +2002,7 @@ input, select, textarea {
 .chatbot-widget.chatbot-open .chatbot-window {
     opacity: 1;
     visibility: visible;
+    pointer-events: auto;
     transform: translateY(0) scale(1);
 }
 

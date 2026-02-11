@@ -461,6 +461,10 @@ function initFAQAccordion() {
    ----------------------------------------- */
 
 function initMagneticButtons() {
+    // Disable magnetic effect on touch devices — transform creates stacking
+    // contexts that break touch event routing on iOS Safari
+    if (window.innerWidth < 1024 || 'ontouchstart' in window) return;
+
     document.querySelectorAll('.magnetic-btn').forEach(btn => {
         btn.addEventListener('mousemove', (e) => {
             const rect = btn.getBoundingClientRect();
