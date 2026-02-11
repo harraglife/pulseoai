@@ -344,43 +344,65 @@ function initScrollNav() {
     // Mobile hamburger menu
     const toggle = document.getElementById('nav-mobile-toggle');
     const navLinks = document.getElementById('nav-links');
+    let menuOpen = false;
+
+    const hamburgerSVG = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>';
+    const closeSVG = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>';
 
     function openMenu() {
+        menuOpen = true;
         navLinks.classList.add('mobile-open');
         document.body.style.overflow = 'hidden';
-        toggle.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>';
+        document.documentElement.style.overflow = 'hidden';
+        toggle.innerHTML = closeSVG;
     }
 
     function closeMenu() {
+        menuOpen = false;
         navLinks.classList.remove('mobile-open');
         document.body.style.overflow = '';
-        toggle.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>';
+        document.documentElement.style.overflow = '';
+        toggle.innerHTML = hamburgerSVG;
     }
 
     if (toggle && navLinks) {
-        toggle.addEventListener('click', () => {
-            if (navLinks.classList.contains('mobile-open')) {
+        // Toggle button
+        toggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (menuOpen) {
                 closeMenu();
             } else {
                 openMenu();
             }
         });
 
-        // Close menu and scroll to section when clicking a link
+        // Handle link clicks via event delegation
         navLinks.addEventListener('click', (e) => {
             const link = e.target.closest('a');
             if (!link) return;
             e.preventDefault();
+            e.stopPropagation();
             const href = link.getAttribute('href');
+            if (!href || !href.startsWith('#')) return;
+
             closeMenu();
-            requestAnimationFrame(() => {
+
+            // Wait for menu close animation, then scroll
+            setTimeout(() => {
                 const target = document.querySelector(href);
                 if (target) {
-                    const top = target.getBoundingClientRect().top + window.pageYOffset - 80;
-                    window.scrollTo({ top: top, behavior: 'smooth' });
+                    const y = target.getBoundingClientRect().top + window.pageYOffset - 80;
+                    window.scrollTo({ top: y, behavior: 'smooth' });
                 }
-            });
+            }, 100);
         });
+
+        // Prevent scroll bleed when menu is open
+        navLinks.addEventListener('touchmove', (e) => {
+            if (menuOpen) {
+                e.preventDefault();
+            }
+        }, { passive: false });
     }
 }
 

@@ -100,7 +100,7 @@ input, select, textarea {
     height: 100%;
     opacity: 0.03;
     pointer-events: none;
-    z-index: 9999;
+    z-index: 1;
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
 }
 
@@ -466,6 +466,7 @@ input, select, textarea {
     filter: blur(100px);
     border-radius: 50%;
     animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    pointer-events: none;
 }
 
 .hero-card {
@@ -691,6 +692,7 @@ input, select, textarea {
     inset: 0;
     background: rgba(37, 99, 235, 0.2);
     filter: blur(120px);
+    pointer-events: none;
 }
 
 .solution-card {
@@ -1629,11 +1631,38 @@ input, select, textarea {
     }
 
     .nav-links {
+        /* Reset mobile overlay styles for desktop */
+        position: static;
+        inset: auto;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        background: transparent;
         display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        transition: none;
+    }
+
+    .nav-links li {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .nav-links li a {
+        font-size: 0.875rem;
+        font-weight: 500;
+        padding: 0;
+        color: #9ca3af;
     }
 
     .nav-cta-wrapper {
         display: block;
+    }
+
+    .nav-mobile-toggle {
+        display: none;
     }
 
     .contact-left h2 {
@@ -1755,43 +1784,71 @@ input, select, textarea {
     line-height: 1.8;
 }
 
-/* Hide desktop nav on mobile */
-@media (max-width: 767px) {
+/* =========================================
+   Mobile — Menu + Form Fix (max-width: 1023px)
+   ========================================= */
+
+@media (max-width: 1023px) {
+    /* --- Mobile Menu Overlay --- */
     .nav-links {
-        display: none;
         position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(5, 5, 8, 0.99);
+        inset: 0;
+        z-index: 9999;
+        background: rgba(5, 5, 8, 0.98);
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 2.5rem;
-        z-index: 10000;
+        gap: 0;
+        list-style: none;
         padding: 0;
         margin: 0;
-        list-style: none;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 0.35s ease, visibility 0.35s ease;
         overscroll-behavior: contain;
+        -webkit-overflow-scrolling: touch;
     }
 
     .nav-links.mobile-open {
-        display: flex;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
     }
 
     .nav-links li {
         width: 100%;
         text-align: center;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
     }
 
+    .nav-links.mobile-open li {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .nav-links.mobile-open li:nth-child(1) { transition-delay: 0.08s; }
+    .nav-links.mobile-open li:nth-child(2) { transition-delay: 0.16s; }
+    .nav-links.mobile-open li:nth-child(3) { transition-delay: 0.24s; }
+    .nav-links.mobile-open li:nth-child(4) { transition-delay: 0.32s; }
+    .nav-links.mobile-open li:nth-child(5) { transition-delay: 0.40s; }
+
     .nav-links li a {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
+        font-weight: 600;
         color: #fff;
         text-decoration: none;
         display: block;
-        padding: 1rem 2rem;
+        padding: 1.25rem 2rem;
         -webkit-tap-highlight-color: rgba(59, 130, 246, 0.3);
+        transition: color 0.2s;
+    }
+
+    .nav-links li a:active {
+        color: var(--accent-blue);
     }
 
     .nav-cta-wrapper {
@@ -1804,13 +1861,39 @@ input, select, textarea {
         position: relative;
     }
 
-    /* Disable all hover transforms on mobile */
+    /* --- Disable hover transforms on touch --- */
     .glass-card:hover {
-        transform: none;
-        box-shadow: none;
+        transform: none !important;
+        box-shadow: none !important;
+    }
+}
+
+/* =========================================
+   Mobile — Form Fix (max-width: 767px)
+   ========================================= */
+
+@media (max-width: 767px) {
+    /* Kill ALL backdrop-filter on contact area for iOS */
+    .contact-card {
+        -webkit-backdrop-filter: none !important;
+        backdrop-filter: none !important;
+        overflow: visible !important;
+        /* Remove any transform that creates stacking context */
+        transform: none !important;
     }
 
-    /* Fix form inputs on mobile */
+    .contact-card::before,
+    .contact-card::after {
+        display: none !important;
+    }
+
+    /* Ensure contact-grid is above decorative layers */
+    .contact-grid {
+        position: relative;
+        z-index: 10;
+    }
+
+    /* Form inputs: ensure clickable on iOS */
     .contact-form input,
     .contact-form select,
     .contact-form textarea {
@@ -1819,22 +1902,37 @@ input, select, textarea {
         appearance: none;
         touch-action: manipulation;
         position: relative;
-        z-index: 20;
+        z-index: 10;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-user-select: text;
+        user-select: text;
+        cursor: text;
     }
 
-    .contact-card {
-        -webkit-backdrop-filter: none;
-        backdrop-filter: none;
-        overflow: visible;
-    }
-
-    .contact-grid {
-        z-index: 20;
+    .contact-form select {
+        -webkit-appearance: none;
+        appearance: none;
+        cursor: pointer;
     }
 
     .contact-form-submit {
         position: relative;
-        z-index: 20;
+        z-index: 10;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    /* Kill solution-glow and contact-glow pointer events */
+    .solution-glow,
+    .contact-glow,
+    .hero-card-glow {
+        pointer-events: none !important;
+    }
+
+    /* Kill backdrop-filter on all glass-cards on mobile to prevent stacking context */
+    .glass-card {
+        -webkit-backdrop-filter: none !important;
+        backdrop-filter: none !important;
     }
 }
 
