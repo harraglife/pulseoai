@@ -1907,6 +1907,7 @@ input, select, textarea {
     flex-direction: column;
     align-items: flex-end;
     gap: 1rem;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 /* --- Floating Bubble --- */
@@ -1947,6 +1948,13 @@ input, select, textarea {
 .chatbot-widget.chatbot-open .chatbot-icon-open {
     opacity: 0;
     transform: rotate(90deg);
+}
+
+.chatbot-widget.chatbot-hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.5) translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .chatbot-widget.chatbot-open .chatbot-icon-close {
