@@ -184,12 +184,12 @@ input, select, textarea {
 .reveal {
     opacity: 0;
     transform: translateY(30px);
-    transition: all 0.8s ease-out;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .reveal.active {
     opacity: 1;
-    transform: translateY(0);
+    transform: none;
 }
 
 .magnetic-btn {
@@ -1860,6 +1860,11 @@ input, select, textarea {
    ========================================= */
 
 @media (max-width: 767px) {
+    /* Hide noise overlay on mobile — iOS Safari touch bug with fixed overlays */
+    .noise {
+        display: none !important;
+    }
+
     /* Hide ALL decorative glows — they create stacking contexts via filter */
     .contact-glow,
     .solution-glow,
