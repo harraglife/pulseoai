@@ -59,6 +59,7 @@ input, select, textarea {
     z-index: -1;
     background: radial-gradient(circle at 50% 50%, #10101a 0%, #050508 100%);
     overflow: hidden;
+    pointer-events: none;
 }
 
 .stream-line {
@@ -1660,6 +1661,7 @@ input, select, textarea {
     justify-content: center;
     opacity: 0;
     visibility: hidden;
+    pointer-events: none;
     transition: opacity 0.3s ease, visibility 0.3s ease;
     padding: 1.5rem;
 }
@@ -1667,6 +1669,7 @@ input, select, textarea {
 .legal-modal-overlay.active {
     opacity: 1;
     visibility: visible;
+    pointer-events: auto;
 }
 
 .legal-modal {
