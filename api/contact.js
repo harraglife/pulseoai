@@ -18,7 +18,7 @@ export default async function handler(req, res) {
     try {
         // Email sent to you (notification)
         await resend.emails.send({
-            from: 'Pulseo AI <onboarding@resend.dev>',
+            from: 'Pulseo AI <noreply@pulseoai.fr>',
             to: 'contact@pulseoai.fr',
             subject: `Nouvelle demande d'audit — ${name}`,
             html: `
@@ -38,7 +38,7 @@ export default async function handler(req, res) {
 
         // Confirmation email to the prospect
         await resend.emails.send({
-            from: 'Pulseo AI <onboarding@resend.dev>',
+            from: 'Pulseo AI <noreply@pulseoai.fr>',
             to: email,
             subject: 'Votre demande a bien été reçue — Pulseo AI',
             html: `
