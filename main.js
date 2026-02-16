@@ -589,6 +589,10 @@ function initFormSubmission() {
             });
 
             if (response.ok) {
+                // Track Google Ads conversion
+                if (typeof gtag_report_conversion === 'function') {
+                    gtag_report_conversion();
+                }
                 status.textContent = C.successMessage;
                 status.classList.add('form-status-success');
                 form.reset();
