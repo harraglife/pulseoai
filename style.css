@@ -327,7 +327,7 @@ input, select, textarea {
 }
 
 .hero-inner {
-    max-width: 80rem;
+    max-width: 64rem;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
@@ -685,7 +685,7 @@ input, select, textarea {
 }
 
 .problem-inner {
-    max-width: 80rem;
+    max-width: 64rem;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
@@ -837,7 +837,7 @@ input, select, textarea {
 }
 
 .services-inner {
-    max-width: 80rem;
+    max-width: 64rem;
     margin: 0 auto;
 }
 
@@ -1137,7 +1137,7 @@ input, select, textarea {
 }
 
 .showcase-inner {
-    max-width: 80rem;
+    max-width: 64rem;
     margin: 0 auto;
 }
 
@@ -1229,7 +1229,7 @@ input, select, textarea {
 }
 
 .method-inner {
-    max-width: 80rem;
+    max-width: 64rem;
     margin: 0 auto;
 }
 
@@ -1312,7 +1312,7 @@ input, select, textarea {
 }
 
 .results-inner {
-    max-width: 80rem;
+    max-width: 64rem;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
@@ -1411,7 +1411,7 @@ input, select, textarea {
 }
 
 .contact-inner {
-    max-width: 80rem;
+    max-width: 64rem;
     margin: 0 auto;
 }
 
