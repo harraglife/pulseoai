@@ -31,6 +31,12 @@ const CONTENT = {
         logos: ["OpenAI", "Anthropic", "N8N", "Python", "Make"]
     },
 
+    // Tech Partners Marquee
+    techPartners: {
+        title: "Propulsé par les meilleures technologies IA",
+        logos: ["OpenAI", "Anthropic", "Google Gemini", "Meta AI", "Mistral AI", "HuggingFace", "LangChain", "n8n", "Make", "Zapier"]
+    },
+
     // Problem / Solution Section
     problem: {
         title: 'Chaque minute perdue sur une tâche répétitive vous coûte de <span class="text-blue-500">l\'argent.</span>',
@@ -58,7 +64,7 @@ const CONTENT = {
     // Services Section
     services: {
         title: 'CE QUE NOUS <span class="text-blue-500">AUTOMATISONS</span>',
-        subtitle: "Quatre expertises concrètes pour que votre entreprise tourne plus vite, avec moins d'effort.",
+        subtitle: "Cinq expertises concrètes pour que votre entreprise tourne plus vite, avec moins d'effort.",
         items: [
             {
                 title: "Prospection & Acquisition Client",
@@ -99,6 +105,12 @@ const CONTENT = {
                     { text: "Demain à 14h si possible.", type: "user" },
                     { text: "C'est noté. Confirmation envoyée par email.", type: "bot" }
                 ],
+                size: "large"
+            },
+            {
+                title: "Référencement IA",
+                description: "On optimise la présence de votre entreprise sur les intelligences artificielles (ChatGPT, Gemini, Claude, Perplexity...). Quand un prospect recherche un service dans votre domaine via une IA, c'est votre entreprise qui apparaît en premier. Nouveau canal d'acquisition, zéro pub, résultats mesurables.",
+                highlights: ["ChatGPT", "Gemini", "Claude", "Perplexity"],
                 size: "large"
             }
         ]
@@ -143,6 +155,36 @@ const CONTENT = {
         { value: "24/7", label: "Vos agents IA ne dorment jamais" },
         { value: "98%", label: "Taux de satisfaction client" }
     ],
+
+    // Showcase: Pourquoi nous + Projets
+    showcase: {
+        counters: [
+            { value: 50, suffix: "+", label: "Projets livrés" },
+            { value: 12, suffix: "", label: "Secteurs accompagnés" },
+            { value: 98, suffix: "%", label: "Clients satisfaits" }
+        ],
+        title: "Nos derniers projets",
+        projects: [
+            {
+                name: "Cabinet comptable — Paris",
+                problem: "Réponse aux clients trop lente, perte de prospects le soir et le week-end",
+                result: "-80% de temps de réponse",
+                tag: "Agent IA"
+            },
+            {
+                name: "E-commerce — Lyon",
+                problem: "Prospection manuelle chronophage, base de leads non qualifiée",
+                result: "+200 leads qualifiés/mois",
+                tag: "Prospection"
+            },
+            {
+                name: "Agence immobilière — Bordeaux",
+                problem: "Aucune visibilité sur les recherches IA des prospects",
+                result: "1ère position sur ChatGPT",
+                tag: "Référencement IA"
+            }
+        ]
+    },
 
     // FAQ Section
     faq: {

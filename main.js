@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initMagneticButtons();
     initLegalModals();
     initFormSubmission();
+    initCounterAnimation();
     initChatbot();
 });
 
@@ -68,6 +69,17 @@ function injectContent() {
         const span = document.createElement('span');
         span.textContent = logo;
         trustLogos.appendChild(span);
+    });
+
+    // --- Tech Partners Marquee ---
+    document.getElementById('tech-partners-title').textContent = C.techPartners.title;
+    const techScroll = document.getElementById('tech-partners-scroll');
+    // Duplicate logos for seamless infinite scroll
+    const allLogos = [...C.techPartners.logos, ...C.techPartners.logos];
+    allLogos.forEach(logo => {
+        const span = document.createElement('span');
+        span.textContent = logo;
+        techScroll.appendChild(span);
     });
 
     // --- Problem / Solution ---
@@ -155,9 +167,52 @@ function injectContent() {
                 <div class="service-chat-demo">
                     ${svc.chat.map(c => `<div class="chat-bubble chat-${c.type === 'bot' ? 'bot' : 'user'}">${c.text}</div>`).join('')}
                 </div>`;
+        } else if (i === 4) {
+            // Référencement IA — large full-width
+            card.classList.add('service-seo');
+            card.innerHTML = `
+                <div class="service-seo-content">
+                    <h3>${svc.title}</h3>
+                    <p>${svc.description}</p>
+                    <div class="service-seo-badges">
+                        ${svc.highlights.map(h => `<span class="service-seo-badge">${h}</span>`).join('')}
+                    </div>
+                </div>
+                <div class="service-seo-visual">
+                    <div class="service-seo-rank">
+                        <span class="service-seo-rank-number">1</span>
+                        <span class="service-seo-rank-label">er</span>
+                    </div>
+                    <p class="service-seo-rank-text">Position sur les IA</p>
+                </div>`;
         }
 
         servicesGrid.appendChild(card);
+    });
+
+    // --- Showcase: Counters + Projects ---
+    const showcaseCounters = document.getElementById('showcase-counters');
+    C.showcase.counters.forEach(counter => {
+        const div = document.createElement('div');
+        div.className = 'showcase-counter-item';
+        div.innerHTML = `
+            <div class="counter-value text-gradient" data-target="${counter.value}" data-suffix="${counter.suffix}">0${counter.suffix}</div>
+            <p class="counter-label">${counter.label}</p>`;
+        showcaseCounters.appendChild(div);
+    });
+
+    document.getElementById('showcase-title').innerHTML = C.showcase.title;
+
+    const showcaseProjects = document.getElementById('showcase-projects');
+    C.showcase.projects.forEach(project => {
+        const div = document.createElement('div');
+        div.className = 'glass-card showcase-project';
+        div.innerHTML = `
+            <span class="showcase-project-tag">${project.tag}</span>
+            <h4 class="showcase-project-name">${project.name}</h4>
+            <p class="showcase-project-problem">${project.problem}</p>
+            <div class="showcase-project-result text-gradient">${project.result}</div>`;
+        showcaseProjects.appendChild(div);
     });
 
     // --- Method ---
@@ -476,6 +531,47 @@ function initMagneticButtons() {
             btn.style.transform = 'translate(0px, 0px)';
         });
     });
+}
+
+/* -----------------------------------------
+   Counter Animation (Showcase Section)
+   ----------------------------------------- */
+
+function initCounterAnimation() {
+    const countersSection = document.getElementById('showcase-counters');
+    if (!countersSection) return;
+
+    let animated = false;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !animated) {
+                animated = true;
+                const counters = countersSection.querySelectorAll('.counter-value');
+                counters.forEach(counter => {
+                    const target = parseInt(counter.getAttribute('data-target'));
+                    const suffix = counter.getAttribute('data-suffix') || '';
+                    const duration = 2000;
+                    const start = performance.now();
+
+                    function update(now) {
+                        const elapsed = now - start;
+                        const progress = Math.min(elapsed / duration, 1);
+                        // Ease out cubic
+                        const eased = 1 - Math.pow(1 - progress, 3);
+                        const current = Math.round(eased * target);
+                        counter.textContent = current + suffix;
+                        if (progress < 1) {
+                            requestAnimationFrame(update);
+                        }
+                    }
+                    requestAnimationFrame(update);
+                });
+            }
+        });
+    }, { threshold: 0.3 });
+
+    observer.observe(countersSection);
 }
 
 /* -----------------------------------------
