@@ -67,6 +67,12 @@ const CONTENT = {
         subtitle: "Cinq expertises concrètes pour que votre entreprise tourne plus vite, avec moins d'effort.",
         items: [
             {
+                title: "Référencement IA",
+                description: "On optimise la présence de votre entreprise sur les intelligences artificielles (ChatGPT, Gemini, Claude, Perplexity...). Quand un prospect recherche un service dans votre domaine via une IA, c'est votre entreprise qui apparaît en premier. Nouveau canal d'acquisition, zéro pub, résultats mesurables.",
+                highlights: ["ChatGPT", "Gemini", "Claude", "Perplexity"],
+                size: "large"
+            },
+            {
                 title: "Prospection & Acquisition Client",
                 description: "Vos prospects reçoivent des emails personnalisés par l'IA, vos leads sont qualifiés automatiquement et votre CRM se remplit pendant que vous vous concentrez sur la vente.",
                 features: [
@@ -105,12 +111,6 @@ const CONTENT = {
                     { text: "Demain à 14h si possible.", type: "user" },
                     { text: "C'est noté. Confirmation envoyée par email.", type: "bot" }
                 ],
-                size: "large"
-            },
-            {
-                title: "Référencement IA",
-                description: "On optimise la présence de votre entreprise sur les intelligences artificielles (ChatGPT, Gemini, Claude, Perplexity...). Quand un prospect recherche un service dans votre domaine via une IA, c'est votre entreprise qui apparaît en premier. Nouveau canal d'acquisition, zéro pub, résultats mesurables.",
-                highlights: ["ChatGPT", "Gemini", "Claude", "Perplexity"],
                 size: "large"
             }
         ]

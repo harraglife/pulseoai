@@ -126,48 +126,6 @@ function injectContent() {
         card.className = 'glass-card service-card';
 
         if (i === 0) {
-            // Email & Prospection — large
-            card.classList.add('service-email');
-            card.innerHTML = `
-                <div class="service-email-icon">
-                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                    </svg>
-                </div>
-                <h3>${svc.title}</h3>
-                <p>${svc.description}</p>
-                <ul class="service-features">
-                    ${svc.features.map(f => `<li><span>•</span> ${f}</li>`).join('')}
-                </ul>
-                <button class="service-cta">${svc.cta} <span class="arrow">→</span></button>`;
-        } else if (i === 1) {
-            // Scraping — small
-            card.classList.add('service-scraping');
-            card.innerHTML = `
-                <h3>${svc.title}</h3>
-                <p>${svc.description}</p>
-                <div class="service-terminal">${svc.terminal.join('<br/>')}</div>`;
-        } else if (i === 2) {
-            // Gestion Sans API — small
-            card.classList.add('service-api');
-            card.innerHTML = `
-                <h3>${svc.title}</h3>
-                <p>${svc.description}</p>`;
-        } else if (i === 3) {
-            // Chatbots — large
-            card.classList.add('service-chatbot');
-            card.innerHTML = `
-                <div class="service-chatbot-content">
-                    <h3>${svc.title}</h3>
-                    <p>${svc.description}</p>
-                    <div class="service-tags">
-                        ${svc.tags.map(t => `<span class="service-tag service-tag-${t.color}">${t.text}</span>`).join('')}
-                    </div>
-                </div>
-                <div class="service-chat-demo">
-                    ${svc.chat.map(c => `<div class="chat-bubble chat-${c.type === 'bot' ? 'bot' : 'user'}">${c.text}</div>`).join('')}
-                </div>`;
-        } else if (i === 4) {
             // Référencement IA — large full-width
             card.classList.add('service-seo');
             card.innerHTML = `
@@ -184,6 +142,48 @@ function injectContent() {
                         <span class="service-seo-rank-label">er</span>
                     </div>
                     <p class="service-seo-rank-text">Position sur les IA</p>
+                </div>`;
+        } else if (i === 1) {
+            // Email & Prospection — large
+            card.classList.add('service-email');
+            card.innerHTML = `
+                <div class="service-email-icon">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                </div>
+                <h3>${svc.title}</h3>
+                <p>${svc.description}</p>
+                <ul class="service-features">
+                    ${svc.features.map(f => `<li><span>•</span> ${f}</li>`).join('')}
+                </ul>
+                <button class="service-cta">${svc.cta} <span class="arrow">→</span></button>`;
+        } else if (i === 2) {
+            // Scraping — small
+            card.classList.add('service-scraping');
+            card.innerHTML = `
+                <h3>${svc.title}</h3>
+                <p>${svc.description}</p>
+                <div class="service-terminal">${svc.terminal.join('<br/>')}</div>`;
+        } else if (i === 3) {
+            // Gestion Sans API — small
+            card.classList.add('service-api');
+            card.innerHTML = `
+                <h3>${svc.title}</h3>
+                <p>${svc.description}</p>`;
+        } else if (i === 4) {
+            // Chatbots — large
+            card.classList.add('service-chatbot');
+            card.innerHTML = `
+                <div class="service-chatbot-content">
+                    <h3>${svc.title}</h3>
+                    <p>${svc.description}</p>
+                    <div class="service-tags">
+                        ${svc.tags.map(t => `<span class="service-tag service-tag-${t.color}">${t.text}</span>`).join('')}
+                    </div>
+                </div>
+                <div class="service-chat-demo">
+                    ${svc.chat.map(c => `<div class="chat-bubble chat-${c.type === 'bot' ? 'bot' : 'user'}">${c.text}</div>`).join('')}
                 </div>`;
         }
 
