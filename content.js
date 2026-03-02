@@ -172,10 +172,10 @@ const CONTENT = {
                 tag: "Agent IA"
             },
             {
-                name: "E-commerce — Lyon",
-                problem: "Prospection manuelle chronophage, base de leads non qualifiée",
-                result: "+200 leads qualifiés/mois",
-                tag: "Prospection"
+                name: "Kyriad — Louvre Hotels Group",
+                problem: "Premier guide de voyage IA conversationnel : « Promptez, partez »",
+                result: "200+ hôtels connectés",
+                tag: "IA & Tourisme"
             },
             {
                 name: "Agence immobilière — Bordeaux",
