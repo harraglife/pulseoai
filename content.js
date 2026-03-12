@@ -6,6 +6,8 @@ const CONTENT = {
             { text: "Solutions", href: "#services" },
             { text: "Méthode", href: "#method" },
             { text: "Résultats", href: "#results" },
+            { text: "Avis clients", href: "#testimonials" },
+            { text: "Notre équipe", href: "#team" },
             { text: "FAQ", href: "#faq" }
         ],
         cta: { text: "Audit Offert", href: "#contact" }
@@ -16,7 +18,7 @@ const CONTENT = {
         badge: "",
         titleLine1: "Vos concurrents apparaissent sur ChatGPT.",
         titleLine2: "Pas vous.",
-        description: "Aujourd'hui, vos clients ne cherchent plus sur Google. Ils demandent directement à ChatGPT, Gemini, Perplexity. Si vous n'apparaissez pas dans leurs réponses, vous perdez des clients chaque jour sans même le savoir.",
+        description: "Vos clients demandent à ChatGPT qui contacter, quoi acheter, qui choisir. Vos concurrents qui apparaissent dans ces réponses captent vos ventes en ce moment même. Chaque jour sans agir, vous leur offrez du chiffre d'affaires. On règle ça.",
         ctaPrimary: { text: "Réserver votre audit offert", href: "#contact" },
         ctaSecondary: { text: "Découvrir nos solutions", href: "#services" },
         card: {
@@ -140,7 +142,7 @@ const CONTENT = {
     testimonials: {
         title: 'Ils nous font <span class="text-blue-500">confiance</span>',
         subtitle: "Des résultats réels, des clients qui parlent pour nous.",
-        slots: 6
+        slots: 3
     },
 
     // Team Section
@@ -154,7 +156,8 @@ const CONTENT = {
             { name: "Prénom Nom", role: "Poste" }
         ],
         socials: [
-            { platform: "LinkedIn", label: "Pulseo AI sur LinkedIn", url: "#" },
+            { platform: "LinkedIn", label: "Sofiane sur LinkedIn", url: "#" },
+            { platform: "LinkedIn", label: "Prénom Cofondateur sur LinkedIn", url: "#" },
             { platform: "Instagram", label: "@pulseoai", url: "#" }
         ]
     },
