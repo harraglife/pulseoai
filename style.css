@@ -2217,7 +2217,13 @@ input, select, textarea {
 .testimonials-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 2rem;
+    justify-items: center;
+}
+
+.testimonial-item {
+    text-align: center;
+    max-width: 18rem;
 }
 
 .testimonial-slot {
@@ -2235,6 +2241,13 @@ input, select, textarea {
     width: 2.5rem;
     height: 2.5rem;
     color: #374151;
+}
+
+.testimonial-text {
+    color: #6b7280;
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+    line-height: 1.4;
 }
 
 /* =========================================
@@ -2338,6 +2351,7 @@ input, select, textarea {
 @media (min-width: 768px) {
     .testimonials-grid {
         grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
     }
 
     .team-grid {
