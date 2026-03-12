@@ -160,8 +160,8 @@ const CONTENT = {
             { name: "Léna", role: "Chargée de Contenu & Réseaux", photo: "/lena.jpg" }
         ],
         socials: [
-            { platform: "LinkedIn", label: "Romain", url: "#" },
-            { platform: "LinkedIn", label: "Sofiane", url: "#" },
+            { platform: "LinkedIn", label: "Romain", url: "https://www.linkedin.com/in/romaindcl/" },
+            { platform: "LinkedIn", label: "Sofiane", url: "https://www.linkedin.com/in/sofiane-aiche-0ab833277/" },
             { platform: "Instagram", label: "@pulseoai", url: "#" }
         ]
     },
