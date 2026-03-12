@@ -156,7 +156,7 @@ const CONTENT = {
         members: [
             { name: "Romain", role: "Co-fondateur", photo: "/romain.jpeg" },
             { name: "Sofiane", role: "Co-fondateur", photo: "/sofiane.png" },
-            { name: "Maxime", role: "Expert Référencement IA", photo: "/maxime.jpg" },
+            { name: "Maxime", role: "Expert Référencement IA", photo: "/maxime.png" },
             { name: "Léna", role: "Chargée de Contenu & Réseaux", photo: "/lena.jpg" }
         ],
         socials: [
