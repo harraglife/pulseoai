@@ -140,7 +140,7 @@ const CONTENT = {
             {
                 image: "/dashboard-restaurant.jpg",
                 tag: "Restaurant",
-                result: "34 900 recherches mensuelles qui aboutissent maintenant chez eux"
+                result: "34 900 recherches sur les 3 derniers mois qui aboutissent maintenant chez eux"
             },
             {
                 image: "/dashboard-ecommerce.jpg",
