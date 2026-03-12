@@ -2216,10 +2216,14 @@ input, select, textarea {
 }
 
 .testimonials-grid {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
     gap: 2rem;
-    justify-items: center;
+    width: 100%;
+    max-width: 64rem;
+    margin: 0 auto;
 }
 
 .testimonial-item {
@@ -2351,8 +2355,7 @@ input, select, textarea {
 
 @media (min-width: 768px) {
     .testimonials-grid {
-        grid-template-columns: repeat(3, 1fr);
-        justify-items: center;
+        flex-wrap: nowrap;
     }
 
     .team-grid {
