@@ -132,9 +132,21 @@ const CONTENT = {
         ],
         title: "Nos derniers projets",
         projects: [
-            { placeholder: true, label: "Dashboard client" },
-            { placeholder: true, label: "Dashboard client" },
-            { placeholder: true, label: "Dashboard client" }
+            {
+                image: "/dashboard-hotel.jpg",
+                tag: "Hôtel",
+                result: "De 12 000 à 203 000 visiteurs en 12 mois grâce à la visibilité IA"
+            },
+            {
+                image: "/dashboard-restaurant.jpg",
+                tag: "Restaurant",
+                result: "34 900 recherches mensuelles qui aboutissent maintenant chez eux"
+            },
+            {
+                image: "/dashboard-ecommerce.jpg",
+                tag: "E-commerce",
+                result: "Passé de la page 8 à la position 4 sur Google et toutes les IA"
+            }
         ]
     },
 
