@@ -154,10 +154,10 @@ const CONTENT = {
         title: 'L\'équipe derrière vos <span class="text-blue-500">résultats</span>',
         subtitle: "Des experts IA qui s'occupent de tout pour vous.",
         members: [
-            { name: "Romain", role: "Co-fondateur" },
-            { name: "Sofiane", role: "Co-fondateur" },
-            { name: "Maxime", role: "Expert Référencement IA" },
-            { name: "Léna", role: "Chargée de Contenu & Réseaux" }
+            { name: "Romain", role: "Co-fondateur", photo: "/romain.jpeg" },
+            { name: "Sofiane", role: "Co-fondateur", photo: "/sofiane.png" },
+            { name: "Maxime", role: "Expert Référencement IA", photo: "/maxime.jpg" },
+            { name: "Léna", role: "Chargée de Contenu & Réseaux", photo: "/lena.jpg" }
         ],
         socials: [
             { platform: "LinkedIn", label: "Romain", url: "#" },
