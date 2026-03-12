@@ -162,7 +162,7 @@ const CONTENT = {
         socials: [
             { platform: "LinkedIn", label: "Romain", url: "https://www.linkedin.com/in/romaindcl/" },
             { platform: "LinkedIn", label: "Sofiane", url: "https://www.linkedin.com/in/sofiane-aiche-0ab833277/" },
-            { platform: "Instagram", label: "@pulseoai", url: "#" }
+            { platform: "Instagram", label: "@pulseoai", url: "https://www.instagram.com/pulseoai?igsh=NjFwNmRrajM1aW9v" }
         ]
     },
 
