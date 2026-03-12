@@ -145,7 +145,7 @@ const CONTENT = {
             {
                 image: "/dashboard-ecommerce.jpg",
                 tag: "E-commerce",
-                result: "Passé de la page 8 à la position 4 sur Google et toutes les IA"
+                result: "Passé de la page 8 à la position 3 sur Google et toutes les IA"
             }
         ]
     },
