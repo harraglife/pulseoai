@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initLegalModals();
     initFormSubmission();
     initCounterAnimation();
-    // Chatbot removed — replaced by floating CTA
+    initMobileSliders();
 });
 
 /* -----------------------------------------
@@ -716,7 +716,56 @@ function initFormSubmission() {
 }
 
 /* -----------------------------------------
-   Chatbot Widget
+   Mobile Sliders (Projects + Testimonials)
    ----------------------------------------- */
 
-// Chatbot removed — replaced by floating CTA "Audit offert"
+function initMobileSliders() {
+    if (window.innerWidth >= 768) return;
+
+    setupSlider(
+        document.getElementById('showcase-projects'),
+        document.getElementById('showcase-projects').parentElement
+    );
+
+    setupSlider(
+        document.getElementById('testimonials-grid'),
+        document.getElementById('testimonials-grid').parentElement
+    );
+}
+
+function setupSlider(container, parent) {
+    if (!container) return;
+
+    const items = container.children;
+    if (items.length < 2) return;
+
+    container.classList.add('mobile-slider');
+
+    // Create dots
+    const dotsWrapper = document.createElement('div');
+    dotsWrapper.className = 'slider-dots';
+    for (let i = 0; i < items.length; i++) {
+        const dot = document.createElement('button');
+        dot.className = 'slider-dot' + (i === 0 ? ' active' : '');
+        dot.setAttribute('aria-label', `Slide ${i + 1}`);
+        dot.addEventListener('click', () => {
+            items[i].scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+        });
+        dotsWrapper.appendChild(dot);
+    }
+    container.after(dotsWrapper);
+
+    // Update dots on scroll
+    let scrollTimeout;
+    container.addEventListener('scroll', () => {
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(() => {
+            const scrollLeft = container.scrollLeft;
+            const itemWidth = container.offsetWidth;
+            const activeIndex = Math.round(scrollLeft / itemWidth);
+            dotsWrapper.querySelectorAll('.slider-dot').forEach((dot, i) => {
+                dot.classList.toggle('active', i === activeIndex);
+            });
+        }, 50);
+    }, { passive: true });
+}

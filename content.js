@@ -156,12 +156,12 @@ const CONTENT = {
         members: [
             { name: "Romain", role: "Co-fondateur" },
             { name: "Sofiane", role: "Co-fondateur" },
-            { name: "Maxime", role: "Responsable Stratégie IA" },
-            { name: "Léna", role: "Chargée de Croissance" }
+            { name: "Maxime", role: "Expert Référencement IA" },
+            { name: "Léna", role: "Chargée de Contenu & Réseaux" }
         ],
         socials: [
-            { platform: "LinkedIn", label: "Sofiane sur LinkedIn", url: "#" },
-            { platform: "LinkedIn", label: "Prénom Cofondateur sur LinkedIn", url: "#" },
+            { platform: "LinkedIn", label: "Romain", url: "#" },
+            { platform: "LinkedIn", label: "Sofiane", url: "#" },
             { platform: "Instagram", label: "@pulseoai", url: "#" }
         ]
     },
