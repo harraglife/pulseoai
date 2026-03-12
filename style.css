@@ -876,6 +876,11 @@ input, select, textarea {
 
 .service-card p {
     color: #9ca3af;
+    line-height: 1.6;
+}
+
+.service-simple h3 {
+    font-size: 1.5rem;
 }
 
 /* Service 1 — Email & Prospection (large) */
@@ -1756,40 +1761,7 @@ input, select, textarea {
     }
 
     .services-grid {
-        grid-template-columns: repeat(12, 1fr);
-    }
-
-    .service-email {
-        grid-column: span 8;
-    }
-
-    .service-scraping {
-        grid-column: span 4;
-    }
-
-    .service-api {
-        grid-column: span 4;
-    }
-
-    .service-chatbot {
-        grid-column: span 8;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .service-seo {
-        grid-column: span 12;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .service-seo-content {
-        flex: 1;
-    }
-
-    .service-chat-demo {
-        width: 16rem;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     /* Showcase */

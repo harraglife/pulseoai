@@ -13,15 +13,15 @@ const CONTENT = {
 
     // Hero Section
     hero: {
-        badge: "Agence d'automatisation IA",
-        titleLine1: "VOS PROCESS",
-        titleLine2: "TOURNENT SANS VOUS.",
-        description: "Pendant que vous gérez votre business, nos agents IA répondent à vos clients, qualifient vos prospects et exécutent vos tâches répétitives. 24h/24. Sans erreur. Sans recrutement.",
+        badge: "",
+        titleLine1: "VOS CONCURRENTS APPARAISSENT",
+        titleLine2: "DANS CHATGPT. PAS VOUS.",
+        description: "Aujourd'hui, vos clients ne cherchent plus sur Google. Ils demandent directement à ChatGPT, Gemini, Perplexity. Si vous n'apparaissez pas dans leurs réponses, vous perdez des clients chaque jour — sans même le savoir.",
         ctaPrimary: { text: "Réserver votre audit offert", href: "#contact" },
         ctaSecondary: { text: "Découvrir nos solutions", href: "#services" },
         card: {
-            stat: "+12h",
-            label: "Récupérées par semaine en moyenne"
+            stat: "#1",
+            label: "Position sur les IA"
         }
     },
 
@@ -39,79 +39,44 @@ const CONTENT = {
 
     // Problem / Solution Section
     problem: {
-        title: 'Chaque minute perdue sur une tâche répétitive vous coûte de <span class="text-blue-500">l\'argent.</span>',
+        title: 'Chaque jour sans visibilité IA, c\'est un client que vous offrez à <span class="text-blue-500">vos concurrents.</span>',
         items: [
             {
-                title: "Vos équipes sont noyées dans l'opérationnel",
-                description: "Répondre aux emails, relancer les prospects, saisir des données — vos collaborateurs passent des heures sur des tâches qu'une IA peut faire en secondes."
+                title: "Invisible sur ChatGPT et toutes les IA",
+                description: "73% des consommateurs utilisent déjà ChatGPT ou une IA pour trouver un prestataire, un produit, un service. Vos concurrents qui apparaissent dans ces réponses captent vos clients potentiels. En ce moment même."
             },
             {
-                title: "Vous ratez des clients pendant que vous dormez",
-                description: "Un prospect vous contacte à 22h. Personne ne répond. Il va chez votre concurrent. Sans automatisation, chaque heure de fermeture est une opportunité perdue."
+                title: "Vos concurrents captent vos clients",
+                description: "Zéro présence dans les recherches IA. Trafic en baisse, clients qui disparaissent. Vous regardez votre CA stagner pendant que d'autres prennent votre place."
             }
         ],
         solution: {
             title: "Ce que Pulseo AI change pour vous",
-            quote: "\"Depuis qu'on a mis en place le réceptionniste IA, on ne rate plus un seul appel. Les rendez-vous se prennent tout seuls, même le dimanche.\"",
+            quote: "\"Vous apparaissez dans toutes les IA. ChatGPT recommande votre entreprise. Trafic qualifié en hausse constante. Nouveaux clients sans effort publicitaire. Votre CA augmente pendant que vous dormez.\"",
             stats: [
-                { value: "0", label: "Compétence technique requise" },
-                { value: "24/7", label: "Vos agents IA sont actifs" },
-                { value: "100%", label: "Clé en main" }
+                { value: "73%", label: "Utilisent déjà les IA pour chercher" },
+                { value: "#1", label: "Position sur les IA" },
+                { value: "+CA", label: "Trafic et clients en hausse" }
             ]
         }
     },
 
     // Services Section
     services: {
-        title: 'CE QUE NOUS <span class="text-blue-500">AUTOMATISONS</span>',
-        subtitle: "Cinq expertises concrètes pour que votre entreprise tourne plus vite, avec moins d'effort.",
+        title: 'CE QUE NOUS <span class="text-blue-500">FAISONS</span>',
+        subtitle: "Trois expertises pour dominer les résultats des IA et capter vos clients avant vos concurrents.",
         items: [
             {
-                title: "Référencement IA",
-                description: "On optimise la présence de votre entreprise sur les intelligences artificielles (ChatGPT, Gemini, Claude, Perplexity...). Quand un prospect recherche un service dans votre domaine via une IA, c'est votre entreprise qui apparaît en premier. Nouveau canal d'acquisition, zéro pub, résultats mesurables.",
-                highlights: ["ChatGPT", "Gemini", "Claude", "Perplexity"],
-                size: "large"
+                title: "Audit de visibilité IA",
+                description: "On analyse comment vous apparaissez (ou pas) dans ChatGPT, Gemini, Perplexity et toutes les autres IA. Résultat : un diagnostic complet de votre présence IA actuelle."
             },
             {
-                title: "Prospection & Acquisition Client",
-                description: "Vos prospects reçoivent des emails personnalisés par l'IA, vos leads sont qualifiés automatiquement et votre CRM se remplit pendant que vous vous concentrez sur la vente.",
-                features: [
-                    "Séquences emails personnalisées par IA",
-                    "Qualification automatique de chaque lead",
-                    "Synchronisation directe avec votre CRM"
-                ],
-                cta: "En savoir plus",
-                size: "large"
+                title: "Optimisation pour les IA",
+                description: "On optimise votre présence digitale pour que les IA vous recommandent en priorité. Vos concurrents disparaissent, vous prenez leur place."
             },
             {
-                title: "Collecte & Enrichissement de Données",
-                description: "On récupère, structure et enrichit toutes les données dont vous avez besoin pour prendre de meilleures décisions, plus vite.",
-                terminal: [
-                    "$ pulse_collect init...",
-                    "> source: marché cible identifié",
-                    "> 4 203 contacts extraits",
-                    "> enrichissement: 100% terminé"
-                ],
-                size: "small"
-            },
-            {
-                title: "Automatisation sur Mesure",
-                description: "Même quand vos outils ne communiquent pas entre eux, on crée le lien. On automatise l'inautomatisable.",
-                size: "small"
-            },
-            {
-                title: "Agents IA & Réceptionnistes Virtuels",
-                description: "Un agent IA qui répond à vos clients, prend les rendez-vous, qualifie les demandes et met à jour votre agenda. Disponible 24h/24 sur votre site, WhatsApp ou par téléphone.",
-                tags: [
-                    { text: "WhatsApp", color: "blue" },
-                    { text: "Google Calendar", color: "purple" }
-                ],
-                chat: [
-                    { text: "Bonjour, quand souhaitez-vous votre rendez-vous ?", type: "bot" },
-                    { text: "Demain à 14h si possible.", type: "user" },
-                    { text: "C'est noté. Confirmation envoyée par email.", type: "bot" }
-                ],
-                size: "large"
+                title: "Suivi & Domination continue",
+                description: "Les IA évoluent chaque semaine. On surveille, on ajuste, on maintient votre position dominante. Vous n'avez rien à faire."
             }
         ]
     },
@@ -124,26 +89,26 @@ const CONTENT = {
         steps: [
             {
                 number: "01",
-                title: "Audit & Diagnostic",
-                description: "Nous analysons vos processus actuels et identifions exactement où l'automatisation vous fera gagner le plus de temps et d'argent.",
+                title: "On cherche votre entreprise sur toutes les IA",
+                description: "On teste ChatGPT, Gemini, Perplexity, Grok et toutes les autres IA avec les requêtes de vos clients. On voit exactement où vous en êtes — et où sont vos concurrents.",
                 color: "blue"
             },
             {
                 number: "02",
-                title: "Conception sur mesure",
-                description: "Nos experts conçoivent votre solution : agents IA, workflows automatisés, intégrations — tout est pensé pour votre activité.",
+                title: "On bâtit votre stratégie de domination IA",
+                description: "Chaque entreprise est différente. On construit une stratégie sur-mesure pour que vous apparaissiez en premier dans les réponses des IA — là où vos clients cherchent.",
                 color: "purple"
             },
             {
                 number: "03",
-                title: "Déploiement & Formation",
-                description: "On installe, on configure, on teste. Vous recevez une solution fonctionnelle et une formation pour la maîtriser immédiatement.",
+                title: "On optimise tout pour vous",
+                description: "Contenu, structure, signaux d'autorité. On s'occupe de tout. Vous ne changez rien à votre quotidien. On travaille dans l'ombre pour vous mettre sous les projecteurs.",
                 color: "cyan"
             },
             {
                 number: "04",
-                title: "Suivi & Optimisation",
-                description: "Notre équipe reste disponible en continu. On surveille, on ajuste et on optimise vos automatisations pour des résultats toujours meilleurs.",
+                title: "On surveille et on domine",
+                description: "On monitore votre position dans les IA en permanence. Dès qu'une IA évolue, on s'adapte. Vous restez devant. Toujours.",
                 color: "white"
             }
         ]
@@ -151,16 +116,16 @@ const CONTENT = {
 
     // Results / Stats Section
     results: [
-        { value: "+12h", label: "Gagnées par semaine en moyenne" },
-        { value: "24/7", label: "Vos agents IA ne dorment jamais" },
+        { value: "73%", label: "Utilisent les IA pour chercher un prestataire" },
+        { value: "#1", label: "Position sur les IA pour nos clients" },
         { value: "98%", label: "Taux de satisfaction client" }
     ],
 
     // Showcase: Pourquoi nous + Projets
     showcase: {
         counters: [
-            { value: 50, suffix: "+", label: "Projets livrés" },
-            { value: 12, suffix: "", label: "Secteurs accompagnés" },
+            { value: 73, suffix: "%", label: "des consommateurs utilisent déjà une IA pour trouver un prestataire ou un service" },
+            { value: 0, suffix: "+CA", label: "Nos clients voient leur trafic et leur chiffre d'affaires augmenter grâce à leur visibilité IA" },
             { value: 98, suffix: "%", label: "Clients satisfaits" }
         ],
         title: "Nos derniers projets",
@@ -191,28 +156,24 @@ const CONTENT = {
         title: 'Vos <span class="text-blue-500">Questions</span>',
         items: [
             {
-                question: "Je n'y connais rien en IA, c'est un problème ?",
-                answer: "Pas du tout. C'est justement notre métier. Nous gérons tout de A à Z : conception, installation, formation. Vous n'avez rien de technique à faire. Vous recevez une solution clé en main qui fonctionne dès le premier jour."
+                question: "Est-ce que mes clients utilisent vraiment les IA pour chercher ?",
+                answer: "Oui. ChatGPT dépasse 100 millions d'utilisateurs actifs par jour. Gemini, Perplexity, Grok explosent. Vos clients y sont déjà. La vraie question c'est : est-ce qu'ils vous trouvent ?"
             },
             {
-                question: "Combien de temps avant de voir des résultats ?",
-                answer: "Dès la mise en service, vos automatisations sont opérationnelles. Selon la complexité du projet, le déploiement prend entre 1 et 3 semaines. Les premiers gains de temps sont visibles immédiatement."
+                question: "Quelle différence avec le SEO Google classique ?",
+                answer: "Le SEO Google positionne votre site dans les résultats de recherche. Le référencement IA fait en sorte que ChatGPT et les autres IA vous recommandent directement à vos clients — sans qu'ils aient besoin de cliquer sur un lien. C'est le canal qui explose en ce moment."
             },
             {
-                question: "Est-ce que ça va remplacer mes employés ?",
-                answer: "Non. L'objectif n'est pas de remplacer vos équipes mais de les libérer des tâches répétitives et sans valeur ajoutée. Vos collaborateurs se concentrent enfin sur ce qui fait vraiment avancer votre entreprise."
+                question: "Est-ce que ça fonctionne pour mon secteur d'activité ?",
+                answer: "Oui. Peu importe votre secteur. Dès que des clients cherchent un prestataire, un produit ou un service en utilisant une IA, vous pouvez apparaître dans leur réponse. On s'adapte à votre marché."
             },
             {
-                question: "Mes données sont-elles protégées ?",
-                answer: "La sécurité est non négociable. Toutes nos solutions respectent le RGPD. Vos données sont hébergées dans des environnements sécurisés et isolés. Aucune donnée n'est partagée avec des tiers."
+                question: "Comment vous travaillez avec nous ?",
+                answer: "On commence par un audit gratuit de votre visibilité IA. Ensuite on vous présente notre stratégie. Vous validez, on exécute. Vous n'avez rien à gérer — on s'occupe de tout de A à Z."
             },
             {
-                question: "Pourquoi ne pas utiliser ChatGPT nous-mêmes ?",
-                answer: "ChatGPT est un outil généraliste. Ce que nous créons, ce sont des systèmes complets et interconnectés qui travaillent pour vous en permanence : ils répondent, trient, relancent, prennent des rendez-vous et alimentent vos outils — sans intervention humaine."
-            },
-            {
-                question: "Que se passe-t-il après la livraison ?",
-                answer: "Nous ne disparaissons pas après l'installation. Notre équipe assure un suivi continu : maintenance, optimisation, support. Vous avez une question à 23h ? Nous sommes là."
+                question: "Pourquoi maintenant et pas plus tard ?",
+                answer: "Parce que vos concurrents commencent maintenant. Les premières entreprises à dominer les IA dans leur secteur vont verrouiller leur position. Plus vous attendez, plus il est difficile de les rattraper. L'avantage du premier arrivant est massif dans ce domaine."
             }
         ]
     },
@@ -243,70 +204,54 @@ const CONTENT = {
 
     // SEO Footer
     seoFooter: {
-        title: "Pulseo AI — Automatisation IA pour entreprises en France",
+        title: "Pulseo AI — Référencement IA & Visibilité sur les intelligences artificielles",
         columns: [
             {
-                heading: "Nos services d'automatisation",
+                heading: "Référencement IA",
                 items: [
-                    "Automatisation IA pour PME",
-                    "Agent IA pour entreprise",
-                    "Chatbot IA pour site web",
-                    "Réceptionniste virtuel IA",
-                    "Chatbot WhatsApp professionnel",
-                    "Automatisation emailing",
-                    "Prospection automatisée par IA",
-                    "Scraping de données entreprise",
-                    "Automatisation CRM",
-                    "Prise de rendez-vous automatique"
+                    "Référencement IA",
+                    "Visibilité IA",
+                    "ChatGPT",
+                    "Gemini",
+                    "Perplexity",
+                    "Grok",
+                    "Claude",
+                    "Copilot",
+                    "GEO",
+                    "Generative Engine Optimization"
                 ]
             },
             {
-                heading: "Solutions par secteur",
+                heading: "SEO & Visibilité digitale",
                 items: [
-                    "Automatisation pour hôtel",
-                    "IA pour restaurant",
-                    "Chatbot pour cabinet comptable",
-                    "Agent IA pour agence immobilière",
-                    "Automatisation pour commerce",
-                    "IA pour artisan et TPE",
-                    "Chatbot pour salon de coiffure",
-                    "Automatisation pour garage auto",
-                    "IA pour cabinet médical",
-                    "Agent virtuel pour e-commerce"
+                    "SEO",
+                    "Référencement naturel",
+                    "Trafic organique",
+                    "Apparaître dans les IA",
+                    "Recommandation IA",
+                    "Optimisation IA",
+                    "Présence IA",
+                    "AEO",
+                    "Answer Engine Optimization",
+                    "Visibilité digitale"
                 ]
             },
             {
-                heading: "Cas d'usage IA",
+                heading: "Marketing & Stratégie IA",
                 items: [
-                    "Répondre aux emails automatiquement",
-                    "Qualifier des leads par IA",
-                    "Automatiser la prise de rendez-vous",
-                    "Envoyer des relances automatiques",
-                    "Créer un assistant virtuel",
-                    "Automatiser le support client",
-                    "Collecter des avis Google automatiquement",
-                    "Enrichir une base de données clients",
-                    "Automatiser la facturation",
-                    "Connecter ses outils sans API"
-                ]
-            },
-            {
-                heading: "Recherches fréquentes",
-                items: [
-                    "Agence automatisation IA France",
-                    "Faire automatiser ses process par l'IA",
-                    "Intelligence artificielle pour PME",
-                    "Gagner du temps avec l'IA",
-                    "Remplacer les tâches répétitives par l'IA",
-                    "Sous-traiter à l'IA",
-                    "IA pour gagner des clients",
-                    "Automatiser son business",
-                    "Digitalisation PME par IA",
-                    "Consultant IA pour entreprise"
+                    "Marketing IA",
+                    "Stratégie IA",
+                    "Intelligence artificielle",
+                    "Recherche IA",
+                    "Acquisition client IA",
+                    "PME",
+                    "Agence IA France",
+                    "Nantes",
+                    "Grand Ouest"
                 ]
             }
         ],
-        description: "Pulseo AI est une agence française spécialisée dans l'automatisation par intelligence artificielle pour les PME, TPE et ETI. Nous concevons des agents IA, des chatbots sur mesure, des systèmes de prospection automatisée et des solutions d'automatisation de processus métier. Nos experts interviennent dans toute la France — Paris, Lyon, Marseille, Toulouse, Bordeaux, Nantes, Lille, Strasbourg et partout en remote — pour aider les dirigeants à gagner du temps, réduire leurs coûts opérationnels et se concentrer sur les tâches à forte valeur ajoutée. Technologies utilisées : OpenAI, Anthropic Claude, N8N, Make, Python, JavaScript. Secteurs accompagnés : hôtellerie, restauration, immobilier, comptabilité, commerce, artisanat, e-commerce, santé, services."
+        description: "Pulseo AI est une agence française spécialisée dans le référencement IA et la visibilité sur les intelligences artificielles. Nous aidons les entreprises à apparaître dans les réponses de ChatGPT, Gemini, Perplexity, Grok, Claude et toutes les IA. Nos experts interviennent dans toute la France — Paris, Lyon, Marseille, Toulouse, Bordeaux, Nantes, Lille, Strasbourg et partout en remote — pour aider les dirigeants à capter plus de clients grâce à leur visibilité IA. Spécialités : GEO (Generative Engine Optimization), AEO (Answer Engine Optimization), référencement naturel, optimisation de présence IA, stratégie de domination IA."
     },
 
     // Legal — Mentions Légales

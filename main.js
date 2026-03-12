@@ -39,7 +39,11 @@ function injectContent() {
     navCta.href = C.nav.cta.href;
 
     // --- Hero ---
-    document.getElementById('hero-badge-text').textContent = C.hero.badge;
+    if (C.hero.badge) {
+        document.getElementById('hero-badge-text').textContent = C.hero.badge;
+    } else {
+        document.querySelector('.hero-badge').style.display = 'none';
+    }
     document.getElementById('hero-title').innerHTML =
         `${C.hero.titleLine1} <span class="gradient">${C.hero.titleLine2}</span>`;
     document.getElementById('hero-description').textContent = C.hero.description;
@@ -121,71 +125,12 @@ function injectContent() {
     document.getElementById('services-subtitle').textContent = C.services.subtitle;
 
     const servicesGrid = document.getElementById('services-grid');
-    C.services.items.forEach((svc, i) => {
+    C.services.items.forEach((svc) => {
         const card = document.createElement('div');
-        card.className = 'glass-card service-card';
-
-        if (i === 0) {
-            // Référencement IA — large full-width
-            card.classList.add('service-seo');
-            card.innerHTML = `
-                <div class="service-seo-content">
-                    <h3>${svc.title}</h3>
-                    <p>${svc.description}</p>
-                    <div class="service-seo-badges">
-                        ${svc.highlights.map(h => `<span class="service-seo-badge">${h}</span>`).join('')}
-                    </div>
-                </div>
-                <div class="service-seo-visual">
-                    <div class="service-seo-rank">
-                        <span class="service-seo-rank-number">1</span>
-                        <span class="service-seo-rank-label">er</span>
-                    </div>
-                    <p class="service-seo-rank-text">Position sur les IA</p>
-                </div>`;
-        } else if (i === 1) {
-            // Email & Prospection — large
-            card.classList.add('service-email');
-            card.innerHTML = `
-                <div class="service-email-icon">
-                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                    </svg>
-                </div>
-                <h3>${svc.title}</h3>
-                <p>${svc.description}</p>
-                <ul class="service-features">
-                    ${svc.features.map(f => `<li><span>•</span> ${f}</li>`).join('')}
-                </ul>
-                <button class="service-cta">${svc.cta} <span class="arrow">→</span></button>`;
-        } else if (i === 2) {
-            // Scraping — small
-            card.classList.add('service-scraping');
-            card.innerHTML = `
-                <h3>${svc.title}</h3>
-                <p>${svc.description}</p>
-                <div class="service-terminal">${svc.terminal.join('<br/>')}</div>`;
-        } else if (i === 3) {
-            // Gestion Sans API — small
-            card.classList.add('service-api');
-            card.innerHTML = `
-                <h3>${svc.title}</h3>
-                <p>${svc.description}</p>`;
-        } else if (i === 4) {
-            // Chatbots — large
-            card.classList.add('service-chatbot');
-            card.innerHTML = `
-                <div class="service-chatbot-content">
-                    <h3>${svc.title}</h3>
-                    <p>${svc.description}</p>
-                    <div class="service-tags">
-                        ${svc.tags.map(t => `<span class="service-tag service-tag-${t.color}">${t.text}</span>`).join('')}
-                    </div>
-                </div>
-                <div class="service-chat-demo">
-                    ${svc.chat.map(c => `<div class="chat-bubble chat-${c.type === 'bot' ? 'bot' : 'user'}">${c.text}</div>`).join('')}
-                </div>`;
-        }
+        card.className = 'glass-card service-card service-simple';
+        card.innerHTML = `
+            <h3>${svc.title}</h3>
+            <p>${svc.description}</p>`;
 
         servicesGrid.appendChild(card);
     });
@@ -195,8 +140,9 @@ function injectContent() {
     C.showcase.counters.forEach(counter => {
         const div = document.createElement('div');
         div.className = 'showcase-counter-item';
+        const initialDisplay = counter.value === 0 ? counter.suffix : `0${counter.suffix}`;
         div.innerHTML = `
-            <div class="counter-value text-gradient" data-target="${counter.value}" data-suffix="${counter.suffix}">0${counter.suffix}</div>
+            <div class="counter-value text-gradient" data-target="${counter.value}" data-suffix="${counter.suffix}">${initialDisplay}</div>
             <p class="counter-label">${counter.label}</p>`;
         showcaseCounters.appendChild(div);
     });
