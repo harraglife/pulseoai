@@ -14,9 +14,9 @@ const CONTENT = {
     // Hero Section
     hero: {
         badge: "",
-        titleLine1: "VOS CONCURRENTS APPARAISSENT",
-        titleLine2: "DANS CHATGPT. PAS VOUS.",
-        description: "Aujourd'hui, vos clients ne cherchent plus sur Google. Ils demandent directement à ChatGPT, Gemini, Perplexity. Si vous n'apparaissez pas dans leurs réponses, vous perdez des clients chaque jour — sans même le savoir.",
+        titleLine1: "Vos concurrents apparaissent sur ChatGPT.",
+        titleLine2: "Pas vous.",
+        description: "Aujourd'hui, vos clients ne cherchent plus sur Google. Ils demandent directement à ChatGPT, Gemini, Perplexity. Si vous n'apparaissez pas dans leurs réponses, vous perdez des clients chaque jour sans même le savoir.",
         ctaPrimary: { text: "Réserver votre audit offert", href: "#contact" },
         ctaSecondary: { text: "Découvrir nos solutions", href: "#services" },
         card: {
@@ -68,7 +68,7 @@ const CONTENT = {
         items: [
             {
                 title: "Audit de visibilité IA",
-                description: "On analyse comment vous apparaissez (ou pas) dans ChatGPT, Gemini, Perplexity et toutes les autres IA. Résultat : un diagnostic complet de votre présence IA actuelle."
+                description: "On analyse comment vous apparaissez (ou pas) sur ChatGPT, Gemini, Perplexity et toutes les autres IA. Résultat : un diagnostic complet de votre présence IA actuelle."
             },
             {
                 title: "Optimisation pour les IA",
@@ -90,13 +90,13 @@ const CONTENT = {
             {
                 number: "01",
                 title: "On cherche votre entreprise sur toutes les IA",
-                description: "On teste ChatGPT, Gemini, Perplexity, Grok et toutes les autres IA avec les requêtes de vos clients. On voit exactement où vous en êtes — et où sont vos concurrents.",
+                description: "On teste ChatGPT, Gemini, Perplexity, Grok et toutes les autres IA avec les requêtes de vos clients. On voit exactement où vous en êtes et où sont vos concurrents.",
                 color: "blue"
             },
             {
                 number: "02",
                 title: "On bâtit votre stratégie de domination IA",
-                description: "Chaque entreprise est différente. On construit une stratégie sur-mesure pour que vous apparaissiez en premier dans les réponses des IA — là où vos clients cherchent.",
+                description: "Chaque entreprise est différente. On construit une stratégie sur mesure pour que vous apparaissiez en premier dans les réponses des IA, là où vos clients cherchent.",
                 color: "purple"
             },
             {
@@ -125,29 +125,37 @@ const CONTENT = {
     showcase: {
         counters: [
             { value: 73, suffix: "%", label: "des consommateurs utilisent déjà une IA pour trouver un prestataire ou un service" },
-            { value: 0, suffix: "+CA", label: "Nos clients voient leur trafic et leur chiffre d'affaires augmenter grâce à leur visibilité IA" },
+            { value: 0, suffix: "+CA", label: "Nos clients voient leur trafic et leur chiffre d'affaires augmenter grâce à leur visibilité IA", static: true },
             { value: 98, suffix: "%", label: "Clients satisfaits" }
         ],
         title: "Nos derniers projets",
         projects: [
-            {
-                name: "Cabinet comptable — Paris",
-                problem: "Réponse aux clients trop lente, perte de prospects le soir et le week-end",
-                result: "-80% de temps de réponse",
-                tag: "Agent IA"
-            },
-            {
-                name: "Kyriad — Louvre Hotels Group",
-                problem: "Premier guide de voyage IA conversationnel : « Promptez, partez »",
-                result: "200+ hôtels connectés",
-                tag: "IA & Tourisme"
-            },
-            {
-                name: "Agence immobilière — Bordeaux",
-                problem: "Aucune visibilité sur les recherches IA des prospects",
-                result: "1ère position sur ChatGPT",
-                tag: "Référencement IA"
-            }
+            { placeholder: true, label: "Dashboard client" },
+            { placeholder: true, label: "Dashboard client" },
+            { placeholder: true, label: "Dashboard client" }
+        ]
+    },
+
+    // Testimonials Section
+    testimonials: {
+        title: 'Ils nous font <span class="text-blue-500">confiance</span>',
+        subtitle: "Des résultats réels, des clients qui parlent pour nous.",
+        slots: 6
+    },
+
+    // Team Section
+    team: {
+        title: 'L\'équipe derrière vos <span class="text-blue-500">résultats</span>',
+        subtitle: "Des experts IA qui s'occupent de tout pour vous.",
+        members: [
+            { name: "Prénom Nom", role: "Poste" },
+            { name: "Prénom Nom", role: "Poste" },
+            { name: "Prénom Nom", role: "Poste" },
+            { name: "Prénom Nom", role: "Poste" }
+        ],
+        socials: [
+            { platform: "LinkedIn", label: "Pulseo AI sur LinkedIn", url: "#" },
+            { platform: "Instagram", label: "@pulseoai", url: "#" }
         ]
     },
 
@@ -161,7 +169,7 @@ const CONTENT = {
             },
             {
                 question: "Quelle différence avec le SEO Google classique ?",
-                answer: "Le SEO Google positionne votre site dans les résultats de recherche. Le référencement IA fait en sorte que ChatGPT et les autres IA vous recommandent directement à vos clients — sans qu'ils aient besoin de cliquer sur un lien. C'est le canal qui explose en ce moment."
+                answer: "Le SEO Google positionne votre site dans les résultats de recherche. Le référencement IA fait en sorte que ChatGPT et les autres IA vous recommandent directement à vos clients, sans qu'ils aient besoin de cliquer sur un lien. C'est le canal qui explose en ce moment."
             },
             {
                 question: "Est-ce que ça fonctionne pour mon secteur d'activité ?",
@@ -169,7 +177,7 @@ const CONTENT = {
             },
             {
                 question: "Comment vous travaillez avec nous ?",
-                answer: "On commence par un audit gratuit de votre visibilité IA. Ensuite on vous présente notre stratégie. Vous validez, on exécute. Vous n'avez rien à gérer — on s'occupe de tout de A à Z."
+                answer: "On commence par un audit gratuit de votre visibilité IA. Ensuite on vous présente notre stratégie. Vous validez, on exécute. Vous n'avez rien à gérer, on s'occupe de tout de A à Z."
             },
             {
                 question: "Pourquoi maintenant et pas plus tard ?",
@@ -180,8 +188,8 @@ const CONTENT = {
 
     // Contact / CTA Section
     contact: {
-        title: 'Prêt à reprendre le contrôle de <span class="text-blue-400">votre temps ?</span>',
-        description: "Réservez votre audit offert. En 30 minutes, nous identifions les tâches qui vous coûtent le plus cher et comment les automatiser.",
+        title: 'Prêt à apparaître sur <span class="text-blue-400">toutes les IA ?</span>',
+        description: "Réservez votre audit offert. En 30 minutes, on analyse votre visibilité IA et on vous montre comment capter plus de clients.",
         email: "contact@pulseoai.fr",
         location: "France",
         form: {
@@ -189,10 +197,10 @@ const CONTENT = {
             emailPlaceholder: "Votre email professionnel",
             selectDefault: "Quel est votre besoin principal ?",
             selectOptions: [
-                "Automatiser ma prospection",
-                "Mettre en place un agent IA / chatbot",
-                "Collecter et structurer des données",
-                "Autre besoin / Je ne sais pas encore"
+                "Audit de ma visibilité IA",
+                "Apparaître sur ChatGPT et les IA",
+                "Optimiser ma présence IA existante",
+                "Autre besoin, je ne sais pas encore"
             ],
             messagePlaceholder: "Décrivez brièvement votre situation...",
             submitText: "Réserver mon audit offert",
@@ -204,7 +212,7 @@ const CONTENT = {
 
     // SEO Footer
     seoFooter: {
-        title: "Pulseo AI — Référencement IA & Visibilité sur les intelligences artificielles",
+        title: "Pulseo AI · Référencement IA & Visibilité sur les intelligences artificielles",
         columns: [
             {
                 heading: "Référencement IA",
@@ -251,7 +259,7 @@ const CONTENT = {
                 ]
             }
         ],
-        description: "Pulseo AI est une agence française spécialisée dans le référencement IA et la visibilité sur les intelligences artificielles. Nous aidons les entreprises à apparaître dans les réponses de ChatGPT, Gemini, Perplexity, Grok, Claude et toutes les IA. Nos experts interviennent dans toute la France — Paris, Lyon, Marseille, Toulouse, Bordeaux, Nantes, Lille, Strasbourg et partout en remote — pour aider les dirigeants à capter plus de clients grâce à leur visibilité IA. Spécialités : GEO (Generative Engine Optimization), AEO (Answer Engine Optimization), référencement naturel, optimisation de présence IA, stratégie de domination IA."
+        description: "Pulseo AI est une agence française spécialisée dans le référencement IA et la visibilité sur les intelligences artificielles. Nous aidons les entreprises à apparaître dans les réponses de ChatGPT, Gemini, Perplexity, Grok, Claude et toutes les IA. Nos experts interviennent dans toute la France pour aider les dirigeants à capter plus de clients grâce à leur visibilité IA. Spécialités : GEO (Generative Engine Optimization), AEO (Answer Engine Optimization), référencement naturel, optimisation de présence IA, stratégie de domination IA."
     },
 
     // Legal — Mentions Légales
@@ -322,20 +330,6 @@ const CONTENT = {
                 content: "Pulseo AI se réserve le droit de modifier la présente politique de confidentialité à tout moment. La version en vigueur est celle accessible sur le site pulseoai.fr."
             }
         ]
-    },
-
-    // Chatbot Widget
-    chatbot: {
-        welcomeMessage: "Bonjour ! 👋 Je suis l'assistant Pulseo AI. Je peux vous aider à trouver la solution adaptée à votre besoin. Par où souhaitez-vous commencer ?",
-        inputPlaceholder: "Écrivez votre message...",
-        sendButtonLabel: "Envoyer",
-        headerTitle: "Pulseo AI",
-        headerSubtitle: "Assistant IA",
-        bubbleTooltip: "Discutez avec notre IA",
-        typingIndicator: "En train d'écrire...",
-        errorMessage: "Désolé, une erreur est survenue. Veuillez réessayer.",
-        apiEndpoint: "/api/chat",
-        poweredBy: "Propulsé par Pulseo AI"
     },
 
     // Footer

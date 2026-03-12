@@ -152,12 +152,14 @@ function injectContent() {
     const showcaseProjects = document.getElementById('showcase-projects');
     C.showcase.projects.forEach(project => {
         const div = document.createElement('div');
-        div.className = 'glass-card showcase-project';
+        div.className = 'glass-card showcase-project showcase-project-placeholder';
         div.innerHTML = `
-            <span class="showcase-project-tag">${project.tag}</span>
-            <h4 class="showcase-project-name">${project.name}</h4>
-            <p class="showcase-project-problem">${project.problem}</p>
-            <div class="showcase-project-result text-gradient">${project.result}</div>`;
+            <div class="project-placeholder-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                    <path d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3.75 21h16.5A2.25 2.25 0 0022.5 18.75V5.25A2.25 2.25 0 0020.25 3H3.75A2.25 2.25 0 001.5 5.25v13.5A2.25 2.25 0 003.75 21z"/>
+                </svg>
+            </div>
+            <p class="project-placeholder-label">${project.label}</p>`;
         showcaseProjects.appendChild(div);
     });
 
@@ -203,6 +205,60 @@ function injectContent() {
             <div class="faq-answer">${item.answer}</div>`;
         faqList.appendChild(div);
     });
+
+    // --- Testimonials ---
+    if (C.testimonials) {
+        document.getElementById('testimonials-title').innerHTML = C.testimonials.title;
+        document.getElementById('testimonials-subtitle').textContent = C.testimonials.subtitle;
+        const grid = document.getElementById('testimonials-grid');
+        for (let i = 0; i < C.testimonials.slots; i++) {
+            const card = document.createElement('div');
+            card.className = 'glass-card testimonial-slot';
+            card.innerHTML = `
+                <div class="testimonial-placeholder-icon">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                        <path d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3.75 21h16.5A2.25 2.25 0 0022.5 18.75V5.25A2.25 2.25 0 0020.25 3H3.75A2.25 2.25 0 001.5 5.25v13.5A2.25 2.25 0 003.75 21z"/>
+                    </svg>
+                </div>`;
+            grid.appendChild(card);
+        }
+    }
+
+    // --- Team ---
+    if (C.team) {
+        document.getElementById('team-title').innerHTML = C.team.title;
+        document.getElementById('team-subtitle').textContent = C.team.subtitle;
+        const teamGrid = document.getElementById('team-grid');
+        C.team.members.forEach(member => {
+            const card = document.createElement('div');
+            card.className = 'team-member';
+            card.innerHTML = `
+                <div class="team-avatar">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                        <path d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/>
+                    </svg>
+                </div>
+                <p class="team-name">${member.name}</p>
+                <p class="team-role">${member.role}</p>`;
+            teamGrid.appendChild(card);
+        });
+        const socialsEl = document.getElementById('team-socials');
+        C.team.socials.forEach(s => {
+            const a = document.createElement('a');
+            a.href = s.url;
+            a.className = 'team-social-link';
+            a.target = '_blank';
+            a.rel = 'noopener';
+            if (s.platform === 'LinkedIn') {
+                a.innerHTML = `<svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                <span>${s.label}</span>`;
+            } else if (s.platform === 'Instagram') {
+                a.innerHTML = `<svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                <span>${s.label}</span>`;
+            }
+            socialsEl.appendChild(a);
+        });
+    }
 
     // --- Contact ---
     document.getElementById('contact-title').innerHTML = C.contact.title;
@@ -497,13 +553,16 @@ function initCounterAnimation() {
                 counters.forEach(counter => {
                     const target = parseInt(counter.getAttribute('data-target'));
                     const suffix = counter.getAttribute('data-suffix') || '';
+
+                    // Skip animation for static values (target = 0)
+                    if (target === 0) return;
+
                     const duration = 2000;
                     const start = performance.now();
 
                     function update(now) {
                         const elapsed = now - start;
                         const progress = Math.min(elapsed / duration, 1);
-                        // Ease out cubic
                         const eased = 1 - Math.pow(1 - progress, 3);
                         const current = Math.round(eased * target);
                         counter.textContent = current + suffix;
