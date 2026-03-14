@@ -155,9 +155,9 @@ const CONTENT = {
         title: 'Ils nous font <span class="text-blue-500">confiance</span>',
         subtitle: "Des résultats réels, des clients qui parlent pour nous.",
         slots: [
-            { image: "/whatsapp-hotel.jpg", alt: "Avis client hôtel" },
-            { image: "/whatsapp-restaurant.jpg", alt: "Avis client restaurant" },
-            { image: "/whatsapp-boutique.jpg", alt: "Avis client boutique" }
+            { image: "", alt: "Avis client hôtel" },
+            { image: "", alt: "Avis client restaurant" },
+            { image: "", alt: "Avis client boutique" }
         ]
     },
 
