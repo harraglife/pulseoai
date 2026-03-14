@@ -155,9 +155,9 @@ const CONTENT = {
         title: 'Ils nous font <span class="text-blue-500">confiance</span>',
         subtitle: "Des résultats réels, des clients qui parlent pour nous.",
         slots: [
-            { line1: "Client satisfait de nos résultats.", line2: "Visibilité IA obtenue en moins d'un mois." },
-            { line1: "Client satisfait de nos résultats.", line2: "Visibilité IA obtenue en moins d'un mois." },
-            { line1: "Client satisfait de nos résultats.", line2: "Visibilité IA obtenue en moins d'un mois." }
+            { image: "/whatsapp-hotel.jpg", alt: "Avis client hôtel" },
+            { image: "/whatsapp-restaurant.jpg", alt: "Avis client restaurant" },
+            { image: "/whatsapp-boutique.jpg", alt: "Avis client boutique" }
         ]
     },
 
