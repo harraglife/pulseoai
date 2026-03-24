@@ -267,13 +267,13 @@ function injectContent() {
         <svg viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
         <span>${C.contact.email}</span>`;
     contactInfo.appendChild(emailItem);
-    // Location
-    const locItem = document.createElement('div');
-    locItem.className = 'contact-info-item';
-    locItem.innerHTML = `
+    // Address
+    const addrItem = document.createElement('div');
+    addrItem.className = 'contact-info-item';
+    addrItem.innerHTML = `
         <svg viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
-        <span>${C.contact.location}</span>`;
-    contactInfo.appendChild(locItem);
+        <span>${C.contact.address}</span>`;
+    contactInfo.appendChild(addrItem);
 
     // Contact form
     const form = document.getElementById('contact-form');

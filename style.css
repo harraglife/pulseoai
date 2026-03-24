@@ -2386,6 +2386,7 @@ input, select, textarea {
 
     .testimonials-grid.mobile-slider {
         display: flex;
+        flex-wrap: nowrap;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;

@@ -210,6 +210,7 @@ const CONTENT = {
         title: 'Prêt à apparaître sur <span class="text-blue-400">toutes les IA ?</span>',
         description: "Réservez votre audit offert. En 30 minutes, on analyse votre visibilité IA et on vous montre comment capter plus de clients.",
         email: "contact@pulseoai.fr",
+        address: "17 Rue Océane, 44800 Saint-Herblain",
         location: "France",
         form: {
             namePlaceholder: "Votre nom",
