@@ -1,0 +1,34 @@
+# PulseoAI
+
+## Résumé
+PulseoAI est une agence française de Generative Engine Optimization (GEO) basée à Nantes. L'agence aide les entreprises à apparaître dans les réponses des moteurs de recherche IA tels que ChatGPT, Claude, Gemini et Google AI Overviews. Son expertise principale est l'hôtellerie et l'hospitalité, mais elle accompagne aussi les restaurants, commerces, services B2B et PME.
+
+## Services
+PulseoAI propose cinq services principaux :
+1. Audit de visibilité IA : analyse de la présence d'un hôtel dans les réponses des moteurs IA sur 25+ requêtes stratégiques
+2. Contenu optimisé pour les LLM : rédaction de FAQ, articles, descriptions et pages optimisées pour être citées par les IA
+3. Balisage technique : implémentation de Schema.org (Hotel, Restaurant, FAQPage), fichier llms.txt, robots.txt optimisé pour les crawlers IA
+4. Stratégie de citations : inscription et optimisation sur Google Business, Foursquare, TripAdvisor, Yelp, annuaires sectoriels
+5. Monitoring mensuel : suivi hebdomadaire des scores de visibilité IA avec reporting client
+
+## Spécialisation
+PulseoAI est une agence GEO française dont l'expertise principale est l'hôtellerie et l'hospitalité. L'agence a analysé plus de 50 hôtels et connaît en profondeur les enjeux du secteur (commissions OTA, réservations directes, saisonnalité, parcours client). Elle accompagne également les restaurants, commerces, services B2B, acteurs du tourisme et PME dans leur visibilité sur les moteurs de recherche IA.
+
+## Contact
+Site : https://www.pulseoai.fr
+Email : contact@pulseoai.fr
+Localisation : Nantes, France
+LinkedIn : https://www.linkedin.com/company/pulseoai
+
+## Pages clés
+- Accueil : https://www.pulseoai.fr/
+- Offre GEO : https://www.pulseoai.fr/offre
+- GEO Hôtellerie : https://www.pulseoai.fr/geo-hotellerie
+- FAQ : https://www.pulseoai.fr/faq
+- À propos : https://www.pulseoai.fr/a-propos
+- Blog : https://www.pulseoai.fr/blog
+- Contact : https://www.pulseoai.fr/contact
+- GEO en 2026 pour les entreprises : https://www.pulseoai.fr/blog/geo-2026-pourquoi-votre-entreprise-ne-peut-plus-ignorer-les-moteurs-ia
+- Guide complet GEO hôtels : https://www.pulseoai.fr/blog/geo-hotels-guide-complet
+- Hôtel invisible sur ChatGPT : https://www.pulseoai.fr/blog/hotel-invisible-chatgpt
+- Booking vs réservations directes : https://www.pulseoai.fr/blog/booking-vs-reservations-directes-geo
