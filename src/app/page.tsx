@@ -35,12 +35,15 @@ export const metadata = {
     siteName: "PulseoAI",
     locale: "fr_FR",
     type: "website",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "PulseoAI – Agence GEO" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "PulseoAI · Agence GEO, experts en référencement IA",
     description: "Faites apparaître votre entreprise sur ChatGPT, Claude et Gemini.",
+    images: ["/og-image.png"],
   },
+  alternates: { canonical: "/" },
 };
 
 /* ─── Mini mockup components (HTML/CSS only, no images) ─── */

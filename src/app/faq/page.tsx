@@ -15,13 +15,16 @@ export const metadata: Metadata = {
     siteName: "PulseoAI",
     locale: "fr_FR",
     type: "website",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "PulseoAI – FAQ GEO" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "FAQ : le GEO expliqué aux hôteliers · PulseoAI",
     description:
       "30+ réponses sur le référencement IA pour les hôtels. Qu'est ce que le GEO, combien ça coûte, quels résultats attendre.",
+    images: ["/og-image.png"],
   },
+  alternates: { canonical: "/faq" },
 };
 
 const allFaqItems = faqCategories.flatMap((cat) => cat.items);

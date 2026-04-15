@@ -13,13 +13,16 @@ export const metadata: Metadata = {
       "Guide complet du GEO pour les hôtels. Les 5 actions concrètes pour rendre votre hôtel visible sur ChatGPT, Gemini et Claude.",
     url: "https://www.pulseoai.fr/blog/geo-hotels-guide-complet",
     type: "article",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "GEO hôtels : le guide complet 2026" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "GEO hôtels : le guide complet 2026",
     description:
       "Guide complet du GEO pour les hôtels. Les 5 actions concrètes pour rendre votre hôtel visible sur ChatGPT, Gemini et Claude.",
+    images: ["/og-image.png"],
   },
+  alternates: { canonical: "/blog/geo-hotels-guide-complet" },
 };
 
 const blogPostingJsonLd = {
@@ -30,9 +33,10 @@ const blogPostingJsonLd = {
   datePublished: "2026-04-02",
   dateModified: "2026-04-02",
   author: {
-    "@type": "Organization",
-    name: "PulseoAI",
-    url: "https://www.pulseoai.fr",
+    "@type": "Person",
+    name: "Romain Duclos",
+    jobTitle: "Fondateur & Expert GEO",
+    url: "https://www.pulseoai.fr/a-propos",
   },
   publisher: {
     "@type": "Organization",
@@ -43,6 +47,7 @@ const blogPostingJsonLd = {
       url: "https://www.pulseoai.fr/logo.png",
     },
   },
+  image: "https://www.pulseoai.fr/og-image.png",
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id": "https://www.pulseoai.fr/blog/geo-hotels-guide-complet",

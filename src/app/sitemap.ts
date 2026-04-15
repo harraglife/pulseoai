@@ -65,6 +65,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: `${baseUrl}/blog/geo-restaurants-guide-visibilite-ia`,
+      lastModified: new Date("2026-04-08"),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/blog/geo-commerces-pme-visibilite-locale`,
+      lastModified: new Date("2026-04-10"),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/blog/schema-org-guide-complet-geo`,
+      lastModified: new Date("2026-04-12"),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/blog/llms-txt-guide-pratique`,
+      lastModified: new Date("2026-04-05"),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
       url: `${baseUrl}/contact`,
       lastModified: new Date(),
       changeFrequency: "monthly",

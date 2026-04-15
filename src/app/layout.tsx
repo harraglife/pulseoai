@@ -20,6 +20,9 @@ export const metadata: Metadata = {
   description:
     "Faites apparaître votre entreprise sur ChatGPT, Claude et Gemini. PulseoAI, agence GEO à Nantes. Experts hôtellerie, restauration, PME.",
   metadataBase: new URL("https://www.pulseoai.fr"),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
     locale: "fr_FR",
@@ -42,6 +45,7 @@ export const metadata: Metadata = {
     title: "PulseoAI · Agence GEO, experts en référencement IA",
     description:
       "Faites apparaître votre entreprise sur ChatGPT, Claude et Gemini. PulseoAI, agence GEO à Nantes. Experts hôtellerie, restauration, PME.",
+    images: ["/og-image.png"],
   },
   icons: {
     icon: [

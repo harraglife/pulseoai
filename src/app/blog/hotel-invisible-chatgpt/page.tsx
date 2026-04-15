@@ -6,20 +6,23 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "Hôtel invisible sur ChatGPT : solutions",
   description:
-    "Votre hôtel n'apparaît pas sur ChatGPT ? Découvrez les 5 causes principales de cette invisibilité et les solutions concrètes pour y remédier.",
+    "Votre hôtel n'apparaît pas sur ChatGPT ? Les 5 causes de cette invisibilité et les solutions concrètes pour y remédier.",
   openGraph: {
     title: "Hôtel invisible sur ChatGPT : solutions",
     description:
-      "Votre hôtel n'apparaît pas sur ChatGPT ? Découvrez les 5 causes principales de cette invisibilité et les solutions concrètes pour y remédier.",
+      "Votre hôtel n'apparaît pas sur ChatGPT ? Les 5 causes de cette invisibilité et les solutions concrètes pour y remédier.",
     url: "https://www.pulseoai.fr/blog/hotel-invisible-chatgpt",
     type: "article",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Hôtel invisible sur ChatGPT : solutions" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Hôtel invisible sur ChatGPT : solutions",
     description:
       "Votre hôtel n'apparaît pas sur ChatGPT ? Découvrez les 5 causes principales de cette invisibilité et les solutions concrètes pour y remédier.",
+    images: ["/og-image.png"],
   },
+  alternates: { canonical: "/blog/hotel-invisible-chatgpt" },
 };
 
 const blogPostingJsonLd = {
@@ -30,9 +33,10 @@ const blogPostingJsonLd = {
   datePublished: "2026-03-28",
   dateModified: "2026-03-28",
   author: {
-    "@type": "Organization",
-    name: "PulseoAI",
-    url: "https://www.pulseoai.fr",
+    "@type": "Person",
+    name: "Romain Duclos",
+    jobTitle: "Fondateur & Expert GEO",
+    url: "https://www.pulseoai.fr/a-propos",
   },
   publisher: {
     "@type": "Organization",
@@ -43,6 +47,7 @@ const blogPostingJsonLd = {
       url: "https://www.pulseoai.fr/logo.png",
     },
   },
+  image: "https://www.pulseoai.fr/og-image.png",
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id": "https://www.pulseoai.fr/blog/hotel-invisible-chatgpt",

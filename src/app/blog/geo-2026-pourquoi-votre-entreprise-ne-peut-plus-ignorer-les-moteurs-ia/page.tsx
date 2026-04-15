@@ -6,20 +6,23 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "GEO en 2026 : pourquoi investir maintenant",
   description:
-    "En 2026, les moteurs IA g\u00e9n\u00e8rent plus de trafic que jamais. D\u00e9couvrez pourquoi le GEO (Generative Engine Optimization) est devenu indispensable et comment positionner votre entreprise dans les r\u00e9ponses de ChatGPT, Gemini et Claude.",
+    "En 2026, le GEO est devenu indispensable. D\u00e9couvrez pourquoi et comment positionner votre entreprise sur ChatGPT, Gemini et Claude.",
   openGraph: {
     title: "GEO en 2026 : pourquoi investir maintenant",
     description:
       "En 2026, les moteurs IA g\u00e9n\u00e8rent plus de trafic que jamais. D\u00e9couvrez pourquoi le GEO est devenu indispensable pour votre entreprise.",
     url: "https://www.pulseoai.fr/blog/geo-2026-pourquoi-votre-entreprise-ne-peut-plus-ignorer-les-moteurs-ia",
     type: "article",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "GEO en 2026 : pourquoi investir maintenant" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "GEO en 2026 : pourquoi investir maintenant",
     description:
       "En 2026, les moteurs IA g\u00e9n\u00e8rent plus de trafic que jamais. D\u00e9couvrez pourquoi le GEO est devenu indispensable pour votre entreprise.",
+    images: ["/og-image.png"],
   },
+  alternates: { canonical: "/blog/geo-2026-pourquoi-votre-entreprise-ne-peut-plus-ignorer-les-moteurs-ia" },
 };
 
 const blogPostingJsonLd = {
@@ -30,9 +33,10 @@ const blogPostingJsonLd = {
   datePublished: "2026-04-15",
   dateModified: "2026-04-15",
   author: {
-    "@type": "Organization",
-    name: "PulseoAI",
-    url: "https://www.pulseoai.fr",
+    "@type": "Person",
+    name: "Romain Duclos",
+    jobTitle: "Fondateur & Expert GEO",
+    url: "https://www.pulseoai.fr/a-propos",
   },
   publisher: {
     "@type": "Organization",
@@ -43,6 +47,7 @@ const blogPostingJsonLd = {
       url: "https://www.pulseoai.fr/logo.png",
     },
   },
+  image: "https://www.pulseoai.fr/og-image.png",
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id":

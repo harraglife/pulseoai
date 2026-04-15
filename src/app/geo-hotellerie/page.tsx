@@ -30,12 +30,15 @@ export const metadata: Metadata = {
       "Pourquoi les hôtels doivent investir dans le GEO. Réduisez votre dépendance à Booking, gagnez des réservations directes via les IA.",
     url: "https://www.pulseoai.fr/geo-hotellerie",
     type: "website",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "PulseoAI – GEO Hôtellerie" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "GEO pour l'hôtellerie : apparaître sur ChatGPT",
     description: "Pourquoi les hôtels doivent investir dans le GEO. Réduisez votre dépendance à Booking via les IA.",
+    images: ["/og-image.png"],
   },
+  alternates: { canonical: "/geo-hotellerie" },
 };
 
 const jsonLd = {

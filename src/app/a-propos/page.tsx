@@ -25,13 +25,16 @@ export const metadata: Metadata = {
     siteName: "PulseoAI",
     locale: "fr_FR",
     type: "website",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "PulseoAI – À propos" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "À propos de PulseoAI \u00b7 Agence GEO Nantes",
     description:
       "Découvrez l\u2019équipe PulseoAI. Romain et Sofiane aident les entreprises à devenir visibles sur les moteurs de recherche IA.",
+    images: ["/og-image.png"],
   },
+  alternates: { canonical: "/a-propos" },
 };
 
 const jsonLdBreadcrumb = {

@@ -30,13 +30,16 @@ export const metadata: Metadata = {
     siteName: "PulseoAI",
     locale: "fr_FR",
     type: "website",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "PulseoAI – Offre GEO" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Offre GEO : référencement IA pour entreprises · PulseoAI",
     description:
       "Audit IA, contenu, balisage technique, citations, monitoring. Notre méthode GEO pour hôtels, restaurants, commerces et PME.",
+    images: ["/og-image.png"],
   },
+  alternates: { canonical: "/offre" },
 };
 
 const jsonLdBreadcrumb = {

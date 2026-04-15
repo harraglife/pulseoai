@@ -6,20 +6,23 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "Booking vs réservations directes : le GEO",
   description:
-    "Les commissions OTA pèsent sur la rentabilité des hôtels. Découvrez comment le GEO permet de générer des réservations directes via ChatGPT et les moteurs IA.",
+    "Commissions OTA vs réservations directes. Comment le GEO permet aux hôtels de capter des clients via ChatGPT et les moteurs IA.",
   openGraph: {
     title: "Booking vs réservations directes : le GEO",
     description:
-      "Les commissions OTA pèsent sur la rentabilité des hôtels. Découvrez comment le GEO permet de générer des réservations directes via ChatGPT et les moteurs IA.",
+      "Commissions OTA vs réservations directes. Comment le GEO permet aux hôtels de capter des clients via ChatGPT et les moteurs IA.",
     url: "https://www.pulseoai.fr/blog/booking-vs-reservations-directes-geo",
     type: "article",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Booking vs réservations directes : le GEO" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Booking vs réservations directes : le GEO",
     description:
-      "Les commissions OTA pèsent sur la rentabilité des hôtels. Découvrez comment le GEO permet de générer des réservations directes via ChatGPT et les moteurs IA.",
+      "Commissions OTA vs réservations directes. Comment le GEO permet aux hôtels de capter des clients via ChatGPT et les moteurs IA.",
+    images: ["/og-image.png"],
   },
+  alternates: { canonical: "/blog/booking-vs-reservations-directes-geo" },
 };
 
 const blogPostingJsonLd = {
@@ -30,9 +33,10 @@ const blogPostingJsonLd = {
   datePublished: "2026-03-20",
   dateModified: "2026-03-20",
   author: {
-    "@type": "Organization",
-    name: "PulseoAI",
-    url: "https://www.pulseoai.fr",
+    "@type": "Person",
+    name: "Romain Duclos",
+    jobTitle: "Fondateur & Expert GEO",
+    url: "https://www.pulseoai.fr/a-propos",
   },
   publisher: {
     "@type": "Organization",
@@ -43,6 +47,7 @@ const blogPostingJsonLd = {
       url: "https://www.pulseoai.fr/logo.png",
     },
   },
+  image: "https://www.pulseoai.fr/og-image.png",
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id": "https://www.pulseoai.fr/blog/booking-vs-reservations-directes-geo",

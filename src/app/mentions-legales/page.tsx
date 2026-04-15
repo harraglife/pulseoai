@@ -12,13 +12,16 @@ export const metadata: Metadata = {
       "Mentions légales du site pulseoai.fr. PulseoAI SAS, RCS Nantes 103 074 605.",
     url: "https://www.pulseoai.fr/mentions-legales",
     type: "website",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "PulseoAI – Mentions légales" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Mentions légales",
     description:
       "Mentions légales du site pulseoai.fr. PulseoAI SAS, RCS Nantes 103 074 605.",
+    images: ["/og-image.png"],
   },
+  alternates: { canonical: "/mentions-legales" },
 };
 
 const jsonLd = {

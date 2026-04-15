@@ -13,13 +13,16 @@ export const metadata: Metadata = {
       "Testez gratuitement la visibilité de votre entreprise sur ChatGPT, Claude et Gemini. Recevez votre rapport en 48h.",
     url: "https://www.pulseoai.fr/contact",
     type: "website",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "PulseoAI – Audit GEO gratuit" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Audit GEO gratuit pour votre entreprise",
     description:
       "Testez gratuitement la visibilité de votre entreprise sur ChatGPT, Claude et Gemini. Recevez votre rapport en 48h.",
+    images: ["/og-image.png"],
   },
+  alternates: { canonical: "/contact" },
 };
 
 const jsonLd = {
