@@ -127,7 +127,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-full flex flex-col bg-[color:var(--background)] text-white font-sans pb-[68px] lg:pb-0">
+      <body className="min-h-full flex flex-col bg-[color:var(--background)] text-[color:var(--foreground)] font-sans pb-[68px] lg:pb-0">
         <div className="grain-overlay" aria-hidden="true" />
         <Header />
         <main className="relative z-[2] flex-1">{children}</main>

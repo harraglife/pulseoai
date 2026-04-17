@@ -43,7 +43,7 @@ export function Header() {
     <>
       <header
         data-scrolled={scrolled ? "true" : "false"}
-        className="sticky top-0 z-50 w-full border-b border-white/[0.06] bg-[rgba(11,15,30,0.55)] backdrop-blur-[18px] supports-[backdrop-filter]:bg-[rgba(11,15,30,0.55)] data-[scrolled=true]:bg-[rgba(11,15,30,0.82)] data-[scrolled=true]:border-white/[0.08] transition-[background-color,border-color] duration-200"
+        className="nav-header sticky top-0 z-50 w-full"
       >
         <div className="mx-auto max-w-[1180px] px-6">
           <div className="flex h-16 items-center justify-between lg:h-[72px]">
@@ -57,7 +57,7 @@ export function Header() {
                 className="h-9 w-9 lg:h-10 lg:w-10 transition-transform duration-200 group-hover/logo:scale-[1.04]"
                 priority
               />
-              <span className="text-xl lg:text-[22px] font-semibold tracking-tight text-white">
+              <span className="text-xl lg:text-[22px] font-semibold tracking-tight text-[color:var(--text-primary)]">
                 Pulseo<span className="gradient-word">AI</span>
               </span>
             </Link>
@@ -68,7 +68,7 @@ export function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="relative text-[13.5px] font-medium text-white/70 transition-colors duration-150 hover:text-white focus-visible:outline-none focus-visible:text-white"
+                  className="relative text-[13.5px] font-medium text-[color:var(--text-secondary)] transition-colors duration-150 hover:text-[color:var(--text-primary)] focus-visible:outline-none focus-visible:text-[color:var(--text-primary)]"
                 >
                   {item.name}
                 </Link>
@@ -87,7 +87,7 @@ export function Header() {
             {/* Mobile Hamburger - min 44x44 touch target */}
             <button
               onClick={() => setOpen(!open)}
-              className="lg:hidden flex items-center justify-center w-11 h-11 -mr-2 rounded-lg text-white/90 active:bg-white/[0.06] transition-colors"
+              className="lg:hidden flex items-center justify-center w-11 h-11 -mr-2 rounded-lg text-[color:var(--text-primary)] active:bg-[rgba(15,23,42,0.04)] transition-colors"
               aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
               aria-expanded={open}
             >
@@ -100,7 +100,7 @@ export function Header() {
       {/* Full-screen mobile overlay */}
       {open && (
         <div
-          className="fixed inset-0 z-[45] bg-[#0B0F1E] lg:hidden flex flex-col"
+          className="fixed inset-0 z-[45] bg-white lg:hidden flex flex-col"
           style={{ top: "64px" }}
         >
           <nav className="flex-1 flex flex-col px-6 pt-6 pb-8 overflow-y-auto">
@@ -108,7 +108,7 @@ export function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="flex items-center text-lg font-medium text-white py-4 border-b border-white/[0.06] active:text-[#00C8E0] transition-colors min-h-[48px]"
+                className="flex items-center text-lg font-medium text-[color:var(--text-primary)] py-4 border-b border-[rgba(15,23,42,0.06)] active:text-[#2547D0] transition-colors min-h-[48px]"
                 onClick={() => setOpen(false)}
               >
                 {item.name}

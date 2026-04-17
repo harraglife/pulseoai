@@ -3,11 +3,8 @@ import { cn } from "@/lib/utils";
 
 /**
  * BrowserWindow — chrome wrapper for ChatGPT/Gemini/Google AI Overview mockups.
- * Renders a dark navy window with the three traffic-light dots and an optional
- * URL pill, then yields its children into the content area.
- *
- * Children receive no extra padding — pass your own mockup with its own spacing.
- * The wrapper is purely presentational (no interactivity) and safe in RSC.
+ * Light glass chrome with the three traffic-light dots and an optional URL pill.
+ * Purely presentational, safe in RSC.
  */
 export interface BrowserWindowProps extends React.HTMLAttributes<HTMLDivElement> {
   /** Fake URL shown in the chrome's address bar. Omit to hide the URL pill. */
@@ -40,12 +37,12 @@ export function BrowserWindow({
         {(url || label) && (
           <div className="ml-3 flex flex-1 items-center gap-2">
             {url && (
-              <div className="flex-1 max-w-[360px] truncate rounded-full border border-white/5 bg-white/[0.03] px-3 py-1 font-mono text-[11px] text-white/45">
+              <div className="flex-1 max-w-[360px] truncate rounded-full border border-[rgba(15,23,42,0.08)] bg-white px-3 py-1 font-mono text-[11px] text-[rgba(11,15,30,0.52)]">
                 {url}
               </div>
             )}
             {(label || labelIcon) && (
-              <div className="ml-auto flex items-center gap-1.5 text-[11px] font-medium text-white/60">
+              <div className="ml-auto flex items-center gap-1.5 text-[11px] font-medium text-[rgba(11,15,30,0.60)]">
                 {labelIcon}
                 {label}
               </div>

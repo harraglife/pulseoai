@@ -3,11 +3,10 @@ import * as React from "react"
 import { cn } from "@/lib/utils"
 
 /**
- * Card root — Stripe/Linear-tier glassmorphism.
- * `variant="glass"` (default on redesigned pages) adds backdrop blur
- * and a hover glow that lifts the card 2px. `variant="plain"` keeps the
- * legacy shadcn look for any surface that shouldn't blur (e.g. inside
- * dense tables).
+ * Card root — Stripe/Linear-tier glassmorphism on a light canvas.
+ * `variant="glass"` (default) adds soft shadow + hairline border that lifts
+ * the card 2px on hover with an indigo glow ring. `variant="plain"` keeps the
+ * legacy shadcn look for any surface that shouldn't blur.
  */
 function Card({
   className,
@@ -24,9 +23,9 @@ function Card({
       data-size={size}
       data-variant={variant}
       className={cn(
-        "group/card flex flex-col gap-4 overflow-hidden rounded-xl py-4 text-sm text-card-foreground has-data-[slot=card-footer]:pb-0 has-[>img:first-child]:pt-0 data-[size=sm]:gap-3 data-[size=sm]:py-3 data-[size=sm]:has-data-[slot=card-footer]:pb-0 *:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl transition-[transform,border-color,box-shadow,background-color] duration-200 ease-out",
+        "group/card flex flex-col gap-4 overflow-hidden rounded-xl py-4 text-sm text-[color:var(--card-foreground)] has-data-[slot=card-footer]:pb-0 has-[>img:first-child]:pt-0 data-[size=sm]:gap-3 data-[size=sm]:py-3 data-[size=sm]:has-data-[slot=card-footer]:pb-0 *:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl transition-[transform,border-color,box-shadow,background-color] duration-200 ease-out",
         variant === "glass" &&
-          "glass hover:-translate-y-0.5 hover:border-[#00C8E0]/35 hover:shadow-[0_16px_60px_-8px_rgba(0,0,0,0.55),0_0_40px_-4px_rgba(0,200,224,0.2)]",
+          "glass hover:-translate-y-0.5 hover:border-[rgba(37,71,208,0.28)] hover:shadow-[0_1px_2px_0_rgba(15,23,42,0.06),0_18px_40px_-12px_rgba(37,71,208,0.22),0_0_0_1px_rgba(37,71,208,0.10)]",
         variant === "plain" && "bg-card ring-1 ring-foreground/10",
         className
       )}

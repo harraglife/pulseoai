@@ -103,9 +103,9 @@ export function ResultsCarousel() {
       onMouseLeave={() => setPaused(false)}
       style={{ touchAction: "pan-y" }}
     >
-      {/* Fade edges (dark) */}
-      <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-10 bg-[linear-gradient(90deg,#0B0F1E_0%,rgba(11,15,30,0)_100%)] sm:w-24" />
-      <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-10 bg-[linear-gradient(270deg,#0B0F1E_0%,rgba(11,15,30,0)_100%)] sm:w-24" />
+      {/* Fade edges (white) */}
+      <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-10 bg-[linear-gradient(90deg,#FFFFFF_0%,rgba(255,255,255,0)_100%)] sm:w-24" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-10 bg-[linear-gradient(270deg,#FFFFFF_0%,rgba(255,255,255,0)_100%)] sm:w-24" />
 
       <div
         ref={trackRef}
@@ -114,10 +114,10 @@ export function ResultsCarousel() {
         {items.map((item, i) => (
           <div
             key={i}
-            className="glass group/result w-[280px] shrink-0 overflow-hidden rounded-2xl transition-all duration-200 ease-out hover:-translate-y-0.5 hover:border-[#00C8E0]/30 hover:shadow-[0_16px_60px_-8px_rgba(0,0,0,0.55),0_0_40px_-4px_rgba(0,200,224,0.18)] sm:w-[400px]"
+            className="glass group/result w-[280px] shrink-0 overflow-hidden rounded-2xl transition-all duration-200 ease-out hover:-translate-y-0.5 hover:border-[rgba(37,71,208,0.25)] hover:shadow-[0_1px_2px_0_rgba(15,23,42,0.06),0_20px_50px_-12px_rgba(37,71,208,0.22),0_0_0_1px_rgba(37,71,208,0.10)] sm:w-[400px]"
           >
             {/* Screenshot */}
-            <div className="border-b border-white/[0.06]">
+            <div className="border-b border-[rgba(15,23,42,0.06)]">
               <img
                 src={item.image}
                 alt={`Résultat client ${item.name}`}
@@ -130,27 +130,27 @@ export function ResultsCarousel() {
             <div className="px-4 py-4 sm:px-5 sm:py-5">
               {/* Name + NDA badge */}
               <div className="flex items-center gap-2.5 mb-3">
-                <h3 className="text-[11px] font-semibold tracking-[0.14em] uppercase text-white/80">
+                <h3 className="text-[11px] font-semibold tracking-[0.14em] uppercase text-[color:var(--text-primary)]">
                   {item.name}
                 </h3>
                 {item.nda && (
-                  <span className="rounded border border-white/[0.08] bg-white/[0.04] px-1.5 py-0.5 text-[10px] font-medium text-white/45">
+                  <span className="rounded border border-[rgba(15,23,42,0.10)] bg-[rgba(15,23,42,0.04)] px-1.5 py-0.5 text-[10px] font-medium text-[rgba(11,15,30,0.55)]">
                     NDA
                   </span>
                 )}
               </div>
 
               {/* Description */}
-              <p className="text-[13px] leading-relaxed text-white/55 mb-4">
+              <p className="text-[13px] leading-relaxed text-[color:var(--text-secondary)] mb-4">
                 {item.description}
               </p>
 
               {/* Stats row */}
-              <div className="flex items-start gap-0 divide-x divide-white/[0.08]">
+              <div className="flex items-start gap-0 divide-x divide-[rgba(15,23,42,0.08)]">
                 {item.stats.map((stat, j) => (
                   <div key={j} className={`flex-1 ${j > 0 ? "pl-3" : ""} ${j < 2 ? "pr-3" : ""}`}>
                     <p className="text-base font-bold sm:text-xl gradient-word">{stat.value}</p>
-                    <p className="text-[10px] leading-tight text-white/45 sm:text-[11px]">{stat.label}</p>
+                    <p className="text-[10px] leading-tight text-[rgba(11,15,30,0.50)] sm:text-[11px]">{stat.label}</p>
                   </div>
                 ))}
               </div>
