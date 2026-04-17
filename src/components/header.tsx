@@ -17,6 +17,7 @@ const navigation = [
 
 export function Header() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   // Lock body scroll when menu is open
   useEffect(() => {
@@ -30,23 +31,34 @@ export function Header() {
     };
   }, [open]);
 
+  // Header solidifies after a tiny scroll
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 4);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
     <>
-      <header className="sticky top-0 z-50 w-full border-b border-gray-100 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
-        <div className="mx-auto max-w-[1100px] px-6">
-          <div className="flex h-16 items-center justify-between lg:h-20">
+      <header
+        data-scrolled={scrolled ? "true" : "false"}
+        className="sticky top-0 z-50 w-full border-b border-white/[0.06] bg-[rgba(11,15,30,0.55)] backdrop-blur-[18px] supports-[backdrop-filter]:bg-[rgba(11,15,30,0.55)] data-[scrolled=true]:bg-[rgba(11,15,30,0.82)] data-[scrolled=true]:border-white/[0.08] transition-[background-color,border-color] duration-200"
+      >
+        <div className="mx-auto max-w-[1180px] px-6">
+          <div className="flex h-16 items-center justify-between lg:h-[72px]">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2">
+            <Link href="/" className="flex items-center gap-2 group/logo">
               <Image
                 src="/logo.png"
                 alt="PulseoAI"
                 width={40}
                 height={40}
-                className="h-10 w-10"
+                className="h-9 w-9 lg:h-10 lg:w-10 transition-transform duration-200 group-hover/logo:scale-[1.04]"
                 priority
               />
-              <span className="text-2xl font-semibold text-navy">
-                Pulseo<span className="text-cyan">AI</span>
+              <span className="text-xl lg:text-[22px] font-semibold tracking-tight text-white">
+                Pulseo<span className="gradient-word">AI</span>
               </span>
             </Link>
 
@@ -56,7 +68,7 @@ export function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-sm font-medium text-navy/70 transition-colors hover:text-cyan"
+                  className="relative text-[13.5px] font-medium text-white/70 transition-colors duration-150 hover:text-white focus-visible:outline-none focus-visible:text-white"
                 >
                   {item.name}
                 </Link>
@@ -64,9 +76,9 @@ export function Header() {
             </nav>
 
             {/* CTA Desktop */}
-            <div className="hidden lg:flex lg:items-center lg:gap-4">
+            <div className="hidden lg:flex lg:items-center lg:gap-3">
               <Link href="/contact">
-                <Button className="bg-cyan hover:bg-cyan-dark text-white font-semibold px-6 rounded-full">
+                <Button variant="cta" size="cta">
                   Audit GEO gratuit
                 </Button>
               </Link>
@@ -75,7 +87,7 @@ export function Header() {
             {/* Mobile Hamburger - min 44x44 touch target */}
             <button
               onClick={() => setOpen(!open)}
-              className="lg:hidden flex items-center justify-center w-11 h-11 -mr-2 rounded-lg text-navy active:bg-gray-100 transition-colors"
+              className="lg:hidden flex items-center justify-center w-11 h-11 -mr-2 rounded-lg text-white/90 active:bg-white/[0.06] transition-colors"
               aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
               aria-expanded={open}
             >
@@ -87,13 +99,16 @@ export function Header() {
 
       {/* Full-screen mobile overlay */}
       {open && (
-        <div className="fixed inset-0 z-[45] bg-white lg:hidden flex flex-col" style={{ top: "64px" }}>
+        <div
+          className="fixed inset-0 z-[45] bg-[#0B0F1E] lg:hidden flex flex-col"
+          style={{ top: "64px" }}
+        >
           <nav className="flex-1 flex flex-col px-6 pt-6 pb-8 overflow-y-auto">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="flex items-center text-lg font-medium text-navy py-4 border-b border-gray-100 active:text-cyan transition-colors min-h-[48px]"
+                className="flex items-center text-lg font-medium text-white py-4 border-b border-white/[0.06] active:text-[#00C8E0] transition-colors min-h-[48px]"
                 onClick={() => setOpen(false)}
               >
                 {item.name}
@@ -103,7 +118,7 @@ export function Header() {
             {/* CTA in menu, at bottom */}
             <div className="mt-auto pt-8">
               <Link href="/contact" onClick={() => setOpen(false)}>
-                <Button className="w-full h-14 bg-cyan hover:bg-cyan-dark text-white font-semibold rounded-full text-base">
+                <Button variant="cta" size="cta" className="w-full h-14 text-base">
                   Audit GEO gratuit
                   <ArrowRight className="ml-2 size-4" />
                 </Button>
