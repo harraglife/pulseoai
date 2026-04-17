@@ -2,17 +2,32 @@ import * as React from "react"
 
 import { cn } from "@/lib/utils"
 
+/**
+ * Card root — Stripe/Linear-tier glassmorphism.
+ * `variant="glass"` (default on redesigned pages) adds backdrop blur
+ * and a hover glow that lifts the card 2px. `variant="plain"` keeps the
+ * legacy shadcn look for any surface that shouldn't blur (e.g. inside
+ * dense tables).
+ */
 function Card({
   className,
   size = "default",
+  variant = "glass",
   ...props
-}: React.ComponentProps<"div"> & { size?: "default" | "sm" }) {
+}: React.ComponentProps<"div"> & {
+  size?: "default" | "sm"
+  variant?: "glass" | "plain"
+}) {
   return (
     <div
       data-slot="card"
       data-size={size}
+      data-variant={variant}
       className={cn(
-        "group/card flex flex-col gap-4 overflow-hidden rounded-xl bg-card py-4 text-sm text-card-foreground ring-1 ring-foreground/10 has-data-[slot=card-footer]:pb-0 has-[>img:first-child]:pt-0 data-[size=sm]:gap-3 data-[size=sm]:py-3 data-[size=sm]:has-data-[slot=card-footer]:pb-0 *:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl",
+        "group/card flex flex-col gap-4 overflow-hidden rounded-xl py-4 text-sm text-card-foreground has-data-[slot=card-footer]:pb-0 has-[>img:first-child]:pt-0 data-[size=sm]:gap-3 data-[size=sm]:py-3 data-[size=sm]:has-data-[slot=card-footer]:pb-0 *:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl transition-[transform,border-color,box-shadow,background-color] duration-200 ease-out",
+        variant === "glass" &&
+          "glass hover:-translate-y-0.5 hover:border-[#00C8E0]/35 hover:shadow-[0_16px_60px_-8px_rgba(0,0,0,0.55),0_0_40px_-4px_rgba(0,200,224,0.2)]",
+        variant === "plain" && "bg-card ring-1 ring-foreground/10",
         className
       )}
       {...props}

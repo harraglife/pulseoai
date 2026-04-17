@@ -10,6 +10,13 @@ const badgeVariants = cva(
     variants: {
       variant: {
         default: "bg-primary text-primary-foreground [a]:hover:bg-primary/80",
+        /**
+         * Glow badge — cyan label with pulsing dot.
+         * Use to advertise status/expertise above a hero or section title.
+         */
+        glow:
+          "glass h-6 px-3 gap-1.5 text-[11px] font-medium uppercase tracking-[0.14em] text-[#00C8E0] " +
+          "before:content-[''] before:size-1.5 before:rounded-full before:bg-[#00C8E0] before:shadow-[0_0_10px_2px_rgba(0,200,224,0.65)] before:animate-pulse-dot",
         secondary:
           "bg-secondary text-secondary-foreground [a]:hover:bg-secondary/80",
         destructive:

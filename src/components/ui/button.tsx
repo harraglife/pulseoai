@@ -9,6 +9,22 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: "bg-primary text-primary-foreground [a]:hover:bg-primary/80",
+        /**
+         * Primary CTA — Stripe/Linear-tier.
+         * Brand gradient + cyan halo that intensifies on hover.
+         * Use for the single most important action on a screen.
+         */
+        cta:
+          "cta-glow bg-[linear-gradient(135deg,#2547D0_0%,#4A6BE8_100%)] text-white font-semibold border-white/10 " +
+          "hover:bg-[linear-gradient(135deg,#2A4EDC_0%,#5B7DF0_100%)]",
+        /**
+         * Secondary CTA — ghost pill with cyan-on-hover border + glow.
+         * Use as companion to a `cta` variant.
+         */
+        "cta-ghost":
+          "border border-white/15 bg-white/[0.03] text-white font-semibold backdrop-blur-md " +
+          "hover:border-[#00C8E0]/50 hover:bg-white/[0.06] hover:shadow-[0_0_24px_0_rgba(0,200,224,0.20)] " +
+          "transition-[border-color,background-color,box-shadow] duration-200",
         outline:
           "border-border bg-background hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50",
         secondary:
@@ -25,6 +41,11 @@ const buttonVariants = cva(
         xs: "h-6 gap-1 rounded-[min(var(--radius-md),10px)] px-2 text-xs in-data-[slot=button-group]:rounded-lg has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 [&_svg:not([class*='size-'])]:size-3",
         sm: "h-7 gap-1 rounded-[min(var(--radius-md),12px)] px-2.5 text-[0.8rem] in-data-[slot=button-group]:rounded-lg has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 [&_svg:not([class*='size-'])]:size-3.5",
         lg: "h-9 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2",
+        /**
+         * Pill-shaped CTA size — matches Stripe/Linear hero buttons.
+         * 48px tall, generous padding, meets WCAG touch target.
+         */
+        cta: "h-12 rounded-full px-7 text-[15px] has-data-[icon=inline-end]:pr-6",
         icon: "size-8",
         "icon-xs":
           "size-6 rounded-[min(var(--radius-md),10px)] in-data-[slot=button-group]:rounded-lg [&_svg:not([class*='size-'])]:size-3",
