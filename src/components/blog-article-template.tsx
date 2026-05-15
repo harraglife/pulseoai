@@ -6,6 +6,28 @@ import { QuickAnswer } from "@/components/quick-answer";
 import { RelatedPosts } from "@/components/related-posts";
 
 export function BlogArticleTemplate({ article }: { article: BlogArticle }) {
+  const estimatedWordCount = countWords([
+    article.title,
+    article.description,
+    article.intro,
+    article.quickAnswer?.question,
+    article.quickAnswer?.answer,
+    article.bodyCta?.intro,
+    article.bodyCta?.linkLabel,
+    article.bodyCta?.outro,
+    ...(article.contextualLinks ?? []).map((item) => item.label),
+    ...article.sections.flatMap((section) => [
+      section.title,
+      ...section.paragraphs,
+      ...(section.bullets ?? []),
+      ...(section.subsections?.flatMap((subsection) => [
+        subsection.title,
+        ...subsection.paragraphs,
+        ...(subsection.bullets ?? []),
+      ]) ?? []),
+    ]),
+  ]);
+
   const blogPostingJsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -33,6 +55,11 @@ export function BlogArticleTemplate({ article }: { article: BlogArticle }) {
     },
     image: "https://www.pulseoai.fr/og-image.png",
     description: article.description,
+    wordCount: estimatedWordCount,
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: ["h1", ".quick-answer"],
+    },
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": `https://www.pulseoai.fr/blog/${article.slug}`,
@@ -141,7 +168,9 @@ export function BlogArticleTemplate({ article }: { article: BlogArticle }) {
           </div>
 
           {article.quickAnswer ? (
-            <QuickAnswer question={article.quickAnswer.question} answer={article.quickAnswer.answer} />
+            <div className="quick-answer">
+              <QuickAnswer question={article.quickAnswer.question} answer={article.quickAnswer.answer} />
+            </div>
           ) : null}
 
           {article.contextualLinks?.length ? (
@@ -186,6 +215,27 @@ export function BlogArticleTemplate({ article }: { article: BlogArticle }) {
                       {article.bodyCta.outro ?? ""}
                     </p>
                   ) : null}
+                  {section.subsections?.map((subsection) => (
+                    <div key={subsection.title} className="pt-2">
+                      <h3 className="text-[18px] font-semibold tracking-[-0.025em] text-navy sm:text-[19px]">
+                        {subsection.title}
+                      </h3>
+                      <div className="mt-3 space-y-4 text-[15px] leading-7 text-navy/68 sm:text-[16px] sm:leading-8">
+                        {subsection.paragraphs.map((paragraph) => (
+                          <p key={paragraph}>{paragraph}</p>
+                        ))}
+                        {subsection.bullets?.length ? (
+                          <ul className="space-y-2 pl-5 text-[15px] leading-7 text-navy/68">
+                            {subsection.bullets.map((bullet) => (
+                              <li key={bullet} className="list-disc marker:text-cyan">
+                                {bullet}
+                              </li>
+                            ))}
+                          </ul>
+                        ) : null}
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </section>
             ))}
@@ -270,4 +320,13 @@ function isoDate(date: string) {
 
   const [day, month, year] = date.split(" ");
   return `${year}-${months[month]}-${day.padStart(2, "0")}`;
+}
+
+function countWords(values: Array<string | undefined>) {
+  return values
+    .filter((value): value is string => Boolean(value))
+    .join(" ")
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean).length;
 }

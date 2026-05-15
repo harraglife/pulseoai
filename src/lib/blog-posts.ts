@@ -31,6 +31,11 @@ export type BlogArticle = BlogPostMeta & {
     title: string;
     paragraphs: string[];
     bullets?: string[];
+    subsections?: Array<{
+      title: string;
+      paragraphs: string[];
+      bullets?: string[];
+    }>;
   }>;
 };
 
@@ -246,6 +251,28 @@ const newArticles: Record<string, BlogArticle> = {
           "GEO : prompts clients, citations IA, sources citées, concurrents recommandés",
           "Objectif commun : capter des demandes qualifiées plus tôt dans le parcours",
         ],
+        subsections: [
+          {
+            title: "Pourquoi le SEO reste une base solide",
+            paragraphs: [
+              "Le SEO reste indispensable parce qu’il structure votre présence sur Google autour d’intentions de recherche claires. Une entreprise qui répond bien aux requêtes clés dispose d’une base plus robuste pour toute sa visibilité organique.",
+            ],
+            bullets: [
+              "Pages services alignées avec la demande",
+              "Maillage interne utile pour Google et les visiteurs",
+            ],
+          },
+          {
+            title: "Pourquoi le GEO ajoute une couche stratégique",
+            paragraphs: [
+              "Le GEO devient stratégique dès qu’un prospect demande directement à une IA quelle marque choisir. Il complète le SEO en travaillant la capacité de votre entreprise à être reprise comme source, recommandée dans une comparaison ou citée dans une réponse directe.",
+            ],
+            bullets: [
+              "Présence dans ChatGPT, Gemini, Claude et Perplexity",
+              "Meilleure lecture des sources et concurrents cités",
+            ],
+          },
+        ],
       },
       {
         title: "Ce que les moteurs IA regardent vraiment",
@@ -259,6 +286,14 @@ const newArticles: Record<string, BlogArticle> = {
           "Avis, profils locaux et citations de marque",
           "Contenus optimisés pour les questions réelles des prospects",
         ],
+        subsections: [
+          {
+            title: "Quels signaux renforcent la compréhension de votre marque",
+            paragraphs: [
+              "Les moteurs IA privilégient les informations qu’ils peuvent recouper facilement. Plus votre offre, votre zone d’intervention et vos preuves de confiance sont cohérentes, plus votre marque devient facile à comprendre et à citer.",
+            ],
+          },
+        ],
       },
       {
         title: "Les premières actions à prioriser",
@@ -271,6 +306,20 @@ const newArticles: Record<string, BlogArticle> = {
           "Mesurer votre présence dans Google, ChatGPT et Gemini",
           "Renforcer les pages utiles, FAQ et comparatifs",
           "Suivre les sources et les concurrents cités chaque mois",
+        ],
+        subsections: [
+          {
+            title: "Quelles requêtes tester en premier",
+            paragraphs: [
+              "Les premières requêtes à tester sont celles qui traduisent une intention commerciale ou une comparaison active. Elles montrent rapidement si votre marque est visible au moment où un prospect cherche déjà une solution.",
+            ],
+          },
+          {
+            title: "Comment prioriser le plan d’action",
+            paragraphs: [
+              "Le plan d’action doit commencer par les pages et sources qui peuvent améliorer le plus vite votre lisibilité. Cette priorisation évite de disperser les efforts entre SEO, citations IA et contenus sans impact direct.",
+            ],
+          },
         ],
       },
       {

@@ -23,11 +23,11 @@ import {
 export const metadata: Metadata = {
   title: "Notre offre SEO / GEO | PulseoAI",
   description:
-    "Découvrez l’offre SEO / GEO de PulseoAI, agence spécialisée pour les entreprises qui veulent gagner en visibilité sur Google, ChatGPT, Gemini, Claude, Perplexity et Google AI Overviews.",
+    "Offre complète SEO et GEO pour rendre votre entreprise visible sur Google, ChatGPT, Gemini, Claude et Perplexity. Audit, contenu optimisé IA, balisage technique et monitoring mensuel.",
   openGraph: {
     title: "Notre offre SEO / GEO | PulseoAI",
     description:
-      "Découvrez l’offre SEO / GEO de PulseoAI, agence spécialisée pour les entreprises qui veulent gagner en visibilité sur Google, ChatGPT, Gemini, Claude, Perplexity et Google AI Overviews.",
+      "Offre complète SEO et GEO pour rendre votre entreprise visible sur Google, ChatGPT, Gemini, Claude et Perplexity. Audit, contenu optimisé IA, balisage technique et monitoring mensuel.",
     url: "https://www.pulseoai.fr/offre",
     siteName: "PulseoAI",
     locale: "fr_FR",
@@ -38,10 +38,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Notre offre SEO / GEO | PulseoAI",
     description:
-      "Découvrez l’offre SEO / GEO de PulseoAI, agence spécialisée pour les entreprises qui veulent gagner en visibilité sur Google, ChatGPT, Gemini, Claude, Perplexity et Google AI Overviews.",
+      "Offre complète SEO et GEO pour rendre votre entreprise visible sur Google, ChatGPT, Gemini, Claude et Perplexity. Audit, contenu optimisé IA, balisage technique et monitoring mensuel.",
     images: ["/og-image.png"],
   },
-  alternates: { canonical: "/offre" },
+  alternates: { canonical: "https://www.pulseoai.fr/offre" },
 };
 
 const jsonLdBreadcrumb = {
@@ -61,6 +61,52 @@ const jsonLdBreadcrumb = {
       item: "https://www.pulseoai.fr/offre",
     },
   ],
+};
+
+const offreFaqItems = [
+  {
+    question: "Quelle est la différence entre votre offre SEO et GEO ?",
+    answer:
+      "Le SEO optimise votre visibilité dans les résultats classiques de Google. Le GEO travaille votre présence dans les réponses générées par les IA comme ChatGPT, Claude, Gemini et Perplexity. Notre offre combine les deux pour couvrir les nouveaux parcours de recherche.",
+  },
+  {
+    question: "Combien de temps faut-il pour voir des résultats ?",
+    answer:
+      "Les premiers signaux GEO peuvent apparaître entre 4 et 8 semaines selon l’état du site, la concurrence et les sources disponibles. Le SEO classique demande souvent 3 à 6 mois pour des résultats plus visibles. Nous suivons l’évolution chaque mois.",
+  },
+  {
+    question: "Que comprend le reporting mensuel ?",
+    answer:
+      "Chaque mois, vous suivez la présence de votre entreprise dans les réponses de ChatGPT, Claude, Gemini, Perplexity et Google AI Overviews. Le reporting inclut les requêtes testées, les concurrents cités, les sources utilisées et les actions réalisées.",
+  },
+  {
+    question: "Votre offre convient-elle aux PME et aux entreprises locales ?",
+    answer:
+      "Oui. L’accompagnement est pensé pour les PME, hôtels, restaurants, commerces, e-commerce et entreprises de services qui veulent devenir visibles là où leurs clients cherchent déjà des réponses.",
+  },
+  {
+    question: "Travaillez-vous avec des entreprises hors de France ?",
+    answer:
+      "Oui. PulseoAI accompagne des entreprises en France, en Suisse et au Maroc. Le travail peut se faire à distance et s’adapte à la zone géographique ciblée.",
+  },
+  {
+    question: "Faut-il refaire mon site web pour bénéficier du GEO ?",
+    answer:
+      "Non. Le GEO peut s’appuyer sur votre site existant. Nous optimisons d’abord la structure, le contenu, le balisage Schema.org, les fichiers utiles aux moteurs IA et la stratégie de citations. Une refonte n’est proposée que si elle est vraiment nécessaire.",
+  },
+] as const;
+
+const offreFaqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: offreFaqItems.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.answer,
+    },
+  })),
 };
 
 function Eyebrow({ children }: { children: React.ReactNode }) {
@@ -164,6 +210,10 @@ export default function OffrePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(offreFaqJsonLd) }}
       />
 
       <section className="border-b border-[#E8EDF7] bg-[linear-gradient(180deg,#FFFFFF_0%,#F8FAFD_100%)]">
@@ -589,6 +639,34 @@ export default function OffrePage() {
 
           <div className="mt-6 rounded-[22px] border border-[#D6E2FB] bg-[linear-gradient(180deg,#F5F8FF_0%,#FBFCFF_100%)] px-5 py-4 text-[15px] leading-7 text-navy/72">
             Notre travail consiste à rendre votre entreprise plus claire, plus crédible et plus facile à citer, pour renforcer votre acquisition organique sur Google et dans les réponses IA.
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#F7F9FD]">
+        <div className="mx-auto max-w-[980px] px-6 py-14 lg:py-16">
+          <div className="max-w-[760px]">
+            <Eyebrow>FAQ</Eyebrow>
+            <h2 className="mt-4 text-[30px] font-semibold tracking-[-0.04em] text-navy sm:text-[40px]">
+              Questions fréquentes sur notre offre SEO / GEO
+            </h2>
+          </div>
+
+          <div className="mt-8 space-y-3">
+            {offreFaqItems.map((item) => (
+              <details
+                key={item.question}
+                className="group rounded-[22px] border border-[#DEE6F3] bg-white px-5 py-4 shadow-[0_12px_28px_rgba(15,23,42,0.04)]"
+              >
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-[16px] font-semibold text-navy">
+                  <span>{item.question}</span>
+                  <span className="text-cyan transition-transform group-open:rotate-45">+</span>
+                </summary>
+                <p className="mt-4 max-w-[78ch] text-[15px] leading-7 text-navy/68">
+                  {item.answer}
+                </p>
+              </details>
+            ))}
           </div>
         </div>
       </section>
