@@ -21,11 +21,11 @@ import {
 export const metadata: Metadata = {
   title: "GEO pour l’hôtellerie | PulseoAI",
   description:
-    "Découvrez comment PulseoAI, agence SEO / GEO pour hôtels, aide les établissements à gagner en visibilité sur Google et dans les moteurs IA pour capter plus de réservations directes.",
+    "GEO pour l’hôtellerie : rendez votre hôtel visible sur ChatGPT, Gemini et Google AI Overviews. Audit de visibilité IA, contenu optimisé et balisage Schema.org hôtelier.",
   openGraph: {
     title: "GEO pour l’hôtellerie | PulseoAI",
     description:
-      "Découvrez comment PulseoAI, agence SEO / GEO pour hôtels, aide les établissements à gagner en visibilité sur Google et dans les moteurs IA pour capter plus de réservations directes.",
+      "GEO pour l’hôtellerie : rendez votre hôtel visible sur ChatGPT, Gemini et Google AI Overviews. Audit de visibilité IA, contenu optimisé et balisage Schema.org hôtelier.",
     url: "https://www.pulseoai.fr/geo-hotellerie",
     type: "website",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "PulseoAI – GEO Hôtellerie" }],
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "GEO pour l’hôtellerie | PulseoAI",
     description:
-      "Découvrez comment PulseoAI, agence SEO / GEO pour hôtels, aide les établissements à gagner en visibilité sur Google et dans les moteurs IA pour capter plus de réservations directes.",
+      "GEO pour l’hôtellerie : rendez votre hôtel visible sur ChatGPT, Gemini et Google AI Overviews. Audit de visibilité IA, contenu optimisé et balisage Schema.org hôtelier.",
     images: ["/og-image.png"],
   },
   alternates: { canonical: "/geo-hotellerie" },
