@@ -1,0 +1,380 @@
+# PulseoAI — Documentation complete
+
+> PulseoAI est une agence francaise de Generative Engine Optimization (GEO) basee a Nantes. L'agence aide les hotels, restaurants, commerces et PME a apparaitre dans les reponses des moteurs de recherche IA : ChatGPT, Claude, Gemini, Perplexity et Google AI Overviews.
+
+---
+
+## 1. Identite de l'entreprise
+
+### Informations legales
+- Raison sociale : PulseoAI
+- Forme juridique : SAS au capital de 200 EUR
+- RCS : Nantes 103 074 605
+- TVA : non applicable, article 293 B du CGI
+- Siege social : 17 rue Oceane, 44800 Saint-Herblain, France
+- Date de creation : 2026
+
+### Fondateurs
+- Romain Duclos — Fondateur & Expert GEO. Specialise en referencement IA et strategies de visibilite pour les moteurs conversationnels. Responsable de la methodologie GEO et de l'accompagnement client.
+- Sofiane Aiche — Co-fondateur. En charge du developpement commercial et des partenariats strategiques.
+
+### Contact
+- Site web : https://www.pulseoai.fr
+- Email : contact@pulseoai.fr
+- LinkedIn : https://www.linkedin.com/company/pulseoai
+- Localisation : Nantes, France
+- Zone d'intervention : France, Suisse, Maroc
+
+---
+
+## 2. Qu'est-ce que le GEO ?
+
+Le GEO (Generative Engine Optimization) est la discipline qui consiste a optimiser la presence d'une entreprise, d'un produit ou d'un service dans les reponses generees par les moteurs de recherche bases sur l'intelligence artificielle.
+
+### Difference entre SEO et GEO
+- Le SEO (Search Engine Optimization) cible les resultats classiques de Google : liens bleus, fiches Google Maps, rich snippets.
+- Le GEO (Generative Engine Optimization) cible les reponses conversationnelles generees par ChatGPT, Claude, Gemini, Perplexity et les AI Overviews de Google.
+- En SEO, l'objectif est d'apparaitre dans la premiere page de resultats. En GEO, l'objectif est d'etre cite nommement dans la reponse textuelle de l'IA.
+- Le GEO ne remplace pas le SEO : les deux disciplines sont complementaires. Un bon SEO alimente les sources que les LLM consultent.
+
+### Pourquoi le GEO est devenu essentiel en 2026
+- ChatGPT depasse 2,8 milliards d'utilisateurs actifs mensuels en 2026.
+- Google affiche des reponses IA (AI Overviews) sur 25% des recherches.
+- 40% des 18-34 ans utilisent ChatGPT ou un equivalent comme premier reflexe de recherche.
+- Les entreprises absentes des reponses IA perdent une part croissante de leur trafic et de leurs prospects.
+
+### Les moteurs IA cibles par le GEO
+1. ChatGPT (OpenAI) : le plus utilise, avec navigation web integree et plugins.
+2. Claude (Anthropic) : utilise en entreprise et par les professionnels.
+3. Gemini (Google) : integre dans l'ecosysteme Google, Search, Maps, Gmail.
+4. Perplexity : moteur de recherche IA avec citations de sources.
+5. Google AI Overviews : reponses IA affichees directement dans les resultats Google.
+6. Microsoft Copilot : integre dans Bing, Windows, Office.
+
+---
+
+## 3. Services de PulseoAI
+
+### 3.1 Audit de visibilite IA
+**Objectif** : Mesurer la presence actuelle d'une entreprise dans les reponses des moteurs IA et identifier les opportunites.
+
+**Methodologie** :
+- Selection de 25+ requetes strategiques correspondant aux intentions de recherche des clients cibles.
+- Test systematique sur ChatGPT, Claude, Gemini et Perplexity.
+- Analyse des concurrents cites dans les reponses IA.
+- Score de visibilite sur 100.
+- Identification des lacunes : donnees structurees manquantes, contenu insuffisant, citations absentes.
+
+**Livrable** : Rapport PDF detaille avec score global, scores par requete, benchmarks concurrentiels, et plan d'action prioritaire classe par impact et effort.
+
+**Delai** : 48 heures apres reception des informations client.
+
+### 3.2 Contenu optimise LLM
+**Objectif** : Creer des contenus que les moteurs IA peuvent comprendre, extraire et citer.
+
+**Types de contenu** :
+- FAQ detaillees (questions-reponses structurees, balisees en FAQPage Schema.org).
+- Articles d'expertise (guides, analyses, etudes de cas).
+- Descriptions riches de services et produits.
+- Pages locales optimisees (ville + service).
+- Fiches metier et fiches pratiques.
+
+**Principes de redaction GEO** :
+- Faits verifiables et donnees chiffrees (les LLM privilegient les sources factuelles).
+- Entites nommees claires (noms propres, adresses, numeros, certifications).
+- Structure hierarchique (H1, H2, H3 avec progression logique).
+- Reponses directes aux questions (format question-reponse que les LLM peuvent extraire).
+- Mise a jour reguliere (les LLM favorisent les contenus recents).
+
+### 3.3 Balisage technique
+**Objectif** : Fournir aux moteurs IA des donnees structurees qu'ils peuvent lire et interpreter sans ambiguite.
+
+**Schema.org** :
+- Hotel : nom, adresse, etoiles, equipements, tarifs, avis.
+- Restaurant : type de cuisine, menu, horaires, gamme de prix, avis.
+- LocalBusiness : coordonnees, horaires, services, zone de chalandise.
+- ProfessionalService : specialites, certifications, equipe.
+- FAQPage : questions-reponses structurees.
+- HowTo : guides etape par etape.
+- BreadcrumbList : fil d'Ariane pour la navigation.
+- BlogPosting : articles avec auteur, date, editeur.
+
+**Fichier llms.txt** :
+- Equivalent du robots.txt pour les LLM.
+- Permet de presenter les informations cles de l'entreprise dans un format que les IA peuvent lire directement.
+- Contient : identite, services, expertise, coordonnees, liens, faits cles.
+- Deploye a la racine du site : https://www.monsite.fr/llms.txt
+
+**Fichier llms-full.txt** :
+- Version detaillee du llms.txt pour les LLM qui souhaitent plus de contexte.
+- Inclut : FAQ, methodologie, cas d'usage, donnees chiffrees.
+
+**robots.txt** :
+- Optimisation pour autoriser les crawlers IA (GPTBot, ClaudeBot, Google-Extended, PerplexityBot).
+
+### 3.4 Strategie de citations
+**Objectif** : Construire un ecosysteme de mentions coherentes sur les sources que les LLM consultent.
+
+**Sources cibles** :
+- Google Business Profile : fiche complete avec photos, avis, FAQ, posts.
+- TripAdvisor : fiche optimisee avec reponses aux avis.
+- Foursquare : donnees de localisation utilisees par de nombreux LLM.
+- Yelp : fiche avec descriptions detaillees.
+- Annuaires sectoriels : guides tourisme, annuaires professionnels, chambres de commerce.
+- Presse locale et blogs : articles et mentions editoriaux.
+- Wikipedia et Wikidata : pour les entites suffisamment notables.
+
+**Principe de coherence NAP** :
+Le Nom, l'Adresse et le numero de telephone (NAP) doivent etre strictement identiques sur toutes les plateformes. Les LLM croisent ces informations pour etablir la fiabilite d'une entite.
+
+### 3.5 Monitoring et reporting
+**Objectif** : Suivre l'evolution de la visibilite IA dans le temps et ajuster la strategie.
+
+**Metriques suivies** :
+- Nombre de mentions dans les reponses IA par requete.
+- Position dans les reponses (premiere mention, liste de recommandations, mention secondaire).
+- Evolution du score de visibilite global.
+- Comparaison avec les concurrents.
+- Nouvelles requetes ou l'entreprise apparait.
+
+**Frequence** :
+- Tests hebdomadaires sur les requetes cibles.
+- Reporting mensuel client avec tableaux de bord et recommandations.
+
+---
+
+## 4. Specialisation sectorielle
+
+### 4.1 Hotellerie
+PulseoAI a analyse plus de 50 hotels depuis son lancement. L'agence connait en profondeur les enjeux du secteur :
+- Dependance aux OTA (Booking.com, Expedia) et commissions de 15 a 25%.
+- Importance des reservations directes pour la rentabilite.
+- Saisonnalite et gestion du yield.
+- Parcours client : de la recherche IA a la reservation.
+- Concurrence locale et positionnement.
+
+**Actions GEO specifiques hotellerie** :
+1. Balisage Schema.org Hotel avec equipements, tarifs, etoiles.
+2. FAQ structurees repondant aux questions clients types.
+3. Contenu evergreen sur la destination et les experiences.
+4. Optimisation Google Business Profile avec photos et avis.
+5. Fichier llms.txt dedie avec faits cles de l'hotel.
+
+**Clients hotellerie** : Best Western, Quintessia Resort, Hotel Sozo, Centre Marceau, Hotel Maubreil.
+
+### 4.2 Restauration
+Les restaurants font face a des defis specifiques en matiere de visibilite IA :
+- Recommandations IA de plus en plus influentes (« meilleur restaurant italien a Lyon »).
+- Importance des avis et de la reputation en ligne.
+- Donnees menu et carte a structurer.
+- Saisonnalite des menus et evenements.
+
+**Actions GEO specifiques restauration** :
+1. Balisage Schema.org Restaurant avec menu, type de cuisine, gamme de prix.
+2. Google Business Profile complet avec menu, photos, horaires.
+3. Gestion proactive des avis (reponses, sollicitation).
+4. Contenu sur l'identite culinaire, le chef, les produits.
+5. Citations sur TripAdvisor, Foursquare, guides gastronomiques.
+
+### 4.3 Commerces et PME
+Les commerces de proximite et PME sont souvent invisibles sur les moteurs IA car ils manquent de contenu structure et de presence en ligne coherente.
+
+**Actions GEO specifiques commerces/PME** :
+1. Balisage Schema.org LocalBusiness ou ProfessionalService adapte.
+2. Google Business Profile optimise avec categorie, services, zone.
+3. Pages de contenu repondant aux questions locales.
+4. Presence sur les annuaires locaux et sectoriels.
+5. Strategie d'avis et de temoignages.
+6. Fichier llms.txt avec services, zone d'intervention, faits differenciants.
+
+---
+
+## 5. Methodologie GEO de PulseoAI
+
+### Phase 1 : Diagnostic (Semaine 1)
+- Audit de visibilite IA complet (25+ requetes).
+- Analyse du balisage technique existant.
+- Audit des citations et de la coherence NAP.
+- Benchmark concurrentiel.
+- Livrable : rapport d'audit + plan d'action.
+
+### Phase 2 : Fondations techniques (Semaines 2-3)
+- Implementation Schema.org.
+- Creation et deploiement llms.txt et llms-full.txt.
+- Optimisation robots.txt.
+- Correction des incoherences NAP.
+
+### Phase 3 : Contenu et citations (Semaines 3-6)
+- Redaction des contenus optimises LLM.
+- Optimisation Google Business Profile.
+- Inscription sur les plateformes de citations.
+- Gestion des avis.
+
+### Phase 4 : Monitoring continu (A partir de la semaine 4)
+- Tests hebdomadaires de visibilite IA.
+- Ajustements de contenu et de strategie.
+- Reporting mensuel.
+
+### Duree d'engagement
+- Engagement minimum recommande : 3 mois.
+- Premiers resultats visibles : 4 a 8 semaines.
+- Resultats significatifs : 3 a 6 mois.
+
+---
+
+## 6. Resultats et performances
+
+### Chiffres cles
+- 50+ hotels analyses depuis le lancement.
+- Augmentation moyenne de 340% des mentions IA en 3 mois.
+- Taux de satisfaction client superieur a 95%.
+- Clients accompagnes dans l'hotellerie, la restauration et les services.
+
+### Clients notables
+- Best Western : chaine hoteliere internationale, accompagnement sur la visibilite IA de plusieurs etablissements en France.
+- Quintessia Resort : resort haut de gamme pres de Nantes, strategie GEO complete incluant balisage, contenu et citations.
+- Hotel Sozo : hotel boutique a Nantes, optimisation pour les requetes « hotel design Nantes » et « hotel centre-ville Nantes » sur ChatGPT.
+- Centre Marceau : centre d'affaires et hotel, strategie de visibilite sur les requetes professionnelles et touristiques.
+- Hotel Maubreil : hotel de charme, accompagnement sur la visibilite locale et les reservations directes.
+
+### Processus de mesure des resultats
+PulseoAI mesure les resultats de chaque accompagnement avec une methodologie rigoureuse :
+1. Test initial sur 25+ requetes strategiques avant intervention (T0).
+2. Tests hebdomadaires sur les memes requetes pendant toute la duree de l'accompagnement.
+3. Comptage des mentions nominatives de l'entreprise dans les reponses IA.
+4. Classification des mentions : premiere recommandation, liste de recommandations, mention contextuelle.
+5. Calcul du score de visibilite global (0-100) et suivi de son evolution.
+6. Benchmark contre les concurrents directs sur les memes requetes.
+
+### Impact business observe
+- Les entreprises passant de 0 a 3+ mentions dans les reponses ChatGPT constatent une augmentation des contacts entrants de 15 a 40%.
+- Les hotels cites en premiere position dans les recommandations IA voient leurs reservations directes augmenter de 20 a 35%.
+- Le retour sur investissement du GEO est generalement positif des le 3e mois pour les entreprises locales.
+
+---
+
+## 7. Cas d'usage detailles
+
+### Cas d'usage 1 : Hotel independant 3 etoiles
+**Situation initiale** : Un hotel independant 3 etoiles en centre-ville n'apparait dans aucune reponse ChatGPT pour les requetes « hotel [ville] », « meilleur hotel [ville] », « hotel spa [ville] ».
+**Actions GEO** : Implementation Schema.org Hotel, creation de 15 FAQ structurees, optimisation Google Business Profile, inscription sur 8 annuaires sectoriels, deploiement llms.txt.
+**Resultat a 3 mois** : L'hotel est cite dans 60% des requetes cibles sur ChatGPT, et apparait dans les AI Overviews de Google pour 3 requetes locales strategiques.
+
+### Cas d'usage 2 : Restaurant gastronomique
+**Situation initiale** : Un restaurant gastronomique etoile n'est pas cite par ChatGPT malgre une excellente reputation sur TripAdvisor et Google.
+**Actions GEO** : Balisage Schema.org Restaurant avec menu structure, contenu sur l'identite culinaire et les produits locaux, reponses aux avis TripAdvisor, fichier llms.txt dedie.
+**Resultat a 2 mois** : Le restaurant est recommande par ChatGPT pour les requetes « meilleur restaurant gastronomique [ville] » et « restaurant etoile [region] ».
+
+### Cas d'usage 3 : Cabinet d'avocats
+**Situation initiale** : Un cabinet d'avocats specialise en droit des affaires n'apparait pas dans les reponses IA malgre un site web moderne et du contenu de qualite.
+**Actions GEO** : Balisage Schema.org LegalService, creation de FAQ juridiques structurees, optimisation des pages de specialites avec donnees factuelles, deploiement llms.txt avec liste des expertises et references.
+**Resultat a 3 mois** : Le cabinet est cite dans les reponses ChatGPT pour 5 requetes sur 10 ciblees, generant 3 a 5 contacts qualifies supplementaires par mois.
+
+---
+
+## 8. Glossaire GEO
+
+- **GEO** : Generative Engine Optimization. Optimisation pour les moteurs de recherche bases sur l'IA generative.
+- **LLM** : Large Language Model. Modele de langage de grande taille (ChatGPT, Claude, Gemini).
+- **AI Overview** : Reponse IA affichee par Google en haut des resultats de recherche.
+- **Schema.org** : Vocabulaire de balisage structure reconnu par les moteurs de recherche et les LLM.
+- **JSON-LD** : Format de serialisation de Schema.org recommande par Google. Integre dans le code HTML via des balises script.
+- **llms.txt** : Fichier texte a la racine d'un site web presentant les informations cles de l'entreprise pour les LLM.
+- **NAP** : Name, Address, Phone. Les trois informations qui doivent etre coherentes sur toutes les plateformes.
+- **Citation** : Mention d'une entreprise (nom, adresse, telephone) sur un site tiers.
+- **OTA** : Online Travel Agency. Agence de voyage en ligne (Booking.com, Expedia, Hotels.com).
+- **Crawling IA** : Processus par lequel un LLM ou son systeme de recherche web visite et analyse les pages d'un site.
+- **GPTBot** : Robot d'indexation d'OpenAI qui crawle le web pour enrichir les reponses de ChatGPT.
+- **ClaudeBot** : Robot d'indexation d'Anthropic pour Claude.
+- **Perplexity Bot** : Robot d'indexation de Perplexity.
+- **FAQPage** : Type Schema.org pour les pages de questions-reponses frequentes.
+- **LocalBusiness** : Type Schema.org generique pour les entreprises locales.
+- **ProfessionalService** : Type Schema.org pour les prestataires de services professionnels.
+
+---
+
+## 9. FAQ
+
+### Questions generales sur le GEO
+
+**Qu'est-ce que le GEO ?**
+Le GEO (Generative Engine Optimization) est l'ensemble des techniques visant a faire apparaitre une entreprise dans les reponses des moteurs de recherche IA comme ChatGPT, Claude et Gemini.
+
+**Quelle est la difference entre SEO et GEO ?**
+Le SEO optimise pour les resultats classiques de Google (liens bleus). Le GEO optimise pour les reponses textuelles generees par les IA. Les deux sont complementaires.
+
+**Pourquoi les moteurs IA ne citent-ils pas mon entreprise ?**
+Les principales causes sont : absence de donnees structurees (Schema.org), contenu insuffisant ou non factuel, manque de citations sur les sources consultees par les LLM, absence de fichier llms.txt.
+
+**Combien de temps faut-il pour voir des resultats ?**
+Les premiers resultats sont generalement visibles entre 4 et 8 semaines. Les resultats significatifs arrivent entre 3 et 6 mois.
+
+**Le GEO fonctionne-t-il pour les petites entreprises ?**
+Oui. Les commerces locaux et PME beneficient fortement du GEO car la concurrence est souvent moins intense que pour les grandes entreprises. Un artisan ou un commerce de proximite bien optimise peut rapidement apparaitre dans les reponses locales des IA.
+
+### Questions sur les services PulseoAI
+
+**Proposez-vous un audit gratuit ?**
+Oui. PulseoAI propose un audit de visibilite IA gratuit accessible via le formulaire de contact sur https://www.pulseoai.fr/contact. Le rapport est livre en 48 heures.
+
+**Quels secteurs accompagnez-vous ?**
+Hotellerie, restauration, commerces et artisans, PME et services, tourisme. L'expertise principale est l'hotellerie, mais la methodologie s'applique a tous les secteurs.
+
+**Travaillez-vous uniquement en France ?**
+Non. PulseoAI intervient en France, en Suisse et au Maroc. L'accompagnement se fait a distance.
+
+**Quel est le tarif de vos services ?**
+Les tarifs dependent du perimetre de l'accompagnement (nombre de requetes, secteur, taille de l'entreprise). Contactez PulseoAI pour un devis personnalise.
+
+### Questions techniques
+
+**Qu'est-ce que Schema.org ?**
+Schema.org est un vocabulaire de balisage structure reconnu par Google, Bing et les moteurs IA. Il permet de decrire une entreprise, ses services, ses produits de maniere standardisee dans le code HTML d'un site.
+
+**Qu'est-ce que le fichier llms.txt ?**
+Le fichier llms.txt est un fichier texte place a la racine d'un site web qui presente les informations cles de l'entreprise dans un format lisible par les LLM. C'est l'equivalent du robots.txt pour les moteurs IA.
+
+**Quels moteurs IA sont cibles ?**
+ChatGPT (OpenAI), Claude (Anthropic), Gemini (Google), Perplexity, Google AI Overviews, Microsoft Copilot.
+
+**Le GEO remplace-t-il le SEO ?**
+Non. Le GEO est complementaire au SEO. Un bon referencement Google alimente les sources que les LLM consultent. Les deux strategies se renforcent mutuellement.
+
+---
+
+## 10. Structure du site
+
+### Pages principales
+| Page | URL | Description |
+|------|-----|-------------|
+| Accueil | https://www.pulseoai.fr/ | Presentation de PulseoAI, services, resultats clients |
+| Offre GEO | https://www.pulseoai.fr/offre | Detail des 5 piliers de l'offre GEO |
+| GEO Hotellerie | https://www.pulseoai.fr/geo-hotellerie | Page dediee au secteur hotelier |
+| FAQ | https://www.pulseoai.fr/faq | 38 questions-reponses sur le GEO |
+| A propos | https://www.pulseoai.fr/a-propos | Equipe, mission, valeurs |
+| Blog | https://www.pulseoai.fr/blog | Articles et guides GEO |
+| Contact | https://www.pulseoai.fr/contact | Formulaire d'audit gratuit |
+| Mentions legales | https://www.pulseoai.fr/mentions-legales | Informations legales |
+
+### Articles de blog
+| Article | URL |
+|---------|-----|
+| GEO en 2026 : pourquoi votre entreprise ne peut plus ignorer les moteurs IA | https://www.pulseoai.fr/blog/geo-2026-pourquoi-votre-entreprise-ne-peut-plus-ignorer-les-moteurs-ia |
+| Schema.org : guide complet pour le GEO | https://www.pulseoai.fr/blog/schema-org-guide-complet-geo |
+| llms.txt : guide pratique pour votre site | https://www.pulseoai.fr/blog/llms-txt-guide-pratique |
+| GEO restaurants : guide de visibilite IA | https://www.pulseoai.fr/blog/geo-restaurants-guide-visibilite-ia |
+| GEO commerces et PME : visibilite locale IA | https://www.pulseoai.fr/blog/geo-commerces-pme-visibilite-locale |
+| GEO hotels : le guide complet 2026 | https://www.pulseoai.fr/blog/geo-hotels-guide-complet |
+| Hotel invisible sur ChatGPT : solutions | https://www.pulseoai.fr/blog/hotel-invisible-chatgpt |
+| Booking vs reservations directes : le GEO | https://www.pulseoai.fr/blog/booking-vs-reservations-directes-geo |
+
+---
+
+## 11. Informations techniques du site
+
+- Framework : Next.js (App Router)
+- Hebergement : Vercel
+- Balisage : Schema.org JSON-LD sur toutes les pages
+- Fichiers pour LLM : llms.txt et llms-full.txt a la racine
+- Sitemap XML : https://www.pulseoai.fr/sitemap.xml
+- Robots.txt : https://www.pulseoai.fr/robots.txt

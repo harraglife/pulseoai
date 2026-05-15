@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "name_for_human": "PulseoAI",
+  "name_for_model": "pulseoai",
+  "description_for_human": "PulseoAI est une agence SEO / GEO basée à Nantes, spécialisée dans la visibilité sur Google et dans les moteurs IA.",
+  "description_for_model": "PulseoAI est une agence française spécialisée en SEO / GEO. Elle aide les entreprises, hôtels, restaurants, commerces, PME et marques e-commerce à gagner en visibilité sur Google et dans les réponses générées par ChatGPT, Gemini, Claude, Perplexity et Google AI Overviews. Ses services incluent l’audit SEO / GEO, l’optimisation de contenus, la structuration des pages, le renforcement des sources citées par les IA, les citations de marque et le monitoring mensuel de visibilité IA. PulseoAI est basée à Saint-Herblain, près de Nantes, et a été fondée par Romain Duclos et Sofiane Aiche.",
+  "url": "https://www.pulseoai.fr",
+  "contact_email": "contact@pulseoai.fr",
+  "legal_info_url": "https://www.pulseoai.fr/mentions-legales",
+  "area_served": ["France", "Suisse", "Maroc"],
+  "founders": ["Romain Duclos", "Sofiane Aiche"],
+  "services": [
+    "Audit SEO / GEO",
+    "Référencement IA",
+    "Optimisation de contenus pour les moteurs IA",
+    "Monitoring IA",
+    "Stratégie de citations IA",
+    "Visibilité sur Google et ChatGPT",
+    "GEO pour hôtels",
+    "SEO / GEO pour PME et e-commerce"
+  ],
+  "endpoints": {
+    "llms_txt": "https://www.pulseoai.fr/llms.txt",
+    "llms_full_txt": "https://www.pulseoai.fr/llms-full.txt",
+    "sitemap": "https://www.pulseoai.fr/sitemap.xml",
+    "robots": "https://www.pulseoai.fr/robots.txt",
+    "rss": "https://www.pulseoai.fr/rss.xml"
+  }
+}
