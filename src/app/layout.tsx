@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 import "./globals.css";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
@@ -202,6 +203,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full flex flex-col bg-white text-navy font-sans pb-[68px] lg:pb-0">
+        <GoogleTagManager gtmId="GTM-W7BR5JDJ" />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
