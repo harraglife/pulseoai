@@ -94,15 +94,6 @@ const professionalServiceJsonLd = {
     "https://www.linkedin.com/company/pulseoai",
     "https://fr.linkedin.com/in/romaindcl",
   ],
-  serviceType: [
-    "Generative Engine Optimization",
-    "GEO",
-    "Référencement IA",
-    "Visibilité IA hôtellerie",
-    "Référencement IA restauration",
-    "Référencement IA PME",
-    "Référencement IA commerce",
-  ],
   knowsAbout: [
     "GEO",
     "Generative Engine Optimization",
