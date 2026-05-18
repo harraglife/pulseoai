@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, Calendar, Clock, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { getArticleSchemaEnhancements } from "@/lib/article-metadata";
 import { QuickAnswer } from "@/components/quick-answer";
 import { RelatedPosts } from "@/components/related-posts";
 
@@ -26,6 +27,8 @@ export const metadata: Metadata = {
   },
   alternates: { canonical: "/blog/schema-org-guide-complet-geo" },
 };
+
+const articleSchemaEnhancements = getArticleSchemaEnhancements("schema-org-guide-complet-geo");
 
 const blogPostingJsonLd = {
   "@context": "https://schema.org",
@@ -64,6 +67,10 @@ const blogPostingJsonLd = {
   image: "https://www.pulseoai.fr/og-image.png",
   description:
     "Guide Schema.org pour le GEO. Comprendre les données structurées qui aident Google, ChatGPT, Gemini et les moteurs IA à mieux interpréter votre entreprise.",
+  ...(articleSchemaEnhancements?.about ? { about: articleSchemaEnhancements.about } : {}),
+  ...(articleSchemaEnhancements?.mentions
+    ? { mentions: articleSchemaEnhancements.mentions }
+    : {}),
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id": "https://www.pulseoai.fr/blog/schema-org-guide-complet-geo",

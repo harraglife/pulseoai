@@ -2,10 +2,12 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight, Calendar, ChevronRight, Clock, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { BlogArticle } from "@/lib/blog-posts";
+import { getArticleSchemaEnhancements } from "@/lib/article-metadata";
 import { QuickAnswer } from "@/components/quick-answer";
 import { RelatedPosts } from "@/components/related-posts";
 
 export function BlogArticleTemplate({ article }: { article: BlogArticle }) {
+  const articleSchemaEnhancements = getArticleSchemaEnhancements(article.slug);
   const estimatedWordCount = countWords([
     article.title,
     article.description,
@@ -56,6 +58,8 @@ export function BlogArticleTemplate({ article }: { article: BlogArticle }) {
     image: "https://www.pulseoai.fr/og-image.png",
     description: article.description,
     wordCount: estimatedWordCount,
+    ...(articleSchemaEnhancements?.about ? { about: articleSchemaEnhancements.about } : {}),
+    ...(articleSchemaEnhancements?.mentions ? { mentions: articleSchemaEnhancements.mentions } : {}),
     speakable: {
       "@type": "SpeakableSpecification",
       cssSelector: ["h1", ".quick-answer"],
@@ -101,6 +105,12 @@ export function BlogArticleTemplate({ article }: { article: BlogArticle }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
+      {articleSchemaEnhancements?.howTo ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchemaEnhancements.howTo) }}
+        />
+      ) : null}
 
       <article className="bg-white">
         <div className="border-b border-[#E8EDF7] bg-[linear-gradient(180deg,#FFFFFF_0%,#F8FAFD_100%)]">

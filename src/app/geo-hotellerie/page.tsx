@@ -19,25 +19,25 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "GEO pour l’hôtellerie | PulseoAI",
+  title: "GEO pour hôtels — Visibilité IA hôtelière | PulseoAI",
   description:
-    "GEO pour l’hôtellerie : rendez votre hôtel visible sur ChatGPT, Gemini et Google AI Overviews. Audit de visibilité IA, contenu optimisé et balisage Schema.org hôtelier.",
+    "Rendez votre hôtel recommandable par ChatGPT, Gemini et Google AI Overviews. Stratégie GEO spécialisée hôtellerie : audit, contenus, citations et monitoring.",
   openGraph: {
-    title: "GEO pour l’hôtellerie | PulseoAI",
+    title: "GEO pour hôtels — Visibilité IA hôtelière | PulseoAI",
     description:
-      "GEO pour l’hôtellerie : rendez votre hôtel visible sur ChatGPT, Gemini et Google AI Overviews. Audit de visibilité IA, contenu optimisé et balisage Schema.org hôtelier.",
+      "Rendez votre hôtel recommandable par ChatGPT, Gemini et Google AI Overviews. Stratégie GEO spécialisée hôtellerie : audit, contenus, citations et monitoring.",
     url: "https://www.pulseoai.fr/geo-hotellerie",
     type: "website",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "PulseoAI – GEO Hôtellerie" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "GEO pour l’hôtellerie | PulseoAI",
+    title: "GEO pour hôtels — Visibilité IA hôtelière | PulseoAI",
     description:
-      "GEO pour l’hôtellerie : rendez votre hôtel visible sur ChatGPT, Gemini et Google AI Overviews. Audit de visibilité IA, contenu optimisé et balisage Schema.org hôtelier.",
+      "Rendez votre hôtel recommandable par ChatGPT, Gemini et Google AI Overviews. Stratégie GEO spécialisée hôtellerie : audit, contenus, citations et monitoring.",
     images: ["/og-image.png"],
   },
-  alternates: { canonical: "/geo-hotellerie" },
+  alternates: { canonical: "https://www.pulseoai.fr/geo-hotellerie" },
 };
 
 const jsonLd = {

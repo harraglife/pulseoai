@@ -21,13 +21,13 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Notre offre SEO / GEO | PulseoAI",
+  title: "Notre offre SEO / GEO — PulseoAI",
   description:
-    "Offre complète SEO et GEO pour rendre votre entreprise visible sur Google, ChatGPT, Gemini, Claude et Perplexity. Audit, contenu optimisé IA, balisage technique et monitoring mensuel.",
+    "Offre complète SEO et GEO : audit de visibilité, contenus optimisés IA, balisage Schema.org, citations et monitoring mensuel. Accompagnement adapté aux PME, hôtels et entreprises ambitieuses.",
   openGraph: {
-    title: "Notre offre SEO / GEO | PulseoAI",
+    title: "Notre offre SEO / GEO — PulseoAI",
     description:
-      "Offre complète SEO et GEO pour rendre votre entreprise visible sur Google, ChatGPT, Gemini, Claude et Perplexity. Audit, contenu optimisé IA, balisage technique et monitoring mensuel.",
+      "Offre complète SEO et GEO : audit de visibilité, contenus optimisés IA, balisage Schema.org, citations et monitoring mensuel. Accompagnement adapté aux PME, hôtels et entreprises ambitieuses.",
     url: "https://www.pulseoai.fr/offre",
     siteName: "PulseoAI",
     locale: "fr_FR",
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Notre offre SEO / GEO | PulseoAI",
+    title: "Notre offre SEO / GEO — PulseoAI",
     description:
-      "Offre complète SEO et GEO pour rendre votre entreprise visible sur Google, ChatGPT, Gemini, Claude et Perplexity. Audit, contenu optimisé IA, balisage technique et monitoring mensuel.",
+      "Offre complète SEO et GEO : audit de visibilité, contenus optimisés IA, balisage Schema.org, citations et monitoring mensuel. Accompagnement adapté aux PME, hôtels et entreprises ambitieuses.",
     images: ["/og-image.png"],
   },
   alternates: { canonical: "https://www.pulseoai.fr/offre" },
@@ -107,6 +107,69 @@ const offreFaqJsonLd = {
       text: item.answer,
     },
   })),
+};
+
+const offreServicesJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://www.pulseoai.fr/offre/#audit",
+      name: "Audit SEO / GEO",
+      description:
+        "Analyse complète de votre visibilité sur Google et dans les moteurs IA. Identification des opportunités de positionnement, des lacunes techniques et des priorités d’action.",
+      provider: { "@id": "https://www.pulseoai.fr/#organization" },
+      areaServed: ["France", "Suisse", "Maroc"],
+      serviceType: "Audit de visibilité digitale",
+      serviceOutput: "Rapport d’audit avec recommandations priorisées",
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.pulseoai.fr/offre/#contenu",
+      name: "Contenus optimisés pour Google et les IA",
+      description:
+        "Création et optimisation de contenus structurés pour être compris par Google et cités par ChatGPT, Gemini et Perplexity.",
+      provider: { "@id": "https://www.pulseoai.fr/#organization" },
+      areaServed: ["France", "Suisse", "Maroc"],
+      serviceType: "Rédaction et optimisation de contenu",
+      serviceOutput:
+        "Articles, pages et contenus optimisés pour Google et les moteurs IA",
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.pulseoai.fr/offre/#balisage",
+      name: "Structure et balisage technique",
+      description:
+        "Implémentation du balisage Schema.org, des données structurées, du llms.txt et d’une architecture technique compréhensible par Google et les moteurs IA.",
+      provider: { "@id": "https://www.pulseoai.fr/#organization" },
+      areaServed: ["France", "Suisse", "Maroc"],
+      serviceType: "SEO technique et balisage structuré",
+      serviceOutput:
+        "Balisage Schema.org complet, llms.txt, architecture optimisée",
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.pulseoai.fr/offre/#citations",
+      name: "Citations et sources de confiance",
+      description:
+        "Stratégie de citations IA : positionnement sur les plateformes, annuaires, contenus et sources utilisées par les LLM pour générer leurs réponses.",
+      provider: { "@id": "https://www.pulseoai.fr/#organization" },
+      areaServed: ["France", "Suisse", "Maroc"],
+      serviceType: "Stratégie de citations et visibilité IA",
+      serviceOutput: "Présence renforcée sur les sources citées par les IA",
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.pulseoai.fr/offre/#monitoring",
+      name: "Monitoring mensuel SEO / GEO",
+      description:
+        "Suivi mensuel de votre visibilité Google et IA avec reporting clair : positions, citations, prompts testés, évolution des concurrents et priorités.",
+      provider: { "@id": "https://www.pulseoai.fr/#organization" },
+      areaServed: ["France", "Suisse", "Maroc"],
+      serviceType: "Monitoring et reporting de visibilité",
+      serviceOutput: "Dashboard mensuel avec KPIs SEO et GEO",
+    },
+  ],
 };
 
 function Eyebrow({ children }: { children: React.ReactNode }) {
@@ -214,6 +277,10 @@ export default function OffrePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(offreFaqJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(offreServicesJsonLd) }}
       />
 
       <section className="border-b border-[#E8EDF7] bg-[linear-gradient(180deg,#FFFFFF_0%,#F8FAFD_100%)]">

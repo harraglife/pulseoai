@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, Calendar, Clock, User } from "lucide-react";
+import { getArticleSchemaEnhancements } from "@/lib/article-metadata";
 import { QuickAnswer } from "@/components/quick-answer";
 import { RelatedPosts } from "@/components/related-posts";
 import { Button } from "@/components/ui/button";
@@ -26,6 +27,10 @@ export const metadata: Metadata = {
   },
   alternates: { canonical: "/blog/booking-vs-reservations-directes-geo" },
 };
+
+const articleSchemaEnhancements = getArticleSchemaEnhancements(
+  "booking-vs-reservations-directes-geo"
+);
 
 const blogPostingJsonLd = {
   "@context": "https://schema.org",
@@ -62,6 +67,10 @@ const blogPostingJsonLd = {
     },
   },
   image: "https://www.pulseoai.fr/og-image.png",
+  ...(articleSchemaEnhancements?.about ? { about: articleSchemaEnhancements.about } : {}),
+  ...(articleSchemaEnhancements?.mentions
+    ? { mentions: articleSchemaEnhancements.mentions }
+    : {}),
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id": "https://www.pulseoai.fr/blog/booking-vs-reservations-directes-geo",

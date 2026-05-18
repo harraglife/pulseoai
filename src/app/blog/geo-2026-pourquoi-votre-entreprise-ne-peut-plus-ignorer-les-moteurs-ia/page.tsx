@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, Calendar, Clock, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { getArticleSchemaEnhancements } from "@/lib/article-metadata";
 import { QuickAnswer } from "@/components/quick-answer";
 import { RelatedPosts } from "@/components/related-posts";
 
@@ -26,6 +27,10 @@ export const metadata: Metadata = {
   },
   alternates: { canonical: "/blog/geo-2026-pourquoi-votre-entreprise-ne-peut-plus-ignorer-les-moteurs-ia" },
 };
+
+const articleSchemaEnhancements = getArticleSchemaEnhancements(
+  "geo-2026-pourquoi-votre-entreprise-ne-peut-plus-ignorer-les-moteurs-ia"
+);
 
 const blogPostingJsonLd = {
   "@context": "https://schema.org",
@@ -66,6 +71,10 @@ const blogPostingJsonLd = {
   image: "https://www.pulseoai.fr/og-image.png",
   description:
     "Pourquoi le GEO devient un sujet business pour les entreprises qui veulent être visibles sur ChatGPT, Gemini, Claude, Perplexity et Google AI Overviews.",
+  ...(articleSchemaEnhancements?.about ? { about: articleSchemaEnhancements.about } : {}),
+  ...(articleSchemaEnhancements?.mentions
+    ? { mentions: articleSchemaEnhancements.mentions }
+    : {}),
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id":

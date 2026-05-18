@@ -5,6 +5,7 @@ import { ExternalLink, Mail } from "lucide-react";
 const footerNav = {
   services: [
     { name: "Notre offre", href: "/offre" },
+    { name: "Agence SEO / GEO Nantes", href: "/agence-seo-geo-nantes" },
     { name: "GEO Hôtellerie", href: "/geo-hotellerie" },
     { name: "Audit SEO / GEO", href: "/contact" },
     { name: "Référencement IA", href: "/offre" },

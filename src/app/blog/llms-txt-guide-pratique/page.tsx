@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, Calendar, Clock, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { getArticleSchemaEnhancements } from "@/lib/article-metadata";
 import { QuickAnswer } from "@/components/quick-answer";
 import { RelatedPosts } from "@/components/related-posts";
 
@@ -26,6 +27,8 @@ export const metadata: Metadata = {
   },
   alternates: { canonical: "/blog/llms-txt-guide-pratique" },
 };
+
+const articleSchemaEnhancements = getArticleSchemaEnhancements("llms-txt-guide-pratique");
 
 const blogPostingJsonLd = {
   "@context": "https://schema.org",
@@ -55,6 +58,10 @@ const blogPostingJsonLd = {
   image: "https://www.pulseoai.fr/og-image.png",
   description:
     "Guide llms.txt pour le référencement IA. Comprendre comment ce fichier aide les moteurs IA à repérer les contenus importants de votre site.",
+  ...(articleSchemaEnhancements?.about ? { about: articleSchemaEnhancements.about } : {}),
+  ...(articleSchemaEnhancements?.mentions
+    ? { mentions: articleSchemaEnhancements.mentions }
+    : {}),
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id": "https://www.pulseoai.fr/blog/llms-txt-guide-pratique",
@@ -97,6 +104,12 @@ export default function LlmsTxtGuidePratique() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
+      {articleSchemaEnhancements?.howTo ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchemaEnhancements.howTo) }}
+        />
+      ) : null}
 
       <article className="bg-white">
         {/* Header */}

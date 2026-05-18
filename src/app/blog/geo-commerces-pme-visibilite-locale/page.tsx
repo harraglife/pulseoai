@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, Calendar, Clock, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { getArticleSchemaEnhancements } from "@/lib/article-metadata";
 import { QuickAnswer } from "@/components/quick-answer";
 import { RelatedPosts } from "@/components/related-posts";
 
@@ -26,6 +27,10 @@ export const metadata: Metadata = {
   },
   alternates: { canonical: "/blog/geo-commerces-pme-visibilite-locale" },
 };
+
+const articleSchemaEnhancements = getArticleSchemaEnhancements(
+  "geo-commerces-pme-visibilite-locale"
+);
 
 const blogPostingJsonLd = {
   "@context": "https://schema.org",
@@ -56,6 +61,10 @@ const blogPostingJsonLd = {
   image: "https://www.pulseoai.fr/og-image.png",
   description:
     "Guide GEO pour les commerces et PME. Comment apparaître sur ChatGPT, Gemini et Google AI Overviews sur des requêtes locales à forte intention.",
+  ...(articleSchemaEnhancements?.about ? { about: articleSchemaEnhancements.about } : {}),
+  ...(articleSchemaEnhancements?.mentions
+    ? { mentions: articleSchemaEnhancements.mentions }
+    : {}),
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id":
