@@ -1,6 +1,7 @@
 export type BlogPostMeta = {
   slug: string;
   title: string;
+  seoTitle?: string;
   description: string;
   date: string;
   readingTime: string;
@@ -58,6 +59,7 @@ export const blogPosts: BlogPostMeta[] = [
   {
     slug: "seo-geo-rendre-entreprise-visible-google-chatgpt-gemini",
     title: "SEO / GEO : comment rendre votre entreprise visible dans Google, ChatGPT et Gemini",
+    seoTitle: "SEO / GEO : être visible sur Google et ChatGPT",
     description:
       "Un guide clair pour comprendre comment le SEO et le GEO se complètent, pourquoi les moteurs IA changent la recherche, et quelles actions prioriser pour être cité dans les réponses.",
     date: "14 mai 2026",
@@ -68,6 +70,7 @@ export const blogPosts: BlogPostMeta[] = [
   {
     slug: "geo-2026-pourquoi-votre-entreprise-ne-peut-plus-ignorer-les-moteurs-ia",
     title: "GEO en 2026 : pourquoi votre entreprise ne peut plus ignorer les moteurs IA",
+    seoTitle: "GEO 2026 : visibilité dans les moteurs IA",
     description:
       "ChatGPT, Gemini, Claude et Google AI Overviews changent la manière dont vos clients découvrent les marques. Voici pourquoi le GEO devient un sujet business.",
     date: "12 mai 2026",
@@ -77,6 +80,7 @@ export const blogPosts: BlogPostMeta[] = [
   {
     slug: "apparaitre-chatgpt-client-cherche-entreprise",
     title: "Comment savoir si votre marque apparaît dans ChatGPT ?",
+    seoTitle: "Comment apparaître dans ChatGPT — PulseoAI",
     description:
       "Une méthode simple pour auditer vos prompts, vos concurrents cités et les sources reprises par les moteurs IA.",
     date: "10 mai 2026",
@@ -87,6 +91,7 @@ export const blogPosts: BlogPostMeta[] = [
   {
     slug: "audit-seo-geo-visibilite-ia",
     title: "Audit SEO / GEO : la méthode pour mesurer votre visibilité IA",
+    seoTitle: "Audit SEO / GEO : mesurer sa visibilité IA",
     description:
       "Comment analyser vos positions sur Google, vos citations dans ChatGPT, les concurrents recommandés et les sources utilisées par les moteurs IA.",
     date: "6 mai 2026",
@@ -96,6 +101,7 @@ export const blogPosts: BlogPostMeta[] = [
   {
     slug: "google-ai-overviews-entreprises-comprendre",
     title: "Google AI Overviews : ce que les entreprises doivent comprendre",
+    seoTitle: "Google AI Overviews : guide entreprises",
     description:
       "Pourquoi les réponses générées de Google changent la visibilité organique, et comment adapter votre stratégie SEO.",
     date: "2 mai 2026",
@@ -106,6 +112,7 @@ export const blogPosts: BlogPostMeta[] = [
   {
     slug: "seo-ia-ecommerce-recommandation-marketplace",
     title: "SEO IA pour e-commerce : être recommandé avant la marketplace",
+    seoTitle: "SEO IA e-commerce — PulseoAI",
     description:
       "Pourquoi les marques e-commerce doivent travailler leur visibilité IA pour apparaître dans les recommandations produits, guides d’achat et comparatifs générés.",
     date: "30 avril 2026",
@@ -124,6 +131,7 @@ export const blogPosts: BlogPostMeta[] = [
   {
     slug: "sources-citees-ia-site-ne-suffit-pas",
     title: "Sources citées par les IA : pourquoi votre site ne suffit pas",
+    seoTitle: "Sources citées par les IA — PulseoAI",
     description:
       "Les moteurs IA croisent votre site avec vos fiches, avis, annuaires, médias, comparatifs et contenus externes. Voici comment construire une présence crédible.",
     date: "24 avril 2026",
@@ -142,6 +150,7 @@ export const blogPosts: BlogPostMeta[] = [
   {
     slug: "seo-classique-vs-geo-acquisition-client",
     title: "SEO classique vs GEO : quelles différences pour votre acquisition client ?",
+    seoTitle: "SEO classique vs GEO — PulseoAI",
     description:
       "Le SEO vous positionne dans Google. Le GEO vous positionne dans les réponses générées par ChatGPT, Gemini, Claude, Perplexity et Google AI Overviews.",
     date: "14 avril 2026",
@@ -199,6 +208,7 @@ const newArticles: Record<string, BlogArticle> = {
   "seo-geo-rendre-entreprise-visible-google-chatgpt-gemini": {
     slug: "seo-geo-rendre-entreprise-visible-google-chatgpt-gemini",
     title: "SEO / GEO : comment rendre votre entreprise visible dans Google, ChatGPT et Gemini",
+    seoTitle: "SEO / GEO : être visible sur Google et ChatGPT",
     description:
       "Un guide clair pour comprendre comment le SEO et le GEO se complètent, pourquoi les moteurs IA changent la recherche, et quelles actions prioriser pour être cité dans les réponses.",
     date: "14 mai 2026",
@@ -340,6 +350,7 @@ const newArticles: Record<string, BlogArticle> = {
   "audit-seo-geo-visibilite-ia": {
     slug: "audit-seo-geo-visibilite-ia",
     title: "Audit SEO / GEO : la méthode pour mesurer votre visibilité IA",
+    seoTitle: "Audit SEO / GEO : mesurer sa visibilité IA",
     description:
       "Comment analyser vos positions sur Google, vos citations dans ChatGPT, les concurrents recommandés et les sources utilisées par les moteurs IA.",
     date: "6 mai 2026",
@@ -420,6 +431,7 @@ const newArticles: Record<string, BlogArticle> = {
   "apparaitre-chatgpt-client-cherche-entreprise": {
     slug: "apparaitre-chatgpt-client-cherche-entreprise",
     title: "Comment apparaître dans ChatGPT quand un client cherche une entreprise comme la vôtre",
+    seoTitle: "Comment apparaître dans ChatGPT — PulseoAI",
     description:
       "Les signaux qui aident ChatGPT à comprendre, citer et recommander une marque : clarté du site, sources fiables, contenus utiles et cohérence externe.",
     date: "10 mai 2026",
@@ -501,6 +513,7 @@ const newArticles: Record<string, BlogArticle> = {
   "seo-ia-ecommerce-recommandation-marketplace": {
     slug: "seo-ia-ecommerce-recommandation-marketplace",
     title: "SEO IA pour e-commerce : être recommandé avant la marketplace",
+    seoTitle: "SEO IA e-commerce — PulseoAI",
     description:
       "Pourquoi les marques e-commerce doivent travailler leur visibilité IA pour apparaître dans les recommandations produits, guides d’achat et comparatifs générés.",
     date: "30 avril 2026",
@@ -582,6 +595,7 @@ const newArticles: Record<string, BlogArticle> = {
   "sources-citees-ia-site-ne-suffit-pas": {
     slug: "sources-citees-ia-site-ne-suffit-pas",
     title: "Sources citées par les IA : pourquoi votre site ne suffit pas",
+    seoTitle: "Sources citées par les IA — PulseoAI",
     description:
       "Les moteurs IA croisent votre site avec vos fiches, avis, annuaires, médias, comparatifs et contenus externes. Voici comment construire une présence crédible.",
     date: "24 avril 2026",
@@ -664,6 +678,7 @@ const newArticles: Record<string, BlogArticle> = {
   "seo-classique-vs-geo-acquisition-client": {
     slug: "seo-classique-vs-geo-acquisition-client",
     title: "SEO classique vs GEO : quelles différences pour votre acquisition client ?",
+    seoTitle: "SEO classique vs GEO — PulseoAI",
     description:
       "Le SEO vous positionne dans Google. Le GEO vous positionne dans les réponses générées par ChatGPT, Gemini, Claude, Perplexity et Google AI Overviews.",
     date: "14 avril 2026",
@@ -746,6 +761,7 @@ const newArticles: Record<string, BlogArticle> = {
   "google-ai-overviews-entreprises-comprendre": {
     slug: "google-ai-overviews-entreprises-comprendre",
     title: "Google AI Overviews : ce que les entreprises doivent comprendre",
+    seoTitle: "Google AI Overviews : guide entreprises",
     description:
       "Pourquoi les réponses générées de Google changent la visibilité organique, et comment adapter votre stratégie SEO.",
     date: "2 mai 2026",
@@ -873,11 +889,13 @@ export function parseFrenchDate(date: string) {
 }
 
 export function buildBlogArticleMetadata(article: BlogArticle) {
+  const seoTitle = article.seoTitle ?? `${article.title} | PulseoAI`;
+
   return {
-    title: `${article.title} | PulseoAI`,
+    title: seoTitle,
     description: article.description,
     openGraph: {
-      title: `${article.title} | PulseoAI`,
+      title: seoTitle,
       description: article.description,
       url: `https://www.pulseoai.fr/blog/${article.slug}`,
       type: "article",
@@ -885,7 +903,7 @@ export function buildBlogArticleMetadata(article: BlogArticle) {
     },
     twitter: {
       card: "summary_large_image",
-      title: `${article.title} | PulseoAI`,
+      title: seoTitle,
       description: article.description,
       images: ["/og-image.png"],
     },

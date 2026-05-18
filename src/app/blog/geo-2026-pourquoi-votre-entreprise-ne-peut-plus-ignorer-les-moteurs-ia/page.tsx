@@ -7,11 +7,11 @@ import { QuickAnswer } from "@/components/quick-answer";
 import { RelatedPosts } from "@/components/related-posts";
 
 export const metadata: Metadata = {
-  title: "GEO en 2026 : pourquoi votre entreprise ne peut plus ignorer les moteurs IA",
+  title: "GEO 2026 : visibilité dans les moteurs IA",
   description:
     "Pourquoi le GEO devient un sujet business pour les entreprises qui veulent être visibles sur ChatGPT, Gemini, Claude, Perplexity et Google AI Overviews.",
   openGraph: {
-    title: "GEO en 2026 : pourquoi votre entreprise ne peut plus ignorer les moteurs IA",
+    title: "GEO 2026 : visibilité dans les moteurs IA",
     description:
       "Pourquoi le GEO devient un sujet business pour les entreprises qui veulent être visibles sur ChatGPT, Gemini, Claude, Perplexity et Google AI Overviews.",
     url: "https://www.pulseoai.fr/blog/geo-2026-pourquoi-votre-entreprise-ne-peut-plus-ignorer-les-moteurs-ia",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "GEO en 2026 : pourquoi votre entreprise ne peut plus ignorer les moteurs IA",
+    title: "GEO 2026 : visibilité dans les moteurs IA",
     description:
       "Pourquoi le GEO devient un sujet business pour les entreprises qui veulent être visibles sur ChatGPT, Gemini, Claude, Perplexity et Google AI Overviews.",
     images: ["/og-image.png"],

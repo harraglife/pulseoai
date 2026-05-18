@@ -81,6 +81,33 @@ export default function ContactPage() {
             </p>
           </div>
 
+          <div className="mb-8 max-w-[780px] rounded-[24px] border border-[#DEE6F3] bg-white px-5 py-5 shadow-[0_12px_28px_rgba(15,23,42,0.04)] sm:mb-10 sm:px-6">
+            <h2 className="text-[18px] font-semibold tracking-[-0.02em] text-navy">
+              Ce que nous vérifions pendant l’audit SEO / GEO
+            </h2>
+            <p className="mt-3 text-[15px] leading-7 text-navy/68">
+              L’audit sert à comprendre où votre entreprise est visible, où elle est absente et quels concurrents prennent la place sur Google et dans les réponses IA. Nous analysons la visibilité Google, la présence dans ChatGPT, Gemini et Perplexity, ainsi que les pages stratégiques qui portent déjà votre acquisition organique.
+            </p>
+            <p className="mt-3 text-[15px] leading-7 text-navy/68">
+              Nous regardons aussi vos contenus, le balisage Schema.org, les citations de marque, les sources qui parlent de vous et les signaux qui aident les moteurs IA à vous comprendre. Le résultat est un plan d’action priorisé, avec les corrections les plus utiles à lancer d’abord.
+            </p>
+            <ul className="mt-4 grid gap-2 sm:grid-cols-2">
+              {[
+                "Visibilité Google et requêtes clés",
+                "Présence dans ChatGPT, Gemini et Perplexity",
+                "Pages stratégiques et contenus existants",
+                "Balisage Schema.org et structure technique",
+                "Citations, sources externes et profils utiles",
+                "Concurrents visibles à votre place",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-2 text-[14px] text-navy/72">
+                  <span className="mt-2 size-1.5 shrink-0 rounded-full bg-cyan" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           {/* Two columns */}
           <div className="grid items-start gap-8 lg:grid-cols-5 lg:gap-12">
             {/* Left: form (3 cols) */}
