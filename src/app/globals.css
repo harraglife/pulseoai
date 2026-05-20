@@ -220,6 +220,13 @@
   z-index: 1;
 }
 
+@supports (content-visibility: auto) {
+  .deferred-section {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 900px;
+  }
+}
+
 /* ─── Sticky mobile CTA ─── */
 .sticky-mobile-cta {
   position: fixed;

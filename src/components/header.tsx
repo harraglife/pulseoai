@@ -43,7 +43,6 @@ export function Header() {
                 width={36}
                 height={36}
                 className="h-9 w-9"
-                priority
               />
               <span className="text-[21px] font-semibold tracking-[-0.04em] text-navy sm:text-[24px]">
                 Pulseo<span className="text-cyan">AI</span>

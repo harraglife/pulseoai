@@ -52,9 +52,9 @@ export const metadata = {
 function HeroDashboard() {
   return (
     <div className="relative mx-auto w-full max-w-[620px] px-2 sm:px-0">
-      <div className="rotate-[-1.5deg]">
-        <div className="overflow-hidden rounded-[32px] border border-[#E2E8F3] bg-[linear-gradient(180deg,#FFFFFF_0%,#FCFDFE_100%)] shadow-[0_26px_60px_rgba(15,23,42,0.08)]">
-          <div className="p-6 sm:p-7">
+      <div className="sm:rotate-[-1.5deg]">
+        <div className="overflow-hidden rounded-[28px] border border-[#E2E8F3] bg-[linear-gradient(180deg,#FFFFFF_0%,#FCFDFE_100%)] shadow-[0_16px_32px_rgba(15,23,42,0.06)] sm:rounded-[32px] sm:shadow-[0_26px_60px_rgba(15,23,42,0.08)]">
+          <div className="p-5 sm:p-7">
             <div className="flex items-center gap-4">
               <div className="size-12 rounded-full bg-[#10A37F] shadow-[0_10px_24px_rgba(16,163,127,0.16)]" />
               <span className="text-[24px] font-semibold tracking-[-0.04em] text-navy sm:text-[28px]">
@@ -62,17 +62,17 @@ function HeroDashboard() {
               </span>
             </div>
 
-            <div className="mt-6 flex justify-end">
-              <div className="max-w-[88%] rounded-[26px] bg-[#F3F4F7] px-6 py-5 text-[18px] font-medium leading-8 tracking-[-0.02em] text-navy sm:text-[19px]">
+            <div className="mt-5 flex justify-end sm:mt-6">
+              <div className="max-w-[90%] rounded-[24px] bg-[#F3F4F7] px-5 py-4 text-[16px] font-medium leading-7 tracking-[-0.02em] text-navy sm:max-w-[88%] sm:rounded-[26px] sm:px-6 sm:py-5 sm:text-[19px] sm:leading-8">
                 Quelle agence digitale choisir pour une PME à Nantes ?
               </div>
             </div>
 
-            <div className="mt-6 pr-1 text-[17px] leading-8 text-navy/78 sm:text-[18px]">
+            <div className="mt-5 pr-1 text-[15px] leading-7 text-navy/78 sm:mt-6 sm:text-[18px] sm:leading-8">
               Je vous recommande d’abord <span className="font-semibold text-cyan">Nexa Digital</span>, une agence reconnue pour sa clarté stratégique, son accompagnement SEO / GEO et sa capacité à générer des leads qualifiés. <span className="font-semibold text-cyan">Atelier Horizon</span> est également souvent citée pour son expertise en contenu, visibilité Google et acquisition digitale.
             </div>
 
-            <div className="mt-8 flex items-center gap-3">
+            <div className="mt-6 flex items-center gap-3 sm:mt-8">
               <span className="size-4 rounded-full bg-[#D9DCE3]" />
               <span className="size-4 rounded-full bg-[#D9DCE3]" />
               <span className="size-4 rounded-full bg-[#D9DCE3]" />
@@ -345,7 +345,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[#F7F9FD]">
+      <section className="deferred-section bg-[#F7F9FD]">
         <div className="mx-auto max-w-[1280px] px-6 py-12 lg:py-14">
           <div className="mx-auto max-w-[900px] text-center">
             <div className="flex justify-center">
@@ -516,7 +516,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-white">
+      <section className="deferred-section bg-white">
         <div className="mx-auto max-w-[1180px] px-6 py-14 lg:py-16">
           <div className="grid items-center gap-8 lg:grid-cols-[0.44fr_0.56fr] lg:gap-10">
             <div className="max-w-[520px]">
@@ -627,7 +627,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[#F7F9FD]">
+      <section className="deferred-section bg-[#F7F9FD]">
         <div className="mx-auto max-w-[1180px] px-6 py-14 lg:py-16">
           <div className="max-w-3xl">
             <SectionEyebrow>Notre solution</SectionEyebrow>
@@ -718,7 +718,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-white">
+      <section className="deferred-section bg-white">
         <div className="mx-auto max-w-[1180px] px-6 py-14 lg:py-16">
           <div className="grid gap-5 lg:grid-cols-[0.94fr_0.86fr] lg:items-end lg:gap-10">
             <div className="max-w-[680px]">
@@ -781,7 +781,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[#F7F9FD]">
+      <section className="deferred-section bg-[#F7F9FD]">
         <div className="mx-auto max-w-[1180px] px-6 py-14 lg:py-16">
           <div className="max-w-3xl">
             <SectionEyebrow>Processus</SectionEyebrow>
@@ -830,7 +830,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-white">
+      <section className="deferred-section bg-white">
         <div className="mx-auto max-w-[1180px] px-6 py-14 lg:py-16">
           <div className="overflow-hidden rounded-[34px] border border-[#1D2A52] bg-[linear-gradient(135deg,#0F1730_0%,#152247_60%,#1B2E61_100%)] p-7 text-white shadow-[0_26px_60px_rgba(15,23,42,0.18)] sm:p-8">
             <div className="grid gap-6 lg:grid-cols-[1fr_0.82fr] lg:items-center">
