@@ -39,6 +39,9 @@ const mentionUrls = {
   Gemini: "https://gemini.google.com",
   Claude: "https://claude.ai",
   Perplexity: "https://www.perplexity.ai",
+  "SEO IA": "https://www.pulseoai.fr/offre",
+  GEO: "https://www.pulseoai.fr/offre",
+  "SEO local": "https://www.pulseoai.fr/agence-seo-geo-nantes",
   "Schema.org": "https://schema.org",
   "JSON-LD": "https://json-ld.org",
   Wikipedia: "https://www.wikipedia.org",
@@ -84,11 +87,11 @@ export const articleMetadataBySlug: Record<string, ArticleSchemaEnhancement> = {
   "apparaitre-chatgpt-client-cherche-entreprise": {
     about: {
       "@type": "Thing",
-      name: "Visibilité ChatGPT",
+      name: "Référencement ChatGPT",
       description:
-        "Comprendre comment une entreprise peut apparaître dans les réponses ChatGPT quand un client cherche une solution.",
+        "Comprendre comment se référencer sur ChatGPT pour apparaître quand un client cherche une entreprise ou une solution.",
     },
-    mentions: buildMentions(["ChatGPT", "OpenAI"]),
+    mentions: buildMentions(["ChatGPT", "OpenAI", "SEO IA", "GEO", "Schema.org", "Google"]),
   },
   "audit-seo-geo-visibilite-ia": {
     about: {
@@ -279,6 +282,33 @@ export const articleMetadataBySlug: Record<string, ArticleSchemaEnhancement> = {
         "Comprendre comment le GEO peut aider les hôtels à réduire leur dépendance aux OTA et à développer les réservations directes.",
     },
     mentions: buildMentions(["Booking", "Google Hotels", "ChatGPT"]),
+  },
+  "comment-se-referencer-sur-perplexity": {
+    about: {
+      "@type": "Thing",
+      name: "Référencement Perplexity",
+      description:
+        "Comprendre comment apparaître dans Perplexity en travaillant les sources citées, les contenus answer-first et la cohérence de marque.",
+    },
+    mentions: buildMentions(["Perplexity", "SEO IA", "GEO", "Google", "Schema.org", "ChatGPT"]),
+  },
+  "veille-concurrentielle-seo-ia-serp-locales": {
+    about: {
+      "@type": "Thing",
+      name: "Veille concurrentielle SEO et IA",
+      description:
+        "Comprendre comment suivre les concurrents visibles dans Google, les moteurs IA et les SERP locales pour prioriser les bonnes actions.",
+    },
+    mentions: buildMentions([
+      "Google",
+      "ChatGPT",
+      "Gemini",
+      "Perplexity",
+      "Google AI Overviews",
+      "Google Maps",
+      "SEO local",
+      "GEO",
+    ]),
   },
 };
 

@@ -13,6 +13,11 @@ export type BlogArticle = BlogPostMeta & {
   intro: string;
   articleSection?: string;
   keywords?: string[];
+  faqTitle?: string;
+  faqItems?: Array<{
+    question: string;
+    answer: string;
+  }>;
   quickAnswer?: {
     question: string;
     answer: string;
@@ -68,6 +73,16 @@ export const blogPosts: BlogPostMeta[] = [
     featured: "primary",
   },
   {
+    slug: "comment-se-referencer-sur-perplexity",
+    title: "Comment se référencer sur Perplexity ?",
+    seoTitle: "Comment se référencer sur Perplexity ? Guide GEO",
+    description:
+      "Découvrez comment se référencer sur Perplexity : sources citées, contenus answer-first, autorité, données structurées, mentions de marque et suivi des requêtes IA.",
+    date: "13 mai 2026",
+    readingTime: "8 min",
+    category: "SEO IA",
+  },
+  {
     slug: "geo-2026-pourquoi-votre-entreprise-ne-peut-plus-ignorer-les-moteurs-ia",
     title: "GEO en 2026 : pourquoi votre entreprise ne peut plus ignorer les moteurs IA",
     seoTitle: "GEO 2026 : visibilité dans les moteurs IA",
@@ -78,14 +93,24 @@ export const blogPosts: BlogPostMeta[] = [
     category: "SEO / GEO",
   },
   {
-    slug: "apparaitre-chatgpt-client-cherche-entreprise",
-    title: "Comment savoir si votre marque apparaît dans ChatGPT ?",
-    seoTitle: "Comment apparaître dans ChatGPT — PulseoAI",
+    slug: "veille-concurrentielle-seo-ia-serp-locales",
+    title: "Veille concurrentielle SEO & IA : suivre vos concurrents",
+    seoTitle: "Veille concurrentielle SEO & IA : suivre vos concurrents",
     description:
-      "Une méthode simple pour auditer vos prompts, vos concurrents cités et les sources reprises par les moteurs IA.",
+      "Découvrez comment suivre vos concurrents sur Google, ChatGPT, Gemini, Perplexity et les SERP locales pour identifier qui capte la demande avant vous.",
+    date: "11 mai 2026",
+    readingTime: "9 min",
+    category: "SEO / GEO",
+  },
+  {
+    slug: "apparaitre-chatgpt-client-cherche-entreprise",
+    title: "Comment se référencer sur ChatGPT ?",
+    seoTitle: "Comment se référencer sur ChatGPT ? Guide SEO IA",
+    description:
+      "Découvrez comment se référencer sur ChatGPT : SEO, GEO, contenus answer-first, Schema.org, citations, sources de confiance et suivi des requêtes IA.",
     date: "10 mai 2026",
     readingTime: "6 min",
-    category: "Audit visibilité IA",
+    category: "ChatGPT",
     featured: "secondary",
   },
   {
@@ -428,85 +453,535 @@ const newArticles: Record<string, BlogArticle> = {
       },
     ],
   },
-  "apparaitre-chatgpt-client-cherche-entreprise": {
-    slug: "apparaitre-chatgpt-client-cherche-entreprise",
-    title: "Comment apparaître dans ChatGPT quand un client cherche une entreprise comme la vôtre",
-    seoTitle: "Comment apparaître dans ChatGPT — PulseoAI",
+  "comment-se-referencer-sur-perplexity": {
+    slug: "comment-se-referencer-sur-perplexity",
+    title: "Comment se référencer sur Perplexity ?",
+    seoTitle: "Comment se référencer sur Perplexity ? Guide GEO",
     description:
-      "Les signaux qui aident ChatGPT à comprendre, citer et recommander une marque : clarté du site, sources fiables, contenus utiles et cohérence externe.",
-    date: "10 mai 2026",
-    readingTime: "6 min",
-    category: "ChatGPT",
-    articleSection: "Visibilité ChatGPT",
+      "Découvrez comment se référencer sur Perplexity : sources citées, contenus answer-first, autorité, données structurées, mentions de marque et suivi des requêtes IA.",
+    date: "13 mai 2026",
+    readingTime: "8 min",
+    category: "SEO IA",
+    articleSection: "Référencement Perplexity",
     keywords: [
-      "apparaître dans ChatGPT",
-      "visibilité ChatGPT",
-      "être cité par ChatGPT",
-      "référencement ChatGPT",
-      "sources citées par les IA",
-      "stratégie SEO / GEO",
+      "comment se référencer sur Perplexity",
+      "référencement Perplexity",
+      "apparaître sur Perplexity",
+      "être cité par Perplexity",
+      "visibilité Perplexity",
+      "SEO IA Perplexity",
+      "GEO Perplexity",
     ],
+    faqTitle: "FAQ sur le référencement Perplexity",
     quickAnswer: {
-      question: "Comment apparaître dans ChatGPT ?",
+      question: "Comment se référencer sur Perplexity ?",
       answer:
-        "Il faut rendre votre entreprise claire, crédible et facile à citer. Cela passe par des pages structurées, des contenus utiles, des sources fiables et une stratégie SEO / GEO qui aide ChatGPT à comprendre votre marque et à la recommander.",
+        "Pour se référencer sur Perplexity, il faut publier des contenus qui répondent directement aux questions, structurer vos pages clairement, renforcer vos sources externes, travailler votre entité de marque et suivre les requêtes où Perplexity cite vos concurrents.",
     },
     contextualLinks: [
-      { label: "Audit visibilité IA", href: "/blog/audit-seo-geo-visibilite-ia" },
       { label: "Notre offre SEO / GEO", href: "/offre" },
+      { label: "Comment se référencer sur ChatGPT", href: "/blog/apparaitre-chatgpt-client-cherche-entreprise" },
       { label: "Sources citées par les IA", href: "/blog/sources-citees-ia-site-ne-suffit-pas" },
+      { label: "Schema.org pour le GEO", href: "/blog/schema-org-guide-complet-geo" },
+      { label: "Guide llms.txt", href: "/blog/llms-txt-guide-pratique" },
     ],
     bodyCta: {
-      intro: "Pour vérifier si votre entreprise apparaît déjà dans les réponses IA, vous pouvez demander un",
+      intro: "Pour savoir si votre marque apparaît déjà dans Perplexity et dans les autres moteurs IA, vous pouvez demander un",
       linkLabel: "audit SEO / GEO",
       href: "/contact",
       outro: ".",
     },
     relatedSlugs: [
-      "audit-seo-geo-visibilite-ia",
+      "apparaitre-chatgpt-client-cherche-entreprise",
       "sources-citees-ia-site-ne-suffit-pas",
-      "seo-geo-rendre-entreprise-visible-google-chatgpt-gemini",
+      "veille-concurrentielle-seo-ia-serp-locales",
     ],
     intro:
-      "Quand un prospect demande à ChatGPT quelle agence choisir, quel hôtel réserver ou quelle entreprise contacter, la réponse ne sort pas de nulle part. Elle repose sur des signaux que la marque peut renforcer. Apparaître dans ChatGPT demande donc un vrai travail de fond.",
+      "Perplexity fonctionne comme un moteur de réponse sourcé. L’enjeu n’est pas seulement d’avoir un site. Il faut aussi être présent dans les sources que Perplexity peut lire, comparer et citer quand un utilisateur cherche une solution.",
     sections: [
       {
-        title: "Ce que ChatGPT doit comprendre sur vous",
+        title: "Pourquoi Perplexity est important pour le référencement IA",
         paragraphs: [
-          "Votre site doit expliquer clairement qui vous êtes, ce que vous faites, pour qui vous le faites et dans quelle zone vous intervenez. Une marque floue, trop large ou mal structurée sera rarement recommandée.",
-          "Les pages services, les FAQ, les comparatifs et les contenus orientés intention jouent un rôle clé pour rendre votre positionnement compréhensible.",
+          "Perplexity compte déjà dans les nouveaux parcours de recherche parce qu’il répond directement aux questions et affiche souvent les sources utilisées. Cette logique rapproche la visibilité de la recommandation, pas seulement du clic.",
+          "Pour une entreprise, cela signifie qu’il faut penser référencement IA comme une extension du SEO. Vous ne travaillez plus seulement vos pages pour Google. Vous travaillez aussi votre capacité à être repris comme source utile dans un moteur de réponse.",
         ],
         bullets: [
-          "Qui vous êtes",
-          "Ce que vous proposez",
-          "Pour quel type de client",
-          "Dans quelle zone vous intervenez",
+          "Réponses directes orientées besoin",
+          "Sources affichées dans l’interface",
+          "Comparaison rapide entre plusieurs marques",
         ],
       },
       {
-        title: "Pourquoi les sources externes comptent",
+        title: "Comment Perplexity sélectionne ses sources",
         paragraphs: [
-          "ChatGPT ne s’appuie pas uniquement sur votre discours. Les avis, annuaires, profils locaux, médias, comparatifs et mentions externes renforcent la crédibilité de votre entreprise.",
-          "Quand ces sources convergent vers une image cohérente, votre capacité à être cité dans les réponses IA augmente.",
+          "Perplexity privilégie les contenus clairs, bien structurés et assez crédibles pour répondre à une question sans ambiguïté. Les pages floues ou trop génériques ont moins de chances d’être reprises.",
+          "Le moteur ne s’appuie pas seulement sur votre site officiel. Il peut aussi croiser des médias, annuaires, plateformes, profils, comparatifs et contenus tiers qui confirment votre positionnement.",
         ],
         bullets: [
-          "Avis clients et profils locaux",
-          "Annuaires et comparatifs sectoriels",
-          "Médias, blogs et citations de marque",
+          "Clarté éditoriale de la page",
+          "Qualité des sources externes",
+          "Cohérence des signaux de marque",
+          "Réponse explicite à une question concrète",
         ],
       },
       {
-        title: "Comment vérifier si la stratégie progresse",
+        title: "Les 6 leviers pour apparaître sur Perplexity",
         paragraphs: [
-          "Il faut tester régulièrement les prompts clients, suivre les concurrents cités et observer les sources mobilisées. C’est la base d’un monitoring IA sérieux.",
-          "Chez PulseoAI, nous relions cette lecture à une stratégie SEO / GEO pour ne pas dissocier visibilité ChatGPT et visibilité Google.",
+          "Perplexity favorise les contenus et les sources qui l’aident à répondre vite, clairement et de manière fiable. Il faut donc travailler vos pages et votre écosystème comme un ensemble.",
+        ],
+        subsections: [
+          {
+            title: "1. Créer des contenus qui répondent directement aux questions",
+            paragraphs: [
+              "Les pages qui répondent clairement aux questions des prospects ont plus de chances d’être citées. Un contenu answer-first réduit l’effort d’interprétation du moteur.",
+            ],
+          },
+          {
+            title: "2. Structurer les pages avec des titres clairs",
+            paragraphs: [
+              "Une hiérarchie de titres nette aide Perplexity à comprendre le sujet, la promesse de la page et les réponses qu’elle contient.",
+            ],
+          },
+          {
+            title: "3. Renforcer les sources externes fiables",
+            paragraphs: [
+              "Les profils, annuaires, médias, comparatifs et contenus tiers peuvent renforcer votre crédibilité et fournir des confirmations utiles à la marque.",
+            ],
+          },
+          {
+            title: "4. Travailler les entités de marque",
+            paragraphs: [
+              "Perplexity doit comprendre qui vous êtes, ce que vous faites, pour qui et dans quelle zone. Une marque lisible est plus facile à citer.",
+            ],
+          },
+          {
+            title: "5. Ajouter des données structurées utiles",
+            paragraphs: [
+              "Schema.org n’est pas une garantie, mais il aide Google et les moteurs IA à interpréter plus proprement vos services, vos FAQ et votre organisation.",
+            ],
+          },
+          {
+            title: "6. Suivre les requêtes et les sources citées",
+            paragraphs: [
+              "Tester les questions réelles de vos prospects permet de voir si Perplexity vous cite, qui prend votre place et quelles sources sont utilisées.",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Pourquoi votre site seul ne suffit pas",
+        paragraphs: [
+          "Un bon site reste indispensable, mais il ne suffit pas toujours pour apparaître dans Perplexity. Le moteur compare souvent plusieurs sources avant de construire une réponse.",
+          "C’est pour cela que les mentions de marque, les profils d’entreprise, les annuaires, les plateformes sectorielles et les contenus externes jouent un rôle complémentaire au SEO classique.",
+        ],
+        bullets: [
+          "Votre site officiel",
+          "Vos profils et fiches",
+          "Les médias et comparatifs",
+          "Les plateformes utiles à votre secteur",
+        ],
+      },
+      {
+        title: "Comment suivre votre visibilité sur Perplexity",
+        paragraphs: [
+          "Le plus simple est de partir des requêtes clients concrètes. Testez des formulations commerciales, comparatives et locales pour observer si votre marque est citée et comment elle est décrite.",
+          "Ce suivi doit être rapproché de votre stratégie globale. Une marque plus visible dans Perplexity l’est souvent aussi grâce à un meilleur travail de contenu, de sources et de structure sur Google et les autres moteurs IA.",
+        ],
+        bullets: [
+          "Questions business prioritaires",
+          "Comparaisons entre concurrents",
+          "Requêtes locales ou sectorielles",
+          "Sources citées dans les réponses",
+        ],
+      },
+    ],
+    faqItems: [
+      {
+        question: "Comment se référencer sur Perplexity ?",
+        answer:
+          "Il faut travailler des contenus answer-first, des titres clairs, des sources externes cohérentes, des données structurées utiles et un suivi régulier des requêtes où vos clients cherchent une solution.",
+      },
+      {
+        question: "Quelle différence entre Google et Perplexity ?",
+        answer:
+          "Google renvoie surtout une liste de résultats. Perplexity répond directement à la question et met en avant les sources qu’il juge pertinentes pour construire cette réponse.",
+      },
+      {
+        question: "Perplexity cite-t-il toujours ses sources ?",
+        answer:
+          "Perplexity affiche souvent ses sources, mais cela ne signifie pas qu’il reprendra toujours votre site officiel. Il peut s’appuyer sur plusieurs contenus et plateformes.",
+      },
+      {
+        question: "Est-ce que Schema.org aide pour Perplexity ?",
+        answer:
+          "Schema.org peut aider à mieux structurer vos pages et à clarifier vos entités, mais il doit s’inscrire dans un ensemble plus large avec contenus, sources et cohérence de marque.",
+      },
+      {
+        question: "Combien de temps faut-il pour apparaître sur Perplexity ?",
+        answer:
+          "Cela dépend de la clarté de votre site, de vos sources externes et de la concurrence sur vos requêtes. Les premiers signaux peuvent évoluer en quelques semaines, mais le travail se construit dans la durée.",
+      },
+      {
+        question: "Le GEO remplace-t-il le SEO ?",
+        answer:
+          "Non. Le GEO complète le SEO. Le SEO reste la base pour Google, et le GEO prolonge cette base vers les moteurs IA comme Perplexity, ChatGPT ou Gemini.",
+      },
+    ],
+  },
+  "apparaitre-chatgpt-client-cherche-entreprise": {
+    slug: "apparaitre-chatgpt-client-cherche-entreprise",
+    title: "Comment se référencer sur ChatGPT ?",
+    seoTitle: "Comment se référencer sur ChatGPT ? Guide SEO IA",
+    description:
+      "Découvrez comment se référencer sur ChatGPT : SEO, GEO, contenus answer-first, Schema.org, citations, sources de confiance et suivi des requêtes IA.",
+    date: "10 mai 2026",
+    readingTime: "6 min",
+    category: "ChatGPT",
+    articleSection: "Référencement ChatGPT",
+    keywords: [
+      "comment se référencer sur ChatGPT",
+      "référencement ChatGPT",
+      "apparaître dans ChatGPT",
+      "référencement IA ChatGPT",
+      "visibilité ChatGPT",
+      "être cité par ChatGPT",
+      "sources citées par les IA",
+      "stratégie SEO / GEO",
+    ],
+    faqTitle: "FAQ sur le référencement ChatGPT",
+    quickAnswer: {
+      question: "Comment se référencer sur ChatGPT ?",
+      answer:
+        "Pour se référencer sur ChatGPT, il faut rendre votre entreprise claire, fiable et citable : site bien structuré, contenus qui répondent aux questions clients, données Schema.org, sources externes cohérentes, mentions de marque et suivi des prompts où vos prospects cherchent une solution.",
+    },
+    contextualLinks: [
+      { label: "Notre offre SEO / GEO", href: "/offre" },
+      { label: "Agence SEO / GEO à Nantes", href: "/agence-seo-geo-nantes" },
+      { label: "Audit SEO / GEO", href: "/blog/audit-seo-geo-visibilite-ia" },
+      { label: "Schema.org pour le GEO", href: "/blog/schema-org-guide-complet-geo" },
+      { label: "Sources citées par les IA", href: "/blog/sources-citees-ia-site-ne-suffit-pas" },
+      { label: "Guide llms.txt", href: "/blog/llms-txt-guide-pratique" },
+    ],
+    bodyCta: {
+      intro: "Pour savoir si votre entreprise apparaît déjà dans les réponses IA, vous pouvez demander un",
+      linkLabel: "audit SEO / GEO",
+      href: "/contact",
+      outro: ".",
+    },
+    relatedSlugs: [
+      "comment-se-referencer-sur-perplexity",
+      "veille-concurrentielle-seo-ia-serp-locales",
+      "sources-citees-ia-site-ne-suffit-pas",
+    ],
+    intro:
+      "Quand un prospect demande à ChatGPT quelle entreprise choisir, la réponse ne sort pas de nulle part. Elle repose sur des signaux que votre marque peut renforcer. Se référencer sur ChatGPT demande donc un travail de clarté, de structure, de sources et de suivi des requêtes.",
+    sections: [
+      {
+        title: "Pourquoi le référencement ChatGPT devient important",
+        paragraphs: [
+          "Le référencement ChatGPT devient important parce que certains prospects demandent déjà directement à une IA quelle agence choisir, quel prestataire contacter ou quelle solution comparer. Si votre marque n’apparaît pas dans ces réponses, un concurrent peut capter la demande avant même la visite de votre site.",
+          "Cette évolution ne remplace pas Google. Elle ajoute un nouveau moment de décision dans lequel la visibilité dépend autant de la clarté de votre marque que de sa capacité à être citée.",
+        ],
+        bullets: [
+          "Nouveaux parcours de recherche conversationnelle",
+          "Réponses directes avant le clic",
+          "Comparaison de plusieurs marques dans la même réponse",
+        ],
+      },
+      {
+        title: "Comment ChatGPT choisit les entreprises qu’il cite",
+        paragraphs: [
+          "ChatGPT ne choisit pas une marque au hasard. Il s’appuie sur la qualité du site, la clarté des pages, la cohérence du positionnement, les sources externes disponibles et les preuves que la marque apporte.",
+          "Quand une entreprise est lisible, bien décrite et confirmée par plusieurs sources crédibles, elle a plus de chances d’être comprise puis citée dans une réponse.",
+        ],
+        bullets: [
+          "Contenus clairs et answer-first",
+          "Structure du site et données utiles",
+          "Sources externes cohérentes",
+          "Mentions de marque et signaux de confiance",
+        ],
+      },
+      {
+        title: "Les 6 bases pour se référencer sur ChatGPT",
+        paragraphs: [
+          "Se référencer sur ChatGPT repose sur des bases concrètes. Elles relient votre site, vos contenus, votre écosystème de sources et votre manière de suivre les requêtes conversationnelles.",
+        ],
+        subsections: [
+          {
+            title: "1. Clarifier votre entité",
+            paragraphs: [
+              "ChatGPT doit comprendre qui vous êtes, ce que vous faites, pour qui, où et avec quelles preuves. Une entité floue est difficile à recommander.",
+            ],
+          },
+          {
+            title: "2. Créer des contenus answer-first",
+            paragraphs: [
+              "Vos pages doivent répondre clairement aux questions que vos clients posent : quelle agence choisir, quel hôtel réserver, quel prestataire contacter, quelle solution comparer.",
+            ],
+          },
+          {
+            title: "3. Structurer votre site avec Schema.org",
+            paragraphs: [
+              "Les données structurées aident Google et les moteurs IA à comprendre vos pages, vos services, vos FAQ et votre organisation.",
+            ],
+          },
+          {
+            title: "4. Renforcer les sources externes",
+            paragraphs: [
+              "ChatGPT ne lit pas seulement votre site. Il peut s’appuyer sur des sources externes : annuaires, profils, médias, plateformes, avis, mentions et contenus tiers.",
+            ],
+          },
+          {
+            title: "5. Travailler les requêtes conversationnelles",
+            paragraphs: [
+              "Les clients ne tapent pas seulement des mots-clés. Ils posent des questions longues, comparatives et très orientées besoin.",
+            ],
+          },
+          {
+            title: "6. Suivre les prompts et les concurrents cités",
+            paragraphs: [
+              "Il faut tester régulièrement les requêtes où vos clients cherchent une solution et observer qui est cité à votre place.",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Ce que le SEO classique ne suffit plus à couvrir",
+        paragraphs: [
+          "Le SEO classique reste essentiel pour Google, mais il ne couvre pas à lui seul les réponses générées par les IA. Une page bien positionnée n’est pas automatiquement une page citée.",
+          "Le référencement ChatGPT demande donc une couche supplémentaire : travail de l’entité, des sources, des contenus orientés réponse et de la surveillance des prompts clients.",
+        ],
+        bullets: [
+          "Le SEO travaille le classement",
+          "Le GEO travaille la citation",
+          "Les deux se complètent dans une même stratégie",
+        ],
+      },
+      {
+        title: "Comment mesurer votre visibilité dans ChatGPT",
+        paragraphs: [
+          "La mesure commence par des prompts concrets. Posez à ChatGPT les questions qu’un prospect formulerait pour comparer des entreprises, des hôtels ou des solutions. Notez si votre marque est citée, comment elle est décrite et quelles sources semblent mobilisées.",
+          "Ce suivi gagne à être rapproché d’un audit de visibilité plus large. Vous reliez ainsi ChatGPT, Google, les sources citées et les concurrents visibles dans une même lecture stratégique.",
         ],
         bullets: [
           "Prompts à forte intention commerciale",
           "Concurrents recommandés",
-          "Sources citées et tonalité des réponses",
+          "Sources citées et ton des réponses",
           "Évolution mensuelle de la présence IA",
         ],
+      },
+    ],
+    faqItems: [
+      {
+        question: "Comment se référencer sur ChatGPT ?",
+        answer:
+          "Il faut rendre votre entreprise claire, crédible et citable grâce à des pages structurées, des contenus answer-first, des données Schema.org, des sources externes cohérentes et un suivi régulier des prompts clients.",
+      },
+      {
+        question: "Peut-on garantir d’apparaître dans ChatGPT ?",
+        answer:
+          "Non. On peut améliorer fortement les signaux qui aident ChatGPT à comprendre et citer votre marque, mais aucune apparition ne peut être garantie sur toutes les requêtes.",
+      },
+      {
+        question: "Le SEO aide-t-il à être cité dans ChatGPT ?",
+        answer:
+          "Oui. Un bon SEO améliore la structure, la clarté et la qualité de vos pages. Le GEO prolonge ensuite ce travail vers la citation dans les moteurs IA.",
+      },
+      {
+        question: "Combien de temps faut-il pour être visible dans ChatGPT ?",
+        answer:
+          "Cela dépend de l’état de votre site, de la clarté de votre marque, de vos sources externes et de la concurrence. Les premiers signaux peuvent évoluer en quelques semaines, mais le travail se construit dans la durée.",
+      },
+      {
+        question: "ChatGPT utilise-t-il uniquement le site officiel d’une entreprise ?",
+        answer:
+          "Non. ChatGPT peut s’appuyer sur plusieurs sources : site officiel, annuaires, profils, médias, avis, plateformes et contenus tiers.",
+      },
+      {
+        question: "Quelle différence entre référencement ChatGPT, SEO IA et GEO ?",
+        answer:
+          "Le référencement ChatGPT cible la visibilité dans ChatGPT. Le SEO IA élargit le sujet aux moteurs de réponse. Le GEO désigne plus largement le travail qui aide une marque à être comprise, citée et recommandée par les IA.",
+      },
+    ],
+  },
+  "veille-concurrentielle-seo-ia-serp-locales": {
+    slug: "veille-concurrentielle-seo-ia-serp-locales",
+    title: "Veille concurrentielle SEO & IA : suivre vos concurrents",
+    seoTitle: "Veille concurrentielle SEO & IA : suivre vos concurrents",
+    description:
+      "Découvrez comment suivre vos concurrents sur Google, ChatGPT, Gemini, Perplexity et les SERP locales pour identifier qui capte la demande avant vous.",
+    date: "11 mai 2026",
+    readingTime: "9 min",
+    category: "SEO / GEO",
+    articleSection: "Veille concurrentielle SEO et IA",
+    keywords: [
+      "veille concurrentielle SEO",
+      "veille concurrentielle IA",
+      "analyse concurrents SEO",
+      "SERP locales",
+      "concurrents visibles ChatGPT",
+      "concurrents visibles Google",
+      "monitoring SEO GEO",
+    ],
+    faqTitle: "FAQ sur la veille concurrentielle SEO et IA",
+    quickAnswer: {
+      question: "Pourquoi suivre aussi vos concurrents dans les IA ?",
+      answer:
+        "Vos concurrents ne gagnent plus seulement dans Google. Ils peuvent aussi être cités dans ChatGPT, Gemini, Perplexity, Google AI Overviews et les SERP locales. Une veille SEO / GEO permet d’identifier qui capte la demande avant vous et pourquoi.",
+    },
+    contextualLinks: [
+      { label: "Notre offre SEO / GEO", href: "/offre" },
+      { label: "Agence SEO / GEO à Nantes", href: "/agence-seo-geo-nantes" },
+      { label: "Google AI Overviews", href: "/blog/google-ai-overviews-entreprises-comprendre" },
+      { label: "Comment se référencer sur ChatGPT", href: "/blog/apparaitre-chatgpt-client-cherche-entreprise" },
+      { label: "Audit SEO / GEO", href: "/blog/audit-seo-geo-visibilite-ia" },
+    ],
+    bodyCta: {
+      intro: "Si vous voulez savoir qui prend votre place dans Google, ChatGPT, Gemini ou les SERP locales, vous pouvez demander un",
+      linkLabel: "audit SEO / GEO",
+      href: "/contact",
+      outro: ".",
+    },
+    relatedSlugs: [
+      "comment-se-referencer-sur-perplexity",
+      "google-ai-overviews-entreprises-comprendre",
+      "apparaitre-chatgpt-client-cherche-entreprise",
+    ],
+    intro:
+      "Vos concurrents ne se surveillent plus seulement dans Google. Il faut aussi regarder qui apparaît dans ChatGPT, Gemini, Perplexity, Google AI Overviews et les résultats locaux. Sans cette lecture élargie, vous risquez de manquer les marques qui captent déjà la demande avant vous.",
+    sections: [
+      {
+        title: "Pourquoi la veille SEO classique ne suffit plus",
+        paragraphs: [
+          "La veille SEO classique suit surtout les positions Google. Elle reste utile, mais elle ne montre pas qui est cité dans les moteurs IA ni comment la recommandation évolue avant le clic.",
+          "Aujourd’hui, un concurrent peut être peu visible dans Google tout en étant souvent cité dans ChatGPT, Gemini ou Perplexity sur des requêtes comparatives. C’est pour cela qu’une veille SEO / GEO est devenue plus pertinente qu’une veille uniquement centrée sur les SERP classiques.",
+        ],
+        bullets: [
+          "Positions Google",
+          "Présence dans les AI Overviews",
+          "Citations dans les moteurs IA",
+        ],
+      },
+      {
+        title: "Ce qu’il faut surveiller sur Google",
+        paragraphs: [
+          "Sur Google, il faut suivre les requêtes business prioritaires, les pages qui remontent, les concurrents présents dans les résultats organiques et les signaux locaux qui influencent la demande.",
+          "La présence dans le local pack, Google Maps ou une AI Overview peut changer la répartition de la visibilité, même si vos positions traditionnelles restent stables.",
+        ],
+        bullets: [
+          "Positions sur les requêtes cœur de business",
+          "Présence dans les AI Overviews",
+          "Concurrents visibles dans le local pack",
+          "Pages concurrentes qui répondent mieux",
+        ],
+      },
+      {
+        title: "Ce qu’il faut surveiller dans ChatGPT, Gemini et Perplexity",
+        paragraphs: [
+          "Dans les moteurs IA, le sujet n’est plus seulement le classement, mais la citation. Il faut observer quelles marques sont nommées, comment elles sont décrites et quelles sources semblent utilisées pour construire la réponse.",
+          "Cette lecture permet d’identifier les concurrents cités à votre place, mais aussi les thèmes sur lesquels votre marque manque encore de clarté ou de crédibilité.",
+        ],
+        bullets: [
+          "Prompts clients réels",
+          "Marques citées dans les réponses",
+          "Sources et plateformes mentionnées",
+          "Comparatifs ou formulations récurrentes",
+        ],
+      },
+      {
+        title: "Pourquoi les SERP locales changent la donne",
+        paragraphs: [
+          "Les SERP locales restent décisives pour les PME, commerces, hôtels et services de proximité. Une requête comme “meilleur cabinet + ville” ou “agence SEO + ville” fait souvent remonter des cartes, avis, fiches et résultats locaux avant même un contenu éditorial.",
+          "Cela oblige à surveiller Google Business Profile, Google Maps, les avis, les annuaires et la cohérence de votre présence locale dans une même logique de veille.",
+        ],
+        bullets: [
+          "Google Business Profile",
+          "Google Maps",
+          "Local pack et avis",
+          "Requêtes “meilleur + service + ville”",
+        ],
+      },
+      {
+        title: "Une méthode simple de veille concurrentielle SEO / GEO",
+        paragraphs: [
+          "Une bonne veille commence par les requêtes qui comptent pour votre acquisition. Ensuite, elle élargit le suivi aux variantes locales, aux prompts IA et aux sources qui reviennent le plus souvent.",
+        ],
+        subsections: [
+          {
+            title: "1. Lister les requêtes business",
+            paragraphs: [
+              "Commencez par les requêtes qui traduisent une intention commerciale ou comparative forte.",
+            ],
+          },
+          {
+            title: "2. Ajouter les variantes locales",
+            paragraphs: [
+              "Ajoutez les villes, quartiers ou zones de chalandise qui influencent réellement votre marché.",
+            ],
+          },
+          {
+            title: "3. Tester les prompts IA",
+            paragraphs: [
+              "Posez les mêmes questions à ChatGPT, Gemini et Perplexity pour voir si les réponses convergent ou diffèrent.",
+            ],
+          },
+          {
+            title: "4. Noter les marques citées",
+            paragraphs: [
+              "Identifiez les concurrents qui reviennent le plus souvent et ceux qui sont absents malgré une présence Google correcte.",
+            ],
+          },
+          {
+            title: "5. Identifier les sources utilisées",
+            paragraphs: [
+              "Relevez les annuaires, profils, médias, plateformes et pages qui semblent servir de base aux réponses générées.",
+            ],
+          },
+          {
+            title: "6. Comparer les contenus concurrents",
+            paragraphs: [
+              "Analysez les pages qui répondent mieux, plus directement ou avec plus de preuves aux mêmes questions.",
+            ],
+          },
+          {
+            title: "7. Prioriser les actions",
+            paragraphs: [
+              "Transformez la veille en plan d’action mensuel pour améliorer vos contenus, vos sources et votre lisibilité locale.",
+            ],
+          },
+        ],
+      },
+    ],
+    faqItems: [
+      {
+        question: "Qu’est-ce qu’une veille concurrentielle SEO ?",
+        answer:
+          "C’est le suivi des requêtes, positions, pages et concurrents qui captent la visibilité organique sur Google sur vos sujets business.",
+      },
+      {
+        question: "Pourquoi surveiller aussi ChatGPT, Gemini et Perplexity ?",
+        answer:
+          "Parce que ces moteurs peuvent recommander des concurrents avant même le clic. Une veille SEO classique ne montre pas toujours cette couche de recommandation.",
+      },
+      {
+        question: "Qu’est-ce qu’une SERP locale ?",
+        answer:
+          "Une SERP locale est une page de résultats Google influencée par la localisation, avec souvent des cartes, des fiches Google Business Profile, des avis et des résultats proches.",
+      },
+      {
+        question: "Comment savoir quels concurrents sont cités par les IA ?",
+        answer:
+          "Il faut tester les prompts que vos clients posent réellement, relever les marques mentionnées et analyser les sources qui reviennent le plus souvent.",
+      },
+      {
+        question: "À quelle fréquence faire une veille SEO / GEO ?",
+        answer:
+          "Un suivi mensuel est une bonne base. Certaines requêtes stratégiques ou locales peuvent aussi mériter un contrôle plus fréquent selon votre marché.",
+      },
+      {
+        question: "Quels outils utiliser pour surveiller sa visibilité ?",
+        answer:
+          "Google Search Console, Google Maps, les résultats Google, les prompts manuels dans ChatGPT, Gemini et Perplexity, ainsi qu’un tableau de suivi interne, suffisent déjà à construire une veille utile.",
       },
     ],
   },

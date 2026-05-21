@@ -49,6 +49,95 @@ export const metadata = {
   alternates: { canonical: "/" },
 };
 
+const homeFaqItems = [
+  {
+    question: "Qu’est-ce que le référencement IA ?",
+    answer:
+      "Le référencement IA consiste à rendre une entreprise compréhensible, crédible et citable dans les réponses générées par ChatGPT, Gemini, Perplexity, Google AI Overviews et les nouveaux moteurs de recherche.",
+  },
+  {
+    question: "Quelle différence entre SEO et GEO ?",
+    answer:
+      "Le SEO aide votre site à apparaître dans Google. Le GEO ajoute une couche : faire comprendre votre marque aux moteurs IA pour qu’elle puisse être citée, recommandée ou utilisée comme source dans les réponses.",
+  },
+  {
+    question: "Comment apparaître dans ChatGPT ?",
+    answer:
+      "Il faut clarifier votre offre, structurer vos contenus, travailler vos entités, renforcer vos sources externes, utiliser un balisage Schema.org cohérent et suivre les requêtes où vos clients cherchent une solution.",
+  },
+  {
+    question: "Le GEO remplace-t-il le SEO ?",
+    answer:
+      "Non. Le GEO complète le SEO. Les bases restent importantes : indexation, pages claires, maillage interne, autorité, contenus utiles et performance technique.",
+  },
+  {
+    question: "Combien de temps faut-il pour être visible dans les réponses IA ?",
+    answer:
+      "Cela dépend du marché, de la concurrence et de l’état du site. En général, le travail se construit sur plusieurs mois : audit, contenus, structuration, citations, suivi et ajustements.",
+  },
+  {
+    question: "PulseoAI travaille avec quels types d’entreprises ?",
+    answer:
+      "PulseoAI accompagne les PME, hôtels, restaurants, commerces, e-commerce, services locaux et entreprises B2B qui veulent améliorer leur visibilité sur Google et dans les moteurs IA.",
+  },
+] as const;
+
+const homeFaqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: homeFaqItems.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.answer,
+    },
+  })),
+};
+
+const homeGuideLinks = [
+  {
+    href: "/blog/apparaitre-chatgpt-client-cherche-entreprise",
+    title: "Comment se référencer sur ChatGPT ?",
+    description: "Comprendre les bases du référencement ChatGPT, du SEO IA et des prompts clients.",
+  },
+  {
+    href: "/blog/comment-se-referencer-sur-perplexity",
+    title: "Comment se référencer sur Perplexity ?",
+    description: "Travailler les sources citées, les entités et les contenus answer-first.",
+  },
+  {
+    href: "/blog/google-ai-overviews-entreprises-comprendre",
+    title: "Google AI Overviews : guide entreprises",
+    description: "Lire l’impact des réponses générées de Google sur la visibilité organique.",
+  },
+  {
+    href: "/blog/sources-citees-ia-site-ne-suffit-pas",
+    title: "Pourquoi votre site seul ne suffit pas",
+    description: "Comprendre le rôle des sources externes, profils, annuaires et mentions de marque.",
+  },
+  {
+    href: "/blog/audit-seo-geo-visibilite-ia",
+    title: "Audit SEO / GEO : mesurer sa visibilité IA",
+    description: "Identifier les requêtes, concurrents et sources qui structurent votre visibilité IA.",
+  },
+  {
+    href: "/blog/veille-concurrentielle-seo-ia-serp-locales",
+    title: "Veille concurrentielle SEO & IA",
+    description: "Suivre qui prend votre place dans Google, ChatGPT, Perplexity et les SERP locales.",
+  },
+  {
+    href: "/blog/schema-org-guide-complet-geo",
+    title: "Schema.org pour le GEO",
+    description: "Mieux structurer vos pages pour Google et les moteurs IA.",
+  },
+  {
+    href: "/blog/llms-txt-guide-pratique",
+    title: "llms.txt : rendre son site lisible par les IA",
+    description: "Comprendre le rôle du fichier llms.txt dans la lecture des contenus par les modèles.",
+  },
+] as const;
+
 function HeroDashboard() {
   return (
     <div className="relative mx-auto w-full max-w-[620px] px-2 sm:px-0">
@@ -69,7 +158,7 @@ function HeroDashboard() {
             </div>
 
             <div className="mt-5 pr-1 text-[15px] leading-7 text-navy/78 sm:mt-6 sm:text-[18px] sm:leading-8">
-              Je vous recommande d’abord <span className="font-semibold text-cyan">Nexa Digital</span>, une agence reconnue pour sa clarté stratégique, son accompagnement SEO / GEO et sa capacité à générer des leads qualifiés. <span className="font-semibold text-cyan">Atelier Horizon</span> est également souvent citée pour son expertise en contenu, visibilité Google et acquisition digitale.
+              Je vous recommande d’abord <span className="font-semibold text-cyan">Référencement IA #1</span>, reconnu pour sa visibilité sur Google, ChatGPT et les moteurs IA. <span className="font-semibold text-cyan">Référencement IA #2</span> est également souvent cité pour son expertise en SEO / GEO, contenus structurés et référencement IA.
             </div>
 
             <div className="mt-6 flex items-center gap-3 sm:mt-8">
@@ -299,6 +388,10 @@ export default function Home() {
           }),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqJsonLd) }}
+      />
 
       <section className="hero-aurora border-b border-[#E8EDF7] bg-[linear-gradient(180deg,#FFFFFF_0%,#F8FAFD_100%)]">
         <div className="mx-auto max-w-[1280px] px-6 pb-8 pt-7 lg:pb-12 lg:pt-10">
@@ -311,12 +404,12 @@ export default function Home() {
               <h1 className="mt-6 max-w-[18ch] text-[34px] font-semibold leading-[0.94] tracking-[-0.06em] text-navy sm:text-[54px] lg:text-[62px]">
                 <span className="text-cyan">Vos concurrents</span> apparaissent
                 <br />
-                sur les IA.
+                dans les réponses IA.
                 <br />
                 <span className="text-[rgb(76,112,243)]">Pas vous.</span>
               </h1>
               <p className="mt-5 max-w-[540px] text-[14px] leading-6 text-navy/64 sm:text-[15px]">
-                Nous aidons les entreprises à gagner en visibilité sur Google et dans les moteurs IA, pour capter une demande plus qualifiée sans dépendre uniquement de l’acquisition payante.
+                PulseoAI aide votre entreprise à renforcer son référencement IA, son SEO et sa visibilité sur Google, ChatGPT, Gemini et Perplexity.
               </p>
 
               <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -885,6 +978,121 @@ export default function Home() {
                   <p className="mt-3 text-[14px] font-semibold">Lecture multi-plateforme</p>
                   <p className="mt-1.5 text-[13px] leading-6 text-white/72">Google, ChatGPT, Gemini, Claude et Perplexity.</p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="deferred-section bg-[#F7F9FD]">
+        <div className="mx-auto max-w-[1180px] px-6 py-14 lg:py-16">
+          <div className="max-w-[820px]">
+            <SectionEyebrow>Guides</SectionEyebrow>
+            <h2 className="mt-4 text-[28px] font-semibold tracking-[-0.03em] text-navy sm:text-[36px]">
+              Guides utiles pour aller plus loin
+            </h2>
+            <p className="mt-4 text-[15px] leading-7 text-navy/64">
+              Quelques ressources pour comprendre le SEO IA, le GEO, ChatGPT, Perplexity et la visibilité dans les moteurs de réponse.
+            </p>
+            <p className="mt-3 text-[15px] leading-7 text-navy/64">
+              Pour voir notre accompagnement complet, consultez{" "}
+              <Link href="/offre" className="font-medium text-cyan transition-colors hover:text-cyan-dark">
+                notre offre SEO / GEO
+              </Link>
+              . Pour une recherche locale, découvrez aussi{" "}
+              <Link
+                href="/agence-seo-geo-nantes"
+                className="font-medium text-cyan transition-colors hover:text-cyan-dark"
+              >
+                notre agence SEO / GEO à Nantes
+              </Link>
+              .
+            </p>
+          </div>
+
+          <div className="mt-8 grid gap-4 md:grid-cols-2">
+            {homeGuideLinks.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="group rounded-[22px] border border-[#DEE6F3] bg-white p-5 shadow-[0_12px_28px_rgba(15,23,42,0.04)] transition-all hover:border-cyan/30 hover:shadow-[0_16px_32px_rgba(15,23,42,0.06)]"
+              >
+                <h3 className="text-[17px] font-semibold tracking-[-0.02em] text-navy transition-colors group-hover:text-cyan">
+                  {item.title}
+                </h3>
+                <p className="mt-2 text-[14px] leading-6 text-navy/62">{item.description}</p>
+                <span className="mt-4 inline-flex items-center gap-2 text-[14px] font-semibold text-cyan">
+                  Lire le guide
+                  <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="deferred-section bg-white">
+        <div className="mx-auto max-w-[980px] px-6 py-14 lg:py-16">
+          <div className="max-w-[760px]">
+            <SectionEyebrow>FAQ</SectionEyebrow>
+            <h2 className="mt-4 text-[28px] font-semibold tracking-[-0.03em] text-navy sm:text-[36px]">
+              Questions fréquentes sur le référencement IA
+            </h2>
+            <p className="mt-4 text-[15px] leading-7 text-navy/64">
+              Les bases pour comprendre comment votre entreprise peut devenir visible sur Google, ChatGPT, Gemini, Perplexity et les moteurs IA.
+            </p>
+          </div>
+
+          <div className="mt-8 space-y-3">
+            {homeFaqItems.map((item) => (
+              <details
+                key={item.question}
+                className="group rounded-[22px] border border-[#DEE6F3] bg-[#FBFCFF] px-5 py-4 shadow-[0_12px_28px_rgba(15,23,42,0.04)]"
+              >
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-[16px] font-semibold text-navy">
+                  <span>{item.question}</span>
+                  <span className="text-cyan transition-transform group-open:rotate-45">+</span>
+                </summary>
+                <p className="mt-4 max-w-[78ch] text-[15px] leading-7 text-navy/68">
+                  {item.answer}
+                </p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="deferred-section bg-white">
+        <div className="mx-auto max-w-[980px] px-6 pb-14 lg:pb-16">
+          <div className="rounded-[28px] border border-[#DEE6F3] bg-[linear-gradient(180deg,#F8FBFF_0%,#FFFFFF_100%)] p-5 shadow-[0_14px_30px_rgba(15,23,42,0.04)] sm:p-6">
+            <div className="max-w-[760px]">
+              <h2 className="text-[24px] font-semibold tracking-[-0.03em] text-navy sm:text-[28px]">
+                Votre entreprise est-elle visible dans les réponses IA ?
+              </h2>
+              <p className="mt-3 text-[15px] leading-7 text-navy/64">
+                On analyse votre présence sur Google, ChatGPT, Gemini, Perplexity et les concurrents déjà cités à votre place.
+              </p>
+              <p className="mt-3 text-[14px] leading-6 text-navy/58">
+                Pour aller plus loin, vous pouvez consulter{" "}
+                <Link href="/offre" className="font-medium text-cyan transition-colors hover:text-cyan-dark">
+                  notre offre SEO / GEO
+                </Link>
+                {" "}ou, pour une recherche locale,{" "}
+                <Link
+                  href="/agence-seo-geo-nantes"
+                  className="font-medium text-cyan transition-colors hover:text-cyan-dark"
+                >
+                  notre agence SEO / GEO à Nantes
+                </Link>
+                .
+              </p>
+              <div className="mt-5">
+                <Link href="/contact" className="w-full sm:w-auto">
+                  <Button className="h-12 w-full rounded-full bg-cyan px-6 text-[15px] font-semibold text-white shadow-[0_12px_24px_rgba(37,71,208,0.18)] hover:bg-cyan-dark sm:w-auto">
+                    Obtenir un audit
+                    <ArrowRight className="ml-2 size-4" />
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

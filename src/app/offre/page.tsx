@@ -21,13 +21,13 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Notre offre SEO / GEO — PulseoAI",
+  title: "Référencement IA & agence GEO — Offre PulseoAI",
   description:
-    "Offre complète SEO et GEO : audit de visibilité, contenus optimisés IA, balisage Schema.org, citations et monitoring mensuel. Accompagnement adapté aux PME, hôtels et entreprises ambitieuses.",
+    "PulseoAI accompagne les entreprises qui veulent être visibles sur Google, ChatGPT, Gemini, Perplexity et les moteurs IA. Audit SEO / GEO, contenus, Schema.org, citations et monitoring.",
   openGraph: {
-    title: "Notre offre SEO / GEO — PulseoAI",
+    title: "Référencement IA & agence GEO — Offre PulseoAI",
     description:
-      "Offre complète SEO et GEO : audit de visibilité, contenus optimisés IA, balisage Schema.org, citations et monitoring mensuel. Accompagnement adapté aux PME, hôtels et entreprises ambitieuses.",
+      "PulseoAI accompagne les entreprises qui veulent être visibles sur Google, ChatGPT, Gemini, Perplexity et les moteurs IA. Audit SEO / GEO, contenus, Schema.org, citations et monitoring.",
     url: "https://www.pulseoai.fr/offre",
     siteName: "PulseoAI",
     locale: "fr_FR",
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Notre offre SEO / GEO — PulseoAI",
+    title: "Référencement IA & agence GEO — Offre PulseoAI",
     description:
-      "Offre complète SEO et GEO : audit de visibilité, contenus optimisés IA, balisage Schema.org, citations et monitoring mensuel. Accompagnement adapté aux PME, hôtels et entreprises ambitieuses.",
+      "PulseoAI accompagne les entreprises qui veulent être visibles sur Google, ChatGPT, Gemini, Perplexity et les moteurs IA. Audit SEO / GEO, contenus, Schema.org, citations et monitoring.",
     images: ["/og-image.png"],
   },
   alternates: { canonical: "https://www.pulseoai.fr/offre" },
@@ -65,34 +65,34 @@ const jsonLdBreadcrumb = {
 
 const offreFaqItems = [
   {
-    question: "Quelle est la différence entre votre offre SEO et GEO ?",
+    question: "Qu’est-ce que le référencement IA ?",
     answer:
-      "Le SEO optimise votre visibilité dans les résultats classiques de Google. Le GEO travaille votre présence dans les réponses générées par les IA comme ChatGPT, Claude, Gemini et Perplexity. Notre offre combine les deux pour couvrir les nouveaux parcours de recherche.",
+      "Le référencement IA consiste à rendre votre marque plus compréhensible, crédible et citable dans les réponses générées par ChatGPT, Gemini, Perplexity ou Google AI Overviews.",
   },
   {
-    question: "Combien de temps faut-il pour voir des résultats ?",
+    question: "Quelle est la différence entre SEO et GEO ?",
     answer:
-      "Les premiers signaux GEO peuvent apparaître entre 4 et 8 semaines selon l’état du site, la concurrence et les sources disponibles. Le SEO classique demande souvent 3 à 6 mois pour des résultats plus visibles. Nous suivons l’évolution chaque mois.",
+      "Le SEO aide votre site à apparaître dans Google. Le GEO ajoute une couche orientée moteurs IA pour aider votre marque à être comprise, citée et recommandée dans les réponses générées.",
   },
   {
-    question: "Que comprend le reporting mensuel ?",
+    question: "Comment apparaître dans ChatGPT, Gemini ou Perplexity ?",
     answer:
-      "Chaque mois, vous suivez la présence de votre entreprise dans les réponses de ChatGPT, Claude, Gemini, Perplexity et Google AI Overviews. Le reporting inclut les requêtes testées, les concurrents cités, les sources utilisées et les actions réalisées.",
+      "Il faut clarifier votre offre, structurer vos contenus, renforcer vos entités, travailler vos sources de confiance et suivre les requêtes qui comptent vraiment pour votre activité.",
   },
   {
-    question: "Votre offre convient-elle aux PME et aux entreprises locales ?",
+    question: "Combien de temps faut-il pour obtenir des résultats en référencement IA ?",
     answer:
-      "Oui. L’accompagnement est pensé pour les PME, hôtels, restaurants, commerces, e-commerce et entreprises de services qui veulent devenir visibles là où leurs clients cherchent déjà des réponses.",
+      "Les premiers signaux peuvent apparaître en quelques semaines, mais une vraie progression demande un travail continu sur les contenus, les sources, le balisage et le suivi mensuel.",
   },
   {
-    question: "Travaillez-vous avec des entreprises hors de France ?",
+    question: "Est-ce que le GEO remplace le SEO ?",
     answer:
-      "Oui. PulseoAI accompagne des entreprises en France, en Suisse et au Maroc. Le travail peut se faire à distance et s’adapte à la zone géographique ciblée.",
+      "Non. Le GEO s’appuie sur les bases SEO. Un site clair, bien structuré et déjà solide sur Google donne aussi de meilleurs signaux aux moteurs IA.",
   },
   {
-    question: "Faut-il refaire mon site web pour bénéficier du GEO ?",
+    question: "Pourquoi choisir une agence GEO plutôt qu’une agence SEO classique ?",
     answer:
-      "Non. Le GEO peut s’appuyer sur votre site existant. Nous optimisons d’abord la structure, le contenu, le balisage Schema.org, les fichiers utiles aux moteurs IA et la stratégie de citations. Une refonte n’est proposée que si elle est vraiment nécessaire.",
+      "Parce qu’une agence GEO ne suit pas seulement vos positions Google. Elle analyse aussi votre présence dans ChatGPT, Gemini, Perplexity, les sources utilisées par les IA et les concurrents cités à votre place.",
   },
 ] as const;
 
@@ -117,7 +117,7 @@ const offreServicesJsonLd = {
       "@id": "https://www.pulseoai.fr/offre/#audit",
       name: "Audit SEO / GEO",
       description:
-        "Analyse complète de votre visibilité sur Google et dans les moteurs IA. Identification des opportunités de positionnement, des lacunes techniques et des priorités d’action.",
+        "Analyse complète de votre visibilité sur Google, ChatGPT, Gemini, Perplexity et Google AI Overviews. Identification des opportunités de référencement IA, des lacunes techniques et des priorités d’action.",
       provider: { "@id": "https://www.pulseoai.fr/#organization" },
       areaServed: ["France", "Suisse", "Maroc"],
       serviceType: "Audit de visibilité digitale",
@@ -128,7 +128,7 @@ const offreServicesJsonLd = {
       "@id": "https://www.pulseoai.fr/offre/#contenu",
       name: "Contenus optimisés pour Google et les IA",
       description:
-        "Création et optimisation de contenus structurés pour être compris par Google et cités par ChatGPT, Gemini et Perplexity.",
+        "Création et optimisation de contenus structurés pour être compris par Google et cités par ChatGPT, Gemini, Perplexity et les autres moteurs IA.",
       provider: { "@id": "https://www.pulseoai.fr/#organization" },
       areaServed: ["France", "Suisse", "Maroc"],
       serviceType: "Rédaction et optimisation de contenu",
@@ -140,7 +140,7 @@ const offreServicesJsonLd = {
       "@id": "https://www.pulseoai.fr/offre/#balisage",
       name: "Structure et balisage technique",
       description:
-        "Implémentation du balisage Schema.org, des données structurées, du llms.txt et d’une architecture technique compréhensible par Google et les moteurs IA.",
+        "Implémentation du balisage Schema.org, des données structurées, du llms.txt et d’une architecture technique compréhensible par Google, Google AI Overviews et les moteurs IA.",
       provider: { "@id": "https://www.pulseoai.fr/#organization" },
       areaServed: ["France", "Suisse", "Maroc"],
       serviceType: "SEO technique et balisage structuré",
@@ -152,7 +152,7 @@ const offreServicesJsonLd = {
       "@id": "https://www.pulseoai.fr/offre/#citations",
       name: "Citations et sources de confiance",
       description:
-        "Stratégie de citations IA : positionnement sur les plateformes, annuaires, contenus et sources utilisées par les LLM pour générer leurs réponses.",
+        "Stratégie de citations IA : positionnement sur les plateformes, annuaires, contenus et sources utilisées par ChatGPT, Gemini, Perplexity et les LLM pour générer leurs réponses.",
       provider: { "@id": "https://www.pulseoai.fr/#organization" },
       areaServed: ["France", "Suisse", "Maroc"],
       serviceType: "Stratégie de citations et visibilité IA",
@@ -163,7 +163,7 @@ const offreServicesJsonLd = {
       "@id": "https://www.pulseoai.fr/offre/#monitoring",
       name: "Monitoring mensuel SEO / GEO",
       description:
-        "Suivi mensuel de votre visibilité Google et IA avec reporting clair : positions, citations, prompts testés, évolution des concurrents et priorités.",
+        "Suivi mensuel de votre visibilité Google, ChatGPT, Gemini, Perplexity et Google AI Overviews avec reporting clair : positions, citations, prompts testés, évolution des concurrents et priorités.",
       provider: { "@id": "https://www.pulseoai.fr/#organization" },
       areaServed: ["France", "Suisse", "Maroc"],
       serviceType: "Monitoring et reporting de visibilité",
@@ -303,10 +303,10 @@ export default function OffrePage() {
             <div className="max-w-[640px]">
               <Eyebrow>OFFRE SEO / GEO</Eyebrow>
               <h1 className="mt-5 text-[30px] font-semibold leading-[1.04] tracking-[-0.05em] text-navy sm:text-[48px]">
-                Notre offre <span className="text-cyan">SEO / GEO</span> pour rendre votre entreprise <span className="text-cyan">visible</span> partout où vos clients cherchent.
+                <span className="text-cyan">Référencement IA</span>{" "}&amp;{" "}GEO : devenez visible sur Google et les moteurs IA
               </h1>
               <p className="mt-5 max-w-[620px] text-[16px] leading-7 text-navy/62">
-                PulseoAI est une agence SEO / GEO qui aide les entreprises à gagner en visibilité sur Google et dans les moteurs IA comme ChatGPT, Gemini, Claude, Perplexity et Google AI Overviews.
+                PulseoAI accompagne les entreprises qui veulent être citées, comprises et recommandées dans ChatGPT, Gemini, Perplexity, Google AI Overviews et les nouveaux parcours de recherche.
               </p>
               <p className="mt-4 max-w-[620px] text-[16px] font-medium leading-7 text-navy">
                 Si votre marque n’est pas citée dans les réponses, vos concurrents prennent la demande avant même le clic. Le SEO aide à être trouvé. Le GEO aide à être cité et recommandé au bon moment.
@@ -326,6 +326,7 @@ export default function OffrePage() {
               </div>
 
               <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-2">
+                <HeroChecklist label="Référencement IA" />
                 <HeroChecklist label="Google + IA" />
                 <HeroChecklist label="Suivi mensuel" />
                 <HeroChecklist label="Sources citées" />
@@ -373,6 +374,47 @@ export default function OffrePage() {
 
       <section className="bg-white">
         <div className="mx-auto max-w-[1180px] px-6 py-14 lg:py-16">
+          <div className="max-w-[820px]">
+            <Eyebrow>POUR QUI</Eyebrow>
+            <h2 className="mt-4 text-[30px] font-semibold tracking-[-0.04em] text-navy sm:text-[40px]">
+              Pour qui est faite cette offre SEO / GEO ?
+            </h2>
+            <p className="mt-4 text-[16px] leading-7 text-navy/62">
+              Cette offre s’adresse aux entreprises qui ne veulent plus dépendre uniquement de Google Ads, des plateformes ou du bouche-à-oreille. PME, hôtels, restaurants, commerces, e-commerce ou acteurs B2B : l’objectif est le même, rendre votre marque claire, crédible et visible dans les résultats Google comme dans les réponses IA. Si vous ciblez un marché local, vous pouvez aussi consulter notre page{" "}
+              <Link href="/agence-seo-geo-nantes" className="font-medium text-cyan transition-colors hover:text-cyan-dark">
+                agence SEO / GEO à Nantes
+              </Link>
+              . Pour l’hôtellerie, nous détaillons également notre accompagnement{" "}
+              <Link href="/geo-hotellerie" className="font-medium text-cyan transition-colors hover:text-cyan-dark">
+                GEO hôtellerie
+              </Link>
+              .
+            </p>
+          </div>
+
+          <div className="mt-7 flex flex-wrap gap-3">
+            {[
+              "PME",
+              "Hôtels",
+              "Restaurants",
+              "Commerces locaux",
+              "E-commerce",
+              "Entreprises B2B",
+              "Marques visibles sur Google et dans les IA",
+            ].map((item) => (
+              <span
+                key={item}
+                className="rounded-full border border-[#DEE6F3] bg-[#FBFCFF] px-4 py-2 text-[13px] font-medium text-navy/72 shadow-sm"
+              >
+                {item}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#F7F9FD]">
+        <div className="mx-auto max-w-[1180px] px-6 py-14 lg:py-16">
           <div className="grid gap-8 lg:grid-cols-[0.56fr_0.44fr] lg:items-start">
             <div className="max-w-[680px]">
               <Eyebrow>LE CONTEXTE</Eyebrow>
@@ -380,7 +422,15 @@ export default function OffrePage() {
                 Vos clients ne cherchent plus seulement sur Google.
               </h2>
               <p className="mt-4 text-[16px] leading-7 text-navy/62">
-                Aujourd’hui, une partie de la demande se joue directement dans les réponses générées par les IA. Un prospect peut demander à ChatGPT quelle agence choisir, quel prestataire contacter ou quelle marque comparer, sans jamais visiter Google. C’est là qu’une agence référencement IA et une agence visibilité IA deviennent stratégiques.
+                Aujourd’hui, une partie de la demande se joue directement dans les réponses générées par les IA. Un prospect peut demander à ChatGPT quelle agence choisir, quel prestataire contacter ou quelle marque comparer, sans jamais visiter Google. Pour comprendre comment{" "}
+                <Link href="/blog/apparaitre-chatgpt-client-cherche-entreprise" className="font-medium text-cyan transition-colors hover:text-cyan-dark">
+                  apparaître dans ChatGPT
+                </Link>
+                , ou ce que changent réellement les{" "}
+                <Link href="/blog/google-ai-overviews-entreprises-comprendre" className="font-medium text-cyan transition-colors hover:text-cyan-dark">
+                  Google AI Overviews
+                </Link>
+                , il faut penser référencement IA et non plus seulement positions Google.
               </p>
               <div className="mt-5 rounded-[22px] border border-[#D6E2FB] bg-[linear-gradient(180deg,#F5F8FF_0%,#FBFCFF_100%)] px-5 py-4">
                 <p className="text-[16px] font-medium leading-7 text-navy">
@@ -407,20 +457,27 @@ export default function OffrePage() {
         </div>
       </section>
 
-      <section id="methode" className="bg-[#F7F9FD]">
+      <section id="methode" className="bg-white">
         <div className="mx-auto max-w-[1180px] px-6 py-14 lg:py-16">
           <div className="max-w-[720px]">
             <Eyebrow>MÉTHODE</Eyebrow>
             <h2 className="mt-4 text-[30px] font-semibold tracking-[-0.04em] text-navy sm:text-[40px]">
-              Une offre complète pour travailler votre visibilité SEO et GEO.
+              Ce que nous optimisons pour votre référencement IA
             </h2>
+            <p className="mt-4 text-[16px] leading-7 text-navy/62">
+              Nous combinons audit SEO / GEO, contenus answer-first, données structurées et travail des sources pour rendre votre marque plus visible sur Google et dans les moteurs IA. Si vous voulez voir comment nous cadrons un diagnostic initial, consultez notre guide sur{" "}
+              <Link href="/blog/audit-seo-geo-visibilite-ia" className="font-medium text-cyan transition-colors hover:text-cyan-dark">
+                l’audit SEO / GEO
+              </Link>
+              .
+            </p>
           </div>
 
           <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
             <PillarCard
               icon={Search}
               title="Audit SEO / GEO"
-              text="Nous analysons votre visibilité actuelle sur Google et dans les moteurs IA, les requêtes stratégiques, les concurrents cités et les sources utilisées pour construire une vraie stratégie SEO / GEO."
+              text="Nous analysons votre visibilité actuelle sur Google, ChatGPT, Gemini, Perplexity et les requêtes qui comptent vraiment pour votre business."
               points={[
                 "prompts clients testés",
                 "présence IA",
@@ -430,34 +487,53 @@ export default function OffrePage() {
             />
             <PillarCard
               icon={FileText}
-              title="Contenus optimisés pour Google et les IA"
-              text="Nous créons ou améliorons les pages qui répondent clairement aux vraies questions de vos prospects, pour renforcer votre visibilité organique et votre capacité à apparaître dans ChatGPT."
+              title="Contenus answer-first"
+              text="Nous structurons vos pages pour répondre clairement aux questions que vos clients posent déjà aux moteurs de recherche et aux IA."
               points={["pages services", "FAQ", "guides", "comparatifs", "réponses directes"]}
             />
             <PillarCard
               icon={Compass}
-              title="Structure et compréhension du site"
-              text="Nous rendons votre site plus facile à comprendre pour Google, les moteurs IA et les utilisateurs, afin de soutenir votre acquisition organique."
+              title="Entités et positionnement"
+              text="Nous clarifions qui vous êtes, ce que vous faites, pour qui, où, avec quelles preuves et sur quels sujets vous méritez d’être cité."
               points={[
                 "clarté de l’offre",
-                "maillage interne",
-                "pages mieux structurées",
-                "signaux de confiance",
+                "preuves de confiance",
+                "territoires sémantiques",
+                "positionnement lisible",
               ]}
             />
             <PillarCard
               icon={Globe}
+              title="Schema.org et données structurées"
+              text="Nous renforçons la compréhension technique de votre site avec un balisage propre, utile et cohérent avec vos pages visibles."
+              points={[
+                "schema.org",
+                "métadonnées utiles",
+                "cohérence des entités",
+                "structure technique lisible",
+              ]}
+            />
+            <PillarCard
+              icon={Store}
               title="Citations et sources de confiance"
-              text="Nous renforçons les sources citées que les IA consultent pour comprendre, comparer et recommander votre entreprise."
+              text="Nous travaillons les sources que les IA peuvent utiliser pour comprendre votre marque : site, contenus, profils, annuaires, plateformes, mentions et écosystème externe."
               points={["fiches locales", "annuaires", "contenus externes", "avis", "mentions de marque"]}
             />
             <PillarCard
               icon={BarChart3}
               title="Monitoring mensuel"
-              text="Nous suivons vos scores, vos citations IA, vos concurrents cités et les sources utilisées par les moteurs IA."
+              text="Nous suivons vos positions Google, vos citations IA, les concurrents visibles à votre place et les actions à prioriser mois après mois."
               points={["évolution mensuelle", "requêtes suivies", "actions réalisées", "prochaines priorités"]}
             />
           </div>
+
+          <p className="mt-6 max-w-[820px] text-[15px] leading-7 text-navy/62">
+            Quand le sujet devient plus technique, nous pouvons aussi travailler les fichiers et signaux utilisés par les modèles. Vous pouvez lire notre guide pratique sur{" "}
+            <Link href="/blog/llms-txt-guide-pratique" className="font-medium text-cyan transition-colors hover:text-cyan-dark">
+              llms.txt
+            </Link>
+            {" "}pour comprendre cette couche complémentaire.
+          </p>
         </div>
       </section>
 
@@ -565,8 +641,11 @@ export default function OffrePage() {
           <div className="max-w-[760px]">
             <Eyebrow>POUR QUI</Eyebrow>
             <h2 className="mt-4 text-[30px] font-semibold tracking-[-0.04em] text-navy sm:text-[40px]">
-              Une offre pensée pour les entreprises qui veulent capter une demande plus qualifiée.
+              Secteurs accompagnés par notre agence GEO.
             </h2>
+            <p className="mt-4 text-[16px] leading-7 text-navy/62">
+              Notre expertise historique en hôtellerie reste forte, mais cette offre nationale s’adresse aussi aux entreprises qui veulent améliorer leur visibilité Google, leur référencement IA et leur présence dans les réponses de ChatGPT, Gemini ou Perplexity.
+            </p>
           </div>
 
           <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -609,18 +688,18 @@ export default function OffrePage() {
           <div className="max-w-[760px]">
             <Eyebrow>SEO + GEO</Eyebrow>
             <h2 className="mt-4 text-[30px] font-semibold tracking-[-0.04em] text-navy sm:text-[40px]">
-              Le GEO ne remplace pas le SEO. Il ajoute une couche de visibilité.
+              Référencement IA, GEO et SEO classique : quelle différence ?
             </h2>
             <p className="mt-4 text-[16px] leading-7 text-navy/62">
-              Google reste essentiel. Mais les réponses IA changent la manière dont les prospects découvrent, comparent et choisissent une entreprise. PulseoAI travaille les deux : la visibilité classique dans les moteurs de recherche et la capacité de votre marque à être comprise, citée et recommandée par les IA.
+              Le SEO classique aide votre site à apparaître dans Google. Le référencement IA et le GEO ajoutent une couche : rendre votre marque compréhensible, crédible et citable par les moteurs IA comme ChatGPT, Gemini, Perplexity ou Google AI Overviews.
             </p>
           </div>
 
           <div className="mt-8 grid gap-4 lg:grid-cols-2">
             <div className="rounded-[24px] border border-[#DEE6F3] bg-[#FBFCFF] p-5 shadow-[0_12px_28px_rgba(15,23,42,0.04)]">
-              <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-navy/42">SEO</p>
+              <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-navy/42">SEO classique</p>
               <ul className="mt-4 space-y-2.5">
-                {["pages indexées", "mots-clés", "maillage interne", "contenu utile", "visibilité Google entreprise"].map((item) => (
+                {["indexation", "pages optimisées", "mots-clés", "maillage interne", "autorité"].map((item) => (
                   <li key={item} className="flex items-start gap-2 text-[14px] text-navy/76">
                     <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-cyan" />
                     {item}
@@ -629,9 +708,9 @@ export default function OffrePage() {
               </ul>
             </div>
             <div className="rounded-[24px] border border-[#D6E2FB] bg-[linear-gradient(180deg,#F5F8FF_0%,#FBFCFF_100%)] p-5 shadow-[0_12px_28px_rgba(15,23,42,0.04)]">
-              <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-cyan">GEO</p>
+              <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-cyan">Référencement IA / GEO</p>
               <ul className="mt-4 space-y-2.5">
-                {["prompts clients", "citations IA", "sources utilisées", "concurrents cités", "visibilité dans ChatGPT / Gemini / Claude / Perplexity"].map((item) => (
+                {["réponses IA", "entités", "citations", "sources utilisées par les LLM", "prompts clients", "présence dans ChatGPT, Gemini, Perplexity"].map((item) => (
                   <li key={item} className="flex items-start gap-2 text-[14px] text-navy/76">
                     <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-cyan" />
                     {item}
@@ -649,6 +728,14 @@ export default function OffrePage() {
               GEO = être cité.
             </div>
           </div>
+
+          <p className="mt-6 max-w-[820px] text-[15px] leading-7 text-navy/62">
+            Les deux ne s’opposent pas. Le GEO s’appuie sur les bases SEO, puis les prolonge vers les nouveaux moteurs de réponse. Si vous voulez mesurer votre présence actuelle avant d’agir, vous pouvez{" "}
+            <Link href="/contact" className="font-medium text-cyan transition-colors hover:text-cyan-dark">
+              demander un audit SEO / GEO
+            </Link>
+            .
+          </p>
         </div>
       </section>
 

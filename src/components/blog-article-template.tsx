@@ -17,7 +17,9 @@ export function BlogArticleTemplate({ article }: { article: BlogArticle }) {
     article.bodyCta?.intro,
     article.bodyCta?.linkLabel,
     article.bodyCta?.outro,
+    article.faqTitle,
     ...(article.contextualLinks ?? []).map((item) => item.label),
+    ...(article.faqItems?.flatMap((item) => [item.question, item.answer]) ?? []),
     ...article.sections.flatMap((section) => [
       section.title,
       ...section.paragraphs,
@@ -95,6 +97,21 @@ export function BlogArticleTemplate({ article }: { article: BlogArticle }) {
     ],
   };
 
+  const faqJsonLd = article.faqItems?.length
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: article.faqItems.map((item) => ({
+          "@type": "Question",
+          name: item.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: item.answer,
+          },
+        })),
+      }
+    : null;
+
   return (
     <>
       <script
@@ -109,6 +126,12 @@ export function BlogArticleTemplate({ article }: { article: BlogArticle }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchemaEnhancements.howTo) }}
+        />
+      ) : null}
+      {faqJsonLd ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
         />
       ) : null}
 
@@ -250,6 +273,30 @@ export function BlogArticleTemplate({ article }: { article: BlogArticle }) {
               </section>
             ))}
           </div>
+
+          {article.faqItems?.length ? (
+            <section className="mt-10 sm:mt-12">
+              <h2 className="text-[22px] font-semibold tracking-[-0.035em] text-navy sm:text-[24px]">
+                {article.faqTitle ?? "Questions fréquentes"}
+              </h2>
+              <div className="mt-5 space-y-3">
+                {article.faqItems.map((item) => (
+                  <details
+                    key={item.question}
+                    className="group rounded-[22px] border border-[#DEE6F3] bg-white px-5 py-4 shadow-[0_12px_28px_rgba(15,23,42,0.04)]"
+                  >
+                    <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-[16px] font-semibold text-navy">
+                      <span>{item.question}</span>
+                      <span className="text-cyan transition-transform group-open:rotate-45">+</span>
+                    </summary>
+                    <p className="mt-4 max-w-[78ch] text-[15px] leading-7 text-navy/68">
+                      {item.answer}
+                    </p>
+                  </details>
+                ))}
+              </div>
+            </section>
+          ) : null}
 
           <RelatedPosts currentSlug={article.slug} explicitSlugs={article.relatedSlugs} />
         </div>

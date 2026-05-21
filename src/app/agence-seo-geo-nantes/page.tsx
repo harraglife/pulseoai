@@ -4,25 +4,25 @@ import { ArrowRight, Building2, CheckCircle2, ChevronRight, Compass, FileText, M
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Agence SEO / GEO à Nantes — PulseoAI | Visibilité Google & IA",
+  title: "Agence SEO / GEO à Nantes — Référencement IA | PulseoAI",
   description:
-    "PulseoAI, agence SEO et GEO à Nantes et Saint-Herblain. Nous rendons votre entreprise visible sur Google et dans les réponses de ChatGPT, Gemini et Perplexity.",
+    "PulseoAI est une agence SEO / GEO à Nantes et Saint-Herblain. Nous aidons les entreprises à renforcer leur référencement IA sur Google, ChatGPT, Gemini, Perplexity et les moteurs IA.",
   alternates: {
     canonical: "https://www.pulseoai.fr/agence-seo-geo-nantes",
   },
   openGraph: {
-    title: "Agence SEO / GEO à Nantes — PulseoAI | Visibilité Google & IA",
+    title: "Agence SEO / GEO à Nantes — Référencement IA | PulseoAI",
     description:
-      "PulseoAI, agence SEO et GEO à Nantes et Saint-Herblain. Nous rendons votre entreprise visible sur Google et dans les réponses de ChatGPT, Gemini et Perplexity.",
+      "PulseoAI est une agence SEO / GEO à Nantes et Saint-Herblain. Nous aidons les entreprises à renforcer leur référencement IA sur Google, ChatGPT, Gemini, Perplexity et les moteurs IA.",
     url: "https://www.pulseoai.fr/agence-seo-geo-nantes",
     type: "website",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "PulseoAI agence SEO / GEO Nantes" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Agence SEO / GEO à Nantes — PulseoAI | Visibilité Google & IA",
+    title: "Agence SEO / GEO à Nantes — Référencement IA | PulseoAI",
     description:
-      "PulseoAI, agence SEO et GEO à Nantes et Saint-Herblain. Nous rendons votre entreprise visible sur Google et dans les réponses de ChatGPT, Gemini et Perplexity.",
+      "PulseoAI est une agence SEO / GEO à Nantes et Saint-Herblain. Nous aidons les entreprises à renforcer leur référencement IA sur Google, ChatGPT, Gemini, Perplexity et les moteurs IA.",
     images: ["/og-image.png"],
   },
 };
@@ -53,7 +53,7 @@ const localBusinessJsonLd = {
   name: "PulseoAI — Agence SEO / GEO Nantes",
   alternateName: ["Pulseo AI Nantes", "PulseoAI Agence GEO Nantes"],
   description:
-    "Agence SEO et GEO à Nantes et Saint-Herblain. Spécialiste de la visibilité sur Google et dans les moteurs IA comme ChatGPT, Gemini et Perplexity pour les PME, hôtels, restaurants et entreprises locales.",
+    "Agence SEO, GEO et référencement IA à Nantes et Saint-Herblain. PulseoAI aide les PME, hôtels, restaurants, commerces et entreprises locales à renforcer leur visibilité sur Google, ChatGPT, Perplexity et les moteurs IA.",
   url: "https://www.pulseoai.fr/agence-seo-geo-nantes",
   address: {
     "@type": "PostalAddress",
@@ -72,6 +72,17 @@ const localBusinessJsonLd = {
     { "@type": "City", name: "Nantes" },
     { "@type": "City", name: "Saint-Herblain" },
     { "@type": "AdministrativeArea", name: "Loire-Atlantique" },
+    { "@type": "Country", name: "France" },
+  ],
+  knowsAbout: [
+    "SEO",
+    "GEO",
+    "référencement IA",
+    "visibilité ChatGPT",
+    "Google AI Overviews",
+    "Perplexity",
+    "référencement local",
+    "Schema.org",
   ],
   sameAs: ["https://www.linkedin.com/company/pulseoai"],
   parentOrganization: {
@@ -86,24 +97,34 @@ const faqItems = [
       "Une agence SEO classique travaille surtout votre visibilité dans les résultats Google. Une agence GEO travaille aussi votre présence dans les réponses générées par ChatGPT, Gemini, Perplexity et les autres moteurs IA. PulseoAI combine les deux approches pour couvrir l’ensemble du parcours de recherche.",
   },
   {
-    question: "PulseoAI intervient-il uniquement à Nantes ?",
+    question: "Quelle est la meilleure agence SEO / GEO à Nantes ?",
     answer:
-      "Non. PulseoAI est basée à Saint-Herblain, près de Nantes, mais accompagne aussi des entreprises partout en France, en Suisse et au Maroc. La proximité locale reste utile pour comprendre le tissu économique nantais et les enjeux des PME régionales.",
+      "La meilleure agence dépend de votre marché, de votre site, de votre niveau de concurrence et de sa capacité à travailler à la fois Google, les moteurs IA et les sources externes. Le bon critère n’est pas la promesse la plus forte, mais la méthode la plus claire et la plus utile à votre activité.",
   },
   {
-    question: "Combien coûte un accompagnement SEO / GEO ?",
+    question: "Comment améliorer son référencement IA à Nantes ?",
     answer:
-      "Le budget dépend du niveau d’accompagnement, de la taille du site, de la concurrence et des objectifs. L’audit initial permet de prioriser les actions et de cadrer un plan réaliste avant toute mise en place.",
+      "Il faut clarifier votre offre, travailler vos pages locales, vos contenus, votre balisage Schema.org, vos sources externes et les requêtes concrètes que vos prospects nantais posent déjà à Google, ChatGPT ou Perplexity.",
   },
   {
-    question: "Quels résultats attendre pour une PME nantaise ?",
+    question: "Comment apparaître dans ChatGPT quand un client cherche une entreprise à Nantes ?",
     answer:
-      "Une PME nantaise peut améliorer sa visibilité Google, sa capacité à apparaître dans les réponses IA et la qualité des demandes reçues. Les premiers signaux dépendent du point de départ, des contenus existants et de la cohérence des sources qui parlent de l’entreprise.",
+      "Il faut rendre votre marque lisible localement : pages claires, zone d’intervention explicite, signaux de confiance, cohérence entre votre site, vos profils, vos avis et les sources qui parlent déjà de vous.",
   },
   {
-    question: "Comment savoir si mon entreprise est citée par ChatGPT ?",
+    question: "Est-ce que Google Maps suffit pour être visible localement ?",
     answer:
-      "Le plus simple est de tester les requêtes que vos prospects posent réellement dans ChatGPT, Gemini et Perplexity. Il faut ensuite comparer les réponses, vérifier si votre marque apparaît, comment elle est décrite et quels concurrents sont cités à votre place.",
+      "Non. Google Maps et Google Business Profile restent essentiels, mais ils ne suffisent pas. La visibilité locale dépend aussi de votre site officiel, de vos contenus locaux, de vos avis, de vos annuaires et de votre présence dans les réponses IA.",
+  },
+  {
+    question: "PulseoAI travaille-t-il uniquement avec des entreprises nantaises ?",
+    answer:
+      "Non. PulseoAI est basée à Saint-Herblain, près de Nantes, mais accompagne aussi des entreprises partout en France, en Suisse et au Maroc. La proximité locale reste utile pour comprendre les enjeux des PME et marchés régionaux.",
+  },
+  {
+    question: "Combien de temps faut-il pour améliorer sa visibilité SEO / GEO locale ?",
+    answer:
+      "Les premiers signaux peuvent évoluer en quelques semaines, mais une vraie progression locale demande un travail continu sur les pages, les contenus, les sources, les profils locaux et le suivi mensuel des requêtes importantes.",
   },
 ] as const;
 
@@ -148,6 +169,26 @@ function ServiceCard({
   );
 }
 
+function StepCard({
+  step,
+  title,
+  text,
+}: {
+  step: string;
+  title: string;
+  text: string;
+}) {
+  return (
+    <div className="rounded-[22px] border border-[#DEE6F3] bg-white p-5 shadow-[0_12px_28px_rgba(15,23,42,0.04)]">
+      <span className="inline-flex items-center rounded-full border border-[#D8E3FA] bg-[#F5F8FF] px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-cyan">
+        {step}
+      </span>
+      <h3 className="mt-4 text-[17px] font-semibold tracking-[-0.02em] text-navy">{title}</h3>
+      <p className="mt-2 text-[14px] leading-6 text-navy/62">{text}</p>
+    </div>
+  );
+}
+
 export default function AgenceSeoGeoNantesPage() {
   return (
     <>
@@ -184,10 +225,10 @@ export default function AgenceSeoGeoNantesPage() {
             <div className="max-w-[700px]">
               <Eyebrow>AGENCE LOCALE</Eyebrow>
               <h1 className="mt-5 text-[30px] font-semibold leading-[1.04] tracking-[-0.05em] text-navy sm:text-[48px]">
-                Agence SEO / GEO à Nantes <span className="text-cyan">— PulseoAI</span>
+                Agence SEO / GEO à Nantes : <span className="text-cyan">référencement IA</span>, Google et moteurs IA
               </h1>
               <p className="mt-5 text-[16px] leading-7 text-navy/62">
-                PulseoAI est une agence SEO / GEO basée à Saint-Herblain, près de Nantes. Nous aidons les PME, hôtels, restaurants, e-commerce et entreprises de services à devenir visibles sur Google et dans les réponses de ChatGPT, Gemini et Perplexity.
+                Basée à Saint-Herblain, près de Nantes, PulseoAI aide les PME, hôtels, restaurants, commerces et entreprises locales à devenir plus visibles sur Google, ChatGPT, Gemini, Perplexity et les nouveaux moteurs de réponse.
               </p>
               <p className="mt-4 text-[16px] leading-7 text-navy/62">
                 Notre approche relie visibilité locale, acquisition organique et compréhension par les moteurs IA. L’objectif est simple : être trouvé, cité et recommandé au moment où vos prospects cherchent déjà une solution.
@@ -239,13 +280,13 @@ export default function AgenceSeoGeoNantesPage() {
       <section className="bg-white">
         <div className="mx-auto max-w-[1180px] px-6 py-14 lg:py-16">
           <div className="max-w-[760px]">
-            <Eyebrow>POURQUOI NANTES</Eyebrow>
-            <h2 className="mt-4 text-[30px] font-semibold tracking-[-0.04em] text-navy sm:text-[40px]">
-              Pourquoi choisir une agence SEO / GEO locale à Nantes
-            </h2>
-            <p className="mt-4 text-[16px] leading-7 text-navy/62">
-              Une agence locale comprend mieux le tissu économique nantais, les cycles de décision des PME, les enjeux des hôtels, des restaurants, des e-commerce et des entreprises de services. Cette proximité aide à prioriser les requêtes, les sources et les signaux qui comptent vraiment dans votre zone.
-            </p>
+              <Eyebrow>POURQUOI NANTES</Eyebrow>
+              <h2 className="mt-4 text-[30px] font-semibold tracking-[-0.04em] text-navy sm:text-[40px]">
+                Pourquoi choisir une agence SEO / GEO locale à Nantes
+              </h2>
+              <p className="mt-4 text-[16px] leading-7 text-navy/62">
+                Une agence locale comprend mieux le tissu économique nantais, les cycles de décision des PME, les enjeux des hôtels, des restaurants, des e-commerce et des entreprises de services. Cette proximité aide à prioriser les requêtes, les sources et les signaux qui comptent vraiment dans votre zone.
+              </p>
           </div>
 
           <div className="mt-8 grid gap-4 md:grid-cols-3">
@@ -263,6 +304,53 @@ export default function AgenceSeoGeoNantesPage() {
               icon={Compass}
               title="Accompagnement utile"
               text="Prioriser les actions concrètes qui servent le business, plutôt que produire une stratégie trop théorique ou trop large."
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#F7F9FD]">
+        <div className="mx-auto max-w-[1180px] px-6 py-14 lg:py-16">
+          <div className="max-w-[820px]">
+            <Eyebrow>CHOISIR SON AGENCE</Eyebrow>
+            <h2 className="mt-4 text-[30px] font-semibold tracking-[-0.04em] text-navy sm:text-[40px]">
+              Comment choisir la meilleure agence SEO / GEO à Nantes ?
+            </h2>
+            <p className="mt-4 text-[16px] leading-7 text-navy/62">
+              La meilleure agence SEO / GEO à Nantes n’est pas forcément celle qui promet la première position. C’est celle qui sait construire une visibilité durable : indexation propre, contenus utiles, balisage Schema.org, compréhension des entités, citations externes, visibilité dans les réponses IA et suivi clair des résultats.
+            </p>
+          </div>
+
+          <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+            <ServiceCard
+              icon={Search}
+              title="Une vraie base SEO technique"
+              text="Votre site doit être indexable, rapide, lisible, structuré et correctement relié à Google Search Console."
+            />
+            <ServiceCard
+              icon={Zap}
+              title="Une stratégie de référencement IA"
+              text="L’agence doit aussi travailler votre présence dans ChatGPT, Gemini, Perplexity et Google AI Overviews."
+            />
+            <ServiceCard
+              icon={FileText}
+              title="Des contenus qui répondent aux questions clients"
+              text="Les pages doivent répondre aux vraies questions que vos prospects posent avant de choisir un prestataire."
+            />
+            <ServiceCard
+              icon={ShieldCheck}
+              title="Un travail sur les sources et citations"
+              text="Les IA s’appuient sur plusieurs sources. Votre marque doit être cohérente sur votre site, vos profils, annuaires, contenus et mentions externes."
+            />
+            <ServiceCard
+              icon={Compass}
+              title="Une lecture concurrentielle locale"
+              text="Il faut savoir quels concurrents apparaissent déjà sur Google, Google Maps, ChatGPT ou Perplexity à votre place."
+            />
+            <ServiceCard
+              icon={Building2}
+              title="Un suivi mensuel clair"
+              text="Vous devez savoir ce qui progresse : pages indexées, requêtes suivies, citations IA, concurrents cités, sources utilisées et actions prioritaires."
             />
           </div>
         </div>
@@ -311,26 +399,38 @@ export default function AgenceSeoGeoNantesPage() {
         <div className="mx-auto max-w-[1180px] px-6 py-14 lg:py-16">
           <div className="grid gap-8 lg:grid-cols-[0.54fr_0.46fr] lg:items-start">
             <div className="max-w-[720px]">
-              <Eyebrow>VISIBILITÉ IA</Eyebrow>
+              <Eyebrow>PARCOURS LOCAL</Eyebrow>
               <h2 className="mt-4 text-[30px] font-semibold tracking-[-0.04em] text-navy sm:text-[40px]">
-                Votre entreprise nantaise est-elle visible dans les IA ?
+                Google Maps, ChatGPT et Perplexity : le nouveau parcours local
               </h2>
               <p className="mt-4 text-[16px] leading-7 text-navy/62">
-                Le test le plus simple consiste à poser dans ChatGPT, Gemini et Perplexity les questions que vos clients posent déjà. Regardez si votre entreprise apparaît, si elle est décrite clairement et si vos concurrents sont cités à votre place.
+                Un client local ne cherche plus seulement sur Google. Il peut comparer des prestataires sur Google Maps, demander une recommandation à ChatGPT, vérifier des avis, lire un article, puis revenir sur votre site. Le référencement local ne se limite donc plus à une fiche Google Business Profile : il faut aussi être clair, cité et crédible dans les moteurs IA.
               </p>
               <p className="mt-4 text-[16px] leading-7 text-navy/62">
-                Cette lecture montre vite si votre marque est comprise, si vos contenus sont exploitables et si vos sources externes sont suffisamment cohérentes pour être reprises dans une réponse IA.
+                Cela suppose une vraie cohérence entre votre site officiel, vos contenus locaux, vos avis, vos annuaires et vos profils. Pour comprendre comment surveiller ce nouveau terrain de jeu, vous pouvez consulter notre guide sur la{" "}
+                <Link href="/blog/veille-concurrentielle-seo-ia-serp-locales" className="font-medium text-cyan transition-colors hover:text-cyan-dark">
+                  veille concurrentielle SEO, IA et SERP locales
+                </Link>
+                , voir{" "}
+                <Link href="/blog/apparaitre-chatgpt-client-cherche-entreprise" className="font-medium text-cyan transition-colors hover:text-cyan-dark">
+                  comment se référencer sur ChatGPT
+                </Link>
+                {" "}ou découvrir{" "}
+                <Link href="/blog/comment-se-referencer-sur-perplexity" className="font-medium text-cyan transition-colors hover:text-cyan-dark">
+                  comment se référencer sur Perplexity
+                </Link>
+                .
               </p>
             </div>
 
             <div className="rounded-[28px] border border-[#DEE6F3] bg-white p-5 shadow-[0_18px_40px_rgba(15,23,42,0.06)] sm:p-6">
-              <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-cyan">Test simple</p>
+              <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-cyan">Signaux locaux à surveiller</p>
               <div className="mt-4 space-y-3">
                 {[
-                  "Taper une requête locale ou sectorielle dans ChatGPT",
-                  "Comparer la réponse dans Gemini et Perplexity",
-                  "Vérifier si votre entreprise est nommée et bien décrite",
-                  "Noter les concurrents cités, les angles utilisés et les oublis",
+                  "Google Business Profile et Google Maps",
+                  "Avis, annuaires et plateformes locales",
+                  "Site officiel et contenus locaux",
+                  "Réponses de ChatGPT et Perplexity sur les requêtes nantaises",
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-3 rounded-[18px] border border-[#E6ECF6] bg-[#FBFCFE] px-4 py-3">
                     <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-cyan" />
@@ -349,6 +449,107 @@ export default function AgenceSeoGeoNantesPage() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="bg-[#F7F9FD]">
+        <div className="mx-auto max-w-[1180px] px-6 py-14 lg:py-16">
+          <div className="grid gap-8 lg:grid-cols-[0.56fr_0.44fr] lg:items-start">
+            <div className="max-w-[760px]">
+              <Eyebrow>PROBLÈME LOCAL</Eyebrow>
+              <h2 className="mt-4 text-[30px] font-semibold tracking-[-0.04em] text-navy sm:text-[40px]">
+                Qui prend votre place aujourd’hui ?
+              </h2>
+              <p className="mt-4 text-[16px] leading-7 text-navy/62">
+                Sur une requête comme “meilleure agence SEO à Nantes”, “agence référencement IA Nantes” ou “quelle agence digitale choisir à Nantes”, les moteurs ne montrent pas toujours les meilleurs acteurs. Ils montrent surtout les marques qu’ils comprennent, qu’ils trouvent, qu’ils peuvent vérifier et qu’ils voient citées ailleurs.
+              </p>
+              <p className="mt-4 text-[16px] leading-7 text-navy/62">
+                C’est pour cela qu’un{" "}
+                <Link href="/blog/audit-seo-geo-visibilite-ia" className="font-medium text-cyan transition-colors hover:text-cyan-dark">
+                  audit SEO / GEO
+                </Link>
+                {" "}local permet de savoir si vos concurrents sont plus visibles parce qu’ils sont meilleurs, ou simplement parce qu’ils sont plus lisibles pour Google, Google Maps, ChatGPT et Perplexity.
+              </p>
+            </div>
+
+            <div className="rounded-[28px] border border-[#DEE6F3] bg-white p-5 shadow-[0_18px_40px_rgba(15,23,42,0.06)] sm:p-6">
+              <div className="space-y-3">
+                {[
+                  "Concurrents visibles dans Google",
+                  "Concurrents présents sur Google Maps",
+                  "Concurrents cités dans ChatGPT",
+                  "Concurrents repris par Perplexity",
+                  "Concurrents mieux structurés dans les contenus",
+                ].map((item) => (
+                  <div key={item} className="flex items-start gap-3 rounded-[18px] border border-[#E6ECF6] bg-[#FBFCFE] px-4 py-3">
+                    <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-cyan" />
+                    <span className="text-[14px] text-navy/72">{item}</span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-6">
+                <Link href="/contact" className="inline-flex items-center text-[15px] font-semibold text-cyan transition-opacity hover:opacity-80">
+                  Demander un audit de visibilité locale
+                  <ArrowRight className="ml-2 size-4" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white">
+        <div className="mx-auto max-w-[1180px] px-6 py-14 lg:py-16">
+          <div className="max-w-[820px]">
+            <Eyebrow>MÉTHODE LOCALE</Eyebrow>
+            <h2 className="mt-4 text-[30px] font-semibold tracking-[-0.04em] text-navy sm:text-[40px]">
+              Notre méthode pour renforcer votre visibilité à Nantes
+            </h2>
+            <p className="mt-4 text-[16px] leading-7 text-navy/62">
+              Nous relions visibilité Google, réponses IA, signaux locaux et lecture concurrentielle pour améliorer votre présence là où vos prospects comparent réellement les options disponibles.
+            </p>
+          </div>
+
+          <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-5">
+            <StepCard
+              step="01"
+              title="Audit SEO / GEO local"
+              text="Nous analysons votre site, vos pages locales, votre fiche Google Business Profile, vos concurrents et votre visibilité dans les moteurs IA."
+            />
+            <StepCard
+              step="02"
+              title="Requêtes business locales"
+              text="Nous listons les recherches qui comptent vraiment : agence SEO Nantes, référencement IA Nantes, meilleure agence GEO, prestataire digital local, etc."
+            />
+            <StepCard
+              step="03"
+              title="Contenus et pages stratégiques"
+              text="Nous clarifions vos pages pour que Google et les IA comprennent votre offre, votre zone, vos services et vos preuves."
+            />
+            <StepCard
+              step="04"
+              title="Sources et citations locales"
+              text="Nous travaillons les signaux externes : annuaires, profils, contenus, mentions, avis, plateformes et cohérence des informations."
+            />
+            <StepCard
+              step="05"
+              title="Suivi mensuel"
+              text="Nous suivons les positions, les citations IA, les concurrents visibles, les sources utilisées et les actions à prioriser."
+            />
+          </div>
+
+          <p className="mt-6 max-w-[840px] text-[15px] leading-7 text-navy/62">
+            Pour l’hôtellerie, cette méthode s’adapte aussi aux recherches de séjour, de réservation directe et de visibilité locale. Vous pouvez voir notre approche dédiée sur{" "}
+            <Link href="/geo-hotellerie" className="font-medium text-cyan transition-colors hover:text-cyan-dark">
+              GEO hôtellerie
+            </Link>
+            . Pour comprendre les réponses générées par Google, vous pouvez aussi lire notre guide sur{" "}
+            <Link href="/blog/google-ai-overviews-entreprises-comprendre" className="font-medium text-cyan transition-colors hover:text-cyan-dark">
+              Google AI Overviews
+            </Link>
+            .
+          </p>
         </div>
       </section>
 
