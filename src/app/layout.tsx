@@ -5,6 +5,8 @@ import "./globals.css";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { StickyMobileCta } from "@/components/sticky-mobile-cta";
+import { OrganizationJsonLd } from "@/components/json-ld";
+import { SITE_URL, SITE_NAME, SITE_DESCRIPTION } from "@/config/site";
 
 const poppins = Poppins({
   variable: "--font-sans",
@@ -14,27 +16,29 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "PulseoAI · Agence GEO, experts en référencement IA",
-    template: "%s · PulseoAI",
+    default: `${SITE_NAME} · Agence GEO, experts en référencement IA`,
+    template: `%s · ${SITE_NAME}`,
   },
-  description:
-    "Faites apparaître votre entreprise sur ChatGPT, Claude et Gemini. PulseoAI, agence GEO à Nantes. Experts hôtellerie, restauration, PME.",
-  metadataBase: new URL("https://www.pulseoai.fr"),
+  description: SITE_DESCRIPTION,
   alternates: {
     canonical: "/",
+    languages: {
+      "fr-FR": "/",
+      "x-default": "/",
+    },
   },
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    url: "https://www.pulseoai.fr",
-    siteName: "PulseoAI",
-    title: "PulseoAI · Agence GEO, experts en référencement IA",
-    description:
-      "Faites apparaître votre entreprise sur ChatGPT, Claude et Gemini. PulseoAI, agence GEO à Nantes. Experts hôtellerie, restauration, PME.",
+    url: SITE_URL,
+    siteName: SITE_NAME,
+    title: `${SITE_NAME} · Agence GEO, experts en référencement IA`,
+    description: SITE_DESCRIPTION,
     images: [
       {
-        url: "https://www.pulseoai.fr/og-image.png",
+        url: `${SITE_URL}/og-image.png`,
         width: 1200,
         height: 630,
         alt: "PulseoAI, Agence GEO",
@@ -43,9 +47,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "PulseoAI · Agence GEO, experts en référencement IA",
-    description:
-      "Faites apparaître votre entreprise sur ChatGPT, Claude et Gemini. PulseoAI, agence GEO à Nantes. Experts hôtellerie, restauration, PME.",
+    title: `${SITE_NAME} · Agence GEO, experts en référencement IA`,
+    description: SITE_DESCRIPTION,
     images: ["/og-image.png"],
   },
   icons: {
@@ -62,6 +65,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
     },
   },
 };
@@ -199,6 +205,7 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <Footer />
         <StickyMobileCta />
+        <OrganizationJsonLd />
       </body>
     </html>
   );

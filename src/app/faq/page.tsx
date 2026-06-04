@@ -12,6 +12,7 @@ import {
   LineChart,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { FaqJsonLd } from "@/components/json-ld";
 
 export const metadata: Metadata = {
   title: "FAQ SEO / GEO | PulseoAI",
@@ -393,6 +394,7 @@ export default function FaqPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq) }}
       />
+      <FaqJsonLd items={allFaqItems} />
 
       <section className="border-b border-[#E8EDF7] bg-[linear-gradient(180deg,#FFFFFF_0%,#F8FAFD_100%)]">
         <div className="mx-auto max-w-[1180px] px-6 pb-10 pt-7 lg:pb-14 lg:pt-10">

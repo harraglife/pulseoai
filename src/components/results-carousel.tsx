@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 
 const results = [
   {
@@ -118,11 +119,14 @@ export function ResultsCarousel() {
           >
             {/* Screenshot */}
             <div className="border-b border-gray-100">
-              <img
+              <Image
                 src={item.image}
                 alt={`Résultat client ${item.name}`}
+                width={400}
+                height={225}
                 className="block w-full aspect-[16/9] object-cover object-top"
-                loading="lazy"
+                sizes="(max-width: 640px) 280px, 400px"
+                priority={i === 0}
               />
             </div>
 
