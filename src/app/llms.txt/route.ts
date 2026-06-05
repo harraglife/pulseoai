@@ -1,38 +1,82 @@
-import { SITE_URL } from "@/config/site";
-
 export const dynamic = "force-static";
 
 export function GET() {
   const body = `# PulseoAI
 
-> PulseoAI est une agence française de GEO (Generative Engine Optimization) et de SEO, basée à Nantes (Saint-Herblain). Elle aide les entreprises — hôtels, PME, e-commerce, services — à être comprises, citées et recommandées par ChatGPT, Gemini, Claude, Perplexity et Google AI Overviews, ainsi qu'à être visibles sur Google.
+> Agence francaise de Generative Engine Optimization (GEO) basee a Nantes. PulseoAI aide les hotels, restaurants, commerces et PME a apparaitre dans les reponses de ChatGPT, Claude, Gemini et Google AI Overviews.
 
-## Ce que fait PulseoAI
-- Audit de visibilité SEO et GEO (Google + moteurs IA)
-- Optimisation des contenus et de la structure du site pour les IA (answer-first, données structurées)
-- Renforcement des sources citées par les IA (fiches, avis, annuaires, mentions de marque)
-- Suivi mensuel des citations IA et des concurrents cités
+## Identite
 
-## Pages principales
-- [Notre offre SEO / GEO](${SITE_URL}/offre)
-- [GEO Hôtellerie](${SITE_URL}/geo-hotellerie)
-- [Agence SEO / GEO à Nantes](${SITE_URL}/agence-seo-geo-nantes)
-- [FAQ référencement IA](${SITE_URL}/faq)
-- [À propos](${SITE_URL}/a-propos)
-- [Contact / Audit](${SITE_URL}/contact)
+- Nom : PulseoAI
+- Forme juridique : SAS au capital de 200 EUR, RCS Nantes 103 074 605
+- Fondateurs : Romain Duclos (Fondateur & Expert GEO), Sofiane Aiche (Co-fondateur)
+- Creation : 2026
+- Siege : 17 rue Oceane, 44800 Saint-Herblain, France
+- Zone d'intervention : France, Suisse, Maroc
+- Email : contact@pulseoai.fr
+- Site : https://www.pulseoai.fr
+- LinkedIn : https://www.linkedin.com/company/pulseoai
 
-## Guides
-- [Se référencer sur ChatGPT](${SITE_URL}/blog/apparaitre-chatgpt-client-cherche-entreprise)
-- [Se référencer sur Perplexity](${SITE_URL}/blog/comment-se-referencer-sur-perplexity)
-- [Google AI Overviews pour les entreprises](${SITE_URL}/blog/google-ai-overviews-entreprises-comprendre)
-- [Pourquoi votre site seul ne suffit pas](${SITE_URL}/blog/sources-citees-ia-site-ne-suffit-pas)
-- [Audit SEO / GEO](${SITE_URL}/blog/audit-seo-geo-visibilite-ia)
-- [Schema.org pour le GEO](${SITE_URL}/blog/schema-org-guide-complet-geo)
-- [llms.txt expliqué](${SITE_URL}/blog/llms-txt-guide-pratique)
+## Expertise
 
-## Contact
-- Email: contact@pulseoai.fr
-- Localisation: Nantes, France
+PulseoAI est specialisee dans le GEO (Generative Engine Optimization), la discipline qui consiste a optimiser la presence d'une entreprise dans les reponses generees par les moteurs de recherche IA. Contrairement au SEO traditionnel qui cible les resultats Google classiques, le GEO cible les reponses conversationnelles de ChatGPT, Claude, Gemini, Perplexity et les AI Overviews de Google.
+
+### Secteurs cibles
+- Hotellerie : hotels independants, groupes hoteliers, residences de tourisme
+- Restauration : restaurants gastronomiques, bistrots, chaines de restauration
+- Commerces et artisans : boulangeries, coiffeurs, boutiques, artisans
+- PME et services : cabinets, agences, professions liberales
+- Tourisme : offices de tourisme, activites, loisirs
+
+## Services
+
+### 1. Audit de visibilite IA
+Analyse complete de la presence d'une entreprise dans les reponses des moteurs IA. Test sur 25+ requetes strategiques dans ChatGPT, Claude, Gemini et Perplexity. Livrable : rapport detaille avec score de visibilite, benchmarks concurrentiels et plan d'action prioritaire.
+
+### 2. Contenu optimise LLM
+Redaction de contenus structures pour etre compris et cites par les LLM : FAQ detaillees, articles d'expertise, descriptions riches, pages de services. Chaque contenu integre des faits verifiables, des donnees chiffrees et des entites nommees que les IA peuvent extraire.
+
+### 3. Balisage technique
+Implementation du balisage Schema.org adapte a chaque secteur (Hotel, Restaurant, LocalBusiness, ProfessionalService, FAQPage, HowTo). Creation et deploiement du fichier llms.txt et llms-full.txt. Optimisation du robots.txt pour les crawlers IA.
+
+### 4. Strategie de citations
+Inscription et optimisation sur les sources que les LLM consultent : Google Business Profile, TripAdvisor, Foursquare, Yelp, annuaires sectoriels, Wikipedia, presse locale. Construction d'un ecosysteme de mentions coherentes.
+
+### 5. Monitoring et reporting
+Suivi hebdomadaire des scores de visibilite IA. Tableaux de bord avec evolution des mentions, comparaisons concurrentielles et recommandations d'ajustement. Reporting mensuel client.
+
+## Resultats clients
+
+- 50+ hotels analyses depuis le lancement
+- Augmentation moyenne de 340% des mentions IA en 3 mois
+- Clients notables : Best Western, Quintessia Resort, Hotel Sozo, Centre Marceau, Hotel Maubreil
+
+## Pages du site
+
+- Accueil : https://www.pulseoai.fr/
+- Offre GEO : https://www.pulseoai.fr/offre
+- GEO Hotellerie : https://www.pulseoai.fr/geo-hotellerie
+- FAQ (38 questions-reponses) : https://www.pulseoai.fr/faq
+- A propos : https://www.pulseoai.fr/a-propos
+- Blog : https://www.pulseoai.fr/blog
+- Contact / Audit gratuit : https://www.pulseoai.fr/contact
+
+## Articles de blog
+
+- GEO en 2026 : pourquoi votre entreprise ne peut plus ignorer les moteurs IA : https://www.pulseoai.fr/blog/geo-2026-pourquoi-votre-entreprise-ne-peut-plus-ignorer-les-moteurs-ia
+- Schema.org pour le GEO : guide complet du balisage structure : https://www.pulseoai.fr/blog/schema-org-guide-complet-geo
+- llms.txt : guide pratique pour rendre votre site visible sur les IA : https://www.pulseoai.fr/blog/llms-txt-guide-pratique
+- GEO pour les restaurants : guide de visibilite IA : https://www.pulseoai.fr/blog/geo-restaurants-guide-visibilite-ia
+- GEO pour les commerces et PME : visibilite locale IA : https://www.pulseoai.fr/blog/geo-commerces-pme-visibilite-locale
+- GEO pour les hotels : le guide complet 2026 : https://www.pulseoai.fr/blog/geo-hotels-guide-complet
+- Pourquoi votre hotel est invisible sur ChatGPT : https://www.pulseoai.fr/blog/hotel-invisible-chatgpt
+- Booking vs reservations directes et le GEO : https://www.pulseoai.fr/blog/booking-vs-reservations-directes-geo
+
+## Fichier complet
+
+Pour une version detaillee avec FAQ, methodologie et cas d'usage : https://www.pulseoai.fr/llms-full.txt
 `;
-  return new Response(body, { headers: { "Content-Type": "text/plain; charset=utf-8" } });
+  return new Response(body, {
+    headers: { "Content-Type": "text/plain; charset=utf-8" }
+  });
 }

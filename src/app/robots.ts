@@ -1,29 +1,26 @@
 import type { MetadataRoute } from "next";
-import { SITE_URL } from "@/config/site";
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
-      { userAgent: ["Googlebot", "Bingbot"], allow: "/", disallow: ["/api/", "/admin/"] },
-      {
-        userAgent: [
-          "OAI-SearchBot",
-          "ChatGPT-User",
-          "GPTBot",
-          "PerplexityBot",
-          "Perplexity-User",
-          "ClaudeBot",
-          "Claude-User",
-          "Claude-SearchBot",
-          "Google-Extended",
-          "Applebot-Extended",
-        ],
-        allow: "/",
-        disallow: ["/api/", "/admin/"],
-      },
-      { userAgent: "*", allow: "/", disallow: ["/api/", "/admin/"] },
+      { userAgent: "*", allow: "/" },
+      { userAgent: "GPTBot", allow: "/" },
+      { userAgent: "ChatGPT-User", allow: "/" },
+      { userAgent: "Google-Extended", allow: "/" },
+      { userAgent: "PerplexityBot", allow: "/" },
+      { userAgent: "Claude-Web", allow: "/" },
+      { userAgent: "Amazonbot", allow: "/" },
+      { userAgent: "CCBot", allow: "/" },
+      { userAgent: "Bytespider", allow: "/" },
+      { userAgent: "Applebot-Extended", allow: "/" },
+      { userAgent: "Bingbot", allow: "/" },
+      { userAgent: "DuckDuckBot", allow: "/" },
+      { userAgent: "YandexBot", allow: "/" },
+      { userAgent: "anthropic-ai", allow: "/" },
+      { userAgent: "Claudebot", allow: "/" },
+      { userAgent: "cohere-ai", allow: "/" },
+      { userAgent: "meta-externalagent", allow: "/" },
     ],
-    sitemap: `${SITE_URL}/sitemap.xml`,
-    host: SITE_URL,
+    sitemap: "https://www.pulseoai.fr/sitemap.xml",
   };
 }
