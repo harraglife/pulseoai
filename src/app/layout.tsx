@@ -99,6 +99,7 @@ const professionalServiceJsonLd = {
   sameAs: [
     "https://www.linkedin.com/company/pulseoai",
     "https://fr.linkedin.com/in/romaindcl",
+    "https://share.google/TzGlBcQm6UkgBdpDF",
   ],
   knowsAbout: [
     "GEO",

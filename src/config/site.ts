@@ -9,5 +9,6 @@ export const ORG_REGION = "Pays de la Loire";
 export const ORG_COUNTRY = "FR";
 export const SAME_AS: string[] = [
   "https://www.linkedin.com/company/pulseoai",
-  // Ajouter : Wikidata, Google Business Profile, Pages Jaunes, X/Twitter
+  "https://share.google/TzGlBcQm6UkgBdpDF",
+  // Ajouter : Wikidata, Pages Jaunes, X/Twitter
 ];

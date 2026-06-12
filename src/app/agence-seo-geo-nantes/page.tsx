@@ -84,7 +84,10 @@ const localBusinessJsonLd = {
     "référencement local",
     "Schema.org",
   ],
-  sameAs: ["https://www.linkedin.com/company/pulseoai"],
+  sameAs: [
+    "https://www.linkedin.com/company/pulseoai",
+    "https://share.google/TzGlBcQm6UkgBdpDF",
+  ],
   parentOrganization: {
     "@id": "https://www.pulseoai.fr/#organization",
   },
@@ -272,6 +275,21 @@ export default function AgenceSeoGeoNantesPage() {
                   </div>
                 ))}
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white">
+        <div className="mx-auto max-w-[1180px] px-6 py-14 lg:py-16">
+          <div className="max-w-[760px]">
+            <h2 className="text-[26px] font-semibold tracking-[-0.04em] text-navy sm:text-[34px]">
+              Qu&apos;est-ce qu&apos;une agence GEO à Nantes ?
+            </h2>
+            <div className="mt-5 rounded-[22px] border border-[#D8E3FA] bg-[#F5F8FF] px-6 py-5">
+              <p className="text-[15px] leading-7 text-navy/80">
+                Une agence GEO à Nantes aide les entreprises locales à apparaître dans les réponses de ChatGPT, Perplexity, Gemini et Google AI Overviews, en complément du référencement Google classique. PulseoAI, basée à Saint-Herblain près de Nantes, combine SEO et GEO pour rendre votre entreprise visible là où vos clients cherchent désormais leurs prestataires.
+              </p>
             </div>
           </div>
         </div>

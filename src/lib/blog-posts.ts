@@ -271,6 +271,7 @@ const newArticles: Record<string, BlogArticle> = {
     },
     contextualLinks: [
       { label: "Notre offre SEO / GEO", href: "/offre" },
+      { label: "Agence GEO à Nantes", href: "/agence-seo-geo-nantes" },
       { label: "Demander un audit GEO gratuit", href: "/contact" },
       { label: "Schema.org pour le GEO", href: "/blog/schema-org-guide-complet-geo" },
       { label: "Guide llms.txt", href: "/blog/llms-txt-guide-pratique" },

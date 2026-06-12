@@ -7,7 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/",                      lastModified: "2026-06-01", changeFrequency: "weekly"  as const, priority: 1.0 },
     { path: "/offre",                 lastModified: "2026-05-20", changeFrequency: "monthly" as const, priority: 0.9 },
     { path: "/geo-hotellerie",        lastModified: "2026-05-20", changeFrequency: "monthly" as const, priority: 0.9 },
-    { path: "/agence-seo-geo-nantes", lastModified: "2026-05-15", changeFrequency: "monthly" as const, priority: 0.8 },
+    { path: "/agence-seo-geo-nantes", lastModified: "2026-06-12", changeFrequency: "monthly" as const, priority: 0.8 },
     { path: "/faq",                   lastModified: "2026-05-10", changeFrequency: "monthly" as const, priority: 0.7 },
     { path: "/a-propos",              lastModified: "2026-04-28", changeFrequency: "yearly"  as const, priority: 0.6 },
     { path: "/blog",                  lastModified: "2026-06-04", changeFrequency: "weekly"  as const, priority: 0.8 },

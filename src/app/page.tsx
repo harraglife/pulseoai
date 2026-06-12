@@ -999,12 +999,12 @@ export default function Home() {
               <Link href="/offre" className="font-medium text-cyan transition-colors hover:text-cyan-dark">
                 notre offre SEO / GEO
               </Link>
-              . Pour une recherche locale, découvrez aussi{" "}
+              . Pour une recherche locale, découvrez notre{" "}
               <Link
                 href="/agence-seo-geo-nantes"
                 className="font-medium text-cyan transition-colors hover:text-cyan-dark"
               >
-                notre agence SEO / GEO à Nantes
+                agence GEO à Nantes
               </Link>
               .
             </p>
