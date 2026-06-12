@@ -999,6 +999,10 @@ export default function Home() {
               <Link href="/offre" className="font-medium text-cyan transition-colors hover:text-cyan-dark">
                 notre offre SEO / GEO
               </Link>
+              . Pour comprendre comment apparaître dans les réponses IA, lisez notre guide sur le{" "}
+              <Link href="/blog/referencement-chatgpt-apparaitre-ia" className="font-medium text-cyan transition-colors hover:text-cyan-dark">
+                référencement ChatGPT
+              </Link>
               . Pour une recherche locale, découvrez notre{" "}
               <Link
                 href="/agence-seo-geo-nantes"

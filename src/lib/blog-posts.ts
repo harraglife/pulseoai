@@ -69,7 +69,7 @@ export const blogPosts: BlogPostMeta[] = [
     description:
       "Comment faire apparaître votre entreprise sur ChatGPT, Perplexity, Gemini et Claude. Les 5 leviers du référencement IA (GEO) expliqués.",
     date: "4 juin 2026",
-    readingTime: "9 min",
+    readingTime: "11 min",
     category: "ChatGPT",
     featured: "primary",
   },
@@ -249,7 +249,8 @@ const newArticles: Record<string, BlogArticle> = {
     description:
       "Comment faire apparaître votre entreprise sur ChatGPT, Perplexity, Gemini et Claude. Les 5 leviers du référencement IA (GEO) expliqués.",
     date: "4 juin 2026",
-    readingTime: "9 min",
+    dateModified: "12 juin 2026",
+    readingTime: "11 min",
     category: "ChatGPT",
     articleSection: "Référencement ChatGPT",
     keywords: [
@@ -272,6 +273,7 @@ const newArticles: Record<string, BlogArticle> = {
     contextualLinks: [
       { label: "Notre offre SEO / GEO", href: "/offre" },
       { label: "Agence GEO à Nantes", href: "/agence-seo-geo-nantes" },
+      { label: "Comment se référencer sur ChatGPT", href: "/blog/apparaitre-chatgpt-client-cherche-entreprise" },
       { label: "Demander un audit GEO gratuit", href: "/contact" },
       { label: "Schema.org pour le GEO", href: "/blog/schema-org-guide-complet-geo" },
       { label: "Guide llms.txt", href: "/blog/llms-txt-guide-pratique" },
@@ -332,7 +334,7 @@ const newArticles: Record<string, BlogArticle> = {
             title: "2. Structurer votre contenu en mode « answer-first »",
             paragraphs: [
               "Les IA extraient des passages courts et autonomes — ce qu&apos;on appelle des capsules de réponse. Pour être cité, chaque section de votre site doit répondre directement à une question en 40 à 60 mots, sans avoir besoin du contexte environnant.",
-              "Selon une étude Norg.ai sur 2 millions de sessions ChatGPT, 72,4 % des articles cités contiennent une capsule de réponse placée juste sous un titre H2 formulé comme une question. Et 44 % des citations proviennent du premier tiers de l&apos;article.",
+              "Selon l&apos;étude GEO publiée à KDD 2024 par des chercheurs de Princeton, l&apos;ajout de statistiques et de citations de sources dans un contenu peut augmenter sa visibilité dans les réponses des moteurs IA jusqu&apos;à 40 %. Un contenu structuré en réponses courtes et autonomes, placé dans le premier tiers de la page, reste le format le plus facilement extrait par les IA.",
             ],
           },
           {
@@ -383,6 +385,14 @@ const newArticles: Record<string, BlogArticle> = {
           "Selon BrightEdge, les AI Overviews de Google se déclenchent sur 48 % des requêtes en 2026. Même sur Google, une partie de la visibilité se joue désormais dans les réponses IA — pas dans les liens classiques. La question n&apos;est donc plus « SEO ou GEO » mais « quand commencez-vous votre stratégie GEO ? »",
         ],
       },
+      {
+        title: "Combien coûte un référencement ChatGPT ?",
+        paragraphs: [
+          "Il n&apos;existe pas de prix standard pour un référencement ChatGPT. Le budget dépend entièrement de votre point de départ : votre visibilité actuelle dans les IA, votre secteur, vos concurrents déjà cités et l&apos;ampleur du travail sur vos contenus et vos sources externes. La seule façon d&apos;obtenir un chiffre fiable est de mesurer d&apos;abord votre situation.",
+          "Une chose est certaine : le référencement ChatGPT ne s&apos;achète pas. Il n&apos;existe aucune publicité ni placement payant dans les réponses de ChatGPT, Perplexity ou Gemini. L&apos;investissement sert à construire ce que les IA recherchent réellement : un site lisible, des contenus qui répondent aux questions, des sources externes qui citent votre marque et un suivi de votre visibilité.",
+          "Méfiez-vous des grilles tarifaires standardisées : deux entreprises du même secteur peuvent avoir des besoins radicalement différents selon ce que les IA disent déjà d&apos;elles. Le bon réflexe est de commencer par un audit de visibilité IA : il révèle où vous apparaissez, quels concurrents sont cités à votre place et quels leviers auront le plus d&apos;impact. C&apos;est sur cette base qu&apos;un accompagnement sérieux se construit.",
+        ],
+      },
     ],
     faqItems: [
       {
@@ -404,6 +414,11 @@ const newArticles: Record<string, BlogArticle> = {
         question: "Quelle différence entre SEO et GEO ?",
         answer:
           "Le SEO optimise votre visibilité dans les listes de liens Google. Le GEO optimise votre visibilité dans les réponses directes des moteurs IA. Les deux disciplines partagent certaines bases (contenu de qualité, données structurées) mais divergent sur les signaux clés : le GEO valorise les sources tierces, les capsules de réponse et la lisibilité machine.",
+      },
+      {
+        question: "Le référencement ChatGPT fonctionne-t-il pour une petite entreprise ?",
+        answer:
+          "Oui, et souvent mieux que pour les grandes marques. Sur des requêtes locales ou de niche, les IA citent volontiers des entreprises bien décrites et cohérentes sur leurs sources, même petites. Les places sont encore largement à prendre.",
       },
     ],
   },
@@ -435,6 +450,7 @@ const newArticles: Record<string, BlogArticle> = {
     },
     contextualLinks: [
       { label: "Notre offre SEO / GEO", href: "/offre" },
+      { label: "Référencement ChatGPT", href: "/blog/referencement-chatgpt-apparaitre-ia" },
       { label: "Audit SEO / GEO", href: "/contact" },
       { label: "Google AI Overviews", href: "/blog/google-ai-overviews-entreprises-comprendre" },
     ],
@@ -657,6 +673,7 @@ const newArticles: Record<string, BlogArticle> = {
     },
     contextualLinks: [
       { label: "Notre offre SEO / GEO", href: "/offre" },
+      { label: "Référencement ChatGPT", href: "/blog/referencement-chatgpt-apparaitre-ia" },
       { label: "Comment se référencer sur ChatGPT", href: "/blog/apparaitre-chatgpt-client-cherche-entreprise" },
       { label: "Sources citées par les IA", href: "/blog/sources-citees-ia-site-ne-suffit-pas" },
       { label: "Schema.org pour le GEO", href: "/blog/schema-org-guide-complet-geo" },
@@ -833,6 +850,7 @@ const newArticles: Record<string, BlogArticle> = {
     },
     contextualLinks: [
       { label: "Notre offre SEO / GEO", href: "/offre" },
+      { label: "Référencement ChatGPT", href: "/blog/referencement-chatgpt-apparaitre-ia" },
       { label: "Agence SEO / GEO à Nantes", href: "/agence-seo-geo-nantes" },
       { label: "Audit SEO / GEO", href: "/blog/audit-seo-geo-visibilite-ia" },
       { label: "Schema.org pour le GEO", href: "/blog/schema-org-guide-complet-geo" },
@@ -1010,6 +1028,7 @@ const newArticles: Record<string, BlogArticle> = {
     contextualLinks: [
       { label: "Notre offre SEO / GEO", href: "/offre" },
       { label: "Agence SEO / GEO à Nantes", href: "/agence-seo-geo-nantes" },
+      { label: "Référencement ChatGPT", href: "/blog/referencement-chatgpt-apparaitre-ia" },
       { label: "Google AI Overviews", href: "/blog/google-ai-overviews-entreprises-comprendre" },
       { label: "Comment se référencer sur ChatGPT", href: "/blog/apparaitre-chatgpt-client-cherche-entreprise" },
       { label: "Audit SEO / GEO", href: "/blog/audit-seo-geo-visibilite-ia" },

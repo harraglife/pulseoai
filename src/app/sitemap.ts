@@ -11,7 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/faq",                   lastModified: "2026-05-10", changeFrequency: "monthly" as const, priority: 0.7 },
     { path: "/a-propos",              lastModified: "2026-04-28", changeFrequency: "yearly"  as const, priority: 0.6 },
     { path: "/blog",                  lastModified: "2026-06-04", changeFrequency: "weekly"  as const, priority: 0.8 },
-    { path: "/blog/referencement-chatgpt-apparaitre-ia",      lastModified: "2026-06-04", changeFrequency: "monthly" as const, priority: 0.8 },
+    { path: "/blog/referencement-chatgpt-apparaitre-ia",      lastModified: "2026-06-12", changeFrequency: "monthly" as const, priority: 0.8 },
     { path: "/blog/veille-concurrentielle-seo-ia-serp-locales", lastModified: "2026-06-12", changeFrequency: "monthly" as const, priority: 0.8 },
     { path: "/contact",               lastModified: "2026-04-15", changeFrequency: "yearly"  as const, priority: 0.5 },
     { path: "/mentions-legales",      lastModified: "2026-01-10", changeFrequency: "yearly"  as const, priority: 0.2 },
