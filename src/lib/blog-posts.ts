@@ -11,6 +11,7 @@ export type BlogPostMeta = {
 
 export type BlogArticle = BlogPostMeta & {
   intro: string;
+  dateModified?: string;
   articleSection?: string;
   keywords?: string[];
   faqTitle?: string;
@@ -110,7 +111,7 @@ export const blogPosts: BlogPostMeta[] = [
     description:
       "Découvrez comment suivre vos concurrents sur Google, ChatGPT, Gemini, Perplexity et les SERP locales pour identifier qui capte la demande avant vous.",
     date: "11 mai 2026",
-    readingTime: "9 min",
+    readingTime: "11 min",
     category: "SEO / GEO",
   },
   {
@@ -986,7 +987,8 @@ const newArticles: Record<string, BlogArticle> = {
     description:
       "Découvrez comment suivre vos concurrents sur Google, ChatGPT, Gemini, Perplexity et les SERP locales pour identifier qui capte la demande avant vous.",
     date: "11 mai 2026",
-    readingTime: "9 min",
+    dateModified: "12 juin 2026",
+    readingTime: "11 min",
     category: "SEO / GEO",
     articleSection: "Veille concurrentielle SEO et IA",
     keywords: [
@@ -1035,6 +1037,26 @@ const newArticles: Record<string, BlogArticle> = {
           "Positions Google",
           "Présence dans les AI Overviews",
           "Citations dans les moteurs IA",
+        ],
+      },
+      {
+        title: "Comment savoir si vos concurrents sont mentionnés dans les réponses IA ?",
+        paragraphs: [
+          "Pour savoir si vos concurrents sont mentionnés dans les réponses IA, posez à ChatGPT, Perplexity et Gemini les questions que vos clients posent réellement, en navigation privée. Relevez les marques citées, leur ordre d’apparition et les sources utilisées. Répétez le test chaque mois pour suivre l’évolution de votre visibilité.",
+          "La méthode la plus fiable reste le test manuel. Ouvrez ChatGPT, Perplexity et Gemini sans être connecté à un compte, ou en navigation privée, pour limiter l’influence de votre historique. Posez ensuite les questions qu’un client poserait avant d’acheter.",
+          "Quelques exemples de prompts à tester : « quel est le meilleur [votre service] à [votre ville] ? », « quelle entreprise recommandes-tu pour [le problème que vous résolvez] ? », « compare [votre marque] et [votre concurrent] ». Adaptez les formulations à votre secteur : un hôtel testera « où dormir à [ville] », un e-commerçant « quel [produit] choisir ».",
+          "Notez chaque résultat dans un tableau de suivi : la requête testée, l’IA interrogée, les marques citées, votre présence ou absence, et les sources mentionnées dans la réponse. Les réponses des IA varient d’une session à l’autre : testez chaque prompt deux ou trois fois avant de tirer une conclusion.",
+          "Ce relevé mensuel suffit pour détecter les tendances : un concurrent qui apparaît de plus en plus souvent, une source qui revient systématiquement, ou une question sur laquelle aucune marque locale n’est encore citée — c’est-à-dire une opportunité.",
+        ],
+      },
+      {
+        title: "Pourquoi vos concurrents apparaissent plus que vous dans les réponses IA ?",
+        paragraphs: [
+          "Vos concurrents apparaissent plus dans les réponses IA parce qu’ils sont présents dans les sources que ChatGPT, Perplexity et Gemini consultent : avis, annuaires, comparatifs, médias et fiches locales. Un site seul ne suffit pas. Les IA citent les marques décrites clairement et de façon cohérente sur plusieurs sources externes.",
+          "Quatre raisons expliquent la plupart des écarts de visibilité IA. La première : la présence dans les sources externes. Les moteurs IA construisent leurs réponses à partir d’avis clients, d’annuaires, d’articles comparatifs et de fiches locales. Un concurrent bien couvert par ces sources sera cité, même avec un site moins bon que le vôtre.",
+          "La deuxième : la structure du contenu. Les pages qui répondent directement aux questions, avec une réponse claire dès les premières lignes, sont plus facilement reprises par les IA que les pages purement commerciales.",
+          "La troisième : la cohérence de l’entité. Nom, adresse, description et activité doivent être identiques partout — site, Google Business Profile, annuaires, réseaux. Une entité floue ou contradictoire est moins citée.",
+          "La quatrième : le volume d’avis et de mentions. Les IA s’appuient sur ce que les autres disent de vous. Une marque dont personne ne parle en dehors de son propre site reste invisible dans les réponses générées.",
         ],
       },
       {
@@ -1157,6 +1179,11 @@ const newArticles: Record<string, BlogArticle> = {
         question: "Quels outils utiliser pour surveiller sa visibilité ?",
         answer:
           "Google Search Console, Google Maps, les résultats Google, les prompts manuels dans ChatGPT, Gemini et Perplexity, ainsi qu’un tableau de suivi interne, suffisent déjà à construire une veille utile.",
+      },
+      {
+        question: "Pourquoi un concurrent invisible sur Google peut-il être cité par ChatGPT ?",
+        answer:
+          "Parce que les moteurs IA ne s’appuient pas uniquement sur le classement Google. Un concurrent présent dans les avis, annuaires et comparatifs peut être cité par ChatGPT, Perplexity ou Gemini même avec un site mal positionné.",
       },
     ],
   },

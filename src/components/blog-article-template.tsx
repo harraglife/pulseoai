@@ -37,7 +37,7 @@ export function BlogArticleTemplate({ article }: { article: BlogArticle }) {
     "@type": "BlogPosting",
     headline: article.title,
     datePublished: isoDate(article.date),
-    dateModified: isoDate(article.date),
+    dateModified: isoDate(article.dateModified ?? article.date),
     inLanguage: "fr-FR",
     url: `https://www.pulseoai.fr/blog/${article.slug}`,
     articleSection: article.articleSection ?? article.category,
