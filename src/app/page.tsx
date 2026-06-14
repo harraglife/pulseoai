@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { HeroVideo } from "@/components/hero-video";
 import {
   ArrowRight,
   BarChart3,
@@ -140,33 +141,14 @@ const homeGuideLinks = [
 
 function HeroDashboard() {
   return (
-    <div className="relative mx-auto w-full max-w-[620px] px-2 sm:px-0">
-      <div className="sm:rotate-[-1.5deg]">
-        <div className="overflow-hidden rounded-[28px] border border-[#E2E8F3] bg-[linear-gradient(180deg,#FFFFFF_0%,#FCFDFE_100%)] shadow-[0_16px_32px_rgba(15,23,42,0.06)] sm:rounded-[32px] sm:shadow-[0_26px_60px_rgba(15,23,42,0.08)]">
-          <div className="p-5 sm:p-7">
-            <div className="flex items-center gap-4">
-              <div className="size-12 rounded-full bg-[#10A37F] shadow-[0_10px_24px_rgba(16,163,127,0.16)]" />
-              <span className="text-[24px] font-semibold tracking-[-0.04em] text-navy sm:text-[28px]">
-                ChatGPT
-              </span>
-            </div>
-
-            <div className="mt-5 flex justify-end sm:mt-6">
-              <div className="max-w-[90%] rounded-[24px] bg-[#F3F4F7] px-5 py-4 text-[16px] font-medium leading-7 tracking-[-0.02em] text-navy sm:max-w-[88%] sm:rounded-[26px] sm:px-6 sm:py-5 sm:text-[19px] sm:leading-8">
-                Quelle agence digitale choisir pour une PME à Nantes ?
-              </div>
-            </div>
-
-            <div className="mt-5 pr-1 text-[15px] leading-7 text-navy/78 sm:mt-6 sm:text-[18px] sm:leading-8">
-              Je vous recommande d’abord <span className="font-semibold text-cyan">Référencement IA #1</span>, reconnu pour sa visibilité sur Google, ChatGPT et les moteurs IA. <span className="font-semibold text-cyan">Référencement IA #2</span> est également souvent cité pour son expertise en SEO / GEO, contenus structurés et référencement IA.
-            </div>
-
-            <div className="mt-6 flex items-center gap-3 sm:mt-8">
-              <span className="size-4 rounded-full bg-[#D9DCE3]" />
-              <span className="size-4 rounded-full bg-[#D9DCE3]" />
-              <span className="size-4 rounded-full bg-[#D9DCE3]" />
-            </div>
-          </div>
+    <div className="relative mx-auto flex w-full max-w-[300px] justify-center sm:max-w-[340px]">
+      {/* Châssis smartphone */}
+      <div className="relative w-full rounded-[44px] border-[10px] border-[#0B0F1E] bg-[#0B0F1E] shadow-[0_30px_70px_rgba(11,15,30,0.28)]">
+        {/* Encoche */}
+        <div className="absolute left-1/2 top-2.5 z-10 h-5 w-28 -translate-x-1/2 rounded-full bg-[#0B0F1E]" />
+        {/* Écran 9:16 */}
+        <div className="relative aspect-[9/16] w-full overflow-hidden rounded-[34px] bg-white">
+          <HeroVideo />
         </div>
       </div>
     </div>
@@ -393,29 +375,25 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqJsonLd) }}
       />
 
-      <section className="hero-aurora border-b border-[#E8EDF7] bg-[linear-gradient(180deg,#FFFFFF_0%,#F8FAFD_100%)]">
-        <div className="mx-auto max-w-[1280px] px-6 pb-8 pt-7 lg:pb-12 lg:pt-10">
+      <section className="hero-aurora flex min-h-[calc(100svh-66px)] items-center border-b border-[#E8EDF7] bg-[linear-gradient(180deg,#FFFFFF_0%,#F8FAFD_100%)] lg:min-h-[calc(100svh-76px)]">
+        <div className="mx-auto w-full max-w-[1280px] px-6 py-8 lg:py-12">
           <div className="grid items-center gap-8 lg:grid-cols-[0.48fr_0.52fr] lg:gap-16">
             <div className="flex flex-col justify-center lg:pl-6 lg:pr-8">
               <div className="inline-flex w-fit items-center rounded-full border border-[#DBE4F4] bg-white px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-cyan shadow-[0_10px_24px_rgba(15,23,42,0.04)]">
                 AGENCE SEO / GEO
               </div>
               <div className="max-w-[590px]">
-              <h1 className="mt-6 max-w-[18ch] text-[34px] font-semibold leading-[0.94] tracking-[-0.06em] text-navy sm:text-[54px] lg:text-[62px]">
-                <span className="text-cyan">Vos concurrents</span> apparaissent
-                <br />
-                dans les réponses IA.
-                <br />
-                <span className="text-[rgb(76,112,243)]">Pas vous.</span>
+              <h1 className="mt-6 max-w-[18ch] text-[34px] font-semibold leading-[0.98] tracking-[-0.06em] text-navy sm:text-[50px] lg:text-[56px]">
+                Pendant que vous lisez ça, <span className="text-[#2547D0]">vos clients</span> choisissent votre concurrent sur <span className="text-[#2547D0]">ChatGPT</span>
               </h1>
               <p className="mt-5 max-w-[540px] text-[14px] leading-6 text-navy/64 sm:text-[15px]">
-                PulseoAI aide votre entreprise à renforcer son référencement IA, son SEO et sa visibilité sur Google, ChatGPT, Gemini et Perplexity.
+                Vos clients cherchent sur ChatGPT, Gemini, Perplexity, Claude et Google. PulseoAI fait en sorte qu&apos;ils vous trouvent.
               </p>
 
               <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
                 <Link href="/contact" className="w-full sm:w-auto">
                   <Button className="h-12 w-full rounded-full bg-cyan px-6 text-[15px] font-semibold text-white shadow-[0_12px_24px_rgba(37,71,208,0.22)] hover:bg-cyan-dark sm:w-auto">
-                    Obtenez votre audit
+                    Reprendre le contrôle
                     <ArrowRight className="ml-2 size-4" />
                   </Button>
                 </Link>
@@ -452,147 +430,147 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mt-10 grid items-start gap-6 lg:grid-cols-[0.44fr_0.56fr] lg:gap-8">
-            <div className="space-y-2.5">
-              <div className="grid gap-2.5 sm:grid-cols-2">
+          {/* — b) 4 stat cards : rangée 4 cols desktop, 2×2 mobile — */}
+          <div className="mt-10 grid grid-cols-2 gap-2.5 sm:grid-cols-4">
+            {[
+              { icon: "∞", value: "∞", title: "Suivi multi-sources", label: "Google, IA, fiches, contenus" },
+              { icon: "%", value: "89%", title: "Indice de visibilité", label: "Score global Google + IA" },
+              { icon: "↗", value: "67%", title: "Sources citées", label: "Qualité des signaux IA" },
+              { icon: "#", value: "2.2", title: "Position moyenne", label: "Vs concurrents cités" },
+            ].map((item) => (
+              <div
+                key={item.title}
+                className="rounded-[24px] border border-[#DEE6F3] bg-white px-4 py-3.5 shadow-[0_12px_24px_rgba(15,23,42,0.04)]"
+              >
+                <div className="flex size-9 items-center justify-center rounded-[14px] bg-[#F3F6FD] text-[16px] font-semibold text-cyan">
+                  {item.icon}
+                </div>
+                <p className="mt-3 text-[30px] font-semibold tracking-[-0.05em] text-navy">{item.value}</p>
+                <h3 className="mt-1 text-[14px] font-semibold tracking-[-0.02em] text-navy">
+                  {item.title}
+                </h3>
+                <p className="mt-0.5 text-[12px] leading-5 text-navy/56">{item.label}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* — c) Dashboard centré — */}
+          <div className="mx-auto mt-10 max-w-[900px] overflow-hidden rounded-[30px] border border-[#DEE6F3] bg-white shadow-[0_20px_44px_rgba(15,23,42,0.08)]">
+            <div className="flex h-11 items-center bg-[#11182C] px-5">
+              <div className="flex items-center gap-2">
+                <span className="size-3 rounded-full bg-[#FF5F57]" />
+                <span className="size-3 rounded-full bg-[#FEBC2E]" />
+                <span className="size-3 rounded-full bg-[#28C840]" />
+              </div>
+            </div>
+
+            <div className="bg-[linear-gradient(180deg,#FFFFFF_0%,#FBFCFE_100%)] p-4.5 sm:p-5">
+              <div className="grid gap-2.5 sm:grid-cols-3">
                 {[
-                  { icon: "∞", value: "∞", title: "Suivi multi-sources", label: "Google, IA, fiches, contenus" },
-                  { icon: "%", value: "89%", title: "Indice de visibilité", label: "Score global Google + IA" },
-                  { icon: "↗", value: "67%", title: "Sources citées", label: "Qualité des signaux IA" },
-                  { icon: "#", value: "2.2", title: "Position moyenne", label: "Vs concurrents cités" },
+                  { value: "89%", label: "Visibilité", tone: "bg-[#EDF3FF] text-cyan" },
+                  { value: "#1", label: "Classement", tone: "bg-[#F1F7FF] text-[#2341A5]" },
+                  { value: "67%", label: "Sources citées", tone: "bg-[#F4F0FF] text-[#6A49E8]" },
                 ].map((item) => (
                   <div
-                    key={item.title}
-                    className="rounded-[24px] border border-[#DEE6F3] bg-white px-4 py-3.5 shadow-[0_12px_24px_rgba(15,23,42,0.04)]"
+                    key={item.label}
+                    className={`rounded-[22px] px-4 py-4 text-center ${item.tone}`}
                   >
-                    <div className="flex size-9 items-center justify-center rounded-[14px] bg-[#F3F6FD] text-[16px] font-semibold text-cyan">
-                      {item.icon}
-                    </div>
-                    <p className="mt-3 text-[30px] font-semibold tracking-[-0.05em] text-navy">{item.value}</p>
-                    <h3 className="mt-1 text-[14px] font-semibold tracking-[-0.02em] text-navy">
-                      {item.title}
-                    </h3>
-                    <p className="mt-0.5 text-[12px] leading-5 text-navy/56">{item.label}</p>
+                    <p className="text-[38px] font-semibold tracking-[-0.05em]">{item.value}</p>
+                    <p className="mt-1 text-[14px] font-medium text-navy/68">{item.label}</p>
                   </div>
                 ))}
               </div>
 
-              <div className="rounded-[28px] border border-[#DEE6F3] bg-white px-4 py-4.5 shadow-[0_14px_28px_rgba(15,23,42,0.05)]">
-                <div className="flex items-center gap-2.5">
-                  <div className="flex size-9 items-center justify-center rounded-[14px] bg-[#F3F6FD] text-[14px] text-cyan">
-                    ◎
-                  </div>
-                  <h3 className="text-[16px] font-semibold tracking-[-0.03em] text-navy">
-                    Performance par plateforme
+              <div className="mt-5.5">
+                <div className="flex items-center justify-between">
+                  <h3 className="text-[17px] font-semibold tracking-[-0.03em] text-navy">
+                    Comparaison concurrents
                   </h3>
+                  <span className="text-[13px] font-semibold text-cyan">+5% ce mois-ci</span>
                 </div>
 
-                <div className="mt-3.5 space-y-3">
+                <div className="mt-3.5 space-y-2.5">
                   {[
-                    { label: "ChatGPT", score: "92%", delta: "+5%", width: "92%" },
-                    { label: "Gemini", score: "88%", delta: "+3%", width: "88%" },
-                    { label: "Perplexity", score: "85%", delta: "+8%", width: "85%" },
-                    { label: "Google AI", score: "79%", delta: "+2%", width: "79%" },
-                  ].map((item) => (
-                    <div key={item.label} className="grid grid-cols-[82px_1fr_46px_38px] items-center gap-2.5">
-                      <span className="text-[13px] font-medium text-navy/76">{item.label}</span>
-                      <div className="h-2 overflow-hidden rounded-full bg-[#E9EEF8]">
-                        <div
-                          className="h-full rounded-full bg-[linear-gradient(90deg,#3D72F8_0%,#7F5DFF_100%)]"
-                          style={{ width: item.width }}
-                        />
-                      </div>
-                      <span className="text-right text-[13px] font-semibold text-navy">{item.score}</span>
-                      <span className="text-right text-[12px] font-semibold text-cyan">{item.delta}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            <div className="overflow-hidden rounded-[30px] border border-[#DEE6F3] bg-white shadow-[0_20px_44px_rgba(15,23,42,0.08)]">
-              <div className="flex h-11 items-center bg-[#11182C] px-5">
-                <div className="flex items-center gap-2">
-                  <span className="size-3 rounded-full bg-[#FF5F57]" />
-                  <span className="size-3 rounded-full bg-[#FEBC2E]" />
-                  <span className="size-3 rounded-full bg-[#28C840]" />
-                </div>
-              </div>
-
-              <div className="bg-[linear-gradient(180deg,#FFFFFF_0%,#FBFCFE_100%)] p-4.5 sm:p-5">
-                <div className="grid gap-2.5 sm:grid-cols-3">
-                  {[
-                    { value: "89%", label: "Visibilité", tone: "bg-[#EDF3FF] text-cyan" },
-                    { value: "#1", label: "Classement", tone: "bg-[#F1F7FF] text-[#2341A5]" },
-                    { value: "67%", label: "Sources citées", tone: "bg-[#F4F0FF] text-[#6A49E8]" },
+                    { name: "Votre entreprise", score: "89%", active: true },
+                    { name: "Concurrent A", score: "81%", active: false },
+                    { name: "Concurrent B", score: "73%", active: false },
                   ].map((item) => (
                     <div
-                      key={item.label}
-                      className={`rounded-[22px] px-4 py-4 text-center ${item.tone}`}
+                      key={item.name}
+                      className={`grid grid-cols-[8px_1fr_50px_16px] items-center gap-3 rounded-[16px] px-3.5 py-3 ${
+                        item.active ? "bg-[#F8FBFF]" : "bg-[#FBFCFE]"
+                      }`}
                     >
-                      <p className="text-[38px] font-semibold tracking-[-0.05em]">{item.value}</p>
-                      <p className="mt-1 text-[14px] font-medium text-navy/68">{item.label}</p>
+                      <div className={`h-10 rounded-full ${item.active ? "bg-[#53C56D]" : "bg-[#D8DEE9]"}`} />
+                      <span className={`text-[15px] font-semibold ${item.active ? "text-navy" : "text-navy/70"}`}>
+                        {item.name}
+                      </span>
+                      <span className="text-right text-[15px] font-semibold text-navy/76">{item.score}</span>
+                      <span className={`text-[16px] ${item.active ? "text-[#53C56D]" : "text-transparent"}`}>↗</span>
                     </div>
                   ))}
                 </div>
+              </div>
 
-                <div className="mt-5.5">
-                  <div className="flex items-center justify-between">
-                    <h3 className="text-[17px] font-semibold tracking-[-0.03em] text-navy">
-                      Comparaison concurrents
-                    </h3>
-                    <span className="text-[13px] font-semibold text-cyan">+5% ce mois-ci</span>
-                  </div>
-
-                  <div className="mt-3.5 space-y-2.5">
-                    {[
-                      { name: "Votre entreprise", score: "89%", active: true },
-                      { name: "Concurrent A", score: "81%", active: false },
-                      { name: "Concurrent B", score: "73%", active: false },
-                    ].map((item) => (
-                      <div
-                        key={item.name}
-                        className={`grid grid-cols-[8px_1fr_50px_16px] items-center gap-3 rounded-[16px] px-3.5 py-3 ${
-                          item.active ? "bg-[#F8FBFF]" : "bg-[#FBFCFE]"
-                        }`}
-                      >
-                        <div className={`h-10 rounded-full ${item.active ? "bg-[#53C56D]" : "bg-[#D8DEE9]"}`} />
-                        <span className={`text-[15px] font-semibold ${item.active ? "text-navy" : "text-navy/70"}`}>
-                          {item.name}
-                        </span>
-                        <span className="text-right text-[15px] font-semibold text-navy/76">{item.score}</span>
-                        <span className={`text-[16px] ${item.active ? "text-[#53C56D]" : "text-transparent"}`}>↗</span>
-                      </div>
-                    ))}
-                  </div>
+              <div className="mt-5 border-t border-[#E6ECF6] pt-4">
+                <div className="flex items-center justify-between">
+                  <h3 className="text-[17px] font-semibold tracking-[-0.03em] text-navy">
+                    Tendance mensuelle
+                  </h3>
+                  <span className="text-[13px] font-semibold text-cyan">+12 % vs mois dernier</span>
                 </div>
 
-                <div className="mt-5 border-t border-[#E6ECF6] pt-4">
-                  <div className="flex items-center justify-between">
-                    <h3 className="text-[17px] font-semibold tracking-[-0.03em] text-navy">
-                      Tendance mensuelle
-                    </h3>
-                    <span className="text-[13px] font-semibold text-cyan">+12 % vs mois dernier</span>
-                  </div>
-
-                  <div className="mt-4 flex h-[92px] items-end gap-1.5 sm:gap-2">
-                    {[42, 48, 45, 61, 67, 64, 72, 81, 89].map((height, index) => (
-                      <div
-                        key={height}
-                        className="flex-1 rounded-t-[10px] bg-[linear-gradient(180deg,#B57CFF_0%,#7F82FF_55%,#6D9BFF_100%)] shadow-[inset_0_1px_0_rgba(255,255,255,0.18)]"
-                        style={{
-                          height: `${height}%`,
-                          opacity: index < 2 ? 0.9 : 1,
-                        }}
-                      />
-                    ))}
-                  </div>
+                <div className="mt-4 flex h-[92px] items-end gap-1.5 sm:gap-2">
+                  {[42, 48, 45, 61, 67, 64, 72, 81, 89].map((height, index) => (
+                    <div
+                      key={height}
+                      className="flex-1 rounded-t-[10px] bg-[linear-gradient(180deg,#B57CFF_0%,#7F82FF_55%,#6D9BFF_100%)] shadow-[inset_0_1px_0_rgba(255,255,255,0.18)]"
+                      style={{
+                        height: `${height}%`,
+                        opacity: index < 2 ? 0.9 : 1,
+                      }}
+                    />
+                  ))}
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          {/* — d) Performance par plateforme centré sous le dashboard — */}
+          <div className="mx-auto mt-6 max-w-[900px] rounded-[28px] border border-[#DEE6F3] bg-white px-4 py-4.5 shadow-[0_14px_28px_rgba(15,23,42,0.05)]">
+            <div className="flex items-center gap-2.5">
+              <div className="flex size-9 items-center justify-center rounded-[14px] bg-[#F3F6FD] text-[14px] text-cyan">
+                ◎
+              </div>
+              <h3 className="text-[16px] font-semibold tracking-[-0.03em] text-navy">
+                Performance par plateforme
+              </h3>
+            </div>
+
+            <div className="mt-3.5 space-y-3">
+              {[
+                { label: "ChatGPT", score: "92%", delta: "+5%", width: "92%" },
+                { label: "Gemini", score: "88%", delta: "+3%", width: "88%" },
+                { label: "Perplexity", score: "85%", delta: "+8%", width: "85%" },
+                { label: "Google AI", score: "79%", delta: "+2%", width: "79%" },
+              ].map((item) => (
+                <div key={item.label} className="grid grid-cols-[82px_1fr_46px_38px] items-center gap-2.5">
+                  <span className="text-[13px] font-medium text-navy/76">{item.label}</span>
+                  <div className="h-2 overflow-hidden rounded-full bg-[#E9EEF8]">
+                    <div
+                      className="h-full rounded-full bg-[linear-gradient(90deg,#3D72F8_0%,#7F5DFF_100%)]"
+                      style={{ width: item.width }}
+                    />
+                  </div>
+                  <span className="text-right text-[13px] font-semibold text-navy">{item.score}</span>
+                  <span className="text-right text-[12px] font-semibold text-cyan">{item.delta}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* — e) CTA — */}
+          <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link href="/contact" className="w-full sm:w-auto">
               <Button className="h-12 w-full rounded-full bg-cyan px-6 text-[15px] font-semibold text-white shadow-[0_12px_24px_rgba(37,71,208,0.22)] hover:bg-cyan-dark sm:w-auto">
                 Obtenir mon analyse
