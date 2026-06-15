@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { HeroVideo } from "@/components/hero-video";
 import { JourneySteps } from "@/components/journey-steps";
 import { ProofRows } from "@/components/proof-rows";
+import { ContactForm } from "@/components/contact-form";
 import {
   ArrowRight,
   BarChart3,
@@ -464,6 +465,23 @@ export default function Home() {
                 <ArrowRight className="ml-2 size-4" />
               </Button>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="deferred-section flex min-h-screen items-center bg-[linear-gradient(180deg,#FFFFFF_0%,#F7F9FD_100%)]">
+        <div className="mx-auto w-full max-w-[640px] px-6 py-16 lg:py-20">
+          <div className="text-center">
+            <h2 className="text-[28px] font-semibold leading-[1.12] tracking-[-0.04em] text-navy sm:text-[38px]">
+              Votre entreprise est-elle visible sur <span className="text-[#2547D0]">ChatGPT</span>, <span className="text-[#2547D0]">Gemini</span> et <span className="text-[#2547D0]">Perplexity</span> ?
+            </h2>
+            <p className="mx-auto mt-4 max-w-[480px] text-[16px] leading-7 text-navy/58">
+              Demandez votre audit, on teste votre visibilité et on vous envoie le rapport.
+            </p>
+          </div>
+
+          <div className="mx-auto mt-9 max-w-[560px]">
+            <ContactForm />
           </div>
         </div>
       </section>
