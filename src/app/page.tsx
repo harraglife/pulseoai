@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { HeroVideo } from "@/components/hero-video";
 import { JourneySteps } from "@/components/journey-steps";
+import { ProofRows } from "@/components/proof-rows";
 import {
   ArrowRight,
   BarChart3,
@@ -446,113 +447,23 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="deferred-section bg-white">
-        <div className="mx-auto max-w-[1180px] px-6 py-14 lg:py-16">
-          <div className="grid items-center gap-8 lg:grid-cols-[0.44fr_0.56fr] lg:gap-10">
-            <div className="max-w-[520px]">
-              <SectionEyebrow>LE PROBLÈME</SectionEyebrow>
-              <h2 className="mt-4 text-[30px] font-semibold tracking-[-0.04em] text-navy sm:text-[40px]">
-                <span className="text-cyan">Le déclic</span> arrive quand votre <span className="text-cyan">marque</span> n’apparaît pas.
-              </h2>
-              <p className="mt-4 text-[16px] leading-7 text-navy/62">
-                Vous pouvez expliquer le SEO / GEO et l’IA pendant 20 minutes. Le vrai choc arrive quand on tape une requête client dans ChatGPT et que trois entreprises sont citées. Pas la vôtre.
-              </p>
-              <p className="mt-5 text-[17px] font-medium leading-7 text-navy">
-                En 90 secondes, une menace abstraite devient une urgence business.
-              </p>
+      <section className="deferred-section flex min-h-screen items-center bg-white">
+        <div className="mx-auto w-full max-w-[1180px] px-6 py-16 lg:py-20">
+          <div className="mx-auto max-w-[820px] text-center">
+            <h2 className="text-[32px] font-semibold leading-[1.05] tracking-[-0.04em] text-navy sm:text-[44px]">
+              Des résultats, pas des promesses.
+            </h2>
+          </div>
 
-              <div className="mt-7 space-y-3.5">
-                {[
-                  "Les IA répondent avant le clic",
-                  "Les marques citées prennent la confiance",
-                  "Les absents perdent des prospects invisibles",
-                ].map((item) => (
-                  <div key={item} className="flex items-center gap-3 rounded-[18px] border border-[#E4EAF5] bg-[#FAFCFF] px-4 py-3">
-                    <span className="flex size-8 items-center justify-center rounded-full bg-[#EEF3FF] text-cyan">
-                      <CheckCircle className="size-4" />
-                    </span>
-                    <p className="text-[15px] font-medium text-navy/78">{item}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+          <ProofRows />
 
-            <div className="overflow-hidden rounded-[30px] border border-[#DCE4F4] bg-white shadow-[0_22px_52px_rgba(15,23,42,0.06)]">
-              <div className="flex h-12 items-center justify-between border-b border-[#E5EBF5] bg-[#11182C] px-5">
-                <div className="flex items-center gap-2">
-                  <span className="size-3 rounded-full bg-[#FF5F57]" />
-                  <span className="size-3 rounded-full bg-[#FEBC2E]" />
-                  <span className="size-3 rounded-full bg-[#28C840]" />
-                </div>
-                <span className="text-[12px] font-semibold uppercase tracking-[0.16em] text-white/60">
-                  Réponse IA
-                </span>
-              </div>
-
-              <div className="p-5 sm:p-6">
-                <div className="rounded-[22px] border border-[#E4EAF5] bg-[#FAFCFF] p-4">
-                  <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-navy/42">
-                    Prompt client
-                  </p>
-                  <p className="mt-2 text-[16px] font-medium text-navy">
-                    Quelle agence SEO / GEO choisir pour une PME ?
-                  </p>
-                </div>
-
-                <div className="mt-4 rounded-[24px] border border-[#E4EAF5] bg-[linear-gradient(180deg,#FFFFFF_0%,#F8FAFE_100%)] p-5">
-                  <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-navy/42">
-                    Réponse générée
-                  </p>
-                  <p className="mt-3 text-[15px] leading-7 text-navy/76">
-                    Je recommande d’abord <span className="font-semibold text-navy">Entreprise A</span>, puis <span className="font-semibold text-navy">Entreprise B</span>, souvent citées pour leurs contenus, leurs avis et leur présence sur plusieurs sources fiables.
-                  </p>
-                </div>
-
-                <div className="mt-5">
-                  <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-navy/42">
-                    Présence dans la réponse
-                  </p>
-                  <div className="mt-3 space-y-2.5">
-                    {[
-                      { rank: "#1", name: "Entreprise A", status: "citée", active: false },
-                      { rank: "#2", name: "Entreprise B", status: "citée", active: false },
-                      { rank: "", name: "Votre entreprise", status: "non citée", active: true },
-                    ].map((item) => (
-                      <div
-                        key={`${item.name}-${item.status}`}
-                        className={`flex items-center justify-between rounded-[18px] border px-4 py-3 ${
-                          item.active
-                            ? "border-[#C9D7FA] bg-[linear-gradient(180deg,#EEF3FF_0%,#E9F1FF_100%)]"
-                            : "border-[#E6ECF6] bg-[#FBFCFE]"
-                        }`}
-                      >
-                        <div className="flex items-center gap-3">
-                          <span className={`text-[13px] font-semibold ${item.active ? "text-cyan" : "text-navy/52"}`}>
-                            {item.rank || "—"}
-                          </span>
-                          <span className={`text-[15px] font-semibold ${item.active ? "text-navy" : "text-navy/78"}`}>
-                            {item.name}
-                          </span>
-                        </div>
-                        <span
-                          className={`rounded-full px-3 py-1 text-[12px] font-semibold ${
-                            item.active ? "bg-white text-cyan" : "bg-white text-navy/56"
-                          }`}
-                        >
-                          {item.status}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="mt-5 rounded-[18px] border border-[#E6ECF6] bg-[#FBFCFE] px-4 py-4">
-                  <p className="text-[13px] leading-6 text-navy/58">
-                    Le prospect ne clique pas. Il choisit parmi les marques que l’IA vient de lui présenter.
-                  </p>
-                </div>
-              </div>
-            </div>
+          <div className="mt-14 flex justify-center">
+            <Link href="/contact">
+              <Button className="h-12 rounded-full bg-[#2547D0] px-7 text-[15px] font-semibold text-white shadow-[0_12px_24px_rgba(37,71,208,0.22)] hover:bg-cyan-dark">
+                Devenir le prochain
+                <ArrowRight className="ml-2 size-4" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
