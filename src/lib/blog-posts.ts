@@ -461,6 +461,7 @@ const newArticles: Record<string, BlogArticle> = {
       outro: ".",
     },
     relatedSlugs: [
+      "referencement-chatgpt-apparaitre-ia",
       "audit-seo-geo-visibilite-ia",
       "seo-classique-vs-geo-acquisition-client",
       "apparaitre-chatgpt-client-cherche-entreprise",
@@ -600,6 +601,7 @@ const newArticles: Record<string, BlogArticle> = {
       outro: ".",
     },
     relatedSlugs: [
+      "referencement-chatgpt-apparaitre-ia",
       "apparaitre-chatgpt-client-cherche-entreprise",
       "seo-classique-vs-geo-acquisition-client",
       "sources-citees-ia-site-ne-suffit-pas",
@@ -686,6 +688,7 @@ const newArticles: Record<string, BlogArticle> = {
       outro: ".",
     },
     relatedSlugs: [
+      "referencement-chatgpt-apparaitre-ia",
       "apparaitre-chatgpt-client-cherche-entreprise",
       "sources-citees-ia-site-ne-suffit-pas",
       "veille-concurrentielle-seo-ia-serp-locales",
@@ -864,6 +867,7 @@ const newArticles: Record<string, BlogArticle> = {
       outro: ".",
     },
     relatedSlugs: [
+      "referencement-chatgpt-apparaitre-ia",
       "comment-se-referencer-sur-perplexity",
       "veille-concurrentielle-seo-ia-serp-locales",
       "sources-citees-ia-site-ne-suffit-pas",
@@ -1325,6 +1329,7 @@ const newArticles: Record<string, BlogArticle> = {
       outro: ".",
     },
     relatedSlugs: [
+      "referencement-chatgpt-apparaitre-ia",
       "schema-org-guide-complet-geo",
       "llms-txt-guide-pratique",
       "audit-seo-geo-visibilite-ia",
@@ -1491,6 +1496,7 @@ const newArticles: Record<string, BlogArticle> = {
       outro: ".",
     },
     relatedSlugs: [
+      "referencement-chatgpt-apparaitre-ia",
       "seo-geo-rendre-entreprise-visible-google-chatgpt-gemini",
       "audit-seo-geo-visibilite-ia",
       "apparaitre-chatgpt-client-cherche-entreprise",
