@@ -63,6 +63,16 @@ const monthMap: Record<string, number> = {
 
 export const blogPosts: BlogPostMeta[] = [
   {
+    slug: "comment-se-referencer-sur-gemini",
+    title: "Comment se référencer sur Gemini : apparaître dans l'IA de Google",
+    seoTitle: "Référencement Gemini : apparaître sur l'IA de Google · PulseoAI",
+    description:
+      "Référencement Gemini : comment faire apparaître votre entreprise dans les réponses de Gemini, l'IA de Google. Les leviers concrets du référencement IA (GEO).",
+    date: "16 juillet 2026",
+    readingTime: "8 min",
+    category: "SEO IA",
+  },
+  {
     slug: "referencement-chatgpt-apparaitre-ia",
     title: "Référencement ChatGPT : comment apparaître sur ChatGPT et toutes les autres IA",
     seoTitle: "Référencement ChatGPT : apparaître sur ChatGPT et toutes les IA",
@@ -242,6 +252,188 @@ export const blogPosts: BlogPostMeta[] = [
 ];
 
 const newArticles: Record<string, BlogArticle> = {
+  "comment-se-referencer-sur-gemini": {
+    slug: "comment-se-referencer-sur-gemini",
+    title: "Comment se référencer sur Gemini : apparaître dans l'IA de Google",
+    seoTitle: "Référencement Gemini : apparaître sur l'IA de Google · PulseoAI",
+    description:
+      "Référencement Gemini : comment faire apparaître votre entreprise dans les réponses de Gemini, l'IA de Google. Les leviers concrets du référencement IA (GEO).",
+    date: "16 juillet 2026",
+    dateModified: "16 juillet 2026",
+    readingTime: "8 min",
+    category: "SEO IA",
+    articleSection: "Référencement Gemini",
+    keywords: [
+      "référencement Gemini",
+      "SEO Gemini",
+      "apparaître sur Gemini",
+      "IA Google",
+      "référencement IA",
+      "GEO",
+    ],
+    faqTitle: "FAQ : Référencement Gemini",
+    quickAnswer: {
+      question: "Comment se référencer sur Gemini ?",
+      answer:
+        "Gemini étant l'IA de Google, votre visibilité repose d'abord sur un SEO Google solide, puis sur les signaux structurés que Google exploite déjà : données Schema.org, fiche Google Business Profile et contenus clairs que Gemini peut comprendre et citer. Plus votre entreprise est lisible pour Google, plus elle a de chances d'apparaître dans Gemini.",
+    },
+    contextualLinks: [
+      { label: "Notre offre SEO / GEO", href: "/offre" },
+      { label: "Référencement ChatGPT", href: "/blog/referencement-chatgpt-apparaitre-ia" },
+      { label: "Se référencer sur Perplexity", href: "/blog/comment-se-referencer-sur-perplexity" },
+      { label: "Google AI Overviews", href: "/blog/google-ai-overviews-entreprises-comprendre" },
+      { label: "Agence SEO / GEO à Nantes", href: "/agence-seo-geo-nantes" },
+    ],
+    bodyCta: {
+      intro: "Pour savoir si votre entreprise apparaît déjà dans Gemini et dans les autres moteurs IA, vous pouvez demander un",
+      linkLabel: "audit SEO / GEO",
+      href: "/contact",
+      outro: ".",
+    },
+    relatedSlugs: [
+      "comment-se-referencer-sur-perplexity",
+      "referencement-chatgpt-apparaitre-ia",
+      "google-ai-overviews-entreprises-comprendre",
+    ],
+    intro:
+      "Gemini est l'intelligence artificielle de Google. Elle ne fonctionne pas comme un moteur isolé : elle s'appuie directement sur l'écosystème Google, son index de recherche, ses AI Overviews et ses données structurées. Se référencer sur Gemini, c'est donc capitaliser sur un SEO Google solide et activer les signaux que Google comprend déjà.",
+    sections: [
+      {
+        title: "Qu'est-ce que le référencement Gemini ?",
+        paragraphs: [
+          "Le référencement Gemini désigne l'ensemble des actions qui permettent à une entreprise d'apparaître dans les réponses générées par Gemini, l'assistant IA de Google. Contrairement au SEO classique qui vise une position dans la liste de résultats, l'objectif est ici d'être cité et recommandé directement dans la réponse.",
+          "Gemini est utilisé à la fois dans son application dédiée et, de plus en plus, à l'intérieur des produits Google, notamment via les AI Overviews affichés au-dessus des résultats de recherche. Être visible sur Gemini, c'est donc être présent là où Google génère des réponses plutôt que de simples liens.",
+          "Ce travail concerne toutes les entreprises dont les clients posent des questions avant de choisir : commerces, hôtels, restaurants, PME, cabinets et prestataires de services. Si Gemini ne comprend pas clairement votre activité, il ne vous proposera pas.",
+        ],
+        bullets: [
+          "Être cité dans les réponses de Gemini",
+          "Apparaître dans les AI Overviews de Google",
+          "Être compris comme une entreprise claire et fiable",
+        ],
+      },
+      {
+        title: "Pourquoi Gemini est différent des autres IA",
+        paragraphs: [
+          "La grande spécificité de Gemini, c'est son lien direct avec Google. Là où ChatGPT ou Perplexity construisent leur vision du web à partir de sources variées, Gemini s'appuie sur l'infrastructure de Google : son index de recherche, sa compréhension des entités et ses signaux de confiance déjà établis.",
+          "Concrètement, une entreprise bien référencée sur Google part avec une longueur d'avance sur Gemini. Le travail SEO déjà réalisé, à savoir vos contenus, votre structure, votre autorité et vos données structurées, sert aussi de base à votre visibilité dans l'IA de Google.",
+          "Cette proximité se retrouve dans les AI Overviews, ces réponses générées que Google affiche en haut de nombreuses recherches. Elles reposent sur la même logique que Gemini : sélectionner des sources fiables et bien structurées pour composer une réponse.",
+        ],
+        bullets: [
+          "Connexion directe à l'index de recherche Google",
+          "Réutilisation de vos signaux SEO existants",
+          "Proximité avec les AI Overviews de Google",
+          "Prise en compte de Google Business Profile et des données structurées",
+        ],
+      },
+      {
+        title: "Comment Gemini choisit les entreprises qu'elle recommande",
+        paragraphs: [
+          "Gemini cherche à répondre de façon utile et fiable. Pour cela, il privilégie les entreprises que Google comprend bien et dont les informations sont cohérentes sur l'ensemble du web.",
+          "Plusieurs signaux entrent en jeu : l'autorité de votre site aux yeux de Google, la clarté de vos pages, la présence de données structurées, la cohérence de vos informations et les sources externes qui confirment votre activité.",
+          "Une entreprise dont le nom, l'adresse et l'activité varient d'une plateforme à l'autre est plus difficile à recommander. À l'inverse, une entité claire et cohérente est plus facile à citer.",
+        ],
+        bullets: [
+          "Autorité et qualité du site aux yeux de Google",
+          "Données structurées Schema.org bien posées",
+          "Cohérence des informations : nom, adresse, activité",
+          "Sources externes fiables qui confirment votre positionnement",
+        ],
+      },
+      {
+        title: "Les leviers pour apparaître sur Gemini",
+        paragraphs: [
+          "Se rendre visible sur Gemini revient à renforcer votre présence Google, puis à activer les signaux que l'IA sait lire. Voici les leviers concrets sur lesquels travailler.",
+        ],
+        subsections: [
+          {
+            title: "1. Construire un SEO Google solide",
+            paragraphs: [
+              "Gemini s'appuyant sur l'index de Google, un site bien indexé, rapide, clair et pertinent reste la première base. Sans fondations SEO, l'IA de Google a peu de matière pour vous citer.",
+            ],
+          },
+          {
+            title: "2. Déployer les données structurées Schema.org",
+            paragraphs: [
+              "Les balises Schema.org, comme Organization, LocalBusiness, FAQPage ou Service, aident Google, et donc Gemini, à comprendre précisément votre activité, vos services et votre zone d'intervention.",
+            ],
+          },
+          {
+            title: "3. Optimiser votre fiche Google Business Profile",
+            paragraphs: [
+              "Pour une entreprise locale, la fiche Google Business Profile est un signal fort. Une fiche complète, à jour et cohérente renforce votre présence dans l'écosystème sur lequel Gemini s'appuie.",
+            ],
+          },
+          {
+            title: "4. Publier des contenus clairs et structurés",
+            paragraphs: [
+              "Des pages qui répondent directement aux questions de vos clients, avec des titres nets et une réponse dès les premières lignes, sont plus faciles à comprendre et à reprendre pour l'IA.",
+            ],
+          },
+          {
+            title: "5. Assurer la cohérence de vos informations",
+            paragraphs: [
+              "Votre nom, votre adresse, votre activité et votre description doivent être identiques sur votre site, votre fiche Google, vos annuaires et vos réseaux. Cette cohérence renforce la confiance.",
+            ],
+          },
+          {
+            title: "6. Être présent dans des sources que Google indexe",
+            paragraphs: [
+              "Annuaires, presse, avis et plateformes sectorielles : plus votre marque est confirmée par des sources fiables et indexées, plus Gemini dispose d'éléments pour vous recommander.",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Gemini, ChatGPT, Perplexity : quelles différences pour être visible ?",
+        paragraphs: [
+          "Chaque moteur IA a sa logique, et une bonne stratégie de référencement IA (GEO) en tient compte plutôt que d'appliquer une recette unique.",
+          "Gemini est ancré dans l'écosystème Google : votre SEO, vos données structurées et votre fiche Google Business Profile comptent beaucoup. ChatGPT s'appuie sur un ensemble de sources plus large, où les mentions de marque, les avis et les contenus tiers pèsent fortement. Perplexity fonctionne comme un moteur de réponse qui cite fréquemment ses sources et valorise les contenus clairs et récents. Claude, de son côté, apprécie les contenus longs et bien structurés.",
+          "La bonne nouvelle, c'est que ces approches se rejoignent : des contenus clairs, des sources fiables, une entité de marque cohérente et des données structurées servent votre visibilité sur les différents moteurs à la fois.",
+        ],
+        bullets: [
+          "Gemini : écosystème Google, index, AI Overviews et Business Profile",
+          "ChatGPT : sources larges, mentions et contenus tiers",
+          "Perplexity : citations de sources fréquentes",
+          "Point commun : clarté, cohérence et fiabilité",
+        ],
+      },
+      {
+        title: "Combien de temps faut-il pour apparaître sur Gemini ?",
+        paragraphs: [
+          "Il n'existe pas de délai garanti. La vitesse dépend de votre point de départ : l'autorité actuelle de votre site sur Google, la clarté de vos pages, la cohérence de vos informations et la concurrence sur vos requêtes.",
+          "Comme Gemini s'appuie sur Google, les entreprises qui ont déjà un bon SEO peuvent voir des signaux évoluer plus rapidement. Pour les autres, le travail de fond, à savoir contenus, données structurées, fiche Google et sources externes, prend un peu plus de temps mais construit une visibilité durable.",
+          "Le plus fiable est de tester régulièrement les questions que posent vos clients, puis d'observer si votre marque est citée, comment elle est décrite et quelles sources Gemini utilise.",
+        ],
+      },
+    ],
+    faqItems: [
+      {
+        question: "Gemini et Google, c'est pareil ?",
+        answer:
+          "Gemini est l'intelligence artificielle de Google, mais ce n'est pas le moteur de recherche classique. Gemini génère des réponses, tandis que la recherche Google affiche surtout des liens. Les deux partagent toutefois le même écosystème et les mêmes signaux de confiance.",
+      },
+      {
+        question: "Faut-il un site pour apparaître sur Gemini ?",
+        answer:
+          "Un site clair et bien référencé aide beaucoup, car Gemini s'appuie sur l'index de Google. Mais votre visibilité dépend aussi de votre fiche Google Business Profile, de vos données structurées et des sources externes qui parlent de vous.",
+      },
+      {
+        question: "Le SEO Google aide-t-il pour Gemini ?",
+        answer:
+          "Oui, directement. Comme Gemini est branché sur l'écosystème Google, un bon SEO, avec des contenus, une structure claire, de l'autorité et des données structurées, constitue la meilleure base pour apparaître dans ses réponses.",
+      },
+      {
+        question: "Gemini cite-t-il ses sources ?",
+        answer:
+          "Gemini et les AI Overviews de Google affichent parfois des liens vers les sources utilisées, mais pas systématiquement. C'est pourquoi être compris comme une entité fiable compte autant qu'un simple lien.",
+      },
+      {
+        question: "Mon entreprise locale peut-elle apparaître sur Gemini ?",
+        answer:
+          "Oui. Pour une entreprise locale, une fiche Google Business Profile complète, des informations cohérentes et des contenus clairs sur votre zone d'intervention augmentent vos chances d'être recommandée par Gemini.",
+      },
+    ],
+  },
   "referencement-chatgpt-apparaitre-ia": {
     slug: "referencement-chatgpt-apparaitre-ia",
     title: "Référencement ChatGPT : comment apparaître sur ChatGPT et toutes les autres IA",
@@ -278,6 +470,7 @@ const newArticles: Record<string, BlogArticle> = {
       { label: "Schema.org pour le GEO", href: "/blog/schema-org-guide-complet-geo" },
       { label: "Guide llms.txt", href: "/blog/llms-txt-guide-pratique" },
       { label: "Sources citées par les IA", href: "/blog/sources-citees-ia-site-ne-suffit-pas" },
+      { label: "Référencement Gemini", href: "/blog/comment-se-referencer-sur-gemini" },
     ],
     bodyCta: {
       intro: "Vous voulez savoir où votre entreprise en est sur ChatGPT et les autres IA ? Demandez un",
@@ -287,6 +480,7 @@ const newArticles: Record<string, BlogArticle> = {
         " : on analyse votre visibilité IA en 48h et on vous dit exactement ce qui vous empêche d'être cité.",
     },
     relatedSlugs: [
+      "comment-se-referencer-sur-gemini",
       "apparaitre-chatgpt-client-cherche-entreprise",
       "comment-se-referencer-sur-perplexity",
       "sources-citees-ia-site-ne-suffit-pas",
@@ -453,6 +647,7 @@ const newArticles: Record<string, BlogArticle> = {
       { label: "Référencement ChatGPT", href: "/blog/referencement-chatgpt-apparaitre-ia" },
       { label: "Audit SEO / GEO", href: "/contact" },
       { label: "Google AI Overviews", href: "/blog/google-ai-overviews-entreprises-comprendre" },
+      { label: "Référencement Gemini", href: "/blog/comment-se-referencer-sur-gemini" },
     ],
     bodyCta: {
       intro: "Pour savoir si votre marque apparaît déjà dans Google et dans les moteurs IA, vous pouvez demander un",
@@ -461,6 +656,7 @@ const newArticles: Record<string, BlogArticle> = {
       outro: ".",
     },
     relatedSlugs: [
+      "comment-se-referencer-sur-gemini",
       "referencement-chatgpt-apparaitre-ia",
       "audit-seo-geo-visibilite-ia",
       "seo-classique-vs-geo-acquisition-client",
@@ -680,6 +876,7 @@ const newArticles: Record<string, BlogArticle> = {
       { label: "Sources citées par les IA", href: "/blog/sources-citees-ia-site-ne-suffit-pas" },
       { label: "Schema.org pour le GEO", href: "/blog/schema-org-guide-complet-geo" },
       { label: "Guide llms.txt", href: "/blog/llms-txt-guide-pratique" },
+      { label: "Référencement Gemini", href: "/blog/comment-se-referencer-sur-gemini" },
     ],
     bodyCta: {
       intro: "Pour savoir si votre marque apparaît déjà dans Perplexity et dans les autres moteurs IA, vous pouvez demander un",
@@ -688,6 +885,7 @@ const newArticles: Record<string, BlogArticle> = {
       outro: ".",
     },
     relatedSlugs: [
+      "comment-se-referencer-sur-gemini",
       "referencement-chatgpt-apparaitre-ia",
       "apparaitre-chatgpt-client-cherche-entreprise",
       "sources-citees-ia-site-ne-suffit-pas",
@@ -1488,6 +1686,7 @@ const newArticles: Record<string, BlogArticle> = {
       { label: "SEO / GEO", href: "/blog/seo-geo-rendre-entreprise-visible-google-chatgpt-gemini" },
       { label: "Audit SEO / GEO", href: "/blog/audit-seo-geo-visibilite-ia" },
       { label: "Apparaître dans ChatGPT", href: "/blog/apparaitre-chatgpt-client-cherche-entreprise" },
+      { label: "Référencement Gemini", href: "/blog/comment-se-referencer-sur-gemini" },
     ],
     bodyCta: {
       intro: "Chez PulseoAI, nous accompagnons les entreprises sur leur visibilité Google et IA avec une méthode de",
@@ -1496,6 +1695,7 @@ const newArticles: Record<string, BlogArticle> = {
       outro: ".",
     },
     relatedSlugs: [
+      "comment-se-referencer-sur-gemini",
       "referencement-chatgpt-apparaitre-ia",
       "seo-geo-rendre-entreprise-visible-google-chatgpt-gemini",
       "audit-seo-geo-visibilite-ia",
