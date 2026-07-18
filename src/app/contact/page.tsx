@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ChevronRight, Mail, MapPin, ExternalLink, Clock } from "lucide-react";
+import { ChevronRight, Mail, MapPin, ExternalLink, Clock, Phone } from "lucide-react";
 import { ContactForm } from "@/components/contact-form";
 
 export const metadata: Metadata = {
@@ -177,7 +177,27 @@ export default function ContactPage() {
                     <p className="text-sm font-medium text-navy/60">
                       Localisation
                     </p>
-                    <p className="text-navy font-medium">Nantes, France</p>
+                    <p className="text-navy font-medium">17 rue Océane, 44800 Saint-Herblain, France</p>
+                    <p className="mt-1 text-sm leading-5 text-navy/60">
+                      Agence SEO et GEO basée à Saint-Herblain, dans la métropole nantaise. Nous accompagnons les entreprises de Nantes et de Loire-Atlantique.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="rounded-lg bg-cyan/10 p-2.5">
+                    <Phone className="h-5 w-5 text-cyan" />
+                  </div>
+                  <div>
+                    <p className="text-sm font-medium text-navy/60">
+                      Téléphone
+                    </p>
+                    <a
+                      href="tel:+33695771783"
+                      className="text-navy font-medium hover:text-cyan transition-colors"
+                    >
+                      06 95 77 17 83
+                    </a>
                   </div>
                 </div>
               </div>

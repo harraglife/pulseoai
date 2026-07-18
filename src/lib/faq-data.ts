@@ -185,7 +185,7 @@ export const faqCategories: FaqCategory[] = [
       {
         question: "Où êtes vous basés ?",
         answer:
-          "PulseoAI est basée à Saint Herblain, dans la métropole nantaise (44800). Notre bureau est situé au 17 rue Océane. Cependant, nous travaillons avec des hôtels partout en France et à l'international. Le GEO étant un métier 100 % digital, nous collaborons efficacement à distance avec nos clients. Nos échanges se font par visioconférence, email et via notre plateforme de suivi en ligne. Si vous êtes dans la région nantaise, nous sommes bien sûr ravis de vous accueillir en personne pour un premier rendez vous ou des points réguliers.",
+          "PulseoAI est basée à Saint-Herblain, dans la métropole nantaise (44800). Notre bureau est situé au 17 rue Océane. Cependant, nous travaillons avec des hôtels partout en France et à l'international. Le GEO étant un métier 100 % digital, nous collaborons efficacement à distance avec nos clients. Nos échanges se font par visioconférence, email et via notre plateforme de suivi en ligne. Si vous êtes dans la région nantaise, nous sommes bien sûr ravis de vous accueillir en personne pour un premier rendez vous ou des points réguliers.",
       },
       {
         question: "Travaillez vous avec des hôtels hors de France ?",

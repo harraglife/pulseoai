@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Building2, CheckCircle2, ChevronRight, Compass, FileText, MapPin, Search, ShieldCheck, Zap } from "lucide-react";
+import { ArrowRight, Building2, CheckCircle2, ChevronRight, Compass, FileText, MapPin, Phone, Search, ShieldCheck, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
@@ -46,52 +46,6 @@ const breadcrumbJsonLd = {
   ],
 };
 
-const localBusinessJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://www.pulseoai.fr/agence-seo-geo-nantes/#localbusiness",
-  name: "PulseoAI — Agence SEO / GEO Nantes",
-  alternateName: ["Pulseo AI Nantes", "PulseoAI Agence GEO Nantes"],
-  description:
-    "Agence SEO, GEO et référencement IA à Nantes et Saint-Herblain. PulseoAI aide les PME, hôtels, restaurants, commerces et entreprises locales à renforcer leur visibilité sur Google, ChatGPT, Perplexity et les moteurs IA.",
-  url: "https://www.pulseoai.fr/agence-seo-geo-nantes",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "17 rue Océane",
-    addressLocality: "Saint-Herblain",
-    addressRegion: "Loire-Atlantique",
-    postalCode: "44800",
-    addressCountry: "FR",
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: 47.2186,
-    longitude: -1.6499,
-  },
-  areaServed: [
-    { "@type": "City", name: "Nantes" },
-    { "@type": "City", name: "Saint-Herblain" },
-    { "@type": "AdministrativeArea", name: "Loire-Atlantique" },
-    { "@type": "Country", name: "France" },
-  ],
-  knowsAbout: [
-    "SEO",
-    "GEO",
-    "référencement IA",
-    "visibilité ChatGPT",
-    "Google AI Overviews",
-    "Perplexity",
-    "référencement local",
-    "Schema.org",
-  ],
-  sameAs: [
-    "https://www.linkedin.com/company/pulseoai",
-    "https://share.google/TzGlBcQm6UkgBdpDF",
-  ],
-  parentOrganization: {
-    "@id": "https://www.pulseoai.fr/#organization",
-  },
-};
 
 const faqItems = [
   {
@@ -201,10 +155,6 @@ export default function AgenceSeoGeoNantesPage() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
-      />
-      <script
-        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
@@ -258,8 +208,24 @@ export default function AgenceSeoGeoNantesPage() {
                 </div>
                 <div>
                   <p className="text-[16px] font-semibold text-navy">Basés à Saint-Herblain</p>
-                  <p className="text-[14px] text-navy/58">Nantes, Loire-Atlantique, France</p>
+                  <p className="text-[14px] text-navy/58">17 rue Océane, 44800 Saint-Herblain</p>
                 </div>
+              </div>
+
+              <p className="mt-4 text-[14px] leading-6 text-navy/62">
+                Agence SEO et GEO basée à Saint-Herblain, dans la métropole nantaise. Nous accompagnons les entreprises de Nantes et de Loire-Atlantique.
+              </p>
+
+              <div className="mt-4 flex items-center gap-3">
+                <div className="flex size-9 items-center justify-center rounded-[14px] bg-[#EEF3FF]">
+                  <Phone className="size-4 text-cyan" />
+                </div>
+                <a
+                  href="tel:+33695771783"
+                  className="text-[15px] font-semibold text-navy transition-colors hover:text-cyan"
+                >
+                  06 95 77 17 83
+                </a>
               </div>
 
               <div className="mt-5 space-y-3">
