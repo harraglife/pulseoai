@@ -179,15 +179,6 @@ export const articleMetadataBySlug: Record<string, ArticleSchemaEnhancement> = {
     },
     mentions: buildMentions(["ChatGPT", "Perplexity", "Wikipedia", "Reddit"]),
   },
-  "geo-commerces-pme-visibilite-locale": {
-    about: {
-      "@type": "Thing",
-      name: "GEO pour commerces locaux",
-      description:
-        "Adapter le GEO aux commerces locaux et PME qui veulent être recommandés dans les réponses IA.",
-    },
-    mentions: buildMentions(["ChatGPT", "Google Maps", "Gemini"]),
-  },
   "seo-classique-vs-geo-acquisition-client": {
     about: {
       "@type": "Thing",
@@ -196,15 +187,6 @@ export const articleMetadataBySlug: Record<string, ArticleSchemaEnhancement> = {
         "Comparer le SEO classique et le GEO pour comprendre leur rôle dans l’acquisition client.",
     },
     mentions: buildMentions(["Google", "ChatGPT", "Gemini"]),
-  },
-  "geo-restaurants-guide-visibilite-ia": {
-    about: {
-      "@type": "Thing",
-      name: "GEO pour restaurants",
-      description:
-        "Comprendre comment les restaurants peuvent gagner en visibilité dans les moteurs IA et les réponses de recommandation.",
-    },
-    mentions: buildMentions(["ChatGPT", "TripAdvisor", "Google Maps"]),
   },
   "llms-txt-guide-pratique": {
     about: {
@@ -255,15 +237,6 @@ export const articleMetadataBySlug: Record<string, ArticleSchemaEnhancement> = {
         },
       ],
     },
-  },
-  "geo-hotels-guide-complet": {
-    about: {
-      "@type": "Thing",
-      name: "GEO pour hôtels",
-      description:
-        "Comprendre comment les hôtels peuvent devenir plus visibles dans ChatGPT, Gemini et les moteurs IA.",
-    },
-    mentions: buildMentions(["ChatGPT", "Booking", "Gemini"]),
   },
   "hotel-invisible-chatgpt": {
     about: {

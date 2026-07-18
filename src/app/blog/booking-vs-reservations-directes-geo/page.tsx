@@ -168,8 +168,8 @@ export default function BookingVsReservationsDirectesGeo() {
                 Liens utiles
               </p>
               <div className="mt-3 flex flex-wrap gap-3 text-sm font-medium text-navy">
-                <Link href="/blog/geo-hotels-guide-complet" className="rounded-full border border-navy/10 bg-white px-4 py-2 transition hover:border-cyan/30 hover:text-cyan">
-                  Guide GEO h&ocirc;tels
+                <Link href="/blog/geo-local-guide-entreprises" className="rounded-full border border-navy/10 bg-white px-4 py-2 transition hover:border-cyan/30 hover:text-cyan">
+                  Guide GEO local
                 </Link>
                 <Link href="/blog/hotel-invisible-chatgpt" className="rounded-full border border-navy/10 bg-white px-4 py-2 transition hover:border-cyan/30 hover:text-cyan">
                   H&ocirc;tel invisible sur ChatGPT
@@ -389,7 +389,7 @@ export default function BookingVsReservationsDirectesGeo() {
           <RelatedPosts
             currentSlug="booking-vs-reservations-directes-geo"
             explicitSlugs={[
-              "geo-hotels-guide-complet",
+              "geo-local-guide-entreprises",
               "hotel-invisible-chatgpt",
               "schema-org-guide-complet-geo",
             ]}

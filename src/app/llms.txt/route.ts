@@ -66,9 +66,7 @@ Suivi hebdomadaire des scores de visibilite IA. Tableaux de bord avec evolution 
 - GEO en 2026 : pourquoi votre entreprise ne peut plus ignorer les moteurs IA : https://www.pulseoai.fr/blog/geo-2026-pourquoi-votre-entreprise-ne-peut-plus-ignorer-les-moteurs-ia
 - Schema.org pour le GEO : guide complet du balisage structure : https://www.pulseoai.fr/blog/schema-org-guide-complet-geo
 - llms.txt : guide pratique pour rendre votre site visible sur les IA : https://www.pulseoai.fr/blog/llms-txt-guide-pratique
-- GEO pour les restaurants : guide de visibilite IA : https://www.pulseoai.fr/blog/geo-restaurants-guide-visibilite-ia
-- GEO pour les commerces et PME : visibilite locale IA : https://www.pulseoai.fr/blog/geo-commerces-pme-visibilite-locale
-- GEO pour les hotels : le guide complet 2026 : https://www.pulseoai.fr/blog/geo-hotels-guide-complet
+- GEO local : rendre votre entreprise visible dans les reponses IA : https://www.pulseoai.fr/blog/geo-local-guide-entreprises
 - Pourquoi votre hotel est invisible sur ChatGPT : https://www.pulseoai.fr/blog/hotel-invisible-chatgpt
 - Booking vs reservations directes et le GEO : https://www.pulseoai.fr/blog/booking-vs-reservations-directes-geo
 

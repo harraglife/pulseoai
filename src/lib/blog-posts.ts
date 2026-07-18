@@ -63,6 +63,16 @@ const monthMap: Record<string, number> = {
 
 export const blogPosts: BlogPostMeta[] = [
   {
+    slug: "geo-local-guide-entreprises",
+    title: "GEO local : rendre votre entreprise visible dans les réponses IA",
+    seoTitle: "GEO local : être visible dans les réponses IA",
+    description:
+      "GEO local : comment rendre votre entreprise visible dans les réponses de ChatGPT, Gemini et Google. Guide pour hôtels, restaurants, commerces et PME.",
+    date: "16 juillet 2026",
+    readingTime: "12 min",
+    category: "SEO IA",
+  },
+  {
     slug: "comment-se-referencer-sur-gemini",
     title: "Comment se référencer sur Gemini : apparaître dans l'IA de Google",
     seoTitle: "Référencement Gemini : apparaître sur l'IA de Google · PulseoAI",
@@ -186,15 +196,6 @@ export const blogPosts: BlogPostMeta[] = [
     category: "Citations IA",
   },
   {
-    slug: "geo-commerces-pme-visibilite-locale",
-    title: "GEO pour les commerces et PME : gagner en visibilité locale dans les IA",
-    description:
-      "Artisans, cabinets, salons, boutiques et services locaux peuvent aussi apparaître dans les réponses de ChatGPT, Gemini et Google AI Overviews.",
-    date: "18 avril 2026",
-    readingTime: "7 min",
-    category: "Commerce local",
-  },
-  {
     slug: "seo-classique-vs-geo-acquisition-client",
     title: "SEO classique vs GEO : quelles différences pour votre acquisition client ?",
     seoTitle: "SEO classique vs GEO · PulseoAI",
@@ -205,15 +206,6 @@ export const blogPosts: BlogPostMeta[] = [
     category: "SEO / GEO",
   },
   {
-    slug: "geo-restaurants-guide-visibilite-ia",
-    title: "GEO pour les restaurants : apparaître dans les recommandations ChatGPT",
-    description:
-      "Comment rendre un restaurant visible quand un client demande à une IA où manger, réserver ou organiser un dîner d’affaires.",
-    date: "9 avril 2026",
-    readingTime: "7 min",
-    category: "Restaurants",
-  },
-  {
     slug: "llms-txt-guide-pratique",
     title: "llms.txt : rendre votre site plus lisible pour les moteurs IA",
     description:
@@ -221,15 +213,6 @@ export const blogPosts: BlogPostMeta[] = [
     date: "31 mars 2026",
     readingTime: "7 min",
     category: "Technique",
-  },
-  {
-    slug: "geo-hotels-guide-complet",
-    title: "GEO pour les hôtels : apparaître sur ChatGPT en 2026",
-    description:
-      "Tout ce qu’un hôtel doit comprendre pour être cité par ChatGPT, Gemini, Claude et Google AI Overviews sur les requêtes à forte intention.",
-    date: "18 mars 2026",
-    readingTime: "10 min",
-    category: "Hôtellerie",
   },
   {
     slug: "hotel-invisible-chatgpt",
@@ -252,6 +235,212 @@ export const blogPosts: BlogPostMeta[] = [
 ];
 
 const newArticles: Record<string, BlogArticle> = {
+  "geo-local-guide-entreprises": {
+    slug: "geo-local-guide-entreprises",
+    title: "GEO local : rendre votre entreprise visible dans les réponses IA",
+    seoTitle: "GEO local : être visible dans les réponses IA",
+    description:
+      "GEO local : comment rendre votre entreprise visible dans les réponses de ChatGPT, Gemini et Google. Guide pour hôtels, restaurants, commerces et PME.",
+    date: "16 juillet 2026",
+    dateModified: "16 juillet 2026",
+    readingTime: "12 min",
+    category: "SEO IA",
+    articleSection: "GEO local",
+    keywords: [
+      "GEO local",
+      "référencement IA local",
+      "visibilité IA entreprise locale",
+      "apparaître sur ChatGPT",
+      "GEO hôtels",
+      "GEO restaurants",
+      "GEO commerces",
+      "SEO IA local",
+    ],
+    faqTitle: "FAQ : GEO local",
+    quickAnswer: {
+      question: "Comment rendre son entreprise locale visible dans les réponses IA ?",
+      answer:
+        "Pour apparaître dans les réponses de ChatGPT, Gemini, Perplexity ou Google, une entreprise locale doit être compréhensible et vérifiable en ligne : une fiche Google Business Profile complète, un balisage Schema.org adapté à son activité, des contenus clairs qui répondent aux questions des clients, des avis récents et des citations sur des sources locales fiables.",
+    },
+    contextualLinks: [
+      { label: "Notre offre SEO / GEO", href: "/offre" },
+      { label: "Référencement ChatGPT", href: "/blog/referencement-chatgpt-apparaitre-ia" },
+      { label: "Se référencer sur Perplexity", href: "/blog/comment-se-referencer-sur-perplexity" },
+      { label: "Référencement Gemini", href: "/blog/comment-se-referencer-sur-gemini" },
+      { label: "Agence SEO / GEO à Nantes", href: "/agence-seo-geo-nantes" },
+    ],
+    bodyCta: {
+      intro: "Pour savoir si votre entreprise locale apparaît déjà dans les réponses IA et ce qui vous empêche d'être cité, vous pouvez demander un",
+      linkLabel: "audit SEO / GEO",
+      href: "/contact",
+      outro: ".",
+    },
+    relatedSlugs: [
+      "referencement-chatgpt-apparaitre-ia",
+      "comment-se-referencer-sur-perplexity",
+      "google-ai-overviews-entreprises-comprendre",
+    ],
+    intro:
+      "Quand un client demande à ChatGPT, Gemini ou Google la meilleure boulangerie de sa ville, un bon hôtel pour un week-end ou un plombier fiable, l'IA ne renvoie pas dix liens. Elle cite deux ou trois noms, avec une justification. Si votre entreprise n'en fait pas partie, elle est invisible pour une clientèle locale qui interroge de plus en plus les moteurs IA. Ce guide explique comment le GEO (Generative Engine Optimization) fonctionne pour les entreprises locales et comment l'appliquer, quel que soit votre secteur.",
+    sections: [
+      {
+        title: "Pourquoi les entreprises locales sont absentes des réponses IA",
+        paragraphs: [
+          "Le constat est net. La grande majorité des commerces indépendants, des artisans, des restaurants, des hôtels et des PME ne sont jamais cités par ChatGPT, Gemini ou Claude sur une question locale. La raison est simple : un modèle de langage ne peut recommander que ce qu'il connaît, et il ne connaît que ce qui est structuré, documenté et vérifiable en ligne.",
+          "Une entreprise qui possède seulement une page Facebook et une fiche Google mal remplie n'envoie presque aucun signal exploitable. L'IA ne dispose ni d'une description factuelle, ni de données structurées, ni de citations sur des sources tierces. Elle n'a donc aucune matière pour vous recommander, même si votre établissement est excellent et apprécié de vos clients.",
+        ],
+        bullets: [
+          "L'absence de site clair et structuré, avec un contenu factuel sur votre activité.",
+          "L'absence de balisage Schema.org, qui prive les IA de vos horaires, votre adresse et vos spécialités.",
+          "Le manque de citations tierces : une entreprise vue uniquement sur sa propre fiche paraît moins fiable qu'une entreprise confirmée par plusieurs sources.",
+        ],
+      },
+      {
+        title: "Comment les IA choisissent quelle entreprise recommander",
+        paragraphs: [
+          "Contrairement à Google, qui classe des pages par pertinence, ChatGPT, Gemini et Claude synthétisent des informations issues de plusieurs sources pour formuler une réponse unique. Ils ne répondent pas par une liste de dix résultats, mais par deux ou trois recommandations justifiées.",
+        ],
+        subsections: [
+          {
+            title: "La recherche augmentée (RAG)",
+            paragraphs: [
+              "La plupart des moteurs IA utilisent un système de RAG (Retrieval-Augmented Generation). Quand un utilisateur pose une question locale, l'IA interroge le web, récupère les pages les plus pertinentes, puis synthétise l'information pour générer sa réponse. Votre contenu doit donc être facile à trouver et clairement structuré pour être sélectionné.",
+            ],
+          },
+          {
+            title: "La vérification croisée",
+            paragraphs: [
+              "Les IA privilégient les informations confirmées par plusieurs sources indépendantes. Si votre entreprise est mentionnée sur votre site, sur un blog local, dans un annuaire et sur une fiche Google avec des avis récents, l'information est jugée fiable. Si la seule source est votre propre fiche, le signal est trop faible.",
+            ],
+          },
+          {
+            title: "La fraîcheur des données",
+            paragraphs: [
+              "Les modèles accordent de l'importance à la date des contenus. Un site qui n'a pas bougé depuis deux ans envoie un signal faible. Une entreprise qui met à jour ses informations et publie régulièrement montre qu'elle est active et pertinente.",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Les actions GEO qui comptent",
+        paragraphs: [
+          "Quel que soit votre secteur, la base est la même : rendre votre entreprise compréhensible par les machines et crédible aux yeux des IA. Voici les leviers à travailler.",
+        ],
+        subsections: [
+          {
+            title: "Compléter votre fiche Google Business Profile",
+            paragraphs: [
+              "La fiche Google Business Profile est le socle de la visibilité locale, y compris pour les IA, qui l'utilisent comme référence pour vérifier vos informations. Renseignez le nom exact, l'adresse, les horaires à jour, le téléphone, les catégories précises, une description factuelle et des photos récentes. Répondez à tous les avis.",
+            ],
+          },
+          {
+            title: "Déployer un balisage Schema.org adapté",
+            paragraphs: [
+              "Le balisage Schema.org en JSON-LD transmet aux IA des données structurées : nom, adresse, téléphone, horaires, zone desservie, gamme de prix, note moyenne. Choisissez le type qui correspond à votre activité (LocalBusiness ou un sous-type précis). C'est souvent l'action au meilleur rapport entre effort et résultat.",
+            ],
+          },
+          {
+            title: "Écrire des contenus answer-first",
+            paragraphs: [
+              "Les IA extraient des blocs d'information. Structurez vos pages en sections claires, avec des titres explicites et une réponse dès les premières lignes. Préférez les faits concrets, comme les prestations proposées, la zone d'intervention ou les spécialités, aux formules marketing vagues. Pensez en questions et réponses que vos clients posent réellement.",
+            ],
+          },
+          {
+            title: "Collecter et entretenir les avis",
+            paragraphs: [
+              "Les avis sont un signal majeur. Les modèles analysent leur contenu, pas seulement la note. Sollicitez des avis récents et détaillés, et répondez à chaque commentaire. Des avis qui décrivent précisément vos points forts se retrouvent souvent dans les recommandations des IA.",
+            ],
+          },
+          {
+            title: "Publier un fichier llms.txt",
+            paragraphs: [
+              "Le fichier llms.txt, placé à la racine de votre site comme le robots.txt, fournit aux IA un résumé structuré de votre activité : qui vous êtes, ce que vous proposez, où vous êtes situé et vos spécialités. Il est rapide à créer et encore peu répandu, ce qui donne un avantage aux premières entreprises qui l'adoptent.",
+            ],
+          },
+          {
+            title: "Développer citations et liens locaux",
+            paragraphs: [
+              "Les IA croisent les sources. Des mentions sur des annuaires professionnels pertinents, des blogs locaux, la presse de votre ville ou des partenaires renforcent votre crédibilité dans votre zone. Cherchez des citations cohérentes plutôt qu'un grand nombre d'inscriptions génériques.",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Le calendrier de déploiement réaliste",
+        paragraphs: [
+          "Le GEO n'est pas instantané, mais ses effets sont progressifs et cumulatifs. Un mot sur le budget au passage : contrairement à la publicité, dont l'effet s'arrête dès que vous cessez de payer, le GEO construit un actif durable qui continue de nourrir les recommandations IA dans le temps. Voici une trajectoire réaliste.",
+        ],
+        bullets: [
+          "Semaines 1 à 2 : audit et fondations. Testez les questions que vos clients posent aux IA, vérifiez la cohérence de vos informations entre votre site, Google et les plateformes, repérez les concurrents déjà cités.",
+          "Semaines 3 à 4 : mise en place technique. Balisage Schema.org, fichier llms.txt, optimisation de la fiche Google Business Profile, restructuration des contenus.",
+          "Mois 2 à 3 : contenu et autorité. Pages et FAQ orientées questions locales, citations sur des sources de confiance, collecte régulière d'avis.",
+          "Mois 4 à 6 : optimisation continue. Mesurez votre présence dans les réponses IA, ajustez vos contenus et votre llms.txt, maintenez un rythme d'avis et de mises à jour.",
+        ],
+      },
+      {
+        title: "Hôtellerie : réservations directes et sources voyage",
+        paragraphs: [
+          "Pour un hôtel, l'enjeu est de capter des réservations directes plutôt que de dépendre des plateformes. Quand un voyageur demande à une IA un hôtel pour un week-end en amoureux ou un séjour en famille dans une ville, l'IA s'appuie fortement sur les avis et les sources voyage.",
+          "Utilisez un balisage Schema.org de type Hotel ou LodgingBusiness, avec vos équipements, votre localisation et votre gamme de prix. Soignez vos avis sur Google, TripAdvisor et Booking, que les IA lisent en priorité. Travaillez aussi vos citations sur les guides de voyage, les offices de tourisme et les médias spécialisés.",
+          "Une erreur fréquente consiste à recopier la description de votre fiche Booking sur votre propre site. Ce contenu dupliqué dessert votre site. Rédigez une présentation originale, plus riche et orientée questions voyageurs, comme les services, l'adaptation aux familles ou les restaurants à proximité.",
+        ],
+      },
+      {
+        title: "Restauration : une carte structurée et des requêtes par plat",
+        paragraphs: [
+          "Pour un restaurant, le menu est l'atout numéro un. Quand un client demande où manger un plat précis dans un quartier, avec un budget donné, l'IA cherche des établissements qui proposent explicitement ce plat. Une carte en PDF ou en simple photo est invisible pour ces requêtes.",
+          "Publiez votre carte en HTML avec un balisage Schema.org Restaurant, complété par Menu et MenuItem pour chaque plat, avec le nom, une courte description, le prix et les allergènes. Renseignez servesCuisine et priceRange pour que l'IA puisse vous recommander selon le type de cuisine et le budget. Ce niveau de détail, encore rare, fait une vraie différence.",
+          "Un cas concret côté client : un bistrot lyonnais, absent des réponses IA sur des requêtes comme meilleur bouchon ou où manger une quenelle à Lyon, partait d'une fiche Google pauvre et d'une carte en PDF illisible par les machines. Après la refonte de son site avec un balisage Restaurant complet, une carte structurée plat par plat, un fichier llms.txt et une collecte d'avis via un QR code sur l'addition, l'établissement a commencé à être cité par ChatGPT sur plusieurs requêtes liées à la cuisine lyonnaise, avec un volume d'avis en nette hausse. Les avis sur Google, TripAdvisor et TheFork nourrissent ces recommandations.",
+        ],
+      },
+      {
+        title: "Commerces, artisans et PME : le bon sous-type Schema par métier",
+        paragraphs: [
+          "Pour les commerces et les services de proximité, la clé est de choisir le sous-type Schema.org qui correspond à votre métier, puis de documenter précisément votre offre. Un sous-type précis aide l'IA à faire correspondre une demande à votre activité.",
+        ],
+        bullets: [
+          "Boulangerie : sous-type Bakery, avec une page détaillant vos spécialités comme les pains au levain ou les viennoiseries, des avis récents et une mention sur un blog local, qui pèsent plus qu'une simple page Facebook.",
+          "Salon de coiffure : sous-type HairSalon, avec priceRange, areaServed et le détail de vos techniques et prestations, pour répondre à des demandes précises comme une coloration végétale.",
+          "Artisan plombier ou électricien : sous-types Plumber ou Electrician. Ici la confiance prime : affichez vos certifications comme RGE ou Qualibat, votre zone d'intervention, vos tarifs indicatifs et des avis vérifiés.",
+          "Professions de santé : sous-types comme Dentist, Physician ou MedicalBusiness, en cohérence avec votre présence sur Doctolib et un site qui détaille vos spécialités.",
+        ],
+      },
+      {
+        title: "Un socle commun, des accents par secteur",
+        paragraphs: [
+          "Pensez aussi aux annuaires pertinents pour votre secteur, comme PagesJaunes ou Doctolib pour la santé, en gardant des informations strictement identiques partout. Cette cohérence renforce la confiance des IA dans votre entreprise.",
+          "Au fond, la mécanique est la même pour tous : une entreprise claire, structurée, cohérente et confirmée par plusieurs sources est celle que les IA recommandent. Les spécificités de secteur ne changent pas la méthode, seulement les plateformes, les sous-types Schema et les requêtes à travailler.",
+        ],
+      },
+    ],
+    faqItems: [
+      {
+        question: "Le GEO local, c'est seulement pour les grandes entreprises ?",
+        answer:
+          "Non. Les commerces de quartier, artisans, restaurants, hôtels et PME ont autant à y gagner, souvent davantage : sur des requêtes locales et de niche, les IA citent volontiers des entreprises bien décrites et cohérentes, même petites.",
+      },
+      {
+        question: "Faut-il un site web pour apparaître dans les réponses IA ?",
+        answer:
+          "Un site clair et structuré aide beaucoup, car les IA y puisent des informations factuelles. Mais votre visibilité dépend aussi de votre fiche Google Business Profile, de vos données structurées, de vos avis et des sources qui parlent de vous.",
+      },
+      {
+        question: "Quelle différence entre le SEO et le GEO local ?",
+        answer:
+          "Le SEO vise à bien positionner vos pages dans les résultats Google. Le GEO vise à être cité directement dans les réponses générées par ChatGPT, Gemini, Perplexity ou Google. Les deux se complètent et partagent des bases communes.",
+      },
+      {
+        question: "Combien de temps avant de voir des résultats ?",
+        answer:
+          "Cela dépend de votre point de départ, de la clarté de votre site et de la concurrence locale. Les premiers signaux peuvent évoluer en quelques semaines, mais une visibilité solide se construit sur plusieurs mois.",
+      },
+      {
+        question: "Le GEO fonctionne-t-il pour tous les moteurs IA ?",
+        answer:
+          "Les bonnes pratiques, à savoir des contenus clairs, des données structurées, des avis, de la cohérence et des citations, servent votre visibilité sur ChatGPT, Gemini, Perplexity et Claude à la fois, même si chaque moteur a ses sources de prédilection.",
+      },
+    ],
+  },
   "comment-se-referencer-sur-gemini": {
     slug: "comment-se-referencer-sur-gemini",
     title: "Comment se référencer sur Gemini : apparaître dans l'IA de Google",
@@ -291,6 +480,7 @@ const newArticles: Record<string, BlogArticle> = {
       outro: ".",
     },
     relatedSlugs: [
+      "geo-local-guide-entreprises",
       "comment-se-referencer-sur-perplexity",
       "referencement-chatgpt-apparaitre-ia",
       "google-ai-overviews-entreprises-comprendre",
@@ -656,6 +846,7 @@ const newArticles: Record<string, BlogArticle> = {
       outro: ".",
     },
     relatedSlugs: [
+      "geo-local-guide-entreprises",
       "comment-se-referencer-sur-gemini",
       "referencement-chatgpt-apparaitre-ia",
       "audit-seo-geo-visibilite-ia",
@@ -1065,6 +1256,7 @@ const newArticles: Record<string, BlogArticle> = {
       outro: ".",
     },
     relatedSlugs: [
+      "geo-local-guide-entreprises",
       "referencement-chatgpt-apparaitre-ia",
       "comment-se-referencer-sur-perplexity",
       "veille-concurrentielle-seo-ia-serp-locales",
@@ -1695,6 +1887,7 @@ const newArticles: Record<string, BlogArticle> = {
       outro: ".",
     },
     relatedSlugs: [
+      "geo-local-guide-entreprises",
       "comment-se-referencer-sur-gemini",
       "referencement-chatgpt-apparaitre-ia",
       "seo-geo-rendre-entreprise-visible-google-chatgpt-gemini",
@@ -1773,7 +1966,7 @@ export const blogTopics = [
   {
     title: "SEO IA pour PME",
     description: "Voir comment les PME, commerces et services locaux peuvent être cités par les IA.",
-    href: "/blog/geo-commerces-pme-visibilite-locale",
+    href: "/blog/geo-local-guide-entreprises",
   },
   {
     title: "Technique : schema.org et llms.txt",

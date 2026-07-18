@@ -168,8 +168,8 @@ export default function HotelInvisibleChatGPT() {
                 <Link href="/geo-hotellerie" className="rounded-full border border-navy/10 bg-white px-4 py-2 transition hover:border-cyan/30 hover:text-cyan">
                   GEO h&ocirc;tellerie
                 </Link>
-                <Link href="/blog/geo-hotels-guide-complet" className="rounded-full border border-navy/10 bg-white px-4 py-2 transition hover:border-cyan/30 hover:text-cyan">
-                  Guide GEO h&ocirc;tels
+                <Link href="/blog/geo-local-guide-entreprises" className="rounded-full border border-navy/10 bg-white px-4 py-2 transition hover:border-cyan/30 hover:text-cyan">
+                  Guide GEO local
                 </Link>
                 <Link href="/blog/booking-vs-reservations-directes-geo" className="rounded-full border border-navy/10 bg-white px-4 py-2 transition hover:border-cyan/30 hover:text-cyan">
                   R&eacute;servations directes
@@ -423,7 +423,7 @@ export default function HotelInvisibleChatGPT() {
           <RelatedPosts
             currentSlug="hotel-invisible-chatgpt"
             explicitSlugs={[
-              "geo-hotels-guide-complet",
+              "geo-local-guide-entreprises",
               "booking-vs-reservations-directes-geo",
               "schema-org-guide-complet-geo",
             ]}

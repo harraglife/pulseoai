@@ -1,6 +1,25 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  async redirects() {
+    return [
+      {
+        source: "/blog/geo-hotels-guide-complet",
+        destination: "/blog/geo-local-guide-entreprises",
+        statusCode: 301,
+      },
+      {
+        source: "/blog/geo-restaurants-guide-visibilite-ia",
+        destination: "/blog/geo-local-guide-entreprises",
+        statusCode: 301,
+      },
+      {
+        source: "/blog/geo-commerces-pme-visibilite-locale",
+        destination: "/blog/geo-local-guide-entreprises",
+        statusCode: 301,
+      },
+    ];
+  },
   async headers() {
     return [
       {
