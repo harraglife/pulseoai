@@ -82,6 +82,7 @@ export default function NotFound() {
         </p>
 
         <Image
+          sizes="(max-width: 767px) 200px, 420px"
           src="/illustrations/xyEexm52.png"
           alt="Mascotte lion perplexe"
           width={1536}

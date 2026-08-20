@@ -321,7 +321,14 @@ main.flex-1 { flex: 0 0 auto !important; }
   .th-lion { height: 186px; }
   .th-stage-lion { height: 167px; }
   .th-stage .th-btn {
-    position: static;
+    /* relative et non static : le ::before du bouton est en position absolue,
+       un static le ferait se caler sur .th-stage et etirer le fond crayon
+       sur toute la zone du lion. */
+    position: relative;
+    /* on neutralise les decalages du placement desktop */
+    top: auto;
+    right: auto;
+    left: auto;
     width: 100%;
     max-width: 340px;
     margin: 0;
@@ -1406,6 +1413,7 @@ export default function Home() {
 
             <div className="th-stage-lion">
               <Image
+                sizes="(max-width: 767px) 200px, 420px"
                 src="/illustrations/lion-salutation.png"
                 alt="Mascotte lion pointant vers les deux boutons"
                 width={1536}
@@ -1481,6 +1489,7 @@ export default function Home() {
 
           <div className="tp-lion">
             <Image
+              sizes="(max-width: 767px) 200px, 420px"
               src="/illustrations/ptOopEas.png"
               alt="Mascotte lion mécontente, pouce vers le bas"
               width={1536}
@@ -1496,6 +1505,7 @@ export default function Home() {
         <div className="tm-head">
           <div className="tm-head-lion">
             <Image
+              sizes="(max-width: 767px) 200px, 420px"
               src="/illustrations/xyEexm52.png"
               alt="Mascotte lion pensive, qui réfléchit à la question"
               width={1536}
@@ -1646,6 +1656,7 @@ export default function Home() {
 
           <div className="tp-lion">
             <Image
+              sizes="(max-width: 767px) 200px, 420px"
               src="/illustrations/numeros1.png"
               alt="Mascotte lion satisfaite, pouce vers le haut"
               width={1536}
@@ -1735,6 +1746,7 @@ export default function Home() {
 
         <div className="tr-foot">
           <Image
+            sizes="(max-width: 767px) 200px, 420px"
             src="/illustrations/q0BWcbVt.png"
             alt="Mascotte lion qui célèbre les résultats"
             width={1536}
@@ -1768,6 +1780,7 @@ export default function Home() {
           </div>
 
           <Image
+            sizes="(max-width: 767px) 200px, 420px"
             src="/illustrations/g3p2LNK1.png"
             alt="Mascotte lion qui salue"
             width={1536}
@@ -1846,6 +1859,7 @@ export default function Home() {
       <section className="tf">
         <div className="tf-head">
           <Image
+            sizes="(max-width: 767px) 200px, 420px"
             src="/illustrations/VHl73R9s.png"
             alt="Mascotte lion qui invite à demander un audit"
             width={1536}

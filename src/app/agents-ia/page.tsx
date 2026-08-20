@@ -432,6 +432,7 @@ export default function AgentsIaPage() {
               </span>
             </p>
             <Image
+              sizes="(max-width: 767px) 200px, 420px"
               src="/illustrations/VHl73R9s.png"
               alt="Mascotte lion qui présente les agents IA"
               width={1536}
@@ -452,6 +453,7 @@ export default function AgentsIaPage() {
           <div className="pa-inner">
             <div className="pa-with-lion">
               <Image
+                sizes="(max-width: 767px) 200px, 420px"
                 src="/illustrations/xyEexm52.png"
                 alt="Mascotte lion pensive"
                 width={1536}
@@ -510,6 +512,7 @@ export default function AgentsIaPage() {
           <div className="pa-inner">
             <div className="pa-with-lion pa-with-lion-right">
               <Image
+                sizes="(max-width: 767px) 200px, 420px"
                 src="/illustrations/q0BWcbVt.png"
                 alt="Mascotte lion présentant les familles d'agents"
                 width={1536}
@@ -683,6 +686,7 @@ export default function AgentsIaPage() {
           <div className="pa-inner">
             <div className="pa-with-lion">
               <Image
+                sizes="(max-width: 767px) 200px, 420px"
                 src="/illustrations/g3p2LNK1.png"
                 alt="Mascotte lion qui invite à échanger"
                 width={1536}

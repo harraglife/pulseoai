@@ -871,6 +871,7 @@ export default function FaqPage() {
 
         <div className="fq-form-head">
           <Image
+            sizes="(max-width: 767px) 200px, 420px"
             src="/illustrations/VHl73R9s.png"
             alt="Mascotte lion qui invite à demander un audit"
             width={1536}

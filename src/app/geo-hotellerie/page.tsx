@@ -1070,6 +1070,7 @@ export default function GeoHotelleriePage() {
       <section className="gh">
         <div className="gh-form-head">
           <Image
+            sizes="(max-width: 767px) 200px, 420px"
             src="/illustrations/VHl73R9s.png"
             alt="Mascotte lion qui invite à demander un audit hôtel"
             width={1536}

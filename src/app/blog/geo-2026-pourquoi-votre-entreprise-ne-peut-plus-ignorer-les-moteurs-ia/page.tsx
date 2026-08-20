@@ -475,6 +475,7 @@ export default function Geo2026PourquoiVotreEntreprise() {
           {/* CTA : formulaire d'audit */}
           <div className="ba-cta-form">
             <Image
+              sizes="(max-width: 767px) 200px, 420px"
               src="/illustrations/VHl73R9s.png"
               alt="Mascotte lion qui invite à demander un audit"
               width={1536}
