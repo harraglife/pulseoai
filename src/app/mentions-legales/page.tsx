@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
+import { contourCrayon } from "@/lib/paper-da";
 
 export const metadata: Metadata = {
-  title: "Mentions légales | PulseoAI",
+  title: "Mentions légales",
   description:
     "Consultez les mentions légales du site PulseoAI : éditeur, direction de publication, propriété intellectuelle, données personnelles et contact.",
   alternates: { canonical: "/mentions-legales" },
@@ -161,6 +162,105 @@ const sections = [
   },
 ];
 
+
+const CSS = `
+/* ================= MENTIONS LEGALES, DIRECTION PAPIER ================= */
+.ml {
+  position: relative;
+  z-index: 1;
+  /* fond transparent : le grain papier fixe (.th-grain) reste visible dessous */
+  background: transparent;
+  color: #111110;
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Inter, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding: 62px 24px 72px;
+}
+.ml-inner { max-width: 860px; margin: 0 auto; }
+.ml-crumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.84rem;
+  color: rgba(17, 17, 16, 0.5);
+  margin-bottom: 32px;
+  list-style: none;
+  padding: 0;
+}
+.ml-crumb a { color: rgba(17, 17, 16, 0.5); text-decoration: none; }
+.ml-crumb a:hover { color: #111110; }
+.ml-crumb-now { color: #111110; font-weight: 500; }
+.ml-eyebrow {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(17, 17, 16, 0.5);
+}
+.ml h1 {
+  margin: 0;
+  font-size: clamp(1.85rem, 4vw, 2.8rem);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  font-weight: 600;
+  color: #111110;
+}
+.ml-lead {
+  margin: 16px 0 0;
+  font-size: 1rem;
+  line-height: 1.72;
+  color: rgba(17, 17, 16, 0.66);
+}
+.ml-list { margin-top: 40px; display: grid; gap: 22px; }
+.ml-card {
+  position: relative;
+  isolation: isolate;
+  padding: 26px 26px 28px;
+}
+.ml-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: ${contourCrayon("111110", 67)};
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.ml-card h2 {
+  margin: 0;
+  font-size: 1.12rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #111110;
+}
+.ml-body { margin-top: 14px; font-size: 0.94rem; line-height: 1.75; color: rgba(17, 17, 16, 0.78); }
+.ml-body p { margin: 0; }
+.ml-body p + p { margin-top: 12px; }
+.ml-body ul { margin: 12px 0 0; padding: 0; list-style: none; }
+.ml-body li { padding-left: 15px; position: relative; }
+.ml-body li + li { margin-top: 6px; }
+.ml-body li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  background: rgba(17, 17, 16, 0.35);
+}
+.ml-body a {
+  color: #111110;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1.5px;
+}
+.ml-body strong { color: #111110; }
+`;
+
 export default function MentionsLegalesPage() {
   return (
     <>
@@ -169,44 +269,31 @@ export default function MentionsLegalesPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <section className="bg-[linear-gradient(180deg,#FFFFFF_0%,#F8FAFD_100%)] py-16 sm:py-20">
-        <div className="mx-auto max-w-[980px] px-6">
-          <nav aria-label="Fil d'Ariane" className="mb-8">
-            <ol className="flex items-center gap-2 text-sm text-navy/56">
+      <style>{CSS}</style>
+
+      <section className="ml">
+        <div className="ml-inner">
+          <nav aria-label="Fil d'Ariane">
+            <ol className="ml-crumb">
               <li>
-                <Link href="/" className="transition-colors hover:text-cyan">
-                  Accueil
-                </Link>
+                <Link href="/">Accueil</Link>
               </li>
-              <li>
+              <li aria-hidden>
                 <ChevronRight className="h-4 w-4" />
               </li>
-              <li className="font-medium text-navy">Mentions légales</li>
+              <li className="ml-crumb-now">Mentions légales</li>
             </ol>
           </nav>
 
-          <div className="max-w-[720px]">
-            <span className="inline-flex items-center rounded-full border border-[#D8E1F3] bg-white px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-cyan shadow-sm">
-              MENTIONS LÉGALES
-            </span>
-            <h1 className="mt-5 text-[30px] font-semibold tracking-[-0.04em] text-navy sm:text-[46px]">
-              Mentions légales
-            </h1>
-            <p className="mt-4 text-[16px] leading-7 text-navy/62">
-              Informations légales relatives au site pulseoai.fr.
-            </p>
-          </div>
+          <span className="ml-eyebrow">MENTIONS LÉGALES</span>
+          <h1>Mentions légales</h1>
+          <p className="ml-lead">Informations légales relatives au site pulseoai.fr.</p>
 
-          <div className="mt-10 space-y-4">
+          <div className="ml-list">
             {sections.map((section) => (
-              <section
-                key={section.title}
-                className="rounded-[24px] border border-[#DEE6F3] bg-white px-6 py-6 shadow-[0_12px_28px_rgba(15,23,42,0.04)]"
-              >
-                <h2 className="text-[22px] font-semibold tracking-[-0.03em] text-navy">
-                  {section.title}
-                </h2>
-                <div className="mt-4 text-[15px] leading-7 text-navy/68">{section.content}</div>
+              <section key={section.title} className="ml-card">
+                <h2>{section.title}</h2>
+                <div className="ml-body">{section.content}</div>
               </section>
             ))}
           </div>

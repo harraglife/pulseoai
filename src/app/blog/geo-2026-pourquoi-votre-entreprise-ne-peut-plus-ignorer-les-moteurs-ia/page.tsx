@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowLeft, ArrowRight, Calendar, Clock, User } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
 import { getArticleSchemaEnhancements } from "@/lib/article-metadata";
 import { QuickAnswer } from "@/components/quick-answer";
+import { ContactForm } from "@/components/contact-form";
+import { ARTICLE_PAPER_CSS } from "@/components/article-paper";
 import { RelatedPosts } from "@/components/related-posts";
 
 export const metadata: Metadata = {
@@ -119,7 +121,8 @@ export default function Geo2026PourquoiVotreEntreprise() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
-      <article className="bg-white">
+      <style>{ARTICLE_PAPER_CSS}</style>
+      <article className="ba bg-white">
         {/* Header */}
         <div className="bg-[#F8F9FA]">
           <div className="mx-auto max-w-[1100px] px-6 py-24 lg:py-28">
@@ -132,7 +135,7 @@ export default function Geo2026PourquoiVotreEntreprise() {
             </Link>
 
             <h1 className="mt-6 max-w-3xl text-[24px] font-bold leading-tight tracking-tight text-navy sm:text-[36px] lg:text-[44px]">
-              GEO en 2026 : pourquoi votre entreprise ne peut plus ignorer
+              <span className="ba-mark">GEO</span> en 2026 : pourquoi votre entreprise ne peut plus ignorer
               les moteurs IA
             </h1>
 
@@ -469,8 +472,16 @@ export default function Geo2026PourquoiVotreEntreprise() {
             ]}
           />
 
-          {/* CTA */}
-          <div className="mt-16 rounded-2xl bg-[#F8F9FA] p-8 text-center sm:p-12">
+          {/* CTA : formulaire d'audit */}
+          <div className="ba-cta-form">
+            <Image
+              src="/illustrations/VHl73R9s.png"
+              alt="Mascotte lion qui invite à demander un audit"
+              width={1536}
+              height={1536}
+              loading="lazy"
+              className="ba-lion"
+            />
             <h2 className="text-[20px] sm:text-2xl font-bold text-navy">
               Votre entreprise est elle visible sur les moteurs IA ?
             </h2>
@@ -480,12 +491,13 @@ export default function Geo2026PourquoiVotreEntreprise() {
               avec un plan d'action personnalisé pour apparaître dans
               les réponses IA.
             </p>
-            <Link href="/contact" className="mt-6 inline-block">
-              <Button className="h-12 cursor-pointer rounded-full bg-cyan px-8 text-base font-semibold text-white hover:bg-cyan-dark">
-                Obtenir un audit
-                <ArrowRight className="ml-2 size-4" />
-              </Button>
-            </Link>
+            <div className="ba-form-wrap">
+              <ContactForm />
+            </div>
+
+            <p className="ba-form-links">
+              <Link href="/contact">Obtenir un audit</Link>
+            </p>
           </div>
 
           {/* Back link */}

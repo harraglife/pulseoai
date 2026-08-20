@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowLeft, ArrowRight, Calendar, Clock, User } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { getArticleSchemaEnhancements } from "@/lib/article-metadata";
 import { QuickAnswer } from "@/components/quick-answer";
+import { ContactForm } from "@/components/contact-form";
+import { ARTICLE_PAPER_CSS } from "@/components/article-paper";
 import { RelatedPosts } from "@/components/related-posts";
 
 export const metadata: Metadata = {
@@ -114,7 +116,8 @@ export default function SchemaOrgGuideCompletGeo() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
-      <article className="bg-white">
+      <style>{ARTICLE_PAPER_CSS}</style>
+      <article className="ba bg-white">
         {/* Header */}
         <div className="bg-[#F8F9FA]">
           <div className="mx-auto max-w-3xl px-6 py-24 lg:py-28">
@@ -127,7 +130,7 @@ export default function SchemaOrgGuideCompletGeo() {
             </Link>
 
             <h1 className="mt-6 text-[24px] font-bold leading-tight tracking-tight text-navy sm:text-[36px] lg:text-[44px]">
-              Schema.org pour le GEO : le guide complet du balisage
+              <span className="ba-mark">Schema.org</span> pour le GEO : le guide complet du balisage
               structuré en 2026
             </h1>
 
@@ -1009,8 +1012,16 @@ add_action('wp_head', 'add_schema_markup');`}</code></pre>
             ]}
           />
 
-          {/* CTA */}
-          <div className="mt-16 rounded-2xl bg-gradient-to-r from-navy to-navy/90 p-8 sm:p-12 text-center text-white">
+          {/* CTA : formulaire d'audit */}
+          <div className="ba-cta-form">
+            <Image
+              src="/illustrations/VHl73R9s.png"
+              alt="Mascotte lion qui invite à demander un audit"
+              width={1536}
+              height={1536}
+              loading="lazy"
+              className="ba-lion"
+            />
             <h2 className="text-[20px] sm:text-2xl font-bold">
               Besoin d'aide pour votre balisage Schema.org ?
             </h2>
@@ -1019,12 +1030,13 @@ add_action('wp_head', 'add_schema_markup');`}</code></pre>
               et implémentons un Schema.org complet optimisé
               pour le GEO. Résultats mesurables en quelques semaines.
             </p>
-            <Link href="/contact" className="mt-6 inline-block">
-              <Button className="h-12 cursor-pointer rounded-full bg-cyan px-8 text-base font-semibold text-white hover:bg-cyan-dark">
-                Demander un audit Schema.org
-                <ArrowRight className="ml-2 size-4" />
-              </Button>
-            </Link>
+            <div className="ba-form-wrap">
+              <ContactForm />
+            </div>
+
+            <p className="ba-form-links">
+              <Link href="/contact">Demander un audit Schema.org</Link>
+            </p>
           </div>
 
           {/* Navigation */}

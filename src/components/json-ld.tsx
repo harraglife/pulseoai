@@ -1,7 +1,6 @@
 import {
   SITE_URL,
   SITE_NAME,
-  SITE_DESCRIPTION,
   ORG_EMAIL,
   ORG_STREET,
   ORG_CITY,

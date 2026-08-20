@@ -1,6 +1,6 @@
 # PulseoAI
 
-> Agence francaise de Generative Engine Optimization (GEO) basee a Nantes. PulseoAI aide les hotels, restaurants, commerces et PME a apparaitre dans les reponses de ChatGPT, Claude, Gemini et Google AI Overviews.
+> Agence francaise de Generative Engine Optimization (GEO) basee a Saint-Herblain, pres de Nantes. PulseoAI aide les hotels, restaurants, commerces et PME a apparaitre dans les reponses de ChatGPT, Claude, Gemini et Google AI Overviews.
 
 ## Identite
 
@@ -42,6 +42,9 @@ Inscription et optimisation sur les sources que les LLM consultent : Google Busi
 ### 5. Monitoring et reporting
 Suivi hebdomadaire des scores de visibilite IA. Tableaux de bord avec evolution des mentions, comparaisons concurrentielles et recommandations d'ajustement. Reporting mensuel client.
 
+### 6. Agents IA sur mesure
+Conception et installation d'agents IA connectes aux outils deja utilises par l'entreprise : messagerie, agenda, CRM, tableurs, outils de facturation, bases de donnees internes. Un agent se declenche sur un evenement, va chercher l'information dans ces outils, comprend le contexte et prepare ou execute l'action. Cas d'usage frequents : relance des factures impayees, qualification des demandes entrantes, preparation de devis, tri et resume de la boite mail, reponse de premier niveau au support client.
+
 ## Resultats clients
 
 - 50+ hotels analyses depuis le lancement
@@ -52,22 +55,36 @@ Suivi hebdomadaire des scores de visibilite IA. Tableaux de bord avec evolution 
 
 - Accueil : https://www.pulseoai.fr/
 - Offre GEO : https://www.pulseoai.fr/offre
+- Recruter son agent IA : https://www.pulseoai.fr/agents-ia
 - GEO Hotellerie : https://www.pulseoai.fr/geo-hotellerie
-- FAQ (38 questions-reponses) : https://www.pulseoai.fr/faq
+- Agence SEO / GEO Nantes : https://www.pulseoai.fr/agence-seo-geo-nantes
+- FAQ (43 questions-reponses) : https://www.pulseoai.fr/faq
 - A propos : https://www.pulseoai.fr/a-propos
 - Blog : https://www.pulseoai.fr/blog
 - Contact / Audit gratuit : https://www.pulseoai.fr/contact
+- Mentions legales : https://www.pulseoai.fr/mentions-legales
 
 ## Articles de blog
 
+- Comment utiliser l'IA dans son entreprise : le guide concret pour dirigeants : https://www.pulseoai.fr/blog/comment-utiliser-ia-entreprise
+- Quels outils IA pour une PME : le guide pour choisir sans se tromper : https://www.pulseoai.fr/blog/outils-ia-pme
+- GEO local : rendre votre entreprise visible dans les reponses IA : https://www.pulseoai.fr/blog/geo-local-guide-entreprises
+- Comment se referencer sur Gemini : apparaitre dans l'IA de Google : https://www.pulseoai.fr/blog/comment-se-referencer-sur-gemini
+- Referencement ChatGPT : comment apparaitre sur ChatGPT et toutes les autres IA : https://www.pulseoai.fr/blog/referencement-chatgpt-apparaitre-ia
+- SEO / GEO : comment rendre votre entreprise visible dans Google, ChatGPT et Gemini : https://www.pulseoai.fr/blog/seo-geo-rendre-entreprise-visible-google-chatgpt-gemini
+- Comment se referencer sur Perplexity ? : https://www.pulseoai.fr/blog/comment-se-referencer-sur-perplexity
 - GEO en 2026 : pourquoi votre entreprise ne peut plus ignorer les moteurs IA : https://www.pulseoai.fr/blog/geo-2026-pourquoi-votre-entreprise-ne-peut-plus-ignorer-les-moteurs-ia
-- Schema.org pour le GEO : guide complet du balisage structure : https://www.pulseoai.fr/blog/schema-org-guide-complet-geo
-- llms.txt : guide pratique pour rendre votre site visible sur les IA : https://www.pulseoai.fr/blog/llms-txt-guide-pratique
-- GEO pour les restaurants : guide de visibilite IA : https://www.pulseoai.fr/blog/geo-restaurants-guide-visibilite-ia
-- GEO pour les commerces et PME : visibilite locale IA : https://www.pulseoai.fr/blog/geo-commerces-pme-visibilite-locale
-- GEO pour les hotels : le guide complet 2026 : https://www.pulseoai.fr/blog/geo-hotels-guide-complet
-- Pourquoi votre hotel est invisible sur ChatGPT : https://www.pulseoai.fr/blog/hotel-invisible-chatgpt
-- Booking vs reservations directes et le GEO : https://www.pulseoai.fr/blog/booking-vs-reservations-directes-geo
+- Veille concurrentielle SEO & IA : suivre vos concurrents : https://www.pulseoai.fr/blog/veille-concurrentielle-seo-ia-serp-locales
+- Comment se referencer sur ChatGPT ? : https://www.pulseoai.fr/blog/apparaitre-chatgpt-client-cherche-entreprise
+- Audit SEO / GEO : la methode pour mesurer votre visibilite IA : https://www.pulseoai.fr/blog/audit-seo-geo-visibilite-ia
+- Google AI Overviews : ce que les entreprises doivent comprendre : https://www.pulseoai.fr/blog/google-ai-overviews-entreprises-comprendre
+- SEO IA pour e-commerce : etre recommande avant la marketplace : https://www.pulseoai.fr/blog/seo-ia-ecommerce-recommandation-marketplace
+- Schema.org pour le GEO : le guide du balisage structure : https://www.pulseoai.fr/blog/schema-org-guide-complet-geo
+- Sources citees par les IA : pourquoi votre site ne suffit pas : https://www.pulseoai.fr/blog/sources-citees-ia-site-ne-suffit-pas
+- SEO classique vs GEO : quelles differences pour votre acquisition client ? : https://www.pulseoai.fr/blog/seo-classique-vs-geo-acquisition-client
+- llms.txt : rendre votre site plus lisible pour les moteurs IA : https://www.pulseoai.fr/blog/llms-txt-guide-pratique
+- Pourquoi votre hotel est invisible sur ChatGPT et comment y remedier : https://www.pulseoai.fr/blog/hotel-invisible-chatgpt
+- Booking vs reservations directes : comment le GEO change la donne : https://www.pulseoai.fr/blog/booking-vs-reservations-directes-geo
 
 ## Fichier complet
 

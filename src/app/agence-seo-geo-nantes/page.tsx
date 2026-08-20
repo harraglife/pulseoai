@@ -4,14 +4,14 @@ import { ArrowRight, Building2, CheckCircle2, ChevronRight, Compass, FileText, M
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Agence SEO / GEO à Nantes — Référencement IA | PulseoAI",
+  title: "Agence SEO / GEO à Nantes · Référencement IA",
   description:
     "PulseoAI est une agence SEO / GEO à Nantes et Saint-Herblain. Nous aidons les entreprises à renforcer leur référencement IA sur Google, ChatGPT, Gemini, Perplexity et les moteurs IA.",
   alternates: {
     canonical: "https://www.pulseoai.fr/agence-seo-geo-nantes",
   },
   openGraph: {
-    title: "Agence SEO / GEO à Nantes — Référencement IA | PulseoAI",
+    title: "Agence SEO / GEO à Nantes · Référencement IA | PulseoAI",
     description:
       "PulseoAI est une agence SEO / GEO à Nantes et Saint-Herblain. Nous aidons les entreprises à renforcer leur référencement IA sur Google, ChatGPT, Gemini, Perplexity et les moteurs IA.",
     url: "https://www.pulseoai.fr/agence-seo-geo-nantes",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Agence SEO / GEO à Nantes — Référencement IA | PulseoAI",
+    title: "Agence SEO / GEO à Nantes · Référencement IA | PulseoAI",
     description:
       "PulseoAI est une agence SEO / GEO à Nantes et Saint-Herblain. Nous aidons les entreprises à renforcer leur référencement IA sur Google, ChatGPT, Gemini, Perplexity et les moteurs IA.",
     images: ["/og-image.png"],

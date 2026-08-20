@@ -18,6 +18,12 @@ const nextConfig: NextConfig = {
         destination: "/blog/geo-local-guide-entreprises",
         statusCode: 301,
       },
+      {
+        // l'ancienne page de test de la home est devenue la page d'accueil
+        source: "/test-hero",
+        destination: "/",
+        statusCode: 301,
+      },
     ];
   },
   async headers() {

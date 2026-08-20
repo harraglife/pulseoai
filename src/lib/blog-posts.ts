@@ -63,6 +63,26 @@ const monthMap: Record<string, number> = {
 
 export const blogPosts: BlogPostMeta[] = [
   {
+    slug: "comment-utiliser-ia-entreprise",
+    title: "Comment utiliser l’IA dans son entreprise : le guide concret pour dirigeants",
+    seoTitle: "Comment utiliser l’IA dans son entreprise \u00b7 PulseoAI",
+    description:
+      "Comment utiliser l’IA dans son entreprise concr\u00e8tement : par o\u00f9 commencer, quelles t\u00e2ches automatiser, quel budget et quels d\u00e9lais pr\u00e9voir. Guide pour dirigeants de PME.",
+    date: "20 ao\u00fbt 2026",
+    readingTime: "9 min",
+    category: "Agents IA",
+  },
+  {
+    slug: "outils-ia-pme",
+    title: "Quels outils IA pour une PME : le guide pour choisir sans se tromper",
+    seoTitle: "Quels outils IA pour une PME \u00b7 PulseoAI",
+    description:
+      "Quels outils IA choisir pour une PME : les usages qui comptent vraiment, comment \u00e9viter d’empiler des abonnements inutiles, et ce qui fait r\u00e9ellement gagner du temps.",
+    date: "20 ao\u00fbt 2026",
+    readingTime: "8 min",
+    category: "Agents IA",
+  },
+  {
     slug: "geo-local-guide-entreprises",
     title: "GEO local : rendre votre entreprise visible dans les réponses IA",
     seoTitle: "GEO local : être visible dans les réponses IA",
@@ -235,6 +255,335 @@ export const blogPosts: BlogPostMeta[] = [
 ];
 
 const newArticles: Record<string, BlogArticle> = {
+  "comment-utiliser-ia-entreprise": {
+    "slug": "comment-utiliser-ia-entreprise",
+    "title": "Comment utiliser l’IA dans son entreprise : le guide concret pour dirigeants",
+    "seoTitle": "Comment utiliser l’IA dans son entreprise · PulseoAI",
+    "description": "Comment utiliser l’IA dans son entreprise concrètement : par où commencer, quelles tâches automatiser, quel budget et quels délais prévoir. Guide pour dirigeants de PME.",
+    "date": "20 août 2026",
+    "dateModified": "20 août 2026",
+    "readingTime": "9 min",
+    "category": "Agents IA",
+    "articleSection": "Agents IA",
+    "keywords": [
+      "utiliser l’IA dans son entreprise",
+      "IA en entreprise",
+      "automatisation PME",
+      "agent IA",
+      "intégration IA"
+    ],
+    "intro": "La plupart des dirigeants ont déjà testé l’IA sans que rien ne change dans leur entreprise. Le problème n’est presque jamais l’outil, c’est la façon de l’utiliser. Voici comment passer d’un assistant qu’on consulte à un système qui travaille pendant que vous faites autre chose.",
+    "quickAnswer": {
+      "question": "Comment utiliser l’IA dans son entreprise ?",
+      "answer": "Utiliser l’IA dans son entreprise ne consiste pas à adopter un outil de plus. Cela consiste à identifier les tâches répétitives qui consomment du temps sans créer de valeur, puis à les confier à un système qui travaille dans vos outils existants. On commence par un seul cas, celui qui coûte le plus de temps et présente le moins de risque, et on étend ensuite."
+    },
+    "contextualLinks": [
+      {
+        "label": "agent IA sur mesure",
+        "href": "/agents-ia"
+      },
+      {
+        "label": "cadrer votre premier cas d’usage",
+        "href": "/contact"
+      }
+    ],
+    "bodyCta": {
+      "intro": "Vous voyez déjà la tâche qui vous coûte le plus de temps chaque semaine ?",
+      "linkLabel": "Parlons de votre premier agent",
+      "href": "/contact",
+      "outro": " pour cadrer le cas avant de construire quoi que ce soit."
+    },
+    "relatedSlugs": [
+      "outils-ia-pme",
+      "geo-local-guide-entreprises",
+      "referencement-chatgpt-apparaitre-ia"
+    ],
+    "faqTitle": "FAQ : utiliser l’IA dans son entreprise",
+    "faqItems": [
+      {
+        "question": "Faut-il être une grande entreprise pour utiliser l’IA ?",
+        "answer": "Non. Dans une PME, le dirigeant fait lui-même les relances, les devis et le tri des mails. Chaque tâche retirée se voit immédiatement dans sa semaine, souvent plus que dans une grande structure."
+      },
+      {
+        "question": "Faut-il des compétences techniques ?",
+        "answer": "Non. La partie technique est prise en charge. Ce qu’on attend de vous, c’est de décrire votre quotidien et de dire ce qui vous fait perdre du temps."
+      },
+      {
+        "question": "Mes données sont-elles en sécurité ?",
+        "answer": "Elles sont hébergées sur des serveurs sécurisés dont vous gardez le contrôle. La confidentialité est un point de cadrage traité dès le départ."
+      },
+      {
+        "question": "L’IA va-t-elle remplacer mes salariés ?",
+        "answer": "Non. Elle retire des tâches, pas des personnes. Vos équipes récupèrent le temps qu’elles passaient sur des tâches répétitives."
+      },
+      {
+        "question": "Combien de temps avant de voir un résultat ?",
+        "answer": "Environ un mois pour un premier système opérationnel. Le gain de temps se mesure dès les premières semaines d’utilisation."
+      }
+    ],
+    "sections": [
+      {
+        "title": "Pourquoi la plupart des entreprises n’arrivent à rien avec l’IA",
+        "paragraphs": [
+          "La plupart des dirigeants ont déjà testé. Ils ont ouvert ChatGPT, posé quelques questions, trouvé ça impressionnant, puis refermé l’onglet. Trois mois plus tard, rien n’a changé dans l’entreprise.",
+          "Ce n’est pas un problème d’outil, c’est un problème d’usage. Un assistant conversationnel attend qu’on lui parle. Il ne connaît pas vos clients, il n’a pas accès à votre boîte mail, il ne sait pas qu’une facture est en retard depuis trois semaines. Chaque fois que vous voulez l’utiliser, c’est vous qui devez ouvrir l’outil, expliquer le contexte et copier les informations. Le gain de temps est réel sur une tâche isolée, mais il disparaît dès qu’il faut le refaire chaque jour.",
+          "L’IA change vraiment quelque chose quand elle cesse d’être un outil qu’on consulte pour devenir un système qui travaille pendant que vous faites autre chose."
+        ]
+      },
+      {
+        "title": "Par où commencer concrètement",
+        "paragraphs": [
+          "La bonne porte d’entrée n’est jamais la technologie, c’est votre semaine.",
+          "Prenez une semaine type et notez ce que vous faites qui n’a rien à voir avec votre métier. Le tri des mails le matin. Les relances de factures que vous repoussez. Les devis que vous préparez le soir. Les mêmes réponses aux mêmes questions clients. La saisie d’informations d’un logiciel vers un autre.",
+          "Ces tâches ont trois points communs. Elles reviennent, elles reposent sur de l’information qui existe déjà quelque part, et elles ne demandent aucune expertise particulière. Ce sont exactement celles qu’un système peut prendre en charge.",
+          "Le réflexe naturel est de vouloir tout automatiser d’un coup. C’est la meilleure façon d’échouer. On commence par une seule tâche, celle qui pèse le plus lourd et dont l’échec serait le moins grave. Une fois qu’elle tourne, on passe à la suivante."
+        ]
+      },
+      {
+        "title": "Les trois niveaux d’utilisation de l’IA en entreprise",
+        "paragraphs": [
+          "La plupart des entreprises restent bloquées au premier niveau et concluent que l’IA ne sert pas à grand-chose. Elles n’ont simplement jamais dépassé l’assistant."
+        ],
+        "subsections": [
+          {
+            "title": "Le niveau assistant",
+            "paragraphs": [
+              "Vous utilisez ChatGPT, Gemini, Claude ou Perplexity pour rédiger, résumer, reformuler, chercher. C’est utile, c’est gratuit ou peu coûteux, et ça fait gagner du temps ponctuellement. Mais rien n’est automatisé, tout dépend de vous."
+            ]
+          },
+          {
+            "title": "Le niveau automatisation",
+            "paragraphs": [
+              "Vous branchez des outils entre eux pour que certaines actions se déclenchent seules. Une règle fixe, si ceci alors cela. C’est efficace sur des cas simples et parfaitement prévisibles, mais ça casse dès qu’un cas particulier se présente."
+            ]
+          },
+          {
+            "title": "Le niveau agent",
+            "paragraphs": [
+              "Un système se déclenche sur un événement, va chercher l’information dans vos outils, comprend le contexte et prépare ou exécute l’action. Il gère les cas particuliers parce qu’il interprète au lieu de suivre une règle. C’est le seul niveau qui retire réellement une tâche de votre quotidien."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Ce qu’un agent IA peut prendre en charge dans une PME",
+        "paragraphs": [
+          "Les cas les plus fréquents, et les plus rentables, sont toujours les mêmes."
+        ],
+        "bullets": [
+          "La relance des factures impayées, où l’agent lit les statuts, adapte le ton selon l’ancienneté du retard et la relation client, et vous soumet ce qu’il a préparé.",
+          "La qualification des demandes entrantes, où il lit une demande arrivée par formulaire, mail ou message, retrouve l’historique du contact et prépare le dossier pour que vous arriviez avec le contexte déjà monté.",
+          "La préparation de devis, où il transforme des notes prises sur le terrain en brouillon structuré.",
+          "Le tri et le résumé de la boîte mail, où il range, résume et sort les points qui demandent une décision.",
+          "La réponse de premier niveau aux clients, sur les questions qui reviennent toutes les semaines."
+        ]
+      },
+      {
+        "title": "Les erreurs qui font échouer un projet IA",
+        "paragraphs": [],
+        "subsections": [
+          {
+            "title": "Vouloir tout automatiser d’un coup",
+            "paragraphs": [
+              "Un projet trop large ne se termine jamais. Un seul cas qui tourne vaut mieux que dix cas en chantier."
+            ]
+          },
+          {
+            "title": "Changer d’outils",
+            "paragraphs": [
+              "La difficulté n’est jamais la technologie, c’est l’adoption par les équipes. Un système qui oblige à changer d’habitudes est abandonné en trois semaines. L’IA doit venir dans vos outils, pas l’inverse."
+            ]
+          },
+          {
+            "title": "Donner trop d’autonomie trop vite",
+            "paragraphs": [
+              "Sur les actions qui engagent l’entreprise, un envoi client, un devis, un paiement, l’agent prépare et vous validez. L’autonomie totale se gagne progressivement, cas par cas."
+            ]
+          },
+          {
+            "title": "Confondre outil et process",
+            "paragraphs": [
+              "Souscrire à un outil IA ne transforme rien si personne ne change sa façon de travailler. Ce qui compte, c’est le process qu’on retire du quotidien, pas le logiciel qu’on ajoute."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Combien de temps et quel budget prévoir",
+        "paragraphs": [
+          "Comptez environ un mois entre le premier échange et un système qui tourne réellement dans vos outils. Ce délai couvre le cadrage du cas, la construction, les tests sur vos données réelles et la mise en production.",
+          "Le budget dépend du cas, du nombre d’outils à connecter et du niveau d’autonomie souhaité. Un système qui trie et prépare n’a pas le même coût qu’un système qui exécute des actions dans plusieurs logiciels. C’est l’objet du cadrage initial, chiffrer un besoin réel plutôt qu’une promesse générale."
+        ]
+      },
+      {
+        "title": "Par quoi commencer si vous ne savez pas",
+        "paragraphs": [
+          "Posez-vous une seule question. Quelle tâche vous prend le plus de temps cette semaine sans avoir aucun rapport avec votre métier.",
+          "La réponse à cette question est votre premier agent."
+        ]
+      }
+    ]
+  },
+  "outils-ia-pme": {
+    "slug": "outils-ia-pme",
+    "title": "Quels outils IA pour une PME : le guide pour choisir sans se tromper",
+    "seoTitle": "Quels outils IA pour une PME · PulseoAI",
+    "description": "Quels outils IA choisir pour une PME : les usages qui comptent vraiment, comment éviter d’empiler des abonnements inutiles, et ce qui fait réellement gagner du temps.",
+    "date": "20 août 2026",
+    "dateModified": "20 août 2026",
+    "readingTime": "8 min",
+    "category": "Agents IA",
+    "articleSection": "Agents IA",
+    "keywords": [
+      "outils IA PME",
+      "quels outils IA",
+      "IA pour PME",
+      "agent IA",
+      "automatisation entreprise"
+    ],
+    "intro": "Les listes d’outils IA pour PME ne manquent pas, et pourtant presque personne n’en garde un seul. Le tri se fait par usage, pas par catalogue. Voici les quatre usages qui comptent vraiment, et le moment où un outil ne suffit plus.",
+    "quickAnswer": {
+      "question": "Quels outils IA pour une PME ?",
+      "answer": "Une PME n’a pas besoin de beaucoup d’outils IA, elle a besoin des bons, choisis par usage. Un assistant conversationnel pour rédiger et analyser, un outil de transcription pour les réunions, un outil de recherche pour la veille, et une brique d’automatisation pour connecter le tout. Le vrai gain arrive quand ces outils cessent d’être consultés un par un et commencent à travailler dans vos process."
+    },
+    "contextualLinks": [
+      {
+        "label": "agent IA sur mesure",
+        "href": "/agents-ia"
+      },
+      {
+        "label": "faire le point sur vos outils",
+        "href": "/contact"
+      }
+    ],
+    "bodyCta": {
+      "intro": "Vous avez déjà empilé quelques abonnements sans gain visible ?",
+      "linkLabel": "Parlons de vos process",
+      "href": "/contact",
+      "outro": " pour partir de la tâche plutôt que de l’outil."
+    },
+    "relatedSlugs": [
+      "comment-utiliser-ia-entreprise",
+      "geo-local-guide-entreprises",
+      "seo-ia-ecommerce-recommandation-marketplace"
+    ],
+    "faqTitle": "FAQ : outils IA pour une PME",
+    "faqItems": [
+      {
+        "question": "Faut-il payer pour utiliser l’IA dans une PME ?",
+        "answer": "Les versions gratuites suffisent pour découvrir et pour un usage occasionnel. Les versions payantes se justifient dès que l’usage devient quotidien ou qu’il faut traiter des documents volumineux."
+      },
+      {
+        "question": "Combien d’outils IA faut-il dans une PME ?",
+        "answer": "Le moins possible. Deux ou trois outils bien maîtrisés couvrent la majorité des besoins, et un agent connecté à vos process fait le reste."
+      },
+      {
+        "question": "Quelle différence entre un outil IA et un agent IA ?",
+        "answer": "Un outil attend que vous l’ouvriez. Un agent se déclenche seul, travaille dans vos logiciels et produit un résultat sans que vous ayez à intervenir."
+      },
+      {
+        "question": "Faut-il des compétences techniques pour utiliser ces outils ?",
+        "answer": "Non pour les assistants et la transcription. Oui pour connecter des outils entre eux de façon fiable, c’est là qu’un accompagnement fait la différence."
+      },
+      {
+        "question": "Mes données sont-elles en sécurité avec ces outils ?",
+        "answer": "Cela dépend entièrement de l’outil et de son hébergement. C’est un point à vérifier avant tout usage sur des données clients, et un critère de choix à part entière."
+      }
+    ],
+    "sections": [
+      {
+        "title": "Le piège des listes d’outils",
+        "paragraphs": [
+          "Cherchez outils IA pour PME et vous trouverez des articles à cinquante entrées. Vous les lirez, vous en testerez trois, vous en garderez zéro.",
+          "Le problème n’est pas la qualité de ces outils, c’est qu’un outil ne résout rien tant que personne ne change sa façon de travailler. Souscrire à un abonnement ne retire aucune tâche de votre semaine. Ce qui compte n’est pas combien d’outils vous avez, c’est combien de tâches vous n’avez plus à faire.",
+          "Alors partons de l’usage, pas du catalogue."
+        ]
+      },
+      {
+        "title": "Pour rédiger, résumer et analyser",
+        "paragraphs": [
+          "C’est l’usage le plus répandu et le plus immédiat. Rédiger un mail difficile, résumer un document de trente pages, reformuler une proposition commerciale, comprendre un contrat.",
+          "Les assistants conversationnels comme ChatGPT, Claude ou Gemini couvrent tous ce besoin, avec des différences de style et de format plutôt que de capacité. Prenez-en un, apprenez à bien lui parler, et n’en changez pas tous les mois. La maîtrise d’un seul outil vaut mieux que la découverte permanente de dix.",
+          "La limite arrive vite. L’assistant ne connaît pas votre entreprise. Chaque fois, c’est vous qui ouvrez l’outil, expliquez le contexte et copiez les informations. Le gain existe sur une tâche isolée, il disparaît sur une tâche quotidienne."
+        ]
+      },
+      {
+        "title": "Pour la recherche et la veille",
+        "paragraphs": [
+          "Quand il s’agit de trouver une information à jour, de suivre un marché ou de vérifier ce qui se dit sur un sujet, les moteurs de recherche IA comme Perplexity apportent des réponses sourcées plutôt que des listes de liens.",
+          "Usage utile pour un dirigeant, la veille concurrentielle et la préparation de rendez-vous. Usage limité, ça reste une recherche que vous devez lancer vous-même."
+        ]
+      },
+      {
+        "title": "Pour les réunions et les comptes rendus",
+        "paragraphs": [
+          "La transcription automatique de réunions fait partie des usages qui se rentabilisent le plus vite, parce que personne n’aime rédiger un compte rendu et que tout le monde le fait mal.",
+          "Un outil de transcription enregistre, transcrit et sort les points d’action. Vous récupérez du temps chaque semaine sans rien changer à vos habitudes. C’est souvent le premier usage à mettre en place dans une PME, parce qu’il ne demande aucune adaptation."
+        ]
+      },
+      {
+        "title": "Pour connecter vos outils entre eux",
+        "paragraphs": [
+          "C’est ici que ça devient intéressant, et c’est ici que la plupart des PME s’arrêtent.",
+          "Les plateformes d’automatisation comme Zapier ou Make permettent de relier vos logiciels pour que certaines actions se déclenchent seules. Une demande arrive dans un formulaire, elle atterrit dans votre CRM. Une facture est payée, une notification part.",
+          "C’est efficace sur des cas simples et parfaitement prévisibles. Mais une automatisation suit une règle fixe. Elle ne comprend pas le contexte, elle ne gère aucun cas particulier, et elle casse dès que la réalité s’écarte du scénario prévu. Beaucoup de dirigeants ont bricolé des automatisations et se sont retrouvés avec un système fragile qu’ils n’osent plus toucher."
+        ]
+      },
+      {
+        "title": "Ce qui change vraiment pour une PME",
+        "paragraphs": [
+          "Les outils ci-dessus vous font gagner du temps. Ils ne retirent pas la tâche.",
+          "Vous ouvrez toujours l’assistant, vous lancez toujours la recherche, vous surveillez toujours l’automatisation. Vous êtes resté au centre du process.",
+          "Un agent IA fonctionne différemment. Il se déclenche sur un événement, une demande qui arrive, une échéance, un dossier qui change d’état. Il va chercher l’information là où elle se trouve, dans votre boîte mail, votre CRM, votre base de données ou votre outil de facturation. Il comprend le contexte, interprète les cas particuliers et prépare ou exécute l’action.",
+          "La différence n’est pas la puissance du modèle, c’est l’accès à vos données et le droit d’agir. Un agent ne s’ajoute pas à votre pile d’outils, il travaille dedans.",
+          "Concrètement, dans une PME, cela veut dire des relances qui partent sans que personne y pense, des demandes clients qualifiées avant que vous ouvriez votre boîte mail, des devis préparés pendant que vous êtes sur le terrain."
+        ]
+      },
+      {
+        "title": "Comment choisir sans se tromper",
+        "paragraphs": [],
+        "subsections": [
+          {
+            "title": "Partez d’une tâche, pas d’un outil",
+            "paragraphs": [
+              "La bonne question n’est pas quel outil IA me faut-il, mais quelle tâche me prend du temps chaque semaine sans avoir de rapport avec mon métier."
+            ]
+          },
+          {
+            "title": "Ne changez pas d’environnement",
+            "paragraphs": [
+              "Un outil qui vous oblige à changer vos logiciels sera abandonné. La difficulté n’est jamais la technologie, c’est l’adoption."
+            ]
+          },
+          {
+            "title": "Limitez le nombre d’outils",
+            "paragraphs": [
+              "Trois outils bien utilisés valent mieux que douze abonnements dormants. Chaque outil supplémentaire est une charge mentale de plus."
+            ]
+          },
+          {
+            "title": "Gardez le contrôle sur ce qui engage l’entreprise",
+            "paragraphs": [
+              "Sur un envoi client, un devis ou un paiement, le système prépare et vous validez. L’autonomie se gagne progressivement."
+            ]
+          },
+          {
+            "title": "Comptez le temps réellement gagné",
+            "paragraphs": [
+              "Un outil qui ne retire aucune tâche de votre semaine ne sert à rien, quel que soit son prix."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Par où commencer",
+        "paragraphs": [
+          "Si vous débutez, prenez un assistant conversationnel et un outil de transcription de réunions. Deux outils, deux usages, aucun changement d’habitude. Vous verrez rapidement où l’IA vous fait gagner du temps et où elle ne change rien.",
+          "Quand vous aurez identifié la tâche qui revient chaque semaine et qui vous coûte le plus, c’est le moment de passer à un agent connecté à vos process. C’est là que le gain devient structurel au lieu d’être ponctuel."
+        ]
+      }
+    ]
+  },
   "geo-local-guide-entreprises": {
     slug: "geo-local-guide-entreprises",
     title: "GEO local : rendre votre entreprise visible dans les réponses IA",
@@ -279,6 +628,7 @@ const newArticles: Record<string, BlogArticle> = {
       "referencement-chatgpt-apparaitre-ia",
       "comment-se-referencer-sur-perplexity",
       "google-ai-overviews-entreprises-comprendre",
+      "comment-utiliser-ia-entreprise",
     ],
     intro:
       "Quand un client demande à ChatGPT, Gemini ou Google la meilleure boulangerie de sa ville, un bon hôtel pour un week-end ou un plombier fiable, l'IA ne renvoie pas dix liens. Elle cite deux ou trois noms, avec une justification. Si votre entreprise n'en fait pas partie, elle est invisible pour une clientèle locale qui interroge de plus en plus les moteurs IA. Ce guide explique comment le GEO (Generative Engine Optimization) fonctionne pour les entreprises locales et comment l'appliquer, quel que soit votre secteur.",
@@ -674,6 +1024,7 @@ const newArticles: Record<string, BlogArticle> = {
       "apparaitre-chatgpt-client-cherche-entreprise",
       "comment-se-referencer-sur-perplexity",
       "sources-citees-ia-site-ne-suffit-pas",
+      "comment-utiliser-ia-entreprise",
     ],
     intro:
       "En 2026, une part croissante de vos futurs clients ne cherche plus sur Google. Ils posent une question à une IA et obtiennent une réponse directe avec des recommandations de marques et de prestataires. Si votre entreprise n'apparaît pas dans ces réponses, elle n'existe pas pour ces prospects.",
@@ -1640,6 +1991,7 @@ const newArticles: Record<string, BlogArticle> = {
       "sources-citees-ia-site-ne-suffit-pas",
       "google-ai-overviews-entreprises-comprendre",
       "seo-classique-vs-geo-acquisition-client",
+      "outils-ia-pme",
     ],
     intro:
       "Les moteurs IA influencent déjà les comparatifs et les décisions d’achat. Quand un client demande quel produit choisir, quelle marque privilégier ou quel site inspire le plus confiance, les réponses IA peuvent orienter le trafic avant même qu’une marketplace n’entre dans la boucle.",
@@ -1985,7 +2337,11 @@ export function parseFrenchDate(date: string) {
 }
 
 export function buildBlogArticleMetadata(article: BlogArticle) {
-  const seoTitle = article.seoTitle ?? `${article.title} | PulseoAI`;
+  // La marque est apposee par le template de titre du layout ("%s · PulseoAI").
+  // On la retire donc du titre de la page pour ne pas l'afficher deux fois.
+  const seoTitle = (article.seoTitle ?? article.title)
+    .replace(/\s*[·|]\s*PulseoAI\s*$/u, "")
+    .trim();
 
   return {
     title: seoTitle,

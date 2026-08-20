@@ -1,6 +1,6 @@
-# PulseoAI — Documentation complete
+# PulseoAI - Documentation complete
 
-> PulseoAI est une agence francaise de Generative Engine Optimization (GEO) basee a Nantes. L'agence aide les hotels, restaurants, commerces et PME a apparaitre dans les reponses des moteurs de recherche IA : ChatGPT, Claude, Gemini, Perplexity et Google AI Overviews.
+> PulseoAI est une agence francaise de Generative Engine Optimization (GEO) basee a Saint-Herblain, pres de Nantes. L'agence aide les hotels, restaurants, commerces et PME a apparaitre dans les reponses des moteurs de recherche IA : ChatGPT, Claude, Gemini, Perplexity et Google AI Overviews.
 
 ---
 
@@ -15,14 +15,14 @@
 - Date de creation : 2026
 
 ### Fondateurs
-- Romain Duclos — Fondateur & Expert GEO. Specialise en referencement IA et strategies de visibilite pour les moteurs conversationnels. Responsable de la methodologie GEO et de l'accompagnement client.
-- Sofiane Aiche — Co-fondateur. En charge du developpement commercial et des partenariats strategiques.
+- Romain Duclos, Fondateur, strategie SEO / GEO. Specialise en referencement IA et strategies de visibilite pour les moteurs conversationnels. Responsable de la methodologie GEO et de l'accompagnement client.
+- Sofiane Aiche, Co-fondateur, relation client et accompagnement. En charge du cadrage des besoins, de la pedagogie et du suivi des actions.
 
 ### Contact
 - Site web : https://www.pulseoai.fr
 - Email : contact@pulseoai.fr
 - LinkedIn : https://www.linkedin.com/company/pulseoai
-- Localisation : Nantes, France
+- Localisation : Saint-Herblain, pres de Nantes, France
 - Zone d'intervention : France, Suisse, Maroc
 
 ---
@@ -143,6 +143,27 @@ Le Nom, l'Adresse et le numero de telephone (NAP) doivent etre strictement ident
 
 ---
 
+### 3.6 Agents IA sur mesure
+
+Conception et installation d'agents IA connectes aux outils deja utilises par l'entreprise : messagerie, agenda, CRM, tableurs, outils de facturation, bases de donnees internes, messageries d'equipe.
+
+Un agent IA se distingue d'un assistant conversationnel et d'une automatisation classique. Un assistant attend qu'on lui parle. Une automatisation suit une regle fixe et casse sur les cas particuliers. Un agent se declenche sur un evenement, va chercher l'information la ou elle se trouve, comprend le contexte, interprete les cas particuliers et prepare ou execute l'action.
+
+Cas d'usage frequents chez les PME :
+- Relance des factures impayees
+- Qualification des demandes entrantes
+- Preparation de devis
+- Tri et resume de la boite mail
+- Reponse de premier niveau au support client
+- Mise a jour de donnees entre plusieurs logiciels
+- Preparation de rapports
+
+Principes de mise en oeuvre : on commence par un seul cas d'usage, celui qui coute le plus de temps et presente le moins de risque. L'agent travaille dans les outils existants, sans changement d'environnement. Sur les actions qui engagent l'entreprise, un envoi client, un devis, un paiement, l'agent prepare et l'humain valide. Comptez environ un mois entre le premier echange et un agent en production.
+
+Page dediee : https://www.pulseoai.fr/agents-ia
+
+---
+
 ## 4. Specialisation sectorielle
 
 ### 4.1 Hotellerie
@@ -164,7 +185,7 @@ PulseoAI a analyse plus de 50 hotels depuis son lancement. L'agence connait en p
 
 ### 4.2 Restauration
 Les restaurants font face a des defis specifiques en matiere de visibilite IA :
-- Recommandations IA de plus en plus influentes (« meilleur restaurant italien a Lyon »).
+- Recommandations IA de plus en plus influentes (" meilleur restaurant italien a Lyon ").
 - Importance des avis et de la reputation en ligne.
 - Donnees menu et carte a structurer.
 - Saisonnalite des menus et evenements.
@@ -233,7 +254,7 @@ Les commerces de proximite et PME sont souvent invisibles sur les moteurs IA car
 ### Clients notables
 - Best Western : chaine hoteliere internationale, accompagnement sur la visibilite IA de plusieurs etablissements en France.
 - Quintessia Resort : resort haut de gamme pres de Nantes, strategie GEO complete incluant balisage, contenu et citations.
-- Hotel Sozo : hotel boutique a Nantes, optimisation pour les requetes « hotel design Nantes » et « hotel centre-ville Nantes » sur ChatGPT.
+- Hotel Sozo : hotel boutique a Nantes, optimisation pour les requetes " hotel design Nantes " et " hotel centre-ville Nantes " sur ChatGPT.
 - Centre Marceau : centre d'affaires et hotel, strategie de visibilite sur les requetes professionnelles et touristiques.
 - Hotel Maubreil : hotel de charme, accompagnement sur la visibilite locale et les reservations directes.
 
@@ -256,14 +277,14 @@ PulseoAI mesure les resultats de chaque accompagnement avec une methodologie rig
 ## 7. Cas d'usage detailles
 
 ### Cas d'usage 1 : Hotel independant 3 etoiles
-**Situation initiale** : Un hotel independant 3 etoiles en centre-ville n'apparait dans aucune reponse ChatGPT pour les requetes « hotel [ville] », « meilleur hotel [ville] », « hotel spa [ville] ».
+**Situation initiale** : Un hotel independant 3 etoiles en centre-ville n'apparait dans aucune reponse ChatGPT pour les requetes " hotel [ville] ", " meilleur hotel [ville] ", " hotel spa [ville] ".
 **Actions GEO** : Implementation Schema.org Hotel, creation de 15 FAQ structurees, optimisation Google Business Profile, inscription sur 8 annuaires sectoriels, deploiement llms.txt.
 **Resultat a 3 mois** : L'hotel est cite dans 60% des requetes cibles sur ChatGPT, et apparait dans les AI Overviews de Google pour 3 requetes locales strategiques.
 
 ### Cas d'usage 2 : Restaurant gastronomique
 **Situation initiale** : Un restaurant gastronomique etoile n'est pas cite par ChatGPT malgre une excellente reputation sur TripAdvisor et Google.
 **Actions GEO** : Balisage Schema.org Restaurant avec menu structure, contenu sur l'identite culinaire et les produits locaux, reponses aux avis TripAdvisor, fichier llms.txt dedie.
-**Resultat a 2 mois** : Le restaurant est recommande par ChatGPT pour les requetes « meilleur restaurant gastronomique [ville] » et « restaurant etoile [region] ».
+**Resultat a 2 mois** : Le restaurant est recommande par ChatGPT pour les requetes " meilleur restaurant gastronomique [ville] " et " restaurant etoile [region] ".
 
 ### Cas d'usage 3 : Cabinet d'avocats
 **Situation initiale** : Un cabinet d'avocats specialise en droit des affaires n'apparait pas dans les reponses IA malgre un site web moderne et du contenu de qualite.
@@ -349,8 +370,10 @@ Non. Le GEO est complementaire au SEO. Un bon referencement Google alimente les 
 |------|-----|-------------|
 | Accueil | https://www.pulseoai.fr/ | Presentation de PulseoAI, services, resultats clients |
 | Offre GEO | https://www.pulseoai.fr/offre | Detail des 5 piliers de l'offre GEO |
+| Recruter son agent IA | https://www.pulseoai.fr/agents-ia | Conception et installation d'agents IA dans les outils de l'entreprise |
 | GEO Hotellerie | https://www.pulseoai.fr/geo-hotellerie | Page dediee au secteur hotelier |
-| FAQ | https://www.pulseoai.fr/faq | 38 questions-reponses sur le GEO |
+| Agence SEO / GEO Nantes | https://www.pulseoai.fr/agence-seo-geo-nantes | Page locale, Nantes et Saint-Herblain |
+| FAQ | https://www.pulseoai.fr/faq | 43 questions-reponses sur le GEO et les agents IA |
 | A propos | https://www.pulseoai.fr/a-propos | Equipe, mission, valeurs |
 | Blog | https://www.pulseoai.fr/blog | Articles et guides GEO |
 | Contact | https://www.pulseoai.fr/contact | Formulaire d'audit gratuit |
@@ -359,14 +382,25 @@ Non. Le GEO est complementaire au SEO. Un bon referencement Google alimente les 
 ### Articles de blog
 | Article | URL |
 |---------|-----|
+| Comment utiliser l'IA dans son entreprise : le guide concret pour dirigeants | https://www.pulseoai.fr/blog/comment-utiliser-ia-entreprise |
+| Quels outils IA pour une PME : le guide pour choisir sans se tromper | https://www.pulseoai.fr/blog/outils-ia-pme |
+| GEO local : rendre votre entreprise visible dans les reponses IA | https://www.pulseoai.fr/blog/geo-local-guide-entreprises |
+| Comment se referencer sur Gemini : apparaitre dans l'IA de Google | https://www.pulseoai.fr/blog/comment-se-referencer-sur-gemini |
+| Referencement ChatGPT : comment apparaitre sur ChatGPT et toutes les autres IA | https://www.pulseoai.fr/blog/referencement-chatgpt-apparaitre-ia |
+| SEO / GEO : comment rendre votre entreprise visible dans Google, ChatGPT et Gemini | https://www.pulseoai.fr/blog/seo-geo-rendre-entreprise-visible-google-chatgpt-gemini |
+| Comment se referencer sur Perplexity ? | https://www.pulseoai.fr/blog/comment-se-referencer-sur-perplexity |
 | GEO en 2026 : pourquoi votre entreprise ne peut plus ignorer les moteurs IA | https://www.pulseoai.fr/blog/geo-2026-pourquoi-votre-entreprise-ne-peut-plus-ignorer-les-moteurs-ia |
-| Schema.org : guide complet pour le GEO | https://www.pulseoai.fr/blog/schema-org-guide-complet-geo |
-| llms.txt : guide pratique pour votre site | https://www.pulseoai.fr/blog/llms-txt-guide-pratique |
-| GEO restaurants : guide de visibilite IA | https://www.pulseoai.fr/blog/geo-restaurants-guide-visibilite-ia |
-| GEO commerces et PME : visibilite locale IA | https://www.pulseoai.fr/blog/geo-commerces-pme-visibilite-locale |
-| GEO hotels : le guide complet 2026 | https://www.pulseoai.fr/blog/geo-hotels-guide-complet |
-| Hotel invisible sur ChatGPT : solutions | https://www.pulseoai.fr/blog/hotel-invisible-chatgpt |
-| Booking vs reservations directes : le GEO | https://www.pulseoai.fr/blog/booking-vs-reservations-directes-geo |
+| Veille concurrentielle SEO & IA : suivre vos concurrents | https://www.pulseoai.fr/blog/veille-concurrentielle-seo-ia-serp-locales |
+| Comment se referencer sur ChatGPT ? | https://www.pulseoai.fr/blog/apparaitre-chatgpt-client-cherche-entreprise |
+| Audit SEO / GEO : la methode pour mesurer votre visibilite IA | https://www.pulseoai.fr/blog/audit-seo-geo-visibilite-ia |
+| Google AI Overviews : ce que les entreprises doivent comprendre | https://www.pulseoai.fr/blog/google-ai-overviews-entreprises-comprendre |
+| SEO IA pour e-commerce : etre recommande avant la marketplace | https://www.pulseoai.fr/blog/seo-ia-ecommerce-recommandation-marketplace |
+| Schema.org pour le GEO : le guide du balisage structure | https://www.pulseoai.fr/blog/schema-org-guide-complet-geo |
+| Sources citees par les IA : pourquoi votre site ne suffit pas | https://www.pulseoai.fr/blog/sources-citees-ia-site-ne-suffit-pas |
+| SEO classique vs GEO : quelles differences pour votre acquisition client ? | https://www.pulseoai.fr/blog/seo-classique-vs-geo-acquisition-client |
+| llms.txt : rendre votre site plus lisible pour les moteurs IA | https://www.pulseoai.fr/blog/llms-txt-guide-pratique |
+| Pourquoi votre hotel est invisible sur ChatGPT et comment y remedier | https://www.pulseoai.fr/blog/hotel-invisible-chatgpt |
+| Booking vs reservations directes : comment le GEO change la donne | https://www.pulseoai.fr/blog/booking-vs-reservations-directes-geo |
 
 ---
 

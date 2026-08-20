@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowLeft, ArrowRight, Calendar, Clock, User } from "lucide-react";
+import Image from "next/image";
+import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
 import { getArticleSchemaEnhancements } from "@/lib/article-metadata";
 import { QuickAnswer } from "@/components/quick-answer";
+import { ContactForm } from "@/components/contact-form";
+import { ARTICLE_PAPER_CSS } from "@/components/article-paper";
 import { RelatedPosts } from "@/components/related-posts";
-import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
   title: "Hôtel invisible sur ChatGPT : solutions",
@@ -112,7 +114,8 @@ export default function HotelInvisibleChatGPT() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
-      <article className="bg-white">
+      <style>{ARTICLE_PAPER_CSS}</style>
+      <article className="ba bg-white">
         {/* Header */}
         <div className="bg-[#F8F9FA]">
           <div className="mx-auto max-w-3xl px-6 py-16 sm:py-20 lg:py-28">
@@ -125,7 +128,7 @@ export default function HotelInvisibleChatGPT() {
             </Link>
 
             <h1 className="mt-6 text-[22px] font-bold leading-tight tracking-tight text-navy sm:text-[36px] lg:text-[44px]">
-              Pourquoi votre h&ocirc;tel est invisible sur ChatGPT
+              Pourquoi votre h&ocirc;tel est invisible sur <span className="ba-mark">ChatGPT</span>{" "}
               (et comment y rem&eacute;dier)
             </h1>
 
@@ -429,8 +432,16 @@ export default function HotelInvisibleChatGPT() {
             ]}
           />
 
-          {/* CTA */}
-          <div className="mt-16 rounded-2xl bg-[#F8F9FA] p-8 text-center sm:p-12">
+          {/* CTA : formulaire d'audit */}
+          <div className="ba-cta-form">
+            <Image
+              src="/illustrations/VHl73R9s.png"
+              alt="Mascotte lion qui invite à demander un audit"
+              width={1536}
+              height={1536}
+              loading="lazy"
+              className="ba-lion"
+            />
             <h2 className="text-[20px] sm:text-2xl font-bold text-navy">
               D&eacute;couvrez pourquoi votre h&ocirc;tel est invisible
             </h2>
@@ -440,12 +451,13 @@ export default function HotelInvisibleChatGPT() {
               diagnostic complet avec les causes identifi&eacute;es et un plan d&apos;action
               personnalis&eacute;.
             </p>
-            <Link href="/contact" className="mt-6 inline-block">
-              <Button className="h-12 cursor-pointer rounded-full bg-cyan px-8 text-base font-semibold text-white hover:bg-cyan-dark">
-                Obtenir un audit
-                <ArrowRight className="ml-2 size-4" />
-              </Button>
-            </Link>
+            <div className="ba-form-wrap">
+              <ContactForm />
+            </div>
+
+            <p className="ba-form-links">
+              <Link href="/contact">Obtenir un audit</Link>
+            </p>
           </div>
 
           {/* Back link */}

@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowLeft, ArrowRight, Calendar, Clock, User } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { getArticleSchemaEnhancements } from "@/lib/article-metadata";
 import { QuickAnswer } from "@/components/quick-answer";
+import { ContactForm } from "@/components/contact-form";
+import { ARTICLE_PAPER_CSS } from "@/components/article-paper";
 import { RelatedPosts } from "@/components/related-posts";
 
 export const metadata: Metadata = {
@@ -111,7 +113,8 @@ export default function LlmsTxtGuidePratique() {
         />
       ) : null}
 
-      <article className="bg-white">
+      <style>{ARTICLE_PAPER_CSS}</style>
+      <article className="ba bg-white">
         {/* Header */}
         <div className="bg-[#F8F9FA]">
           <div className="mx-auto max-w-3xl px-6 py-24 lg:py-28">
@@ -124,7 +127,7 @@ export default function LlmsTxtGuidePratique() {
             </Link>
 
             <h1 className="mt-6 text-[24px] font-bold leading-tight tracking-tight text-navy sm:text-[36px] lg:text-[44px]">
-              llms.txt : le guide pratique pour rendre votre site visible sur les IA
+              <span className="ba-mark">llms.txt</span> : le guide pratique pour rendre votre site visible sur les IA
             </h1>
 
             <div className="mt-6 flex flex-wrap items-center gap-4 text-sm text-navy/50">
@@ -739,8 +742,16 @@ export default function LlmsTxtGuidePratique() {
             ]}
           />
 
-          {/* CTA */}
-          <div className="mt-16 rounded-2xl bg-gradient-to-r from-navy to-navy/90 p-8 text-center text-white sm:p-12">
+          {/* CTA : formulaire d'audit */}
+          <div className="ba-cta-form">
+            <Image
+              src="/illustrations/VHl73R9s.png"
+              alt="Mascotte lion qui invite à demander un audit"
+              width={1536}
+              height={1536}
+              loading="lazy"
+              className="ba-lion"
+            />
             <h2 className="text-[20px] sm:text-2xl font-bold">
               Besoin d&apos;aide pour cr&eacute;er votre llms.txt ?
             </h2>
@@ -749,12 +760,13 @@ export default function LlmsTxtGuidePratique() {
               votre balisage Schema.org et mettent en place une strat&eacute;gie compl&egrave;te
               pour rendre votre entreprise visible sur ChatGPT, Gemini et Claude.
             </p>
-            <Link href="/contact" className="mt-6 inline-block">
-              <Button className="h-12 cursor-pointer rounded-full bg-cyan px-8 text-base font-semibold text-white hover:bg-cyan-dark">
-                Demander un accompagnement
-                <ArrowRight className="ml-2 size-4" />
-              </Button>
-            </Link>
+            <div className="ba-form-wrap">
+              <ContactForm />
+            </div>
+
+            <p className="ba-form-links">
+              <Link href="/contact">Demander un accompagnement</Link>
+            </p>
           </div>
 
           {/* Navigation */}

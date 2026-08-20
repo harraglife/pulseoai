@@ -1,10 +1,56 @@
 import Link from "next/link";
-import { ArrowLeft, ArrowRight, Calendar, ChevronRight, Clock, User } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import { ArrowLeft, Calendar, ChevronRight, Clock, User } from "lucide-react";
 import type { BlogArticle } from "@/lib/blog-posts";
 import { getArticleSchemaEnhancements } from "@/lib/article-metadata";
 import { QuickAnswer } from "@/components/quick-answer";
 import { RelatedPosts } from "@/components/related-posts";
+import { ContactForm } from "@/components/contact-form";
+import { ARTICLE_PAPER_CSS } from "@/components/article-paper";
+
+
+
+/** Mots-cles surlignes dans le titre, du plus long au plus court. */
+const TITLE_KEYWORDS = [
+  "Google AI Overviews",
+  "réservations directes",
+  "moteurs de réponse",
+  "recherche vocale",
+  "Schema.org",
+  "schema.org",
+  "llms.txt",
+  "Perplexity",
+  "TripAdvisor",
+  "e-commerce",
+  "marketplace",
+  "ChatGPT",
+  "Booking",
+  "Gemini",
+  "Claude",
+  "hôtel",
+  "GEO",
+  "SEO",
+  "PME",
+  "IA",
+];
+
+/** Surligne le premier mot-cle trouve dans le titre, sans en changer le texte. */
+function MarkedArticleTitle({ title }: { title: string }) {
+  for (const word of TITLE_KEYWORDS) {
+    const match = new RegExp(`(^|[^\\p{L}])(${word})(?![\\p{L}])`, "u").exec(title);
+    if (match && match.index !== undefined) {
+      const start = match.index + match[1].length;
+      return (
+        <>
+          {title.slice(0, start)}
+          <span className="ba-mark">{word}</span>
+          {title.slice(start + word.length)}
+        </>
+      );
+    }
+  }
+  return <>{title}</>;
+}
 
 export function BlogArticleTemplate({ article }: { article: BlogArticle }) {
   const articleSchemaEnhancements = getArticleSchemaEnhancements(article.slug);
@@ -135,7 +181,8 @@ export function BlogArticleTemplate({ article }: { article: BlogArticle }) {
         />
       ) : null}
 
-      <article className="bg-white">
+      <style>{ARTICLE_PAPER_CSS}</style>
+      <article className="ba bg-white">
         <div className="border-b border-[#E8EDF7] bg-[linear-gradient(180deg,#FFFFFF_0%,#F8FAFD_100%)]">
           <div className="mx-auto max-w-[980px] px-6 pb-10 pt-7 lg:pb-14 lg:pt-10">
             <nav aria-label="Fil d'Ariane">
@@ -173,7 +220,7 @@ export function BlogArticleTemplate({ article }: { article: BlogArticle }) {
                 {article.category}
               </span>
               <h1 className="mt-5 text-[30px] font-semibold leading-[1.05] tracking-[-0.05em] text-navy sm:text-[46px]">
-                {article.title}
+                <MarkedArticleTitle title={article.title} />
               </h1>
               <p className="mt-4 text-[16px] leading-7 text-navy/64 sm:mt-5 sm:text-[17px]">{article.description}</p>
             </div>
@@ -196,7 +243,7 @@ export function BlogArticleTemplate({ article }: { article: BlogArticle }) {
         </div>
 
         <div className="mx-auto max-w-[820px] px-6 py-10 lg:py-14">
-          <div className="rounded-[28px] border border-[#DEE6F3] bg-[linear-gradient(180deg,#FFFFFF_0%,#FBFCFF_100%)] p-5 shadow-[0_14px_30px_rgba(15,23,42,0.04)] sm:p-6">
+          <div className="ba-box rounded-[28px] border border-[#DEE6F3] p-5 sm:p-6">
             <p className="text-[16px] font-medium leading-7 text-navy/86 sm:text-[18px] sm:leading-8">{article.intro}</p>
           </div>
 
@@ -207,7 +254,7 @@ export function BlogArticleTemplate({ article }: { article: BlogArticle }) {
           ) : null}
 
           {article.contextualLinks?.length ? (
-            <div className="mt-6 rounded-[22px] border border-[#E3EAF5] bg-white px-5 py-4 text-[14px] leading-6 text-navy/66">
+            <div className="ba-box ba-box-light mt-6 rounded-[22px] border border-[#E3EAF5] px-5 py-4 text-[14px] leading-6 text-navy/66">
               <span className="font-semibold text-navy">À lire aussi :</span>{" "}
               {article.contextualLinks.map((item, index) => (
                 <span key={item.href}>
@@ -240,7 +287,7 @@ export function BlogArticleTemplate({ article }: { article: BlogArticle }) {
                     </ul>
                   ) : null}
                   {index === 1 && article.bodyCta ? (
-                    <p className="rounded-[20px] border border-[#DDE7F4] bg-[#F8FBFF] px-4 py-4 text-[15px] leading-7 text-navy/72">
+                    <p className="ba-box ba-box-light rounded-[20px] border border-[#DDE7F4] px-4 py-4 text-[15px] leading-7 text-navy/72">
                       {article.bodyCta.intro}{" "}
                       <Link href={article.bodyCta.href} className="font-semibold text-cyan transition-colors hover:text-cyan-dark">
                         {article.bodyCta.linkLabel}
@@ -275,7 +322,7 @@ export function BlogArticleTemplate({ article }: { article: BlogArticle }) {
           </div>
 
           {article.faqItems?.length ? (
-            <section className="mt-10 sm:mt-12">
+            <section className="ba-faq mt-10 sm:mt-12">
               <h2 className="text-[22px] font-semibold tracking-[-0.035em] text-navy sm:text-[24px]">
                 {article.faqTitle ?? "Questions fréquentes"}
               </h2>
@@ -301,58 +348,31 @@ export function BlogArticleTemplate({ article }: { article: BlogArticle }) {
           <RelatedPosts currentSlug={article.slug} explicitSlugs={article.relatedSlugs} />
         </div>
 
-        <section className="bg-white pb-14">
-          <div className="mx-auto max-w-[980px] px-6">
-            <div className="overflow-hidden rounded-[32px] bg-navy p-5 text-white shadow-[0_26px_60px_rgba(11,15,30,0.16)] sm:p-8">
-              <div className="grid gap-6 lg:grid-cols-[0.88fr_0.72fr] lg:items-center">
-                <div className="max-w-[560px]">
-                  <span className="inline-flex items-center rounded-full border border-white/12 bg-white/8 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-white/76">
-                    AGENCE SEO / GEO
-                  </span>
-                  <h2 className="mt-5 text-[26px] font-semibold tracking-[-0.05em] text-white sm:text-[34px]">
-                    Vous voulez savoir si votre entreprise est citée par les IA ?
-                  </h2>
-                  <p className="mt-4 text-[15px] leading-7 text-white/68">
-                    Nous analysons votre visibilité sur Google, ChatGPT, Gemini, Claude, Perplexity et Google AI Overviews, puis nous vous montrons les requêtes, les concurrents et les sources qui comptent.
-                  </p>
-                  <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
-                    <Link href="/contact" className="w-full sm:w-auto">
-                      <Button className="h-12 w-full rounded-full bg-white px-6 text-[15px] font-semibold text-navy hover:bg-white/92 sm:w-auto">
-                        Obtenir un audit
-                        <ArrowRight className="ml-2 size-4" />
-                      </Button>
-                    </Link>
-                    <Link
-                      href="/offre"
-                      className="inline-flex items-center justify-center text-[15px] font-semibold text-white/72 transition-colors hover:text-white"
-                    >
-                      Découvrir notre offre
-                      <ArrowRight className="ml-2 size-4" />
-                    </Link>
-                  </div>
-                </div>
-
-                <div className="grid gap-3 sm:grid-cols-2">
-                  {[
-                    "Audit SEO / GEO",
-                    "Google + IA",
-                    "Concurrents identifiés",
-                    "Plan d’action priorisé",
-                  ].map((item) => (
-                    <div
-                      key={item}
-                      className="rounded-[20px] border border-white/10 bg-white/6 px-4 py-4 backdrop-blur-sm"
-                    >
-                      <div className="flex items-center gap-2 text-[13px] font-medium text-white/84">
-                        <span className="size-1.5 rounded-full bg-cyan" />
-                        {item}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
+        <section className="ba-form-section">
+          <div className="ba-form-head">
+            <Image
+              src="/illustrations/VHl73R9s.png"
+              alt="Mascotte lion qui invite à demander un audit"
+              width={1536}
+              height={1536}
+              loading="lazy"
+              className="ba-lion"
+            />
+            <h2>Vous voulez savoir si votre entreprise est citée par les IA ?</h2>
+            <p>
+              Nous analysons votre visibilité sur Google, ChatGPT, Gemini, Claude, Perplexity et Google AI Overviews, puis nous vous montrons les requêtes, les concurrents et les sources qui comptent.
+            </p>
           </div>
+
+          <div className="ba-form-wrap">
+            <ContactForm />
+          </div>
+
+          <p className="ba-form-links">
+            <Link href="/offre">Découvrir notre offre</Link>
+            <span aria-hidden> · </span>
+            <Link href="/contact">Nous contacter</Link>
+          </p>
         </section>
       </article>
     </>

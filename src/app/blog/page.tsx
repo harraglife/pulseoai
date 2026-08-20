@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Calendar, ChevronRight, Clock } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { ChevronRight } from "lucide-react";
 import { blogPosts, blogTopics, featuredPrimary, featuredSecondary, gridPosts } from "@/lib/blog-posts";
+import { BTN_PLEIN, BTN_CONTOUR, feutre, contourCrayon, contourLeger, PASTELS } from "@/lib/paper-da";
 
 export const metadata: Metadata = {
   title: "Blog SEO / GEO | Guides référencement IA et visibilité Google",
@@ -67,6 +67,7 @@ const blogJsonLd = {
 
 const filterChips = [
   "Tous",
+  "Agents IA",
   "SEO / GEO",
   "ChatGPT",
   "Google AI",
@@ -86,9 +87,335 @@ const heroTags = [
   "E-commerce",
 ];
 
+const CSS = `
+/* ======================= PAGE BLOG, DIRECTION PAPIER ===================== */
+.bl {
+  position: relative;
+  z-index: 1;
+  /* fond transparent : le grain papier fixe (.th-grain) reste visible dessous */
+  background: transparent;
+  color: #111110;
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Inter, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding: 60px 24px 64px;
+}
+.bl-inner { max-width: 860px; margin: 0 auto; text-align: center; }
+
+.bl h2 {
+  margin: 0;
+  font-size: clamp(1.5rem, 2.9vw, 2.15rem);
+  line-height: 1.14;
+  letter-spacing: -0.028em;
+  font-weight: 600;
+  color: #111110;
+  text-wrap: balance;
+}
+.bl-lead {
+  margin: 20px auto 0;
+  max-width: 60ch;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: rgba(17, 17, 16, 0.66);
+}
+
+/* libelle de section, conserve tel quel, juste rehabille */
+.bl-eyebrow {
+  display: inline-block;
+  margin-bottom: 18px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(17, 17, 16, 0.5);
+}
+
+/* --- surlignage feutre --- */
+.bl-m {
+  display: inline;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  padding: 0.08em 0.24em;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.bl-m1 { background-image: ${feutre(PASTELS.peche)}; }
+.bl-m2 { background-image: ${feutre(PASTELS.vertEau)}; }
+.bl-m3 { background-image: ${feutre(PASTELS.bleu)}; }
+.bl-m4 { background-image: ${feutre(PASTELS.jaune)}; }
+
+/* ---------------------------- HERO ------------------------------------- */
+.bl-hero { padding-top: 30px; }
+.bl-crumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0.84rem;
+  color: rgba(17, 17, 16, 0.5);
+  margin-bottom: 32px;
+}
+.bl-crumb a { color: rgba(17, 17, 16, 0.5); text-decoration: none; }
+.bl-crumb a:hover { color: #111110; }
+.bl-crumb-now { color: #111110; font-weight: 500; }
+.bl h1 {
+  margin: 0 auto;
+  font-size: clamp(1.95rem, 4.4vw, 3.05rem);
+  line-height: 1.08;
+  letter-spacing: -0.038em;
+  font-weight: 600;
+  color: #111110;
+  max-width: 22ch;
+  text-wrap: balance;
+}
+
+/* pastilles de sujets */
+.bl-tags {
+  margin: 32px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 22px;
+  max-width: 780px;
+}
+.bl-tags span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: rgba(17, 17, 16, 0.58);
+}
+.bl-tags span::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  background: rgba(17, 17, 16, 0.4);
+}
+.bl-filters span {
+  position: relative;
+  isolation: isolate;
+  padding: 8px 15px;
+  font-size: 0.83rem;
+  font-weight: 500;
+  color: rgba(17, 17, 16, 0.76);
+}
+.bl-filters span::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: ${contourLeger("111110", 23, 0.38)};
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.bl-filters {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 820px;
+}
+
+/* boutons crayon */
+.bl-cta {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 26px;
+}
+.bl-btn {
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 26px;
+  font-size: 0.96rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: transform 0.16s ease;
+}
+.bl-btn::before {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.bl-btn:hover { transform: translateY(-1.5px); }
+.bl-btn-1 { color: #F4F3EF; }
+.bl-btn-1::before { background-image: ${BTN_PLEIN}; }
+.bl-btn-2 { color: #111110; }
+.bl-btn-2::before { background-image: ${BTN_CONTOUR}; }
+
+/* ------------------------- CARTES D'ARTICLES ---------------------------- */
+.bl-grid {
+  margin: 40px auto 0;
+  display: grid;
+  gap: 26px;
+  max-width: 1060px;
+  text-align: left;
+}
+@media (min-width: 700px) { .bl-grid { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 1020px) { .bl-grid-3 { grid-template-columns: repeat(3, 1fr); } }
+.bl-featured { max-width: 1060px; }
+
+.bl-card {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 24px 26px;
+  text-decoration: none;
+  color: #111110;
+  transition: transform 0.16s ease;
+}
+.bl-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.bl-card:hover { transform: translateY(-2px); }
+.bl-c1::before { background-image: ${contourCrayon("111110", 31)}; }
+.bl-c2::before { background-image: ${contourCrayon("111110", 32)}; }
+.bl-c3::before { background-image: ${contourCrayon("111110", 33)}; }
+.bl-c4::before { background-image: ${contourCrayon("111110", 34)}; }
+.bl-c5::before { background-image: ${contourCrayon("111110", 35)}; }
+.bl-c6::before { background-image: ${contourCrayon("111110", 36)}; }
+.bl-c7::before { background-image: ${contourCrayon("111110", 37)}; }
+
+/* titre d'article surligne au feutre, pour se reperer d'un coup d'oeil */
+.bl-card h3 {
+  margin: 0;
+  font-size: 1.02rem;
+  line-height: 1.34;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+  color: #111110;
+}
+.bl-card h3 span {
+  display: inline;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  padding: 0.08em 0.24em;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.bl-c1 h3 span { background-image: ${feutre(PASTELS.peche)}; }
+.bl-c2 h3 span { background-image: ${feutre(PASTELS.vertEau)}; }
+.bl-c3 h3 span { background-image: ${feutre(PASTELS.bleu)}; }
+.bl-c4 h3 span { background-image: ${feutre(PASTELS.jaune)}; }
+.bl-c5 h3 span { background-image: ${feutre(PASTELS.rose)}; }
+.bl-c6 h3 span { background-image: ${feutre(PASTELS.lavande)}; }
+.bl-c7 h3 span { background-image: ${feutre(PASTELS.pistache)}; }
+
+.bl-cat {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(17, 17, 16, 0.5);
+}
+.bl-card p {
+  margin: 16px 0 0;
+  font-size: 0.89rem;
+  line-height: 1.68;
+  color: rgba(17, 17, 16, 0.82);
+}
+.bl-meta {
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 18px;
+  font-size: 0.8rem;
+  color: rgba(17, 17, 16, 0.62);
+}
+.bl-read {
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: #111110;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1.5px;
+}
+/* la carte a la une respire un peu plus */
+.bl-hero-card h3 { font-size: clamp(1.15rem, 1.9vw, 1.5rem); }
+
+/* ------------------------------ RESSOURCES ------------------------------ */
+.bl-box {
+  position: relative;
+  isolation: isolate;
+  margin: 36px auto 0;
+  max-width: 880px;
+  padding: 30px 30px 32px;
+  text-align: left;
+}
+.bl-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: ${contourCrayon("111110", 44)};
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.bl-box p {
+  margin: 16px 0 0;
+  font-size: 0.95rem;
+  line-height: 1.72;
+  color: rgba(17, 17, 16, 0.82);
+}
+
+/* --------------------------- BLOC FINAL --------------------------------- */
+.bl-points {
+  margin: 34px auto 0;
+  display: grid;
+  gap: 12px;
+  max-width: 820px;
+  text-align: left;
+}
+@media (min-width: 700px) { .bl-points { grid-template-columns: 1fr 1fr; } }
+.bl-points div {
+  position: relative;
+  isolation: isolate;
+  padding: 15px 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgba(17, 17, 16, 0.78);
+}
+.bl-points div::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.bl-p1::before { background-image: ${contourCrayon("111110", 51)}; }
+.bl-p2::before { background-image: ${contourCrayon("111110", 52)}; }
+.bl-p3::before { background-image: ${contourCrayon("111110", 53)}; }
+.bl-p4::before { background-image: ${contourCrayon("111110", 54)}; }
+`;
+
+/** Couleur de cadre et de surlignage, en rotation sur les 7 pastels. */
+const tone = (i: number) => `bl-c${(i % 7) + 1}`;
+
 export default function BlogPage() {
   return (
     <>
+      <style>{CSS}</style>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
@@ -98,283 +425,194 @@ export default function BlogPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(blogJsonLd) }}
       />
 
-      <section className="border-b border-[#E8EDF7] bg-[linear-gradient(180deg,#FFFFFF_0%,#F8FAFD_100%)]">
-        <div className="mx-auto max-w-[1180px] px-6 pb-10 pt-7 lg:pb-14 lg:pt-10">
+      {/* ---------------------------- HERO ---------------------------- */}
+      <section className="bl bl-hero">
+        <div className="bl-inner">
           <nav aria-label="Fil d'Ariane">
-            <ol className="flex items-center gap-2 text-sm text-navy/58">
+            <ol className="bl-crumb">
               <li>
-                <Link href="/" className="transition-colors hover:text-cyan">
-                  Accueil
-                </Link>
+                <Link href="/">Accueil</Link>
               </li>
-              <li>
+              <li aria-hidden>
                 <ChevronRight className="size-3.5" />
               </li>
-              <li className="font-medium text-navy">Blog</li>
+              <li className="bl-crumb-now">Blog</li>
             </ol>
           </nav>
 
-          <div className="mx-auto mt-8 max-w-[860px] text-center">
-            <span className="inline-flex items-center rounded-full border border-[#D8E1F3] bg-white px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-cyan shadow-sm">
-              BLOG SEO / GEO
-            </span>
-            <h1 className="mt-5 text-[32px] font-semibold leading-[1.04] tracking-[-0.05em] text-navy sm:text-[50px]">
-              Guides <span className="text-cyan">SEO / GEO</span> pour devenir visible sur <span className="text-cyan">Google et dans les IA</span>.
-            </h1>
-            <p className="mx-auto mt-5 max-w-[760px] text-[16px] leading-7 text-navy/62">
-              Articles, guides pratiques et analyses pour comprendre le référencement IA, améliorer votre visibilité sur ChatGPT, Gemini, Claude, Perplexity et Google AI Overviews, et renforcer votre présence organique.
-            </p>
+          <span className="bl-eyebrow">BLOG SEO / GEO</span>
+          <h1>
+            Guides <span className="bl-m bl-m1">SEO / GEO</span> pour devenir visible sur{" "}
+            <span className="bl-m bl-m2">Google et dans les IA</span>.
+          </h1>
+          <p className="bl-lead">
+            Articles, guides pratiques et analyses pour comprendre le référencement IA, améliorer votre visibilité sur ChatGPT, Gemini, Claude, Perplexity et Google AI Overviews, et renforcer votre présence organique.
+          </p>
 
-            <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-center">
-              <Link href="/contact" className="w-full sm:w-auto">
-                <Button className="h-12 w-full rounded-full bg-cyan px-6 text-[15px] font-semibold text-white shadow-[0_12px_24px_rgba(37,71,208,0.22)] hover:bg-cyan-dark sm:w-auto">
-                  Obtenir un audit
-                  <ArrowRight className="ml-2 size-4" />
-                </Button>
-              </Link>
-              <Link
-                href="/offre"
-                className="inline-flex items-center justify-center text-[15px] font-semibold text-navy/68 transition-colors hover:text-navy"
-              >
-                Découvrir notre offre
-                <ArrowRight className="ml-2 size-4" />
-              </Link>
-            </div>
-
-            <div className="mt-7 flex flex-wrap items-center justify-center gap-2.5">
-              {heroTags.map((tag) => (
-                <span
-                  key={tag}
-                  className="rounded-full border border-[#DDE5F3] bg-white px-3 py-1.5 text-[12px] font-medium text-navy/64 shadow-sm"
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-white py-14 lg:py-16">
-        <div className="mx-auto max-w-[1180px] px-6">
-          <div className="flex items-center justify-between gap-4">
-            <div>
-              <span className="inline-flex items-center rounded-full border border-[#D8E1F3] bg-white px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-cyan shadow-sm">
-                À la une
-              </span>
-              <h2 className="mt-4 text-[28px] font-semibold tracking-[-0.045em] text-navy sm:text-[34px]">
-                Les guides à lire pour comprendre le SEO, le GEO et la visibilité IA.
-              </h2>
-            </div>
+          <div className="bl-tags">
+            {heroTags.map((tag) => (
+              <span key={tag}>{tag}</span>
+            ))}
           </div>
 
-          <div className="mt-8 grid gap-5 lg:grid-cols-[1.2fr_0.8fr]">
-            <Link
-              href={`/blog/${featuredPrimary.slug}`}
-              className="group rounded-[30px] border border-[#DCE5F3] bg-[linear-gradient(180deg,#FFFFFF_0%,#FBFCFF_100%)] p-5 shadow-[0_16px_36px_rgba(15,23,42,0.05)] transition-all hover:border-cyan/30 hover:shadow-[0_20px_42px_rgba(15,23,42,0.07)] sm:p-6"
-            >
-              <span className="inline-flex items-center rounded-full border border-[#D6E2FB] bg-[#F4F8FF] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-cyan">
-                {featuredPrimary.category}
-              </span>
-                <h3 className="mt-5 max-w-[680px] text-[26px] font-semibold leading-[1.1] tracking-[-0.04em] text-navy transition-colors group-hover:text-cyan sm:text-[30px]">
-                {featuredPrimary.title}
-              </h3>
-              <p className="mt-4 max-w-[680px] text-[15px] leading-7 text-navy/62">
-                {featuredPrimary.description}
-              </p>
-              <div className="mt-6 flex flex-wrap items-center gap-4 text-[13px] text-navy/48">
-                <span className="inline-flex items-center gap-1.5">
-                  <Calendar className="size-4" />
-                  {featuredPrimary.date}
-                </span>
-                <span className="inline-flex items-center gap-1.5">
-                  <Clock className="size-4" />
-                  {featuredPrimary.readingTime}
-                </span>
-              </div>
-              <span className="mt-7 inline-flex items-center gap-2 text-[14px] font-semibold text-cyan">
-                Lire le guide
-                <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
-              </span>
+          <div className="bl-cta">
+            <Link href="/contact" className="bl-btn bl-btn-1">
+              Obtenir un audit
             </Link>
-
-            <div className="grid gap-5">
-              {featuredSecondary.map((article) => (
-                <Link
-                  key={article.slug}
-                  href={`/blog/${article.slug}`}
-                  className="group rounded-[26px] border border-[#DCE5F3] bg-white p-5 shadow-[0_14px_30px_rgba(15,23,42,0.04)] transition-all hover:border-cyan/30 hover:shadow-[0_18px_34px_rgba(15,23,42,0.06)]"
-                >
-                  <span className="inline-flex items-center rounded-full border border-[#D8E1F3] bg-[#F8FAFF] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-cyan">
-                    {article.category}
-                  </span>
-                  <h3 className="mt-4 text-[22px] font-semibold leading-[1.14] tracking-[-0.04em] text-navy transition-colors group-hover:text-cyan">
-                    {article.title}
-                  </h3>
-                  <p className="mt-3 line-clamp-3 text-[14px] leading-6 text-navy/62">{article.description}</p>
-                  <div className="mt-5 flex items-center justify-between gap-4 text-[13px] text-navy/48">
-                    <span>{article.readingTime}</span>
-                    <span className="inline-flex items-center gap-2 font-semibold text-cyan">
-                      Lire le guide
-                      <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
-                    </span>
-                  </div>
-                </Link>
-              ))}
-            </div>
+            <Link href="/offre" className="bl-btn bl-btn-2">
+              Découvrir notre offre
+            </Link>
           </div>
         </div>
       </section>
 
-      <section className="border-t border-[#EDF1F7] bg-[#FBFCFF] py-8">
-        <div className="mx-auto flex max-w-[1180px] flex-wrap items-center gap-2 px-6">
-          {filterChips.map((chip, index) => (
-            <span
-              key={chip}
-              className={`rounded-full border px-3 py-1.5 text-[13px] font-medium ${
-                index === 0
-                  ? "border-[#D4E0FB] bg-[#F4F8FF] text-cyan"
-                  : "border-[#E1E7F2] bg-white text-navy/62"
-              }`}
-            >
-              {chip}
-            </span>
+      {/* ---------------------------- À LA UNE ------------------------- */}
+      <section className="bl">
+        <div className="bl-inner">
+          <span className="bl-eyebrow">À la une</span>
+          <h2>
+            Les guides à lire pour comprendre le SEO, le GEO et la{" "}
+            <span className="bl-m bl-m3">visibilité IA</span>.
+          </h2>
+        </div>
+
+        <div className="bl-grid bl-featured">
+          <Link href={`/blog/${featuredPrimary.slug}`} className="bl-card bl-hero-card bl-c1">
+            <span className="bl-cat">{featuredPrimary.category}</span>
+            <h3>
+              <span>{featuredPrimary.title}</span>
+            </h3>
+            <p>{featuredPrimary.description}</p>
+            <div className="bl-meta">
+              <span>
+                {featuredPrimary.date} · {featuredPrimary.readingTime}
+              </span>
+              <span className="bl-read">Lire le guide</span>
+            </div>
+          </Link>
+
+          {featuredSecondary.map((article, i) => (
+            <Link key={article.slug} href={`/blog/${article.slug}`} className={`bl-card ${tone(i + 1)}`}>
+              <span className="bl-cat">{article.category}</span>
+              <h3>
+                <span>{article.title}</span>
+              </h3>
+              <p>{article.description}</p>
+              <div className="bl-meta">
+                <span>{article.readingTime}</span>
+                <span className="bl-read">Lire le guide</span>
+              </div>
+            </Link>
           ))}
         </div>
       </section>
 
-      <section className="bg-white py-12 lg:py-14">
-        <div className="mx-auto max-w-[1180px] px-6">
-          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-            {gridPosts.map((article) => (
-              <Link
-                key={article.slug}
-                href={`/blog/${article.slug}`}
-                className="group rounded-[24px] border border-[#DEE6F3] bg-white p-5 shadow-[0_12px_28px_rgba(15,23,42,0.04)] transition-all hover:border-cyan/30 hover:shadow-[0_16px_32px_rgba(15,23,42,0.06)]"
-              >
-                <div className="flex flex-wrap items-center gap-3 text-[12px] text-navy/46">
-                  <span>{article.date}</span>
-                  <span className="rounded-full border border-[#DDE5F4] bg-[#F8FAFF] px-2.5 py-1 font-medium text-cyan">
-                    {article.category}
-                  </span>
-                </div>
-                <h3 className="mt-4 text-[20px] font-semibold leading-[1.15] tracking-[-0.035em] text-navy transition-colors group-hover:text-cyan">
-                  {article.title}
-                </h3>
-                <p className="mt-3 line-clamp-3 text-[14px] leading-6 text-navy/62">{article.description}</p>
-                <div className="mt-5 flex items-center justify-between gap-4">
-                  <span className="text-[13px] text-navy/48">{article.readingTime}</span>
-                  <span className="inline-flex items-center gap-2 text-[14px] font-semibold text-cyan">
-                    Lire l’article
-                    <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
-                  </span>
-                </div>
-              </Link>
-            ))}
-          </div>
+      {/* ---------------------------- FILTRES -------------------------- */}
+      <section className="bl" style={{ paddingTop: 0, paddingBottom: 24 }}>
+        <div className="bl-filters">
+          {filterChips.map((chip) => (
+            <span key={chip}>{chip}</span>
+          ))}
         </div>
       </section>
 
-      <section className="border-t border-[#EDF1F7] bg-[#FBFCFF] py-14 lg:py-16">
-        <div className="mx-auto max-w-[1180px] px-6">
-          <div className="max-w-[760px]">
-            <h2 className="text-[28px] font-semibold tracking-[-0.045em] text-navy sm:text-[34px]">
-              Explorer par sujet
-            </h2>
-          </div>
-
-          <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-            {blogTopics.map((topic) => (
-              <Link
-                key={topic.title}
-                href={topic.href}
-                className="group rounded-[24px] border border-[#DEE6F3] bg-white p-5 shadow-[0_12px_28px_rgba(15,23,42,0.04)] transition-all hover:border-cyan/30 hover:shadow-[0_16px_32px_rgba(15,23,42,0.06)]"
-              >
-                <h3 className="text-[18px] font-semibold tracking-[-0.03em] text-navy transition-colors group-hover:text-cyan">
-                  {topic.title}
-                </h3>
-                <p className="mt-3 text-[14px] leading-6 text-navy/62">{topic.description}</p>
-                <span className="mt-4 inline-flex items-center gap-2 text-[14px] font-semibold text-cyan">
-                  Explorer
-                  <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
-                </span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-white py-14 lg:py-16">
-        <div className="mx-auto max-w-[1180px] px-6">
-          <div className="rounded-[30px] border border-[#DCE5F4] bg-[linear-gradient(180deg,#F6F9FF_0%,#FFFFFF_100%)] p-5 shadow-[0_16px_34px_rgba(15,23,42,0.04)] sm:p-7">
-            <span className="inline-flex items-center rounded-full border border-[#D6E2FB] bg-white px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-cyan shadow-sm">
-              RESSOURCES
-            </span>
-            <h2 className="mt-5 text-[28px] font-semibold tracking-[-0.045em] text-navy sm:text-[34px]">
-              Un blog pour rendre le SEO / GEO plus clair.
-            </h2>
-            <p className="mt-4 max-w-[860px] text-[16px] leading-7 text-navy/62">
-              Le référencement IA est encore nouveau, souvent flou et parfois mal expliqué. Ce blog sert à rendre le sujet concret : comment les moteurs IA choisissent leurs sources, pourquoi certaines marques sont citées, comment mesurer sa visibilité IA et quelles actions prioriser.
-            </p>
-            <p className="mt-4 max-w-[860px] text-[16px] leading-7 text-navy/62">
-              Notre objectif est simple : aider les entreprises à comprendre ce qui change dans la recherche, sans jargon inutile, avec des guides actionnables.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-white py-14 lg:py-16">
-        <div className="mx-auto max-w-[1180px] px-6">
-          <div className="overflow-hidden rounded-[34px] bg-navy p-5 text-white shadow-[0_30px_70px_rgba(11,15,30,0.16)] sm:p-8 lg:p-9">
-            <div className="grid gap-8 lg:grid-cols-[0.9fr_0.7fr] lg:items-center">
-              <div className="max-w-[620px]">
-                <span className="inline-flex items-center rounded-full border border-white/12 bg-white/8 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-white/76">
-                  AGENCE SEO / GEO
-                </span>
-                <h2 className="mt-5 text-[30px] font-semibold tracking-[-0.05em] text-white sm:text-[38px]">
-                  Vous voulez savoir si votre entreprise apparaît dans les réponses IA ?
-                </h2>
-                <p className="mt-4 max-w-[580px] text-[15px] leading-7 text-white/68">
-                  Nous analysons votre visibilité sur Google, ChatGPT, Gemini, Claude, Perplexity et Google AI Overviews, puis nous vous montrons les requêtes, les concurrents et les sources qui comptent.
-                </p>
-
-                <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
-                  <Link href="/contact" className="w-full sm:w-auto">
-                    <Button className="h-12 w-full rounded-full bg-white px-6 text-[15px] font-semibold text-navy hover:bg-white/92 sm:w-auto">
-                      Obtenir un audit
-                      <ArrowRight className="ml-2 size-4" />
-                    </Button>
-                  </Link>
-                  <Link
-                    href="/offre"
-                    className="inline-flex items-center justify-center text-[15px] font-semibold text-white/72 transition-colors hover:text-white"
-                  >
-                    Découvrir notre offre
-                    <ArrowRight className="ml-2 size-4" />
-                  </Link>
-                </div>
+      {/* ------------------------- TOUS LES ARTICLES ------------------- */}
+      <section className="bl" style={{ paddingTop: 24 }}>
+        <div className="bl-grid bl-grid-3" style={{ marginTop: 0 }}>
+          {gridPosts.map((article, i) => (
+            <Link key={article.slug} href={`/blog/${article.slug}`} className={`bl-card ${tone(i)}`}>
+              <span className="bl-cat">
+                {article.date} · {article.category}
+              </span>
+              <h3>
+                <span>{article.title}</span>
+              </h3>
+              <p>{article.description}</p>
+              <div className="bl-meta">
+                <span>{article.readingTime}</span>
+                <span className="bl-read">Lire l’article</span>
               </div>
+            </Link>
+          ))}
+        </div>
+      </section>
 
-              <div className="grid gap-3 sm:grid-cols-2">
-                {[
-                  "Audit SEO / GEO",
-                  "Visibilité Google + IA",
-                  "Concurrents identifiés",
-                  "Plan d’action priorisé",
-                ].map((item) => (
-                  <div
-                    key={item}
-                    className="rounded-[22px] border border-white/10 bg-white/6 px-4 py-4 backdrop-blur-sm"
-                  >
-                    <div className="flex items-center gap-2 text-[13px] font-medium text-white/84">
-                      <span className="size-1.5 rounded-full bg-cyan" />
-                      {item}
-                    </div>
-                  </div>
-                ))}
+      {/* ------------------------ EXPLORER PAR SUJET ------------------- */}
+      <section className="bl">
+        <div className="bl-inner">
+          <h2>
+            <span className="bl-m bl-m4">Explorer</span> par sujet
+          </h2>
+        </div>
+
+        <div className="bl-grid bl-grid-3">
+          {blogTopics.map((topic, i) => (
+            <Link key={topic.title} href={topic.href} className={`bl-card ${tone(i)}`}>
+              <h3>
+                <span>{topic.title}</span>
+              </h3>
+              <p>{topic.description}</p>
+              <div className="bl-meta">
+                <span />
+                <span className="bl-read">Explorer</span>
               </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* ---------------------------- RESSOURCES ----------------------- */}
+      <section className="bl">
+        <div className="bl-inner">
+          <span className="bl-eyebrow">RESSOURCES</span>
+          <h2>
+            Un blog pour rendre le <span className="bl-m bl-m2">SEO / GEO</span> plus clair.
+          </h2>
+        </div>
+
+        <div className="bl-box">
+          <p>
+            Le référencement IA est encore nouveau, souvent flou et parfois mal expliqué. Ce blog sert à rendre le sujet concret : comment les moteurs IA choisissent leurs sources, pourquoi certaines marques sont citées, comment mesurer sa visibilité IA et quelles actions prioriser.
+          </p>
+          <p>
+            Notre objectif est simple : aider les entreprises à comprendre ce qui change dans la recherche, sans jargon inutile, avec des guides actionnables.
+          </p>
+        </div>
+      </section>
+
+      {/* ---------------------------- BLOC FINAL ----------------------- */}
+      <section className="bl">
+        <div className="bl-inner">
+          <span className="bl-eyebrow">AGENCE SEO / GEO</span>
+          <h2>
+            Vous voulez savoir si votre entreprise apparaît dans les{" "}
+            <span className="bl-m bl-m1">réponses IA</span> ?
+          </h2>
+          <p className="bl-lead">
+            Nous analysons votre visibilité sur Google, ChatGPT, Gemini, Claude, Perplexity et Google AI Overviews, puis nous vous montrons les requêtes, les concurrents et les sources qui comptent.
+          </p>
+
+          <div className="bl-cta">
+            <Link href="/contact" className="bl-btn bl-btn-1">
+              Obtenir un audit
+            </Link>
+            <Link href="/offre" className="bl-btn bl-btn-2">
+              Découvrir notre offre
+            </Link>
+          </div>
+        </div>
+
+        <div className="bl-points">
+          {[
+            "Audit SEO / GEO",
+            "Visibilité Google + IA",
+            "Concurrents identifiés",
+            "Plan d’action priorisé",
+          ].map((item, i) => (
+            <div key={item} className={`bl-p${i + 1}`}>
+              {item}
             </div>
-          </div>
+          ))}
         </div>
       </section>
     </>

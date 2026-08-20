@@ -1,31 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import {
-  ArrowRight,
-  BarChart3,
-  Briefcase,
-  Building2,
-  CheckCircle2,
-  ChevronRight,
-  Compass,
-  FileText,
-  Globe,
-  Mail,
-  Rocket,
-  Search,
-  Store,
-  Target,
-  UtensilsCrossed,
-  Zap,
-} from "lucide-react";
+import Image from "next/image";
+import { ChevronRight } from "lucide-react";
+import { ContactForm } from "@/components/contact-form";
+import { BTN_PLEIN, BTN_CONTOUR, feutre, contourCrayon, contourLeger, PASTELS } from "@/lib/paper-da";
 
 export const metadata: Metadata = {
-  title: "Référencement IA & agence GEO — Offre PulseoAI",
+  title: "Référencement IA & agence GEO · Offre",
   description:
     "PulseoAI accompagne les entreprises qui veulent être visibles sur Google, ChatGPT, Gemini, Perplexity et les moteurs IA. Audit SEO / GEO, contenus, Schema.org, citations et monitoring.",
   openGraph: {
-    title: "Référencement IA & agence GEO — Offre PulseoAI",
+    title: "Référencement IA & agence GEO · Offre PulseoAI",
     description:
       "PulseoAI accompagne les entreprises qui veulent être visibles sur Google, ChatGPT, Gemini, Perplexity et les moteurs IA. Audit SEO / GEO, contenus, Schema.org, citations et monitoring.",
     url: "https://www.pulseoai.fr/offre",
@@ -36,7 +21,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Référencement IA & agence GEO — Offre PulseoAI",
+    title: "Référencement IA & agence GEO · Offre PulseoAI",
     description:
       "PulseoAI accompagne les entreprises qui veulent être visibles sur Google, ChatGPT, Gemini, Perplexity et les moteurs IA. Audit SEO / GEO, contenus, Schema.org, citations et monitoring.",
     images: ["/og-image.png"],
@@ -172,104 +157,638 @@ const offreServicesJsonLd = {
   ],
 };
 
-function Eyebrow({ children }: { children: React.ReactNode }) {
-  return (
-    <span className="inline-flex items-center rounded-full border border-[#D8E1F3] bg-white px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-cyan shadow-sm">
-      {children}
-    </span>
-  );
+const CSS = `
+/* ===================== PAGE OFFRE, DIRECTION PAPIER ===================== */
+.of {
+  position: relative;
+  z-index: 1;
+  /* fond transparent : le grain papier fixe (.th-grain) reste visible dessous */
+  background: transparent;
+  color: #111110;
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Inter, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding: 66px 24px 74px;
+}
+.of-inner { max-width: 820px; margin: 0 auto; text-align: center; }
+.of-wide { max-width: 1000px; margin: 0 auto; }
+
+.of h2 {
+  margin: 0;
+  font-size: clamp(1.5rem, 2.9vw, 2.15rem);
+  line-height: 1.14;
+  letter-spacing: -0.028em;
+  font-weight: 600;
+  color: #111110;
+}
+.of-lead {
+  margin: 20px auto 0;
+  max-width: 58ch;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: rgba(17, 17, 16, 0.66);
+}
+.of-lead a,
+.of-note a {
+  color: #111110;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1.5px;
+}
+.of-note {
+  margin: 28px auto 0;
+  max-width: 56ch;
+  font-size: 0.94rem;
+  line-height: 1.72;
+  color: rgba(17, 17, 16, 0.6);
 }
 
-function HeroChecklist({ label }: { label: string }) {
-  return (
-    <span className="inline-flex items-center gap-2 text-[13px] font-medium text-navy/58">
-      <span className="size-1.5 rounded-full bg-cyan" />
-      {label}
-    </span>
-  );
+/* --- surlignage feutre, meme methode que la home --- */
+.of-m {
+  display: inline;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  padding: 0.08em 0.24em;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.of-m1 { background-image: ${feutre(PASTELS.peche)}; }
+.of-m2 { background-image: ${feutre(PASTELS.vertEau)}; }
+.of-m3 { background-image: ${feutre(PASTELS.bleu)}; }
+.of-m4 { background-image: ${feutre(PASTELS.jaune)}; }
+.of-m5 { background-image: ${feutre(PASTELS.rose)}; }
+.of-m6 { background-image: ${feutre(PASTELS.lavande)}; }
+.of-m7 { background-image: ${feutre(PASTELS.pistache)}; }
+
+/* ---------------------------- HERO ------------------------------------- */
+.of-hero { padding-top: 30px; }
+.of-crumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0.84rem;
+  color: rgba(17, 17, 16, 0.5);
+  margin-bottom: 34px;
+}
+.of-crumb a { color: rgba(17, 17, 16, 0.5); text-decoration: none; }
+.of-crumb a:hover { color: #111110; }
+.of-crumb-now { color: #111110; font-weight: 500; }
+.of h1 {
+  margin: 0;
+  font-size: clamp(1.95rem, 4.4vw, 3.05rem);
+  line-height: 1.08;
+  letter-spacing: -0.038em;
+  font-weight: 600;
+  color: #111110;
+  max-width: 21ch;
+  margin-inline: auto;
+  text-wrap: balance;
 }
 
-function PillarCard({
-  icon: Icon,
-  title,
-  text,
-  points,
-}: {
-  icon: React.ElementType;
-  title: string;
-  text: string;
-  points: string[];
-}) {
-  return (
-    <div className="rounded-[24px] border border-[#DEE6F3] bg-[linear-gradient(180deg,#FFFFFF_0%,#FBFCFF_100%)] p-5 shadow-[0_14px_30px_rgba(15,23,42,0.04)]">
-      <div className="flex size-10 items-center justify-center rounded-[16px] bg-[#EEF3FF]">
-        <Icon className="size-4.5 text-cyan" />
-      </div>
-      <h3 className="mt-4 text-[18px] font-semibold tracking-[-0.03em] text-navy">{title}</h3>
-      <p className="mt-2 text-[14px] leading-6 text-navy/62">{text}</p>
-      <ul className="mt-4 space-y-2">
-        {points.map((point) => (
-          <li key={point} className="flex items-start gap-2 text-[13px] text-navy/76">
-            <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-cyan" />
-            <span>{point}</span>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
+/* les 2 paragraphes du hero, cote a cote dans 2 cadres */
+.of-duo {
+  margin: 38px auto 0;
+  display: grid;
+  gap: 16px;
+  max-width: 900px;
+  text-align: left;
+}
+@media (min-width: 800px) { .of-duo { grid-template-columns: 1fr 1fr; gap: 22px; } }
+.of-duo p {
+  position: relative;
+  isolation: isolate;
+  margin: 0;
+  padding: 22px 24px;
+  font-size: 0.96rem;
+  line-height: 1.72;
+}
+.of-duo p::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.of-duo-1 { color: rgba(17, 17, 16, 0.68); }
+.of-duo-1::before { background-image: ${contourCrayon(PASTELS.peche, 12)}; }
+.of-duo-2 { color: #111110; font-weight: 500; }
+.of-duo-2::before { background-image: ${contourCrayon(PASTELS.vertEau, 13)}; }
+
+/* boutons crayon de la DA */
+.of-cta {
+  margin-top: 34px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 26px;
+}
+.of-btn {
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 26px;
+  font-size: 0.96rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: transform 0.16s ease;
+}
+.of-btn::before {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.of-btn:hover { transform: translateY(-1.5px); }
+.of-btn-1 { color: #F4F3EF; }
+.of-btn-1::before { background-image: ${BTN_PLEIN}; }
+.of-btn-2 { color: #111110; }
+.of-btn-2::before { background-image: ${BTN_CONTOUR}; }
+
+/* petites mentions sous le hero */
+.of-chips {
+  margin-top: 42px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 22px;
+}
+.of-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: rgba(17, 17, 16, 0.58);
+}
+.of-chip::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  background: rgba(17, 17, 16, 0.4);
 }
 
-function DeliverableCard({ title }: { title: string }) {
-  return (
-    <div className="rounded-[18px] border border-[#E4EAF5] bg-[#FBFCFF] px-4 py-3 text-[14px] font-medium text-navy/76">
-      {title}
-    </div>
-  );
+/* --------------------- pastilles secteurs (pour qui) -------------------- */
+.of-tags {
+  margin: 30px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 780px;
+}
+.of-tag {
+  position: relative;
+  isolation: isolate;
+  padding: 9px 16px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: rgba(17, 17, 16, 0.78);
+}
+.of-tag::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: ${contourLeger("111110", 23, 0.4)};
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
-function SectorCard({
-  icon: Icon,
-  title,
-  text,
-}: {
-  icon: React.ElementType;
-  title: string;
-  text: string;
-}) {
-  return (
-    <div className="rounded-[22px] border border-[#DEE6F3] bg-white p-5 shadow-[0_12px_28px_rgba(15,23,42,0.04)]">
-      <div className="flex size-10 items-center justify-center rounded-[16px] bg-[#EEF3FF]">
-        <Icon className="size-4.5 text-cyan" />
-      </div>
-      <h3 className="mt-4 text-[17px] font-semibold tracking-[-0.02em] text-navy">{title}</h3>
-      <p className="mt-2 text-[14px] leading-6 text-navy/62">{text}</p>
-    </div>
-  );
+/* ---------------------- listes de points centrees ----------------------- */
+.of-points {
+  margin: 32px auto 0;
+  display: grid;
+  gap: 12px;
+  max-width: 700px;
+  text-align: left;
+}
+@media (min-width: 860px) { .of-points { grid-template-columns: repeat(3, 1fr); } }
+.of-point {
+  position: relative;
+  isolation: isolate;
+  margin: 0;
+  padding: 20px 22px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  line-height: 1.55;
+  color: rgba(17, 17, 16, 0.8);
+}
+.of-point::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.of-p1::before { background-image: ${contourCrayon(PASTELS.bleu, 21)}; }
+.of-p2::before { background-image: ${contourCrayon(PASTELS.jaune, 22)}; }
+.of-p3::before { background-image: ${contourCrayon(PASTELS.rose, 23)}; }
+
+/* encadre citation */
+.of-quote {
+  margin: 32px auto 0;
+  max-width: 60ch;
+  padding: 22px 26px;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.72;
+  color: #111110;
+  position: relative;
+  isolation: isolate;
+}
+.of-quote::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: ${contourLeger("111110", 44, 0.45)};
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
-function ProcessCard({
-  step,
-  title,
-  text,
-}: {
-  step: string;
-  title: string;
-  text: string;
-}) {
-  return (
-    <div className="rounded-[22px] border border-[#DEE6F3] bg-white p-5 shadow-[0_12px_28px_rgba(15,23,42,0.04)]">
-      <span className="inline-flex items-center rounded-full border border-[#D8E3FA] bg-[#F5F8FF] px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-cyan">
-        {step}
-      </span>
-      <h3 className="mt-4 text-[17px] font-semibold tracking-[-0.02em] text-navy">{title}</h3>
-      <p className="mt-2 text-[14px] leading-6 text-navy/62">{text}</p>
-    </div>
-  );
+/* ------------------------- CARTES METHODE ------------------------------- */
+.of-cards {
+  margin: 40px auto 0;
+  display: grid;
+  gap: 30px 26px;
+  max-width: 1000px;
+  text-align: left;
 }
+@media (min-width: 700px) { .of-cards { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 1000px) { .of-cards { grid-template-columns: repeat(3, 1fr); } }
+.of-card {
+  position: relative;
+  isolation: isolate;
+  padding: 24px 24px 26px;
+}
+.of-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+/* cadre de la meme couleur que le surlignage du titre */
+.of-c1::before { background-image: ${contourCrayon(PASTELS.peche, 31)}; }
+.of-c2::before { background-image: ${contourCrayon(PASTELS.vertEau, 32)}; }
+.of-c3::before { background-image: ${contourCrayon(PASTELS.bleu, 33)}; }
+.of-c4::before { background-image: ${contourCrayon(PASTELS.jaune, 34)}; }
+.of-c5::before { background-image: ${contourCrayon(PASTELS.rose, 35)}; }
+.of-c6::before { background-image: ${contourCrayon(PASTELS.lavande, 36)}; }
+.of-card h3 {
+  margin: 0;
+  font-size: 0.98rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  color: #111110;
+}
+.of-card h3 span {
+  display: inline;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  padding: 0.1em 0.26em;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.of-c1 h3 span { background-image: ${feutre(PASTELS.peche)}; }
+.of-c2 h3 span { background-image: ${feutre(PASTELS.vertEau)}; }
+.of-c3 h3 span { background-image: ${feutre(PASTELS.bleu)}; }
+.of-c4 h3 span { background-image: ${feutre(PASTELS.jaune)}; }
+.of-c5 h3 span { background-image: ${feutre(PASTELS.rose)}; }
+.of-c6 h3 span { background-image: ${feutre(PASTELS.lavande)}; }
+.of-card p {
+  margin: 14px 0 0;
+  font-size: 0.89rem;
+  line-height: 1.68;
+  color: rgba(17, 17, 16, 0.62);
+}
+.of-card ul { margin: 14px 0 0; padding: 0; list-style: none; }
+.of-card li {
+  font-size: 0.84rem;
+  line-height: 1.5;
+  color: rgba(17, 17, 16, 0.72);
+  padding-left: 15px;
+  position: relative;
+}
+.of-card li + li { margin-top: 6px; }
+.of-card li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  background: rgba(17, 17, 16, 0.35);
+}
+
+/* --------------------------- LIVRABLES ---------------------------------- */
+.of-deliv {
+  margin: 34px auto 0;
+  display: grid;
+  gap: 10px;
+  max-width: 760px;
+  text-align: left;
+}
+@media (min-width: 640px) { .of-deliv { grid-template-columns: 1fr 1fr; } }
+.of-deliv div {
+  position: relative;
+  isolation: isolate;
+  padding: 13px 18px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgba(17, 17, 16, 0.76);
+}
+.of-deliv div::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: ${contourLeger("111110", 31, 0.38)};
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/* -------------------------- SEO + GEO ----------------------------------- */
+.of-compare {
+  margin: 38px auto 0;
+  display: grid;
+  gap: 28px;
+  max-width: 820px;
+  text-align: left;
+}
+@media (min-width: 760px) { .of-compare { grid-template-columns: 1fr 1fr; } }
+.of-cmp-box {
+  position: relative;
+  isolation: isolate;
+  padding: 24px 24px 26px;
+}
+.of-cmp-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.of-cmp-a .of-cmp-box::before { background-image: ${contourCrayon(PASTELS.bleu, 41)}; }
+.of-cmp-b .of-cmp-box::before { background-image: ${contourCrayon(PASTELS.peche, 42)}; }
+/* la formule se place sous le cadre auquel elle correspond */
+.of-cmp-eq {
+  margin: 18px 0 0;
+  text-align: center;
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: #111110;
+}
+.of-compare-h {
+  margin: 0;
+  font-size: 0.94rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: #111110;
+}
+.of-compare-h span {
+  display: inline;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  padding: 0.1em 0.26em;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.of-cmp-a .of-compare-h span { background-image: ${feutre(PASTELS.bleu)}; }
+.of-cmp-b .of-compare-h span { background-image: ${feutre(PASTELS.peche)}; }
+.of-compare ul { margin: 16px 0 0; padding: 0; list-style: none; }
+.of-compare li {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: rgba(17, 17, 16, 0.72);
+  padding-left: 15px;
+  position: relative;
+}
+.of-compare li + li { margin-top: 8px; }
+.of-compare li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.52em;
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  background: rgba(17, 17, 16, 0.35);
+}
+
+/* ------------------------- TRANSPARENCE --------------------------------- */
+.of-nots {
+  margin: 36px auto 0;
+  display: grid;
+  gap: 12px;
+  max-width: 900px;
+  text-align: left;
+}
+@media (min-width: 800px) { .of-nots { grid-template-columns: repeat(3, 1fr); } }
+.of-nots p {
+  position: relative;
+  isolation: isolate;
+  margin: 0;
+  padding: 22px 22px 24px;
+  font-size: 0.94rem;
+  font-weight: 500;
+  line-height: 1.55;
+  color: #111110;
+}
+.of-nots p::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.of-n1::before { background-image: ${contourCrayon(PASTELS.pistache, 51)}; }
+.of-n2::before { background-image: ${contourCrayon(PASTELS.lavande, 52)}; }
+.of-n3::before { background-image: ${contourCrayon(PASTELS.peche, 53)}; }
+
+/* ----------------------------- FAQ -------------------------------------- */
+.of-faq { margin: 36px auto 0; max-width: 760px; text-align: left; }
+.of-faq details { border-bottom: 1.5px solid rgba(17, 17, 16, 0.16); }
+.of-faq summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  cursor: pointer;
+  list-style: none;
+  padding: 18px 0;
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: #111110;
+}
+.of-faq summary::-webkit-details-marker { display: none; }
+.of-faq summary span:last-child {
+  flex-shrink: 0;
+  font-size: 1.15rem;
+  font-weight: 400;
+  transition: transform 0.18s ease;
+}
+.of-faq details[open] summary span:last-child { transform: rotate(45deg); }
+.of-faq p {
+  margin: 0;
+  padding: 0 0 20px;
+  max-width: 72ch;
+  font-size: 0.93rem;
+  line-height: 1.72;
+  color: rgba(17, 17, 16, 0.66);
+}
+
+/* -------------------- SECTION AUDIT, formulaire home -------------------- */
+.of-form-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 700px;
+  margin: 0 auto 26px;
+  text-align: center;
+}
+.of-lion {
+  width: auto;
+  height: clamp(96px, 12vh, 124px);
+  max-width: 100%;
+  object-fit: contain;
+  margin-left: auto;
+  margin-right: auto;
+}
+.of-form-wrap { max-width: 720px; margin: 0 auto; }
+
+/* habillage papier du formulaire existant, logique inchangee */
+.of-form-wrap form,
+.of-form-wrap .rounded-2xl {
+  background: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+.of-form-wrap form {
+  display: grid !important;
+  grid-template-columns: 1fr;
+  gap: 12px 18px;
+}
+@media (min-width: 640px) {
+  .of-form-wrap form { grid-template-columns: 1fr 1fr; }
+  .of-form-wrap form > div:has(#message),
+  .of-form-wrap form > div:has(.text-red-700),
+  .of-form-wrap form > button { grid-column: 1 / -1; }
+}
+.of-form-wrap form > * + * { margin-top: 0 !important; }
+.of-form-wrap form > div > * + * { margin-top: 4px !important; }
+.of-form-wrap label { color: #111110 !important; font-weight: 500; font-size: 0.86rem !important; }
+.of-form-wrap input,
+.of-form-wrap select { height: 42px !important; }
+.of-form-wrap textarea { min-height: 76px !important; }
+.of-form-wrap input,
+.of-form-wrap select,
+.of-form-wrap textarea { font-size: 0.95rem !important; }
+.of-form-wrap button[type="submit"] { height: 46px !important; margin-top: 6px !important; }
+.of-form-wrap input,
+.of-form-wrap textarea,
+.of-form-wrap select {
+  background-color: transparent !important;
+  background-image: ${contourLeger("111110", 61, 0.45)} !important;
+  background-repeat: no-repeat !important;
+  background-size: 100% 100% !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  color: #111110 !important;
+}
+.of-form-wrap input::placeholder,
+.of-form-wrap textarea::placeholder { color: rgba(17, 17, 16, 0.42) !important; }
+.of-form-wrap input:focus,
+.of-form-wrap textarea:focus,
+.of-form-wrap select:focus,
+.of-form-wrap input:focus-visible,
+.of-form-wrap textarea:focus-visible,
+.of-form-wrap select:focus-visible {
+  outline: 2px solid rgba(17, 17, 16, 0.55) !important;
+  outline-offset: 2px !important;
+  background-image: ${contourLeger("111110", 61, 0.75)} !important;
+}
+.of-form-wrap button[type="submit"] {
+  position: relative;
+  isolation: isolate;
+  background: none !important;
+  color: #F4F3EF !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  transition: transform 0.16s ease;
+}
+.of-form-wrap button[type="submit"]::before {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  z-index: -1;
+  background-image: ${BTN_PLEIN};
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.of-form-wrap button[type="submit"]:hover { transform: translateY(-1.5px); }
+`;
+
+const PILLARS = [
+  {
+    cls: "of-c1",
+    title: "Audit SEO / GEO",
+    text: "Nous analysons votre visibilité actuelle sur Google, ChatGPT, Gemini, Perplexity et les requêtes qui comptent vraiment pour votre business.",
+    points: ["prompts clients testés", "présence IA", "positions Google", "concurrents visibles"],
+  },
+  {
+    cls: "of-c2",
+    title: "Contenus answer-first",
+    text: "Nous structurons vos pages pour répondre clairement aux questions que vos clients posent déjà aux moteurs de recherche et aux IA.",
+    points: ["pages services", "FAQ", "guides", "comparatifs", "réponses directes"],
+  },
+  {
+    cls: "of-c3",
+    title: "Entités et positionnement",
+    text: "Nous clarifions qui vous êtes, ce que vous faites, pour qui, où, avec quelles preuves et sur quels sujets vous méritez d’être cité.",
+    points: ["clarté de l’offre", "preuves de confiance", "territoires sémantiques", "positionnement lisible"],
+  },
+  {
+    cls: "of-c4",
+    title: "Schema.org et données structurées",
+    text: "Nous renforçons la compréhension technique de votre site avec un balisage propre, utile et cohérent avec vos pages visibles.",
+    points: ["schema.org", "métadonnées utiles", "cohérence des entités", "structure technique lisible"],
+  },
+  {
+    cls: "of-c5",
+    title: "Citations et sources de confiance",
+    text: "Nous travaillons les sources que les IA peuvent utiliser pour comprendre votre marque : site, contenus, profils, annuaires, plateformes, mentions et écosystème externe.",
+    points: ["fiches locales", "annuaires", "contenus externes", "avis", "mentions de marque"],
+  },
+  {
+    cls: "of-c6",
+    title: "Monitoring mensuel",
+    text: "Nous suivons vos positions Google, vos citations IA, les concurrents visibles à votre place et les actions à prioriser mois après mois.",
+    points: ["évolution mensuelle", "requêtes suivies", "actions réalisées", "prochaines priorités"],
+  },
+] as const;
 
 export default function OffrePage() {
   return (
     <>
+      <style>{CSS}</style>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb) }}
@@ -283,116 +802,69 @@ export default function OffrePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(offreServicesJsonLd) }}
       />
 
-      <section className="border-b border-[#E8EDF7] bg-[linear-gradient(180deg,#FFFFFF_0%,#F8FAFD_100%)]">
-        <div className="mx-auto max-w-[1180px] px-6 pb-10 pt-7 lg:pb-14 lg:pt-10">
+      {/* ---------------------------- HERO ---------------------------- */}
+      <section className="of of-hero">
+        <div className="of-inner">
           <nav aria-label="Fil d'Ariane">
-            <ol className="flex items-center gap-2 text-sm text-navy/58">
+            <ol className="of-crumb">
               <li>
-                <Link href="/" className="transition-colors hover:text-cyan">
-                  Accueil
-                </Link>
+                <Link href="/">Accueil</Link>
               </li>
-              <li>
+              <li aria-hidden>
                 <ChevronRight className="size-3.5" />
               </li>
-              <li className="font-medium text-navy">Notre offre</li>
+              <li className="of-crumb-now">Notre offre</li>
             </ol>
           </nav>
 
-          <div className="mt-8 grid items-center gap-8 lg:grid-cols-[0.52fr_0.48fr] lg:gap-12">
-            <div className="max-w-[640px]">
-              <Eyebrow>OFFRE SEO / GEO</Eyebrow>
-              <h1 className="mt-5 text-[30px] font-semibold leading-[1.04] tracking-[-0.05em] text-navy sm:text-[48px]">
-                <span className="text-cyan">Référencement IA</span>{" "}&amp;{" "}GEO : devenez visible sur Google et les moteurs IA
-              </h1>
-              <p className="mt-5 max-w-[620px] text-[16px] leading-7 text-navy/62">
-                PulseoAI accompagne les entreprises qui veulent être citées, comprises et recommandées dans ChatGPT, Gemini, Perplexity, Google AI Overviews et les nouveaux parcours de recherche.
-              </p>
-              <p className="mt-4 max-w-[620px] text-[16px] font-medium leading-7 text-navy">
-                Si votre marque n’est pas citée dans les réponses, vos concurrents prennent la demande avant même le clic. Le SEO aide à être trouvé. Le GEO aide à être cité et recommandé au bon moment.
-              </p>
+          <h1>
+            <span className="of-m of-m1">Référencement IA</span>{" "}&amp;{" "}GEO{" "}: devenez visible sur Google et les moteurs IA
+          </h1>
 
-              <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
-                <Link href="/contact" className="w-full sm:w-auto">
-                  <Button className="h-12 w-full rounded-full bg-cyan px-6 text-[15px] font-semibold text-white shadow-[0_12px_24px_rgba(37,71,208,0.22)] hover:bg-cyan-dark sm:w-auto">
-                    Obtenir un audit
-                    <ArrowRight className="ml-2 size-4" />
-                  </Button>
-                </Link>
-                <Link href="#methode" className="inline-flex items-center justify-center text-[15px] font-semibold text-navy/68 transition-colors hover:text-navy">
-                  Voir la méthode
-                  <ArrowRight className="ml-2 size-4" />
-                </Link>
-              </div>
+          <div className="of-duo">
+            <p className="of-duo-1">
+              PulseoAI accompagne les entreprises qui veulent être citées, comprises et recommandées dans ChatGPT, Gemini, Perplexity, Google AI Overviews et les nouveaux parcours de recherche.
+            </p>
+            <p className="of-duo-2">
+              Si votre marque n’est pas citée dans les réponses, vos concurrents prennent la demande avant même le clic. Le SEO aide à être trouvé. Le GEO aide à être cité et recommandé au bon moment.
+            </p>
+          </div>
 
-              <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-2">
-                <HeroChecklist label="Référencement IA" />
-                <HeroChecklist label="Google + IA" />
-                <HeroChecklist label="Suivi mensuel" />
-                <HeroChecklist label="Sources citées" />
-                <HeroChecklist label="Plan d’action clair" />
-              </div>
-            </div>
+          <div className="of-cta">
+            <Link href="/contact" className="of-btn of-btn-1">
+              Obtenir un audit
+            </Link>
+            <Link href="#methode" className="of-btn of-btn-2">
+              Voir la méthode
+            </Link>
+          </div>
 
-            <div className="rounded-[30px] border border-[#DEE6F3] bg-white p-5 shadow-[0_20px_46px_rgba(15,23,42,0.06)] sm:p-6">
-              <div className="flex items-center justify-between">
-                <h2 className="text-[18px] font-semibold tracking-[-0.03em] text-navy">Ce que PulseoAI mesure</h2>
-                <span className="rounded-full border border-[#DDE6F6] bg-[#F8FAFF] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-cyan">
-                  Avant / après
-                </span>
-              </div>
-
-              <div className="mt-5 grid gap-3 sm:grid-cols-2">
-                <div className="rounded-[22px] border border-[#E4EAF5] bg-[#FBFCFF] p-4">
-                  <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-navy/42">Avant</p>
-                  <p className="mt-2 text-[18px] font-semibold tracking-[-0.03em] text-navy">Votre marque absente</p>
-                  <p className="mt-2 text-[14px] leading-6 text-navy/58">Peu citée dans ChatGPT, Gemini ou les autres réponses IA.</p>
-                </div>
-                <div className="rounded-[22px] border border-[#D6E2FB] bg-[linear-gradient(180deg,#EEF4FF_0%,#F7FAFF_100%)] p-4">
-                  <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-cyan">Après</p>
-                  <p className="mt-2 text-[18px] font-semibold tracking-[-0.03em] text-navy">Votre marque comprise</p>
-                  <p className="mt-2 text-[14px] leading-6 text-navy/58">Citations IA, sources citées et positions suivies chaque mois.</p>
-                </div>
-              </div>
-
-              <div className="mt-5 space-y-3">
-                {[
-                  "Prompts clients testés",
-                  "Concurrents identifiés",
-                  "Sources prioritaires",
-                ].map((item) => (
-                  <div key={item} className="flex items-center justify-between rounded-[18px] border border-[#E6ECF6] bg-[#FBFCFE] px-4 py-3">
-                    <span className="text-[14px] font-medium text-navy/74">{item}</span>
-                    <span className="size-2 rounded-full bg-cyan/70" />
-                  </div>
-                ))}
-              </div>
-            </div>
+          <div className="of-chips">
+            <span className="of-chip">Référencement IA</span>
+            <span className="of-chip">Google + IA</span>
+            <span className="of-chip">Suivi mensuel</span>
+            <span className="of-chip">Sources citées</span>
+            <span className="of-chip">Plan d’action clair</span>
           </div>
         </div>
       </section>
 
-      <section className="bg-white">
-        <div className="mx-auto max-w-[1180px] px-6 py-14 lg:py-16">
-          <div className="max-w-[820px]">
-            <Eyebrow>POUR QUI</Eyebrow>
-            <h2 className="mt-4 text-[30px] font-semibold tracking-[-0.04em] text-navy sm:text-[40px]">
-              Pour qui est faite cette offre SEO / GEO ?
-            </h2>
-            <p className="mt-4 text-[16px] leading-7 text-navy/62">
-              Cette offre s’adresse aux entreprises qui ne veulent plus dépendre uniquement de Google Ads, des plateformes ou du bouche-à-oreille. PME, hôtels, restaurants, commerces, e-commerce ou acteurs B2B : l’objectif est le même, rendre votre marque claire, crédible et visible dans les résultats Google comme dans les réponses IA. Si vous ciblez un marché local, vous pouvez aussi consulter notre page{" "}
-              <Link href="/agence-seo-geo-nantes" className="font-medium text-cyan transition-colors hover:text-cyan-dark">
-                agence SEO / GEO à Nantes
-              </Link>
-              . Pour l’hôtellerie, nous détaillons également notre accompagnement{" "}
-              <Link href="/geo-hotellerie" className="font-medium text-cyan transition-colors hover:text-cyan-dark">
-                GEO hôtellerie
-              </Link>
-              .
-            </p>
-          </div>
+      {/* --------------------------- POUR QUI -------------------------- */}
+      <section className="of">
+        <div className="of-inner">
+          <h2>
+            Pour qui est faite cette offre{" "}
+            <span className="of-m of-m2">SEO / GEO</span> ?
+          </h2>
+          <p className="of-lead">
+            Cette offre s’adresse aux entreprises qui ne veulent plus dépendre uniquement de Google Ads, des plateformes ou du bouche-à-oreille. PME, hôtels, restaurants, commerces, e-commerce ou acteurs B2B : l’objectif est le même, rendre votre marque claire, crédible et visible dans les résultats Google comme dans les réponses IA. Si vous ciblez un marché local, vous pouvez aussi consulter notre page{" "}
+            <Link href="/agence-seo-geo-nantes">agence SEO / GEO à Nantes</Link>
+            . Pour l’hôtellerie, nous détaillons également notre accompagnement{" "}
+            <Link href="/geo-hotellerie">GEO hôtellerie</Link>
+            .
+          </p>
 
-          <div className="mt-7 flex flex-wrap gap-3">
+          <div className="of-tags">
             {[
               "PME",
               "Hôtels",
@@ -402,10 +874,7 @@ export default function OffrePage() {
               "Entreprises B2B",
               "Marques visibles sur Google et dans les IA",
             ].map((item) => (
-              <span
-                key={item}
-                className="rounded-full border border-[#DEE6F3] bg-[#FBFCFF] px-4 py-2 text-[13px] font-medium text-navy/72 shadow-sm"
-              >
+              <span key={item} className="of-tag">
                 {item}
               </span>
             ))}
@@ -413,478 +882,232 @@ export default function OffrePage() {
         </div>
       </section>
 
-      <section className="bg-[#F7F9FD]">
-        <div className="mx-auto max-w-[1180px] px-6 py-14 lg:py-16">
-          <div className="grid gap-8 lg:grid-cols-[0.56fr_0.44fr] lg:items-start">
-            <div className="max-w-[680px]">
-              <Eyebrow>LE CONTEXTE</Eyebrow>
-              <h2 className="mt-4 text-[30px] font-semibold tracking-[-0.04em] text-navy sm:text-[40px]">
-                Vos clients ne cherchent plus seulement sur Google.
-              </h2>
-              <p className="mt-4 text-[16px] leading-7 text-navy/62">
-                Aujourd’hui, une partie de la demande se joue directement dans les réponses générées par les IA. Un prospect peut demander à ChatGPT quelle agence choisir, quel prestataire contacter ou quelle marque comparer, sans jamais visiter Google. Pour comprendre comment{" "}
-                <Link href="/blog/apparaitre-chatgpt-client-cherche-entreprise" className="font-medium text-cyan transition-colors hover:text-cyan-dark">
-                  apparaître dans ChatGPT
-                </Link>
-                , ou ce que changent réellement les{" "}
-                <Link href="/blog/google-ai-overviews-entreprises-comprendre" className="font-medium text-cyan transition-colors hover:text-cyan-dark">
-                  Google AI Overviews
-                </Link>
-                , il faut penser référencement IA et non plus seulement positions Google.
-              </p>
-              <div className="mt-5 rounded-[22px] border border-[#D6E2FB] bg-[linear-gradient(180deg,#F5F8FF_0%,#FBFCFF_100%)] px-5 py-4">
-                <p className="text-[16px] font-medium leading-7 text-navy">
-                  Le problème n’est pas seulement d’être bien positionné. Le problème, c’est d’être cité au moment où la décision se forme et d’être recommandé par les IA quand la demande devient qualifiée.
-                </p>
-              </div>
-            </div>
+      {/* -------------------------- LE CONTEXTE ------------------------ */}
+      <section className="of">
+        <div className="of-inner">
+          <h2>
+            Vos clients ne cherchent plus seulement sur{" "}
+            <span className="of-m of-m3">Google</span>.
+          </h2>
+          <p className="of-lead">
+            Aujourd’hui, une partie de la demande se joue directement dans les réponses générées par les IA. Un prospect peut demander à ChatGPT quelle agence choisir, quel prestataire contacter ou quelle marque comparer, sans jamais visiter Google. Pour comprendre comment{" "}
+            <Link href="/blog/apparaitre-chatgpt-client-cherche-entreprise">apparaître dans ChatGPT</Link>
+            , ou ce que changent réellement les{" "}
+            <Link href="/blog/google-ai-overviews-entreprises-comprendre">Google AI Overviews</Link>
+            , il faut penser référencement IA et non plus seulement positions Google.
+          </p>
 
-            <div className="space-y-3">
-              {[
-                "Google reste un canal clé",
-                "Les moteurs IA deviennent des intermédiaires de confiance",
-                "Les marques citées gagnent l’attention avant les autres",
-              ].map((item) => (
-                <div key={item} className="flex items-center gap-3 rounded-[18px] border border-[#E4EAF5] bg-[#FAFCFF] px-4 py-3.5">
-                  <span className="flex size-8 items-center justify-center rounded-full bg-[#EEF3FF] text-cyan">
-                    <CheckCircle2 className="size-4" />
-                  </span>
-                  <p className="text-[15px] font-medium text-navy/76">{item}</p>
-                </div>
-              ))}
-            </div>
+          <div className="of-points">
+            {[
+              "Google reste un canal clé",
+              "Les moteurs IA deviennent des intermédiaires de confiance",
+              "Les marques citées gagnent l’attention avant les autres",
+            ].map((item, i) => (
+              <p key={item} className={`of-point of-p${i + 1}`}>
+                {item}
+              </p>
+            ))}
+          </div>
+
+          <div className="of-quote">
+            Le problème n’est pas seulement d’être bien positionné. Le problème, c’est d’être cité au moment où la décision se forme et d’être recommandé par les IA quand la demande devient qualifiée.
           </div>
         </div>
       </section>
 
-      <section id="methode" className="bg-white">
-        <div className="mx-auto max-w-[1180px] px-6 py-14 lg:py-16">
-          <div className="max-w-[720px]">
-            <Eyebrow>MÉTHODE</Eyebrow>
-            <h2 className="mt-4 text-[30px] font-semibold tracking-[-0.04em] text-navy sm:text-[40px]">
-              Ce que nous optimisons pour votre référencement IA
-            </h2>
-            <p className="mt-4 text-[16px] leading-7 text-navy/62">
-              Nous combinons audit SEO / GEO, contenus answer-first, données structurées et travail des sources pour rendre votre marque plus visible sur Google et dans les moteurs IA. Si vous voulez voir comment nous cadrons un diagnostic initial, consultez notre guide sur{" "}
-              <Link href="/blog/audit-seo-geo-visibilite-ia" className="font-medium text-cyan transition-colors hover:text-cyan-dark">
-                l’audit SEO / GEO
-              </Link>
-              .
-            </p>
-          </div>
+      {/* ---------------------------- MÉTHODE -------------------------- */}
+      <section id="methode" className="of">
+        <div className="of-inner">
+          <h2>
+            Ce que nous optimisons pour votre{" "}
+            <span className="of-m of-m4">référencement IA</span>
+          </h2>
+          <p className="of-lead">
+            Nous combinons audit SEO / GEO, contenus answer-first, données structurées et travail des sources pour rendre votre marque plus visible sur Google et dans les moteurs IA. Si vous voulez voir comment nous cadrons un diagnostic initial, consultez notre guide sur{" "}
+            <Link href="/blog/audit-seo-geo-visibilite-ia">l’audit SEO / GEO</Link>
+            .
+          </p>
+        </div>
 
-          <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-            <PillarCard
-              icon={Search}
-              title="Audit SEO / GEO"
-              text="Nous analysons votre visibilité actuelle sur Google, ChatGPT, Gemini, Perplexity et les requêtes qui comptent vraiment pour votre business."
-              points={[
-                "prompts clients testés",
-                "présence IA",
-                "positions Google",
-                "concurrents visibles",
-              ]}
-            />
-            <PillarCard
-              icon={FileText}
-              title="Contenus answer-first"
-              text="Nous structurons vos pages pour répondre clairement aux questions que vos clients posent déjà aux moteurs de recherche et aux IA."
-              points={["pages services", "FAQ", "guides", "comparatifs", "réponses directes"]}
-            />
-            <PillarCard
-              icon={Compass}
-              title="Entités et positionnement"
-              text="Nous clarifions qui vous êtes, ce que vous faites, pour qui, où, avec quelles preuves et sur quels sujets vous méritez d’être cité."
-              points={[
-                "clarté de l’offre",
-                "preuves de confiance",
-                "territoires sémantiques",
-                "positionnement lisible",
-              ]}
-            />
-            <PillarCard
-              icon={Globe}
-              title="Schema.org et données structurées"
-              text="Nous renforçons la compréhension technique de votre site avec un balisage propre, utile et cohérent avec vos pages visibles."
-              points={[
-                "schema.org",
-                "métadonnées utiles",
-                "cohérence des entités",
-                "structure technique lisible",
-              ]}
-            />
-            <PillarCard
-              icon={Store}
-              title="Citations et sources de confiance"
-              text="Nous travaillons les sources que les IA peuvent utiliser pour comprendre votre marque : site, contenus, profils, annuaires, plateformes, mentions et écosystème externe."
-              points={["fiches locales", "annuaires", "contenus externes", "avis", "mentions de marque"]}
-            />
-            <PillarCard
-              icon={BarChart3}
-              title="Monitoring mensuel"
-              text="Nous suivons vos positions Google, vos citations IA, les concurrents visibles à votre place et les actions à prioriser mois après mois."
-              points={["évolution mensuelle", "requêtes suivies", "actions réalisées", "prochaines priorités"]}
-            />
-          </div>
+        <div className="of-cards">
+          {PILLARS.map((card) => (
+            <div key={card.title} className={`of-card ${card.cls}`}>
+              <h3>
+                <span>{card.title}</span>
+              </h3>
+              <p>{card.text}</p>
+              <ul>
+                {card.points.map((point) => (
+                  <li key={point}>{point}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
 
-          <p className="mt-6 max-w-[820px] text-[15px] leading-7 text-navy/62">
+        <div className="of-inner">
+          <p className="of-note">
             Quand le sujet devient plus technique, nous pouvons aussi travailler les fichiers et signaux utilisés par les modèles. Vous pouvez lire notre guide pratique sur{" "}
-            <Link href="/blog/llms-txt-guide-pratique" className="font-medium text-cyan transition-colors hover:text-cyan-dark">
-              llms.txt
-            </Link>
+            <Link href="/blog/llms-txt-guide-pratique">llms.txt</Link>
             {" "}pour comprendre cette couche complémentaire.
           </p>
         </div>
       </section>
 
-      <section className="bg-white">
-        <div className="mx-auto max-w-[1180px] px-6 py-14 lg:py-16">
-          <div className="grid items-start gap-8 lg:grid-cols-[0.46fr_0.54fr] lg:gap-10">
-            <div className="max-w-[520px]">
-              <Eyebrow>LIVRABLES</Eyebrow>
-              <h2 className="mt-4 text-[30px] font-semibold tracking-[-0.04em] text-navy sm:text-[40px]">
-                Chaque mois, vous savez ce qui a bougé.
-              </h2>
-              <p className="mt-4 text-[16px] leading-7 text-navy/62">
-                Pas de reporting illisible. Vous recevez une lecture claire de votre visibilité SEO / GEO : où vous apparaissez, où vous êtes absent, quels moteurs IA vous citent, qui prend la place et quelles actions sont prioritaires.
-              </p>
+      {/* -------------------------- LIVRABLES -------------------------- */}
+      <section className="of">
+        <div className="of-inner">
+          <h2>
+            Chaque mois, vous savez{" "}
+            <span className="of-m of-m5">ce qui a bougé</span>.
+          </h2>
+          <p className="of-lead">
+            Pas de reporting illisible. Vous recevez une lecture claire de votre visibilité SEO / GEO : où vous apparaissez, où vous êtes absent, quels moteurs IA vous citent, qui prend la place et quelles actions sont prioritaires.
+          </p>
 
-              <div className="mt-6 grid gap-3 sm:grid-cols-2">
-                {[
-                  "Rapport de visibilité SEO / GEO",
-                  "Liste des prompts clients suivis",
-                  "Analyse des concurrents cités",
-                  "Sources citées par les IA",
-                  "Actions réalisées",
-                  "Roadmap du mois suivant",
-                ].map((item) => (
-                  <DeliverableCard key={item} title={item} />
-                ))}
-              </div>
-            </div>
+          <div className="of-deliv">
+            {[
+              "Rapport de visibilité SEO / GEO",
+              "Liste des prompts clients suivis",
+              "Analyse des concurrents cités",
+              "Sources citées par les IA",
+              "Actions réalisées",
+              "Roadmap du mois suivant",
+            ].map((item) => (
+              <div key={item}>{item}</div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-            <div className="overflow-hidden rounded-[30px] border border-[#DEE6F3] bg-white shadow-[0_20px_46px_rgba(15,23,42,0.06)]">
-              <div className="flex h-11 items-center bg-[#11182C] px-5">
-                <div className="flex items-center gap-2">
-                  <span className="size-3 rounded-full bg-[#FF5F57]" />
-                  <span className="size-3 rounded-full bg-[#FEBC2E]" />
-                  <span className="size-3 rounded-full bg-[#28C840]" />
-                </div>
-              </div>
-              <div className="p-5 sm:p-6">
-                <div className="grid gap-3 sm:grid-cols-3">
-                  {[
-                      { value: "71%", label: "Score global SEO / GEO", tone: "bg-[#EDF3FF] text-cyan" },
-                      { value: "18", label: "Citations IA", tone: "bg-[#F5F8FF] text-[#2341A5]" },
-                      { value: "12", label: "Sources citées", tone: "bg-[#F8FAFF] text-navy" },
-                  ].map((item) => (
-                    <div key={item.label} className={`rounded-[22px] px-4 py-4 text-center ${item.tone}`}>
-                      <p className="text-[34px] font-semibold tracking-[-0.05em]">{item.value}</p>
-                      <p className="mt-1 text-[13px] font-medium text-navy/66">{item.label}</p>
-                    </div>
+      {/* --------------------------- SEO + GEO ------------------------- */}
+      <section className="of">
+        <div className="of-inner">
+          <h2>
+            Référencement IA, GEO et SEO classique :{" "}
+            <span className="of-m of-m6">quelle différence</span> ?
+          </h2>
+          <p className="of-lead">
+            Le SEO classique aide votre site à apparaître dans Google. Le référencement IA et le GEO ajoutent une couche : rendre votre marque compréhensible, crédible et citable par les moteurs IA comme ChatGPT, Gemini, Perplexity ou Google AI Overviews.
+          </p>
+
+          <div className="of-compare">
+            <div className="of-cmp-a">
+              <div className="of-cmp-box">
+                <p className="of-compare-h">
+                  <span>SEO classique</span>
+                </p>
+                <ul>
+                  {["indexation", "pages optimisées", "mots-clés", "maillage interne", "autorité"].map((item) => (
+                    <li key={item}>{item}</li>
                   ))}
-                </div>
-
-                <div className="mt-5 grid gap-5 lg:grid-cols-[0.9fr_1.1fr]">
-                  <div>
-                    <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-navy/42">
-                      Concurrents cités
-                    </p>
-                    <div className="mt-3 space-y-2.5">
-                      {[
-                        { name: "Votre marque", rank: "#2", active: true },
-                        { name: "Concurrent A", rank: "#1", active: false },
-                        { name: "Concurrent B", rank: "#3", active: false },
-                      ].map((item) => (
-                        <div
-                          key={item.name}
-                          className={`flex items-center justify-between rounded-[16px] border px-4 py-3 ${
-                            item.active ? "border-[#C9D7FA] bg-[linear-gradient(180deg,#EEF3FF_0%,#E9F1FF_100%)]" : "border-[#E6ECF6] bg-[#FBFCFE]"
-                          }`}
-                        >
-                          <span className={`text-[14px] font-semibold ${item.active ? "text-navy" : "text-navy/72"}`}>{item.name}</span>
-                          <span className={`text-[13px] font-semibold ${item.active ? "text-cyan" : "text-navy/56"}`}>{item.rank}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div>
-                    <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-navy/42">
-                      Tendance mensuelle
-                    </p>
-                    <div className="mt-3 rounded-[20px] border border-[#E6ECF6] bg-[#FBFCFE] p-4">
-                      <div className="flex h-[96px] items-end gap-2">
-                        {[28, 34, 39, 48, 53, 62, 68, 74].map((value) => (
-                          <div
-                            key={value}
-                            className="flex-1 rounded-t-[10px] bg-[linear-gradient(180deg,#A884FF_0%,#6F88FF_55%,#4E71FF_100%)]"
-                            style={{ height: `${value}%` }}
-                          />
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="mt-5 rounded-[18px] border border-[#E6ECF6] bg-[#FBFCFE] px-4 py-4 text-[13px] leading-6 text-navy/58">
-                  Vous voyez immédiatement vos requêtes suivies, les concurrents cités, les sources citées par les IA et les prochaines actions à traiter pour générer plus de demandes qualifiées.
-                </div>
+                </ul>
               </div>
+              <p className="of-cmp-eq">SEO = être trouvé.</p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-[#F7F9FD]">
-        <div className="mx-auto max-w-[1180px] px-6 py-14 lg:py-16">
-          <div className="max-w-[760px]">
-            <Eyebrow>POUR QUI</Eyebrow>
-            <h2 className="mt-4 text-[30px] font-semibold tracking-[-0.04em] text-navy sm:text-[40px]">
-              Secteurs accompagnés par notre agence GEO.
-            </h2>
-            <p className="mt-4 text-[16px] leading-7 text-navy/62">
-              Notre expertise historique en hôtellerie reste forte, mais cette offre nationale s’adresse aussi aux entreprises qui veulent améliorer leur visibilité Google, leur référencement IA et leur présence dans les réponses de ChatGPT, Gemini ou Perplexity.
-            </p>
-          </div>
-
-          <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-            <SectorCard
-              icon={Briefcase}
-              title="PME et services B2B"
-              text="Être cité quand un prospect cherche un prestataire, une agence, un cabinet ou un expert sur Google ou dans les réponses IA."
-            />
-            <SectorCard
-              icon={Rocket}
-              title="E-commerce et marques"
-              text="Apparaître dans les comparatifs, recommandations produits et recherches de marques, avec plus de visibilité organique."
-            />
-            <SectorCard
-              icon={Building2}
-              title="Hôtels et hébergements"
-              text="Être recommandé sur les requêtes de séjour, réservation, spa, séminaire ou expérience locale."
-            />
-            <SectorCard
-              icon={UtensilsCrossed}
-              title="Restaurants et commerces"
-              text="Être visible quand les clients demandent où manger, quoi acheter ou quel commerce choisir."
-            />
-            <SectorCard
-              icon={Store}
-              title="Services locaux"
-              text="Renforcer votre présence sur Google, les fiches locales, les annuaires et les réponses IA pour être recommandé localement."
-            />
-            <SectorCard
-              icon={Target}
-              title="Entreprises en croissance"
-              text="Construire une présence durable avant que vos concurrents ne prennent tout l’espace."
-            />
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-white">
-        <div className="mx-auto max-w-[1180px] px-6 py-14 lg:py-16">
-          <div className="max-w-[760px]">
-            <Eyebrow>SEO + GEO</Eyebrow>
-            <h2 className="mt-4 text-[30px] font-semibold tracking-[-0.04em] text-navy sm:text-[40px]">
-              Référencement IA, GEO et SEO classique : quelle différence ?
-            </h2>
-            <p className="mt-4 text-[16px] leading-7 text-navy/62">
-              Le SEO classique aide votre site à apparaître dans Google. Le référencement IA et le GEO ajoutent une couche : rendre votre marque compréhensible, crédible et citable par les moteurs IA comme ChatGPT, Gemini, Perplexity ou Google AI Overviews.
-            </p>
-          </div>
-
-          <div className="mt-8 grid gap-4 lg:grid-cols-2">
-            <div className="rounded-[24px] border border-[#DEE6F3] bg-[#FBFCFF] p-5 shadow-[0_12px_28px_rgba(15,23,42,0.04)]">
-              <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-navy/42">SEO classique</p>
-              <ul className="mt-4 space-y-2.5">
-                {["indexation", "pages optimisées", "mots-clés", "maillage interne", "autorité"].map((item) => (
-                  <li key={item} className="flex items-start gap-2 text-[14px] text-navy/76">
-                    <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-cyan" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="rounded-[24px] border border-[#D6E2FB] bg-[linear-gradient(180deg,#F5F8FF_0%,#FBFCFF_100%)] p-5 shadow-[0_12px_28px_rgba(15,23,42,0.04)]">
-              <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-cyan">Référencement IA / GEO</p>
-              <ul className="mt-4 space-y-2.5">
-                {["réponses IA", "entités", "citations", "sources utilisées par les LLM", "prompts clients", "présence dans ChatGPT, Gemini, Perplexity"].map((item) => (
-                  <li key={item} className="flex items-start gap-2 text-[14px] text-navy/76">
-                    <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-cyan" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
+            <div className="of-cmp-b">
+              <div className="of-cmp-box">
+                <p className="of-compare-h">
+                  <span>Référencement IA / GEO</span>
+                </p>
+                <ul>
+                  {["réponses IA", "entités", "citations", "sources utilisées par les LLM", "prompts clients", "présence dans ChatGPT, Gemini, Perplexity"].map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+              <p className="of-cmp-eq">GEO = être cité.</p>
             </div>
           </div>
 
-          <div className="mt-6 grid gap-4 sm:grid-cols-2">
-            <div className="rounded-[20px] border border-[#E4EAF5] bg-[#FBFCFE] px-5 py-4 text-[15px] font-medium text-navy">
-              SEO = être trouvé.
-            </div>
-            <div className="rounded-[20px] border border-[#D6E2FB] bg-[linear-gradient(180deg,#EEF4FF_0%,#F8FAFF_100%)] px-5 py-4 text-[15px] font-medium text-navy">
-              GEO = être cité.
-            </div>
-          </div>
-
-          <p className="mt-6 max-w-[820px] text-[15px] leading-7 text-navy/62">
+          <p className="of-note">
             Les deux ne s’opposent pas. Le GEO s’appuie sur les bases SEO, puis les prolonge vers les nouveaux moteurs de réponse. Si vous voulez mesurer votre présence actuelle avant d’agir, vous pouvez{" "}
-            <Link href="/contact" className="font-medium text-cyan transition-colors hover:text-cyan-dark">
-              demander un audit SEO / GEO
-            </Link>
+            <Link href="/contact">demander un audit SEO / GEO</Link>
             .
           </p>
         </div>
       </section>
 
-      <section className="bg-[#F7F9FD]">
-        <div className="mx-auto max-w-[1180px] px-6 py-14 lg:py-16">
-          <div className="max-w-[760px]">
-            <Eyebrow>ACCOMPAGNEMENT</Eyebrow>
-            <h2 className="mt-4 text-[30px] font-semibold tracking-[-0.04em] text-navy sm:text-[40px]">
-              Un accompagnement simple, mensuel et actionnable.
-            </h2>
-          </div>
+      {/* ------------------------- TRANSPARENCE ------------------------ */}
+      <section className="of">
+        <div className="of-inner">
+          <h2>
+            Ce n’est pas une{" "}
+            <span className="of-m of-m7">promesse magique</span>.
+          </h2>
+          <p className="of-lead">
+            Les moteurs IA ne se manipulent pas avec une astuce. Ils croisent les contenus, les sources, les signaux de confiance, les mentions et la cohérence de votre présence en ligne. Le rôle de PulseoAI est de rendre cette visibilité plus claire, plus mesurable et plus crédible.
+          </p>
 
-          <div className="relative mt-8">
-            <div className="pointer-events-none absolute left-[12%] right-[12%] top-1/2 hidden h-px -translate-y-1/2 bg-[linear-gradient(90deg,rgba(37,71,208,0.14),rgba(37,71,208,0.03),rgba(37,71,208,0.14))] lg:block" />
-            <div className="grid gap-4 lg:grid-cols-4">
-              <ProcessCard step="Audit initial" title="Audit initial" text="Nous testons votre présence sur Google et dans les moteurs IA." />
-              <ProcessCard step="Plan d’action" title="Plan d’action" text="Nous priorisons les pages, contenus, sources et optimisations à traiter pour améliorer votre visibilité IA entreprise." />
-              <ProcessCard step="Mise en place" title="Mise en place" text="Nous produisons, optimisons et renforçons les signaux utiles pour Google et les moteurs IA." />
-              <ProcessCard step="Suivi mensuel" title="Suivi mensuel" text="Nous mesurons les progrès, les citations IA et les demandes qualifiées générées." />
-            </div>
-          </div>
-
-          <div className="mt-7">
-            <Link href="/contact" className="inline-flex items-center text-[15px] font-semibold text-cyan transition-opacity hover:opacity-80">
-              Obtenir un audit
-              <ArrowRight className="ml-2 size-4" />
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-white">
-        <div className="mx-auto max-w-[1180px] px-6 py-14 lg:py-16">
-          <div className="max-w-[760px]">
-            <Eyebrow>TRANSPARENCE</Eyebrow>
-            <h2 className="mt-4 text-[30px] font-semibold tracking-[-0.04em] text-navy sm:text-[40px]">
-              Ce n’est pas une promesse magique.
-            </h2>
-            <p className="mt-4 text-[16px] leading-7 text-navy/62">
-              Les moteurs IA ne se manipulent pas avec une astuce. Ils croisent les contenus, les sources, les signaux de confiance, les mentions et la cohérence de votre présence en ligne. Le rôle de PulseoAI est de rendre cette visibilité plus claire, plus mesurable et plus crédible.
-            </p>
-          </div>
-
-          <div className="mt-8 grid gap-4 md:grid-cols-3">
+          <div className="of-nots">
             {[
               "Pas d’achat de visibilité artificielle",
               "Pas de promesse de première place garantie",
               "Pas de reporting incompréhensible",
-            ].map((item) => (
-              <div key={item} className="rounded-[22px] border border-[#DEE6F3] bg-[#FBFCFF] p-5 shadow-[0_10px_24px_rgba(15,23,42,0.04)]">
-                <p className="text-[16px] font-semibold tracking-[-0.02em] text-navy">{item}</p>
-              </div>
+            ].map((item, i) => (
+              <p key={item} className={`of-n${i + 1}`}>
+                {item}
+              </p>
             ))}
           </div>
 
-          <div className="mt-6 rounded-[22px] border border-[#D6E2FB] bg-[linear-gradient(180deg,#F5F8FF_0%,#FBFCFF_100%)] px-5 py-4 text-[15px] leading-7 text-navy/72">
+          <p className="of-note">
             Notre travail consiste à rendre votre entreprise plus claire, plus crédible et plus facile à citer, pour renforcer votre acquisition organique sur Google et dans les réponses IA.
-          </div>
+          </p>
         </div>
       </section>
 
-      <section className="bg-[#F7F9FD]">
-        <div className="mx-auto max-w-[980px] px-6 py-14 lg:py-16">
-          <div className="max-w-[760px]">
-            <Eyebrow>FAQ</Eyebrow>
-            <h2 className="mt-4 text-[30px] font-semibold tracking-[-0.04em] text-navy sm:text-[40px]">
-              Questions fréquentes sur notre offre SEO / GEO
-            </h2>
-          </div>
+      {/* ------------------------------ FAQ ---------------------------- */}
+      <section className="of">
+        <div className="of-inner">
+          <h2>
+            <span className="of-m of-m1">Questions fréquentes</span> sur notre offre SEO / GEO
+          </h2>
+        </div>
 
-          <div className="mt-8 space-y-3">
-            {offreFaqItems.map((item) => (
-              <details
-                key={item.question}
-                className="group rounded-[22px] border border-[#DEE6F3] bg-white px-5 py-4 shadow-[0_12px_28px_rgba(15,23,42,0.04)]"
-              >
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-[16px] font-semibold text-navy">
-                  <span>{item.question}</span>
-                  <span className="text-cyan transition-transform group-open:rotate-45">+</span>
-                </summary>
-                <p className="mt-4 max-w-[78ch] text-[15px] leading-7 text-navy/68">
-                  {item.answer}
-                </p>
-              </details>
-            ))}
-          </div>
+        <div className="of-faq">
+          {offreFaqItems.map((item) => (
+            <details key={item.question}>
+              <summary>
+                <span>{item.question}</span>
+                <span aria-hidden>+</span>
+              </summary>
+              <p>{item.answer}</p>
+            </details>
+          ))}
         </div>
       </section>
 
-      <section className="bg-white">
-        <div className="mx-auto max-w-[1180px] px-6 py-14 lg:py-16">
-          <div className="overflow-hidden rounded-[34px] border border-[#1D2A52] bg-[linear-gradient(135deg,#0F1730_0%,#152247_60%,#1B2E61_100%)] p-7 text-white shadow-[0_26px_60px_rgba(15,23,42,0.18)] sm:p-8">
-            <div className="grid gap-6 lg:grid-cols-[1fr_0.82fr] lg:items-center">
-              <div>
-                <Eyebrow>AUDIT</Eyebrow>
-                <h2 className="mt-5 max-w-[14ch] text-[30px] font-semibold tracking-[-0.04em] text-white sm:text-[40px]">
-                  Vous voulez savoir si votre entreprise est citée par les IA ?
-                </h2>
-                <p className="mt-4 max-w-[620px] text-[15px] leading-7 text-white/74">
-                  PulseoAI teste vos requêtes stratégiques, vos concurrents, vos sources et votre visibilité actuelle sur Google et dans les moteurs IA pour vous aider à apparaître dans ChatGPT et à capter plus de demandes qualifiées.
-                </p>
-                <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-                  <Link href="/contact" className="w-full sm:w-auto">
-                    <Button className="h-12 w-full rounded-full bg-white px-6 text-[15px] font-semibold text-navy hover:bg-white/90 sm:w-auto">
-                      Obtenir un audit
-                      <ArrowRight className="ml-2 size-4" />
-                    </Button>
-                  </Link>
-                  <Link href="/contact" className="inline-flex items-center justify-center text-[14px] font-semibold text-white/82 transition-opacity hover:opacity-80">
-                    Nous contacter
-                    <ArrowRight className="ml-2 size-4" />
-                  </Link>
-                </div>
-              </div>
+      {/* ----------------- AUDIT, formulaire identique home ------------- */}
+      <section className="of">
+        <div className="of-form-head">
+          <Image
+            src="/illustrations/VHl73R9s.png"
+            alt="Mascotte lion qui invite à demander un audit"
+            width={1536}
+            height={1536}
+            loading="lazy"
+            className="of-lion"
+          />
+          <h2>
+            Vous voulez savoir si votre entreprise est{" "}
+            <span className="of-m of-m2">citée par les IA</span> ?
+          </h2>
+          <p className="of-lead">
+            PulseoAI teste vos requêtes stratégiques, vos concurrents, vos sources et votre visibilité actuelle sur Google et dans les moteurs IA pour vous aider à apparaître dans ChatGPT et à capter plus de demandes qualifiées.
+          </p>
+        </div>
 
-              <div className="grid gap-3 sm:grid-cols-2">
-                {[
-                  {
-                    icon: Mail,
-                    title: "Prompts testés",
-                    text: "Les requêtes qui déclenchent la demande.",
-                  },
-                  {
-                    icon: Target,
-                    title: "Concurrents identifiés",
-                    text: "Qui apparaît avant vous dans les réponses.",
-                  },
-                  {
-                    icon: FileText,
-                    title: "Sources analysées",
-                    text: "Les contenus, fiches et mentions qui comptent.",
-                  },
-                  {
-                    icon: Zap,
-                    title: "Plan d’action priorisé",
-                    text: "Les actions utiles à mener tout de suite.",
-                  },
-                ].map(({ icon: Icon, title, text }) => (
-                  <div key={title} className="rounded-[22px] border border-white/10 bg-white/7 p-4 backdrop-blur-sm">
-                    <div className="flex size-9 items-center justify-center rounded-[16px] bg-white/10">
-                      <Icon className="size-4 text-white" />
-                    </div>
-                    <p className="mt-3 text-[14px] font-semibold">{title}</p>
-                    <p className="mt-1.5 text-[13px] leading-6 text-white/72">{text}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
+        <div className="of-form-wrap">
+          <ContactForm />
+        </div>
+
+        <div className="of-inner">
+          <p className="of-note">
+            Vous préférez échanger de vive voix ? Vous pouvez aussi{" "}
+            <Link href="/contact">nous contacter</Link>
+            {" "}directement.
+          </p>
         </div>
       </section>
     </>

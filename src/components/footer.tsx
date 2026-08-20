@@ -7,6 +7,7 @@ const footerNav = {
     { name: "Notre offre", href: "/offre" },
     { name: "Agence SEO / GEO Nantes", href: "/agence-seo-geo-nantes" },
     { name: "GEO Hôtellerie", href: "/geo-hotellerie" },
+    { name: "Recruter son agent IA", href: "/agents-ia" },
     { name: "Audit SEO / GEO", href: "/contact" },
     { name: "Référencement IA", href: "/offre" },
     { name: "Monitoring IA", href: "/offre" },
@@ -36,7 +37,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="mt-4 text-[14px] leading-7 text-white/68">
-              PulseoAI, agence SEO / GEO. Nous aidons les entreprises à être visibles sur Google et dans les réponses IA.
+              PulseoAI, agence SEO / GEO. Nous aidons les entreprises à être visibles sur Google et dans les réponses IA, et nous installons des agents IA dans leurs outils.
             </p>
             <div className="mt-5 flex items-center gap-4">
               <a
@@ -96,6 +97,11 @@ export function Footer() {
               <p>
                 <a href="mailto:contact@pulseoai.fr" className="transition-colors hover:text-cyan">
                   contact@pulseoai.fr
+                </a>
+              </p>
+              <p>
+                <a href="tel:+33695771783" className="transition-colors hover:text-cyan">
+                  06 95 77 17 83
                 </a>
               </p>
               <p>Nantes, France</p>

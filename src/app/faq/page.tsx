@@ -1,21 +1,13 @@
-import type { ElementType, ReactNode } from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
-import {
-  ArrowRight,
-  Bot,
-  ChevronDown,
-  ChevronRight,
-  Clock3,
-  Compass,
-  FileSearch,
-  LineChart,
-} from "lucide-react";
-import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import { ChevronRight } from "lucide-react";
+import { ContactForm } from "@/components/contact-form";
 import { FaqJsonLd } from "@/components/json-ld";
+import { BTN_PLEIN, BTN_CONTOUR, feutre, contourCrayon, contourLeger, PASTELS } from "@/lib/paper-da";
 
 export const metadata: Metadata = {
-  title: "FAQ SEO / GEO | PulseoAI",
+  title: "FAQ SEO / GEO",
   description:
     "Questions fréquentes sur le SEO, le GEO, la visibilité Google, ChatGPT et les moteurs IA. Comprenez comment PulseoAI aide les entreprises à être trouvées, citées et recommandées.",
   openGraph: {
@@ -44,8 +36,9 @@ type FaqItem = {
 };
 
 type FaqSectionData = {
-  pill: string;
+  mark: string;
   title: string;
+  markWord: string;
   intro?: string;
   items: FaqItem[];
 };
@@ -59,27 +52,22 @@ const baseItems: FaqItem[] = [
   {
     question: "Quelle est la différence entre SEO et GEO ?",
     answer:
-      "Le SEO travaille votre visibilité sur Google. Le GEO travaille votre présence dans les réponses IA. Le SEO vous aide à apparaître dans les résultats de recherche. Le GEO vous aide à être mentionné quand un prospect demande quelle entreprise, quelle agence, quel hôtel, quel restaurant ou quelle solution choisir.",
+      "Le SEO travaille votre visibilité dans les résultats de recherche classiques. Le GEO travaille votre présence dans les réponses générées par les IA. Le premier vous aide à être trouvé, le second à être cité.",
   },
   {
     question: "Le GEO remplace-t-il le SEO ?",
     answer:
-      "Non. Le GEO complète le SEO. Un site clair, bien structuré, utile et visible sur Google donne aussi de meilleurs signaux aux moteurs IA. Chez PulseoAI, nous travaillons les deux ensemble : SEO pour Google, GEO pour les réponses IA.",
+      "Non. Le GEO s’appuie sur les fondations du SEO. Un site clair, bien structuré et crédible sur Google envoie aussi de meilleurs signaux aux moteurs IA. Les deux se travaillent ensemble.",
   },
   {
-    question: "Pourquoi le GEO devient-il important ?",
+    question: "Pourquoi mon entreprise devrait-elle apparaître dans les réponses IA ?",
     answer:
-      "Parce que les clients ne cherchent plus seulement sur Google. Ils posent aussi leurs questions à ChatGPT, Gemini, Claude, Perplexity ou Google AI Overviews. Si votre marque n’apparaît pas dans ces réponses, vos concurrents peuvent capter la demande avant même que le prospect visite votre site.",
+      "Parce qu’une partie de vos clients pose désormais ses questions directement à une IA. Si votre marque n’est pas citée à ce moment-là, un concurrent capte la demande avant même que le clic n’existe.",
   },
   {
-    question: "Quels moteurs IA sont concernés ?",
+    question: "Est-ce que le GEO fonctionne pour toutes les entreprises ?",
     answer:
-      "Nous analysons principalement ChatGPT, Gemini, Claude, Perplexity et Google AI Overviews. Selon votre marché, nous pouvons aussi suivre d’autres sources ou assistants utilisés par vos prospects.",
-  },
-  {
-    question: "Comment les IA choisissent-elles les marques qu’elles citent ?",
-    answer:
-      "Les moteurs IA s’appuient sur plusieurs signaux : votre site, vos contenus, vos pages services, vos avis, vos sources externes, vos fiches locales, les mentions de votre marque et la clarté de votre positionnement. Plus ces signaux sont cohérents, plus votre entreprise est facile à comprendre et à recommander.",
+      "Oui, dès lors que vos clients se posent des questions avant d’acheter ou de vous contacter. PME, commerces, hôtels, e-commerce, cabinets et prestataires de services sont concernés.",
   },
 ];
 
@@ -87,55 +75,55 @@ const visibilityItems: FaqItem[] = [
   {
     question: "Comment apparaître dans ChatGPT ?",
     answer:
-      "Il faut rendre votre entreprise compréhensible pour les moteurs IA : pages claires, réponses directes, contenus utiles, sources fiables, avis cohérents, mentions externes et structure éditoriale solide. L’objectif est que ChatGPT comprenne qui vous êtes, ce que vous faites, pour qui vous le faites et pourquoi vous êtes pertinent.",
+      "En rendant votre offre claire, vos contenus structurés, vos entités identifiables et vos sources fiables. Les modèles s’appuient sur ce qu’ils comprennent de vous et sur ce que d’autres sources disent de vous.",
   },
   {
-    question: "Comment savoir si mon entreprise apparaît dans les IA ?",
+    question: "Comment savoir si mon entreprise est citée par les IA ?",
     answer:
-      "Nous testons les prompts que vos prospects peuvent réellement poser : « quelle agence SEO / GEO choisir ? », « meilleur hôtel avec spa à Nantes », « quelle solution pour améliorer ma visibilité IA ? ». Pour chaque requête, nous vérifions si votre marque apparaît, à quelle position, avec quel ton et face à quels concurrents.",
+      "En testant les requêtes que vos clients posent réellement, puis en relevant les marques citées, les sources utilisées et la place que vous occupez. C’est exactement ce que fait un audit SEO / GEO.",
   },
   {
-    question: "Pourquoi mes concurrents apparaissent et pas moi ?",
+    question: "Peut-on forcer une IA à citer une marque ?",
     answer:
-      "Souvent, ce n’est pas parce qu’ils sont meilleurs. C’est parce que les moteurs IA trouvent plus facilement des informations claires, cohérentes et réutilisables à leur sujet. Le travail SEO / GEO consiste justement à renforcer ces signaux pour votre entreprise.",
+      "Non. Il n’existe pas d’astuce pour manipuler une réponse générée. On peut en revanche renforcer tous les signaux qui rendent une marque compréhensible, crédible et facile à recommander.",
   },
   {
-    question: "Est-ce qu’on peut garantir une première position dans ChatGPT ?",
+    question: "Quelles sources les IA utilisent-elles ?",
     answer:
-      "Non. Personne ne peut garantir une première position durable dans une réponse IA. En revanche, on peut améliorer vos signaux, votre clarté, vos sources et votre présence sur les requêtes importantes, puis mesurer votre progression chaque mois.",
+      "Votre site, vos contenus, vos fiches d’entreprise, les annuaires, les plateformes de votre secteur, les avis clients, la presse et les mentions externes. La cohérence entre ces sources compte autant que leur nombre.",
   },
   {
-    question: "Qu’est-ce qu’une citation IA ?",
+    question: "Le llms.txt sert-il vraiment à quelque chose ?",
     answer:
-      "Une citation IA correspond au moment où une IA mentionne votre marque, votre site ou vos contenus dans une réponse. Cela peut être une recommandation directe, une source utilisée ou une mention dans une comparaison.",
+      "C’est une couche complémentaire, pas une solution miracle. Il aide à exposer proprement vos contenus clés, mais il ne remplace pas un site clair, structuré et crédible.",
   },
 ];
 
 const auditItems: FaqItem[] = [
   {
-    question: "Qu’analyse un audit SEO / GEO ?",
+    question: "Qu’est-ce qu’un audit SEO / GEO ?",
     answer:
-      "Un audit SEO / GEO analyse votre visibilité sur Google et dans les moteurs IA. Nous regardons les requêtes importantes, les réponses générées, les concurrents cités, les sources utilisées, vos pages clés, vos contenus, vos avis, vos fiches locales et les priorités d’action.",
+      "C’est une analyse de votre visibilité actuelle sur Google et dans les moteurs IA : requêtes testées, présence ou absence de votre marque, concurrents cités, sources utilisées et priorités d’action.",
   },
   {
-    question: "Comment mesurez-vous la visibilité IA ?",
+    question: "Combien de temps dure un audit ?",
     answer:
-      "Nous suivons plusieurs indicateurs : présence ou absence de votre marque, position dans la réponse, concurrents cités, sources utilisées, ton de la citation et évolution dans le temps. L’objectif est de rendre la visibilité IA mesurable, pas abstraite.",
+      "Le temps de tester vos requêtes stratégiques, d’analyser vos sources et de comparer votre présence à celle de vos concurrents. Vous recevez ensuite un document lisible avec des priorités claires.",
   },
   {
-    question: "À quelle fréquence faut-il suivre les résultats ?",
+    question: "Que contient le rapport d’audit ?",
     answer:
-      "Nous recommandons un suivi mensuel. Les moteurs IA évoluent, les concurrents publient, les sources changent et les requêtes clients bougent. Un monitoring régulier permet d’ajuster la stratégie sans piloter à l’aveugle.",
+      "Les requêtes testées, votre présence dans les réponses IA, les concurrents cités à votre place, les sources utilisées par les modèles, votre visibilité Google et un plan d’action priorisé.",
   },
   {
-    question: "Quels résultats peut-on attendre ?",
+    question: "Faut-il refaire son site pour progresser ?",
     answer:
-      "Les résultats dépendent de votre marché, de votre situation de départ, de vos concurrents et de la régularité du travail. L’objectif est d’augmenter progressivement votre visibilité sur les requêtes qualifiées, vos citations IA et votre capacité à être recommandé.",
+      "Rarement. La plupart du temps, il s’agit de clarifier les pages existantes, de structurer les contenus, de renforcer le balisage et de travailler les sources. Une refonte n’est proposée que si le site bloque réellement.",
   },
   {
     question: "Combien de temps faut-il pour voir les premiers signaux ?",
     answer:
-      "Les premiers signaux peuvent apparaître en quelques semaines, mais une vraie stratégie SEO / GEO se construit sur plusieurs mois. Il faut travailler les contenus, les sources, la structure du site et le suivi des requêtes.",
+      "Les premiers mouvements peuvent apparaître en quelques semaines, mais une progression solide se construit sur plusieurs mois de travail continu sur les contenus, les sources et le suivi.",
   },
 ];
 
@@ -143,122 +131,213 @@ const hospitalityItems: FaqItem[] = [
   {
     question: "Pourquoi le GEO est-il important pour les hôtels ?",
     answer:
-      "Parce que les voyageurs utilisent déjà ChatGPT, Gemini ou Google AI Overviews pour choisir un hôtel, comparer des établissements ou préparer un séjour. Si votre hôtel n’est pas cité, un concurrent peut récupérer la réservation.",
+      "Parce que les voyageurs demandent de plus en plus à une IA quel hôtel choisir. Une réponse générée ne cite que quelques établissements : y figurer change directement le volume de demandes reçues.",
   },
   {
     question: "Le GEO peut-il aider les réservations directes ?",
     answer:
-      "Oui, c’est un des objectifs. Plus votre hôtel est visible sur Google et dans les réponses IA, plus vous pouvez orienter la demande vers votre site officiel et réduire votre dépendance aux OTA comme Booking ou Expedia.",
-  },
-  {
-    question: "Le GEO peut-il réduire ma dépendance à Booking et aux OTA ?",
-    answer:
-      "Le GEO ne supprime pas les OTA, mais il aide à développer un canal de visibilité plus direct. En travaillant votre site, vos contenus, vos avis, vos sources locales et votre présence IA, vous augmentez vos chances d’être trouvé avant que le voyageur passe par une plateforme.",
+      "L’objectif est d’orienter la demande vers votre site officiel plutôt que vers les plateformes. Plus votre hôtel est visible et crédible sur les requêtes à forte intention, plus vous réduisez votre dépendance aux OTA.",
   },
   {
     question: "Un petit hôtel indépendant peut-il faire du GEO ?",
     answer:
-      "Oui. Un hôtel indépendant peut se différencier avec des contenus précis, des avis solides, une fiche Google Business Profile optimisée, des sources fiables et des réponses claires aux requêtes voyageurs.",
+      "Oui. Les établissements indépendants se différencient en travaillant leurs contenus, leurs avis, leur Google Business Profile, leurs sources et leur présence locale.",
   },
   {
     question: "Quelles requêtes testez-vous pour un hôtel ?",
     answer:
-      "Nous testons des requêtes comme « meilleur hôtel avec spa à Nantes », « hôtel pour séminaire à Lyon », « hôtel familial proche plage », « hôtel centre-ville avec parking » ou « hôtel à réserver en direct ».",
+      "Les requêtes réelles des voyageurs : spa et bien-être, séminaire et business, famille, localisation, haut de gamme et réservation directe, adaptées à votre ville et à votre positionnement.",
+  },
+  {
+    question: "Travaillez-vous seulement avec les hôtels ?",
+    answer:
+      "Non. L’hôtellerie est un secteur historique de PulseoAI, mais la méthode s’applique aux PME, commerces, e-commerce, cabinets et prestataires de services.",
   },
 ];
 
 const pulseoItems: FaqItem[] = [
   {
-    question: "Qui est PulseoAI ?",
+    question: "Comment se passe un accompagnement avec PulseoAI ?",
     answer:
-      "PulseoAI est une agence SEO / GEO basée à Nantes. Nous aidons les entreprises, hôtels, restaurants, commerces, PME et marques e-commerce à gagner en visibilité sur Google et dans les moteurs IA.",
+      "Un audit initial, un plan d’action priorisé, une mise en place concrète sur vos pages et vos sources, puis un suivi mensuel qui montre ce qui a bougé et ce qui reste à faire.",
   },
   {
-    question: "Pourquoi choisir PulseoAI plutôt qu’une agence SEO classique ?",
+    question: "Que contient le suivi mensuel ?",
     answer:
-      "Parce que nous travaillons à la fois le SEO classique et la visibilité dans les réponses IA. Notre approche ne se limite pas aux positions Google : nous analysons aussi les prompts, les citations, les sources utilisées et les concurrents recommandés par les moteurs IA.",
+      "Vos requêtes suivies, vos citations IA, les concurrents visibles à votre place, les sources utilisées par les modèles, les actions réalisées et la feuille de route du mois suivant.",
   },
   {
-    question: "Travaillez-vous seulement avec les hôtels ?",
+    question: "Faut-il un accès à mon site ?",
     answer:
-      "Non. L’hôtellerie est un secteur fort pour PulseoAI, mais nous accompagnons aussi les restaurants, commerces, services, PME, entreprises B2B et marques e-commerce.",
+      "Selon ce qui est mis en place. Certaines actions se font directement sur votre site, d’autres passent par vos sources externes, vos fiches et vos contenus.",
   },
   {
-    question: "Comment démarrer avec PulseoAI ?",
+    question: "Travaillez-vous avec des entreprises hors de Nantes ?",
     answer:
-      "Le plus simple est de demander un audit. Nous analysons votre visibilité actuelle, vos requêtes prioritaires, vos concurrents cités et les premières actions à mettre en place.",
+      "Oui. PulseoAI accompagne des entreprises partout en France, ainsi qu’en Suisse et au Maroc. Le travail se fait à distance, avec des points réguliers.",
+  },
+  {
+    question: "Promettez-vous une première place garantie ?",
+    answer:
+      "Non. Aucune agence sérieuse ne peut garantir une position dans Google ni une citation dans une réponse générée. Ce qui se pilote, c’est la qualité des signaux et la régularité du travail.",
+  },
+];
+
+const agentItems: FaqItem[] = [
+  {
+    question: "Qu’est-ce qu’un agent IA en entreprise ?",
+    answer:
+      "Un agent IA est un programme qui exécute une tâche de bout en bout dans vos outils, sans qu’on ait besoin de lui parler. Il se déclenche sur un événement, une demande qui arrive, une échéance, un dossier qui change d’état. Il va chercher l’information là où elle se trouve, dans votre boîte mail, votre CRM ou votre base de données, puis il prépare ou exécute l’action. C’est la différence avec un assistant conversationnel, qui attend une question pour répondre.",
+  },
+  {
+    question: "Quelle différence entre un agent IA et ChatGPT ?",
+    answer:
+      "ChatGPT répond quand vous lui écrivez. Un agent IA agit sans qu’on le sollicite. La différence n’est pas l’intelligence du modèle, c’est l’accès et le droit d’agir. Un agent est connecté à vos outils, il lit vos données réelles et il produit un résultat concret, un devis préparé, une relance envoyée, une demande qualifiée dans votre CRM. ChatGPT, lui, ne sait rien de votre entreprise tant que vous ne lui copiez pas les informations.",
+  },
+  {
+    question: "Quelle différence entre un agent IA et une automatisation classique ?",
+    answer:
+      "Une automatisation classique suit une règle fixe, si ceci alors cela. Elle ne sait rien faire d’autre que ce qui a été prévu. Un agent IA comprend le contexte, interprète une demande formulée librement, et s’adapte aux cas particuliers. Concrètement, une automatisation peut envoyer un mail type à date fixe. Un agent peut lire la demande d’un client, comprendre ce qu’il veut, vérifier l’historique et rédiger une réponse adaptée à sa situation.",
+  },
+  {
+    question: "Comment intégrer l’IA dans les process d’une entreprise ?",
+    answer:
+      "On commence par un seul cas, pas par une refonte globale. On identifie la tâche qui coûte le plus de temps et qui présente le moins de risque, on construit l’agent autour de vos outils existants, on le teste sur vos cas réels, puis on le met en production. Les autres agents viennent ensuite, une fois que le premier a fait ses preuves. Intégrer l’IA ne veut pas dire changer votre façon de travailler, mais retirer de votre quotidien ce qui n’a jamais eu besoin d’un humain.",
+  },
+  {
+    question: "Quelles tâches peut-on automatiser avec un agent IA ?",
+    answer:
+      "Toutes les tâches répétitives qui reposent sur de l’information disponible dans vos outils. Les plus fréquentes chez les PME sont la relance des factures impayées, la qualification des demandes entrantes, la préparation de devis, le tri et le résumé de la boîte mail, la réponse de premier niveau au support client, la mise à jour de données entre plusieurs logiciels et la préparation de rapports. La règle est simple, si la tâche demande de lire, chercher, recouper et préparer, un agent sait la faire.",
+  },
+  {
+    question: "Combien de temps faut-il pour mettre en place un agent IA ?",
+    answer:
+      "Comptez environ un mois entre le premier échange et un agent qui tourne réellement dans vos outils. Ce délai couvre le cadrage du cas d’usage, la construction, les tests sur vos données réelles et la mise en production. Le suivi, lui, ne s’arrête pas là, l’agent est maintenu et ajusté au fil du temps.",
+  },
+  {
+    question: "Combien coûte un agent IA pour une PME ?",
+    answer:
+      "Le prix dépend du cas, du nombre d’outils à connecter et du niveau d’autonomie souhaité. Un agent qui trie et prépare n’a pas le même coût qu’un agent qui exécute des actions dans plusieurs logiciels. C’est justement l’objet du premier échange, cadrer le besoin réel avant de chiffrer. Le budget est fixé au départ et il ne bouge pas ensuite.",
+  },
+  {
+    question: "Un agent IA peut-il se connecter à mon CRM et à mes outils ?",
+    answer:
+      "Oui. Un agent se branche sur les outils que vous utilisez déjà, messagerie, agenda, CRM, tableurs, outils de facturation, bases de données internes, messageries d’équipe. Le principe est justement de ne rien changer à votre environnement de travail. L’agent vient travailler dans vos outils, pas à côté.",
+  },
+  {
+    question: "Mes données restent-elles confidentielles avec un agent IA ?",
+    answer:
+      "Oui. Vos données sont hébergées sur des serveurs sécurisés dont vous gardez le contrôle. Elles ne sont pas dispersées dans des outils tiers et vous savez à tout moment où elles se trouvent. La confidentialité est un point de cadrage traité dès le départ du projet, avant même la construction de l’agent.",
+  },
+  {
+    question: "Que se passe-t-il si l’agent IA se trompe ?",
+    answer:
+      "On ne livre pas un agent tant qu’il n’est pas fiable. Il est testé sur vos cas réels avant d’entrer en production, et sur les actions sensibles il vous soumet ce qu’il a préparé au lieu de l’envoyer seul. Si quelque chose doit être ajusté, on le reprend jusqu’à ce que ce soit carré, sans surcoût par rapport au budget fixé au départ.",
+  },
+  {
+    question: "Un agent IA remplace-t-il un salarié ?",
+    answer:
+      "Non. Un agent IA retire des tâches, pas des personnes. Ce qu’il prend en charge, ce sont les relances qu’on repousse, le tri qu’on fait le soir, la saisie que personne ne veut faire. Vos équipes récupèrent le temps qu’elles passaient sur ces tâches et le rendent au travail qui demande vraiment un humain, la relation client, la décision, le terrain.",
+  },
+  {
+    question: "Une petite entreprise peut-elle utiliser des agents IA ?",
+    answer:
+      "Oui, et souvent avec plus d’impact qu’une grande. Dans une PME, le dirigeant fait lui-même les relances, les devis et le tri des mails. Chaque tâche retirée se voit immédiatement dans sa semaine. Il n’y a pas de taille minimale, il faut simplement une tâche répétitive et des outils dans lesquels l’information existe déjà.",
+  },
+  {
+    question: "Par quel agent IA faut-il commencer ?",
+    answer:
+      "Par celui qui a le plus d’impact et le moins de risque. En pratique, c’est souvent une tâche qui revient chaque semaine, qui prend du temps et qui ne demande aucune expertise particulière, comme la relance des impayés ou la qualification des demandes entrantes. Le cadrage sert précisément à identifier ce premier cas plutôt que de tout automatiser d’un coup.",
+  },
+  {
+    question: "Faut-il changer d’outils pour utiliser un agent IA ?",
+    answer:
+      "Non. Un agent se connecte à ce que vous avez déjà. Changer d’outils serait le meilleur moyen de faire échouer le projet, parce que la difficulté n’est jamais la technologie, c’est l’adoption par les équipes. L’agent s’adapte à votre environnement, pas l’inverse.",
   },
 ];
 
 const pricingItems: FaqItem[] = [
   {
-    question: "Combien coûte une stratégie SEO / GEO ?",
+    question: "Combien coûte un accompagnement SEO / GEO ?",
     answer:
-      "Le budget dépend de votre marché, de votre site, de vos objectifs et du niveau d’accompagnement souhaité. L’audit permet d’identifier les priorités avant de proposer une stratégie adaptée.",
+      "Le budget dépend de votre situation de départ, de votre marché et du volume de travail nécessaire sur vos pages, vos contenus et vos sources. Le cadrage sert à définir un périmètre clair avant tout chiffrage.",
   },
   {
-    question: "Quelle est la durée d’un accompagnement GEO ?",
+    question: "Y a-t-il un engagement de durée ?",
     answer:
-      "Le SEO / GEO se travaille sur plusieurs mois. Les moteurs IA ont besoin de signaux cohérents, de contenus structurés et de sources fiables. Un accompagnement mensuel permet de construire cette progression.",
+      "Le SEO et le GEO se travaillent dans la durée. Un accompagnement de quelques mois permet de construire, mesurer et ajuster, plutôt que de lancer des actions sans suivi.",
   },
   {
-    question: "Est-ce adapté aux petites entreprises ?",
+    question: "Que se passe-t-il après l’audit ?",
     answer:
-      "Oui. Les petites entreprises peuvent obtenir des résultats intéressants en ciblant des requêtes précises, locales ou sectorielles, plutôt que d’essayer de rivaliser sur des mots-clés trop larges.",
+      "Vous repartez avec un plan d’action priorisé. Vous pouvez le mettre en œuvre vous-même ou nous confier le travail, selon vos ressources internes.",
   },
   {
-    question: "Est-ce réservé aux grandes marques ?",
+    question: "Proposez-vous des prestations ponctuelles ?",
     answer:
-      "Non. Les moteurs IA peuvent recommander des PME, hôtels indépendants, commerces ou services locaux si les informations disponibles sont claires, fiables et pertinentes.",
+      "L’audit peut être réalisé seul. Le reste du travail, contenus, balisage, sources et suivi, prend tout son sens dans un accompagnement continu.",
   },
 ];
 
 const faqSections: FaqSectionData[] = [
   {
-    pill: "COMPRENDRE",
     title: "Comprendre le SEO / GEO en quelques questions.",
+    markWord: "SEO / GEO",
+    mark: "fq-m1",
     items: baseItems,
   },
   {
-    pill: "VISIBILITÉ IA",
     title: "Être cité dans les réponses IA, ça se travaille.",
+    markWord: "réponses IA",
+    mark: "fq-m2",
     items: visibilityItems,
   },
   {
-    pill: "AUDIT SEO / GEO",
     title: "Mesurer avant d’optimiser.",
+    markWord: "Mesurer",
+    mark: "fq-m3",
     items: auditItems,
   },
   {
-    pill: "GEO HÔTELLERIE",
     title: "Questions fréquentes sur le GEO pour hôtels.",
+    markWord: "GEO pour hôtels",
+    mark: "fq-m4",
     items: hospitalityItems,
   },
   {
-    pill: "PRIX",
+    title: "Agents IA et automatisation",
+    markWord: "Agents IA",
+    mark: "fq-m5",
+    intro:
+      "Ce que fait concrètement un agent IA dans une entreprise, ce qui le distingue d’un assistant comme ChatGPT, et comment se passe une mise en place.",
+    items: agentItems,
+  },
+  {
     title: "Budget, durée et engagement.",
+    markWord: "Budget",
+    mark: "fq-m6",
     items: pricingItems,
   },
 ];
 
 const pulseoCards = [
   {
-    icon: FileSearch,
+    k: "fq-k1",
     title: "Audit initial",
     text: "Nous testons votre visibilité sur Google, ChatGPT, Gemini, Claude, Perplexity et Google AI Overviews.",
   },
   {
-    icon: Compass,
+    k: "fq-k2",
     title: "Plan d’action",
     text: "Nous identifions les pages, contenus, sources et requêtes prioritaires pour améliorer votre présence.",
   },
   {
-    icon: Bot,
+    k: "fq-k3",
     title: "Mise en place",
     text: "Nous optimisons votre site, vos contenus et vos signaux pour aider les moteurs IA à mieux vous comprendre.",
   },
   {
-    icon: Clock3,
+    k: "fq-k4",
     title: "Suivi mensuel",
     text: "Nous suivons vos citations, vos concurrents, vos sources et l’évolution de votre visibilité.",
   },
@@ -270,6 +349,7 @@ const allFaqItems = [
   ...auditItems,
   ...hospitalityItems,
   ...pulseoItems,
+  ...agentItems,
   ...pricingItems,
 ];
 
@@ -292,212 +372,447 @@ const jsonLdBreadcrumb = {
   ],
 };
 
-const jsonLdFaq = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: allFaqItems.map((item) => ({
-    "@type": "Question",
-    name: item.question,
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: item.answer,
-    },
-  })),
-};
+const CSS = `
+/* ======================= PAGE FAQ, DIRECTION PAPIER ====================== */
+.fq {
+  position: relative;
+  z-index: 1;
+  /* fond transparent : le grain papier fixe (.th-grain) reste visible dessous */
+  background: transparent;
+  color: #111110;
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Inter, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding: 62px 24px 68px;
+}
+.fq-inner { max-width: 820px; margin: 0 auto; text-align: center; }
 
-function Eyebrow({ children }: { children: ReactNode }) {
-  return (
-    <span className="inline-flex items-center rounded-full border border-[#D8E1F3] bg-white px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-cyan shadow-sm">
-      {children}
-    </span>
-  );
+.fq h2 {
+  margin: 0;
+  font-size: clamp(1.5rem, 2.9vw, 2.15rem);
+  line-height: 1.14;
+  letter-spacing: -0.028em;
+  font-weight: 600;
+  color: #111110;
+  text-wrap: balance;
+}
+.fq-lead {
+  margin: 20px auto 0;
+  max-width: 58ch;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: rgba(17, 17, 16, 0.66);
 }
 
-function HeroChecklist({ label }: { label: string }) {
-  return (
-    <span className="inline-flex items-center gap-2 text-[13px] font-medium text-navy/58">
-      <span className="size-1.5 rounded-full bg-cyan" />
-      {label}
-    </span>
-  );
+/* --- surlignage feutre --- */
+.fq-m {
+  display: inline;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  padding: 0.08em 0.24em;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.fq-m1 { background-image: ${feutre(PASTELS.peche)}; }
+.fq-m2 { background-image: ${feutre(PASTELS.vertEau)}; }
+.fq-m3 { background-image: ${feutre(PASTELS.bleu)}; }
+.fq-m4 { background-image: ${feutre(PASTELS.jaune)}; }
+.fq-m5 { background-image: ${feutre(PASTELS.rose)}; }
+.fq-m6 { background-image: ${feutre(PASTELS.lavande)}; }
+.fq-m7 { background-image: ${feutre(PASTELS.pistache)}; }
+
+/* ---------------------------- HERO ------------------------------------- */
+.fq-hero { padding-top: 30px; }
+.fq-crumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0.84rem;
+  color: rgba(17, 17, 16, 0.5);
+  margin-bottom: 34px;
+}
+.fq-crumb a { color: rgba(17, 17, 16, 0.5); text-decoration: none; }
+.fq-crumb a:hover { color: #111110; }
+.fq-crumb-now { color: #111110; font-weight: 500; }
+.fq h1 {
+  margin: 0 auto;
+  font-size: clamp(1.95rem, 4.4vw, 3.05rem);
+  line-height: 1.08;
+  letter-spacing: -0.038em;
+  font-weight: 600;
+  color: #111110;
+  max-width: 21ch;
+  text-wrap: balance;
 }
 
-function FaqItemCard({ question, answer }: FaqItem) {
-  return (
-    <details className="group rounded-[22px] border border-[#DFE7F3] bg-white px-4 py-4 shadow-[0_12px_28px_rgba(15,23,42,0.04)] sm:px-5">
-      <summary className="flex cursor-pointer list-none items-start justify-between gap-4">
-        <span className="pr-2 text-[15px] font-semibold tracking-[-0.02em] text-navy sm:text-[16px]">
-          {question}
-        </span>
-        <span className="mt-0.5 flex size-8 shrink-0 items-center justify-center rounded-full border border-[#DCE5F6] bg-[#F8FAFF] text-cyan transition-transform group-open:rotate-180">
-          <ChevronDown className="size-4" />
-        </span>
-      </summary>
-      <p className="mt-4 max-w-[900px] text-[15px] leading-7 text-navy/64">{answer}</p>
-    </details>
-  );
+/* les 2 paragraphes du hero, cote a cote dans 2 cadres */
+.fq-duo {
+  margin: 38px auto 0;
+  display: grid;
+  gap: 16px;
+  max-width: 900px;
+  text-align: left;
+}
+@media (min-width: 800px) { .fq-duo { grid-template-columns: 1fr 1fr; gap: 22px; } }
+.fq-duo p {
+  position: relative;
+  isolation: isolate;
+  margin: 0;
+  padding: 22px 24px;
+  font-size: 0.96rem;
+  line-height: 1.72;
+}
+.fq-duo p::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.fq-duo-1 { color: rgba(17, 17, 16, 0.68); }
+.fq-duo-1::before { background-image: ${contourCrayon(PASTELS.peche, 12)}; }
+.fq-duo-2 { color: #111110; font-weight: 500; }
+.fq-duo-2::before { background-image: ${contourCrayon(PASTELS.vertEau, 13)}; }
+
+/* boutons crayon */
+.fq-cta {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 26px;
+}
+.fq-btn {
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 26px;
+  font-size: 0.96rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: transform 0.16s ease;
+}
+.fq-btn::before {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.fq-btn:hover { transform: translateY(-1.5px); }
+.fq-btn-1 { color: #F4F3EF; }
+.fq-btn-1::before { background-image: ${BTN_PLEIN}; }
+.fq-btn-2 { color: #111110; }
+.fq-btn-2::before { background-image: ${BTN_CONTOUR}; }
+
+.fq-chips {
+  margin-top: 38px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 22px;
+}
+.fq-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: rgba(17, 17, 16, 0.58);
+}
+.fq-chip::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  background: rgba(17, 17, 16, 0.4);
 }
 
-function FaqSection({ pill, title, intro, items }: FaqSectionData) {
-  return (
-    <section className="border-t border-[#EDF1F7] py-14 lg:py-16">
-      <div className="mx-auto max-w-[1180px] px-6">
-        <div className="max-w-[760px]">
-          <Eyebrow>{pill}</Eyebrow>
-          <h2 className="mt-4 text-[28px] font-semibold tracking-[-0.045em] text-navy sm:text-[34px]">
-            {title}
-          </h2>
-          {intro ? (
-            <p className="mt-4 max-w-[700px] text-[16px] leading-7 text-navy/62">{intro}</p>
-          ) : null}
-        </div>
-        <div className="mt-8 space-y-4">
-          {items.map((item) => (
-            <FaqItemCard key={item.question} {...item} />
-          ))}
-        </div>
-      </div>
-    </section>
-  );
+/* --------------- ACCORDEON FAQ, identique aux autres pages --------------- */
+.fq-list { margin: 36px auto 0; max-width: 800px; text-align: left; }
+.fq-list details { border-bottom: 1.5px solid rgba(17, 17, 16, 0.16); }
+.fq-list summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  cursor: pointer;
+  list-style: none;
+  padding: 18px 0;
+}
+.fq-list summary::-webkit-details-marker { display: none; }
+.fq-list summary h3 {
+  margin: 0;
+  font-size: 0.98rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  color: #111110;
+}
+.fq-list summary span {
+  flex-shrink: 0;
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #111110;
+  transition: transform 0.18s ease;
+}
+.fq-list details[open] summary span { transform: rotate(45deg); }
+.fq-list p {
+  margin: 0;
+  padding: 0 0 20px;
+  max-width: 78ch;
+  font-size: 0.93rem;
+  line-height: 1.72;
+  color: rgba(17, 17, 16, 0.66);
 }
 
-function PulseoCard({
-  icon: Icon,
-  title,
-  text,
-}: {
-  icon: ElementType;
-  title: string;
-  text: string;
-}) {
+/* ------------------ CARTES ACCOMPAGNEMENT PULSEOAI ---------------------- */
+.fq-cards {
+  margin: 38px auto 0;
+  display: grid;
+  gap: 26px;
+  max-width: 1000px;
+  text-align: left;
+}
+@media (min-width: 700px) { .fq-cards { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 1000px) { .fq-cards { grid-template-columns: repeat(4, 1fr); } }
+.fq-card {
+  position: relative;
+  isolation: isolate;
+  padding: 24px 24px 26px;
+}
+.fq-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.fq-k1::before { background-image: ${contourCrayon(PASTELS.peche, 31)}; }
+.fq-k2::before { background-image: ${contourCrayon(PASTELS.vertEau, 32)}; }
+.fq-k3::before { background-image: ${contourCrayon(PASTELS.bleu, 33)}; }
+.fq-k4::before { background-image: ${contourCrayon(PASTELS.jaune, 34)}; }
+.fq-card h3 {
+  margin: 0;
+  font-size: 0.98rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  color: #111110;
+}
+.fq-card h3 span {
+  display: inline;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  padding: 0.1em 0.26em;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.fq-k1 h3 span { background-image: ${feutre(PASTELS.peche)}; }
+.fq-k2 h3 span { background-image: ${feutre(PASTELS.vertEau)}; }
+.fq-k3 h3 span { background-image: ${feutre(PASTELS.bleu)}; }
+.fq-k4 h3 span { background-image: ${feutre(PASTELS.jaune)}; }
+.fq-card p {
+  margin: 14px 0 0;
+  font-size: 0.89rem;
+  line-height: 1.68;
+  color: rgba(17, 17, 16, 0.62);
+}
+
+/* -------------------- FORMULAIRE, identique aux autres pages ------------ */
+.fq-form-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 720px;
+  margin: 40px auto 26px;
+  text-align: center;
+}
+.fq-lion {
+  width: auto;
+  height: clamp(96px, 12vh, 124px);
+  max-width: 100%;
+  object-fit: contain;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fq-form-wrap { max-width: 720px; margin: 0 auto; }
+.fq-form-wrap form,
+.fq-form-wrap .rounded-2xl {
+  background: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+.fq-form-wrap form {
+  display: grid !important;
+  grid-template-columns: 1fr;
+  gap: 12px 18px;
+}
+@media (min-width: 640px) {
+  .fq-form-wrap form { grid-template-columns: 1fr 1fr; }
+  .fq-form-wrap form > div:has(#message),
+  .fq-form-wrap form > div:has(.text-red-700),
+  .fq-form-wrap form > button { grid-column: 1 / -1; }
+}
+.fq-form-wrap form > * + * { margin-top: 0 !important; }
+.fq-form-wrap form > div > * + * { margin-top: 4px !important; }
+.fq-form-wrap label { color: #111110 !important; font-weight: 500; font-size: 0.86rem !important; }
+.fq-form-wrap input,
+.fq-form-wrap select { height: 42px !important; }
+.fq-form-wrap textarea { min-height: 76px !important; }
+.fq-form-wrap input,
+.fq-form-wrap select,
+.fq-form-wrap textarea { font-size: 0.95rem !important; }
+.fq-form-wrap button[type="submit"] { height: 46px !important; margin-top: 6px !important; }
+.fq-form-wrap input,
+.fq-form-wrap textarea,
+.fq-form-wrap select {
+  background-color: transparent !important;
+  background-image: ${contourLeger("111110", 61, 0.45)} !important;
+  background-repeat: no-repeat !important;
+  background-size: 100% 100% !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  color: #111110 !important;
+}
+.fq-form-wrap input::placeholder,
+.fq-form-wrap textarea::placeholder { color: rgba(17, 17, 16, 0.42) !important; }
+.fq-form-wrap input:focus,
+.fq-form-wrap textarea:focus,
+.fq-form-wrap select:focus,
+.fq-form-wrap input:focus-visible,
+.fq-form-wrap textarea:focus-visible,
+.fq-form-wrap select:focus-visible {
+  outline: 2px solid rgba(17, 17, 16, 0.55) !important;
+  outline-offset: 2px !important;
+  background-image: ${contourLeger("111110", 61, 0.75)} !important;
+}
+.fq-form-wrap button[type="submit"] {
+  position: relative;
+  isolation: isolate;
+  background: none !important;
+  color: #F4F3EF !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  transition: transform 0.16s ease;
+}
+.fq-form-wrap button[type="submit"]::before {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  z-index: -1;
+  background-image: ${BTN_PLEIN};
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.fq-form-wrap button[type="submit"]:hover { transform: translateY(-1.5px); }
+`;
+
+function FaqAccordion({ items }: { items: FaqItem[] }) {
   return (
-    <div className="rounded-[22px] border border-[#DEE6F3] bg-white p-5 shadow-[0_12px_28px_rgba(15,23,42,0.04)]">
-      <div className="flex items-center justify-between gap-4">
-        <h3 className="text-[17px] font-semibold tracking-[-0.03em] text-navy">{title}</h3>
-        <div className="flex size-9 shrink-0 items-center justify-center rounded-[14px] bg-[#EEF3FF]">
-          <Icon className="size-4 text-cyan" />
-        </div>
-      </div>
-      <p className="mt-3 text-[14px] leading-6 text-navy/62">{text}</p>
+    <div className="fq-list">
+      {items.map((item) => (
+        <details key={item.question}>
+          <summary>
+            <h3>{item.question}</h3>
+            <span aria-hidden>+</span>
+          </summary>
+          <p>{item.answer}</p>
+        </details>
+      ))}
     </div>
+  );
+}
+
+/** Coupe le titre autour du mot a surligner, sans en modifier le texte. */
+function MarkedTitle({ title, word, mark }: { title: string; word: string; mark: string }) {
+  const i = title.indexOf(word);
+  if (i < 0) return <>{title}</>;
+  return (
+    <>
+      {title.slice(0, i)}
+      <span className={`fq-m ${mark}`}>{word}</span>
+      {title.slice(i + word.length)}
+    </>
+  );
+}
+
+function FaqSection({ mark, title, markWord, intro, items }: FaqSectionData) {
+  return (
+    <section className="fq">
+      <div className="fq-inner">
+        <h2>
+          <MarkedTitle title={title} word={markWord} mark={mark} />
+        </h2>
+        {intro ? <p className="fq-lead">{intro}</p> : null}
+      </div>
+      <FaqAccordion items={items} />
+    </section>
   );
 }
 
 export default function FaqPage() {
   return (
     <>
+      <style>{CSS}</style>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq) }}
-      />
       <FaqJsonLd items={allFaqItems} />
 
-      <section className="border-b border-[#E8EDF7] bg-[linear-gradient(180deg,#FFFFFF_0%,#F8FAFD_100%)]">
-        <div className="mx-auto max-w-[1180px] px-6 pb-10 pt-7 lg:pb-14 lg:pt-10">
+      {/* ---------------------------- HERO ---------------------------- */}
+      <section className="fq fq-hero">
+        <div className="fq-inner">
           <nav aria-label="Fil d'Ariane">
-            <ol className="flex items-center gap-2 text-sm text-navy/58">
+            <ol className="fq-crumb">
               <li>
-                <Link href="/" className="transition-colors hover:text-cyan">
-                  Accueil
-                </Link>
+                <Link href="/">Accueil</Link>
               </li>
-              <li>
+              <li aria-hidden>
                 <ChevronRight className="size-3.5" />
               </li>
-              <li className="font-medium text-navy">FAQ</li>
+              <li className="fq-crumb-now">FAQ</li>
             </ol>
           </nav>
 
-          <div className="mt-8 grid items-center gap-8 lg:grid-cols-[0.54fr_0.46fr] lg:gap-12">
-            <div className="max-w-[680px]">
-              <Eyebrow>FAQ SEO / GEO</Eyebrow>
-              <h1 className="mt-5 text-[30px] font-semibold leading-[1.04] tracking-[-0.05em] text-navy sm:text-[48px]">
-                Questions fréquentes sur le <span className="text-cyan">SEO, le GEO</span> et la{" "}
-                <span className="text-cyan">visibilité IA</span>.
-              </h1>
-              <p className="mt-5 max-w-[620px] text-[16px] leading-7 text-navy/62">
-                Tout ce qu’il faut comprendre pour rendre votre entreprise visible sur Google, ChatGPT, Gemini, Claude, Perplexity et Google AI Overviews.
-              </p>
-              <p className="mt-4 max-w-[620px] text-[16px] font-medium leading-7 text-navy">
-                Des réponses simples, sans jargon, pour comprendre comment PulseoAI aide les entreprises à être trouvées, citées et recommandées.
-              </p>
+          <h1>
+            Questions fréquentes sur le{" "}
+            <span className="fq-m fq-m1">SEO, le GEO</span> et la{" "}
+            <span className="fq-m fq-m2">visibilité IA</span>.
+          </h1>
 
-              <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
-                <Link href="/contact" className="w-full sm:w-auto">
-                  <Button className="h-12 w-full rounded-full bg-cyan px-6 text-[15px] font-semibold text-white shadow-[0_12px_24px_rgba(37,71,208,0.22)] hover:bg-cyan-dark sm:w-auto">
-                    Obtenir un audit
-                    <ArrowRight className="ml-2 size-4" />
-                  </Button>
-                </Link>
-                <Link
-                  href="/offre"
-                  className="inline-flex items-center justify-center text-[15px] font-semibold text-navy/68 transition-colors hover:text-navy"
-                >
-                  Découvrir notre offre
-                  <ArrowRight className="ml-2 size-4" />
-                </Link>
-              </div>
+          <div className="fq-duo">
+            <p className="fq-duo-1">
+              Tout ce qu’il faut comprendre pour rendre votre entreprise visible sur Google, ChatGPT, Gemini, Claude, Perplexity et Google AI Overviews.
+            </p>
+            <p className="fq-duo-2">
+              Des réponses simples, sans jargon, pour comprendre comment PulseoAI aide les entreprises à être trouvées, citées et recommandées.
+            </p>
+          </div>
 
-              <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-2">
-                <HeroChecklist label="Google + IA" />
-                <HeroChecklist label="Prompts clients" />
-                <HeroChecklist label="Citations IA" />
-                <HeroChecklist label="Sources citées" />
-              </div>
-            </div>
+          <div className="fq-chips">
+            <span className="fq-chip">Google + IA</span>
+            <span className="fq-chip">Prompts clients</span>
+            <span className="fq-chip">Citations IA</span>
+            <span className="fq-chip">Sources citées</span>
+          </div>
 
-            <div className="rounded-[30px] border border-[#DEE6F3] bg-white p-5 shadow-[0_20px_46px_rgba(15,23,42,0.06)] sm:p-6">
-              <div className="flex items-center justify-between gap-4">
-                <div>
-                  <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-cyan">
-                    Réponse courte
-                  </p>
-                  <h2 className="mt-2 text-[18px] font-semibold tracking-[-0.03em] text-navy">
-                    Le GEO remplace-t-il le SEO ?
-                  </h2>
-                </div>
-                <div className="flex size-10 shrink-0 items-center justify-center rounded-[14px] bg-[#EEF3FF]">
-                  <Bot className="size-4.5 text-cyan" />
-                </div>
-              </div>
-
-              <div className="mt-5 rounded-[22px] border border-[#E6EBF5] bg-[#F7F9FD] px-4 py-4">
-                <p className="text-[14px] leading-7 text-navy/74">
-                  Non. Le SEO aide votre entreprise à être trouvée sur Google. Le GEO aide votre marque à être citée dans les réponses IA. Les deux se complètent.
-                </p>
-              </div>
-
-              <div className="mt-5 flex flex-wrap gap-2.5">
-                {["Google", "ChatGPT", "Gemini", "Claude", "Perplexity", "AI Overviews"].map(
-                  (item) => (
-                    <span
-                      key={item}
-                      className="rounded-full border border-[#DCE4F4] bg-[#FBFCFF] px-3 py-1.5 text-[12px] font-medium text-navy/62"
-                    >
-                      {item}
-                    </span>
-                  ),
-                )}
-              </div>
-
-              <div className="mt-6 rounded-[22px] border border-[#DDE6F8] bg-[linear-gradient(180deg,#F6F9FF_0%,#FCFDFF_100%)] p-4">
-                <div className="flex items-center gap-3">
-                  <div className="flex size-9 items-center justify-center rounded-[14px] bg-white shadow-sm">
-                    <LineChart className="size-4 text-cyan" />
-                  </div>
-                  <div>
-                    <p className="text-[13px] font-semibold text-navy">Ce que PulseoAI mesure</p>
-                    <p className="text-[13px] text-navy/56">
-                      Visibilité Google, citations IA, concurrents cités et requêtes prioritaires.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="fq-cta">
+            <Link href="/contact" className="fq-btn fq-btn-1">
+              Obtenir un audit
+            </Link>
+            <Link href="/offre" className="fq-btn fq-btn-2">
+              Découvrir notre offre
+            </Link>
           </div>
         </div>
       </section>
@@ -506,85 +821,67 @@ export default function FaqPage() {
         <FaqSection key={section.title} {...section} />
       ))}
 
-      <section className="border-t border-[#EDF1F7] py-14 lg:py-16">
-        <div className="mx-auto max-w-[1180px] px-6">
-          <div className="max-w-[760px]">
-            <Eyebrow>PULSEOAI</Eyebrow>
-            <h2 className="mt-4 text-[28px] font-semibold tracking-[-0.045em] text-navy sm:text-[34px]">
-              Comment PulseoAI accompagne votre visibilité SEO / GEO.
-            </h2>
-          </div>
-
-          <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-            {pulseoCards.map((card) => (
-              <PulseoCard key={card.title} {...card} />
-            ))}
-          </div>
-
-          <div className="mt-8 space-y-4">
-            {pulseoItems.map((item) => (
-              <FaqItemCard key={item.question} {...item} />
-            ))}
-          </div>
+      {/* --------------------- ACCOMPAGNEMENT PULSEOAI ----------------- */}
+      <section className="fq">
+        <div className="fq-inner">
+          <h2>
+            Comment PulseoAI accompagne votre{" "}
+            <span className="fq-m fq-m7">visibilité SEO / GEO</span>.
+          </h2>
         </div>
+
+        <div className="fq-cards">
+          {pulseoCards.map((card) => (
+            <div key={card.title} className={`fq-card ${card.k}`}>
+              <h3>
+                <span>{card.title}</span>
+              </h3>
+              <p>{card.text}</p>
+            </div>
+          ))}
+        </div>
+
+        <FaqAccordion items={pulseoItems} />
       </section>
 
       {faqSections.slice(3).map((section) => (
         <FaqSection key={section.title} {...section} />
       ))}
 
-      <section className="bg-white py-14 lg:py-16">
-        <div className="mx-auto max-w-[1180px] px-6">
-          <div className="overflow-hidden rounded-[34px] bg-navy p-6 text-white shadow-[0_30px_70px_rgba(11,15,30,0.16)] sm:p-8 lg:p-9">
-            <div className="grid gap-8 lg:grid-cols-[0.9fr_0.7fr] lg:items-center">
-              <div className="max-w-[620px]">
-                <span className="inline-flex items-center rounded-full border border-white/12 bg-white/8 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-white/76">
-                  AUDIT SEO / GEO
-                </span>
-                <h2 className="mt-5 text-[30px] font-semibold tracking-[-0.05em] text-white sm:text-[38px]">
-                  Votre entreprise est-elle visible là où vos clients posent leurs questions ?
-                </h2>
-                <p className="mt-4 max-w-[580px] text-[15px] leading-7 text-white/68">
-                  Nous analysons votre présence sur Google, ChatGPT, Gemini, Claude, Perplexity et Google AI Overviews, puis nous vous montrons les requêtes, les concurrents et les sources qui comptent.
-                </p>
+      {/* ----------------------------- CTA FINAL ----------------------- */}
+      <section className="fq">
+        <div className="fq-inner">
+          <h2>
+            Votre entreprise est-elle visible là où vos clients{" "}
+            <span className="fq-m fq-m4">posent leurs questions</span> ?
+          </h2>
+          <p className="fq-lead">
+            Nous analysons votre présence sur Google, ChatGPT, Gemini, Claude, Perplexity et Google AI Overviews, puis nous vous montrons les requêtes, les concurrents et les sources qui comptent.
+          </p>
 
-                <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
-                  <Link href="/contact" className="w-full sm:w-auto">
-                    <Button className="h-12 w-full rounded-full bg-white px-6 text-[15px] font-semibold text-navy hover:bg-white/92 sm:w-auto">
-                      Obtenir un audit
-                      <ArrowRight className="ml-2 size-4" />
-                    </Button>
-                  </Link>
-                  <Link
-                    href="/offre"
-                    className="inline-flex items-center justify-center text-[15px] font-semibold text-white/72 transition-colors hover:text-white"
-                  >
-                    Découvrir notre offre
-                    <ArrowRight className="ml-2 size-4" />
-                  </Link>
-                </div>
-              </div>
-
-              <div className="grid gap-3 sm:grid-cols-2">
-                {[
-                  "Requêtes clients testées",
-                  "Concurrents identifiés",
-                  "Sources analysées",
-                  "Plan d’action priorisé",
-                ].map((item) => (
-                  <div
-                    key={item}
-                    className="rounded-[22px] border border-white/10 bg-white/6 px-4 py-4 backdrop-blur-sm"
-                  >
-                    <div className="flex items-center gap-2 text-[13px] font-medium text-white/84">
-                      <span className="size-1.5 rounded-full bg-cyan" />
-                      {item}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
+          <div className="fq-cta">
+            <Link href="/contact" className="fq-btn fq-btn-1">
+              Obtenir un audit
+            </Link>
+            <Link href="/offre" className="fq-btn fq-btn-2">
+              Découvrir notre offre
+            </Link>
           </div>
+        </div>
+
+        <div className="fq-form-head">
+          <Image
+            src="/illustrations/VHl73R9s.png"
+            alt="Mascotte lion qui invite à demander un audit"
+            width={1536}
+            height={1536}
+            loading="lazy"
+            className="fq-lion"
+          />
+        </div>
+
+        <div className="fq-form-wrap">
+          <ContactForm />
         </div>
       </section>
     </>
