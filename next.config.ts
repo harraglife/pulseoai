@@ -1,6 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  images: {
+    // AVIF en priorite, WebP en repli pour les navigateurs qui ne le lisent pas.
+    formats: ["image/avif", "image/webp"],
+  },
   async redirects() {
     return [
       {

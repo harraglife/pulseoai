@@ -5,8 +5,8 @@ import { ArrowLeft, ArrowRight, Calendar, Clock, User } from "lucide-react";
 import { getArticleSchemaEnhancements } from "@/lib/article-metadata";
 import { QuickAnswer } from "@/components/quick-answer";
 import { ContactForm } from "@/components/contact-form";
-import { ARTICLE_PAPER_CSS } from "@/components/article-paper";
 import { RelatedPosts } from "@/components/related-posts";
+import "@/styles/article.css";
 
 export const metadata: Metadata = {
   title: "llms.txt : guide pratique pour votre site",
@@ -113,7 +113,6 @@ export default function LlmsTxtGuidePratique() {
         />
       ) : null}
 
-      <style>{ARTICLE_PAPER_CSS}</style>
       <article className="ba bg-white">
         {/* Header */}
         <div className="bg-[#F8F9FA]">

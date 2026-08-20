@@ -6,7 +6,7 @@ import { getArticleSchemaEnhancements } from "@/lib/article-metadata";
 import { QuickAnswer } from "@/components/quick-answer";
 import { RelatedPosts } from "@/components/related-posts";
 import { ContactForm } from "@/components/contact-form";
-import { ARTICLE_PAPER_CSS } from "@/components/article-paper";
+import "@/styles/article.css";
 
 
 
@@ -181,7 +181,6 @@ export function BlogArticleTemplate({ article }: { article: BlogArticle }) {
         />
       ) : null}
 
-      <style>{ARTICLE_PAPER_CSS}</style>
       <article className="ba bg-white">
         <div className="border-b border-[#E8EDF7] bg-[linear-gradient(180deg,#FFFFFF_0%,#F8FAFD_100%)]">
           <div className="mx-auto max-w-[980px] px-6 pb-10 pt-7 lg:pb-14 lg:pt-10">

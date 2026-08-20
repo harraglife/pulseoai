@@ -3,11 +3,12 @@ import { Poppins } from "next/font/google";
 import { GoogleTagManager } from "@next/third-parties/google";
 import "./globals.css";
 import { Header } from "@/components/header";
-import { PAPER_CSS, PAPER_SKIN } from "@/lib/paper-da";
 import { Footer } from "@/components/footer";
 import { StickyMobileCta } from "@/components/sticky-mobile-cta";
 import { OrganizationJsonLd } from "@/components/json-ld";
 import { SITE_URL, SITE_NAME, SITE_DESCRIPTION } from "@/config/site";
+import "@/styles/tokens.css";
+import "@/styles/paper.css";
 
 const poppins = Poppins({
   variable: "--font-sans",
@@ -87,7 +88,6 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col bg-white text-navy font-sans pb-[68px] lg:pb-0">
         <GoogleTagManager gtmId="GTM-W7BR5JDJ" />
-        <style>{PAPER_CSS + PAPER_SKIN}</style>
         <div className="th-grain" aria-hidden />
         <Header />
         <main className="flex-1">{children}</main>

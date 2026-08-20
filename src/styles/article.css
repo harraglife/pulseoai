@@ -1,0 +1,312 @@
+/* ============ PAGES D'ARTICLE, DIRECTION PAPIER ============ */
+.ba { background: transparent !important; }
+.ba > div:first-child { background: transparent !important; border-bottom: 0 !important; }
+
+/* surlignage feutre d'un mot-cle du titre */
+.ba-mark {
+  display: inline;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  padding: 0.06em 0.22em;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: var(--p-feutre-f7bc90);
+}
+
+/* les encarts deviennent des cadres crayon a l'encre */
+.ba-box {
+  position: relative;
+  isolation: isolate;
+  background: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 22px 24px !important;
+}
+.ba-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: var(--p-contour-crayon-111110);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.ba .quick-answer > * {
+  position: relative;
+  isolation: isolate;
+  background: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 22px 24px !important;
+}
+.ba .quick-answer > *::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: var(--p-contour-crayon-111110-2);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.ba-box-light::before { background-image: var(--p-contour-leger-111110-042); }
+
+/* FAQ de l'article : meme accordeon que les autres pages */
+.ba-faq details {
+  background: none !important;
+  border: 0 !important;
+  border-bottom: 1.5px solid rgba(17, 17, 16, 0.16) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+.ba-faq summary { padding: 18px 0 !important; color: #111110 !important; }
+.ba-faq summary span:last-child { color: #111110 !important; }
+.ba-faq details p { padding-bottom: 20px; color: rgba(17, 17, 16, 0.7) !important; }
+
+/* cartes "articles lies" : cadres crayon */
+.ba a[href^="/blog/"]:has(h3) {
+  position: relative;
+  isolation: isolate;
+  background: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 22px 22px 24px !important;
+}
+.ba a[href^="/blog/"]:has(h3)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: var(--p-contour-crayon-111110-3);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.ba a[href^="/blog/"]:has(h3) h3 { color: #111110 !important; }
+.ba a[href^="/blog/"]:has(h3) p { color: rgba(17, 17, 16, 0.8) !important; }
+
+/* bloc final : plus d'aplat sombre, un cadre crayon */
+.ba-final {
+  position: relative;
+  isolation: isolate;
+  overflow: visible !important;
+  background: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  color: #111110 !important;
+  padding: 32px 30px 34px !important;
+}
+.ba-final::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: var(--p-contour-crayon-111110-4);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.ba-final * { color: #111110 !important; }
+.ba-final-item {
+  position: relative;
+  isolation: isolate;
+  background: none !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  padding: 14px 18px !important;
+}
+.ba-final-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: var(--p-contour-leger-111110-04);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/* ---------------- formulaire de fin d'article + mascotte ---------------- */
+.ba-form-section {
+  position: relative;
+  z-index: 1;
+  background: transparent;
+  padding: 8px 24px 72px;
+}
+.ba-form-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 700px;
+  margin: 0 auto 26px;
+  text-align: center;
+}
+.ba-lion {
+  width: auto;
+  height: clamp(96px, 12vh, 124px);
+  max-width: 100%;
+  object-fit: contain;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ba-form-head h2 {
+  margin: 0;
+  font-size: clamp(1.35rem, 2.5vw, 1.9rem);
+  line-height: 1.16;
+  letter-spacing: -0.028em;
+  font-weight: 600;
+  color: #111110;
+  text-wrap: balance;
+}
+.ba-form-head p {
+  margin: 16px auto 0;
+  max-width: 58ch;
+  font-size: 0.96rem;
+  line-height: 1.72;
+  color: rgba(17, 17, 16, 0.66);
+}
+.ba-form-links {
+  margin: 34px auto 0;
+  text-align: center;
+  font-size: 0.92rem;
+  color: rgba(17, 17, 16, 0.6);
+}
+.ba-form-links a {
+  color: #111110;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1.5px;
+}
+.ba-form-wrap { max-width: 720px; margin: 0 auto; }
+.ba-form-wrap form,
+.ba-form-wrap .rounded-2xl {
+  background: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+.ba-form-wrap form {
+  display: grid !important;
+  grid-template-columns: 1fr;
+  gap: 12px 18px;
+}
+@media (min-width: 640px) {
+  .ba-form-wrap form { grid-template-columns: 1fr 1fr; }
+  .ba-form-wrap form > div:has(#message),
+  .ba-form-wrap form > div:has(.text-red-700),
+  .ba-form-wrap form > button { grid-column: 1 / -1; }
+}
+.ba-form-wrap form > * + * { margin-top: 0 !important; }
+.ba-form-wrap form > div > * + * { margin-top: 4px !important; }
+.ba-form-wrap label { color: #111110 !important; font-weight: 500; font-size: 0.86rem !important; }
+.ba-form-wrap input,
+.ba-form-wrap select { height: 42px !important; }
+.ba-form-wrap textarea { min-height: 76px !important; }
+.ba-form-wrap input,
+.ba-form-wrap select,
+.ba-form-wrap textarea { font-size: 0.95rem !important; }
+.ba-form-wrap button[type="submit"] { height: 46px !important; margin-top: 6px !important; }
+.ba-form-wrap input,
+.ba-form-wrap textarea,
+.ba-form-wrap select {
+  background-color: transparent !important;
+  background-image: var(--p-contour-leger-111110-045) !important;
+  background-repeat: no-repeat !important;
+  background-size: 100% 100% !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  color: #111110 !important;
+}
+.ba-form-wrap input::placeholder,
+.ba-form-wrap textarea::placeholder { color: rgba(17, 17, 16, 0.42) !important; }
+.ba-form-wrap input:focus,
+.ba-form-wrap textarea:focus,
+.ba-form-wrap select:focus,
+.ba-form-wrap input:focus-visible,
+.ba-form-wrap textarea:focus-visible,
+.ba-form-wrap select:focus-visible {
+  outline: 2px solid rgba(17, 17, 16, 0.55) !important;
+  outline-offset: 2px !important;
+  background-image: var(--p-contour-leger-111110-075) !important;
+}
+.ba-form-wrap button[type="submit"] {
+  position: relative;
+  isolation: isolate;
+  background: none !important;
+  color: #F4F3EF !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  transition: transform 0.16s ease;
+}
+.ba-form-wrap button[type="submit"]::before {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  z-index: -1;
+  background-image: var(--p-btn-plein);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.ba-form-wrap button[type="submit"]:hover { transform: translateY(-1.5px); }
+
+/* ---- articles a markup propre : leurs encarts deviennent des cadres ---- */
+.ba .rounded-2xl,
+.ba [class*="rounded-[24px]"],
+.ba [class*="rounded-[20px]"] {
+  position: relative;
+  isolation: isolate;
+  background: none !important;
+  background-image: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  color: #111110 !important;
+}
+.ba .rounded-2xl::before,
+.ba [class*="rounded-[24px]"]::before,
+.ba [class*="rounded-[20px]"]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: var(--p-contour-crayon-111110-5);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.ba .rounded-2xl *,
+.ba [class*="rounded-[24px]"] *,
+.ba [class*="rounded-[20px]"] * { color: #111110 !important; }
+.ba .rounded-lg {
+  background: none !important;
+  border-color: rgba(17, 17, 16, 0.18) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+/* ---- bloc CTA de fin, converti en section formulaire ---- */
+.ba-cta-form {
+  margin-top: 56px !important;
+  padding: 0 !important;
+  text-align: center;
+}
+.ba-cta-form::before { display: none !important; }
+.ba-cta-form h2 {
+  margin: 14px 0 0;
+  font-size: clamp(1.35rem, 2.5vw, 1.9rem) !important;
+  line-height: 1.16;
+  letter-spacing: -0.028em;
+  font-weight: 600 !important;
+  color: #111110 !important;
+  text-wrap: balance;
+}
+.ba-cta-form > p {
+  margin: 16px auto 26px !important;
+  max-width: 58ch;
+  font-size: 0.96rem !important;
+  line-height: 1.72;
+  color: rgba(17, 17, 16, 0.66) !important;
+}
