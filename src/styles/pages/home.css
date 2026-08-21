@@ -551,6 +551,16 @@ footer.bg-navy [class*="border-white"] { border-color: rgba(17, 17, 16, 0.12) !i
 .tp-step-2 .tp-mark { background-image: var(--p-feutre-8fddbd); }
 .tp-step-3 .tp-mark { background-image: var(--p-feutre-93d2ff); }
 
+/* Mobile : quand le titre de frise passe sur deux lignes, le surlignage
+   (padding 0.58em vertical) depassait la hauteur de ligne (1.2) et la bande
+   de la 2e ligne remontait sur la 1re. On aere la ligne et on resserre
+   legerement la bande. Desktop inchange : le titre y tient sur une ligne. */
+@media (max-width: 767px) {
+  .tp-step-title { line-height: 2.08; }
+  .tp-mark { padding: 0.44em 0.45em; }
+}
+
+
 /* plus de carte : le texte lui-meme est surligne, ligne par ligne */
 .tp-card {
   padding: 0;

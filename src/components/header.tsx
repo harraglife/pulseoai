@@ -17,6 +17,7 @@ const SERVICES = [
 export function Header() {
   const [openServices, setOpenServices] = useState(false);
   const [openMobile, setOpenMobile] = useState(false);
+  const [openMobileServices, setOpenMobileServices] = useState(false);
   const wrapRef = useRef<HTMLDivElement>(null);
 
   // fermeture au clic exterieur et a la touche Echap
@@ -30,6 +31,7 @@ export function Header() {
       if (e.key === "Escape") {
         setOpenServices(false);
         setOpenMobile(false);
+        setOpenMobileServices(false);
       }
     }
     document.addEventListener("mousedown", onClick);
@@ -114,17 +116,31 @@ export function Header() {
           <Link href="/" onClick={() => setOpenMobile(false)}>
             Accueil
           </Link>
-          <span className="tn-mobile-group">Devenir visible sur les IA</span>
-          {SERVICES.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="tn-mobile-sub"
-              onClick={() => setOpenMobile(false)}
-            >
-              {item.name}
-            </Link>
-          ))}
+          <button
+            type="button"
+            className="tn-mobile-group"
+            aria-expanded={openMobileServices}
+            onClick={() => setOpenMobileServices((v) => !v)}
+          >
+            Devenir visible sur les IA
+            <span className={`tn-caret${openMobileServices ? " tn-caret-open" : ""}`} aria-hidden>
+              ▾
+            </span>
+          </button>
+          {openMobileServices &&
+            SERVICES.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="tn-mobile-sub"
+                onClick={() => {
+                  setOpenMobileServices(false);
+                  setOpenMobile(false);
+                }}
+              >
+                {item.name}
+              </Link>
+            ))}
           <Link href="/agents-ia" onClick={() => setOpenMobile(false)}>
             Recruter mon agent IA
           </Link>
