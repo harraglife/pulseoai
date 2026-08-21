@@ -346,14 +346,6 @@ header.sticky { display: none !important; }
   color: #111110;
   text-decoration: none;
 }
-.tn-mobile-group {
-  padding: 14px 0 4px;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: rgba(17, 17, 16, 0.55);
-}
 .tn-mobile-sub { padding-left: 14px !important; }
 
 /* --- ancienne barre du haut (conserve pour reference, desormais masquee) --- */

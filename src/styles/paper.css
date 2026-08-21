@@ -83,7 +83,8 @@ header.sticky { display: none !important; }
 @media (min-width: 1024px) { .tn-burger { display: none; } }
 .tn-mobile { display: flex; flex-direction: column; gap: 4px; padding: 12px 20px 20px; border-top: 1px solid rgba(17, 17, 16, 0.12); }
 .tn-mobile a { padding: 12px 0; font-size: 16px; font-weight: 500; color: #111110; text-decoration: none; }
-.tn-mobile-group { display: flex; align-items: center; justify-content: space-between; width: 100%; min-height: 44px; background: none; border: 0; text-align: left; cursor: pointer; padding: 14px 0 4px; font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(17, 17, 16, 0.55); }
+.tn-mobile-group { display: flex; align-items: center; gap: 8px; width: 100%; min-height: 44px; background: none; border: 0; text-align: left; cursor: pointer; padding: 12px 0; font-size: 16px; font-weight: 500; color: #111110; font-family: inherit; }
+.tn-mobile-group .tn-caret { font-size: 15px; line-height: 1; color: rgba(17, 17, 16, 0.75); }
 .tn-mobile-sub { padding-left: 14px !important; }
 
 /* ---- boutons crayon ---- */
