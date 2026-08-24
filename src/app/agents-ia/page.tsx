@@ -5,11 +5,10 @@ import { AgentContactForm } from "@/components/agent-contact-form";
 import "@/styles/pages/agents-ia.css";
 
 export const metadata: Metadata = {
-  title: "Agent IA sur mesure : automatisez vos tâches",
+  title: "Agent IA sur mesure : agence et intégrateur IA pour PME",
   description:
-    "Recrutez un agent IA sur mesure qui travaille dans vos outils : emails, devis, réservations. Automatisation et intégration IA en entreprise, pensées pour les PME.",
+    "Agence d’agents IA : création d’agent IA sur mesure connecté à votre CRM et vos outils. Automatisez relance client, devis et emails. PME, artisans, hôtels.",
   alternates: { canonical: "/agents-ia" },
-  // page encore en test : a retirer au moment de la mise en ligne
 };
 
 // --- outils compatibles (bandeau defilant) ---
@@ -40,8 +39,8 @@ const OUTILS_B = [
 
 const FAQ = [
   {
-    q: "Quelle différence entre un agent IA et ChatGPT ?",
-    a: "ChatGPT répond quand vous lui parlez. Un agent IA se déclenche tout seul, va chercher l'information dans vos outils et prépare ou exécute l'action. La différence n'est pas l'intelligence du modèle, c'est l'accès à vos données et le droit d'agir.",
+    q: "Un agent IA, est-ce simplement ChatGPT branché sur mes outils ?",
+    a: "Non. Un assistant attend votre message, un agent se déclenche sur un événement : une demande qui arrive, une échéance, un dossier qui change d'état. Ce qui change, ce n'est pas le modèle, c'est de connecter l'IA à son CRM, à sa messagerie et à ses outils métier, puis de lui donner le droit d'agir.",
   },
   {
     q: "Est-ce que l'agent peut se tromper ?",
@@ -49,11 +48,11 @@ const FAQ = [
   },
   {
     q: "Qui garde le contrôle ?",
-    a: "Vous. L'agent travaille dans vos outils, avec les accès que vous lui donnez, et vous pouvez les retirer à tout moment. Chaque automatisation est réversible et le périmètre reste défini par vous.",
+    a: "Vous. L'agent travaille dans les outils de votre entreprise, avec les accès que vous lui donnez, et vous pouvez les retirer à tout moment. Chaque automatisation est réversible et le périmètre reste défini par vous.",
   },
   {
-    q: "Combien de temps pour mettre en place un agent IA ?",
-    a: "Comptez environ un mois entre le premier échange et un agent qui tourne dans vos outils. Le délai dépend du nombre d'outils à connecter et du niveau de validation souhaité.",
+    q: "Que se passe-t-il pendant le mois de mise en place ?",
+    a: "La première semaine sert au cadrage : on choisit la tâche à automatiser et on définit ce que l'agent fait seul. Viennent ensuite les accès aux outils, la construction, puis les tests sur vos vrais dossiers. Vous relisez ses premières sorties avant qu'il prenne la main.",
   },
   {
     q: "Avec quels outils un agent IA peut-il fonctionner ?",
@@ -109,6 +108,13 @@ export default function AgentsIaPage() {
               priority
               className="pa-lion pa-lion-hero"
             />
+            <p className="pa-text">
+              PulseoAI est une agence d’agents IA. Nous prenons en charge la
+              création d’agent IA sur mesure, puis sa mise en place dans les
+              outils métier de votre entreprise : messagerie, CRM, devis,
+              facturation, planning.
+              Notre rôle d’intégrateur IA s’arrête là où commence votre métier.
+            </p>
             <div className="pa-actions">
               <a href="#cadrer" className="pa-btn pa-btn-primary">
                 <span>Cadrer mon premier agent</span>
@@ -141,6 +147,14 @@ export default function AgentsIaPage() {
               prépare ou exécute l&apos;action. La différence n&apos;est pas
               l&apos;intelligence, c&apos;est l&apos;accès à vos données et le
               droit d&apos;agir.
+            </p>
+            <p className="pa-text">
+              Concrètement, intégrer l’IA dans ses outils métier veut dire lui
+              ouvrir les bons accès : connecter l’IA à son CRM pour qu’elle
+              retrouve un historique, à la messagerie pour qu’elle lise une
+              demande, à l’outil de facturation pour qu’elle sache ce qui reste
+              impayé. C’est ce qui transforme un assistant en automatisation sur
+              mesure, ancrée dans le quotidien de votre entreprise.
             </p>
           </div>
         </section>
@@ -200,55 +214,57 @@ export default function AgentsIaPage() {
                 {
                   nom: "Commercial et prospection",
                   items: [
-                    "Prospection sortante",
-                    "Qualification des demandes entrantes",
-                    "Préparation et suivi des rendez-vous",
+                    "Qualifier les demandes entrantes avant votre première lecture",
+                    "Automatiser la relance client quand un devis reste sans réponse",
+                    "Préparer vos rendez-vous avec l’historique déjà réuni depuis votre CRM",
                   ],
                 },
                 {
                   nom: "Devis et facturation",
                   items: [
-                    "Préparation de devis à partir de notes terrain",
-                    "Relance des factures impayées",
-                    "Suivi des acomptes",
+                    "Automatiser les devis à partir de notes prises sur le terrain",
+                    "Automatiser la relance des factures impayées, avec le ton adapté au retard",
+                    "Automatiser la facturation récurrente et le suivi des acomptes",
                   ],
                 },
                 {
                   nom: "Support et relation client",
                   items: [
-                    "Tri et priorisation des demandes",
-                    "Réponse de premier niveau",
-                    "Collecte et synthèse des avis clients",
+                    "Automatiser le traitement des emails entrants, tri et priorisation",
+                    "Répondre au premier niveau sur les questions qui reviennent chaque semaine",
+                    "Rassembler et résumer les avis clients",
                   ],
                 },
                 {
                   nom: "Email et administratif",
                   items: [
-                    "Tri et résumé de boîte mail",
-                    "Préparation de dossiers",
-                    "Mise à jour de données entre outils",
+                    "Automatiser les tâches administratives qui reviennent chaque semaine",
+                    "Résumer votre boîte mail et sortir les points qui demandent une décision",
+                    "Mettre à jour vos données entre deux logiciels, sans ressaisie",
                   ],
                 },
                 {
                   nom: "RH et recrutement",
                   items: [
-                    "Tri de candidatures",
-                    "Suivi de l'arrivée d'un nouveau salarié",
-                    "Réponse aux questions internes récurrentes",
+                    "Trier les candidatures et préparer les entretiens",
+                    "Suivre l’arrivée d’un nouveau salarié, étape par étape",
+                    "Réduire les tâches répétitives de réponse aux questions internes",
                   ],
                 },
                 {
                   nom: "Pilotage et direction",
                   items: [
-                    "Rapport de situation à partir de plusieurs outils",
-                    "Veille sur le marché et les concurrents",
+                    "Construire un rapport de situation à partir de plusieurs outils",
+                    "Suivre votre marché et vos concurrents sans y passer vos soirées",
+                    "Automatisation de workflow entre vos outils de pilotage",
                   ],
                 },
                 {
                   nom: "Métier et sectoriel",
                   items: [
-                    "Agents taillés pour un métier précis",
-                    "Hôtellerie, restauration, commerce, artisanat",
+                    "IA pour artisan : devis, planning, suivi de chantier",
+                    "IA pour hôtel : demandes de réservation directe et réponses aux voyageurs",
+                    "Agent IA pour PME et automatisation pour TPE, taillés pour votre métier",
                   ],
                 },
               ].map((f, i) => (
@@ -294,8 +310,8 @@ export default function AgentsIaPage() {
 
           <div className="pa-inner">
             <p className="pa-note">
-              Un agent IA se connecte aux outils que vous utilisez déjà, via
-              leurs interfaces de connexion publiques. Les noms cités sont ceux
+              Un agent IA se connecte aux outils que votre entreprise utilise
+              déjà, via leurs interfaces de connexion publiques. Les noms cités sont ceux
               de leurs éditeurs respectifs.
             </p>
           </div>
@@ -334,7 +350,10 @@ export default function AgentsIaPage() {
                 <h3 className="pa-step-title">Je construis et je livre</h3>
                 <p className="pa-step-text">
                   Comptez environ un mois entre le premier échange et un agent
-                  qui tourne dans vos outils.
+                  qui tourne dans vos outils. Ce mois sert à connecter les accès,
+                  construire l’agent, puis le tester sur vos vrais dossiers. Vous
+                  relisez ses premières sorties et on ajuste avant de lui laisser
+                  la main.
                 </p>
               </article>
 
@@ -347,6 +366,51 @@ export default function AgentsIaPage() {
                 </p>
               </article>
             </div>
+          </div>
+        </section>
+
+        {/* ---------- 5 bis. LIMITES ---------- */}
+        <section className="pa-section">
+          <div className="pa-inner">
+            <h2 className="pa-h2">
+              Ce qu’un agent IA{" "}
+              <span className="pa-mark pa-mark-vert">ne fait pas</span>
+            </h2>
+            <p className="pa-text">
+              Une automatisation sur mesure n’a d’intérêt que si vous savez aussi
+              où elle s’arrête. Voici ce que nous ne promettons pas.
+            </p>
+
+            <div className="pa-duo">
+              <article className="pa-card pa-card-1">
+                <h3 className="pa-card-title">Il ne décide pas à votre place</h3>
+                <p className="pa-card-text">
+                  Un agent prépare, trie, rédige et relance. Il ne fixe pas vos
+                  prix, ne choisit pas vos clients et n’engage pas votre
+                  entreprise. Sur un envoi client, un devis ou un paiement, il
+                  soumet et vous validez. L’autonomie se gagne cas par cas, une
+                  fois que vous avez vu comment il travaille.
+                </p>
+              </article>
+
+              <article className="pa-card pa-card-2">
+                <h3 className="pa-card-title">Il ne répare pas une organisation floue</h3>
+                <p className="pa-card-text">
+                  Pour automatiser les tâches administratives, encore faut-il que
+                  l’information existe quelque part. Si les devis vivent sur des
+                  bouts de papier et que rien n’est tracé, l’agent n’a rien à
+                  lire. Dans ce cas, on commence par remettre les données au bon
+                  endroit, pas par installer un agent.
+                </p>
+              </article>
+            </div>
+
+            <p className="pa-text">
+              Ce n’est pas non plus le bon moment si votre entreprise change de
+              modèle dans les semaines qui viennent, ou si la tâche visée revient
+              deux fois par an. Un agent se rentabilise sur ce qui se répète et
+              vous fait perdre du temps chaque semaine.
+            </p>
           </div>
         </section>
 
