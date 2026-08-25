@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import { GoogleTagManager } from "@next/third-parties/google";
+import Script from "next/script";
 import "./globals.css";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
@@ -87,7 +87,25 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
       </head>
       <body className="min-h-full flex flex-col bg-white text-navy font-sans pb-[68px] lg:pb-0">
-        <GoogleTagManager gtmId="GTM-W7BR5JDJ" />
+        {/*
+          Google Tag Manager charge apres le chargement de la page.
+          Le composant <GoogleTagManager> de @next/third-parties ajoutait un
+          <link rel="preload" as="script"> sur gtm.js, soit 118 Ko compresses
+          en haute priorite, 57% des octets de la chaine critique. Il entrait
+          en concurrence avec le CSS, les polices et l'image LCP.
+          Meme conteneur, meme dataLayer, simplement hors du chemin critique.
+        */}
+        <Script id="gtm" strategy="lazyOnload">
+          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W7BR5JDJ');`}
+        </Script>
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-W7BR5JDJ"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
         <div className="th-grain" aria-hidden />
         <Header />
         <main className="flex-1">{children}</main>
