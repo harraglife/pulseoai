@@ -1,3 +1,4 @@
+import { septemberArticles, septemberPosts } from "@/lib/blog-articles-2026-09";
 export type BlogPostMeta = {
   slug: string;
   title: string;
@@ -62,6 +63,7 @@ const monthMap: Record<string, number> = {
 };
 
 export const blogPosts: BlogPostMeta[] = [
+  ...septemberPosts,
   {
     slug: "comment-utiliser-ia-entreprise",
     title: "Comment utiliser l’IA dans son entreprise : le guide concret pour dirigeants",
@@ -255,6 +257,7 @@ export const blogPosts: BlogPostMeta[] = [
 ];
 
 const newArticles: Record<string, BlogArticle> = {
+  ...septemberArticles,
   "comment-utiliser-ia-entreprise": {
     "slug": "comment-utiliser-ia-entreprise",
     "title": "Comment utiliser l’IA dans son entreprise : le guide concret pour dirigeants",
