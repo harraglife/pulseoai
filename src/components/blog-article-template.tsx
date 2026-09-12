@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowLeft, Calendar, ChevronRight, Clock, User } from "lucide-react";
 import type { BlogArticle } from "@/lib/blog-posts";
+import type { BlogTable } from "@/lib/blog-articles-2026-09";
 import { getArticleSchemaEnhancements } from "@/lib/article-metadata";
 import { QuickAnswer } from "@/components/quick-answer";
 import { RelatedPosts } from "@/components/related-posts";
@@ -9,6 +10,78 @@ import { ContactForm } from "@/components/contact-form";
 import "@/styles/article.css";
 
 
+
+/**
+ * Liens dans le texte, syntaxe [libelle](url).
+ * Lien interne (commence par /) : composant Link. Lien externe : ouvre un nouvel onglet.
+ */
+const INLINE_LINK = /\[([^\]]+)\]\((\/[^)\s]*|https?:\/\/[^)\s]+)\)/g;
+
+function renderInline(text: string) {
+  const parts: React.ReactNode[] = [];
+  let last = 0;
+  let match: RegExpExecArray | null;
+  INLINE_LINK.lastIndex = 0;
+  while ((match = INLINE_LINK.exec(text)) !== null) {
+    if (match.index > last) parts.push(text.slice(last, match.index));
+    const [, label, href] = match;
+    const className = "font-medium text-cyan underline decoration-cyan/40 underline-offset-4 transition-colors hover:text-cyan-dark";
+    parts.push(
+      href.startsWith("/") ? (
+        <Link key={`${href}-${match.index}`} href={href} className={className}>
+          {label}
+        </Link>
+      ) : (
+        <a key={`${href}-${match.index}`} href={href} className={className} target="_blank" rel="noopener noreferrer">
+          {label}
+        </a>
+      ),
+    );
+    last = match.index + match[0].length;
+  }
+  if (last < text.length) parts.push(text.slice(last));
+  return parts.length === 1 ? parts[0] : parts;
+}
+
+/** Retire la syntaxe de lien pour ne compter que les mots lus. */
+function stripInlineLinks(text: string) {
+  return text.replace(INLINE_LINK, "$1");
+}
+
+/** Certains articles portent un tableau optionnel en plus du type de base. */
+function tableOf(block: object): BlogTable | undefined {
+  return (block as { table?: BlogTable }).table;
+}
+
+function ArticleTable({ table }: { table: BlogTable }) {
+  return (
+    <div className="ba-table overflow-x-auto rounded-[20px] border border-[#DEE6F3]">
+      <table className="w-full border-collapse text-left text-[14px] leading-6 text-navy/78">
+        {table.caption ? <caption className="px-4 pt-3 text-left text-[13px] text-navy/60">{table.caption}</caption> : null}
+        <thead>
+          <tr>
+            {table.headers.map((header) => (
+              <th key={header} scope="col" className="border-b border-[#DEE6F3] px-4 py-3 text-[13px] font-semibold uppercase tracking-[0.04em] text-navy">
+                {header}
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {table.rows.map((row, rowIndex) => (
+            <tr key={rowIndex} className={rowIndex % 2 === 1 ? "bg-[#F7F8FB]" : undefined}>
+              {row.map((cell, cellIndex) => (
+                <td key={cellIndex} className="border-b border-[#EEF2F8] px-4 py-3 align-top">
+                  {renderInline(cell)}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
 
 /** Mots-cles surlignes dans le titre, du plus long au plus court. */
 const TITLE_KEYWORDS = [
@@ -274,17 +347,18 @@ export function BlogArticleTemplate({ article }: { article: BlogArticle }) {
                 </h2>
                 <div className="mt-4 space-y-4 text-[15px] leading-7 text-navy/68 sm:text-[16px] sm:leading-8">
                   {section.paragraphs.map((paragraph) => (
-                    <p key={paragraph}>{paragraph}</p>
+                    <p key={paragraph}>{renderInline(paragraph)}</p>
                   ))}
                   {section.bullets?.length ? (
                     <ul className="space-y-2 pl-5 text-[15px] leading-7 text-navy/68">
                       {section.bullets.map((bullet) => (
                         <li key={bullet} className="list-disc marker:text-cyan">
-                          {bullet}
+                          {renderInline(bullet)}
                         </li>
                       ))}
                     </ul>
                   ) : null}
+                  {tableOf(section) ? <ArticleTable table={tableOf(section)!} /> : null}
                   {index === 1 && article.bodyCta ? (
                     <p className="ba-box ba-box-light rounded-[20px] border border-[#DDE7F4] px-4 py-4 text-[15px] leading-7 text-navy/72">
                       {article.bodyCta.intro}{" "}
@@ -301,17 +375,18 @@ export function BlogArticleTemplate({ article }: { article: BlogArticle }) {
                       </h3>
                       <div className="mt-3 space-y-4 text-[15px] leading-7 text-navy/68 sm:text-[16px] sm:leading-8">
                         {subsection.paragraphs.map((paragraph) => (
-                          <p key={paragraph}>{paragraph}</p>
+                          <p key={paragraph}>{renderInline(paragraph)}</p>
                         ))}
                         {subsection.bullets?.length ? (
                           <ul className="space-y-2 pl-5 text-[15px] leading-7 text-navy/68">
                             {subsection.bullets.map((bullet) => (
                               <li key={bullet} className="list-disc marker:text-cyan">
-                                {bullet}
+                                {renderInline(bullet)}
                               </li>
                             ))}
                           </ul>
                         ) : null}
+                        {tableOf(subsection) ? <ArticleTable table={tableOf(subsection)!} /> : null}
                       </div>
                     </div>
                   ))}
@@ -402,6 +477,7 @@ function isoDate(date: string) {
 function countWords(values: Array<string | undefined>) {
   return values
     .filter((value): value is string => Boolean(value))
+    .map(stripInlineLinks)
     .join(" ")
     .trim()
     .split(/\s+/)
