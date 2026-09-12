@@ -66,6 +66,53 @@ function buildMentions(names: Array<keyof typeof mentionUrls>): ArticleMention[]
 }
 
 export const articleMetadataBySlug: Record<string, ArticleSchemaEnhancement> = {
+  "suivre-visibilite-chatgpt-ia": {
+    about: {
+      "@type": "Thing",
+      name: "Suivi de visibilité IA",
+      description:
+        "Méthode et outils pour mesurer et suivre la visibilité d’une entreprise dans les réponses de ChatGPT, Perplexity et Gemini.",
+    },
+    mentions: buildMentions(["ChatGPT", "Perplexity", "Gemini", "Google AI Overviews", "GEO"]),
+    howTo: {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      name: "Comment suivre sa visibilité dans ChatGPT",
+      description:
+        "Méthode manuelle en trois étapes pour mesurer chaque semaine si une entreprise est mentionnée et citée dans les réponses de ChatGPT, Perplexity et Gemini.",
+      totalTime: "PT1H",
+      inLanguage: "fr-FR",
+      step: [
+        {
+          "@type": "HowToStep",
+          position: 1,
+          name: "Construire un jeu de 20 prompts",
+          text: "Rédiger 20 questions telles que les clients les posent : prompts de découverte, de comparaison et de marque.",
+        },
+        {
+          "@type": "HowToStep",
+          position: 2,
+          name: "Relever chaque semaine sur trois moteurs",
+          text: "Poser les mêmes prompts dans une session vierge sur ChatGPT, Perplexity et Gemini, le même jour chaque semaine.",
+        },
+        {
+          "@type": "HowToStep",
+          position: 3,
+          name: "Noter mention, citation et concurrents",
+          text: "Pour chaque prompt, noter si l’entreprise est mentionnée, si son site est cité comme source, et quels concurrents apparaissent.",
+        },
+      ],
+    },
+  },
+  "agent-ia-sur-mesure-pme": {
+    about: {
+      "@type": "Thing",
+      name: "Agent IA sur mesure pour PME",
+      description:
+        "Ce qu’un agent IA sur mesure fait concrètement dans une PME, ses cas d’usage, sa mise en place et les facteurs de coût.",
+    },
+    mentions: buildMentions(["ChatGPT", "Claude", "Gemini"]),
+  },
   "seo-geo-rendre-entreprise-visible-google-chatgpt-gemini": {
     about: {
       "@type": "Thing",
