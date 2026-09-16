@@ -66,6 +66,15 @@ function buildMentions(names: Array<keyof typeof mentionUrls>): ArticleMention[]
 }
 
 export const articleMetadataBySlug: Record<string, ArticleSchemaEnhancement> = {
+  "agence-referencement-chatgpt-comment-choisir": {
+    about: {
+      "@type": "Thing",
+      name: "Agence de référencement ChatGPT",
+      description:
+        "Ce qu’une agence de référencement ChatGPT fait, les critères pour la choisir, les questions à poser et les délais réalistes.",
+    },
+    mentions: buildMentions(["ChatGPT", "OpenAI", "Perplexity", "Gemini", "Google AI Overviews", "GEO", "SEO IA"]),
+  },
   "veille-seo-methode-outils": {
     about: {
       "@type": "Thing",
