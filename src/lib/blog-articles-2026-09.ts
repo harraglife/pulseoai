@@ -454,9 +454,258 @@ const agentIaSurMesure: ArticleWithTables = {
   ],
 };
 
+const veilleSeo: ArticleWithTables = {
+  slug: "veille-seo-methode-outils",
+  title: "Veille SEO : méthode, sources et outils pour rester à jour",
+  seoTitle: "Comment faire sa veille SEO en 2026 : méthode et outils",
+  description:
+    "Méthode de veille SEO en quatre temps, sources officielles, outils gratuits, et pourquoi la veille doit couvrir ChatGPT et les AI Overviews.",
+  date: "16 septembre 2026",
+  dateModified: "16 septembre 2026",
+  readingTime: "9 min",
+  category: "SEO / GEO",
+  articleSection: "Veille SEO",
+  keywords: [
+    "veille SEO",
+    "veille référencement",
+    "comment faire sa veille SEO",
+    "outil de veille SEO",
+    "sources veille SEO",
+    "veille SEO IA",
+    "mises à jour Google",
+  ],
+  intro:
+    "Une veille SEO consiste à suivre, chaque semaine, ce qui change chez Google et dans les moteurs IA, puis à vérifier l’effet sur votre propre site. La plupart des dirigeants la font mal : ils lisent trop d’articles et ne regardent jamais leur Search Console. Voici une méthode en quatre temps, des sources fiables et des outils gratuits pour tenir une veille référencement utile en moins d’une heure par semaine.",
+  quickAnswer: {
+    question: "Comment faire sa veille SEO ?",
+    answer:
+      "Faire sa veille SEO consiste à suivre quatre choses chaque semaine : les annonces officielles de Google, les mises à jour de son algorithme, les données de votre Search Console, et la visibilité de votre site dans les moteurs IA comme ChatGPT ou les AI Overviews. La méthode tient en une heure par semaine avec des outils gratuits : tableau de bord d’état de Google, Search Console, Google Alerts et lecteur RSS. L’essentiel est de relier chaque changement observé à un effet mesuré sur vos pages.",
+  },
+  contextualLinks: [
+    { label: "suivre ses concurrents dans Google et les IA", href: "/blog/veille-concurrentielle-seo-ia-serp-locales" },
+    { label: "suivre sa visibilité dans ChatGPT", href: "/blog/suivre-visibilite-chatgpt-ia" },
+    { label: "notre offre SEO / GEO", href: "/offre" },
+  ],
+  bodyCta: {
+    intro: "Vous préférez qu’on tienne la veille et le suivi mensuel pour vous ?",
+    linkLabel: "Découvrez notre accompagnement SEO / GEO",
+    href: "/offre",
+    outro: ", avec un point mensuel sur vos positions et vos mentions IA.",
+  },
+  relatedSlugs: [
+    "veille-concurrentielle-seo-ia-serp-locales",
+    "suivre-visibilite-chatgpt-ia",
+    "google-ai-overviews-entreprises-comprendre",
+  ],
+  faqTitle: "FAQ : la veille SEO",
+  faqItems: [
+    {
+      question: "Combien de temps faut-il consacrer à sa veille SEO ?",
+      answer:
+        "Une heure par semaine suffit pour une PME : quinze minutes sur les annonces officielles de Google, vingt minutes dans la Search Console, et le reste pour noter ce qui a changé et décider d’une action. Au-delà, vous lisez plus que vous n’agissez.",
+    },
+    {
+      question: "Quels sont les meilleurs outils de veille SEO gratuits ?",
+      answer:
+        "Le tableau de bord d’état de la recherche Google pour les mises à jour, la Search Console pour vos propres données, Google Alerts pour les mentions de votre marque, et un lecteur RSS pour les blogs officiels. Ces quatre outils couvrent l’essentiel sans abonnement.",
+    },
+    {
+      question: "Faut-il réagir à chaque mise à jour de Google ?",
+      answer:
+        "Non. Google recommande d’attendre au moins une semaine complète après la fin d’une mise à jour majeure avant d’analyser son site. Une baisse pendant le déploiement peut se corriger seule. On note la date, on compare quinze jours plus tard, on agit seulement si l’écart persiste.",
+    },
+    {
+      question: "La veille SEO doit-elle inclure ChatGPT et Perplexity ?",
+      answer:
+        "Oui, depuis que les réponses générées apparaissent dans Google en France et que vos clients posent leurs questions à ChatGPT. Il faut ajouter à la veille un relevé régulier de vos mentions dans ces moteurs, avec un jeu fixe de questions, en plus des positions Google.",
+    },
+    {
+      question: "Quelle différence entre veille SEO et veille concurrentielle SEO ?",
+      answer:
+        "La veille SEO suit les changements de l’environnement : moteurs, algorithmes, vos propres données. La veille concurrentielle SEO suit les autres acteurs : qui monte sur vos requêtes, qui est cité par les IA à votre place. Les deux se complètent et partagent les mêmes outils.",
+    },
+  ],
+  sections: [
+    {
+      title: "Qu’est-ce qu’une veille SEO ?",
+      paragraphs: [
+        "Une veille SEO est une routine régulière qui consiste à observer les changements des moteurs, à mesurer leur effet sur votre site, et à en tirer une action, ce qui la distingue de la lecture d’actualités.",
+        "Le besoin est réel parce que Google change en permanence : en 2023, la firme indique avoir mené [plus de 700 000 expériences ayant abouti à plus de 4 000 améliorations de la recherche](https://www.google.com/search/howsearchworks/how-search-works/rigorous-testing/), soit plus de dix changements par jour.",
+        "Aucune entreprise ne peut suivre ce rythme article par article, donc la veille référencement utile ne cherche pas à tout lire, elle cherche à repérer les quelques changements qui touchent réellement vos pages et vos clients.",
+        "Elle est aussi la suite naturelle d’un [audit SEO / GEO](/blog/audit-seo-geo-visibilite-ia) : l’audit donne l’état à un instant donné, la veille dit ensuite si cet état s’améliore ou se dégrade, et pourquoi.",
+      ],
+    },
+    {
+      title: "Qu’est-ce que ça veut dire SEO ?",
+      paragraphs: [
+        "SEO signifie Search Engine Optimization, en français optimisation pour les moteurs de recherche, c’est-à-dire l’ensemble des actions qui permettent à un site d’apparaître dans les résultats non payants de Google, Bing et des moteurs IA.",
+        "Avant de suivre l’actualité du SEO, il faut savoir ce que l’on surveille, et les deux questions ci-dessous reviennent le plus souvent chez les dirigeants qui démarrent, parce qu’elles structurent la veille qui suit.",
+      ],
+      subsections: [
+        {
+          title: "Quels sont les 3 types de SEO ?",
+          paragraphs: [
+            "On distingue le SEO on-page, qui concerne le contenu et les balises de vos pages, le SEO off-page, qui regroupe les liens obtenus ailleurs, et le SEO technique, qui traite la vitesse et l’indexation.",
+            "Une bonne veille SEO couvre les trois, parce qu’une mise à jour de Google peut toucher l’un sans toucher les autres, et qu’une baisse après une mise à jour de spam n’appelle pas la même réponse.",
+          ],
+        },
+        {
+          title: "Quels sont les 4 piliers du SEO ?",
+          paragraphs: [
+            "Les quatre piliers retenus par la plupart des praticiens sont la technique, le contenu, la popularité et, depuis peu, la visibilité dans les réponses IA, le pilier qui bouge le plus vite en 2026.",
+            "C’est pour cela que nous traitons ensemble le SEO et le GEO dans notre [offre SEO / GEO](/offre) : les signaux qui font remonter une page dans Google sont ceux qui la font citer par ChatGPT.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "C’est quoi la veille en marketing ?",
+      paragraphs: [
+        "En marketing, la veille désigne la collecte organisée d’informations sur un marché, ses acteurs et ses évolutions, pour prendre de meilleures décisions sur les concurrents, les clients, les technologies et la réglementation.",
+        "La veille SEO en est un sous-ensemble centré sur les moteurs, avec deux branches : la veille sur l’environnement, que décrit cet article, et la veille sur les concurrents, détaillée dans notre guide de [veille concurrentielle SEO et IA](/blog/veille-concurrentielle-seo-ia-serp-locales).",
+      ],
+    },
+    {
+      title: "Comment faire sa veille SEO en pratique ?",
+      paragraphs: [
+        "La méthode ci-dessous tient en une heure par semaine, le même jour, dans le même ordre. Elle repose sur quatre temps qui s’enchaînent, du plus général au plus proche de votre site.",
+      ],
+      subsections: [
+        {
+          title: "Temps 1 : lire les annonces officielles, pas les commentaires",
+          paragraphs: [
+            "Commencez par le tableau de bord d’état de Google, qui liste chaque mise à jour de classement avec sa date : la [mise à jour majeure de mai 2026 a débuté le 21 mai et s’est déployée sur 11 jours et 21 heures](https://status.search.google.com/products/rGHU1u87FJnkP6W2GwMi/history).",
+            "Ajoutez le blog Google Search Central et sa documentation : ces deux sources suffisent pour la partie officielle, et elles évitent les interprétations hâtives publiées pendant qu’une mise à jour est encore en cours.",
+          ],
+        },
+        {
+          title: "Temps 2 : ouvrir la Search Console sur 28 jours",
+          paragraphs: [
+            "Comparez vos clics, impressions et position moyenne sur les 28 derniers jours face aux 28 précédents, jamais sur 7 jours : les données [sont normalement disponibles sous 2 à 3 jours](https://support.google.com/webmasters/answer/96568), et une semaine isolée ne montre que du bruit.",
+            "Notez les requêtes qui perdent ou gagnent le plus d’impressions, et les pages concernées, puis élargissez : le [rapport Performances affiche par défaut les trois derniers mois](https://support.google.com/webmasters/answer/7576553), ce qui permet de repérer une tendance de fond.",
+          ],
+        },
+        {
+          title: "Temps 3 : relier chaque variation à un événement daté",
+          paragraphs: [
+            "Reportez sur un même calendrier les mises à jour Google, vos propres publications et les variations vues dans la Search Console : une baisse qui commence le jour d’une mise à jour majeure n’a pas la même cause qu’une baisse après une refonte.",
+            "Google [recommande d’attendre au moins une semaine complète après la fin d’une mise à jour majeure](https://developers.google.com/search/updates/core-updates) avant d’analyser son site, donc la veille consiste à noter, puis à vérifier quinze jours plus tard.",
+          ],
+        },
+        {
+          title: "Temps 4 : décider d’une seule action",
+          paragraphs: [
+            "Terminez chaque séance par une action, une seule : réécrire une page qui décroche, corriger une erreur d’indexation, publier un contenu sur une requête qui monte, parce qu’une veille sans décision n’est que de la lecture.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Quelles sources suivre pour une veille SEO fiable ?",
+      paragraphs: [
+        "Le tableau ci-dessous classe les sources par rôle : les sources officielles disent ce qui change, les médias spécialisés disent comment le secteur le comprend, et vos propres données disent ce que cela change pour vous.",
+      ],
+      table: {
+        caption: "Sources de veille SEO par rôle et fréquence de consultation",
+        headers: ["Source", "Ce qu’on y suit", "Fréquence"],
+        rows: [
+          [
+            "[Tableau de bord d’état Google](https://status.search.google.com/products/rGHU1u87FJnkP6W2GwMi/history)",
+            "Mises à jour de classement, dates de début et de fin, durée de déploiement.",
+            "Chaque semaine",
+          ],
+          [
+            "[Documentation Google Search Central](https://developers.google.com/search/updates/core-updates)",
+            "Règles officielles, recommandations après une mise à jour majeure.",
+            "À chaque mise à jour",
+          ],
+          [
+            "[Search Console](https://support.google.com/webmasters/answer/7576553)",
+            "Clics, impressions, position moyenne, pages et requêtes de votre site.",
+            "Chaque semaine, sur 28 jours",
+          ],
+          [
+            "[Google Alerts](https://support.google.com/websearch/answer/4815696)",
+            "Nouvelles pages qui citent votre marque, vos concurrents ou vos requêtes clés.",
+            "Alerte par e-mail",
+          ],
+          [
+            "Médias SEO francophones (Abondance, blogs d’agences)",
+            "Analyse des mises à jour, cas pratiques, actualité des moteurs IA en France.",
+            "Un lecteur RSS, quinze minutes par semaine",
+          ],
+          [
+            "ChatGPT, Perplexity, Gemini",
+            "Vos mentions et citations sur un jeu fixe de questions clients.",
+            "Chaque semaine",
+          ],
+        ],
+      },
+    },
+    {
+      title: "Quels outils de veille SEO utiliser ?",
+      paragraphs: [
+        "Les meilleurs outils de veille SEO pour une PME sont gratuits et déjà à portée de main. Les outils payants deviennent utiles quand vous suivez plusieurs sites, plusieurs villes ou plusieurs concurrents en même temps.",
+      ],
+      bullets: [
+        "La Search Console : la seule source qui décrit votre site tel que Google le voit. C’est l’outil de veille SEO numéro un, avant tout abonnement.",
+        "Google Alerts : vous recevez un e-mail quand de nouveaux résultats apparaissent pour un sujet, avec un réglage de [la fréquence, des sources, de la langue et de la région](https://support.google.com/websearch/answer/4815696).",
+        "Un lecteur de flux RSS : il regroupe les blogs officiels et les médias SEO en un seul endroit, à lire d’un bloc plutôt que dispersé dans la journée.",
+        "Un outil de suivi de positions : utile dès que vous suivez plus de cinquante requêtes ou plusieurs zones géographiques.",
+        "Un outil de suivi de visibilité IA, ou un simple tableur : nous comparons les deux approches dans notre méthode pour [suivre sa visibilité dans ChatGPT](/blog/suivre-visibilite-chatgpt-ia).",
+      ],
+    },
+    {
+      title: "Pourquoi la veille SEO doit maintenant inclure les moteurs IA ?",
+      paragraphs: [
+        "Depuis le [22 juillet 2026, Google affiche les AI Overviews et le Mode IA en France](https://www.abondance.com/20260722-2640402-lancement-officielle-ai-overviews-france.html), et une partie des requêtes reçoit désormais une réponse rédigée avant les dix liens classiques.",
+        "La Search Console a suivi : [depuis le 31 août 2026, le rapport dédié aux performances dans l’IA générative est déployé pour tous les sites](https://support.google.com/webmasters/answer/16984139), avec les impressions par page, pays, date et appareil, sans les clics ni les requêtes.",
+        "Votre veille SEO IA doit donc ajouter deux relevés : ce rapport, et un jeu fixe de questions posées chaque semaine à ChatGPT, Perplexity et Gemini, comme nous l’expliquons dans notre guide sur [Google AI Overviews](/blog/google-ai-overviews-entreprises-comprendre).",
+        "Pour une entreprise locale, cette veille IA se double d’un suivi de la fiche Google et des avis, comme nous le faisons pour nos clients de la [métropole nantaise](/agence-seo-geo-nantes).",
+      ],
+    },
+    {
+      title: "Scénario illustratif : une PME structure sa veille SEO en six semaines",
+      paragraphs: [
+        "Le cas ci-dessous est un scénario type, construit pour montrer ce que produit une veille tenue avec méthode, et ses chiffres sont illustratifs : ils ne proviennent pas d’un client réel.",
+        "Une entreprise de services de vingt salariés reçoit l’essentiel de ses demandes par son site, et son dirigeant lit des newsletters SEO depuis deux ans sans avoir jamais ouvert la Search Console. Il bloque désormais une heure le lundi.",
+        "Semaines 1 et 2 : il installe un lecteur RSS avec quatre sources, crée trois alertes Google, et relève ses 28 derniers jours. Il découvre qu’une page de service perd des impressions depuis six semaines, sans qu’il l’ait vu.",
+        "Semaines 3 et 4 : le calendrier montre que la baisse a commencé la veille de la mise à jour majeure de mai. Il attend la fin du déploiement, constate que l’écart persiste, et réécrit la page en répondant directement aux questions de ses clients.",
+        "Semaines 5 et 6 : les impressions de la page remontent sans revenir au niveau initial, et son relevé hebdomadaire montre que son entreprise n’est citée par aucune IA sur ses questions clients, contre deux fois sur dix pour un concurrent.",
+        "Ce qui compte dans ce scénario n’est pas le rebond, qui reste modeste : six semaines de veille ont remplacé deux ans de lecture par deux décisions datées et mesurables, dont une qu’aucune newsletter n’aurait révélée.",
+      ],
+    },
+    {
+      title: "Quelles sont les limites de la veille SEO ?",
+      paragraphs: [
+        "La veille ne remplace ni le travail de contenu ni la technique, elle dit où regarder, pas quoi écrire, et une entreprise qui suit chaque mise à jour sans rien publier de nouveau n’avance pas.",
+      ],
+      bullets: [
+        "Le bruit : la plupart des articles publiés pendant une mise à jour spéculent. Attendez la fin du déploiement avant de conclure.",
+        "Les mises à jour silencieuses : Google indique procéder à des [mises à jour plus petites, non annoncées parce que peu perceptibles](https://developers.google.com/search/updates/core-updates). Toutes les variations n’ont pas de cause identifiable.",
+        "Le délai : les données de la Search Console arrivent avec deux à trois jours de retard, et un effet de contenu se mesure sur des semaines, pas des jours.",
+        "L’angle mort IA : aucun rapport officiel n’existe pour ChatGPT ou Perplexity. Le relevé manuel reste indispensable.",
+      ],
+    },
+    {
+      title: "Ce qu’il faut retenir",
+      paragraphs: [],
+      bullets: [
+        "La veille SEO suit quatre choses : annonces officielles, mises à jour, données de votre Search Console, visibilité dans les moteurs IA.",
+        "Une heure par semaine, le même jour, avec quatre outils gratuits, suffit pour une PME.",
+        "Lisez la Search Console sur 28 jours, jamais sur 24 heures ni sur 7 jours.",
+        "Attendez au moins une semaine après la fin d’une mise à jour majeure avant d’analyser une variation.",
+        "Depuis l’été 2026, la veille inclut les AI Overviews en France et un relevé hebdomadaire dans ChatGPT, Perplexity et Gemini.",
+        "Chaque séance de veille se termine par une décision, sinon ce n’est que de la lecture.",
+      ],
+    },
+  ],
+};
+
 export const septemberArticles: Record<string, BlogArticle> = {
   [suivreVisibilite.slug]: suivreVisibilite,
   [agentIaSurMesure.slug]: agentIaSurMesure,
+  [veilleSeo.slug]: veilleSeo,
 };
 
 export const septemberPosts: BlogPostMeta[] = [
@@ -477,5 +726,14 @@ export const septemberPosts: BlogPostMeta[] = [
     date: agentIaSurMesure.date,
     readingTime: agentIaSurMesure.readingTime,
     category: agentIaSurMesure.category,
+  },
+  {
+    slug: veilleSeo.slug,
+    title: veilleSeo.title,
+    seoTitle: veilleSeo.seoTitle,
+    description: veilleSeo.description,
+    date: veilleSeo.date,
+    readingTime: veilleSeo.readingTime,
+    category: veilleSeo.category,
   },
 ];
