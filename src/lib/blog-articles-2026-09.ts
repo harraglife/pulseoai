@@ -702,10 +702,277 @@ const veilleSeo: ArticleWithTables = {
   ],
 };
 
+const agenceReferencementChatgpt: ArticleWithTables = {
+  slug: "agence-referencement-chatgpt-comment-choisir",
+  title: "Agence de référencement ChatGPT : comment choisir en 2026",
+  seoTitle: "Agence référencement ChatGPT : critères et questions à poser",
+  description:
+    "Ce qu’une agence de référencement ChatGPT fait vraiment, les critères pour la choisir, les questions à poser, les signaux d’alerte et les délais.",
+  date: "16 septembre 2026",
+  dateModified: "16 septembre 2026",
+  readingTime: "13 min",
+  category: "SEO IA",
+  articleSection: "SEO IA",
+  keywords: [
+    "agence de référencement ChatGPT",
+    "référenceur ChatGPT",
+    "agence SEO ChatGPT",
+    "agence GEO",
+    "référencement ChatGPT",
+    "consultant visibilité ChatGPT",
+    "apparaître sur ChatGPT",
+  ],
+  intro:
+    "Une agence de référencement ChatGPT promet de faire citer votre entreprise dans les réponses des assistants IA, là où vos clients posent désormais leurs questions. Le marché est jeune, les offres se ressemblent et les garanties sont parfois fantaisistes. Voici ce qu’une telle agence fait réellement, comment la choisir, quelles questions lui poser et quels délais attendre.",
+  quickAnswer: {
+    question: "Comment choisir une agence de référencement ChatGPT ?",
+    answer:
+      "Une agence de référencement ChatGPT se choisit sur quatre critères : une méthode de mesure explicite fondée sur un jeu de questions clients, un travail visible sur les sources tierces que les IA citent, un socle SEO classique solide, et l’absence de toute garantie de position. Elle doit expliquer comment ChatGPT, Perplexity et Gemini choisissent leurs sources, montrer un premier relevé avant de signer, et annoncer des résultats mesurables entre quatre et douze semaines, jamais en quelques jours.",
+  },
+  contextualLinks: [
+    { label: "notre offre de référencement IA", href: "/offre" },
+    { label: "apparaître sur ChatGPT", href: "/blog/referencement-chatgpt-apparaitre-ia" },
+    { label: "auditer sa visibilité IA", href: "/blog/audit-seo-geo-visibilite-ia" },
+  ],
+  bodyCta: {
+    intro: "Vous voulez comparer avec un relevé réel avant de choisir ?",
+    linkLabel: "Demandez un audit de visibilité IA",
+    href: "/contact",
+    outro: ", vous repartez avec vos mentions actuelles et celles de vos concurrents.",
+  },
+  relatedSlugs: [
+    "referencement-chatgpt-apparaitre-ia",
+    "audit-seo-geo-visibilite-ia",
+    "seo-classique-vs-geo-acquisition-client",
+  ],
+  faqTitle: "FAQ : agence de référencement ChatGPT",
+  faqItems: [
+    {
+      question: "Une agence peut-elle garantir une position dans ChatGPT ?",
+      answer:
+        "Non. ChatGPT ne classe pas dix résultats, il rédige une réponse qui change d’une session à l’autre. Une agence sérieuse mesure une fréquence de mention sur un jeu de questions et s’engage sur une méthode et des livrables, jamais sur une position garantie.",
+    },
+    {
+      question: "Faut-il une agence spécialisée ou une agence SEO classique ?",
+      answer:
+        "Les deux compétences sont nécessaires. Le socle SEO reste la base, parce que les IA s’appuient sur des index de recherche. La spécialisation apporte le travail sur les sources tierces, la structure answer-first et la mesure dans les réponses IA. Une agence qui ne maîtrise qu’un des deux vous laissera à mi-chemin.",
+    },
+    {
+      question: "Combien de temps avant de voir des résultats ?",
+      answer:
+        "Comptez quatre à huit semaines pour les premières mentions sur des questions précises, et trois à six mois pour une présence stable face à des concurrents établis. Une agence qui promet des résultats en quelques jours vend autre chose que du référencement.",
+    },
+    {
+      question: "Que doit contenir le premier livrable d’une agence ?",
+      answer:
+        "Un relevé de vos mentions actuelles sur un jeu de questions clients dans ChatGPT, Perplexity et Gemini, la liste des concurrents cités à votre place, les sources tierces utilisées par les IA, et un plan d’actions priorisé. Sans ce relevé initial, aucun résultat ne pourra être prouvé ensuite.",
+    },
+    {
+      question: "Le référencement ChatGPT remplace-t-il le SEO Google ?",
+      answer:
+        "Non, il s’y ajoute. Google reste la première source de trafic et ses propres réponses IA sont actives en France depuis l’été 2026. Une agence de référencement ChatGPT doit traiter les deux ensemble, sinon vous gagnez d’un côté ce que vous perdez de l’autre.",
+    },
+  ],
+  sections: [
+    {
+      title: "Qu’est-ce qu’une agence de référencement ChatGPT ?",
+      paragraphs: [
+        "Une agence de référencement ChatGPT travaille la visibilité d’une entreprise dans les réponses des assistants IA : ChatGPT, mais aussi Perplexity, Gemini, Copilot et les réponses générées de Google. On parle aussi d’agence GEO, pour Generative Engine Optimization.",
+        "L’enjeu est simple à mesurer. Le [27 février 2026, OpenAI annonçait 900 millions d’utilisateurs hebdomadaires pour ChatGPT](https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users), soit 100 millions de plus qu’en octobre 2025, selon TechCrunch.",
+        "Une partie de ces utilisateurs demande à ChatGPT quel prestataire choisir, quel hôtel réserver ou quel logiciel comparer. Si votre entreprise n’est jamais nommée dans ces réponses, elle est absente d’un canal que vos concurrents commencent à occuper.",
+        "Le référenceur ChatGPT ne manipule pas le modèle : il agit sur ce que le modèle lit, votre site, les sources tierces qui parlent de vous, vos données structurées et la cohérence de vos informations, périmètre de notre [offre de référencement IA](/offre).",
+      ],
+    },
+    {
+      title: "Comment se faire référencer sur ChatGPT ?",
+      paragraphs: [
+        "Avant de choisir une agence, il faut comprendre ce qu’elle va faire, sinon vous ne pourrez ni juger sa méthode ni contrôler ses livrables. Le référencement ChatGPT repose sur trois mécanismes documentés par les éditeurs eux-mêmes.",
+      ],
+      subsections: [
+        {
+          title: "Être accessible aux robots d’OpenAI",
+          paragraphs: [
+            "OpenAI documente trois robots distincts : [OAI-SearchBot, utilisé pour faire apparaître des sites dans les fonctions de recherche de ChatGPT, ChatGPT-User, qui visite une page quand un utilisateur pose une question, et GPTBot, dédié à l’entraînement des modèles](https://developers.openai.com/api/docs/bots).",
+            "Un site qui bloque OAI-SearchBot dans son robots.txt ne peut pas être cité dans ChatGPT. C’est la première vérification qu’une agence doit faire, et elle prend cinq minutes.",
+          ],
+        },
+        {
+          title: "Être présent dans les sources que les IA consultent",
+          paragraphs: [
+            "Perplexity explique [rechercher sur Internet des sources faisant autorité, articles, sites et revues, puis afficher des citations numérotées vers les sources d’origine](https://www.perplexity.ai/help-center/en/articles/10352895-how-does-perplexity-work). ChatGPT fonctionne de façon comparable quand il navigue.",
+            "Ces sources sont rarement votre site seul : annuaires, comparatifs, presse locale, avis, fiches Google. Nous détaillons ce mécanisme dans [pourquoi votre site ne suffit pas](/blog/sources-citees-ia-site-ne-suffit-pas), et c’est ce qui distingue une vraie agence GEO d’une agence de contenu.",
+          ],
+        },
+        {
+          title: "Structurer son contenu pour être repris",
+          paragraphs: [
+            "Google indique qu’il [n’existe aucune exigence supplémentaire ni optimisation spéciale pour apparaître dans les AI Overviews ou l’AI Mode](https://developers.google.com/search/docs/appearance/ai-features) : les bonnes pratiques SEO restent la base.",
+            "Le travail consiste donc à répondre directement aux questions, à baliser les pages en Schema.org et à rendre les informations cohérentes partout. Notre guide pour [apparaître sur ChatGPT](/blog/referencement-chatgpt-apparaitre-ia) détaille ces cinq leviers.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Que fait concrètement une agence de référencement ChatGPT ?",
+      paragraphs: [
+        "Le tableau ci-dessous liste les prestations qu’une agence de référencement ChatGPT doit être capable de décrire, avec le livrable attendu pour chacune. Une offre qui ne couvre que la première ligne est une offre SEO classique renommée.",
+      ],
+      table: {
+        caption: "Prestations d’une agence de référencement ChatGPT et livrables attendus",
+        headers: ["Prestation", "Ce qu’elle contient", "Livrable à exiger"],
+        rows: [
+          [
+            "Audit de visibilité IA",
+            "Relevé des mentions et citations sur un jeu de questions clients, dans ChatGPT, Perplexity et Gemini, face aux concurrents.",
+            "Tableau de relevé daté, liste des concurrents cités, sources utilisées par les IA.",
+          ],
+          [
+            "Socle SEO et technique",
+            "Indexation, vitesse, robots.txt ouvert aux robots IA, canonical, maillage interne.",
+            "Rapport de corrections avec avant et après.",
+          ],
+          [
+            "Contenus answer-first",
+            "Pages qui répondent directement aux questions que posent les clients, avec définitions, FAQ et chiffres sourcés.",
+            "Pages publiées, requêtes visées, sources citées.",
+          ],
+          [
+            "Entités et données structurées",
+            "Balisage Schema.org (Organization, Service, FAQPage, LocalBusiness), cohérence nom, adresse, téléphone partout.",
+            "JSON-LD validé, fiche d’identité unique de l’entreprise.",
+          ],
+          [
+            "Sources tierces et citations",
+            "Présence dans les annuaires, comparatifs, médias et fiches que les IA consultent réellement sur votre marché.",
+            "Liste des sources visées, mentions obtenues, dates.",
+          ],
+          [
+            "Suivi mensuel",
+            "Relevé répété du même jeu de questions, évolution des mentions, part de présence face aux concurrents.",
+            "Rapport mensuel comparable d’un mois sur l’autre.",
+          ],
+        ],
+      },
+    },
+    {
+      title: "Agence SEO ChatGPT, agence GEO, référenceur ChatGPT : quelle différence ?",
+      paragraphs: [
+        "Ces trois appellations désignent le même métier avec des accents différents, et une quatrième s’y ajoute : le consultant visibilité ChatGPT, souvent indépendant. La différence utile n’est pas dans le nom, elle est dans le périmètre couvert.",
+      ],
+      bullets: [
+        "Agence SEO ChatGPT : une agence SEO classique qui a ajouté les moteurs IA à son offre. Solide sur la technique et les positions Google, parfois légère sur les sources tierces et la mesure IA.",
+        "Agence GEO : une agence centrée sur les réponses génératives. Forte sur la mesure et les sources, à vérifier sur le socle SEO, sans lequel les IA ne trouvent rien.",
+        "Référenceur ChatGPT ou consultant visibilité ChatGPT : un indépendant, souvent plus réactif et moins cher, limité par le temps disponible. Bon choix pour une PME sur un marché local.",
+        "Agence SEO et GEO : la combinaison des deux, que nous pratiquons à Nantes et partout en France. Nous expliquons pourquoi les deux vont ensemble dans [SEO classique vs GEO](/blog/seo-classique-vs-geo-acquisition-client).",
+      ],
+    },
+    {
+      title: "Quelles sont les 10 meilleures agences SEO en France ?",
+      paragraphs: [
+        "Il n’existe aucun classement officiel des agences SEO ou GEO en France. Les listes « top 10 » publiées en ligne sont le plus souvent rédigées par une agence qui s’y place, ou par un annuaire rémunéré à l’inscription.",
+        "Lisez-les comme une liste de candidats, pas comme un verdict. Un classement utile précise ses critères, la date de son relevé et sa méthode ; quand ces trois éléments manquent, la position dans la liste ne vous apprend rien.",
+        "La bonne question n’est pas « quelle est la meilleure agence », mais « quelle agence prouve ses résultats sur mon marché ». Les critères ci-dessous permettent d’y répondre en un rendez-vous.",
+      ],
+    },
+    {
+      title: "Quels critères pour choisir son agence de référencement ChatGPT ?",
+      paragraphs: [
+        "Six critères suffisent pour écarter les offres creuses. Ils tiennent en un seul rendez-vous de découverte, à condition de poser les questions dans cet ordre.",
+      ],
+      bullets: [
+        "Une méthode de mesure explicite : un jeu de questions clients, des relevés répétés, trois indicateurs distincts (mention, citation, source). Sans cela, aucun résultat ne pourra être prouvé.",
+        "Un premier relevé avant signature : l’agence doit pouvoir montrer où vous en êtes aujourd’hui, et qui est cité à votre place. C’est ce que nous faisons dans notre [audit de visibilité IA](/blog/audit-seo-geo-visibilite-ia).",
+        "Un travail sur les sources tierces : l’agence explique quelles sources les IA consultent sur votre marché et comment elle compte y faire figurer votre entreprise.",
+        "Un socle SEO assumé : elle vérifie l’indexation, la technique et les positions Google avant de parler d’IA, parce que les moteurs IA lisent les mêmes index.",
+        "Aucune garantie de position : une promesse de « top 3 dans ChatGPT » est un signal d’alerte, pas un argument.",
+        "Des délais réalistes annoncés par écrit : premières mentions entre quatre et huit semaines, présence stable en plusieurs mois.",
+      ],
+      subsections: [
+        {
+          title: "Les questions à poser avant de signer",
+          paragraphs: [
+            "Posez-les telles quelles, et notez les réponses. Une agence compétente y répond sans détour ; une agence qui vend un mot à la mode change de sujet.",
+          ],
+          bullets: [
+            "Comment mesurez-vous ma visibilité dans ChatGPT aujourd’hui, et pouvez-vous me montrer le relevé ?",
+            "Quelles sources les IA citent-elles sur mon marché, et lesquelles visez-vous pour moi ?",
+            "Que se passe-t-il sur mon SEO Google pendant que vous travaillez l’IA ?",
+            "Quel est le premier livrable, à quelle date, et à quoi ressemble le rapport mensuel ?",
+            "Qui rédige les contenus, et comment vérifiez-vous les chiffres qu’ils contiennent ?",
+            "Que se passe-t-il si, au bout de trois mois, les mentions n’ont pas bougé ?",
+          ],
+        },
+        {
+          title: "Les signaux d’alerte",
+          paragraphs: [
+            "Certains arguments de vente reviennent souvent chez les agences SEO ChatGPT improvisées et trahissent une méconnaissance du sujet. En voici quatre qui doivent faire arrêter la discussion.",
+          ],
+          bullets: [
+            "Une garantie de position ou de citation dans ChatGPT : personne ne contrôle une réponse générée.",
+            "Un « partenariat » ou un « accès privilégié » à OpenAI ou à Google : il n’existe aucun programme de référencement payant dans ChatGPT.",
+            "Un devis sans audit préalable : l’agence ne sait pas où vous en êtes et vend le même lot à tout le monde.",
+            "Des contenus produits en masse par IA sans relecture ni source : c’est précisément ce que les moteurs apprennent à écarter.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Quel est le tarif d’une agence SEO ?",
+      paragraphs: [
+        "Les prix du référencement ChatGPT s’alignent sur ceux du SEO, parce que le travail est de même nature : audit, contenus, technique, sources, suivi. Le marché français dispose d’un repère chiffré à lire comme un ordre de grandeur.",
+        "Sur [683 budgets de projets SEO réels analysés par La Fabrique du Net, le prix médian d’un projet est de 5 000 €, et un abonnement mensuel se situe le plus souvent entre 800 et 2 000 € HT par mois](https://www.lafabriquedunet.fr/agences/pages/agences-seo/tarifs).",
+        "Trois modèles coexistent : l’audit au forfait, l’accompagnement mensuel et la journée de consultant. Une agence GEO facture en général l’audit à part, parce qu’il dimensionne la suite, puis un mensuel qui inclut le suivi.",
+        "Ce qui fait varier le prix, ce n’est pas la taille du site, c’est le nombre de questions clients à couvrir, le nombre de villes ou de marchés, et l’écart avec les concurrents déjà cités. Un premier relevé permet de le chiffrer sérieusement.",
+      ],
+    },
+    {
+      title: "Quelle entreprise detient ChatGPT ?",
+      paragraphs: [
+        "ChatGPT appartient à OpenAI, qui l’a [lancé le 30 novembre 2022 sous forme de version de recherche](https://openai.com/index/chatgpt/). Gemini appartient à Google, Copilot à Microsoft, Claude à Anthropic, Perplexity à la société du même nom.",
+        "Cette question compte pour choisir une agence : chaque moteur puise dans des sources différentes. Une agence de référencement ChatGPT qui ne parle que de ChatGPT ignore Gemini, qui s’appuie sur l’index Google, et Perplexity, qui cite beaucoup plus de sources.",
+        "Elle compte aussi pour Google lui-même. Depuis le [22 juillet 2026, les AI Overviews et le Mode IA sont déployés en France](https://www.abondance.com/20260722-2640402-lancement-officielle-ai-overviews-france.html), et une agence doit désormais suivre ces réponses au même titre que ChatGPT.",
+      ],
+    },
+    {
+      title: "Combien de temps avant de voir des résultats avec une agence ChatGPT ?",
+      paragraphs: [
+        "Les délais dépendent du point de départ. Une entreprise déjà bien positionnée sur Google, avec une fiche complète et des avis, obtient ses premières mentions plus vite qu’une entreprise invisible partout.",
+        "Comptez quatre à huit semaines pour apparaître sur ChatGPT sur des questions précises et locales, trois à six mois pour une présence régulière face à des concurrents établis. Ces ordres de grandeur viennent de nos suivis hebdomadaires, ils ne sont pas garantis.",
+        "La mesure côté Google est aujourd’hui possible : [depuis le 31 août 2026, la Search Console propose à tous les sites un rapport dédié aux performances dans l’IA générative](https://support.google.com/webmasters/answer/16984139), avec les impressions par page, pays, date et appareil.",
+        "Pour ChatGPT, Perplexity et Gemini, aucun rapport officiel n’existe. L’agence doit donc tenir un relevé manuel ou outillé, selon la méthode décrite dans [suivre sa visibilité dans ChatGPT](/blog/suivre-visibilite-chatgpt-ia), et vous en remettre le tableau.",
+      ],
+    },
+    {
+      title: "Scénario illustratif : une PME de services choisit une agence et suit huit semaines",
+      paragraphs: [
+        "Le cas ci-dessous est un scénario type, construit pour montrer ce qu’un accompagnement produit dans un délai réaliste. Les chiffres sont illustratifs et ne proviennent pas d’un client réel.",
+        "Un cabinet d’expertise comptable de quinze personnes reçoit deux propositions. La première garantit une présence dans ChatGPT sous quinze jours, sans audit. La seconde commence par un relevé de vingt questions clients sur trois moteurs, rendu avant tout devis.",
+        "Le relevé initial montre que le cabinet est mentionné sur 1 question sur 20 dans ChatGPT, 2 dans Perplexity, 0 dans Gemini. Deux concurrents reviennent sur la moitié des questions, portés par un annuaire professionnel et la presse régionale.",
+        "Semaines 1 à 4 : l’agence ouvre le robots.txt aux robots IA, corrige la fiche Google, balise le site en Schema.org et publie trois pages qui répondent aux questions fréquentes. Les relevés hebdomadaires ne bougent pas, ce qui est attendu.",
+        "Semaines 5 à 8 : le cabinet obtient une fiche dans l’annuaire cité par les IA et une mention dans la presse régionale. Les mentions passent à 5 sur 20 dans ChatGPT, 7 dans Perplexity, 3 dans Gemini ; un concurrent reste devant sur la comparaison.",
+        "Ce qui compte dans ce scénario, c’est que chaque progression est datée, reliée à une action et comparée aux concurrents. L’autre proposition aurait produit un rapport de positions Google et une promesse invérifiable d’apparaître sur ChatGPT.",
+      ],
+    },
+    {
+      title: "Ce qu’il faut retenir",
+      paragraphs: [],
+      bullets: [
+        "Une agence de référencement ChatGPT agit sur ce que les IA lisent : votre site, les sources tierces, vos données structurées, votre cohérence.",
+        "Exigez un relevé de vos mentions avant de signer, puis un rapport mensuel comparable.",
+        "Le socle SEO reste indispensable : les moteurs IA lisent les mêmes index que Google.",
+        "Aucune garantie de position n’est possible ; une promesse de ce type disqualifie l’offre.",
+        "Les prix s’alignent sur ceux du SEO, avec un audit à part qui dimensionne la suite.",
+        "Premières mentions entre quatre et huit semaines, présence stable en plusieurs mois, jamais en quelques jours.",
+      ],
+    },
+  ],
+};
+
 export const septemberArticles: Record<string, BlogArticle> = {
   [suivreVisibilite.slug]: suivreVisibilite,
   [agentIaSurMesure.slug]: agentIaSurMesure,
   [veilleSeo.slug]: veilleSeo,
+  [agenceReferencementChatgpt.slug]: agenceReferencementChatgpt,
 };
 
 export const septemberPosts: BlogPostMeta[] = [
@@ -735,5 +1002,14 @@ export const septemberPosts: BlogPostMeta[] = [
     date: veilleSeo.date,
     readingTime: veilleSeo.readingTime,
     category: veilleSeo.category,
+  },
+  {
+    slug: agenceReferencementChatgpt.slug,
+    title: agenceReferencementChatgpt.title,
+    seoTitle: agenceReferencementChatgpt.seoTitle,
+    description: agenceReferencementChatgpt.description,
+    date: agenceReferencementChatgpt.date,
+    readingTime: agenceReferencementChatgpt.readingTime,
+    category: agenceReferencementChatgpt.category,
   },
 ];
