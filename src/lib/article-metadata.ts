@@ -66,6 +66,15 @@ function buildMentions(names: Array<keyof typeof mentionUrls>): ArticleMention[]
 }
 
 export const articleMetadataBySlug: Record<string, ArticleSchemaEnhancement> = {
+  "veille-seo-methode-outils": {
+    about: {
+      "@type": "Thing",
+      name: "Veille SEO",
+      description:
+        "Méthode, sources et outils pour suivre les changements de Google et des moteurs IA et en mesurer l’effet sur son site.",
+    },
+    mentions: buildMentions(["Google", "Google AI Overviews", "ChatGPT", "Perplexity", "Gemini", "GEO"]),
+  },
   "suivre-visibilite-chatgpt-ia": {
     about: {
       "@type": "Thing",
