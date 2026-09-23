@@ -1215,12 +1215,287 @@ const referencementLocalChatgpt: ArticleWithTables = {
   ],
 };
 
+const agenceAgentsIa: ArticleWithTables = {
+  slug: "agence-agents-ia-comment-choisir-prestataire",
+  title: "Agence agents IA : comment choisir son prestataire en 2026",
+  seoTitle: "Agence agents IA sur mesure : critères et questions à poser",
+  description:
+    "Ce qu’une agence agents IA fait vraiment pour une PME, les critères pour la choisir, les questions à poser, les obligations RGPD et AI Act.",
+  date: "23 septembre 2026",
+  dateModified: "23 septembre 2026",
+  readingTime: "13 min",
+  category: "Agents IA",
+  articleSection: "Agents IA",
+  keywords: [
+    "agence agents IA",
+    "agence IA sur mesure",
+    "agence création agents IA",
+    "agent IA sur mesure",
+    "automatisation PME",
+    "intégration agent IA",
+    "prestataire agent IA",
+  ],
+  intro:
+    "Une agence agents IA conçoit, connecte et fait vivre des assistants logiciels qui exécutent des tâches réelles dans vos outils : relances, rendez-vous, qualification, reporting. Le marché est jeune et beaucoup d’offres renomment un simple chatbot. Voici ce qu’une telle agence fait réellement, comment la choisir et à quoi ressemble un projet mené proprement.",
+  quickAnswer: {
+    question: "Comment choisir une agence agents IA ?",
+    answer:
+      "Une agence agents IA se choisit sur cinq critères. Un cas d’usage mesurable défini avant tout devis, une intégration réelle à vos outils (CRM, messagerie, agenda, facturation) et une gouvernance des données conforme au RGPD et à l’AI Act. S’y ajoutent un contrôle humain conservé sur les actions sensibles et un suivi après la mise en production. L’agence commence par un atelier de cadrage, livre un périmètre écrit, puis un premier agent sur un seul processus. Les premiers gains se mesurent en quatre à huit semaines.",
+  },
+  contextualLinks: [
+    { label: "notre offre d’agents IA", href: "/agents-ia" },
+    { label: "agent IA sur mesure pour PME", href: "/blog/agent-ia-sur-mesure-pme" },
+    { label: "utiliser l’IA dans son entreprise", href: "/blog/comment-utiliser-ia-entreprise" },
+  ],
+  bodyCta: {
+    intro: "Vous voulez savoir si votre processus se prête à un agent IA ?",
+    linkLabel: "Demandez un atelier de cadrage",
+    href: "/contact",
+    outro: ", vous repartez avec un périmètre écrit et une réponse franche.",
+  },
+  relatedSlugs: [
+    "agent-ia-sur-mesure-pme",
+    "outils-ia-pme",
+    "comment-utiliser-ia-entreprise",
+  ],
+  faqTitle: "FAQ : agence agents IA",
+  faqItems: [
+    {
+      question: "Une agence agents IA et une agence IA classique, est-ce la même chose ?",
+      answer:
+        "Non. Une agence IA au sens large produit des contenus, des visuels ou des modèles de données. Une agence agents IA construit des assistants qui agissent dans vos outils, avec des droits d’accès, des règles et un suivi. Le second métier exige une compétence d’intégration et de sécurité que le premier n’a pas toujours.",
+    },
+    {
+      question: "Faut-il un agent IA sur mesure ou un outil prêt à l’emploi ?",
+      answer:
+        "Commencez par l’outil prêt à l’emploi quand il couvre le besoin. Le sur mesure se justifie quand le processus est propre à votre entreprise, quand il traverse plusieurs outils, ou quand les données ne doivent pas sortir d’un périmètre défini. Une bonne agence vous dit lequel convient, même si c’est le moins rentable pour elle.",
+    },
+    {
+      question: "Combien de temps dure un projet d’agent IA avec une agence ?",
+      answer:
+        "Comptez deux à trois semaines de cadrage et de connexion aux outils, puis quatre à huit semaines pour un premier agent en production sur un seul processus, avec des relevés hebdomadaires. Une extension à d’autres processus vient ensuite, jamais en même temps.",
+    },
+    {
+      question: "Un agent IA peut-il agir sans validation humaine ?",
+      answer:
+        "Il peut, mais il ne devrait pas sur les actions sensibles : envoi à un client, engagement financier, modification d’un dossier. Une agence sérieuse propose une validation humaine au départ, puis élargit l’autonomie action par action, une fois le taux d’erreur mesuré et accepté.",
+    },
+    {
+      question: "Les données de mon entreprise servent-elles à entraîner les modèles ?",
+      answer:
+        "Cela dépend du fournisseur de modèle et du contrat signé. L’agence doit vous indiquer par écrit où sont hébergées les données, si elles sont conservées, pour combien de temps, et si elles servent à l’entraînement. Sans cette réponse écrite, ne signez pas.",
+    },
+  ],
+  sections: [
+    {
+      title: "Qu’est-ce qu’une agence agents IA ?",
+      paragraphs: [
+        "Une agence agents IA conçoit des agents logiciels fondés sur un modèle de langage, les connecte aux outils d’une entreprise et les maintient dans le temps. On parle aussi d’agence IA sur mesure ou d’agence de création d’agents IA.",
+        "La définition de l’agent compte, parce que beaucoup d’offres l’utilisent à tort. Anthropic distingue [les workflows, où les modèles et les outils sont orchestrés par des chemins de code prédéfinis, des agents, où le modèle dirige lui-même son processus et l’usage de ses outils](https://www.anthropic.com/research/building-effective-agents).",
+        "Pour une PME, la nuance est pratique. Un workflow enchaîne des étapes fixes, un agent décide de l’étape suivante selon la situation. Les deux ont leur place, et une agence agents IA doit savoir dire lequel convient à votre processus.",
+        "Nous décrivons ce qu’un tel assistant fait dans [agent IA sur mesure pour PME](/blog/agent-ia-sur-mesure-pme) ; cet article se concentre sur le choix du prestataire.",
+      ],
+    },
+    {
+      title: "Où en sont les PME françaises avec les agents IA ?",
+      paragraphs: [
+        "Les chiffres officiels montrent une adoption rapide mais encore minoritaire. Selon [l’Insee, 18 % des entreprises implantées en France déclarent utiliser au moins une technologie d’IA en 2025, soit 8 points de plus qu’en 2024](https://www.insee.fr/fr/statistiques/9025878).",
+        "L’écart selon la taille est net. [Le taux est de 15 % pour les entreprises de 10 à 49 salariés, 31 % de 50 à 249 salariés et 58 % à partir de 250 salariés](https://www.insee.fr/fr/statistiques/9025878), toujours selon l’Insee.",
+        "Côté IA générative, [Bpifrance Le Lab relève que 31 % des TPE et PME y ont recours fin 2024, dont 8 % de façon régulière](https://lelab.bpifrance.fr/31-des-tpe-et-pme-utilisent-l-ia-generative/). [Plus des deux tiers des dirigeants ont du mal à identifier des cas d’usage pour leur activité](https://lelab.bpifrance.fr/31-des-tpe-et-pme-utilisent-l-ia-generative/), selon la même source.",
+        "C’est là qu’une agence agents IA apporte de la valeur : trouver le processus où l’agent fera gagner du temps sans créer de risque. Notre guide pour [utiliser l’IA dans son entreprise](/blog/comment-utiliser-ia-entreprise) donne une méthode pour repérer ces processus.",
+      ],
+    },
+    {
+      title: "Que fait concrètement une agence agents IA ?",
+      paragraphs: [
+        "Le tableau ci-dessous liste les prestations qu’une agence agents IA doit savoir décrire, avec le livrable attendu. Une offre qui ne couvre que la troisième ligne est un chatbot renommé.",
+      ],
+      table: {
+        caption: "Prestations d’une agence agents IA et livrables attendus",
+        headers: ["Prestation", "Ce qu’elle contient", "Livrable à exiger"],
+        rows: [
+          [
+            "Atelier de cadrage",
+            "Cartographie des processus, choix d’un seul cas d’usage, définition de l’indicateur de succès et du niveau d’autonomie.",
+            "Périmètre écrit, indicateur chiffré, liste des outils à connecter.",
+          ],
+          [
+            "Gouvernance des données",
+            "Inventaire des données traitées, finalité, base légale, durée de conservation, hébergement du modèle.",
+            "Registre de traitement mis à jour, choix du fournisseur documenté.",
+          ],
+          [
+            "Conception de l’agent",
+            "Instructions, outils accessibles, règles d’arrêt, cas où l’agent demande une validation humaine.",
+            "Spécification lisible par un non-technicien, jeu de tests.",
+          ],
+          [
+            "Intégration aux outils",
+            "Connexion au CRM, à la messagerie, à l’agenda, à la facturation ou à l’outil métier, avec des droits limités.",
+            "Comptes techniques dédiés, journal des actions consultable.",
+          ],
+          [
+            "Mise en production progressive",
+            "Démarrage sur un échantillon, validation humaine, mesure du taux d’erreur, extension par paliers.",
+            "Relevé hebdomadaire de l’indicateur et des erreurs.",
+          ],
+          [
+            "Maintenance et évolution",
+            "Suivi des changements de modèles et d’API, ajustement des instructions, ajout de processus.",
+            "Contrat de maintenance avec délai d’intervention.",
+          ],
+        ],
+      },
+    },
+    {
+      title: "Agence agents IA, agence IA sur mesure, agence d’automatisation : quelle différence ?",
+      paragraphs: [
+        "Ces appellations se recoupent et le marché les mélange. La différence utile est dans le périmètre technique couvert et dans le niveau d’autonomie confié au logiciel.",
+      ],
+      bullets: [
+        "Agence d’automatisation : elle enchaîne des règles fixes entre vos outils, sans décision du modèle. Solide, prévisible, limitée aux cas où chaque étape est connue à l’avance.",
+        "Agence IA sur mesure : elle développe des applications qui utilisent un modèle, par exemple un assistant de rédaction ou un outil d’analyse. L’agent n’est qu’un de ses produits possibles.",
+        "Agence agents IA ou agence de création d’agents IA : elle se concentre sur des assistants qui agissent dans vos outils, avec des droits, des règles et un journal des actions. C’est le périmètre de notre [offre d’agents IA](/agents-ia).",
+        "Éditeur d’agents prêts à l’emploi : un produit standard, souvent suffisant pour un besoin courant. Notre guide des [outils IA pour PME](/blog/outils-ia-pme) aide à trancher entre produit et sur mesure.",
+      ],
+    },
+    {
+      title: "Quelle est la meilleure agence IA en France ?",
+      paragraphs: [
+        "Il n’existe aucun classement officiel des agences IA ou des agences agents IA en France. Les « top 10 » publiés en ligne sont le plus souvent rédigés par une agence qui s’y place en premier, ou par un annuaire rémunéré à l’inscription.",
+        "La prudence est de mise sur tout le marché. [Gartner estime que seuls environ 130 des milliers de fournisseurs d’IA agentique sont réels, et décrit une pratique d’« agent washing » consistant à renommer des assistants, des RPA ou des chatbots sans capacité agentique réelle](https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027).",
+        "La bonne question n’est donc pas « quelle est la meilleure agence », mais « quelle agence prouve un résultat sur un processus comparable au mien ». Les critères ci-dessous permettent d’y répondre en un rendez-vous.",
+      ],
+    },
+    {
+      title: "Quels critères pour choisir une agence agents IA ?",
+      paragraphs: [
+        "Six critères suffisent pour écarter les offres creuses. Ils tiennent en un rendez-vous de découverte.",
+      ],
+      bullets: [
+        "Un cas d’usage unique et mesurable avant tout devis : nombre de relances envoyées, de rendez-vous pris, d’heures libérées. Sans indicateur, aucun résultat ne pourra être prouvé.",
+        "Une intégration réelle à vos outils existants : l’agence montre comment l’agent lit et écrit dans votre CRM ou votre messagerie, avec quels droits, et où sont journalisées ses actions.",
+        "Une gouvernance des données écrite : hébergement du modèle, conservation, usage pour l’entraînement, conformité au RGPD. Une réponse orale ne suffit pas.",
+        "Un contrôle humain conservé au départ : l’agent propose, un humain valide, puis l’autonomie s’élargit action par action, une fois le taux d’erreur mesuré.",
+        "Une préférence pour la simplicité : Anthropic recommande de [commencer par des prompts simples, de les optimiser avec une évaluation complète, et de n’ajouter des systèmes agentiques multi-étapes que lorsque les solutions plus simples échouent](https://www.anthropic.com/research/building-effective-agents). Une agence qui vend un agent avant d’avoir testé plus simple vend un mot à la mode.",
+        "Un engagement de maintenance : les modèles et les API changent, un agent sans suivi se dégrade en quelques mois.",
+      ],
+      subsections: [
+        {
+          title: "Les questions à poser avant de signer",
+          paragraphs: [
+            "Posez-les telles quelles. Une agence compétente y répond sans détour ; une agence improvisée change de sujet.",
+          ],
+          bullets: [
+            "Quel processus précis l’agent va-t-il prendre en charge, et quel indicateur mesurera le résultat ?",
+            "À quels outils l’agent se connecte-t-il, avec quels droits, et puis-je consulter le journal de ses actions ?",
+            "Où sont hébergées mes données, sont-elles conservées, servent-elles à l’entraînement d’un modèle ?",
+            "Quelles actions exigent une validation humaine au démarrage, et comment décide-t-on de l’élargir ?",
+            "Que se passe-t-il quand le fournisseur de modèle change de version ou de tarif ?",
+            "Pouvez-vous me montrer un agent en production chez un client, avec son relevé de résultats ?",
+          ],
+        },
+        {
+          title: "Les signaux d’alerte",
+          paragraphs: [
+            "Quatre arguments doivent faire arrêter la discussion.",
+          ],
+          bullets: [
+            "Une promesse d’autonomie totale dès le premier jour, sans validation humaine ni période de test.",
+            "Un devis sans atelier de cadrage : l’agence ne connaît pas votre processus et vend le même lot à tout le monde.",
+            "Aucune réponse écrite sur l’hébergement et la conservation des données.",
+            "Un « agent » qui se révèle être un chatbot de site web ou une automatisation à règles fixes.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Quels sont les 4 principaux agents d’IA ?",
+      paragraphs: [
+        "La question revient souvent et mélange deux choses : les assistants grand public et les types d’agents déployés en entreprise. Les grands assistants sont ChatGPT d’OpenAI, Claude d’Anthropic, Gemini de Google et Copilot de Microsoft ; ils servent souvent de moteur aux agents sur mesure.",
+        "Côté entreprise, quatre familles d’agents reviennent dans les projets de PME. L’agent de relance commerciale, l’agent de prise de rendez-vous, l’agent de qualification des demandes entrantes et l’agent de reporting hebdomadaire.",
+        "Une agence sérieuse commence par une seule de ces familles, la plus répétitive et la moins risquée.",
+      ],
+    },
+    {
+      title: "Quel est le tarif d’un agent IA ?",
+      paragraphs: [
+        "Le prix d’un agent IA dépend moins de la technologie que du processus à couvrir. Quatre facteurs font varier le devis : outils à connecter, sensibilité des actions, volume de cas et maintenance attendue.",
+        "Trois modèles coexistent chez les agences agents IA : l’atelier de cadrage au forfait, le premier agent au forfait, puis un abonnement mensuel pour l’hébergement et la maintenance.",
+        "Le coût des appels au modèle est une ligne à part, facturée par le fournisseur d’IA selon l’usage. L’agence doit l’estimer à partir de votre volume réel, puis le mesurer en production.",
+      ],
+      subsections: [
+        {
+          title: "Quel est le salaire d’un agent IA ?",
+          paragraphs: [
+            "Un agent IA n’est pas un salarié, il n’a pas de salaire. Son coût est celui de sa conception, de son hébergement, de ses appels au modèle et de sa maintenance.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Quelles obligations RGPD et AI Act pour un agent IA en PME ?",
+      paragraphs: [
+        "Un agent qui lit vos e-mails ou votre CRM traite des données personnelles. La CNIL rappelle qu’[un système d’IA reposant sur des données personnelles doit toujours être développé, entraîné et déployé avec une finalité bien définie](https://www.cnil.fr/fr/intelligence-artificielle/ia-comment-etre-en-conformite-avec-le-rgpd). [Les données collectées doivent être adéquates, pertinentes et limitées à ce qui est nécessaire](https://www.cnil.fr/fr/intelligence-artificielle/ia-comment-etre-en-conformite-avec-le-rgpd).",
+        "La même page précise que [les données personnelles ne peuvent être conservées indéfiniment et qu’une durée de suppression doit être définie](https://www.cnil.fr/fr/intelligence-artificielle/ia-comment-etre-en-conformite-avec-le-rgpd). L’agence doit traduire ces règles dans les droits de l’agent et dans le contrat avec le fournisseur de modèle.",
+        "Le cadre européen s’applique désormais. [Le règlement sur l’IA est entré en vigueur le 1er août 2024 et est devenu applicable le 2 août 2026](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai). [Les pratiques interdites le sont depuis le 2 février 2025 et les obligations des modèles à usage général depuis le 2 août 2025](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai).",
+        "La plupart des agents de PME relèvent d’un risque minimal ou d’obligations de transparence, comme informer un client qu’il échange avec un agent. [Les règles pour les systèmes à haut risque, dans l’emploi ou l’éducation par exemple, s’appliqueront à partir du 2 décembre 2027](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai). Un agent qui trie des candidatures entre dans cette catégorie.",
+      ],
+    },
+    {
+      title: "Comment se passe un projet avec une agence agents IA ?",
+      paragraphs: [
+        "Un projet bien mené suit quatre temps, chacun avec un livrable. Le calendrier ci-dessous est celui que nous pratiquons depuis [Nantes](/agence-seo-geo-nantes), pour des clients partout en France.",
+      ],
+      bullets: [
+        "Semaine 1 : atelier de cadrage, choix du processus, indicateur de succès, inventaire des données et des outils. Livrable : périmètre écrit.",
+        "Semaines 2 et 3 : comptes techniques, connexion aux outils avec droits limités, spécification de l’agent et jeu de tests. Livrable : agent testable sur des cas fictifs.",
+        "Semaines 4 à 6 : mise en production sur un échantillon avec validation humaine, relevé hebdomadaire des erreurs et de l’indicateur. Livrable : tableau de suivi.",
+        "Semaines 7 et 8 : élargissement de l’autonomie sur les actions fiables, décision d’extension ou d’arrêt. Livrable : bilan chiffré et plan de maintenance.",
+      ],
+    },
+    {
+      title: "Scénario illustratif : une PME de services et son premier agent sur huit semaines",
+      paragraphs: [
+        "Le cas ci-dessous est un scénario type, construit pour montrer un rythme réaliste. Les chiffres sont illustratifs et ne proviennent pas d’un client réel.",
+        "Un cabinet de courtage en assurance de douze personnes reçoit deux propositions. La première promet un agent autonome qui gère toute la relation client sous quinze jours. La seconde commence par un atelier d’une demi-journée et propose un seul processus : la relance des devis sans réponse.",
+        "L’atelier mesure le point de départ : 60 devis par mois sans réponse, relancés à la main une fois sur trois, environ six heures hebdomadaires passées à ce suivi par deux conseillers.",
+        "Semaines 1 à 3 : l’agence connecte l’agent au CRM et à la messagerie avec un compte dédié, rédige les règles de relance, et impose une validation humaine sur chaque e-mail sortant. Rien n’est envoyé sans clic d’un conseiller.",
+        "Semaines 4 à 6 : l’agent prépare les relances, un conseiller valide en quelques secondes. Le taux de devis relancés passe de un sur trois à la totalité, avec deux erreurs de ton corrigées dans les instructions.",
+        "Semaines 7 et 8 : la première relance part sans validation, la seconde reste validée. Le suivi mesure un temps hebdomadaire ramené à moins de deux heures et un indicateur nouveau, le taux de réponse aux relances, qui devient l’objectif du trimestre suivant.",
+        "Ce qui compte dans ce scénario, c’est la progression mesurée et la validation humaine maintenue sur ce qui engage le cabinet. L’autre proposition aurait livré un agent invérifiable.",
+      ],
+    },
+    {
+      title: "Pourquoi tant de projets d’agents IA échouent-ils ?",
+      paragraphs: [
+        "L’enthousiasme se heurte à des chiffres. [Gartner prévoit que plus de 40 % des projets d’IA agentique seront abandonnés d’ici fin 2027, en raison de coûts croissants, d’une valeur métier floue ou de contrôles de risque insuffisants](https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027).",
+        "Ces trois causes correspondent aux critères de choix d’une agence agents IA : un indicateur défini avant le devis, une gouvernance des données écrite, une validation humaine conservée.",
+        "Le même cabinet anticipe une diffusion réelle : [au moins 15 % des décisions quotidiennes de travail seront prises de façon autonome par une IA agentique d’ici 2028](https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027). L’enjeu est d’y aller processus par processus.",
+      ],
+    },
+    {
+      title: "Ce qu’il faut retenir",
+      paragraphs: [],
+      bullets: [
+        "Une agence agents IA construit des assistants qui agissent dans vos outils, avec des droits, des règles et un journal des actions.",
+        "Exigez un atelier de cadrage, un seul processus au départ et un indicateur chiffré avant tout devis.",
+        "L’intégration réelle au CRM, à la messagerie et à l’agenda, avec des comptes dédiés, est le cœur du travail.",
+        "La gouvernance des données doit être écrite : hébergement, conservation, entraînement, finalité, conformément au RGPD et à l’AI Act.",
+        "La validation humaine se conserve au départ puis se réduit action par action, une fois le taux d’erreur mesuré.",
+        "Premiers gains mesurables entre quatre et huit semaines sur un processus, extension ensuite, jamais tout en même temps.",
+      ],
+    },
+  ],
+};
+
 export const septemberArticles: Record<string, BlogArticle> = {
   [suivreVisibilite.slug]: suivreVisibilite,
   [agentIaSurMesure.slug]: agentIaSurMesure,
   [veilleSeo.slug]: veilleSeo,
   [agenceReferencementChatgpt.slug]: agenceReferencementChatgpt,
   [referencementLocalChatgpt.slug]: referencementLocalChatgpt,
+  [agenceAgentsIa.slug]: agenceAgentsIa,
 };
 
 export const septemberPosts: BlogPostMeta[] = [
@@ -1268,5 +1543,14 @@ export const septemberPosts: BlogPostMeta[] = [
     date: referencementLocalChatgpt.date,
     readingTime: referencementLocalChatgpt.readingTime,
     category: referencementLocalChatgpt.category,
+  },
+  {
+    slug: agenceAgentsIa.slug,
+    title: agenceAgentsIa.title,
+    seoTitle: agenceAgentsIa.seoTitle,
+    description: agenceAgentsIa.description,
+    date: agenceAgentsIa.date,
+    readingTime: agenceAgentsIa.readingTime,
+    category: agenceAgentsIa.category,
   },
 ];
