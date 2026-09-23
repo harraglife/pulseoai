@@ -66,6 +66,15 @@ function buildMentions(names: Array<keyof typeof mentionUrls>): ArticleMention[]
 }
 
 export const articleMetadataBySlug: Record<string, ArticleSchemaEnhancement> = {
+  "agence-agents-ia-comment-choisir-prestataire": {
+    about: {
+      "@type": "Thing",
+      name: "Agence agents IA",
+      description:
+        "Ce qu’une agence agents IA fait pour une PME, les critères pour la choisir, les questions à poser et les obligations RGPD et AI Act.",
+    },
+    mentions: buildMentions(["ChatGPT", "Claude", "Gemini", "OpenAI"]),
+  },
   "referencement-local-chatgpt-apparaitre-ville": {
     about: {
       "@type": "Thing",
