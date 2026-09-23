@@ -968,11 +968,259 @@ const agenceReferencementChatgpt: ArticleWithTables = {
   ],
 };
 
+const referencementLocalChatgpt: ArticleWithTables = {
+  slug: "referencement-local-chatgpt-apparaitre-ville",
+  title: "Référencement local ChatGPT : apparaître dans sa ville",
+  seoTitle: "Référencement local ChatGPT : être recommandé près de chez vous",
+  description:
+    "Comment ChatGPT choisit les entreprises locales qu’il recommande, les sources qu’il cite, six leviers à activer et un scénario sur huit semaines.",
+  date: "23 septembre 2026",
+  dateModified: "23 septembre 2026",
+  readingTime: "12 min",
+  category: "SEO IA",
+  articleSection: "SEO IA",
+  keywords: [
+    "référencement local ChatGPT",
+    "être référencé localement sur ChatGPT",
+    "SearchGPT référencement local",
+    "apparaître sur ChatGPT",
+    "GEO local",
+    "Google Business Profile",
+    "avis clients",
+    "entreprise locale",
+  ],
+  intro:
+    "Le référencement local ChatGPT consiste à faire recommander votre entreprise quand un client demande à l’assistant un restaurant, un artisan ou un cabinet près de chez lui. ChatGPT ne classe pas dix résultats, il rédige une réponse et nomme deux ou trois établissements. Voici comment il les choisit, quelles sources il lit et comment y entrer sans promesse miracle.",
+  quickAnswer: {
+    question: "Comment être référencé localement sur ChatGPT ?",
+    answer:
+      "Le référencement local ChatGPT repose sur ce que l’assistant lit quand il cherche une entreprise près d’un utilisateur. Il faut une fiche Google Business Profile complète, des avis récents et un site avec une page par ville balisée en LocalBusiness. Il faut aussi une présence dans les annuaires et médias locaux que ChatGPT cite, et des informations identiques partout. Le robot OAI-SearchBot doit être autorisé. Les premières mentions arrivent en général entre quatre et huit semaines, jamais en quelques jours.",
+  },
+  contextualLinks: [
+    { label: "le guide du GEO local", href: "/blog/geo-local-guide-entreprises" },
+    { label: "apparaître sur ChatGPT", href: "/blog/referencement-chatgpt-apparaitre-ia" },
+    { label: "notre agence SEO et GEO à Nantes", href: "/agence-seo-geo-nantes" },
+  ],
+  bodyCta: {
+    intro: "Vous voulez savoir si ChatGPT vous recommande déjà dans votre ville ?",
+    linkLabel: "Demandez un audit de visibilité IA",
+    href: "/contact",
+    outro: ", on relève vos mentions et celles de vos concurrents locaux.",
+  },
+  relatedSlugs: [
+    "geo-local-guide-entreprises",
+    "referencement-chatgpt-apparaitre-ia",
+    "hotel-invisible-chatgpt",
+  ],
+  faqTitle: "FAQ : référencement local ChatGPT",
+  faqItems: [
+    {
+      question: "Faut-il une fiche Google Business Profile pour être recommandé par ChatGPT ?",
+      answer:
+        "Ce n’est pas une obligation technique, mais c’est le socle le plus efficace. La fiche alimente Google Maps, les annuaires et les comparateurs que ChatGPT lit quand il cherche une entreprise locale. Une fiche incomplète ou dupliquée envoie des informations contradictoires aux IA.",
+    },
+    {
+      question: "Les avis clients influencent-ils les recommandations locales de ChatGPT ?",
+      answer:
+        "Oui, parce que ChatGPT lit les pages où figurent vos avis et reprend souvent leur tonalité dans sa réponse. Les avis récents comptent davantage que le volume historique. Répondre à chaque avis, positif ou négatif, renforce la cohérence de votre présence.",
+    },
+    {
+      question: "Combien de temps pour apparaître dans ChatGPT sur une requête locale ?",
+      answer:
+        "Comptez quatre à huit semaines pour des premières mentions sur des questions précises, et plusieurs mois pour une présence stable face à des concurrents déjà cités. Une offre qui promet un résultat en quelques jours vend autre chose que du référencement.",
+    },
+    {
+      question: "Le référencement local ChatGPT fonctionne-t-il dans toutes les villes ?",
+      answer:
+        "La méthode est la même à Strasbourg, Toulouse, Nantes ou dans une commune de 5 000 habitants. Ce qui change, c’est la densité des concurrents et des sources locales. Dans une petite ville, une fiche complète et dix avis récents suffisent parfois à être nommé.",
+    },
+    {
+      question: "SearchGPT et ChatGPT, est-ce la même chose ?",
+      answer:
+        "SearchGPT était le prototype de recherche d’OpenAI. Ses fonctions ont été intégrées à ChatGPT sous le nom de ChatGPT search, ouvert à tous depuis février 2025. Être référencé localement sur SearchGPT revient donc à être référencé dans la recherche de ChatGPT.",
+    },
+  ],
+  sections: [
+    {
+      title: "Qu’est-ce que le référencement local ChatGPT ?",
+      paragraphs: [
+        "Le référencement local ChatGPT désigne l’ensemble des actions qui augmentent la probabilité que ChatGPT nomme votre entreprise quand un utilisateur cherche un prestataire dans une ville ou un quartier. C’est la déclinaison locale du GEO, l’optimisation pour les moteurs génératifs.",
+        "La différence avec Google est la forme de la réponse. Google affiche une carte et une liste, ChatGPT écrit un paragraphe qui recommande deux ou trois établissements avec une phrase de justification.",
+        "Cette recommandation vient de sources que l’assistant consulte en temps réel. Nous détaillons la logique générale dans notre guide pour [apparaître sur ChatGPT](/blog/referencement-chatgpt-apparaitre-ia) ; cet article se concentre sur les requêtes locales.",
+        "L’enjeu est mesurable côté consommateurs. Selon [l’enquête Local Consumer Review Survey 2026 de BrightLocal, menée auprès de 1 002 consommateurs américains, l’usage de ChatGPT et des IA génératives pour trouver une entreprise locale est passé de 6 % à 45 %](https://www.brightlocal.com/research/local-consumer-review-survey/).",
+      ],
+    },
+    {
+      title: "Comment fonctionne le référencement local sur l’IA ?",
+      paragraphs: [
+        "ChatGPT ne mémorise pas la liste des plombiers de Strasbourg. Quand la question porte sur un lieu, il déclenche une recherche web, lit quelques pages et rédige sa réponse à partir de ce qu’il vient de trouver.",
+      ],
+      subsections: [
+        {
+          title: "Une recherche en temps réel, guidée par la position de l’utilisateur",
+          paragraphs: [
+            "OpenAI a [lancé ChatGPT search le 31 octobre 2024, puis l’a ouvert à tous les utilisateurs le 5 février 2025, avec des affichages dédiés à la météo, aux actualités et aux cartes](https://openai.com/index/introducing-chatgpt-search/).",
+            "Le même éditeur précise que [ChatGPT peut utiliser une localisation approximative déduite de l’adresse IP pour fournir des résultats locaux pertinents](https://help.openai.com/en/articles/9237897-chatgpt-search). Une requête « bon restaurant ce soir » posée à Toulouse renvoie donc des adresses toulousaines.",
+            "OpenAI indique aussi que [la recherche s’appuie sur des fournisseurs de recherche tiers et sur des contenus fournis directement par ses partenaires](https://openai.com/index/introducing-chatgpt-search/). ChatGPT lit donc un index existant, il ne construit pas le sien à partir de zéro.",
+          ],
+        },
+        {
+          title: "Un robot à autoriser avant toute autre action",
+          paragraphs: [
+            "OpenAI documente un robot spécifique pour la recherche. [OAI-SearchBot sert à faire apparaître les sites dans les résultats de recherche de ChatGPT, et un site qui le bloque n’est pas affiché dans les réponses](https://developers.openai.com/api/docs/bots).",
+            "La même page précise qu’[après une modification du robots.txt, il faut compter environ 24 heures pour que les systèmes d’OpenAI en tiennent compte](https://developers.openai.com/api/docs/bots). Vérifier ce fichier prend cinq minutes et évite des semaines de travail inutile.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Quelles sources ChatGPT cite-t-il sur une requête locale ?",
+      paragraphs: [
+        "Une étude française apporte un ordre de grandeur utile. [Localranker a réalisé 600 recherches manuelles de commerces locaux en français sur ChatGPT entre mai et juillet 2025, en relevant toutes les sources affichées](https://www.localranker.fr/blog/apparaitre-recherches-locales-chatgpt).",
+        "Selon cette étude, [les sites web officiels et store locators représentent plus de 40 % des sources locales identifiées, devant les annuaires spécialisés à 25 % et les comparateurs à 12 %](https://www.localranker.fr/blog/apparaitre-recherches-locales-chatgpt). [Reddit pèse 5 % et Wikipédia 2 %](https://www.localranker.fr/blog/apparaitre-recherches-locales-chatgpt).",
+        "Le tableau ci-dessous reprend cette répartition et précise ce que chaque famille de sources implique pour une entreprise locale. La lecture est simple : votre site compte, mais il ne suffit pas, comme nous l’expliquons dans [pourquoi votre site ne suffit pas](/blog/sources-citees-ia-site-ne-suffit-pas).",
+      ],
+      table: {
+        caption: "Sources citées par ChatGPT sur des requêtes locales, d’après l’étude Localranker (600 recherches, mai à juillet 2025)",
+        headers: ["Famille de sources", "Part des sources locales", "Ce que cela implique pour vous"],
+        rows: [
+          ["Sites web officiels et store locators", "Plus de 40 %", "Une page par ville ou par établissement, avec adresse, horaires et balisage LocalBusiness."],
+          ["Annuaires spécialisés", "25 %", "Une fiche complète et identique dans les annuaires de votre métier, pas dans tous les annuaires."],
+          ["Comparateurs", "12 %", "Une présence sur les comparateurs consultés par vos clients, avec des avis récents."],
+          ["Reddit", "5 %", "Des mentions naturelles dans les discussions locales, jamais de faux avis."],
+          ["Wikipédia", "2 %", "Rarement accessible à une PME ; utile pour les institutions et les lieux notables."],
+        ],
+      },
+    },
+    {
+      title: "Comment être référencé localement sur ChatGPT ?",
+      paragraphs: [
+        "Six leviers couvrent l’essentiel du référencement local ChatGPT. Ils reprennent les fondamentaux du SEO local et y ajoutent la cohérence des sources tierces, que les IA lisent plus que les internautes.",
+      ],
+      subsections: [
+        {
+          title: "1. Compléter la fiche Google Business Profile",
+          paragraphs: [
+            "Google explique que [le classement local repose sur trois facteurs : la pertinence, la distance et la proéminence, et que des informations complètes et exactes ont plus de chances d’apparaître](https://support.google.com/business/answer/7091?hl=fr). Ces mêmes informations alimentent les cartes et annuaires que ChatGPT consulte.",
+            "Google rappelle aussi qu’[il n’existe aucun moyen d’obtenir une meilleure place au classement local sur demande ou contre rémunération](https://support.google.com/business/answer/7091?hl=fr). Méfiez-vous des offres qui promettent l’inverse pour ChatGPT.",
+          ],
+        },
+        {
+          title: "2. Obtenir des avis récents et y répondre",
+          paragraphs: [
+            "Les avis pèsent doublement : ils rassurent le client et ils nourrissent les pages que l’IA lit. D’après [BrightLocal, 74 % des consommateurs recherchent des avis rédigés au cours des trois derniers mois, et 31 % n’utilisent qu’une entreprise notée 4,5 étoiles ou plus](https://www.brightlocal.com/research/local-consumer-review-survey/).",
+            "La même enquête indique que [42 % des consommateurs font autant confiance aux recommandations des IA qu’aux avis traditionnels](https://www.brightlocal.com/research/local-consumer-review-survey/). Un flux régulier d’avis, avec une réponse à chacun, est donc un investissement local à double effet.",
+          ],
+        },
+        {
+          title: "3. Publier une page locale par ville et la baliser",
+          paragraphs: [
+            "Votre site reste la première famille de sources citées. Chaque implantation mérite une page avec adresse, téléphone, horaires, prestations et une réponse directe aux questions que posent les clients de cette ville.",
+            "Google précise que [les données structurées d’établissement local permettent d’indiquer les horaires, les services et les avis, avec le nom et l’adresse comme propriétés obligatoires](https://developers.google.com/search/docs/appearance/structured-data/local-business?hl=fr). Le vocabulaire [LocalBusiness de Schema.org](https://schema.org/LocalBusiness) couvre restaurants, agences bancaires, cabinets médicaux ou clubs.",
+            "Notre [guide Schema.org pour le GEO](/blog/schema-org-guide-complet-geo) donne le balisage complet à copier, sous-type par métier.",
+          ],
+        },
+        {
+          title: "4. Être présent dans les annuaires et médias que ChatGPT cite",
+          paragraphs: [
+            "Inutile de s’inscrire partout. Posez vingt questions locales à ChatGPT, notez les sources qu’il affiche, puis obtenez une fiche ou une mention sur celles qui reviennent. Sur un marché donné, il s’agit souvent de cinq à dix sites.",
+            "Les sources institutionnelles comptent aussi. [L’étude Localranker relève une présence fréquente des sites de chambres de commerce et de mairies parmi les sources locales](https://www.localranker.fr/blog/apparaitre-recherches-locales-chatgpt). Une inscription à l’annuaire économique de votre ville est gratuite et durable.",
+          ],
+        },
+        {
+          title: "5. Rendre vos informations identiques partout",
+          paragraphs: [
+            "Un nom écrit de trois façons, deux numéros de téléphone et une ancienne adresse encore en ligne suffisent à faire douter un modèle de langage. Il choisira alors le concurrent dont les informations concordent.",
+            "Listez chaque endroit où votre entreprise apparaît, corrigez les écarts, supprimez les doublons. C’est le travail le moins visible et le plus rentable du référencement local ChatGPT.",
+          ],
+        },
+        {
+          title: "6. Répondre aux questions locales dans vos contenus",
+          paragraphs: [
+            "ChatGPT reprend volontiers une phrase qui répond exactement à la question posée. Une page qui commence par « Oui, nous ouvrons le dimanche matin à Saint-Herblain » a plus de chances d’être citée qu’une page de présentation générale.",
+            "Ce format answer-first est détaillé dans [le guide du GEO local](/blog/geo-local-guide-entreprises), avec des exemples par secteur : hôtellerie, restauration, commerces et artisans.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Comment être référencé localement sur SearchGPT ?",
+      paragraphs: [
+        "SearchGPT désignait le prototype de moteur de recherche présenté par OpenAI en 2024. Ses fonctions ont été intégrées à ChatGPT, et [OpenAI parle désormais de ChatGPT search, disponible pour tous sans inscription depuis le 5 février 2025](https://openai.com/index/introducing-chatgpt-search/).",
+        "Être référencé localement sur SearchGPT revient donc à être visible dans la recherche de ChatGPT. Les leviers sont identiques : robot OAI-SearchBot autorisé, page locale balisée, avis récents, sources tierces cohérentes.",
+        "Une nuance compte pour les requêtes locales : la recherche affiche des cartes et des liens vers les sources. Un site lent, une page sans adresse ou un menu en PDF ne fournissent rien de citable, quelle que soit la qualité de la cuisine ou du service.",
+      ],
+    },
+    {
+      title: "Quels sont les 3 piliers du référencement ?",
+      paragraphs: [
+        "Le référencement classique repose sur trois piliers : la technique, le contenu et la popularité. Le référencement local ChatGPT ne les remplace pas, il les traduit dans le vocabulaire des moteurs génératifs.",
+      ],
+      bullets: [
+        "Technique : un site rapide, indexable, ouvert aux robots d’OpenAI et de Google, avec un balisage LocalBusiness valide sur chaque page d’établissement.",
+        "Contenu : des pages locales qui répondent directement aux questions des clients, avec adresse, horaires, prestations et tarifs quand ils sont publics.",
+        "Popularité : des avis récents, des mentions dans les annuaires et médias locaux, et des informations identiques partout, plutôt que des liens achetés.",
+      ],
+    },
+    {
+      title: "Comment utiliser ChatGPT pour le référencement ?",
+      paragraphs: [
+        "ChatGPT est aussi un outil de travail pour le référencement local. Trois usages font gagner du temps sans risque, à condition de vérifier chaque information qu’il produit avant de la publier.",
+      ],
+      bullets: [
+        "Auditer sa visibilité : poser les vingt questions que vos clients posent réellement, noter qui est cité, quelles sources apparaissent, puis répéter le relevé chaque semaine.",
+        "Trouver les questions locales : demander quelles questions un habitant de votre ville pose avant de choisir votre type d’établissement, puis en faire des titres de pages ou de FAQ.",
+        "Préparer les fiches : générer une première version des descriptions d’annuaires, puis les relire, les corriger et les rendre identiques d’un site à l’autre.",
+      ],
+    },
+    {
+      title: "Référencement ChatGPT à Strasbourg, Toulouse ou Nantes : la ville change-t-elle la méthode ?",
+      paragraphs: [
+        "Non, la méthode est la même partout. Ce qui change d’une ville à l’autre, c’est la concurrence sur chaque question et la liste des sources locales que ChatGPT consulte : presse régionale, annuaires de la métropole, guides de sortie.",
+        "Dans une grande ville comme Toulouse ou Strasbourg, une entreprise doit souvent être présente dans trois ou quatre sources locales pour être nommée face à des concurrents installés. Dans une commune de 5 000 habitants, une fiche complète et dix avis récents suffisent parfois.",
+        "À Nantes et dans la métropole, nous accompagnons ce travail depuis notre [agence SEO et GEO à Nantes](/agence-seo-geo-nantes). La méthode s’applique à toute ville de France, le relevé initial des sources locales fait la différence.",
+      ],
+    },
+    {
+      title: "Scénario illustratif : un restaurant nantais sur huit semaines",
+      paragraphs: [
+        "Le cas ci-dessous est un scénario type construit pour montrer un rythme réaliste. Les chiffres sont illustratifs et ne proviennent pas d’un client réel.",
+        "Un restaurant de 40 couverts à Nantes n’est jamais nommé par ChatGPT sur vingt questions locales du type « où manger un bon poisson près de la place Graslin ». Deux concurrents reviennent sur douze questions, portés par un guide de sortie et un annuaire de restaurants.",
+        "Semaines 1 à 3 : le robots.txt est ouvert à OAI-SearchBot et la fiche Google est complétée avec horaires, photos et carte. Une page « Restaurant à Nantes » est publiée avec un balisage Restaurant complet et la carte en texte.",
+        "Semaines 4 à 6 : le restaurant obtient une fiche sur le guide de sortie et l’annuaire cités par ChatGPT, et lance une collecte d’avis par QR code sur l’addition. Les relevés hebdomadaires ne bougent pas encore, ce qui est normal.",
+        "Semaines 7 et 8 : le restaurant est nommé sur 4 des 20 questions dans ChatGPT, avec sa page locale citée deux fois en source. Les concurrents restent devant sur les questions de réservation, ce qui fixe le chantier suivant.",
+        "Ce scénario illustre le point important : chaque progression est datée et reliée à une action précise. Sans relevé initial, aucun résultat ne pourrait être prouvé ni attribué.",
+      ],
+    },
+    {
+      title: "Comment savoir si ChatGPT recommande mon entreprise ?",
+      paragraphs: [
+        "La seule méthode fiable consiste à poser un jeu fixe de questions locales, chaque semaine, et à noter trois choses. Votre entreprise est-elle nommée, votre site est-il cité en source, et qui apparaît à votre place ?",
+        "Nous décrivons cette méthode pas à pas, avec et sans outil, dans [suivre sa visibilité dans ChatGPT](/blog/suivre-visibilite-chatgpt-ia). Elle s’applique telle quelle aux requêtes locales, en ajoutant le nom de la ville ou du quartier à chaque question.",
+        "Si vous préférez déléguer le relevé et le plan d’actions, [notre offre de référencement IA](/offre) commence par cet audit, avec vos mentions actuelles et celles de vos concurrents locaux.",
+      ],
+    },
+    {
+      title: "Ce qu’il faut retenir",
+      paragraphs: [],
+      bullets: [
+        "Le référencement local ChatGPT agit sur ce que l’assistant lit en temps réel : fiche Google, avis, site local balisé, annuaires et médias de votre ville.",
+        "Le robot OAI-SearchBot doit être autorisé dans le robots.txt, sinon aucune page du site ne peut être citée.",
+        "Sur les requêtes locales, les sites officiels sont la première famille de sources, devant les annuaires et les comparateurs, selon l’étude Localranker.",
+        "Les avis récents comptent plus que le volume historique, et des informations identiques partout évitent d’être écarté au profit d’un concurrent.",
+        "SearchGPT est devenu ChatGPT search : une seule méthode couvre les deux.",
+        "Premières mentions entre quatre et huit semaines, présence stable en plusieurs mois, jamais en quelques jours.",
+      ],
+    },
+  ],
+};
+
 export const septemberArticles: Record<string, BlogArticle> = {
   [suivreVisibilite.slug]: suivreVisibilite,
   [agentIaSurMesure.slug]: agentIaSurMesure,
   [veilleSeo.slug]: veilleSeo,
   [agenceReferencementChatgpt.slug]: agenceReferencementChatgpt,
+  [referencementLocalChatgpt.slug]: referencementLocalChatgpt,
 };
 
 export const septemberPosts: BlogPostMeta[] = [
@@ -1011,5 +1259,14 @@ export const septemberPosts: BlogPostMeta[] = [
     date: agenceReferencementChatgpt.date,
     readingTime: agenceReferencementChatgpt.readingTime,
     category: agenceReferencementChatgpt.category,
+  },
+  {
+    slug: referencementLocalChatgpt.slug,
+    title: referencementLocalChatgpt.title,
+    seoTitle: referencementLocalChatgpt.seoTitle,
+    description: referencementLocalChatgpt.description,
+    date: referencementLocalChatgpt.date,
+    readingTime: referencementLocalChatgpt.readingTime,
+    category: referencementLocalChatgpt.category,
   },
 ];
