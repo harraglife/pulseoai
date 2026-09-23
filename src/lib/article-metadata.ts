@@ -66,6 +66,15 @@ function buildMentions(names: Array<keyof typeof mentionUrls>): ArticleMention[]
 }
 
 export const articleMetadataBySlug: Record<string, ArticleSchemaEnhancement> = {
+  "referencement-local-chatgpt-apparaitre-ville": {
+    about: {
+      "@type": "Thing",
+      name: "Référencement local ChatGPT",
+      description:
+        "Comment ChatGPT choisit les entreprises locales qu’il recommande, les sources qu’il cite et les leviers pour être référencé dans sa ville.",
+    },
+    mentions: buildMentions(["ChatGPT", "OpenAI", "Google", "Google Maps", "Schema.org", "GEO", "SEO local", "Reddit"]),
+  },
   "agence-referencement-chatgpt-comment-choisir": {
     about: {
       "@type": "Thing",
