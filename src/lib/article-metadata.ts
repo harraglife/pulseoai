@@ -66,6 +66,15 @@ function buildMentions(names: Array<keyof typeof mentionUrls>): ArticleMention[]
 }
 
 export const articleMetadataBySlug: Record<string, ArticleSchemaEnhancement> = {
+  "dots-openai-agents-ia-pme": {
+    about: {
+      "@type": "Thing",
+      name: "Dots d’OpenAI",
+      description:
+        "Ce que sont les dots d’OpenAI, leur disponibilité en France, la sécurité des données et quand préférer un agent IA sur mesure pour une PME.",
+    },
+    mentions: buildMentions(["ChatGPT", "OpenAI"]),
+  },
   "outil-geo-suite-seo-ou-plateforme-dediee": {
     about: {
       "@type": "Thing",
