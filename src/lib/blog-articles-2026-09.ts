@@ -1985,6 +1985,233 @@ const outilGeoSuiteSeo: ArticleWithTables = {
   ],
 };
 
+const dotsOpenai: ArticleWithTables = {
+  slug: "dots-openai-agents-ia-pme",
+  title: "Dots OpenAI : ce que ces agents IA changent pour une PME",
+  seoTitle: "Dots d’OpenAI : fonctionnement, disponibilité et limites",
+  description:
+    "Les dots d’OpenAI expliqués aux dirigeants de PME : fonctionnement, accès en France, sécurité des données et alternative d’un agent sur mesure.",
+  date: "30 septembre 2026",
+  dateModified: "30 septembre 2026",
+  readingTime: "11 min",
+  category: "Agents IA",
+  articleSection: "Agents IA",
+  keywords: [
+    "dots OpenAI",
+    "OpenAI dots",
+    "dots ChatGPT",
+    "agent dots OpenAI",
+    "agent IA PME",
+    "agent IA sur mesure",
+    "GPT-6 Astra",
+  ],
+  intro:
+    "OpenAI a présenté le 29 septembre 2026 les dots, des agents IA qui travaillent en continu dans ChatGPT et se connectent aux applications de l’entreprise. Pour un dirigeant de PME, la question n’est pas de savoir si c’est impressionnant, mais si c’est disponible, sûr et utile pour ses propres processus. Voici ce que dit réellement l’annonce, ce qu’elle change et les cas où un agent IA sur mesure reste le meilleur choix.",
+  quickAnswer: {
+    question: "Que sont les dots d’OpenAI ?",
+    answer:
+      "Les dots sont des agents IA d’OpenAI, présentés le 29 septembre 2026, propulsés par GPT-6 Astra et dotés de leur propre ordinateur dans le cloud. Ils travaillent 24 h/24 et 7 j/7, apprennent les préférences de leur utilisateur et se connectent à plus de 4 000 applications. On leur parle dans ChatGPT, par SMS, Slack ou Teams. Le premier dot est inclus dans les forfaits Pro et Business Premium, avec des règles d’approbation pour les actions sensibles.",
+  },
+  contextualLinks: [
+    { label: "notre offre d’agents IA", href: "/agents-ia" },
+    { label: "agent IA sur mesure pour PME", href: "/blog/agent-ia-sur-mesure-pme" },
+    { label: "choisir une agence agents IA", href: "/blog/agence-agents-ia-comment-choisir-prestataire" },
+  ],
+  bodyCta: {
+    intro: "Vous vous demandez si un dot suffit ou s’il vous faut un agent connecté à vos outils ?",
+    linkLabel: "Demandez un atelier de cadrage",
+    href: "/contact",
+    outro: ", on compare les deux options sur votre processus.",
+  },
+  relatedSlugs: [
+    "agent-ia-sur-mesure-pme",
+    "agence-agents-ia-comment-choisir-prestataire",
+    "outils-ia-pme",
+  ],
+  faqTitle: "FAQ : les dots d’OpenAI en entreprise",
+  faqItems: [
+    {
+      question: "Les dots sont-ils disponibles pour une entreprise française ?",
+      answer:
+        "Oui avec un forfait ChatGPT Business Premium, qu’OpenAI annonce disponible dans toutes les régions ChatGPT prises en charge. Le forfait Pro exclut au lancement l’Espace économique européen, la Suisse et le Royaume-Uni. Les forfaits Enterprise accèdent à une bêta activée par l’administrateur.",
+    },
+    {
+      question: "Combien coûte un dot ?",
+      answer:
+        "Selon OpenAI, le premier dot est inclus sans frais supplémentaires dans les forfaits Pro et Business Premium. OpenAI annonce qu’il sera possible, à l’avenir, de payer un montant mensuel fixe pour ajouter des dots ou augmenter leur capacité de travail.",
+    },
+    {
+      question: "Un dot peut-il agir sans validation humaine ?",
+      answer:
+        "Oui pour certaines actions, selon des règles intégrées et des règles personnalisées. Vous pouvez autoriser, soumettre à approbation ou bloquer des actions. Certaines tâches sensibles, comme changer un mot de passe, restent toujours réservées à l’utilisateur.",
+    },
+    {
+      question: "Les données de l’entreprise servent-elles à entraîner les modèles ?",
+      answer:
+        "OpenAI indique ne pas utiliser par défaut le contenu des espaces de travail Business, Enterprise ou Edu pour améliorer ses modèles. Avec les forfaits personnels, c’est un réglage que l’utilisateur choisit. Vérifiez ce paramètre avant de connecter vos applications.",
+    },
+    {
+      question: "Un dot remplace-t-il un agent IA sur mesure ?",
+      answer:
+        "Pas quand le processus dépend d’un logiciel métier absent des plugins, de données qui doivent rester dans un périmètre défini, ou de règles propres à votre entreprise. Le dot convient aux tâches personnelles d’organisation ; l’agent sur mesure aux processus partagés et critiques.",
+    },
+  ],
+  sections: [
+    {
+      title: "Qu’est-ce que les dots d’OpenAI ?",
+      paragraphs: [
+        "Les dots sont des agents IA qu’OpenAI a présentés le 29 septembre 2026 dans ChatGPT. Selon l’annonce, [ils sont propulsés par GPT-6 Astra et disposent de leur propre ordinateur dans le cloud](https://openai.com/fr-FR/index/introducing-dots/).",
+        "Leur promesse tient en trois points. [Ils peuvent œuvrer aux objectifs de leur utilisateur 24 h/24 et 7 j/7 et se connectent à plus de 4 000 applications grâce à l’écosystème de plugins](https://openai.com/fr-FR/index/introducing-dots/).",
+        "Chaque dot a aussi [sa propre identité pour les accès et les autorisations](https://openai.com/fr-FR/index/introducing-dots/), ce qui le distingue d’un simple assistant conversationnel qui attend une question.",
+      ],
+      subsections: [
+        {
+          title: "Qu’est-ce qu’un dot en IA ?",
+          paragraphs: [
+            "Dans le vocabulaire d’OpenAI, un dot est un agent personnel : il prend en charge un projet, le fait avancer seul, et revient vers vous quand une décision vous appartient.",
+            "C’est la définition même d’un agent IA, que nous détaillons dans notre guide de l’[agent IA sur mesure pour PME](/blog/agent-ia-sur-mesure-pme) : un logiciel qui agit dans vos outils, pas seulement un logiciel qui répond.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Que peuvent faire les dots au quotidien ?",
+      paragraphs: [
+        "OpenAI illustre l’annonce avec des usages professionnels : transformer des retours clients en correctifs testés, adapter un lancement de produit, relancer une analyse quand de nouvelles données arrivent, mettre à jour une proposition commerciale.",
+        "Le dot apprend en travaillant. Selon OpenAI, [plus vous travaillez ensemble, mieux votre dot connaît vos préférences et votre façon de penser](https://openai.com/fr-FR/index/introducing-dots/).",
+        "Il agit aussi sans qu’on le sollicite. OpenAI décrit une [recherche proactive, menée avec des outils restreints qui ne peuvent ni envoyer de messages, ni modifier le contenu des applications, ni contrôler le navigateur ou l’ordinateur](https://openai.com/fr-FR/index/introducing-dots/).",
+      ],
+      bullets: [
+        "Suivi de projet : le dot garde un dossier en mouvement même lorsqu’il travaille déjà sur plusieurs autres.",
+        "Préparation de documents : propositions, synthèses, comptes rendus à partir des applications connectées.",
+        "Veille et relances : repérage des sujets qui demandent votre attention dans la messagerie ou l’agenda.",
+        "Délégation de tâches plus lourdes à Codex ou ChatGPT Work, comptées dans les limites d’usage habituelles.",
+      ],
+    },
+    {
+      title: "Comment utiliser les dots de ChatGPT ?",
+      paragraphs: [
+        "Le démarrage se fait sur ordinateur. OpenAI indique qu’il faut [ouvrir les dots dans l’application de bureau ChatGPT ou dans le navigateur sur ordinateur, connecter ses applications, puis laisser le dot se mettre au travail](https://openai.com/fr-FR/index/introducing-dots/).",
+        "Une fois le dot configuré, il reste accessible dans l’application mobile. Les applications auxquelles il accède se choisissent depuis les paramètres existants des applications dans ChatGPT.",
+      ],
+      subsections: [
+        {
+          title: "Sur quels canaux parler à son dot ?",
+          paragraphs: [
+            "On écrit ou on appelle son dot dans ChatGPT, sur le Web, le mobile et l’ordinateur. Selon OpenAI, [votre dot peut également utiliser les SMS, Slack et Teams](https://openai.com/fr-FR/index/introducing-dots/), et il conserve le contexte d’un canal à l’autre.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Les dots sont-ils disponibles en France ?",
+      paragraphs: [
+        "C’est le point à vérifier avant tout. Le centre d’aide d’OpenAI précise que [les dots sont déployés pour les utilisateurs Pro dans les marchés hors Espace économique européen, Suisse et Royaume-Uni](https://help.openai.com/en/articles/20001530-getting-started-with-your-dot).",
+        "Les entreprises ne sont pas exclues pour autant. Le même article indique que [les dots sont aussi disponibles pour les utilisateurs Business Premium dans toutes les régions ChatGPT prises en charge](https://help.openai.com/en/articles/20001530-getting-started-with-your-dot).",
+        "Côté coût, [le premier dot est inclus dans le forfait Pro ou Business Premium sans frais supplémentaires](https://openai.com/fr-FR/index/introducing-dots/), et OpenAI annonce un futur montant mensuel fixe pour ajouter des dots.",
+      ],
+      table: {
+        caption: "Accès aux dots selon le forfait ChatGPT, d’après OpenAI",
+        headers: ["Forfait", "Accès aux dots", "Point d’attention pour une entreprise française"],
+        rows: [
+          ["Pro", "Premier dot inclus", "Déploiement hors EEE, Suisse et Royaume-Uni au lancement"],
+          ["Business Premium", "Premier dot inclus", "Disponible dans toutes les régions ChatGPT prises en charge"],
+          ["Enterprise, Edu", "Bêta", "Désactivée par défaut, activation par l’administrateur"],
+        ],
+      },
+    },
+    {
+      title: "Les données de l’entreprise sont-elles protégées avec les dots ?",
+      paragraphs: [
+        "OpenAI détaille ses protections dans une page dédiée. Elle reconnaît qu’[une page Web, un e-mail ou un document peut contenir des instructions malveillantes visant à détourner un dot, un problème appelé injection de prompt](https://openai.com/index/how-we-build-safety-security-and-privacy-into-dots/).",
+        "Les règles d’action sont paramétrables. [Les règles personnalisées permettent d’autoriser certaines actions, d’exiger une approbation ou de les bloquer](https://openai.com/fr-FR/index/introducing-dots/), et certaines tâches sensibles, comme changer un mot de passe, restent réservées à l’utilisateur.",
+        "Sur l’entraînement, OpenAI indique que [par défaut, le contenu des espaces de travail ChatGPT Business, Enterprise ou Edu n’est pas utilisé pour améliorer ses modèles](https://openai.com/fr-FR/index/introducing-dots/). C’est un réglage à contrôler dès l’ouverture.",
+      ],
+      subsections: [
+        {
+          title: "Ce que le RGPD et l’AI Act imposent quand même",
+          paragraphs: [
+            "Connecter un dot à la messagerie ou au CRM reste un traitement de données personnelles. La CNIL rappelle qu’[un système d’IA reposant sur des données personnelles doit toujours être déployé avec une finalité bien définie](https://www.cnil.fr/fr/intelligence-artificielle/ia-comment-etre-en-conformite-avec-le-rgpd).",
+            "La même page précise que [les données collectées doivent être adéquates, pertinentes et limitées à ce qui est nécessaire](https://www.cnil.fr/fr/intelligence-artificielle/ia-comment-etre-en-conformite-avec-le-rgpd). Ne connectez donc que les applications utiles à la tâche confiée.",
+            "Enfin, [le règlement européen sur l’IA est devenu applicable le 2 août 2026](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai). Il impose notamment d’informer une personne qu’elle échange avec une machine, par exemple un client qui reçoit un message d’un dot.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Que changent les dots pour une PME ?",
+      paragraphs: [
+        "Les dots rendent l’agent IA accessible sans projet technique : un dirigeant peut déléguer une partie de son suivi quotidien dans l’outil qu’il utilise déjà, sans développement ni hébergement à gérer.",
+        "Ils arrivent dans un marché encore jeune. Selon l’Insee, [18 % des entreprises implantées en France déclarent utiliser au moins une technologie d’IA en 2025](https://www.insee.fr/fr/statistiques/9025878). Un agent inclus dans un abonnement peut accélérer cette adoption.",
+        "Pour démarrer, notre guide pour [utiliser l’IA dans son entreprise](/blog/comment-utiliser-ia-entreprise) aide à repérer les tâches répétitives qui se prêtent à la délégation, avant même de choisir un outil.",
+      ],
+    },
+    {
+      title: "Quelles sont les limites des dots pour une entreprise ?",
+      paragraphs: [
+        "OpenAI le dit lui-même : [les dots peuvent toujours commettre des erreurs, il faut donc vérifier systématiquement les travaux à enjeux importants](https://openai.com/fr-FR/index/introducing-dots/). C’est une limite de fond, pas un détail.",
+        "Le marché des agents invite aussi à la prudence. [Gartner prévoit que plus de 40 % des projets d’IA agentique seront annulés d’ici fin 2027, en raison de coûts croissants, d’une valeur métier floue ou de contrôles de risque insuffisants](https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027).",
+      ],
+      bullets: [
+        "Un dot travaille pour une personne : il n’est pas conçu, dans sa version standard, pour porter un processus partagé par toute une équipe.",
+        "Les logiciels métier absents de l’écosystème de plugins restent hors de portée, par exemple un ERP sectoriel ou un outil développé en interne sans plugin.",
+        "Les dots spécialisés pour les organisations démarrent par des projets pilotes ciblés, accompagnés par les équipes d’OpenAI.",
+        "La dépendance à un seul fournisseur est totale : forfait, modèle, règles et historique restent chez OpenAI.",
+      ],
+    },
+    {
+      title: "Dots ou agent IA sur mesure : que choisir ?",
+      paragraphs: [
+        "Les deux approches ne s’opposent pas, elles répondent à des besoins différents. Le tableau ci-dessous aide à trancher processus par processus.",
+      ],
+      table: {
+        caption: "Dot d’OpenAI ou agent IA sur mesure connecté aux outils de l’entreprise",
+        headers: ["Critère", "Dot d’OpenAI", "Agent IA sur mesure"],
+        rows: [
+          ["Mise en route", "Immédiate dans ChatGPT", "Cadrage puis quelques semaines de connexion"],
+          ["Périmètre", "Tâches d’une personne", "Processus partagé par une équipe"],
+          ["Outils connectés", "Applications de l’écosystème de plugins", "Tout outil doté d’une API, y compris un logiciel métier"],
+          ["Règles métier", "Préférences apprises et règles d’approbation", "Règles écrites, testées et journalisées"],
+          ["Données", "Traitées dans l’environnement d’OpenAI", "Périmètre et hébergement choisis par l’entreprise"],
+          ["Maintenance", "Assurée par OpenAI", "Contrat de suivi avec le prestataire"],
+        ],
+      },
+      subsections: [
+        {
+          title: "Quand un agent IA sur mesure reste préférable",
+          paragraphs: [
+            "Il reste préférable quand le processus traverse plusieurs outils dont un logiciel métier, quand plusieurs personnes en dépendent, ou quand les données doivent rester dans un périmètre défini. C’est le cœur de notre [offre d’agents IA](/agents-ia).",
+            "Pour comparer les prestataires, appuyez-vous sur notre guide pour [choisir une agence agents IA](/blog/agence-agents-ia-comment-choisir-prestataire). Pour les besoins plus simples, les [outils IA pour PME](/blog/outils-ia-pme) prêts à l’emploi suffisent souvent.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Scénario illustratif : un négoce de matériaux teste un dot pendant six semaines",
+      paragraphs: [
+        "Le cas suivant est un scénario type, construit pour montrer une démarche réaliste. Les chiffres sont illustratifs et ne proviennent pas d’un client réel.",
+        "Une entreprise de négoce de matériaux de 25 salariés souscrit ChatGPT Business Premium. Sa dirigeante active un dot, connecte sa messagerie et son agenda, et exige une approbation pour tout envoi externe.",
+        "Semaines 1 et 2 : le dot prépare chaque matin une synthèse des demandes clients et des relances en attente. La dirigeante valide ou corrige ; deux erreurs de priorité sont signalées et corrigées.",
+        "Semaines 3 et 4 : le dot rédige les brouillons de relance des devis. Environ trois heures hebdomadaires sont libérées, mais les devis restent dans l’ERP métier, que le dot ne peut pas lire.",
+        "Semaines 5 et 6 : l’entreprise garde le dot pour l’organisation de la dirigeante et lance un agent sur mesure connecté à l’ERP pour les relances de devis, un processus partagé par trois commerciaux.",
+        "La leçon est simple : le dot sert la personne, l’agent sur mesure sert le processus. Les deux cohabitent sans difficulté.",
+      ],
+    },
+    {
+      title: "Ce qu’il faut retenir",
+      paragraphs: [],
+      bullets: [
+        "Les dots sont des agents IA d’OpenAI, présentés le 29 septembre 2026, propulsés par GPT-6 Astra et dotés d’un ordinateur dans le cloud.",
+        "Ils travaillent 24 h/24 et 7 j/7, se connectent à plus de 4 000 applications et répondent dans ChatGPT, par SMS, Slack ou Teams.",
+        "En France, l’accès passe par Business Premium : le forfait Pro exclut au lancement l’EEE, la Suisse et le Royaume-Uni.",
+        "Les règles d’approbation, le réglage d’entraînement et le RGPD se vérifient avant de connecter la moindre application.",
+        "Un dot sert une personne ; un agent sur mesure sert un processus partagé qui dépend d’un logiciel métier.",
+        "Testez sur quatre à huit semaines, avec validation humaine, avant d’élargir l’autonomie.",
+      ],
+    },
+  ],
+};
+
 export const septemberArticles: Record<string, BlogArticle> = {
   [suivreVisibilite.slug]: suivreVisibilite,
   [agentIaSurMesure.slug]: agentIaSurMesure,
@@ -1994,6 +2221,7 @@ export const septemberArticles: Record<string, BlogArticle> = {
   [agenceAgentsIa.slug]: agenceAgentsIa,
   [suiviAiMode.slug]: suiviAiMode,
   [outilGeoSuiteSeo.slug]: outilGeoSuiteSeo,
+  [dotsOpenai.slug]: dotsOpenai,
 };
 
 export const septemberPosts: BlogPostMeta[] = [
@@ -2068,5 +2296,14 @@ export const septemberPosts: BlogPostMeta[] = [
     date: outilGeoSuiteSeo.date,
     readingTime: outilGeoSuiteSeo.readingTime,
     category: outilGeoSuiteSeo.category,
+  },
+  {
+    slug: dotsOpenai.slug,
+    title: dotsOpenai.title,
+    seoTitle: dotsOpenai.seoTitle,
+    description: dotsOpenai.description,
+    date: dotsOpenai.date,
+    readingTime: dotsOpenai.readingTime,
+    category: dotsOpenai.category,
   },
 ];
