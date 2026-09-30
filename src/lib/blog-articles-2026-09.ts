@@ -1489,6 +1489,251 @@ const agenceAgentsIa: ArticleWithTables = {
   ],
 };
 
+const suiviAiMode: ArticleWithTables = {
+  slug: "suivre-visibilite-ai-mode-google",
+  title: "Suivre sa visibilité dans AI Mode : méthode et indicateurs",
+  seoTitle: "Visibilité dans le Mode IA de Google : comment la suivre",
+  description:
+    "Suivre sa visibilité dans AI Mode : ce que mesure la Search Console, le relevé des questions clients, les bons indicateurs et les concurrents.",
+  date: "30 septembre 2026",
+  dateModified: "30 septembre 2026",
+  readingTime: "11 min",
+  category: "SEO IA",
+  articleSection: "SEO IA",
+  keywords: [
+    "suivre visibilité AI Mode",
+    "Mode IA Google",
+    "positionnement AI Mode",
+    "mentions de marque AI Mode",
+    "Search Console IA générative",
+    "Aperçus IA",
+    "suivi de visibilité IA",
+  ],
+  intro:
+    "Le Mode IA de Google est disponible en France depuis juillet 2026, et beaucoup de dirigeants se demandent si leur entreprise y apparaît vraiment. La Search Console donne une première réponse, mais elle compte des impressions sans dire sur quelles questions ni face à qui. Voici comment suivre sa visibilité dans AI Mode avec une méthode simple, des indicateurs clairs et une comparaison honnête aux concurrents.",
+  quickAnswer: {
+    question: "Comment suivre sa visibilité dans AI Mode ?",
+    answer:
+      "Suivre sa visibilité dans AI Mode consiste à croiser deux mesures. La première est le rapport de la Search Console sur l’IA générative, qui compte les impressions de vos pages dans le Mode IA et les Aperçus IA, par page, pays, appareil et date. La seconde est un jeu fixe de questions clients testé chaque semaine dans le Mode IA, où l’on note si votre marque est mentionnée, si votre site est cité et quels concurrents apparaissent.",
+  },
+  contextualLinks: [
+    { label: "suivre sa visibilité dans ChatGPT", href: "/blog/suivre-visibilite-chatgpt-ia" },
+    { label: "comprendre les AI Overviews", href: "/blog/google-ai-overviews-entreprises-comprendre" },
+    { label: "notre offre GEO", href: "/offre" },
+  ],
+  bodyCta: {
+    intro: "Vous voulez savoir où vous en êtes dans le Mode IA de Google ?",
+    linkLabel: "Demandez un audit de visibilité IA",
+    href: "/contact",
+    outro: ", on réalise le premier relevé avec vous.",
+  },
+  relatedSlugs: [
+    "suivre-visibilite-chatgpt-ia",
+    "google-ai-overviews-entreprises-comprendre",
+    "audit-seo-geo-visibilite-ia",
+  ],
+  faqTitle: "FAQ : suivre sa visibilité dans AI Mode",
+  faqItems: [
+    {
+      question: "La Search Console montre-t-elle les requêtes du Mode IA ?",
+      answer:
+        "Non. Le rapport sur les performances dans l’IA générative propose les dimensions pages, pays, appareils et dates, sans dimension requêtes. Pour savoir sur quelles questions vous apparaissez, il faut tester vous-même un jeu de questions clients, à la main ou avec un outil.",
+    },
+    {
+      question: "AI Mode et Aperçus IA, faut-il les suivre séparément ?",
+      answer:
+        "Oui, dans la mesure du possible. Les Aperçus IA s’affichent en haut des résultats classiques, alors que le Mode IA est un onglet conversationnel pensé pour les questions complexes. Les mêmes pages peuvent être citées dans l’un et absentes de l’autre.",
+    },
+    {
+      question: "À quelle fréquence mesurer sa visibilité dans le Mode IA ?",
+      answer:
+        "Une fois par semaine, le même jour, avec les mêmes questions et le même navigateur en navigation privée. Une mesure isolée est un simple constat. C’est la série de relevés qui montre une tendance et relie une action à un résultat.",
+    },
+    {
+      question: "Faut-il des données structurées pour apparaître dans AI Mode ?",
+      answer:
+        "Google indique qu’aucune donnée structurée schema.org particulière n’est requise. Les données structurées restent utiles pour décrire clairement votre entreprise, vos offres et vos avis, ce qui aide les moteurs à comprendre qui vous êtes.",
+    },
+    {
+      question: "Un outil de suivi AI Mode est-il indispensable ?",
+      answer:
+        "Non pour démarrer. Un tableur et vingt questions suffisent à une PME sur un marché local. L’outil devient utile quand vous suivez plusieurs villes, plusieurs gammes ou plus de cinq concurrents chaque semaine.",
+    },
+  ],
+  sections: [
+    {
+      title: "Qu’est-ce que suivre sa visibilité dans AI Mode ?",
+      paragraphs: [
+        "Suivre sa visibilité dans AI Mode, c’est mesurer régulièrement si le Mode IA de Google mentionne votre entreprise, cite vos pages comme sources, et sur quelles questions de vos clients cela se produit.",
+        "Le Mode IA n’affiche pas un classement de dix liens. Il rédige une réponse et l’accompagne de liens de soutien, qui varient selon la formulation, le lieu et l’historique de l’internaute.",
+        "La position moyenne d’une page ne suffit donc plus. Il faut suivre trois choses distinctes : la mention de votre marque dans le texte, la citation de votre site en lien, et les concurrents cités à votre place.",
+        "La logique est la même que pour les assistants conversationnels, détaillée dans notre méthode pour [suivre sa visibilité dans ChatGPT](/blog/suivre-visibilite-chatgpt-ia). Le Mode IA ajoute une particularité : Google fournit une partie des données.",
+      ],
+      bullets: [
+        "Mention : votre nom d’entreprise apparaît dans la réponse rédigée, avec ou sans lien vers votre site.",
+        "Citation : une de vos pages figure parmi les liens de soutien, ce qui peut générer une visite qualifiée.",
+        "Présence concurrente : les entreprises nommées à votre place, qui révèlent les sources que Google juge plus fiables sur votre sujet.",
+      ],
+    },
+    {
+      title: "Où se trouve le Mode IA sur Google ?",
+      paragraphs: [
+        "Le Mode IA apparaît comme un onglet dans la barre des filtres de la recherche Google, à côté de Tous, Images et Actualités. Il est aussi proposé en bas de certains Aperçus IA pour approfondir une question.",
+        "En France, son arrivée est récente. [Google a déployé les AI Overviews et le Mode IA en France le 22 juillet 2026, deux ans après leur lancement aux États-Unis](https://www.abondance.com/20260722-2640402-lancement-officielle-ai-overviews-france.html), selon Abondance.",
+        "Nous détaillons ce que ce lancement change pour les entreprises dans notre article sur les [AI Overviews de Google](/blog/google-ai-overviews-entreprises-comprendre).",
+      ],
+      subsections: [
+        {
+          title: "Comment accéder directement au Mode IA ?",
+          paragraphs: [
+            "Le plus simple est de cliquer sur l’onglet Mode IA depuis une page de résultats Google. Vous pouvez aussi utiliser le lien proposé sous un Aperçu IA pour poursuivre la conversation avec des questions de suivi.",
+            "Pour un suivi de visibilité, travaillez toujours depuis une fenêtre de navigation privée. Vous limitez ainsi l’effet de votre historique de recherche et de votre compte Google sur les réponses obtenues.",
+          ],
+        },
+        {
+          title: "Pourquoi je ne vois pas le Mode IA ?",
+          paragraphs: [
+            "Plusieurs raisons expliquent son absence : un déploiement encore progressif selon les comptes, une langue d’interface non prise en charge, un compte professionnel dont l’administrateur a restreint certaines fonctions, ou un navigateur ancien.",
+            "Vérifiez d’abord la langue et le pays de votre compte Google, puis testez dans un autre navigateur. Si l’onglet reste absent, les tests peuvent être faits depuis un autre poste ou un autre compte.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Comment AI Mode choisit-il les sites qu’il cite ?",
+      paragraphs: [
+        "Google décrit une mécanique précise. [Les Aperçus IA et le Mode IA peuvent utiliser une distribution ramifiée de requêtes, qui consiste à effectuer plusieurs recherches associées sur des sous-thèmes et des sources de données](https://developers.google.com/search/docs/appearance/ai-features?hl=fr).",
+        "Concrètement, une question comme « quel cabinet comptable choisir pour une SCI à Nantes » devient plusieurs recherches : fiscalité des SCI, cabinets locaux, avis clients, tarifs publics. Chaque sous-recherche peut faire remonter une page différente.",
+        "Les conditions d’éligibilité restent celles du SEO. [Pour s’afficher comme lien de soutien dans les Aperçus IA ou le Mode IA, une page doit être indexée et affichable dans la recherche Google avec un extrait](https://developers.google.com/search/docs/appearance/ai-features?hl=fr).",
+        "Google ajoute qu’[aucune exigence supplémentaire ni optimisation spéciale ne sont requises pour apparaître dans les Aperçus IA ou le Mode IA](https://developers.google.com/search/docs/appearance/ai-features?hl=fr). Autrement dit, un bon référencement classique reste la porte d’entrée.",
+      ],
+    },
+    {
+      title: "Que mesure la Search Console sur le Mode IA ?",
+      paragraphs: [
+        "Google a ajouté un rapport dédié. [Le 3 juin 2026, Google a lancé des rapports sur les performances dans l’IA générative, déployés sur tous les sites depuis le 31 août 2026](https://developers.google.com/search/blog/2026/06/gen-ai-performance-reports?hl=fr), selon le blog Search Central.",
+        "Selon l’aide de la Search Console, [ce rapport inclut les impressions des Aperçus IA et du Mode IA, une impression correspondant à chaque fois qu’un utilisateur a vu un lien vers votre site dans une fonctionnalité d’IA générative](https://support.google.com/webmasters/answer/16984139?hl=fr).",
+        "Le tableau ci-dessous résume ce que ce rapport vous apprend et ce qu’il laisse dans l’ombre. Il sert de base au suivi, mais il ne suffit pas pour connaître votre positionnement sur AI Mode.",
+      ],
+      table: {
+        caption: "Rapport IA générative de la Search Console : ce qu’il mesure et ce qu’il ne mesure pas",
+        headers: ["Donnée", "Disponible dans le rapport", "Comment compléter"],
+        rows: [
+          ["Impressions dans le Mode IA et les Aperçus IA", "Oui, en total et par page", "Suivre la courbe chaque semaine"],
+          ["Pages vues dans les réponses IA", "Oui, dimension Pages", "Repérer les contenus qui portent votre visibilité"],
+          ["Pays et appareils", "Oui, dimensions Pays et Appareils", "Isoler la France et le mobile"],
+          ["Questions posées par les internautes", "Non, aucune dimension requêtes", "Jeu fixe de questions testé à la main ou avec un outil"],
+          ["Mention de la marque sans lien", "Non", "Relevé manuel de la réponse rédigée"],
+          ["Concurrents cités à votre place", "Non", "Relevé manuel ou outil de suivi"],
+        ],
+      },
+    },
+    {
+      title: "Comment connaître son positionnement sur AI Mode ?",
+      paragraphs: [
+        "Puisque le rapport ne donne pas les questions, il faut les poser soi-même. La méthode tient en quatre étapes et une heure par semaine pour une PME sur un marché local.",
+      ],
+      bullets: [
+        "Écrire 20 questions telles que vos clients les formulent : questions de découverte, de comparaison, et questions qui citent votre ville ou votre métier.",
+        "Tester chaque question dans le Mode IA, en navigation privée, le même jour chaque semaine, et copier la réponse dans un tableur.",
+        "Noter pour chaque question : marque mentionnée ou non, site cité ou non, page citée, concurrents nommés.",
+        "Rapprocher ces relevés des impressions de la Search Console pour vérifier que la tendance manuelle et la tendance mesurée vont dans le même sens.",
+      ],
+      subsections: [
+        {
+          title: "Quels indicateurs suivre chaque semaine ?",
+          paragraphs: [
+            "Quatre indicateurs suffisent pour piloter votre suivi de visibilité IA sans vous noyer dans les chiffres. Ils se calculent directement dans le tableur de relevés.",
+          ],
+          bullets: [
+            "Taux de mention : part des questions où votre marque apparaît dans la réponse rédigée.",
+            "Taux de citation : part des questions où une de vos pages figure parmi les liens de soutien.",
+            "Part de voix : vos mentions rapportées au total des mentions de vous et de vos concurrents suivis.",
+            "Impressions IA générative : la courbe hebdomadaire du rapport de la Search Console, page par page.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Comment comparer sa visibilité à celle de ses concurrents dans AI Mode ?",
+      paragraphs: [
+        "Choisissez trois à cinq concurrents réels, ceux que vos clients comparent vraiment avec vous, et relevez leurs mentions sur les mêmes questions. La comparaison n’a de sens que sur un jeu de questions identique.",
+        "Regardez surtout les pages qui leur valent d’être cités. Un comparatif détaillé, une page de tarifs publics ou une fiche d’établissement complète expliquent souvent leur présence mieux que la taille de l’entreprise.",
+        "Cette lecture rejoint la [veille concurrentielle sur les SERP locales et les moteurs IA](/blog/veille-concurrentielle-seo-ia-serp-locales) : on ne copie pas le concurrent, on comble l’information qui vous manque.",
+      ],
+    },
+    {
+      title: "Faut-il un outil de suivi AI Mode ?",
+      paragraphs: [
+        "Plusieurs éditeurs SEO proposent désormais un module de suivi du Mode IA, avec mentions, liens et comparaison aux concurrents. Ces outils automatisent la répétition des questions, pas la réflexion sur ce qu’il faut mesurer.",
+        "Le choix dépend du volume. Le tableau suivant aide à décider sans surinvestir au départ.",
+      ],
+      table: {
+        caption: "Trois façons de suivre sa visibilité dans le Mode IA",
+        headers: ["Approche", "Pour qui", "Limite principale"],
+        rows: [
+          ["Search Console seule", "Toute entreprise, dès aujourd’hui", "Ni questions ni concurrents"],
+          ["Search Console et relevé manuel de 20 questions", "PME sur un marché local ou une niche", "Temps de relevé, une heure par semaine"],
+          ["Outil de suivi dédié", "Plusieurs villes, gammes ou plus de cinq concurrents", "Jeu de questions à construire avec soin, sinon mesure trompeuse"],
+        ],
+      },
+      subsections: [
+        {
+          title: "Pourquoi le trafic ne suffit-il plus comme indicateur ?",
+          paragraphs: [
+            "Une réponse d’IA peut vous citer sans générer de visite. [Pew Research a mesuré que les utilisateurs exposés à un résumé IA de Google cliquent sur un lien classique dans 8 % des visites, contre 15 % sans résumé](https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/).",
+            "La même étude note qu’[un clic sur un lien situé dans le résumé lui-même ne se produit que dans 1 % des visites](https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/). La mention de marque devient donc un indicateur à part entière, à côté du trafic.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Comment booster sa visibilité sur Google ?",
+      paragraphs: [
+        "Les leviers qui améliorent la visibilité dans le Mode IA sont ceux du SEO, appliqués aux questions précises de vos clients. Nous les priorisons dans cet ordre pour une PME.",
+      ],
+      bullets: [
+        "Répondre directement : une page par question importante, avec une réponse claire dès le premier paragraphe, que l’IA peut reprendre telle quelle.",
+        "Rendre l’entreprise lisible : nom, adresse, zone d’intervention, offres et avis cohérents sur le site et la fiche Google, avec des [données structurées Schema.org](/blog/schema-org-guide-complet-geo).",
+        "Être cité ailleurs : annuaires sectoriels, presse locale, comparatifs, car [les sources citées par les IA dépassent largement votre propre site](/blog/sources-citees-ia-site-ne-suffit-pas).",
+        "Mesurer avant et après : chaque action se relie à une évolution du taux de mention ou des impressions IA, sinon elle reste une intuition.",
+      ],
+      subsections: [
+        {
+          title: "Premier pas : établir un point de départ",
+          paragraphs: [
+            "Commencez par un état des lieux : un [audit de visibilité IA](/blog/audit-seo-geo-visibilite-ia) établit le point de départ sur Google, ChatGPT et Perplexity, puis fixe les questions prioritaires à travailler.",
+            "Si vous préférez confier le suivi et les corrections, notre [accompagnement GEO](/offre) couvre le relevé hebdomadaire, les pages à créer et le travail sur les sources externes.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Scénario illustratif : un cabinet d’expertise comptable suit AI Mode pendant six semaines",
+      paragraphs: [
+        "Le cas suivant est un scénario type, construit pour montrer un rythme réaliste. Les chiffres sont illustratifs et ne proviennent pas d’un client réel.",
+        "Un cabinet d’expertise comptable de huit personnes à Angers construit 20 questions clients, comme « expert-comptable pour une SCI à Angers » ou « comptable pour artisan du bâtiment en Maine-et-Loire ».",
+        "Semaine 1 : le cabinet est mentionné sur 2 questions sur 20 et cité en lien sur une seule. Trois confrères reviennent sur la moitié des réponses, grâce à des pages dédiées à chaque type de client.",
+        "Semaines 2 à 4 : le cabinet publie trois pages répondant aux questions les plus fréquentes, complète sa fiche Google et corrige des informations incohérentes dans deux annuaires professionnels.",
+        "Semaines 5 et 6 : le cabinet apparaît sur 5 questions sur 20, les impressions IA de la Search Console progressent sur les trois nouvelles pages, et un concurrent disparaît de deux réponses.",
+        "Le gain reste modeste et c’est normal. Ce qui compte, c’est la tendance mesurée et la preuve que chaque page publiée répond à une question réellement posée.",
+      ],
+    },
+    {
+      title: "Ce qu’il faut retenir",
+      paragraphs: [],
+      bullets: [
+        "Le Mode IA est disponible en France depuis le 22 juillet 2026, et il cite des sites comme liens de soutien d’une réponse rédigée.",
+        "La Search Console mesure les impressions dans le Mode IA et les Aperçus IA, par page, pays, appareil et date, sans les questions.",
+        "Un jeu fixe de 20 questions clients testé chaque semaine complète le rapport et révèle mentions, citations et concurrents.",
+        "Quatre indicateurs suffisent : taux de mention, taux de citation, part de voix et impressions IA générative.",
+        "Les leviers restent ceux du SEO : réponses directes, entreprise lisible, citations externes, mesure avant et après.",
+        "Comptez quatre à huit semaines pour voir une tendance fiable, jamais un bond immédiat.",
+      ],
+    },
+  ],
+};
+
 export const septemberArticles: Record<string, BlogArticle> = {
   [suivreVisibilite.slug]: suivreVisibilite,
   [agentIaSurMesure.slug]: agentIaSurMesure,
@@ -1496,6 +1741,7 @@ export const septemberArticles: Record<string, BlogArticle> = {
   [agenceReferencementChatgpt.slug]: agenceReferencementChatgpt,
   [referencementLocalChatgpt.slug]: referencementLocalChatgpt,
   [agenceAgentsIa.slug]: agenceAgentsIa,
+  [suiviAiMode.slug]: suiviAiMode,
 };
 
 export const septemberPosts: BlogPostMeta[] = [
@@ -1552,5 +1798,14 @@ export const septemberPosts: BlogPostMeta[] = [
     date: agenceAgentsIa.date,
     readingTime: agenceAgentsIa.readingTime,
     category: agenceAgentsIa.category,
+  },
+  {
+    slug: suiviAiMode.slug,
+    title: suiviAiMode.title,
+    seoTitle: suiviAiMode.seoTitle,
+    description: suiviAiMode.description,
+    date: suiviAiMode.date,
+    readingTime: suiviAiMode.readingTime,
+    category: suiviAiMode.category,
   },
 ];
