@@ -66,6 +66,15 @@ function buildMentions(names: Array<keyof typeof mentionUrls>): ArticleMention[]
 }
 
 export const articleMetadataBySlug: Record<string, ArticleSchemaEnhancement> = {
+  "outil-geo-suite-seo-ou-plateforme-dediee": {
+    about: {
+      "@type": "Thing",
+      name: "Outil GEO et suite SEO",
+      description:
+        "Comment choisir entre le module IA d’une suite SEO, une plateforme GEO dédiée et les rapports gratuits de Google et Bing pour suivre sa visibilité IA.",
+    },
+    mentions: buildMentions(["GEO", "SEO IA", "Google", "Google AI Overviews", "ChatGPT", "Perplexity"]),
+  },
   "suivre-visibilite-ai-mode-google": {
     about: {
       "@type": "Thing",
