@@ -66,6 +66,15 @@ function buildMentions(names: Array<keyof typeof mentionUrls>): ArticleMention[]
 }
 
 export const articleMetadataBySlug: Record<string, ArticleSchemaEnhancement> = {
+  "suivre-visibilite-ai-mode-google": {
+    about: {
+      "@type": "Thing",
+      name: "Suivi de visibilité dans le Mode IA de Google",
+      description:
+        "Méthode pour mesurer la visibilité d’une entreprise dans le Mode IA de Google : rapport Search Console, relevé de questions clients, indicateurs et concurrents.",
+    },
+    mentions: buildMentions(["Google", "Google AI Overviews", "GEO", "SEO IA", "ChatGPT"]),
+  },
   "agence-agents-ia-comment-choisir-prestataire": {
     about: {
       "@type": "Thing",
