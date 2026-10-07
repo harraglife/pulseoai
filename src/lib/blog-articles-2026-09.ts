@@ -2467,6 +2467,230 @@ const referencementSearchgpt: ArticleWithTables = {
   ],
 };
 
+const chatgptRecommandeConcurrent: ArticleWithTables = {
+  slug: "chatgpt-recommande-concurrent-pourquoi",
+  title: "ChatGPT recommande votre concurrent : pourquoi et que faire",
+  seoTitle: "Pourquoi ChatGPT cite mon concurrent et pas mon entreprise",
+  description:
+    "Pourquoi ChatGPT recommande un concurrent, pourquoi ses réponses changent d’une fois à l’autre, et la méthode pour reprendre votre place.",
+  date: "7 octobre 2026",
+  dateModified: "7 octobre 2026",
+  readingTime: "10 min",
+  category: "SEO IA",
+  articleSection: "SEO IA",
+  keywords: [
+    "ChatGPT recommande mon concurrent",
+    "ChatGPT donne des réponses différentes à la même question",
+    "pourquoi mon entreprise n’apparaît pas sur ChatGPT",
+    "être recommandé par ChatGPT",
+    "visibilité IA",
+    "OAI-SearchBot",
+    "GEO",
+  ],
+  intro:
+    "Vous posez à ChatGPT la question que posent vos clients, et c’est le nom de votre concurrent qui sort, parfois avec un lien vers son site. Le lendemain, la même question donne une autre réponse, ce qui rend la situation encore plus difficile à comprendre. Voici pourquoi ChatGPT choisit un concurrent, pourquoi ses réponses varient et ce que vous pouvez faire, sans promesse miracle, pour reprendre votre place.",
+  quickAnswer: {
+    question: "Pourquoi ChatGPT recommande-t-il mon concurrent et pas moi ?",
+    answer:
+      "ChatGPT recommande votre concurrent parce que les pages qu’il lit au moment de répondre parlent davantage de lui : son site répond mieux à la question, il est cité dans les annuaires, comparatifs et avis consultés, et ses informations sont cohérentes partout. Votre site peut aussi bloquer le robot OAI-SearchBot. Les réponses varient d’une fois à l’autre, car ChatGPT tire ses mots de façon probabiliste et relance des recherches. Il faut donc mesurer sur une vingtaine de questions répétées, puis corriger les causes une par une.",
+  },
+  contextualLinks: [
+    { label: "suivre sa visibilité dans ChatGPT", href: "/blog/suivre-visibilite-chatgpt-ia" },
+    { label: "le référencement SearchGPT", href: "/blog/referencement-searchgpt-chatgpt-search" },
+    { label: "notre offre de référencement IA", href: "/offre" },
+  ],
+  bodyCta: {
+    intro: "Vous voulez savoir pourquoi ChatGPT nomme vos concurrents à votre place ?",
+    linkLabel: "Demandez un audit de visibilité IA",
+    href: "/contact",
+    outro: ", on relève leurs sources et on vous dit ce qui bloque chez vous.",
+  },
+  relatedSlugs: [
+    "suivre-visibilite-chatgpt-ia",
+    "sources-citees-ia-site-ne-suffit-pas",
+    "referencement-searchgpt-chatgpt-search",
+  ],
+  faqTitle: "FAQ : ChatGPT recommande mon concurrent",
+  faqItems: [
+    {
+      question: "Pourquoi ChatGPT ne donne-t-il jamais deux fois exactement la même réponse ?",
+      answer:
+        "Parce que le modèle choisit chaque mot par tirage parmi plusieurs possibilités probables, et que la recherche web relancée à chaque question ne renvoie pas toujours les mêmes pages. La mémoire de l’utilisateur et sa localisation approximative modifient aussi la réponse.",
+    },
+    {
+      question: "Un seul test suffit-il pour savoir si ChatGPT me recommande ?",
+      answer:
+        "Non, un test isolé ne prouve rien, ni dans un sens ni dans l’autre. Posez une vingtaine de questions clients, en conversation temporaire, plusieurs fois et sur plusieurs semaines, puis comptez votre taux d’apparition face à celui de chaque concurrent.",
+    },
+    {
+      question: "Peut-on demander à OpenAI de recommander son entreprise ?",
+      answer:
+        "Non, il n’existe pas de formulaire pour être recommandé. OpenAI indique que tout site peut choisir d’apparaître dans la recherche de ChatGPT en autorisant son robot, mais la recommandation dépend ensuite des pages et des sources que le moteur lit.",
+    },
+    {
+      question: "Mon concurrent a-t-il acheté sa place dans ChatGPT ?",
+      answer:
+        "Dans une réponse rédigée par ChatGPT, rien n’indique qu’une place se paie. Votre concurrent est en général mieux décrit dans les sources consultées : annuaires, comparatifs, avis, articles de presse et pages qui répondent précisément à la question posée.",
+    },
+    {
+      question: "Combien de temps pour être recommandé à la place d’un concurrent ?",
+      answer:
+        "Comptez quatre à huit semaines pour des premières apparitions sur des questions précises, et plusieurs mois pour devancer un concurrent installé sur les questions générales. Les corrections techniques, comme l’accès des robots, produisent leurs effets le plus vite.",
+    },
+  ],
+  sections: [
+    {
+      title: "Pourquoi ChatGPT recommande-t-il mon concurrent et pas moi ?",
+      paragraphs: [
+        "ChatGPT ne choisit pas un concurrent par préférence : il rédige sa réponse à partir des pages qu’il trouve et lit au moment de la question, puis nomme les entreprises que ces pages décrivent le mieux.",
+        "OpenAI précise que [ChatGPT search s’appuie sur des fournisseurs de recherche tiers et sur des contenus fournis directement par ses partenaires](https://openai.com/index/introducing-chatgpt-search/). Si ces sources parlent de votre concurrent et pas de vous, la réponse suivra.",
+        "L’enjeu grandit vite côté clients. Selon [l’enquête Local Consumer Review Survey 2026 de BrightLocal, l’usage de ChatGPT et des IA génératives pour trouver une entreprise locale est passé de 6 % à 45 % en un an](https://www.brightlocal.com/research/local-consumer-review-survey/).",
+        "La même enquête indique que [42 % des consommateurs font autant confiance aux recommandations des IA qu’aux avis traditionnels](https://www.brightlocal.com/research/local-consumer-review-survey/). Être absent d’une réponse revient donc souvent à être absent de la liste finale du client.",
+      ],
+    },
+    {
+      title: "Pourquoi ChatGPT donne-t-il des réponses différentes à la même question ?",
+      paragraphs: [
+        "Avant d’agir, il faut comprendre que la réponse change d’un essai à l’autre. Un dirigeant qui teste une seule fois peut se croire absent alors qu’il apparaît une fois sur trois, ou l’inverse.",
+      ],
+      subsections: [
+        {
+          title: "Un tirage probabiliste à chaque mot",
+          paragraphs: [
+            "Le laboratoire Thinking Machines rappelle que [poser plusieurs fois la même question à ChatGPT donne des résultats différents, parce que la génération repose sur un échantillonnage probabiliste des mots](https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/).",
+            "Même en réglage le plus strict, la variation persiste : [sur 1 000 générations d’un même texte avec un modèle réglé à température 0, les chercheurs ont obtenu 80 réponses différentes](https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/). Une recommandation n’est donc jamais figée.",
+          ],
+        },
+        {
+          title: "La mémoire et la localisation de l’utilisateur",
+          paragraphs: [
+            "OpenAI explique que [la mémoire de ChatGPT rend les réponses plus pertinentes et adaptées à chaque utilisateur, et qu’elle s’appuie depuis avril 2025 sur l’ensemble des conversations passées](https://openai.com/index/memory-and-new-controls-for-chatgpt/). Votre ChatGPT ne répond donc pas comme celui de votre client.",
+            "Le centre d’aide d’OpenAI précise aussi que [ChatGPT peut utiliser une localisation approximative déduite de l’adresse IP pour fournir des résultats locaux](https://help.openai.com/en/articles/9237897-chatgpt-search). Un test fait à Nantes ne vaut pas pour un client situé à Rennes.",
+          ],
+        },
+        {
+          title: "Une recherche web relancée à chaque fois",
+          paragraphs: [
+            "Selon le même centre d’aide, [ChatGPT réécrit la question en une ou plusieurs requêtes ciblées qu’il envoie à ses fournisseurs de recherche](https://help.openai.com/en/articles/9237897-chatgpt-search). Une formulation légèrement différente fait remonter d’autres pages, donc parfois d’autres entreprises.",
+            "C’est pourquoi un concurrent peut apparaître lundi, disparaître mardi et revenir jeudi. Seule une mesure répétée sur plusieurs questions donne une image fiable de votre position face à lui.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Comment savoir si ChatGPT recommande mon entreprise ?",
+      paragraphs: [
+        "La méthode la plus fiable reste simple et ne demande aucun outil payant : un jeu fixe de questions, posé à intervalles réguliers, avec les mêmes règles de relevé à chaque fois.",
+      ],
+      bullets: [
+        "Écrire vingt questions telles que vos clients les formulent, par exemple « quel plombier appeler en urgence à Saint-Herblain » ou « quelle agence pour refaire mon site ».",
+        "Les poser en conversation temporaire, pour éviter l’effet de votre propre mémoire, et répéter chaque question trois fois pour lisser la variation des réponses.",
+        "Noter pour chaque réponse : votre entreprise est-elle nommée, votre site est-il cité en source, quels concurrents apparaissent et quelles pages sont affichées comme sources.",
+        "Recommencer chaque semaine pendant au moins un mois, puis comparer votre taux d’apparition à celui de chaque concurrent plutôt qu’un résultat isolé.",
+      ],
+    },
+    {
+      title: "Mon concurrent est recommandé par ChatGPT à ma place : quelles sont les causes ?",
+      paragraphs: [
+        "Le relevé des sources affichées par ChatGPT montre presque toujours l’une des six causes suivantes. Elles se corrigent dans cet ordre, de la plus rapide à la plus longue à traiter.",
+      ],
+      subsections: [
+        {
+          title: "1. Votre site bloque le robot de recherche d’OpenAI",
+          paragraphs: [
+            "La documentation d’OpenAI est claire : [un site qui exclut OAI-SearchBot n’est pas affiché dans les réponses de ChatGPT search, et un changement de robots.txt demande environ 24 heures pour être pris en compte](https://developers.openai.com/api/docs/bots).",
+            "Le blocage vient souvent d’un pare-feu ou d’une protection anti-robots activée par l’hébergeur, pas du robots.txt lui-même. C’est la première vérification à faire, car elle peut suffire à expliquer une absence totale.",
+          ],
+        },
+        {
+          title: "2. Aucune page ne répond à la question posée",
+          paragraphs: [
+            "Votre concurrent a une page « Plombier à Saint-Herblain : urgence 7 jours sur 7 » qui répond directement, alors que votre site n’a qu’une page d’accueil générale et une page de contact. ChatGPT cite la page qui répond.",
+            "Chaque prestation et chaque zone importante méritent une page dédiée, qui commence par une réponse claire de deux phrases. Nous détaillons ce format dans [le référencement SearchGPT](/blog/referencement-searchgpt-chatgpt-search).",
+          ],
+        },
+        {
+          title: "3. Les sources tierces parlent de lui, pas de vous",
+          paragraphs: [
+            "Sur une question de recommandation, ChatGPT cite volontiers des annuaires, des comparatifs, des articles et des forums. Si votre concurrent y figure et pas vous, il part avec une avance difficile à rattraper par votre seul site.",
+            "Repérez les sources qui reviennent dans vos relevés et obtenez-y une fiche ou une mention utile. La méthode complète est décrite dans [pourquoi votre site ne suffit pas](/blog/sources-citees-ia-site-ne-suffit-pas).",
+          ],
+        },
+        {
+          title: "4. Vos avis sont rares ou anciens",
+          paragraphs: [
+            "Les avis nourrissent les pages que l’IA lit et donnent le ton de sa recommandation. Une entreprise avec dix avis de 2022 face à un concurrent qui en reçoit chaque semaine part largement perdante.",
+            "Mettez en place une demande d’avis systématique après chaque prestation, et répondez à chacun, positif ou négatif, pour montrer une activité récente et suivie.",
+          ],
+        },
+        {
+          title: "5. Vos informations se contredisent",
+          paragraphs: [
+            "Un nom écrit de trois façons, deux numéros de téléphone ou une ancienne adresse encore en ligne suffisent à faire douter un modèle de langage, qui préférera alors le concurrent dont les informations concordent partout.",
+            "Listez chaque endroit où votre entreprise apparaît, corrigez les écarts et supprimez les doublons. Le balisage décrit dans notre [guide Schema.org pour le GEO](/blog/schema-org-guide-complet-geo) renforce ensuite cette cohérence.",
+          ],
+        },
+        {
+          title: "6. Votre fiche d’établissement est incomplète",
+          paragraphs: [
+            "Pour une recherche locale, Google rappelle que [le classement repose sur la pertinence, la distance et la proéminence, et qu’aucune meilleure place ne s’obtient sur demande ou contre rémunération](https://support.google.com/business/answer/7091?hl=fr).",
+            "Ces informations circulent ensuite dans les cartes et annuaires que les IA consultent. Une fiche complète, avec catégories, horaires, photos et prestations, est la base de tout [référencement local ChatGPT](/blog/referencement-local-chatgpt-apparaitre-ville).",
+          ],
+        },
+      ],
+      table: {
+        caption: "Diagnostic rapide : la cause probable selon ce que montre ChatGPT",
+        headers: ["Ce que vous constatez", "Cause probable", "Première action"],
+        rows: [
+          ["Votre site n’est jamais cité, sur aucune question", "Robot OAI-SearchBot bloqué ou site mal indexé", "Vérifier robots.txt, pare-feu et indexation"],
+          ["Vous êtes cité sur votre nom, jamais sur vos services", "Pas de page qui répond aux questions clients", "Créer une page par prestation et par zone"],
+          ["Le concurrent est cité via des annuaires et comparatifs", "Absence dans les sources tierces", "Obtenir une fiche sur les sources qui reviennent"],
+          ["Vous apparaissez, mais avec des informations fausses", "Données incohérentes en ligne", "Harmoniser nom, adresse, téléphone et horaires"],
+        ],
+      },
+    },
+    {
+      title: "Pourquoi mon entreprise n’apparaît-elle pas dans les résultats de recherche Google ?",
+      paragraphs: [
+        "La question est liée, car ChatGPT s’appuie sur des index de recherche tiers. Une entreprise absente de Google l’est très souvent aussi des réponses des IA, pour les mêmes raisons techniques ou éditoriales.",
+        "Les causes habituelles sont un site récent ou non déclaré dans la Search Console, des pages bloquées par erreur, un contenu trop mince ou une fiche d’établissement absente. Notre [méthode d’audit SEO et GEO](/blog/audit-seo-geo-visibilite-ia) les passe en revue dans l’ordre.",
+      ],
+    },
+    {
+      title: "Comment reprendre la place de mon concurrent dans ChatGPT ?",
+      paragraphs: [
+        "Il ne s’agit pas de copier votre concurrent, mais d’être présent là où ChatGPT le trouve, avec des pages qui répondent mieux que les siennes. Trois étapes structurent ce travail sur un trimestre.",
+      ],
+      bullets: [
+        "Analyser ses sources : pour chaque question où il est cité, noter les pages affichées par ChatGPT, puis classer celles où vous pouvez aussi figurer.",
+        "Corriger vos bases : accès des robots, pages par prestation et par zone, fiche d’établissement complète, informations identiques partout et avis récents.",
+        "Suivre l’écart : répéter le même relevé chaque semaine et relier chaque progression à une action datée, comme dans notre méthode de [veille concurrentielle SEO et IA](/blog/veille-concurrentielle-seo-ia-serp-locales).",
+      ],
+    },
+    {
+      title: "Scénario illustratif : un plombier nantais sur sept semaines",
+      paragraphs: [
+        "Le cas suivant est un scénario type, construit pour montrer un rythme réaliste. Les chiffres sont illustratifs et ne proviennent pas d’un client réel de PulseoAI.",
+        "Un plombier de Saint-Herblain n’apparaît dans aucune des 60 réponses obtenues sur vingt questions répétées trois fois. Son principal concurrent apparaît dans 22 réponses, porté par deux annuaires et un comparatif local.",
+        "Semaines 1 et 2 : le pare-feu est réglé pour laisser passer OAI-SearchBot, la fiche d’établissement est complétée et trois pages sont créées, dont « Plombier en urgence à Saint-Herblain ».",
+        "Semaines 3 à 5 : l’entreprise obtient une fiche sur les deux annuaires cités et lance une demande d’avis après chaque intervention. Les relevés bougent peu, ce qui est normal à ce stade.",
+        "Semaines 6 et 7 : le plombier apparaît dans 9 réponses sur 60, surtout sur les questions d’urgence. Le concurrent reste devant sur les questions de rénovation, qui deviennent le chantier suivant.",
+      ],
+    },
+    {
+      title: "Ce qu’il faut retenir",
+      paragraphs: [],
+      bullets: [
+        "ChatGPT recommande votre concurrent parce que les pages et sources qu’il lit au moment de répondre le décrivent mieux que vous.",
+        "Les réponses varient d’un essai à l’autre à cause du tirage probabiliste, de la mémoire, de la localisation et des recherches relancées.",
+        "Un test isolé ne prouve rien : mesurez vingt questions répétées chaque semaine, en conversation temporaire.",
+        "Vérifiez d’abord l’accès d’OAI-SearchBot, puis créez des pages qui répondent, entrez dans les sources tierces et soignez vos avis.",
+        "Premières apparitions entre quatre et huit semaines, avance sur un concurrent installé en plusieurs mois.",
+      ],
+    },
+  ],
+};
+
 export const septemberArticles: Record<string, BlogArticle> = {
   [suivreVisibilite.slug]: suivreVisibilite,
   [agentIaSurMesure.slug]: agentIaSurMesure,
@@ -2478,6 +2702,7 @@ export const septemberArticles: Record<string, BlogArticle> = {
   [outilGeoSuiteSeo.slug]: outilGeoSuiteSeo,
   [dotsOpenai.slug]: dotsOpenai,
   [referencementSearchgpt.slug]: referencementSearchgpt,
+  [chatgptRecommandeConcurrent.slug]: chatgptRecommandeConcurrent,
 };
 
 export const septemberPosts: BlogPostMeta[] = [
@@ -2570,5 +2795,14 @@ export const septemberPosts: BlogPostMeta[] = [
     date: referencementSearchgpt.date,
     readingTime: referencementSearchgpt.readingTime,
     category: referencementSearchgpt.category,
+  },
+  {
+    slug: chatgptRecommandeConcurrent.slug,
+    title: chatgptRecommandeConcurrent.title,
+    seoTitle: chatgptRecommandeConcurrent.seoTitle,
+    description: chatgptRecommandeConcurrent.description,
+    date: chatgptRecommandeConcurrent.date,
+    readingTime: chatgptRecommandeConcurrent.readingTime,
+    category: chatgptRecommandeConcurrent.category,
   },
 ];
