@@ -66,6 +66,15 @@ function buildMentions(names: Array<keyof typeof mentionUrls>): ArticleMention[]
 }
 
 export const articleMetadataBySlug: Record<string, ArticleSchemaEnhancement> = {
+  "referencement-searchgpt-chatgpt-search": {
+    about: {
+      "@type": "Thing",
+      name: "Référencement SearchGPT",
+      description:
+        "Comment ChatGPT search, l’ex-SearchGPT, sélectionne ses sources, le rôle du robot OAI-SearchBot et des index tiers, et la méthode pour être référencé et cité.",
+    },
+    mentions: buildMentions(["ChatGPT", "OpenAI", "GEO", "SEO IA", "robots.txt", "Schema.org"]),
+  },
   "dots-openai-agents-ia-pme": {
     about: {
       "@type": "Thing",
