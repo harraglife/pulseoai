@@ -2212,6 +2212,261 @@ const dotsOpenai: ArticleWithTables = {
   ],
 };
 
+const referencementSearchgpt: ArticleWithTables = {
+  slug: "referencement-searchgpt-chatgpt-search",
+  title: "Référencement SearchGPT : être cité dans ChatGPT search",
+  seoTitle: "SearchGPT : comment être référencé et cité par ChatGPT",
+  description:
+    "Comment ChatGPT search, l’ex-SearchGPT, choisit ses sources, le rôle d’OAI-SearchBot et des index tiers, et la méthode pour y être cité.",
+  date: "7 octobre 2026",
+  dateModified: "7 octobre 2026",
+  readingTime: "11 min",
+  category: "SEO IA",
+  articleSection: "SEO IA",
+  keywords: [
+    "référencement SearchGPT",
+    "SearchGPT",
+    "ChatGPT search",
+    "être référencé sur SearchGPT",
+    "être cité sur SearchGPT",
+    "OAI-SearchBot",
+    "Bing Webmaster Tools",
+    "consultant SEO ChatGPT search",
+  ],
+  intro:
+    "Le référencement SearchGPT consiste à rendre vos pages trouvables, lisibles et citables par la recherche web intégrée à ChatGPT, que l’on appelait SearchGPT pendant sa phase de test. Contrairement à Google, ChatGPT search ne présente pas dix liens bleus : il rédige une réponse et affiche quelques sources cliquables à côté du texte. Voici comment ce moteur sélectionne ses sources, ce qui bloque la plupart des sites et la méthode concrète pour y être cité.",
+  quickAnswer: {
+    question: "Comment être référencé sur SearchGPT ?",
+    answer:
+      "Pour être référencé sur SearchGPT, aujourd’hui appelé ChatGPT search, il faut d’abord autoriser le robot OAI-SearchBot dans le robots.txt et sur le CDN. Il faut ensuite être bien indexé par les moteurs tiers que ChatGPT interroge, et publier des pages qui répondent directement aux questions posées. Les mentions dans des sources externes fiables, comme les comparatifs et les médias spécialisés, renforcent ensuite les chances d’être cité. Les premiers résultats se mesurent en semaines, jamais en jours, et aucune offre payante ne garantit une citation.",
+  },
+  contextualLinks: [
+    { label: "notre guide pour apparaître sur ChatGPT", href: "/blog/referencement-chatgpt-apparaitre-ia" },
+    { label: "le référencement local ChatGPT", href: "/blog/referencement-local-chatgpt-apparaitre-ville" },
+    { label: "notre offre de référencement IA", href: "/offre" },
+  ],
+  bodyCta: {
+    intro: "Vous voulez savoir si ChatGPT search cite déjà votre site ?",
+    linkLabel: "Demandez un audit de visibilité IA",
+    href: "/contact",
+    outro: ", on vérifie l’accès des robots, vos citations et celles de vos concurrents.",
+  },
+  relatedSlugs: [
+    "referencement-chatgpt-apparaitre-ia",
+    "referencement-local-chatgpt-apparaitre-ville",
+    "suivre-visibilite-chatgpt-ia",
+  ],
+  faqTitle: "FAQ : référencement SearchGPT",
+  faqItems: [
+    {
+      question: "SearchGPT existe-t-il encore ?",
+      answer:
+        "Non, SearchGPT était un prototype testé en 2024 par un petit groupe d’utilisateurs. Ses fonctions ont été intégrées à ChatGPT sous le nom de ChatGPT search, disponible pour tous dans les régions où ChatGPT est proposé, sans inscription.",
+    },
+    {
+      question: "Faut-il payer pour être référencé sur SearchGPT ?",
+      answer:
+        "Non, OpenAI indique que tout site ou éditeur peut choisir d’apparaître dans ChatGPT search. Les partenariats éditeurs existent, mais une PME n’en a pas besoin : autoriser OAI-SearchBot et publier des pages utiles reste la base de tout référencement SearchGPT.",
+    },
+    {
+      question: "Bloquer GPTBot empêche-t-il d’apparaître dans ChatGPT search ?",
+      answer:
+        "Non, les deux robots sont indépendants. GPTBot concerne l’entraînement des modèles, OAI-SearchBot concerne la recherche. Vous pouvez refuser l’entraînement tout en restant visible dans ChatGPT search, à condition de laisser OAI-SearchBot accéder à vos pages.",
+    },
+    {
+      question: "Combien de temps faut-il pour être cité sur SearchGPT ?",
+      answer:
+        "Une correction du robots.txt est prise en compte rapidement, selon la documentation d’OpenAI sur ses robots. Les premières citations sur des questions précises arrivent plutôt entre quatre et huit semaines, et une présence stable face à des concurrents installés demande plusieurs mois.",
+    },
+    {
+      question: "Le SEO Google suffit-il pour être visible dans ChatGPT search ?",
+      answer:
+        "Il en est la base, mais il ne suffit pas toujours. ChatGPT search interroge des index tiers, réécrit les questions et cite des pages qui répondent précisément. Un site bien classé sur Google mais fermé à OAI-SearchBot restera invisible dans les réponses.",
+    },
+  ],
+  sections: [
+    {
+      title: "Qu’est-ce que le référencement SearchGPT ?",
+      paragraphs: [
+        "Le référencement SearchGPT regroupe les actions qui augmentent la probabilité qu’une page soit lue, reprise et citée en source quand ChatGPT effectue une recherche sur le web pour répondre à un utilisateur.",
+        "C’est une branche du GEO, l’optimisation pour les moteurs génératifs, centrée sur un seul moteur : celui d’OpenAI. Nous présentons la logique générale de ces moteurs dans [notre guide pour apparaître sur ChatGPT](/blog/referencement-chatgpt-apparaitre-ia).",
+        "L’audience justifie l’effort, puisque [ChatGPT a atteint 900 millions d’utilisateurs actifs hebdomadaires, selon l’annonce d’OpenAI rapportée par TechCrunch le 27 février 2026](https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users).",
+      ],
+    },
+    {
+      title: "SearchGPT et ChatGPT search, est-ce la même chose ?",
+      paragraphs: [
+        "Oui, il s’agit du même moteur d’OpenAI, observé à deux étapes de sa vie : le prototype de test, puis la fonction intégrée à ChatGPT. [OpenAI a présenté SearchGPT le 25 juillet 2024 comme un prototype temporaire, ouvert à un petit groupe d’utilisateurs et d’éditeurs pour recueillir leurs retours](https://openai.com/index/searchgpt-prototype/).",
+        "[OpenAI a ensuite lancé ChatGPT search le 31 octobre 2024, puis l’a rendu accessible le 5 février 2025 à tous les utilisateurs des régions où ChatGPT est disponible, sans inscription](https://openai.com/index/introducing-chatgpt-search/).",
+        "Les internautes continuent pourtant de chercher « référencement SearchGPT » ou « comment être référencé sur Search GPT ». La réponse est la même dans les deux cas : on optimise aujourd’hui pour la recherche intégrée à ChatGPT.",
+      ],
+    },
+    {
+      title: "Comment fonctionne la recherche de ChatGPT ?",
+      paragraphs: [
+        "Comprendre le circuit d’une réponse évite la plupart des erreurs de référencement que nous constatons en audit. ChatGPT search ne parcourt pas tout le web à chaque question : il interroge des index existants, sélectionne quelques pages et rédige une synthèse à partir de leur contenu.",
+      ],
+      subsections: [
+        {
+          title: "Une recherche déclenchée par la question",
+          paragraphs: [
+            "Selon le centre d’aide d’OpenAI, [ChatGPT peut chercher sur le web automatiquement quand la question gagne à s’appuyer sur une information récente](https://help.openai.com/en/articles/9237897-chatgpt-search), et l’utilisateur peut aussi la lancer lui-même.",
+            "Une question générale comme « qu’est-ce que le GEO » peut recevoir une réponse sans recherche. Une question datée, locale ou comparative, comme « quelle agence choisir à Nantes en 2026 », déclenche presque toujours une recherche web.",
+          ],
+        },
+        {
+          title: "Des sources venues de fournisseurs tiers",
+          paragraphs: [
+            "OpenAI précise que [ChatGPT search s’appuie sur des fournisseurs de recherche tiers et sur des contenus fournis directement par ses partenaires](https://openai.com/index/introducing-chatgpt-search/). Votre indexation dans les grands moteurs de recherche conditionne donc directement votre présence dans les résultats que ChatGPT peut lire et citer.",
+            "Le même centre d’aide explique que [ChatGPT réécrit généralement la question en une ou plusieurs requêtes ciblées, qu’il envoie à ces fournisseurs](https://help.openai.com/en/articles/9237897-chatgpt-search). Vos pages doivent répondre à ces requêtes courtes et précises, pas seulement à la question longue de l’utilisateur.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Comment être référencé sur SearchGPT ?",
+      paragraphs: [
+        "Cinq leviers couvrent l’essentiel du référencement SearchGPT pour une PME, quel que soit son secteur ou la taille de son site. Les deux premiers sont techniques et conditionnent tout le reste, les trois suivants décident si votre page sera citée plutôt que celle d’un concurrent.",
+      ],
+      subsections: [
+        {
+          title: "1. Autoriser OAI-SearchBot, sur le site et sur le CDN",
+          paragraphs: [
+            "La documentation d’OpenAI est explicite : [OAI-SearchBot sert à faire apparaître les sites dans la recherche de ChatGPT, et un site qui l’exclut n’est pas affiché dans les réponses de ChatGPT search](https://developers.openai.com/api/docs/bots).",
+            "Le centre d’aide ajoute que [l’hébergeur ou le CDN doit aussi accepter le trafic venant des adresses IP publiées par OpenAI pour son robot de recherche](https://help.openai.com/en/articles/9237897-chatgpt-search). Un pare-feu ou une protection anti-robots trop stricte suffit à rendre un site entier invisible, même avec un robots.txt parfaitement configuré.",
+            "Après correction, [OpenAI indique qu’il faut compter environ 24 heures pour qu’une modification du robots.txt soit prise en compte](https://developers.openai.com/api/docs/bots). C’est la vérification la plus rapide et la plus rentable de toute la démarche, à faire avant d’écrire la moindre page.",
+          ],
+        },
+        {
+          title: "2. Être bien indexé par les moteurs que ChatGPT interroge",
+          paragraphs: [
+            "Puisque ChatGPT s’appuie sur des index tiers, une page absente de ces index a peu de chances d’être citée. Déclarez votre site dans Google Search Console et dans Bing Webmaster Tools, avec un sitemap à jour.",
+            "Pour accélérer la découverte des nouvelles pages, [IndexNow permet de signaler instantanément aux moteurs participants, dont Microsoft Bing, qu’un contenu a été ajouté, modifié ou supprimé](https://www.indexnow.org/). Nous l’utilisons d’ailleurs à chaque publication sur ce blog, en complément de la demande d’indexation dans la Search Console.",
+          ],
+        },
+        {
+          title: "3. Publier des pages qui répondent dès la première phrase",
+          paragraphs: [
+            "ChatGPT reprend volontiers une phrase qui répond exactement à la requête réécrite. Commencez chaque page par une définition ou une réponse directe de deux phrases, puis développez avec des exemples, des étapes et des données sourcées.",
+            "Une page de services qui énumère des slogans et des promesses générales ne donne aucune phrase à citer au moteur. Une page qui répond à « combien de temps pour être cité par ChatGPT » avec un délai réaliste et une méthode a toutes ses chances.",
+          ],
+        },
+        {
+          title: "4. Baliser les pages avec des données structurées",
+          paragraphs: [
+            "Le balisage Schema.org aide les moteurs à comprendre qui vous êtes, ce que vous proposez et où vous exercez. Les types Organization, LocalBusiness, Article et FAQPage couvrent la grande majorité des besoins d’une PME, sans balisage exotique ni extension payante.",
+            "Notre [guide Schema.org pour le GEO](/blog/schema-org-guide-complet-geo) donne le balisage à copier, et le fichier décrit dans [notre guide llms.txt](/blog/llms-txt-guide-pratique) complète ce travail pour les robots d’IA.",
+          ],
+        },
+        {
+          title: "5. Exister dans les sources tierces que ChatGPT consulte",
+          paragraphs: [
+            "Sur les questions comparatives, ChatGPT cite souvent des annuaires, des comparatifs, des médias spécialisés et des forums plutôt que les sites des entreprises. Une marque absente de ces sources a peu de chances d’être nommée, même si son propre site est techniquement irréprochable.",
+            "Nous détaillons ce point dans [pourquoi votre site ne suffit pas](/blog/sources-citees-ia-site-ne-suffit-pas), avec une méthode pour repérer les sources qui reviennent sur votre marché et y obtenir une mention utile.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Comment être référencé et cité sur SearchGPT ?",
+      paragraphs: [
+        "Être référencé et être cité sont deux choses distinctes, et la confusion explique beaucoup de déceptions. Une page référencée peut être lue par ChatGPT sans apparaître dans la réponse, alors qu’une page citée s’affiche en lien à côté du texte rédigé.",
+        "Selon le centre d’aide d’OpenAI, [l’utilisateur peut cliquer sur une citation pour ouvrir la source, ou ouvrir le bouton Sources pour voir les pages citées et d’autres liens pertinents](https://help.openai.com/en/articles/9237897-chatgpt-search). En pratique, seules les pages citées génèrent réellement des visites vers votre site depuis ChatGPT.",
+        "Pour passer du statut de page lue à celui de page citée, chaque paragraphe doit pouvoir être repris seul : une affirmation claire, un chiffre sourcé, une date, un nom propre. Les formulations vagues, du type « solutions innovantes pour votre performance », ne sont pratiquement jamais reprises dans une réponse.",
+      ],
+    },
+    {
+      title: "Comment apparaître dans ChatGPT ?",
+      paragraphs: [
+        "ChatGPT peut parler de votre entreprise de deux façons : à partir de ce que le modèle a appris pendant son entraînement, ou à partir de pages trouvées en direct par la recherche. Le référencement SearchGPT agit sur la seconde voie, celle qui reflète vos pages telles qu’elles sont aujourd’hui.",
+        "La première voie dépend du robot GPTBot, qui collecte des contenus pour l’entraînement. [OpenAI rappelle que SearchGPT est distinct de l’entraînement, et qu’un site peut apparaître dans la recherche même s’il refuse l’entraînement des modèles](https://openai.com/index/searchgpt-prototype/).",
+        "Pour une PME, la recherche est le levier le plus rapide, car elle reflète vos pages actuelles. Notre guide [référencement ChatGPT](/blog/referencement-chatgpt-apparaitre-ia) couvre les deux voies, et [le référencement local ChatGPT](/blog/referencement-local-chatgpt-apparaitre-ville) traite le cas des requêtes géographiques.",
+      ],
+    },
+    {
+      title: "SearchGPT face à Google : deux logiques de référencement",
+      paragraphs: [
+        "Les fondations sont communes, mais la façon de gagner diffère. Le tableau ci-dessous résume ce qui change entre un moteur qui classe des pages et un moteur qui rédige une réponse à partir de quelques sources.",
+      ],
+      table: {
+        caption: "Google et ChatGPT search : ce qui change pour le référencement d’une PME",
+        headers: ["Critère", "Google Search", "ChatGPT search"],
+        rows: [
+          ["Forme du résultat", "Une liste de pages classées, avec cartes et extraits", "Une réponse rédigée, avec quelques sources cliquables"],
+          ["Robot à autoriser", "Googlebot", "OAI-SearchBot, sur le site et sur le CDN"],
+          ["Index utilisé", "L’index propre de Google", "Des fournisseurs de recherche tiers et des contenus partenaires"],
+          ["Ce qui fait gagner", "Pertinence, qualité et popularité de la page", "Une page qui répond précisément à la requête réécrite, et des mentions dans des sources tierces"],
+          ["Mesure", "Search Console, positions et clics", "Relevé de questions, citations et visites venant de chatgpt.com"],
+        ],
+      },
+      subsections: [
+        {
+          title: "Comment fonctionne Google Search ?",
+          paragraphs: [
+            "Google explore le web avec ses robots, indexe les pages qu’il juge utiles, puis classe les résultats selon la pertinence et la qualité au moment de la recherche. Le principe reste celui d’une liste ordonnée de pages, enrichie de cartes, d’extraits et parfois d’un résumé généré par IA.",
+            "ChatGPT search réutilise des index de ce type, puis ajoute une étape : la rédaction. Une page bien classée sur Google n’est donc pas automatiquement citée, si elle ne contient pas de phrase réutilisable.",
+          ],
+        },
+        {
+          title: "Comment être bien référencé sur Google ?",
+          paragraphs: [
+            "Les bases n’ont pas changé : un site rapide et indexable, des contenus utiles qui répondent aux questions réelles de vos clients, et une popularité construite par des mentions et des liens de qualité.",
+            "Ce travail sert aussi le référencement SearchGPT, puisque ChatGPT s’appuie sur des index tiers, et c’est pourquoi nous menons [SEO et GEO ensemble](/offre) plutôt que deux chantiers séparés.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Comment mesurer sa visibilité dans ChatGPT search ?",
+      paragraphs: [
+        "La méthode de base reste manuelle : un jeu fixe de vingt questions clients, posé chaque semaine dans ChatGPT, en notant si votre marque est nommée, si votre site est cité et qui apparaît à votre place.",
+        "Côté Microsoft, [Bing Webmaster Tools propose depuis le 10 février 2026 un rapport AI Performance qui compte les citations dans Copilot, les résumés IA de Bing et certaines intégrations partenaires](https://blogs.bing.com/webmaster/2026/2/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview/). Ce rapport ne couvre pas ChatGPT en tant que tel, mais il montre déjà quelles pages les moteurs génératifs jugent citables.",
+        "Dans votre outil d’analyse, isolez enfin les visites dont le référent est chatgpt.com, pour relier les citations à un trafic réel. La méthode complète, avec et sans outil, est décrite dans [suivre sa visibilité dans ChatGPT](/blog/suivre-visibilite-chatgpt-ia).",
+      ],
+    },
+    {
+      title: "Comment utiliser ChatGPT pour le référencement ?",
+      paragraphs: [
+        "ChatGPT est aussi un assistant de travail pour votre référencement, à condition de vérifier chaque information avant de la publier. Trois usages font gagner du temps sans prendre de risque sur la qualité de ce que vous publiez.",
+      ],
+      bullets: [
+        "Lister les questions réelles : demander quelles questions un client pose avant de choisir votre métier, puis en faire des titres de pages et de FAQ.",
+        "Repérer les sources : poser vos questions clés avec la recherche activée et noter les sites cités, qui deviennent vos cibles de mentions.",
+        "Relire vos pages : demander quelle phrase de votre page répond à une question donnée ; s’il n’en trouve pas, la page doit être réécrite.",
+      ],
+    },
+    {
+      title: "Faut-il un consultant SEO ChatGPT search ?",
+      paragraphs: [
+        "Les vérifications techniques, comme le robots.txt, le CDN et l’inscription dans Bing Webmaster Tools, sont accessibles à une PME en interne. Avec un accès à l’hébergement et au CDN, elles prennent en général une demi-journée à une personne un peu technique.",
+        "Un accompagnement devient utile pour le relevé des sources, la réécriture des pages et le suivi des citations dans la durée. Avant de choisir, lisez nos critères pour [choisir une agence de référencement ChatGPT](/blog/agence-referencement-chatgpt-comment-choisir), et méfiez-vous de toute promesse de citation garantie.",
+      ],
+    },
+    {
+      title: "Scénario illustratif : un cabinet de conseil sur six semaines",
+      paragraphs: [
+        "Le cas suivant est un scénario type, construit pour montrer un rythme réaliste. Les chiffres sont illustratifs et ne proviennent pas d’un client réel de PulseoAI.",
+        "Un cabinet de conseil RH de douze personnes n’est jamais cité par ChatGPT search sur vingt questions du type « comment mettre en place l’entretien professionnel dans une PME ». Le relevé initial montre que son pare-feu bloque OAI-SearchBot depuis une mise à jour de sécurité passée inaperçue.",
+        "Semaines 1 et 2 : le robots.txt et le CDN sont corrigés, le site est déclaré dans Bing Webmaster Tools avec IndexNow. Trois pages guides sont réécrites pour répondre dès la première phrase, avec des sources officielles liées.",
+        "Semaines 3 et 4 : le cabinet obtient une mention dans un comparatif cité par ChatGPT et publie une FAQ balisée. Les relevés hebdomadaires bougent encore peu, ce qui est attendu à ce stade du travail et ne justifie aucun changement de cap.",
+        "Semaines 5 et 6 : le site est cité en source sur 3 des 20 questions, toujours sur les pages réécrites. Les questions comparatives restent dominées par deux concurrents, ce qui fixe le chantier du trimestre suivant.",
+      ],
+    },
+    {
+      title: "Ce qu’il faut retenir",
+      paragraphs: [],
+      bullets: [
+        "SearchGPT est devenu ChatGPT search : le référencement SearchGPT consiste aujourd’hui à être lu et cité par la recherche intégrée à ChatGPT.",
+        "OAI-SearchBot doit être autorisé dans le robots.txt et sur le CDN, sinon aucune page ne peut être citée dans les réponses.",
+        "ChatGPT search s’appuie sur des fournisseurs de recherche tiers : une bonne indexation dans les grands moteurs, Google comme Bing, reste une condition de départ.",
+        "Une page est citée quand une de ses phrases répond précisément à la requête réécrite par ChatGPT, avec un fait vérifiable.",
+        "Les mentions dans des sources tierces pèsent sur les questions comparatives, là où votre propre site ne suffit pas.",
+        "Premières citations entre quatre et huit semaines, présence stable en plusieurs mois, et aucune citation garantie contre paiement.",
+      ],
+    },
+  ],
+};
+
 export const septemberArticles: Record<string, BlogArticle> = {
   [suivreVisibilite.slug]: suivreVisibilite,
   [agentIaSurMesure.slug]: agentIaSurMesure,
@@ -2222,6 +2477,7 @@ export const septemberArticles: Record<string, BlogArticle> = {
   [suiviAiMode.slug]: suiviAiMode,
   [outilGeoSuiteSeo.slug]: outilGeoSuiteSeo,
   [dotsOpenai.slug]: dotsOpenai,
+  [referencementSearchgpt.slug]: referencementSearchgpt,
 };
 
 export const septemberPosts: BlogPostMeta[] = [
@@ -2305,5 +2561,14 @@ export const septemberPosts: BlogPostMeta[] = [
     date: dotsOpenai.date,
     readingTime: dotsOpenai.readingTime,
     category: dotsOpenai.category,
+  },
+  {
+    slug: referencementSearchgpt.slug,
+    title: referencementSearchgpt.title,
+    seoTitle: referencementSearchgpt.seoTitle,
+    description: referencementSearchgpt.description,
+    date: referencementSearchgpt.date,
+    readingTime: referencementSearchgpt.readingTime,
+    category: referencementSearchgpt.category,
   },
 ];
