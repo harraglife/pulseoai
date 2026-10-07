@@ -66,6 +66,15 @@ function buildMentions(names: Array<keyof typeof mentionUrls>): ArticleMention[]
 }
 
 export const articleMetadataBySlug: Record<string, ArticleSchemaEnhancement> = {
+  "chatgpt-recommande-concurrent-pourquoi": {
+    about: {
+      "@type": "Thing",
+      name: "Recommandations de ChatGPT et concurrents",
+      description:
+        "Pourquoi ChatGPT recommande un concurrent plutôt que votre entreprise, pourquoi ses réponses varient et comment mesurer puis corriger votre visibilité.",
+    },
+    mentions: buildMentions(["ChatGPT", "OpenAI", "GEO", "SEO IA", "Google", "robots.txt"]),
+  },
   "referencement-searchgpt-chatgpt-search": {
     about: {
       "@type": "Thing",
