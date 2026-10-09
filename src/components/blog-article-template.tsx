@@ -7,6 +7,7 @@ import { getArticleSchemaEnhancements } from "@/lib/article-metadata";
 import { QuickAnswer } from "@/components/quick-answer";
 import { RelatedPosts } from "@/components/related-posts";
 import { ContactForm } from "@/components/contact-form";
+import { AgentContactForm } from "@/components/agent-contact-form";
 import "@/styles/article.css";
 
 
@@ -126,6 +127,7 @@ function MarkedArticleTitle({ title }: { title: string }) {
 }
 
 export function BlogArticleTemplate({ article }: { article: BlogArticle }) {
+  const isAgentArticle = article.category === "Agents IA";
   const articleSchemaEnhancements = getArticleSchemaEnhancements(article.slug);
   const estimatedWordCount = countWords([
     article.title,
@@ -457,20 +459,33 @@ export function BlogArticleTemplate({ article }: { article: BlogArticle }) {
               loading="lazy"
               className="ba-lion"
             />
-            <h2>Vous voulez savoir si votre entreprise est citée par les IA ?</h2>
-            <p>
-              Nous analysons votre visibilité sur Google, ChatGPT, Gemini, Claude, Perplexity et Google AI Overviews, puis nous vous montrons les requêtes, les concurrents et les sources qui comptent.
-            </p>
+            {isAgentArticle ? (
+              <>
+                <h2>Vous avez une tâche à confier à un agent IA ?</h2>
+                <p>Dites-moi ce qui vous prend du temps. Je vous réponds sous 24h.</p>
+              </>
+            ) : (
+              <>
+                <h2>Vous voulez savoir si votre entreprise est citée par les IA ?</h2>
+                <p>
+                  Nous analysons votre visibilité sur Google, ChatGPT, Gemini, Claude, Perplexity et Google AI Overviews, puis nous vous montrons les requêtes, les concurrents et les sources qui comptent.
+                </p>
+              </>
+            )}
           </div>
 
           <div className="ba-form-wrap">
-            <ContactForm />
+            {isAgentArticle ? <AgentContactForm /> : <ContactForm />}
           </div>
 
           <p className="ba-form-links">
-            <Link href="/offre">Découvrir notre offre</Link>
+            {isAgentArticle ? (
+              <Link href="/agents-ia">Découvrir nos agents IA</Link>
+            ) : (
+              <Link href="/offre">Découvrir notre offre</Link>
+            )}
             <span aria-hidden> · </span>
-            <Link href="/contact">Nous contacter</Link>
+            <Link href={isAgentArticle ? "/agents-ia#cadrer" : "/contact"}>Nous contacter</Link>
           </p>
         </section>
       </article>

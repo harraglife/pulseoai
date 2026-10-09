@@ -10,6 +10,8 @@ interface ContactBody {
   city?: string;
   sector?: string;
   message?: string;
+  /** "agent" pour le formulaire agents IA, absent pour l’audit GEO. */
+  type?: "agent" | "geo";
 }
 
 const SECTOR_LABELS: Record<string, string> = {
@@ -46,6 +48,7 @@ export async function POST(request: Request) {
       );
     }
 
+    const isAgent = body.type === "agent";
     const sectorLabel = body.sector ? (SECTOR_LABELS[body.sector] ?? body.sector) : "Non renseigné";
 
     // 1. Email to PulseoAI
@@ -62,10 +65,10 @@ export async function POST(request: Request) {
           <tr>
             <td style="background:#0B0F1E;padding:32px 40px;">
               <h1 style="margin:0;color:#ffffff;font-size:22px;font-weight:700;">
-                Nouvelle demande d'audit GEO
+                ${isAgent ? "Nouvelle demande agent IA" : "Nouvelle demande d'audit GEO"}
               </h1>
               <p style="margin:8px 0 0;color:rgba(255,255,255,0.7);font-size:14px;">
-                Via le formulaire pulseoai.fr/contact
+                ${isAgent ? "Via le formulaire agents IA de pulseoai.fr" : "Via le formulaire pulseoai.fr/contact"}
               </p>
             </td>
           </tr>
@@ -167,6 +170,13 @@ export async function POST(request: Request) {
               <h2 style="margin:0 0 16px;color:#0B0F1E;font-size:20px;font-weight:700;">
                 Merci pour votre demande, ${escapeHtml(body.name.split(" ")[0])}&nbsp;!
               </h2>
+${isAgent ? `
+              <p style="margin:0 0 16px;color:#374151;font-size:15px;line-height:1.7;">
+                Nous avons bien reçu votre demande concernant un agent IA pour <strong>${escapeHtml(body.hotel)}</strong>.
+              </p>
+              <p style="margin:0 0 16px;color:#374151;font-size:15px;line-height:1.7;">
+                Nous revenons vers vous <strong>sous 24&nbsp;heures</strong> pour échanger sur la tâche que vous souhaitez confier à un agent.
+              </p>` : `
               <p style="margin:0 0 16px;color:#374151;font-size:15px;line-height:1.7;">
                 Nous avons bien reçu votre demande d'audit GEO pour <strong>${escapeHtml(body.hotel)}</strong>.
               </p>
@@ -180,7 +190,7 @@ export async function POST(request: Request) {
                   ✓ Analyse de vos concurrents sur les moteurs IA<br />
                   ✓ Recommandations personnalisées
                 </p>
-              </div>
+              </div>`}
               <p style="margin:24px 0 0;color:#374151;font-size:15px;line-height:1.7;">
                 D'ici là, n'hésitez pas à nous contacter si vous avez des questions.
               </p>
@@ -213,14 +223,14 @@ export async function POST(request: Request) {
       resend.emails.send({
         from: contactFromEmail,
         to: contactToEmail,
-        subject: `Nouvelle demande d'audit GEO — ${body.hotel}`,
+        subject: isAgent ? `Nouvelle demande agent IA · ${body.hotel}` : `Nouvelle demande d'audit GEO — ${body.hotel}`,
         html: notificationHtml,
         replyTo: body.email,
       }),
       resend.emails.send({
         from: contactFromEmail,
         to: body.email,
-        subject: "Votre demande d'audit GEO a bien été reçue — PulseoAI",
+        subject: isAgent ? "Votre demande d'agent IA a bien été reçue · PulseoAI" : "Votre demande d'audit GEO a bien été reçue — PulseoAI",
         html: confirmationHtml,
       }),
     ]);

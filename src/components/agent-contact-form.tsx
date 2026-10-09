@@ -33,6 +33,7 @@ export function AgentContactForm() {
       message: (
         form.elements.namedItem("message") as HTMLTextAreaElement
       ).value.trim(),
+      type: "agent",
     };
 
     if (!data.name || !data.email || !data.hotel) {
