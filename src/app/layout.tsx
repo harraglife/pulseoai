@@ -4,7 +4,8 @@ import Script from "next/script";
 import "./globals.css";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
-import { StickyMobileCta } from "@/components/sticky-mobile-cta";
+import { FloatingCta } from "@/components/floating-cta";
+import { blogPosts } from "@/lib/blog-posts";
 import { OrganizationJsonLd } from "@/components/json-ld";
 import { SITE_URL, SITE_NAME, SITE_DESCRIPTION } from "@/config/site";
 import "@/styles/tokens.css";
@@ -76,6 +77,9 @@ export const metadata: Metadata = {
 
 
 
+/** Articles du cluster agents IA : leur bouton fixe renvoie vers le formulaire de /agents-ia. */
+const agentSlugs = blogPosts.filter((post) => post.category === "Agents IA").map((post) => post.slug);
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -102,7 +106,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
-        <StickyMobileCta />
+        <FloatingCta agentSlugs={agentSlugs} />
         <OrganizationJsonLd />
       </body>
     </html>

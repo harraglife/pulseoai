@@ -256,3 +256,29 @@ input:focus, textarea:focus, select:focus {
   outline: 2px solid rgba(17, 17, 16, 0.55) !important;
   outline-offset: 2px !important;
 }
+
+/* ---- CTA fixe (desktop : bouton bas droite, mobile : barre basse) ---- */
+.floating-cta {
+  position: fixed; z-index: 40; pointer-events: none; opacity: 0; transform: translateY(16px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+.floating-cta.is-visible { opacity: 1; transform: translateY(0); pointer-events: auto; }
+.floating-cta-btn {
+  position: relative; isolation: isolate; display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 14px 24px; font-size: 15px; font-weight: 550; color: #F4F3EF; text-decoration: none;
+  transition: transform 0.16s ease;
+}
+.floating-cta-btn::before {
+  content: ""; position: absolute; inset: -6px; z-index: -1;
+  background-image: var(--p-btn-plein); background-repeat: no-repeat; background-size: 100% 100%;
+}
+.floating-cta-btn:hover { transform: translateY(-1.5px); }
+@media (min-width: 1024px) { .floating-cta { right: 32px; bottom: 32px; } }
+@media (max-width: 1023px) {
+  .floating-cta {
+    left: 0; right: 0; bottom: 0; padding: 10px 16px; padding-bottom: max(10px, env(safe-area-inset-bottom));
+    background: #F4F3EF; border-top: 1px solid rgba(17, 17, 16, 0.12);
+  }
+  .floating-cta-btn { display: flex; width: 100%; max-width: 520px; margin: 0 auto; min-height: 46px; }
+}
+@media (prefers-reduced-motion: reduce) { .floating-cta { transition: none; } }

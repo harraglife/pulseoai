@@ -13,7 +13,7 @@ import "@/styles/pages/home.css";
  */
 
 export const metadata: Metadata = {
-  title: "Agence GEO \u00b7 Visibilit\u00e9 IA pour h\u00f4tels et entreprises",
+  title: "R\u00e9f\u00e9rencement ChatGPT et agence GEO \u00e0 Nantes \u00b7 PulseoAI",
   description:
     "Faites appara\u00eetre votre entreprise sur ChatGPT, Claude et Gemini. PulseoAI, agence GEO \u00e0 Nantes. Experts h\u00f4tellerie et PME.",
   openGraph: {

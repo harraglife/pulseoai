@@ -48,6 +48,7 @@ const suivreVisibilite: ArticleWithTables = {
       "Suivre sa visibilité dans ChatGPT consiste à poser régulièrement le même jeu de questions, celles que vos clients posent réellement, puis à noter si votre entreprise est mentionnée, si votre site est cité comme source, et qui apparaît à votre place. La mesure se répète chaque semaine sur plusieurs moteurs (ChatGPT, Perplexity, Gemini) pour dégager une tendance. Un outil de suivi automatise cette répétition, mais la méthode manuelle suffit pour démarrer.",
   },
   contextualLinks: [
+    { label: "notre agence de référencement ChatGPT", href: "/" },
     { label: "auditer sa visibilité IA", href: "/blog/audit-seo-geo-visibilite-ia" },
     { label: "apparaître sur ChatGPT", href: "/blog/referencement-chatgpt-apparaitre-ia" },
     { label: "notre offre GEO", href: "/offre" },
@@ -98,7 +99,7 @@ const suivreVisibilite: ArticleWithTables = {
         "La visibilité IA désigne la fréquence à laquelle une entreprise est nommée, recommandée ou citée comme source dans les réponses générées par un assistant comme ChatGPT, Perplexity ou Gemini. Elle se mesure sur un ensemble de questions, pas sur une requête isolée.",
         "Sur Google, une page occupe une position stable et mesurable dans une liste de dix liens. Dans une IA, il n’y a pas de liste. L’assistant rédige un texte et décide, à chaque réponse, de nommer ou non votre entreprise. La même question posée deux fois peut donner deux réponses différentes, avec des marques différentes.",
         "Trois différences rendent la mesure classique inutilisable : la réponse varie d’un compte à l’autre selon l’historique de conversation, elle varie dans le temps parce que les moteurs se mettent à jour en continu, et elle varie selon le moteur parce que chacun puise dans des sources différentes. C’est pour cela que la visibilité IA se lit comme une fréquence sur un échantillon, jamais comme un rang.",
-        "Si vous n’avez jamais fait le point, commencez par un [audit de visibilité IA](/blog/audit-seo-geo-visibilite-ia). Le suivi décrit ici est la suite logique de cet audit.",
+        "Si vous n’avez jamais fait le point, commencez par un [audit de visibilité IA](/blog/audit-seo-geo-visibilite-ia). Le suivi décrit ici est la suite logique de cet audit. Pour être accompagné sur ce sujet, découvrez notre [agence de référencement ChatGPT](/).",
       ],
     },
     {
@@ -730,6 +731,7 @@ const agenceReferencementChatgpt: ArticleWithTables = {
       "Une agence de référencement ChatGPT se choisit sur quatre critères : une méthode de mesure explicite fondée sur un jeu de questions clients, un travail visible sur les sources tierces que les IA citent, un socle SEO classique solide, et l’absence de toute garantie de position. Elle doit expliquer comment ChatGPT, Perplexity et Gemini choisissent leurs sources, montrer un premier relevé avant de signer, et annoncer des résultats mesurables entre quatre et douze semaines, jamais en quelques jours.",
   },
   contextualLinks: [
+    { label: "notre agence de référencement ChatGPT", href: "/" },
     { label: "notre offre de référencement IA", href: "/offre" },
     { label: "apparaître sur ChatGPT", href: "/blog/referencement-chatgpt-apparaitre-ia" },
     { label: "auditer sa visibilité IA", href: "/blog/audit-seo-geo-visibilite-ia" },
@@ -777,7 +779,7 @@ const agenceReferencementChatgpt: ArticleWithTables = {
     {
       title: "Qu’est-ce qu’une agence de référencement ChatGPT ?",
       paragraphs: [
-        "Une agence de référencement ChatGPT travaille la visibilité d’une entreprise dans les réponses des assistants IA : ChatGPT, mais aussi Perplexity, Gemini, Copilot et les réponses générées de Google. On parle aussi d’agence GEO, pour Generative Engine Optimization.",
+        "Une [agence de référencement ChatGPT](/) travaille la visibilité d’une entreprise dans les réponses des assistants IA : ChatGPT, mais aussi Perplexity, Gemini, Copilot et les réponses générées de Google. On parle aussi d’agence GEO, pour Generative Engine Optimization.",
         "L’enjeu est simple à mesurer. Le [27 février 2026, OpenAI annonçait 900 millions d’utilisateurs hebdomadaires pour ChatGPT](https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users), soit 100 millions de plus qu’en octobre 2025, selon TechCrunch.",
         "Une partie de ces utilisateurs demande à ChatGPT quel prestataire choisir, quel hôtel réserver ou quel logiciel comparer. Si votre entreprise n’est jamais nommée dans ces réponses, elle est absente d’un canal que vos concurrents commencent à occuper.",
         "Le référenceur ChatGPT ne manipule pas le modèle : il agit sur ce que le modèle lit, votre site, les sources tierces qui parlent de vous, vos données structurées et la cohérence de vos informations, périmètre de notre [offre de référencement IA](/offre).",
@@ -997,6 +999,7 @@ const referencementLocalChatgpt: ArticleWithTables = {
       "Le référencement local ChatGPT repose sur ce que l’assistant lit quand il cherche une entreprise près d’un utilisateur. Il faut une fiche Google Business Profile complète, des avis récents et un site avec une page par ville balisée en LocalBusiness. Il faut aussi une présence dans les annuaires et médias locaux que ChatGPT cite, et des informations identiques partout. Le robot OAI-SearchBot doit être autorisé. Les premières mentions arrivent en général entre quatre et huit semaines, jamais en quelques jours.",
   },
   contextualLinks: [
+    { label: "notre agence de référencement ChatGPT", href: "/" },
     { label: "le guide du GEO local", href: "/blog/geo-local-guide-entreprises" },
     { label: "apparaître sur ChatGPT", href: "/blog/referencement-chatgpt-apparaitre-ia" },
     { label: "notre agence SEO et GEO à Nantes", href: "/agence-seo-geo-nantes" },
@@ -1044,7 +1047,7 @@ const referencementLocalChatgpt: ArticleWithTables = {
     {
       title: "Qu’est-ce que le référencement local ChatGPT ?",
       paragraphs: [
-        "Le référencement local ChatGPT désigne l’ensemble des actions qui augmentent la probabilité que ChatGPT nomme votre entreprise quand un utilisateur cherche un prestataire dans une ville ou un quartier. C’est la déclinaison locale du GEO, l’optimisation pour les moteurs génératifs.",
+        "Le [référencement local ChatGPT](/) désigne l’ensemble des actions qui augmentent la probabilité que ChatGPT nomme votre entreprise quand un utilisateur cherche un prestataire dans une ville ou un quartier. C’est la déclinaison locale du GEO, l’optimisation pour les moteurs génératifs.",
         "La différence avec Google est la forme de la réponse. Google affiche une carte et une liste, ChatGPT écrit un paragraphe qui recommande deux ou trois établissements avec une phrase de justification.",
         "Cette recommandation vient de sources que l’assistant consulte en temps réel. Nous détaillons la logique générale dans notre guide pour [apparaître sur ChatGPT](/blog/referencement-chatgpt-apparaitre-ia) ; cet article se concentre sur les requêtes locales.",
         "L’enjeu est mesurable côté consommateurs. Selon [l’enquête Local Consumer Review Survey 2026 de BrightLocal, menée auprès de 1 002 consommateurs américains, l’usage de ChatGPT et des IA génératives pour trouver une entreprise locale est passé de 6 % à 45 %](https://www.brightlocal.com/research/local-consumer-review-survey/).",
@@ -2241,6 +2244,7 @@ const referencementSearchgpt: ArticleWithTables = {
       "Pour être référencé sur SearchGPT, aujourd’hui appelé ChatGPT search, il faut d’abord autoriser le robot OAI-SearchBot dans le robots.txt et sur le CDN. Il faut ensuite être bien indexé par les moteurs tiers que ChatGPT interroge, et publier des pages qui répondent directement aux questions posées. Les mentions dans des sources externes fiables, comme les comparatifs et les médias spécialisés, renforcent ensuite les chances d’être cité. Les premiers résultats se mesurent en semaines, jamais en jours, et aucune offre payante ne garantit une citation.",
   },
   contextualLinks: [
+    { label: "notre agence de référencement ChatGPT", href: "/" },
     { label: "notre guide pour apparaître sur ChatGPT", href: "/blog/referencement-chatgpt-apparaitre-ia" },
     { label: "le référencement local ChatGPT", href: "/blog/referencement-local-chatgpt-apparaitre-ville" },
     { label: "notre offre de référencement IA", href: "/offre" },
@@ -2290,7 +2294,7 @@ const referencementSearchgpt: ArticleWithTables = {
       paragraphs: [
         "Le référencement SearchGPT regroupe les actions qui augmentent la probabilité qu’une page soit lue, reprise et citée en source quand ChatGPT effectue une recherche sur le web pour répondre à un utilisateur.",
         "C’est une branche du GEO, l’optimisation pour les moteurs génératifs, centrée sur un seul moteur : celui d’OpenAI. Nous présentons la logique générale de ces moteurs dans [notre guide pour apparaître sur ChatGPT](/blog/referencement-chatgpt-apparaitre-ia).",
-        "L’audience justifie l’effort, puisque [ChatGPT a atteint 900 millions d’utilisateurs actifs hebdomadaires, selon l’annonce d’OpenAI rapportée par TechCrunch le 27 février 2026](https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users).",
+        "L’audience justifie l’effort, puisque [ChatGPT a atteint 900 millions d’utilisateurs actifs hebdomadaires, selon l’annonce d’OpenAI rapportée par TechCrunch le 27 février 2026](https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users). Pour être accompagné sur ce sujet, découvrez notre [agence de référencement ChatGPT](/).",
       ],
     },
     {
@@ -2495,6 +2499,7 @@ const chatgptRecommandeConcurrent: ArticleWithTables = {
       "ChatGPT recommande votre concurrent parce que les pages qu’il lit au moment de répondre parlent davantage de lui : son site répond mieux à la question, il est cité dans les annuaires, comparatifs et avis consultés, et ses informations sont cohérentes partout. Votre site peut aussi bloquer le robot OAI-SearchBot. Les réponses varient d’une fois à l’autre, car ChatGPT tire ses mots de façon probabiliste et relance des recherches. Il faut donc mesurer sur une vingtaine de questions répétées, puis corriger les causes une par une.",
   },
   contextualLinks: [
+    { label: "notre agence de référencement ChatGPT", href: "/" },
     { label: "suivre sa visibilité dans ChatGPT", href: "/blog/suivre-visibilite-chatgpt-ia" },
     { label: "le référencement SearchGPT", href: "/blog/referencement-searchgpt-chatgpt-search" },
     { label: "notre offre de référencement IA", href: "/offre" },
@@ -2545,7 +2550,7 @@ const chatgptRecommandeConcurrent: ArticleWithTables = {
         "ChatGPT ne choisit pas un concurrent par préférence : il rédige sa réponse à partir des pages qu’il trouve et lit au moment de la question, puis nomme les entreprises que ces pages décrivent le mieux.",
         "OpenAI précise que [ChatGPT search s’appuie sur des fournisseurs de recherche tiers et sur des contenus fournis directement par ses partenaires](https://openai.com/index/introducing-chatgpt-search/). Si ces sources parlent de votre concurrent et pas de vous, la réponse suivra.",
         "L’enjeu grandit vite côté clients. Selon [l’enquête Local Consumer Review Survey 2026 de BrightLocal, l’usage de ChatGPT et des IA génératives pour trouver une entreprise locale est passé de 6 % à 45 % en un an](https://www.brightlocal.com/research/local-consumer-review-survey/).",
-        "La même enquête indique que [42 % des consommateurs font autant confiance aux recommandations des IA qu’aux avis traditionnels](https://www.brightlocal.com/research/local-consumer-review-survey/). Être absent d’une réponse revient donc souvent à être absent de la liste finale du client.",
+        "La même enquête indique que [42 % des consommateurs font autant confiance aux recommandations des IA qu’aux avis traditionnels](https://www.brightlocal.com/research/local-consumer-review-survey/). Être absent d’une réponse revient donc souvent à être absent de la liste finale du client. Pour être accompagné sur ce sujet, découvrez notre [agence de référencement ChatGPT](/).",
       ],
     },
     {

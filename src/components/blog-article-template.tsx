@@ -395,6 +395,30 @@ export function BlogArticleTemplate({ article }: { article: BlogArticle }) {
             ))}
           </div>
 
+          {(() => {
+            const cta = articleCta(article);
+            return (
+              <div className="ba-cta-card">
+                <Image
+                  sizes="(max-width: 767px) 110px, 140px"
+                  src="/illustrations/numeros1.png"
+                  alt="Mascotte lion pouce levé"
+                  width={1536}
+                  height={1536}
+                  loading="lazy"
+                  className="ba-cta-lion"
+                />
+                <div className="ba-cta-body">
+                  <p className="ba-cta-title">{cta.title}</p>
+                  <p className="ba-cta-text">{cta.text}</p>
+                  <Link href={cta.href} className="pa-btn pa-btn-primary ba-cta-btn">
+                    {cta.label}
+                  </Link>
+                </div>
+              </div>
+            );
+          })()}
+
           {article.faqItems?.length ? (
             <section className="ba-faq mt-10 sm:mt-12">
               <h2 className="text-[22px] font-semibold tracking-[-0.035em] text-navy sm:text-[24px]">
@@ -422,7 +446,7 @@ export function BlogArticleTemplate({ article }: { article: BlogArticle }) {
           <RelatedPosts currentSlug={article.slug} explicitSlugs={article.relatedSlugs} />
         </div>
 
-        <section className="ba-form-section">
+        <section className="ba-form-section" id="formulaire">
           <div className="ba-form-head">
             <Image
               sizes="(max-width: 767px) 200px, 420px"
@@ -452,6 +476,24 @@ export function BlogArticleTemplate({ article }: { article: BlogArticle }) {
       </article>
     </>
   );
+}
+
+/** Carte d’action de fin d’article : agents IA vers le formulaire de /agents-ia, le reste vers /contact. */
+function articleCta(article: BlogArticle) {
+  if (article.category === "Agents IA") {
+    return {
+      href: "/agents-ia#cadrer",
+      label: "Cadrer mon agent IA",
+      title: article.bodyCta?.intro ?? "Une tâche répétitive qui vous prend du temps ?",
+      text: "Décrivez-la en quelques lignes, on vous dit si un agent IA peut la prendre en charge.",
+    };
+  }
+  return {
+    href: "/contact",
+    label: "Obtenir mon audit visibilité IA",
+    title: article.bodyCta?.intro ?? "Où en est votre entreprise sur ChatGPT, Gemini et Perplexity ?",
+    text: "On analyse votre visibilité dans les IA et on vous montre qui est cité à votre place.",
+  };
 }
 
 function isoDate(date: string) {

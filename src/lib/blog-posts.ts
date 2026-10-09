@@ -1006,6 +1006,7 @@ const newArticles: Record<string, BlogArticle> = {
         "Le référencement ChatGPT désigne l'ensemble des techniques permettant à une entreprise d'apparaître dans les réponses générées par ChatGPT lorsqu'un utilisateur pose une question liée à son secteur. Il ne s'agit pas d'obtenir une position dans une liste de liens, mais d'être cité directement dans la réponse, comme une recommandation.",
     },
     contextualLinks: [
+      { label: "notre agence de référencement ChatGPT", href: "/" },
       { label: "Notre offre SEO / GEO", href: "/offre" },
       { label: "Agence GEO à Nantes", href: "/agence-seo-geo-nantes" },
       { label: "Comment se référencer sur ChatGPT", href: "/blog/apparaitre-chatgpt-client-cherche-entreprise" },
@@ -1035,7 +1036,7 @@ const newArticles: Record<string, BlogArticle> = {
       {
         title: "Qu'est-ce que le référencement ChatGPT ?",
         paragraphs: [
-          "Le référencement ChatGPT désigne l'ensemble des techniques permettant à une entreprise d'apparaître dans les réponses générées par ChatGPT lorsqu'un utilisateur pose une question liée à son secteur. Contrairement au SEO Google, il ne s'agit pas d'obtenir une position dans une liste de liens, mais d'être cité directement dans la réponse, comme une recommandation.",
+          "Le [référencement ChatGPT](/) désigne l'ensemble des techniques permettant à une entreprise d'apparaître dans les réponses générées par ChatGPT lorsqu'un utilisateur pose une question liée à son secteur. Contrairement au SEO Google, il ne s'agit pas d'obtenir une position dans une liste de liens, mais d'être cité directement dans la réponse, comme une recommandation.",
         ],
       },
       {
@@ -1595,6 +1596,7 @@ const newArticles: Record<string, BlogArticle> = {
         "Pour se référencer sur ChatGPT, il faut rendre votre entreprise claire, fiable et citable : site bien structuré, contenus qui répondent aux questions clients, données Schema.org, sources externes cohérentes, mentions de marque et suivi des prompts où vos prospects cherchent une solution.",
     },
     contextualLinks: [
+      { label: "notre agence de référencement ChatGPT", href: "/" },
       { label: "Notre offre SEO / GEO", href: "/offre" },
       { label: "Référencement ChatGPT", href: "/blog/referencement-chatgpt-apparaitre-ia" },
       { label: "Agence SEO / GEO à Nantes", href: "/agence-seo-geo-nantes" },
@@ -1622,7 +1624,7 @@ const newArticles: Record<string, BlogArticle> = {
       {
         title: "Pourquoi le référencement ChatGPT devient important",
         paragraphs: [
-          "Le référencement ChatGPT devient important parce que certains prospects demandent déjà directement à une IA quelle agence choisir, quel prestataire contacter ou quelle solution comparer. Si votre marque n’apparaît pas dans ces réponses, un concurrent peut capter la demande avant même la visite de votre site.",
+          "Le [référencement ChatGPT](/) devient important parce que certains prospects demandent déjà directement à une IA quelle agence choisir, quel prestataire contacter ou quelle solution comparer. Si votre marque n’apparaît pas dans ces réponses, un concurrent peut capter la demande avant même la visite de votre site.",
           "Cette évolution ne remplace pas Google. Elle ajoute un nouveau moment de décision dans lequel la visibilité dépend autant de la clarté de votre marque que de sa capacité à être citée.",
         ],
         bullets: [
