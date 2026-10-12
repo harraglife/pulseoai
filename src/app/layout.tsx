@@ -5,6 +5,7 @@ import "./globals.css";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { FloatingCta } from "@/components/floating-cta";
+import { SitePopup } from "@/components/site-popup";
 import { blogPosts } from "@/lib/blog-posts";
 import { OrganizationJsonLd } from "@/components/json-ld";
 import { SITE_URL, SITE_NAME, SITE_DESCRIPTION } from "@/config/site";
@@ -107,6 +108,7 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <Footer />
         <FloatingCta agentSlugs={agentSlugs} />
+        <SitePopup />
         <OrganizationJsonLd />
       </body>
     </html>
