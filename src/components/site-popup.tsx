@@ -122,7 +122,7 @@ export function SitePopup() {
           </div>
           <div className="site-popup-offer">
             <p className="site-popup-kicker">Agents IA</p>
-            <p className="site-popup-name">Un agent IA pour vos tâches répétitives</p>
+            <p className="site-popup-name">Un agent IA qui bosse pour vous 24h/24</p>
             <p className="site-popup-text">
               Décrivez une tâche qui vous prend du temps, on vous dit si un agent IA peut s&apos;en charger.
             </p>
