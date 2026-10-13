@@ -2948,6 +2948,226 @@ const visibiliteAiOverviews: ArticleWithTables = {
   ],
 };
 
+const agentIaTelephonique: ArticleWithTables = {
+  slug: "agent-ia-telephonique-pme",
+  title: "Agent IA téléphonique : ce qu’il peut faire pour une PME",
+  seoTitle: "Agent vocal IA pour PME : usages, limites et règles en France",
+  description:
+    "Ce qu’un agent IA téléphonique sait faire pour une PME, ses limites, les règles à respecter en France et comment le mettre en place.",
+  date: "13 octobre 2026",
+  dateModified: "13 octobre 2026",
+  readingTime: "10 min",
+  category: "Agents IA",
+  articleSection: "Agents IA",
+  keywords: [
+    "agent IA téléphonique",
+    "agent IA pour répondre au téléphone",
+    "agent vocal IA entreprise",
+    "callbot PME",
+    "standard téléphonique IA",
+    "agent IA PME",
+    "AI Act",
+  ],
+  intro:
+    "Un appel manqué pendant un chantier, une consultation ou une réunion, c’est souvent un client qui appelle le concurrent suivant dans la minute. Les agents IA téléphoniques promettent de décrocher à toute heure, de qualifier la demande et de proposer un rendez-vous. Voici ce qu’ils savent vraiment faire pour une PME, où ils trébuchent encore et quelles règles françaises encadrent leur usage.",
+  quickAnswer: {
+    question: "Qu’est-ce qu’un agent IA téléphonique pour une PME ?",
+    answer:
+      "Un agent IA téléphonique est un programme qui décroche à la place d’un standard, comprend la demande de l’appelant à l’oral, lui répond avec une voix de synthèse et agit dans vos outils : prise de rendez-vous, création d’une fiche client, transfert vers la bonne personne. Pour une PME, il sert surtout à ne plus perdre d’appels et à trier les demandes. Il doit annoncer qu’il est une IA, transférer vers un humain en cas de doute et respecter le RGPD.",
+  },
+  contextualLinks: [
+    { label: "nos agents IA pour PME", href: "/agents-ia" },
+    { label: "l’agent IA sur mesure", href: "/blog/agent-ia-sur-mesure-pme" },
+    { label: "choisir une agence agents IA", href: "/blog/agence-agents-ia-comment-choisir-prestataire" },
+    { label: "les outils IA pour PME", href: "/blog/outils-ia-pme" },
+  ],
+  bodyCta: {
+    intro: "Vous perdez des appels faute de temps pour décrocher ?",
+    linkLabel: "Parlez-nous de votre agent IA téléphonique",
+    href: "/agents-ia",
+    outro: ", on étudie vos appels types et on vous dit ce qu’un agent peut prendre en charge.",
+  },
+  relatedSlugs: [
+    "agent-ia-sur-mesure-pme",
+    "agence-agents-ia-comment-choisir-prestataire",
+    "outils-ia-pme",
+  ],
+  faqTitle: "FAQ : agent IA téléphonique pour PME",
+  faqItems: [
+    {
+      question: "Un agent IA téléphonique peut-il garder mon numéro actuel ?",
+      answer:
+        "Oui dans la plupart des cas. On renvoie les appels de votre ligne vers l’agent, soit en permanence, soit seulement en cas de non-réponse ou en dehors des horaires. Votre numéro ne change pas pour vos clients.",
+    },
+    {
+      question: "Les clients se rendent-ils compte qu’ils parlent à une IA ?",
+      answer:
+        "Ils doivent le savoir, car l’agent doit l’annoncer dès le début de l’appel. En pratique, une annonce claire et une option pour joindre un humain rassurent davantage qu’une voix qui cherche à passer pour une personne.",
+    },
+    {
+      question: "Que se passe-t-il si l’agent ne comprend pas la demande ?",
+      answer:
+        "Un agent bien conçu reformule une fois, puis transfère l’appel ou prend un message complet avec un rappel programmé. Il ne doit jamais inventer une réponse sur un prix, un délai ou une disponibilité qu’il ne connaît pas.",
+    },
+    {
+      question: "Un agent IA téléphonique peut-il passer des appels sortants ?",
+      answer:
+        "Techniquement oui, mais le démarchage de particuliers exige désormais leur accord préalable. Pour une PME, les usages sortants sûrs sont les rappels de rendez-vous et les relances de clients qui ont demandé à être recontactés.",
+    },
+    {
+      question: "Combien de temps faut-il pour mettre en place un agent téléphonique ?",
+      answer:
+        "Comptez deux à trois semaines pour un premier périmètre limité, comme la prise de messages et de rendez-vous, puis quatre à huit semaines de réglages à partir des appels réels avant d’élargir à d’autres demandes.",
+    },
+  ],
+  sections: [
+    {
+      title: "Qu’est-ce qu’un agent IA téléphonique ?",
+      paragraphs: [
+        "Un agent IA téléphonique est un assistant vocal qui décroche vos appels entrants, comprend une demande formulée librement, répond à l’oral et déclenche des actions dans vos outils, comme une réservation ou un transfert d’appel.",
+        "Il se distingue d’un serveur vocal classique, qui impose des menus à touches, et d’un simple répondeur. L’agent mène une vraie conversation, pose des questions de précision et adapte la suite selon les réponses de l’appelant.",
+        "Pour les cas plus larges d’automatisation, notre page [agents IA pour PME](/agents-ia) présente les autres tâches qu’un agent peut prendre en charge, du traitement des emails à la relance des devis.",
+      ],
+      subsections: [
+        {
+          title: "Qu’est-ce qu’un bot appel téléphonique ?",
+          paragraphs: [
+            "Un bot d’appel téléphonique, ou callbot, désigne tout programme qui gère des appels sans opérateur humain. Les premiers callbots suivaient des scripts rigides, alors que les agents récents s’appuient sur des modèles de langage beaucoup plus souples.",
+            "La différence se voit dès qu’un client sort du scénario prévu. Un callbot scripté répète sa question, tandis qu’un agent IA comprend la reformulation, retrouve l’information utile et peut passer la main à un humain.",
+          ],
+        },
+      ],
+      table: {
+        caption: "Serveur vocal, callbot scripté et agent IA téléphonique",
+        headers: ["Solution", "Ce que fait l’appelant", "Limite principale"],
+        rows: [
+          ["Serveur vocal à touches", "Tape 1, 2 ou 3 selon un menu", "Frustration et appels abandonnés"],
+          ["Callbot scripté", "Répond à des questions fermées", "Bloqué dès qu’on sort du script"],
+          ["Agent IA téléphonique", "Explique sa demande avec ses mots", "Doit être encadré et testé sur appels réels"],
+        ],
+      },
+    },
+    {
+      title: "Comment fonctionne une IA qui répond au téléphone ?",
+      paragraphs: [
+        "Le principe tient en quatre étapes enchaînées en moins d’une seconde : la voix de l’appelant est transcrite, un modèle de langage décide de la réponse, une voix de synthèse la prononce, puis l’agent agit dans vos logiciels.",
+        "Les briques techniques sont désormais disponibles chez les grands fournisseurs. OpenAI a annoncé [la disponibilité générale de son API Realtime avec le modèle gpt-realtime, et la prise en charge du protocole SIP pour se connecter aux réseaux téléphoniques](https://openai.com/index/introducing-gpt-realtime/).",
+        "Des options européennes existent aussi : Mistral a publié [Voxtral, des modèles de compréhension de la parole en versions 24B et 3B sous licence Apache 2.0](https://mistral.ai/news/voxtral), ce qui permet un hébergement mieux maîtrisé pour les données sensibles.",
+      ],
+    },
+    {
+      title: "Que peut faire un agent IA au téléphone pour une PME ?",
+      paragraphs: [
+        "Les usages qui fonctionnent le mieux sont répétitifs, bien bornés et faciles à vérifier. Ce sont aussi ceux qui coûtent le plus de temps à une petite équipe qui décroche entre deux tâches.",
+      ],
+      bullets: [
+        "Prendre les appels manqués, hors horaires ou en période de pointe, avec un message complet transmis par email ou dans le CRM.",
+        "Qualifier une demande de devis : type de travaux, adresse, urgence, disponibilités, puis création d’une fiche dans votre outil de suivi.",
+        "Proposer, déplacer ou confirmer un rendez-vous en lisant l’agenda partagé, et envoyer la confirmation par SMS.",
+        "Répondre aux questions fréquentes : horaires, zone d’intervention, documents à fournir, suivi d’une commande ou d’un dossier.",
+        "Transférer vers la bonne personne avec un résumé de l’appel, pour éviter au client de tout répéter.",
+      ],
+    },
+    {
+      title: "Est-il possible qu’une IA réponde à mon téléphone sans perdre de clients ?",
+      paragraphs: [
+        "Oui, à condition de limiter son rôle au départ et de prévoir une sortie vers un humain à chaque étape. Les déceptions viennent presque toujours d’un agent lancé trop vite sur trop de sujets.",
+        "Les points faibles restent connus : bruits de chantier, accents marqués, noms propres mal transcrits et clients pressés qui coupent la parole. Chaque appel doit donc produire un résumé écrit, relu par l’équipe pendant les premières semaines.",
+        "L’intérêt est réel pour les petites entreprises, qui restent en retrait. Selon l’Insee, [15 % des entreprises de 10 à 49 salariés utilisaient au moins une technologie d’IA en 2025, contre 58 % des entreprises de 250 salariés ou plus](https://www.insee.fr/fr/statistiques/9025878).",
+        "La même étude indique que [34 % des entreprises utilisatrices de l’IA recourent à la reconnaissance automatique de la parole](https://www.insee.fr/fr/statistiques/9025878), la brique de base d’un agent téléphonique.",
+      ],
+    },
+    {
+      title: "Quelles règles respecter en France avec un agent IA téléphonique ?",
+      paragraphs: [
+        "Trois cadres s’appliquent à un agent vocal : le règlement européen sur l’IA, le RGPD pour les données de l’appel et le Code de la consommation pour les appels sortants vers des particuliers.",
+      ],
+      subsections: [
+        {
+          title: "Annoncer que l’appelant parle à une IA",
+          paragraphs: [
+            "L’article 50 du règlement européen sur l’IA impose que [les systèmes d’IA destinés à interagir directement avec des personnes soient conçus pour les informer qu’elles interagissent avec un système d’IA](https://ai-act-service-desk.ec.europa.eu/fr/ai-act/article-50), sauf si c’est évident.",
+            "Au téléphone, rien n’est évident pour l’appelant. Une phrase d’accueil du type « Vous êtes en ligne avec l’assistant IA de l’entreprise » règle la question dès les premières secondes.",
+          ],
+        },
+        {
+          title: "Encadrer l’enregistrement et la transcription",
+          paragraphs: [
+            "La CNIL, dans une fiche ancienne qu’elle signale en cours de mise à jour, indique que [les interlocuteurs doivent être informés oralement en début de conversation, et que les enregistrements peuvent être conservés six mois au maximum sauf texte contraire](https://www.cnil.fr/fr/lecoute-et-lenregistrement-des-appels-sur-le-lieu-de-travail).",
+            "Fixez donc une durée de conservation courte pour l’audio, gardez plutôt le résumé écrit, et vérifiez où votre fournisseur héberge les données et s’il les réutilise pour entraîner ses modèles.",
+          ],
+        },
+        {
+          title: "Ne pas transformer l’agent en outil de démarchage",
+          paragraphs: [
+            "Pour les appels sortants, la DGCCRF rappelle qu’à partir du [11 août 2026, un consommateur ne peut être démarché par téléphone que s’il y a consenti préalablement, ce qui met fin au dispositif Bloctel](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/les-regles-du-demarchage-telephonique-simposant-aux-entreprises).",
+            "Un agent qui rappelle un client ayant demandé un devis reste dans un cadre sain. Un agent qui compose des listes de numéros achetées expose l’entreprise à des sanctions et à une image dégradée.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Où puis-je trouver un agent vocal IA gratuit ?",
+      paragraphs: [
+        "La plupart des éditeurs d’agents vocaux proposent un essai gratuit limité en minutes ou en durée, qui suffit pour tester la qualité de la voix et la compréhension sur vos propres scénarios.",
+        "Un agent réellement gratuit sur la durée n’existe pas, car chaque minute consomme de la transcription, du calcul et de la téléphonie. Méfiez-vous surtout des offres gratuites dont les conditions autorisent la réutilisation des conversations de vos clients, et comparez avec notre sélection d’[outils IA pour PME](/blog/outils-ia-pme).",
+      ],
+    },
+    {
+      title: "Quel est le meilleur logiciel de gestion d’appels téléphonique ?",
+      paragraphs: [
+        "Il n’existe pas de meilleur logiciel dans l’absolu, seulement un outil adapté à votre volume d’appels, à vos logiciels métier et à vos exigences sur les données. Les critères ci-dessous permettent de comparer les offres sur une base égale.",
+      ],
+      table: {
+        caption: "Critères pour choisir un agent IA téléphonique",
+        headers: ["Critère", "Question à poser à l’éditeur", "Pourquoi c’est important"],
+        rows: [
+          ["Transfert vers un humain", "Comment l’appel passe-t-il à un collaborateur ?", "Évite de perdre un client bloqué"],
+          ["Intégrations", "Se connecte-t-il à mon agenda et à mon CRM ?", "Sans intégration, l’agent ne fait que prendre des messages"],
+          ["Hébergement des données", "Où sont stockés l’audio et les transcriptions ?", "Conformité RGPD et confiance des clients"],
+          ["Qualité en français", "Puis-je tester avec mes vrais appels ?", "Accents, bruit et vocabulaire métier varient"],
+          ["Réversibilité", "Puis-je récupérer mes scénarios et données ?", "Changer d’outil sans tout refaire"],
+        ],
+      },
+    },
+    {
+      title: "Quelle application permet de parler avec une IA ?",
+      paragraphs: [
+        "Pour un usage personnel, les assistants grand public comme ChatGPT ou Gemini proposent un mode vocal sur smartphone. Ils permettent de tester la conversation orale, mais ne répondent pas à votre ligne professionnelle.",
+        "Un agent téléphonique d’entreprise est un autre produit : il est relié à votre numéro, à votre agenda et à vos consignes. Notre guide sur [comment utiliser l’IA en entreprise](/blog/comment-utiliser-ia-entreprise) aide à distinguer ces usages.",
+      ],
+    },
+    {
+      title: "Agent téléphonique sur étagère ou agent IA sur mesure ?",
+      paragraphs: [
+        "Une solution sur étagère convient pour prendre des messages et des rendez-vous simples. Dès que l’agent doit consulter un logiciel métier, appliquer vos règles de priorité ou rédiger un devis, un agent sur mesure devient plus pertinent.",
+        "Nous détaillons les critères de ce choix dans notre article sur [l’agent IA sur mesure pour PME](/blog/agent-ia-sur-mesure-pme), et la façon d’évaluer un prestataire dans [comment choisir une agence agents IA](/blog/agence-agents-ia-comment-choisir-prestataire).",
+      ],
+    },
+    {
+      title: "Scénario illustratif : une entreprise de chauffage sur six semaines",
+      paragraphs: [
+        "Le cas suivant est un scénario type, construit pour montrer un rythme réaliste, et ses chiffres sont illustratifs et ne proviennent pas d’un client réel de PulseoAI.",
+        "Une entreprise de chauffage de huit salariés reçoit environ quarante appels par jour en hiver, et le gérant estime en manquer un sur quatre pendant les interventions, surtout en fin de journée.",
+        "Semaines 1 et 2 : l’agent ne prend que les appels non décrochés après quatre sonneries. Il annonce être une IA, note le motif, l’adresse et l’urgence, puis envoie un résumé à l’équipe.",
+        "Semaines 3 et 4 : après relecture d’une centaine de résumés, les questions sont ajustées et l’agent propose des créneaux d’entretien de chaudière dans l’agenda partagé, sans toucher aux dépannages urgents.",
+        "Semaines 5 et 6 : les appels manqués sans suite deviennent rares, les urgences sont transférées au technicien d’astreinte, et l’équipe décide d’ajouter le suivi des devis envoyés.",
+      ],
+    },
+    {
+      title: "Ce qu’il faut retenir",
+      paragraphs: [],
+      bullets: [
+        "Un agent IA téléphonique décroche, comprend une demande libre, répond à l’oral et agit dans vos outils, contrairement à un serveur vocal à touches.",
+        "Les briques techniques sont mûres, de l’API Realtime d’OpenAI aux modèles vocaux ouverts de Mistral, mais la qualité se juge sur vos propres appels.",
+        "Les meilleurs premiers usages sont les appels manqués, la qualification des demandes et la prise de rendez-vous, avec un transfert vers un humain toujours possible.",
+        "L’agent doit annoncer qu’il est une IA, limiter la conservation des enregistrements et ne pas servir au démarchage de particuliers sans leur accord.",
+        "Commencez petit, relisez les résumés pendant quatre à huit semaines, puis élargissez le périmètre, avec un agent sur mesure si vos outils métier l’exigent.",
+      ],
+    },
+  ],
+};
+
 export const septemberArticles: Record<string, BlogArticle> = {
   [suivreVisibilite.slug]: suivreVisibilite,
   [agentIaSurMesure.slug]: agentIaSurMesure,
@@ -2961,6 +3181,7 @@ export const septemberArticles: Record<string, BlogArticle> = {
   [referencementSearchgpt.slug]: referencementSearchgpt,
   [chatgptRecommandeConcurrent.slug]: chatgptRecommandeConcurrent,
   [visibiliteAiOverviews.slug]: visibiliteAiOverviews,
+  [agentIaTelephonique.slug]: agentIaTelephonique,
 };
 
 export const septemberPosts: BlogPostMeta[] = [
@@ -3071,5 +3292,14 @@ export const septemberPosts: BlogPostMeta[] = [
     date: visibiliteAiOverviews.date,
     readingTime: visibiliteAiOverviews.readingTime,
     category: visibiliteAiOverviews.category,
+  },
+  {
+    slug: agentIaTelephonique.slug,
+    title: agentIaTelephonique.title,
+    seoTitle: agentIaTelephonique.seoTitle,
+    description: agentIaTelephonique.description,
+    date: agentIaTelephonique.date,
+    readingTime: agentIaTelephonique.readingTime,
+    category: agentIaTelephonique.category,
   },
 ];
