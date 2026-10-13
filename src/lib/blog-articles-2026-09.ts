@@ -2696,6 +2696,258 @@ const chatgptRecommandeConcurrent: ArticleWithTables = {
   ],
 };
 
+const visibiliteAiOverviews: ArticleWithTables = {
+  slug: "etre-visible-google-ai-overviews",
+  title: "Comment être visible dans Google AI Overviews : la méthode",
+  seoTitle: "Apparaître dans les Aperçus IA de Google : méthode 2026",
+  description:
+    "Comment Google choisit les sites cités dans les AI Overviews, ce qu’il faut faire, ce qui est inutile, et comment suivre ses citations.",
+  date: "13 octobre 2026",
+  dateModified: "13 octobre 2026",
+  readingTime: "11 min",
+  category: "Google AI",
+  articleSection: "Google AI",
+  keywords: [
+    "comment être visible dans Google AI Overviews",
+    "apparaître dans les AI Overviews",
+    "référencement AIO",
+    "optimisation Google AI Overviews",
+    "Aperçus IA",
+    "Search Console IA générative",
+    "GEO",
+  ],
+  intro:
+    "Depuis l’été 2026, Google affiche en France des réponses rédigées par son IA au-dessus des résultats classiques, avec quelques liens vers les sites qui les étayent. Beaucoup de dirigeants constatent que leur site reste bien classé, mais n’apparaît jamais dans ces encadrés. Voici comment Google choisit ses sources, ce qui marche vraiment pour être cité et ce qui relève de la promesse sans effet.",
+  quickAnswer: {
+    question: "Comment être visible dans Google AI Overviews ?",
+    answer:
+      "Pour être visible dans Google AI Overviews, une page doit d’abord être indexée, autorisée à afficher un extrait et incluse dans les fonctionnalités d’IA générative de la Search Console. Google la choisit ensuite avec ses systèmes de classement habituels. Le levier principal reste un contenu non générique, qui répond clairement aux questions de vos clients et apporte une expertise propre. Aucun fichier ni balisage spécial n’est exigé. On suit ensuite ses citations dans le rapport IA générative de la Search Console.",
+  },
+  contextualLinks: [
+    { label: "comprendre Google AI Overviews", href: "/blog/google-ai-overviews-entreprises-comprendre" },
+    { label: "suivre sa visibilité dans AI Mode", href: "/blog/suivre-visibilite-ai-mode-google" },
+    { label: "notre audit SEO et GEO", href: "/blog/audit-seo-geo-visibilite-ia" },
+    { label: "notre offre de référencement IA", href: "/offre" },
+  ],
+  bodyCta: {
+    intro: "Vous voulez savoir pourquoi vos pages n’apparaissent pas dans les Aperçus IA de Google ?",
+    linkLabel: "Demandez un audit de visibilité IA",
+    href: "/contact",
+    outro: ", on relève les sources citées sur vos requêtes et on vous dit quoi corriger.",
+  },
+  relatedSlugs: [
+    "google-ai-overviews-entreprises-comprendre",
+    "suivre-visibilite-ai-mode-google",
+    "schema-org-guide-complet-geo",
+  ],
+  faqTitle: "FAQ : être visible dans Google AI Overviews",
+  faqItems: [
+    {
+      question: "Faut-il payer Google pour apparaître dans un AI Overview ?",
+      answer:
+        "Non. Les liens cités dans un Aperçu IA sont choisis par les systèmes de classement de Google, comme les résultats naturels. Aucune formule payante ne permet d’y obtenir une place, ce qui vaut aussi pour le Mode IA.",
+    },
+    {
+      question: "Un petit site peut-il être cité dans un AI Overview ?",
+      answer:
+        "Oui, s’il répond mieux que les autres à une question précise. Les questions de niche, locales ou très spécialisées offrent les meilleures chances, car les grands sites généralistes y répondent souvent de façon approximative.",
+    },
+    {
+      question: "Le fichier llms.txt aide-t-il à apparaître dans les AI Overviews ?",
+      answer:
+        "Non pour Google, qui indique ne pas l’utiliser dans sa recherche. Il peut rester utile pour d’autres outils d’IA, mais il ne remplace ni l’indexation ni un contenu qui répond clairement aux questions.",
+    },
+    {
+      question: "Combien de temps faut-il pour être cité dans les Aperçus IA ?",
+      answer:
+        "Comptez en général quatre à huit semaines après la mise en ligne ou la refonte d’une page bien indexée. Sur une requête très disputée, plusieurs mois sont souvent nécessaires, comme pour le référencement classique.",
+    },
+    {
+      question: "Peut-on empêcher Google d’utiliser son site dans les AI Overviews ?",
+      answer:
+        "Oui. La Search Console propose un réglage pour exclure son site des fonctionnalités d’IA générative, et les balises nosnippet ou max-snippet limitent ce qui peut être repris. L’exclusion coupe aussi les impressions et le trafic issus de ces encadrés.",
+    },
+  ],
+  sections: [
+    {
+      title: "Comment être visible dans Google AI Overviews ?",
+      paragraphs: [
+        "Être visible dans Google AI Overviews, c’est obtenir que l’une de vos pages soit citée en lien dans la réponse rédigée par l’IA de Google, au-dessus des résultats naturels, quand un internaute pose une question liée à votre activité.",
+        "Google le dit sans détour : [pour figurer dans ces fonctionnalités, une page doit être indexée et éligible à l’affichage avec un extrait, sans aucune exigence technique supplémentaire](https://developers.google.com/search/docs/appearance/ai-features?hl=fr). Le reste dépend de la qualité et de la clarté de la réponse que votre page apporte.",
+        "Autrement dit, le référencement AIO n’est pas une discipline à part, mais un SEO exigeant, centré sur des réponses nettes, une expertise visible et un suivi régulier des pages réellement citées.",
+      ],
+    },
+    {
+      title: "Qu’est-ce qu’un Aperçu IA dans la recherche Google ?",
+      paragraphs: [
+        "Un Aperçu IA est un encadré rédigé par Gemini qui résume la réponse à une question et affiche quelques liens vers les pages qui l’étayent, uniquement quand Google juge qu’une synthèse est utile.",
+        "Son arrivée en France est récente, puisque [Google a lancé les Aperçus IA et le Mode IA en France le 22 juillet 2026, après un lancement mondial commencé en mai 2024](https://blog.google/intl/fr-fr/nouveautes-produits/explorez-obtenez-des-reponses/recherche-ia-apercus-mode/).",
+        "Selon Google, l’audience est déjà considérable : [les AI Overviews comptent plus de 2,5 milliards d’utilisateurs actifs mensuels, et le Mode IA a dépassé le milliard d’utilisateurs mensuels](https://blog.google/products-and-platforms/products/search/new-controls-website-owners/). Pour le fonctionnement général et les effets sur votre stratégie, voir notre article pour [comprendre Google AI Overviews](/blog/google-ai-overviews-entreprises-comprendre).",
+      ],
+    },
+    {
+      title: "Comment Google choisit-il les sites cités dans un AI Overview ?",
+      paragraphs: [
+        "Google ne tire pas ses sources au hasard : trois mécanismes décident des pages citées, et chacun appelle une action différente de votre part.",
+      ],
+      subsections: [
+        {
+          title: "Les systèmes de classement habituels",
+          paragraphs: [
+            "Le guide officiel de Google explique que [ses fonctionnalités d’IA générative reposent sur ses principaux systèmes de classement et de qualité, avec une technique de génération augmentée par récupération](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide?hl=fr). L’IA puise donc dans l’index de Google, pas dans une base séparée.",
+            "Une page mal classée sur toutes ses requêtes a donc peu de chances d’être citée, car le travail de fond sur le contenu, les liens internes et la technique reste le socle de toute visibilité durable dans les Aperçus IA.",
+          ],
+        },
+        {
+          title: "Le query fan-out, ou les questions dérivées",
+          paragraphs: [
+            "Google détaille aussi [la technique du query fan-out, qui lance en parallèle plusieurs recherches liées sur des sous-thèmes pour construire une réponse](https://search.google/pdf/google-about-AI-overviews-AI-Mode.pdf). Une page peut ainsi être citée sur une question qu’elle ne vise pas mot pour mot.",
+            "C’est une chance pour les pages qui couvrent bien un sujet, avec ses délais, ses étapes et ses erreurs fréquentes, car chaque sous-question traitée clairement multiplie les occasions d’être retenu comme source.",
+          ],
+        },
+        {
+          title: "Un contenu non générique",
+          paragraphs: [
+            "Google insiste sur un point : [créer un contenu unique, convaincant et utile aura sans doute plus d’influence sur la présence dans la recherche par IA générative que toute autre suggestion de son guide](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide?hl=fr).",
+            "Un artisan qui explique ses vrais délais d’intervention à Nantes apporte une information que l’IA ne trouve nulle part ailleurs. Une page qui reformule des conseils vus partout n’a, à l’inverse, aucune raison particulière d’être choisie comme source.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Comment puis-je apparaître dans les résultats de recherche Google ?",
+      paragraphs: [
+        "Avant de viser les Aperçus IA, il faut vérifier que Google peut voir et afficher vos pages. Ces conditions techniques sont les mêmes pour les résultats classiques et pour les réponses rédigées par l’IA.",
+      ],
+      bullets: [
+        "Déclarer le site dans la Search Console, envoyer le sitemap et contrôler dans le rapport d’indexation que les pages importantes sont bien indexées.",
+        "Vérifier que robots.txt, le pare-feu ou le CDN ne bloquent pas Googlebot, un problème fréquent après une refonte ou un changement d’hébergeur.",
+        "Retirer les balises nosnippet ou max-snippet posées par erreur, car une page sans extrait autorisé ne peut pas être citée.",
+        "Contrôler dans les paramètres de la Search Console que le site est bien inclus dans les fonctionnalités d’IA générative de la recherche.",
+      ],
+      table: {
+        caption: "Les prérequis techniques avant tout travail sur les AI Overviews",
+        headers: ["Point à vérifier", "Où le vérifier", "Conséquence si absent"],
+        rows: [
+          ["Page indexée", "Search Console, inspection d’URL", "Aucune citation possible"],
+          ["Extrait autorisé", "Code source, balises robots", "Page exclue des Aperçus IA"],
+          ["Site inclus dans l’IA générative", "Paramètres de la Search Console", "Aucune impression IA"],
+          ["Googlebot non bloqué", "robots.txt, pare-feu, CDN", "Page ni explorée ni mise à jour"],
+        ],
+      },
+    },
+    {
+      title: "Comment faire pour être visible sur Google ?",
+      paragraphs: [
+        "Une fois les prérequis réglés, la méthode suivante pour les Aperçus IA s’applique page par page, en commençant par les requêtes qui affichent déjà un Aperçu IA sur votre marché.",
+      ],
+      bullets: [
+        "Lister vingt questions clients et noter celles qui déclenchent un AI Overview, avec les sites cités et le type de page retenu.",
+        "Placer sous chaque titre une réponse directe de deux ou trois phrases, avant les détails, les exemples et les nuances.",
+        "Formuler les titres comme des questions réelles, celles que montrent les suggestions de Google et le bloc « Autres questions posées ».",
+        "Ajouter ce que vous seul savez : délais observés, cas clients anonymisés, photos de chantier, méthode maison, avis d’expert signé.",
+        "Couvrir les sous-questions du sujet dans la même page, sans créer une page par variante de requête, ce que Google déconseille.",
+        "Tenir à jour les informations sensibles au temps et compléter la fiche d’établissement pour les recherches locales.",
+      ],
+      subsections: [
+        {
+          title: "Le rôle de la fiche d’établissement et de Merchant Center",
+          paragraphs: [
+            "Pour une entreprise locale, Google rappelle que [les établissements qui fournissent des informations complètes et exactes ont plus de chances d’apparaître dans les résultats à proximité](https://support.google.com/business/answer/7091?hl=fr), et ces données nourrissent aussi les réponses de l’IA.",
+            "Les commerçants en ligne ont le même intérêt à soigner leur flux Merchant Center, tandis que notre [guide du GEO local](/blog/geo-local-guide-entreprises) détaille les priorités pour une entreprise qui travaille sur une zone précise.",
+          ],
+        },
+        {
+          title: "Les données structurées sont-elles utiles ?",
+          paragraphs: [
+            "Google précise que [les données structurées ne sont pas une obligation pour la recherche par IA générative, mais restent recommandées pour être éligible aux résultats enrichis](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide?hl=fr), à condition de décrire fidèlement le texte visible.",
+            "Elles aident Google à comprendre qui vous êtes, ce que vous vendez et où vous intervenez, et notre [guide Schema.org pour le GEO](/blog/schema-org-guide-complet-geo) liste les types utiles pour une PME.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Qu’est-ce qui est inutile pour apparaître dans les Aperçus IA ?",
+      paragraphs: [
+        "Beaucoup de recettes circulent sous l’étiquette GEO ou AEO, et Google a publié une liste de pratiques qu’il ignore, ce qui permet de concentrer le budget sur ce qui compte vraiment.",
+        "Son guide indique que [la recherche Google n’utilise pas les fichiers llms.txt ni les balisages spéciaux, et qu’il est inutile de découper son contenu en petits morceaux pour l’IA](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide?hl=fr). Notre [guide pratique du llms.txt](/blog/llms-txt-guide-pratique) explique pour quels autres outils d’IA ce fichier garde malgré tout un intérêt.",
+      ],
+      table: {
+        caption: "Idées reçues sur les AI Overviews et position officielle de Google",
+        headers: ["Idée reçue", "Ce qu’en dit Google", "Que faire à la place"],
+        rows: [
+          ["Il faut un fichier llms.txt", "Ignoré par la recherche Google", "Soigner l’indexation et le contenu"],
+          ["Il faut découper le texte en blocs", "Aucune longueur idéale", "Écrire pour le lecteur, avec des titres clairs"],
+          ["Il faut un balisage spécial IA", "Aucun schema.org dédié n’est requis", "Baliser fidèlement le texte visible"],
+          ["Il faut multiplier les mentions", "Les mentions non authentiques pèsent peu", "Obtenir des citations méritées"],
+          ["Il faut une page par variante", "Risque de contenu abusif à grande échelle", "Une page complète par sujet"],
+        ],
+      },
+    },
+    {
+      title: "Les AI Overviews font-ils baisser les clics vers les sites ?",
+      paragraphs: [
+        "Oui en moyenne, et c’est précisément pourquoi il vaut mieux être cité qu’absent, car les études disponibles montrent un recul net des clics vers les résultats classiques quand un encadré s’affiche.",
+        "Le Pew Research Center a observé que [les internautes cliquaient sur un résultat classique dans 8 % des visites avec un résumé IA, contre 15 % sans résumé, et sur un lien du résumé dans 1 % des cas](https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/).",
+        "Ahrefs mesure un effet plus fort encore : [la présence d’un AI Overview correspondait en décembre 2025 à un taux de clic inférieur de 58 % pour la page classée première](https://ahrefs.com/blog/ai-overviews-reduce-clicks-update/). Être la source citée dans l’encadré devient donc le nouvel enjeu de visibilité pour une entreprise.",
+      ],
+    },
+    {
+      title: "Comment puis-je apparaître en premier sur les résultats de recherche Google ?",
+      paragraphs: [
+        "Aucune méthode ne garantit la première place, et Google rappelle que l’indexation et l’affichage ne sont jamais garantis, mais on peut réunir les conditions qui rendent une page la plus pertinente.",
+        "Concrètement, la page doit répondre à l’intention exacte de la requête, mieux que les pages déjà en tête, et être soutenue par des liens internes depuis vos contenus proches, puis par des liens externes de sites reconnus qui font la différence.",
+        "Dans les Aperçus IA, la position compte moins qu’en résultat classique, car l’IA peut citer une page de deuxième page si elle répond mieux à une sous-question précise, si bien que viser la meilleure réponse reste plus efficace que viser le rang.",
+      ],
+    },
+    {
+      title: "Comment puis-je apparaître sur Google gratuitement ?",
+      paragraphs: [
+        "Les résultats naturels et les citations dans les Aperçus IA sont gratuits : aucune enchère ne permet d’y acheter une place, et ce qui coûte réellement, c’est le temps de production et de mise à jour des contenus.",
+        "Trois actions gratuites couvrent l’essentiel pour une PME : une fiche d’établissement complète, une Search Console configurée et une page claire par service ou par zone. Notre [méthode d’audit SEO et GEO](/blog/audit-seo-geo-visibilite-ia) les passe en revue dans l’ordre, avec les erreurs les plus fréquentes.",
+      ],
+    },
+    {
+      title: "Comment suivre ses citations dans les AI Overviews Google ?",
+      paragraphs: [
+        "La Search Console dispose désormais d’un rapport dédié, puisque selon l’aide de Google, [le rapport sur les performances dans l’IA générative est déployé sur tous les sites depuis le 31 août 2026 et couvre les Aperçus IA et le Mode IA](https://support.google.com/webmasters/answer/16984139?hl=fr).",
+        "Il compte les impressions par page, pays et appareil, mais ne dit pas sur quelles questions ni face à quels concurrents, d’où l’intérêt d’un relevé manuel hebdomadaire de vingt questions clients.",
+      ],
+      subsections: [
+        {
+          title: "Comment puis-je améliorer ma visibilité sur Google ?",
+          paragraphs: [
+            "Partez du rapport IA générative : repérez les pages qui gagnent des impressions, puis renforcez leurs réponses et leurs liens internes. Les pages absentes du rapport méritent un diagnostic complet, en commençant par l’indexation et l’autorisation d’extrait.",
+            "Pour la méthode complète de relevé et les indicateurs à suivre chaque semaine, voir notre guide pour [suivre sa visibilité dans AI Mode](/blog/suivre-visibilite-ai-mode-google), qui s’applique aussi aux AI Overviews.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Scénario illustratif : un cabinet de diagnostic immobilier sur six semaines",
+      paragraphs: [
+        "Le cas suivant est un scénario type, construit pour montrer un rythme réaliste, et ses chiffres sont illustratifs et ne proviennent pas d’un client réel de PulseoAI.",
+        "Un cabinet de diagnostic immobilier de Rennes est bien classé sur son nom, mais n’apparaît dans aucun Aperçu IA. Sur vingt questions clients relevées, douze affichent un encadré, qui cite surtout des sites nationaux et des annuaires.",
+        "Semaines 1 et 2 : le cabinet découvre que sa page « Tarifs et délais » porte une balise nosnippet posée par son ancien prestataire. Il la retire aussitôt, vérifie l’inclusion dans l’IA générative et demande une nouvelle exploration.",
+        "Semaines 3 et 4 : trois pages sont réécrites avec une réponse directe sous chaque titre, les délais réels de rendu des rapports et une FAQ issue des questions posées au téléphone.",
+        "Semaines 5 et 6 : le rapport IA générative de la Search Console affiche ses premières impressions, et le cabinet est cité sur 3 questions sur 12, tandis que les questions générales restent dominées par les sites nationaux.",
+      ],
+    },
+    {
+      title: "Ce qu’il faut retenir",
+      paragraphs: [],
+      bullets: [
+        "Les Aperçus IA de Google sont disponibles en France depuis le 22 juillet 2026 et citent quelques pages en lien sous chaque réponse.",
+        "Pour être cité, une page doit être indexée, autorisée à afficher un extrait et incluse dans l’IA générative dans la Search Console.",
+        "Google choisit ses sources avec ses systèmes de classement habituels et le query fan-out, qui ouvre la porte aux pages qui couvrent bien un sujet.",
+        "Le levier principal est un contenu non générique, avec une réponse directe sous chaque titre et une expertise que l’IA ne trouve pas ailleurs.",
+        "Le llms.txt, le découpage du texte et les mentions artificielles n’aident pas dans Google : mieux vaut investir dans les pages et la fiche d’établissement.",
+        "Le rapport IA générative de la Search Console, complété par un relevé de questions clients, permet de suivre ses citations semaine après semaine.",
+      ],
+    },
+  ],
+};
+
 export const septemberArticles: Record<string, BlogArticle> = {
   [suivreVisibilite.slug]: suivreVisibilite,
   [agentIaSurMesure.slug]: agentIaSurMesure,
@@ -2708,6 +2960,7 @@ export const septemberArticles: Record<string, BlogArticle> = {
   [dotsOpenai.slug]: dotsOpenai,
   [referencementSearchgpt.slug]: referencementSearchgpt,
   [chatgptRecommandeConcurrent.slug]: chatgptRecommandeConcurrent,
+  [visibiliteAiOverviews.slug]: visibiliteAiOverviews,
 };
 
 export const septemberPosts: BlogPostMeta[] = [
@@ -2809,5 +3062,14 @@ export const septemberPosts: BlogPostMeta[] = [
     date: chatgptRecommandeConcurrent.date,
     readingTime: chatgptRecommandeConcurrent.readingTime,
     category: chatgptRecommandeConcurrent.category,
+  },
+  {
+    slug: visibiliteAiOverviews.slug,
+    title: visibiliteAiOverviews.title,
+    seoTitle: visibiliteAiOverviews.seoTitle,
+    description: visibiliteAiOverviews.description,
+    date: visibiliteAiOverviews.date,
+    readingTime: visibiliteAiOverviews.readingTime,
+    category: visibiliteAiOverviews.category,
   },
 ];
