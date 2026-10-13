@@ -66,6 +66,15 @@ function buildMentions(names: Array<keyof typeof mentionUrls>): ArticleMention[]
 }
 
 export const articleMetadataBySlug: Record<string, ArticleSchemaEnhancement> = {
+  "agent-ia-telephonique-pme": {
+    about: {
+      "@type": "Thing",
+      name: "Agent IA téléphonique pour PME",
+      description:
+        "Ce qu’un agent IA téléphonique fait pour une PME, son fonctionnement, ses limites, les règles AI Act, RGPD et démarchage en France, et le choix d’une solution.",
+    },
+    mentions: buildMentions(["OpenAI", "ChatGPT", "Gemini"]),
+  },
   "etre-visible-google-ai-overviews": {
     about: {
       "@type": "Thing",
