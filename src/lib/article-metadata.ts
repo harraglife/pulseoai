@@ -66,6 +66,15 @@ function buildMentions(names: Array<keyof typeof mentionUrls>): ArticleMention[]
 }
 
 export const articleMetadataBySlug: Record<string, ArticleSchemaEnhancement> = {
+  "etre-visible-google-ai-overviews": {
+    about: {
+      "@type": "Thing",
+      name: "Visibilité dans Google AI Overviews",
+      description:
+        "Comment Google choisit les pages citées dans les Aperçus IA, les prérequis techniques, la méthode pour être cité, les pratiques inutiles et le suivi dans la Search Console.",
+    },
+    mentions: buildMentions(["Google", "Google AI Overviews", "Gemini", "GEO", "SEO IA", "llms.txt"]),
+  },
   "chatgpt-recommande-concurrent-pourquoi": {
     about: {
       "@type": "Thing",
