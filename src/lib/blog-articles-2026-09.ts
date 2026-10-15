@@ -158,7 +158,7 @@ const suivreVisibilite: ArticleWithTables = {
       title: "Comment analyser la visibilité IA de ses concurrents ?",
       paragraphs: [
         "C’est la partie la plus rentable du suivi, et la plus négligée. Votre tableur contient déjà l’information : la colonne « concurrents nommés ». Au bout de quatre semaines, comptez les occurrences. Vous obtenez la liste des trois ou quatre entreprises que les IA recommandent à votre place, et sur quels types de prompts.",
-        "Ensuite, regardez pourquoi. Ouvrez les sources citées par l’IA sur ces prompts. Dans la grande majorité des cas, ce ne sont pas les sites des concurrents mais des pages tierces : annuaires, comparatifs, articles de presse locale, fiches Google, avis. Le concurrent est visible parce que des tiers parlent de lui. C’est là que se joue l’écart, et c’est exactement ce que nous décrivons dans notre méthode pour [apparaître sur ChatGPT](/blog/referencement-chatgpt-apparaitre-ia).",
+        "Ensuite, regardez pourquoi. Ouvrez les sources citées par l’IA sur ces prompts. Dans la grande majorité des cas, ce ne sont pas les sites des concurrents mais des pages tierces : annuaires, comparatifs, articles de presse locale, fiches Google, avis. Le concurrent est visible parce que des tiers parlent de lui. C’est là que se joue l’écart, et c’est exactement ce que nous décrivons dans notre méthode pour [apparaître sur ChatGPT](/blog/referencement-chatgpt-apparaitre-ia). Les six bases à vérifier avant d’agir sont résumées dans [comment se référencer sur ChatGPT](/blog/apparaitre-chatgpt-client-cherche-entreprise).",
       ],
     },
     {
@@ -809,7 +809,7 @@ const agenceReferencementChatgpt: ArticleWithTables = {
           title: "Structurer son contenu pour être repris",
           paragraphs: [
             "Google indique qu’il [n’existe aucune exigence supplémentaire ni optimisation spéciale pour apparaître dans les AI Overviews ou l’AI Mode](https://developers.google.com/search/docs/appearance/ai-features) : les bonnes pratiques SEO restent la base.",
-            "Le travail consiste donc à répondre directement aux questions, à baliser les pages en Schema.org et à rendre les informations cohérentes partout. Notre guide pour [apparaître sur ChatGPT](/blog/referencement-chatgpt-apparaitre-ia) détaille ces cinq leviers.",
+            "Le travail consiste donc à répondre directement aux questions, à baliser les pages en Schema.org et à rendre les informations cohérentes partout. Notre guide pour [apparaître sur ChatGPT](/blog/referencement-chatgpt-apparaitre-ia) détaille ces cinq leviers, et notre article [comment se référencer sur ChatGPT](/blog/apparaitre-chatgpt-client-cherche-entreprise) explique ce qu’une agence doit vérifier en premier.",
           ],
         },
       ],
@@ -2547,7 +2547,7 @@ const chatgptRecommandeConcurrent: ArticleWithTables = {
     {
       title: "Pourquoi ChatGPT recommande-t-il mon concurrent et pas moi ?",
       paragraphs: [
-        "ChatGPT ne choisit pas un concurrent par préférence : il rédige sa réponse à partir des pages qu’il trouve et lit au moment de la question, puis nomme les entreprises que ces pages décrivent le mieux.",
+        "ChatGPT ne choisit pas un concurrent par préférence : il rédige sa réponse à partir des pages qu’il trouve et lit au moment de la question, puis nomme les entreprises que ces pages décrivent le mieux. Les bases à poser sont détaillées dans notre guide [comment se référencer sur ChatGPT](/blog/apparaitre-chatgpt-client-cherche-entreprise).",
         "OpenAI précise que [ChatGPT search s’appuie sur des fournisseurs de recherche tiers et sur des contenus fournis directement par ses partenaires](https://openai.com/index/introducing-chatgpt-search/). Si ces sources parlent de votre concurrent et pas de vous, la réponse suivra.",
         "L’enjeu grandit vite côté clients. Selon [l’enquête Local Consumer Review Survey 2026 de BrightLocal, l’usage de ChatGPT et des IA génératives pour trouver une entreprise locale est passé de 6 % à 45 % en un an](https://www.brightlocal.com/research/local-consumer-review-survey/).",
         "La même enquête indique que [42 % des consommateurs font autant confiance aux recommandations des IA qu’aux avis traditionnels](https://www.brightlocal.com/research/local-consumer-review-survey/). Être absent d’une réponse revient donc souvent à être absent de la liste finale du client. Pour être accompagné sur ce sujet, découvrez notre [agence de référencement ChatGPT](/).",
