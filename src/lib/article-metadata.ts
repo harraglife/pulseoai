@@ -66,6 +66,15 @@ function buildMentions(names: Array<keyof typeof mentionUrls>): ArticleMention[]
 }
 
 export const articleMetadataBySlug: Record<string, ArticleSchemaEnhancement> = {
+  "agent-ia-artisan-devis-relances": {
+    about: {
+      "@type": "Thing",
+      name: "Agent IA pour artisan",
+      description:
+        "Ce qu’un agent IA fait pour un artisan ou une entreprise du bâtiment : demandes entrantes, brouillons de devis, relances, suivi de chantier et avis clients, avec ses limites et sa mise en place.",
+    },
+    mentions: buildMentions(["OpenAI", "ChatGPT", "Google"]),
+  },
   "agent-ia-telephonique-pme": {
     about: {
       "@type": "Thing",
