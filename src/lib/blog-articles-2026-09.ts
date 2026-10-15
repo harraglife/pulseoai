@@ -3168,6 +3168,232 @@ const agentIaTelephonique: ArticleWithTables = {
   ],
 };
 
+const agentIaArtisan: ArticleWithTables = {
+  slug: "agent-ia-artisan-devis-relances",
+  title: "Agent IA pour artisan : devis, relances et suivi de chantier",
+  seoTitle: "Agent IA artisan : demandes, devis, relances, avis",
+  description:
+    "Ce qu’un agent IA fait vraiment pour un artisan du bâtiment : demandes, devis, relances, suivi de chantier, avis. Limites et mise en place.",
+  date: "15 octobre 2026",
+  dateModified: "15 octobre 2026",
+  readingTime: "10 min",
+  category: "Agents IA",
+  articleSection: "Agents IA",
+  keywords: [
+    "agent IA artisan",
+    "agent IA pour artisan",
+    "IA pour artisan du bâtiment",
+    "automatiser devis artisan",
+    "relance devis IA",
+    "suivi de chantier IA",
+    "agent IA TPE",
+    "fidélisation clients artisan",
+  ],
+  intro:
+    "Un artisan passe ses journées sur les chantiers et ses soirées sur les devis, les relances et les messages restés sans réponse. Un agent IA peut reprendre une partie de ce travail de bureau, à condition de lui confier les bonnes tâches et de garder la main sur le chiffrage. Voici ce qu’il fait, ce qu’il ne fait pas et par où commencer.",
+  quickAnswer: {
+    question: "Qu’est-ce qu’un agent IA pour un artisan ?",
+    answer:
+      "Un agent IA pour artisan est un assistant logiciel qui traite les tâches administratives répétitives d’une entreprise artisanale. Il qualifie les demandes de devis reçues par email, téléphone ou formulaire, et prépare un brouillon de devis à partir de vos tarifs. Il relance les devis et les factures en attente, informe le client pendant le chantier et répond aux avis en ligne. Il travaille dans vos outils existants et vous validez chaque envoi. Le chiffrage, le diagnostic technique et la responsabilité restent à l’artisan.",
+  },
+  contextualLinks: [
+    { label: "nos agents IA pour PME", href: "/agents-ia" },
+    { label: "l’agent IA sur mesure", href: "/blog/agent-ia-sur-mesure-pme" },
+    { label: "l’agent IA téléphonique", href: "/blog/agent-ia-telephonique-pme" },
+    { label: "choisir une agence agents IA", href: "/blog/agence-agents-ia-comment-choisir-prestataire" },
+    { label: "les outils IA pour PME", href: "/blog/outils-ia-pme" },
+  ],
+  bodyCta: {
+    intro: "Vous perdez des heures chaque semaine sur les devis et les relances ?",
+    linkLabel: "Parlez-nous de votre activité",
+    href: "/agents-ia",
+    outro: ", on liste vos tâches répétitives et on vous dit lesquelles un agent peut prendre en charge.",
+  },
+  relatedSlugs: [
+    "agent-ia-sur-mesure-pme",
+    "agent-ia-telephonique-pme",
+    "agence-agents-ia-comment-choisir-prestataire",
+    "outils-ia-pme",
+  ],
+  faqTitle: "FAQ : agent IA pour artisan",
+  faqItems: [
+    {
+      question: "L’IA peut-elle chiffrer un devis à ma place ?",
+      answer:
+        "Non, et il ne faut pas le lui demander. L’agent prépare le brouillon à partir de votre bibliothèque de prix, de la demande du client et des photos reçues. Vous vérifiez les quantités, les métrés et les contraintes du chantier avant d’envoyer. La responsabilité du devis reste la vôtre.",
+    },
+    {
+      question: "Est-ce utile quand on est seul ou auto-entrepreneur ?",
+      answer:
+        "Oui, c’est souvent là que le gain est le plus net, car personne ne traite les demandes pendant que vous êtes sur le chantier. Un agent qui répond aux demandes, prépare les devis et relance les impayés remplace les soirées de bureau, sans embaucher.",
+    },
+    {
+      question: "Faut-il changer de logiciel de devis ou de facturation ?",
+      answer:
+        "Rarement. Un agent se connecte à la plupart des logiciels de devis et de facturation du bâtiment, ou travaille à partir d’exports simples. Changer d’outil n’est nécessaire que si le logiciel actuel n’offre aucun accès à vos données.",
+    },
+    {
+      question: "Combien de temps pour mettre en place un premier agent ?",
+      answer:
+        "Comptez deux à trois semaines pour un premier périmètre, comme la qualification des demandes et la relance des devis, puis quatre à huit semaines de réglages à partir des cas réels. Le plus long est de formaliser vos règles : délais, tarifs, zones, exceptions.",
+    },
+    {
+      question: "Un agent IA peut-il répondre seul aux avis en ligne ?",
+      answer:
+        "Il peut rédiger une réponse adaptée à chaque avis, mais la publication doit rester validée par vous, surtout pour les avis négatifs. Une réponse factuelle, polie et rapide compte plus qu’une réponse longue.",
+    },
+  ],
+  sections: [
+    {
+      title: "Qu’est-ce qu’un agent IA pour un artisan ?",
+      paragraphs: [
+        "Un agent IA pour artisan est un programme qui lit vos demandes entrantes, comprend ce que le client veut et prépare une réponse ou un document. Il agit ensuite dans vos outils : messagerie, logiciel de devis, agenda, fiche Google. Il travaille sur des règles que vous fixez.",
+        "Il se distingue d’un simple chatbot, qui répond à des questions sans rien faire ensuite, et d’une automatisation classique, qui suit un scénario rigide. L’agent gère les demandes mal formulées, les photos floues et les clients qui changent d’avis.",
+        "Notre page [agents IA pour PME](/agents-ia) présente les usages par métier. Pour comprendre comment un agent est construit autour de vos outils, lisez notre guide sur [l’agent IA sur mesure pour PME](/blog/agent-ia-sur-mesure-pme).",
+      ],
+      subsections: [
+        {
+          title: "Qu’est-ce qu’un agent d’IA autonome ?",
+          paragraphs: [
+            "Un agent autonome enchaîne plusieurs étapes sans intervention : lire la demande, chercher le tarif, rédiger le devis, l’envoyer, relancer. Pour un artisan, cette autonomie totale est rarement souhaitable, car une erreur de chiffrage engage votre marge et votre responsabilité.",
+            "Le réglage le plus courant est l’autonomie partielle : l’agent prépare tout, vous validez en une minute depuis le téléphone, puis il envoie et assure le suivi. C’est ce mode que nous décrivons dans la suite de l’article.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Pourquoi les artisans s’y mettent maintenant",
+      paragraphs: [
+        "L’usage reste minoritaire mais progresse vite. D’après la [Direction générale des entreprises](https://www.entreprises.gouv.fr/decryptages-de-nos-experts/intelligence-artificielle-et-artisanat-usages-conditions-de-reussite-et), 27 % des chefs d’entreprises artisanales déclarent utiliser un outil d’intelligence artificielle, et moins de 10 % des entreprises du BTP utilisent des solutions d’IA.",
+        "Sur l’ensemble des TPE et PME, le Baromètre France Num 2026 relayé par [ActuIA](https://www.actuia.com/actualite/40-des-tpe-pme-utilisent-lia-mais-19-seulement-la-paient/) mesure 40 % d’entreprises utilisatrices d’au moins une solution d’IA, contre 13 % en 2024. Le même baromètre compte 19 % d’entreprises qui recourent à des solutions payantes.",
+        "Côté clients, l’habitude est déjà prise. Le [Baromètre du numérique 2026 de l’Arcep](https://www.arcep.fr/actualites/actualites-et-communiques/detail/n/equipements-et-usages-du-numerique-090226.html) indique que 48 % de la population utilise l’IA générative. Vos clients comparent, demandent des devis et attendent une réponse rapide, parfois le soir.",
+        "La trésorerie pèse aussi. Selon la [Banque de France](https://www.banque-france.fr/fr/communiques-de-presse/le-rapport-annuel-2025-de-lobservatoire-des-delais-de-paiement-des-resultats-contrastes-selon-les), les retards de paiement atteignent 13,4 jours fin 2025, et sans ces retards les PME et microentreprises auraient disposé de 13 milliards d’euros de trésorerie supplémentaire. Relancer vite est donc un enjeu direct.",
+      ],
+      bullets: [
+        "Les demandes arrivent à toute heure, souvent incomplètes",
+        "Le devis non envoyé sous 48 heures part chez le concurrent",
+        "Les relances de factures sont repoussées faute de temps",
+        "Les avis en ligne restent sans réponse",
+      ],
+    },
+    {
+      title: "Quelles tâches un agent IA prend en charge pour un artisan ?",
+      paragraphs: [
+        "Les tâches rentables sont celles qui se répètent chaque semaine, suivent des règles claires et ne demandent pas de se déplacer. En voici quatre, de la plus simple à la plus complète.",
+      ],
+      table: {
+        caption: "Quatre tâches confiées à un agent IA, ce qu’il fait et ce que vous gardez",
+        headers: ["Tâche", "Ce que fait l’agent", "Ce que vous gardez"],
+        rows: [
+          ["Demandes entrantes", "Lit l’email ou le formulaire, pose les questions manquantes, qualifie l’urgence et la zone", "Décision d’accepter ou non le chantier"],
+          ["Préparation des devis", "Remplit un brouillon à partir de votre grille de prix et des photos", "Métrés, quantités, prix final, envoi"],
+          ["Relances", "Relance les devis sans réponse et les factures échues, à vos dates", "Ton des messages, cas sensibles, décision de recouvrement"],
+          ["Suivi et avis", "Informe le client des étapes du chantier, demande un avis, prépare les réponses", "Validation des réponses publiées"],
+        ],
+      },
+      subsections: [
+        {
+          title: "Comment utiliser l’IA pour faire des devis ?",
+          paragraphs: [
+            "L’agent part de trois éléments : la demande du client, vos ouvrages habituels avec leurs prix, et les photos ou plans reçus. Il propose un brouillon structuré par poste, signale ce qu’il n’a pas pu déterminer et vous laisse compléter.",
+            "Le gain vient de la vitesse de réponse. Un brouillon prêt dans l’heure, validé le soir en dix minutes, remplace un devis envoyé une semaine plus tard. Le chiffrage reste le vôtre : l’agent ne connaît ni l’état réel du support ni les accès du chantier.",
+          ],
+          bullets: [
+            "Constituez une bibliothèque de 30 à 50 ouvrages types avec prix et unités",
+            "Définissez les questions obligatoires avant tout devis : surface, accès, délai, photos",
+            "Faites relire chaque brouillon avant envoi, sans exception",
+          ],
+        },
+        {
+          title: "Comment relancer un devis client de manière efficace ?",
+          paragraphs: [
+            "Une relance efficace est courte, datée et utile : elle rappelle le devis, propose une date de démarrage ou répond à une objection fréquente. L’agent envoie la première relance à J+3, la seconde à J+10, puis vous signale les devis à appeler vous-même.",
+            "Pour les factures, la même logique s’applique avec des messages plus formels. L’agent rappelle l’échéance, joint la facture et propose un lien de paiement. Les dossiers litigieux ou les gros montants vous reviennent toujours.",
+          ],
+        },
+        {
+          title: "Comment un agent IA aide-t-il à fidéliser les clients d’un artisan ?",
+          paragraphs: [
+            "La fidélisation se joue après le chantier : un message de fin de travaux, un rappel d’entretien un an plus tard, une demande d’avis au bon moment. L’agent planifie ces messages à partir de la date de fin de chantier.",
+            "Les avis comptent beaucoup. D’après l’enquête [Local Consumer Review Survey 2026 de BrightLocal](https://www.brightlocal.com/research/local-consumer-review-survey/), 97 % des consommateurs lisent des avis sur les entreprises locales et 89 % attendent que le propriétaire réponde aux avis.",
+            "La même enquête indique que l’usage des outils d’IA générative pour trouver une entreprise locale est passé de 6 % à 45 % en un an. Des avis récents et des réponses soignées servent donc aussi votre [référencement local dans ChatGPT](/blog/referencement-local-chatgpt-apparaitre-ville).",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Quel logiciel de devis avec IA est disponible pour le bâtiment ?",
+      paragraphs: [
+        "Deux familles existent. Les logiciels de devis et de facturation du bâtiment ajoutent des fonctions IA : saisie vocale, suggestion d’ouvrages, génération d’un devis à partir d’une description. Ils conviennent si votre besoin se limite au devis.",
+        "Les agents IA, eux, couvrent toute la chaîne : demande, devis, relance, suivi, avis, et se connectent à votre logiciel existant. Ils conviennent si le temps perdu se répartit sur plusieurs tâches. Notre guide sur [les outils IA pour PME](/blog/outils-ia-pme) aide à choisir sans empiler les abonnements.",
+        "Un point de calendrier à intégrer, selon la [CCI Paris Île-de-France](https://www.entreprises.cci-paris-idf.fr/fiches-pratiques/factures-electroniques-quelles-sont-les-obligations-specifiques) : la réception des factures électroniques est obligatoire depuis le 1er septembre 2026 pour toutes les entreprises. L’émission le sera au 1er septembre 2027 pour les PME. Choisissez un outil compatible avant d’y brancher un agent.",
+      ],
+      bullets: [
+        "Logiciel de devis avec IA : rapide à prendre en main, limité au devis",
+        "Agent IA connecté : couvre demandes, devis, relances et suivi, demande un réglage initial",
+        "Agent téléphonique en complément : prend les appels pendant le chantier, voir notre article sur [l’agent IA téléphonique](/blog/agent-ia-telephonique-pme)",
+      ],
+    },
+    {
+      title: "Ce que l’agent ne fait pas, et ce qui reste à l’artisan",
+      paragraphs: [
+        "Un agent ne visite pas le chantier, ne mesure pas, ne voit pas l’humidité derrière un placo. Il ne connaît pas vos marges réelles si vous ne les lui donnez pas, et il ne doit jamais promettre une date ou un prix que vous n’avez pas validés.",
+        "Il ne remplace pas non plus la relation. Un client qui hésite veut parler à l’artisan, pas à un assistant. L’agent prépare, trie et rappelle ; vous décidez, chiffrez et rassurez.",
+      ],
+      bullets: [
+        "Pas de chiffrage final sans votre validation",
+        "Pas d’engagement sur un délai ou un prix non confirmé",
+        "Pas de réponse publiée à un avis négatif sans relecture",
+        "Pas d’accès aux données clients au-delà du nécessaire",
+      ],
+    },
+    {
+      title: "Par quelle tâche un artisan doit-il commencer ?",
+      paragraphs: [
+        "Commencez par la tâche qui vous coûte le plus de chantiers perdus, pas par la plus impressionnante. Pour la plupart des artisans, ce sont les demandes entrantes non traitées et les devis envoyés trop tard.",
+        "Un premier périmètre tient en deux semaines : l’agent lit les demandes, pose les questions manquantes, crée la fiche client et prépare le brouillon de devis. Les relances viennent ensuite, puis le suivi de chantier et les avis.",
+        "Si vous hésitez entre faire seul avec des outils du marché ou passer par un prestataire, notre article pour [choisir une agence agents IA](/blog/agence-agents-ia-comment-choisir-prestataire) liste les questions à poser. Notre guide [comment utiliser l’IA dans son entreprise](/blog/comment-utiliser-ia-entreprise) donne le cadre général.",
+      ],
+      subsections: [
+        {
+          title: "Combien de temps pour mettre en place une première automatisation ?",
+          paragraphs: [
+            "Deux à trois semaines pour le premier périmètre, puis quatre à huit semaines de réglages à partir des demandes réelles. Le travail le plus long est le vôtre : écrire vos règles de délais, de zones, de tarifs et d’exceptions, que l’agent appliquera ensuite.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Scénario illustratif : un plombier-chauffagiste de 4 personnes",
+      paragraphs: [
+        "Ce scénario est illustratif : il décrit une progression plausible, pas un résultat garanti. Une entreprise de plomberie-chauffage de quatre personnes reçoit une quinzaine de demandes par semaine, envoie ses devis sous huit à dix jours et relance rarement.",
+        "Semaines 1 et 2 : mise en place de l’agent sur les demandes entrantes et les brouillons de devis, à partir d’une bibliothèque de 40 ouvrages. Le dirigeant valide les devis chaque soir en quinze minutes.",
+        "Semaines 3 à 5 : activation des relances de devis à J+3 et J+10, et des relances de factures à l’échéance. Les demandes hors zone ou hors métier sont déclinées automatiquement avec un message courtois.",
+        "Semaines 6 à 8 : le délai moyen d’envoi d’un devis passe de huit jours à deux jours, et le taux de réponse aux devis progresse grâce aux relances. Le dirigeant récupère quatre à six heures de bureau par semaine. Le taux de signature, lui, dépend toujours du prix et du contact humain.",
+      ],
+      bullets: [
+        "Le premier gain est le délai de réponse, pas le volume de chantiers",
+        "Les relances régulières font remonter des devis que l’on croyait perdus",
+        "Le temps récupéré sert aux visites techniques et au suivi des équipes",
+      ],
+    },
+    {
+      title: "Ce qu’il faut retenir",
+      paragraphs: [
+        "Un agent IA ne fait pas le métier d’artisan. Il fait le travail de bureau qui s’accumule autour du métier, à condition d’être cadré.",
+      ],
+      bullets: [
+        "Un agent IA pour artisan traite les demandes, prépare les devis, relance et assure le suivi, dans vos outils actuels",
+        "Le chiffrage, le diagnostic et la relation client restent à l’artisan, qui valide chaque envoi",
+        "Commencez par les demandes entrantes et les devis en retard, les tâches qui font perdre des chantiers",
+        "Les relances de devis et de factures sont le gain de trésorerie le plus rapide",
+        "Comptez deux à trois semaines de mise en place, puis quatre à huit semaines de réglages",
+        "Pour un périmètre adapté à votre métier, découvrez [nos agents IA](/agents-ia) et [notre offre](/offre)",
+      ],
+    },
+  ],
+};
+
 export const septemberArticles: Record<string, BlogArticle> = {
   [suivreVisibilite.slug]: suivreVisibilite,
   [agentIaSurMesure.slug]: agentIaSurMesure,
@@ -3182,6 +3408,7 @@ export const septemberArticles: Record<string, BlogArticle> = {
   [chatgptRecommandeConcurrent.slug]: chatgptRecommandeConcurrent,
   [visibiliteAiOverviews.slug]: visibiliteAiOverviews,
   [agentIaTelephonique.slug]: agentIaTelephonique,
+  [agentIaArtisan.slug]: agentIaArtisan,
 };
 
 export const septemberPosts: BlogPostMeta[] = [
@@ -3301,5 +3528,14 @@ export const septemberPosts: BlogPostMeta[] = [
     date: agentIaTelephonique.date,
     readingTime: agentIaTelephonique.readingTime,
     category: agentIaTelephonique.category,
+  },
+  {
+    slug: agentIaArtisan.slug,
+    title: agentIaArtisan.title,
+    seoTitle: agentIaArtisan.seoTitle,
+    description: agentIaArtisan.description,
+    date: agentIaArtisan.date,
+    readingTime: agentIaArtisan.readingTime,
+    category: agentIaArtisan.category,
   },
 ];
