@@ -66,6 +66,15 @@ function buildMentions(names: Array<keyof typeof mentionUrls>): ArticleMention[]
 }
 
 export const articleMetadataBySlug: Record<string, ArticleSchemaEnhancement> = {
+  "tester-balisage-schema-org-validateur": {
+    about: {
+      "@type": "Thing",
+      name: "Test du balisage Schema.org",
+      description:
+        "Comment tester et valider un balisage Schema.org avec le Schema Markup Validator, le test des résultats enrichis de Google et les rapports de la Search Console, les erreurs fréquentes et la cohérence avec le texte visible pour les moteurs IA.",
+    },
+    mentions: buildMentions(["Schema.org", "JSON-LD", "Google", "Google AI Overviews", "ChatGPT", "Perplexity", "GEO"]),
+  },
   "agent-ia-artisan-devis-relances": {
     about: {
       "@type": "Thing",
