@@ -3394,6 +3394,242 @@ const agentIaArtisan: ArticleWithTables = {
   ],
 };
 
+const testerSchemaOrg: ArticleWithTables = {
+  slug: "tester-balisage-schema-org-validateur",
+  title: "Tester son balisage Schema.org : outils, méthode et erreurs",
+  seoTitle: "Test Schema.org : valider ses données structurées",
+  description:
+    "Comment tester son balisage Schema.org : validateur officiel, test des résultats enrichis de Google, Search Console et erreurs fréquentes à corriger.",
+  date: "20 octobre 2026",
+  dateModified: "20 octobre 2026",
+  readingTime: "11 min",
+  category: "GEO",
+  articleSection: "GEO",
+  keywords: [
+    "test schema.org",
+    "tester balisage schema.org",
+    "validateur schema.org",
+    "test des résultats enrichis",
+    "vérifier données structurées",
+    "outil de test des données structurées",
+    "erreurs schema.org",
+    "JSON-LD validation",
+  ],
+  intro:
+    "Un balisage Schema.org mal formé n’est pas lu, ni par Google ni par les moteurs IA, et personne ne vous prévient. Trois outils gratuits permettent de le tester en quelques minutes : le validateur officiel de Schema.org, le test des résultats enrichis de Google et les rapports de la Search Console. Voici comment les utiliser, dans quel ordre, et comment lire ce qu’ils renvoient.",
+  quickAnswer: {
+    question: "Comment tester son balisage Schema.org ?",
+    answer:
+      "Pour tester un balisage Schema.org, collez l’URL de la page ou le code JSON-LD dans le Schema Markup Validator (validator.schema.org), qui vérifie la syntaxe et la cohérence du vocabulaire. Passez ensuite la même page dans le test des résultats enrichis de Google, qui indique les résultats enrichis éligibles et les propriétés manquantes. Après mise en ligne, suivez les rapports « Améliorations » de la Search Console pour repérer les pages non valides sur tout le site. Un balisage valide doit aussi correspondre au texte visible de la page.",
+  },
+  contextualLinks: [
+    { label: "le guide Schema.org pour le GEO", href: "/blog/schema-org-guide-complet-geo" },
+    { label: "l’audit SEO / GEO", href: "/blog/audit-seo-geo-visibilite-ia" },
+    { label: "être visible dans les Aperçus IA", href: "/blog/etre-visible-google-ai-overviews" },
+    { label: "le guide llms.txt", href: "/blog/llms-txt-guide-pratique" },
+    { label: "suivre sa visibilité dans les IA", href: "/blog/suivre-visibilite-chatgpt-ia" },
+  ],
+  bodyCta: {
+    intro: "Vous ne savez pas si votre balisage est lu par Google et par les moteurs IA ?",
+    linkLabel: "Demandez un audit SEO / GEO",
+    href: "/offre",
+    outro: " : nous testons chaque page, listons les erreurs et vous livrons le balisage corrigé.",
+  },
+  relatedSlugs: [
+    "schema-org-guide-complet-geo",
+    "audit-seo-geo-visibilite-ia",
+    "etre-visible-google-ai-overviews",
+    "llms-txt-guide-pratique",
+  ],
+  faqTitle: "FAQ : tester son balisage Schema.org",
+  faqItems: [
+    {
+      question: "Le validateur Schema.org est-il gratuit ?",
+      answer:
+        "Oui. Le Schema Markup Validator, le test des résultats enrichis de Google et les rapports de la Search Console sont gratuits et sans limite d’usage raisonnable. Seule la Search Console demande de prouver que vous êtes propriétaire du site.",
+    },
+    {
+      question: "Faut-il tester chaque page du site ?",
+      answer:
+        "Testez un exemplaire de chaque gabarit : page d’accueil, page service, fiche locale, article, FAQ. Les pages d’un même gabarit partagent le même balisage, et la Search Console vous signalera ensuite les exceptions sur l’ensemble du site.",
+    },
+    {
+      question: "Un balisage valide garantit-il un résultat enrichi ?",
+      answer:
+        "Non. La validité est une condition nécessaire, pas suffisante. Google décide d’afficher ou non un résultat enrichi selon le type de page, la qualité du contenu et ses propres règles d’affichage, qui évoluent.",
+    },
+    {
+      question: "Quel format tester en priorité : JSON-LD, Microdata ou RDFa ?",
+      answer:
+        "Les trois formats sont acceptés et testés par les mêmes outils. JSON-LD est le plus simple à écrire, à relire et à corriger, car il est séparé du HTML visible. C’est le format que nous recommandons pour toute nouvelle implémentation.",
+    },
+    {
+      question: "À quelle fréquence refaire le test ?",
+      answer:
+        "À chaque modification du gabarit, à chaque changement de CMS ou de thème, et après toute mise à jour d’extension SEO. Entre deux changements, une vérification mensuelle des rapports de la Search Console suffit.",
+    },
+  ],
+  sections: [
+    {
+      title: "Comment tester son balisage Schema.org ?",
+      paragraphs: [
+        "Tester un balisage Schema.org consiste à vérifier trois choses : la syntaxe est correcte, les types et propriétés existent dans le vocabulaire, et les valeurs correspondent au contenu visible de la page. Aucun outil ne couvre les trois seul.",
+        "La méthode la plus sûre enchaîne trois contrôles. Le validateur de Schema.org vérifie la syntaxe et le vocabulaire. Le test des résultats enrichis de Google vérifie l’éligibilité aux affichages spéciaux. La Search Console surveille ensuite l’ensemble du site.",
+        "Ce test vient après la mise en place du balisage, décrite dans notre [guide Schema.org pour le GEO](/blog/schema-org-guide-complet-geo). Il fait aussi partie de tout [audit SEO / GEO](/blog/audit-seo-geo-visibilite-ia) sérieux, car un balisage cassé prive la page d’un signal utile.",
+      ],
+      bullets: [
+        "Étape 1 : Schema Markup Validator pour la syntaxe et le vocabulaire",
+        "Étape 2 : test des résultats enrichis de Google pour l’éligibilité",
+        "Étape 3 : rapports de la Search Console pour le suivi à l’échelle du site",
+        "Étape 4 : relecture humaine de la cohérence avec le texte visible",
+      ],
+    },
+    {
+      title: "Quel est un bon outil pour tester les données structurées ?",
+      paragraphs: [
+        "Un bon outil de test doit lire les trois formats, montrer le graphe extrait, pointer la ligne en erreur et distinguer une erreur bloquante d’un simple avertissement. Deux outils officiels remplissent ces critères, et ils se complètent plutôt qu’ils ne se remplacent.",
+        "Le [Schema Markup Validator](https://validator.schema.org/) est maintenu pour la communauté Schema.org. Selon sa [documentation](https://schema.org/docs/validator.html), il extrait le JSON-LD 1.0, le RDFa 1.1 et les Microdata, affiche un résumé du graphe et identifie les fautes de syntaxe, y compris le balisage injecté par JavaScript.",
+        "Le [test des résultats enrichis](https://search.google.com/test/rich-results) se concentre sur ce que Google sait afficher. D’après l’[aide de la Search Console](https://support.google.com/webmasters/answer/7445569?hl=fr), il accepte une URL ou un extrait de code, lit le JSON-LD, le RDFa et les microdonnées, et teste par défaut avec un user-agent smartphone.",
+      ],
+      table: {
+        caption: "Les outils de test des données structurées et ce qu’ils vérifient",
+        headers: ["Outil", "Ce qu’il vérifie", "Quand l’utiliser"],
+        rows: [
+          ["Schema Markup Validator", "Syntaxe, types et propriétés du vocabulaire Schema.org, graphe complet", "Pendant l’écriture du balisage et pour les types hors résultats enrichis"],
+          ["Test des résultats enrichis", "Éligibilité aux résultats enrichis Google, propriétés obligatoires et recommandées", "Avant mise en ligne d’un gabarit et après chaque correction"],
+          ["Search Console, rapports Améliorations", "Pages valides, non valides ou avec avertissements sur tout le site", "En suivi continu, après indexation"],
+          ["Test manuel dans ChatGPT ou Perplexity", "Ce que les moteurs IA restituent de votre entreprise", "Tous les mois, en complément du suivi de visibilité"],
+        ],
+      },
+      subsections: [
+        {
+          title: "L’outil de test des données structurées de Google existe-t-il encore ?",
+          paragraphs: [
+            "Non, plus sous ce nom. L’ancien Structured Data Testing Tool de Google a été transféré à la communauté Schema.org. La [page du validateur](https://schema.org/docs/validator.html) précise qu’il est basé sur cet ancien outil et qu’il est fourni par Google comme service pour Schema.org.",
+            "Si un tutoriel vous renvoie vers l’ancien outil, utilisez le Schema Markup Validator pour le vocabulaire et le test des résultats enrichis pour l’éligibilité Google. Les deux couvrent ensemble ce que l’ancien outil faisait seul.",
+          ],
+        },
+        {
+          title: "Quelle différence avec le test des résultats enrichis de Google ?",
+          paragraphs: [
+            "Le validateur Schema.org juge le balisage par rapport au vocabulaire : un type Organization avec une propriété inconnue sera signalé, même si Google n’affiche rien de particulier pour ce type. Il est donc utile pour le GEO, où l’on balise bien au-delà des résultats enrichis.",
+            "Le test des résultats enrichis juge le balisage par rapport aux règles d’affichage de Google. Il ignore les types sans résultat enrichi associé et signale les propriétés obligatoires manquantes pour les types qu’il connaît, comme Product, Article ou LocalBusiness.",
+          ],
+          bullets: [
+            "Validateur Schema.org : « ce balisage est-il correct ? »",
+            "Test des résultats enrichis : « Google peut-il en faire quelque chose ? »",
+            "Un balisage peut réussir le premier et être invisible pour le second, et c’est normal",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Comment puis-je tester les résultats enrichis ?",
+      paragraphs: [
+        "Ouvrez le test des résultats enrichis, choisissez « URL » pour une page en ligne ou « Code » pour un extrait, puis lancez le test. L’outil liste les types de résultats enrichis détectés, avec pour chacun les erreurs et les avertissements, et ouvre le code à la ligne concernée.",
+        "L’[aide de l’outil](https://support.google.com/webmasters/answer/7445569?hl=fr) rappelle deux contraintes. Toutes les ressources de la page doivent être accessibles sans identifiant, car une page protégée par mot de passe ou pare-feu n’est pas testée. Les commentaires dans un bloc JSON-LD sont ignorés par l’outil, mais pas par la norme : supprimez-les avant publication.",
+        "Lisez le résultat en trois temps. Une erreur rend l’élément inéligible et doit être corrigée. Un avertissement signale une propriété recommandée absente, qui limite l’affichage sans le bloquer. L’état de l’URL indique enfin si Google a pu charger la page et ses ressources.",
+      ],
+      bullets: [
+        "Testez la version mobile en priorité : c’est le user-agent par défaut de l’outil",
+        "Corrigez dans le mode « Code », relancez, puis vérifiez l’URL réelle après déploiement",
+        "Conservez une capture du résultat : elle servira de référence lors du prochain changement de gabarit",
+      ],
+    },
+    {
+      title: "Qu’est-ce que les données structurées ?",
+      paragraphs: [
+        "Les données structurées sont un balisage ajouté au code d’une page pour décrire son contenu de façon normalisée : cette page parle d’une entreprise, située à cette adresse, ouverte à ces horaires, notée ainsi. Le vocabulaire commun est Schema.org.",
+        "Ce vocabulaire est vaste. La [documentation de Schema.org](https://schema.org/docs/schemas.html) compte 826 types et 1 540 propriétés, organisés en hiérarchie. Une entreprise n’en utilise qu’une poignée : Organization ou LocalBusiness, Service, Article, FAQPage, BreadcrumbList.",
+        "Trois formats existent pour l’écrire. Google [recommande le JSON-LD](https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data?hl=fr), un bloc de script séparé du texte visible, plus simple à gérer à grande échelle que les Microdata ou le RDFa intégrés dans les balises HTML.",
+        "L’adoption suit cette recommandation. D’après le [Web Almanac 2024 de HTTP Archive](https://almanac.httparchive.org/en/2024/structured-data), le JSON-LD est présent sur 41 % des pages analysées, contre 34 % en 2022, tandis que les Microdata restent stables à 26 % des pages.",
+      ],
+    },
+    {
+      title: "Quelles sont les erreurs de balisage les plus fréquentes ?",
+      paragraphs: [
+        "La plupart des balisages échouent pour des raisons simples, que les outils de test repèrent en quelques secondes. D’autres erreurs passent le test mais trahissent les consignes de Google, et celles-là se paient plus tard, par une absence d’affichage ou une action manuelle.",
+        "Les [consignes de Google sur les données structurées](https://developers.google.com/search/docs/appearance/structured-data/sd-policies?hl=fr) sont claires sur un point : le contenu référencé par le balisage doit être visible par l’utilisateur. Une note d’avis, une FAQ ou un prix présents dans le JSON-LD mais absents de la page constituent une infraction.",
+        "Google précise aussi, dans son [introduction aux données structurées](https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data?hl=fr), qu’il vaut mieux fournir moins de propriétés recommandées, mais complètes et exactes, que d’en remplir beaucoup avec des données incomplètes ou imprécises.",
+      ],
+      bullets: [
+        "Erreur de syntaxe JSON : virgule en trop, guillemet manquant, accolade non fermée",
+        "Type ou propriété inexistants dans le vocabulaire, souvent une faute de casse",
+        "Propriété obligatoire absente pour le type visé, par exemple le nom ou l’image",
+        "Valeur qui ne correspond pas au texte visible : horaires, prix, note, auteur",
+        "Deux blocs contradictoires sur la même page, laissés par deux extensions SEO",
+        "Balisage présent sur la version ordinateur mais absent de la version mobile",
+        "Page de test inaccessible au robot : environnement de préproduction protégé",
+      ],
+      subsections: [
+        {
+          title: "Pourquoi mon balisage est valide mais n’apparaît pas dans Google ?",
+          paragraphs: [
+            "Parce que la validité ne donne droit à rien. Google choisit d’afficher ou non un résultat enrichi selon ses règles, qui changent. Le cas le plus connu concerne les FAQ et les tutoriels, deux types très utilisés par les PME.",
+            "Dans une [annonce du 8 août 2023](https://developers.google.com/search/blog/2023/08/howto-faq-changes?hl=fr), Google a indiqué que les résultats enrichis FAQ ne s’afficheraient plus que pour les sites connus, gouvernementaux et de santé. La même annonce, mise à jour le 14 septembre 2023, précise que les résultats HowTo ne sont plus affichés depuis le 13 septembre 2023.",
+            "Un balisage FAQPage valide reste utile : il structure la page pour les moteurs IA et nourrit nos [réponses prêtes à citer](/blog/sources-citees-ia-site-ne-suffit-pas). Il ne faut simplement plus en attendre un affichage spécial dans les résultats classiques.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Comment vérifier les données structurées dans la Search Console ?",
+      paragraphs: [
+        "Les tests page par page ne suffisent pas sur un site de plusieurs centaines d’URL. La Search Console propose, dans sa rubrique « Améliorations », un rapport par type de résultat enrichi détecté, avec le nombre d’éléments valides, valides avec avertissements et non valides.",
+        "D’après l’[aide de ces rapports](https://support.google.com/webmasters/answer/7552505?hl=fr), un élément qui cumule plusieurs problèmes apparaît dans chaque tableau mais n’est compté qu’une fois dans le total des non valides. Si un problème réapparaît dans les 90 jours suivant sa correction, la date affichée reste celle de la première détection.",
+        "La même page rappelle qu’il n’existe pas de bouton « Résoudre ce problème » : les données structurées résident sur votre site, pas sur les serveurs de Google. Corrigez à la source, puis lancez la validation depuis le rapport pour que Google revérifie les URL concernées.",
+      ],
+      bullets: [
+        "Un rapport n’apparaît que si Google a détecté le type sur au moins une page indexée",
+        "Un pic de pages non valides après une mise à jour signale presque toujours un changement de thème ou d’extension",
+        "Le rapport de [suivi de visibilité](/blog/suivre-visibilite-ai-mode-google) dans AI Mode ne remplace pas ces rapports, il les complète",
+      ],
+    },
+    {
+      title: "Comment tester son balisage pour ChatGPT, Perplexity et les Aperçus IA ?",
+      paragraphs: [
+        "Aucun des moteurs IA ne propose d’outil de test officiel. La bonne nouvelle est que les prérequis sont les mêmes que pour Google. La [documentation de Google sur les fonctionnalités IA](https://developers.google.com/search/docs/appearance/ai-features?hl=fr) indique qu’aucune exigence supplémentaire n’est requise pour apparaître dans les Aperçus IA ou le Mode IA.",
+        "La même documentation demande de s’assurer que les données structurées correspondent au texte visible sur la page. C’est exactement ce que les deux outils de test ne vérifient pas, et ce qu’une relecture humaine doit contrôler : nom, adresse, offres, horaires et chiffres identiques dans le balisage et dans le texte.",
+        "Le test final est manuel. Posez à ChatGPT, Perplexity et Gemini les questions que vos clients posent, et comparez la réponse avec votre balisage : nom exact, zone d’intervention, services. Notre méthode pour [suivre sa visibilité dans les IA](/blog/suivre-visibilite-chatgpt-ia) détaille le jeu de questions à utiliser.",
+      ],
+      bullets: [
+        "Balisage et texte visible doivent dire la même chose, au chiffre près",
+        "Un fichier [llms.txt](/blog/llms-txt-guide-pratique) complète le balisage sans le remplacer",
+        "Pour une entreprise locale, le balisage LocalBusiness doit coïncider avec la fiche Google, voir notre guide [GEO local](/blog/geo-local-guide-entreprises)",
+        "Les conditions pour [être visible dans les Aperçus IA](/blog/etre-visible-google-ai-overviews) commencent par une page indexée avec un extrait affichable",
+      ],
+    },
+    {
+      title: "Scénario illustratif : un cabinet d’expertise comptable corrige son balisage",
+      paragraphs: [
+        "Ce scénario est illustratif : il décrit une progression plausible, pas un résultat garanti. Un cabinet d’expertise comptable de trois associés dispose d’un site de 60 pages, balisé par une extension SEO jamais vérifiée depuis l’installation.",
+        "Semaine 1 : test du gabarit de page service dans le Schema Markup Validator. Deux blocs Organization contradictoires sont détectés, l’un avec l’ancienne adresse. Le test des résultats enrichis signale une propriété image manquante sur les articles.",
+        "Semaines 2 et 3 : suppression du bloc en double, passage de Organization à AccountingService, ajout des horaires, de la zone desservie et des images d’articles. Chaque correction est relancée dans le mode « Code » avant déploiement.",
+        "Semaines 4 à 8 : la Search Console fait passer les pages non valides de 38 à 0 après validation. Les tests manuels dans ChatGPT et Perplexity restituent la bonne adresse et la liste des services. Le trafic, lui, bouge peu sur cette période : le balisage corrige un signal, il ne crée pas la demande.",
+      ],
+      bullets: [
+        "Le premier gain est la cohérence des informations restituées, pas le trafic",
+        "Les erreurs venaient d’un cumul d’extensions, pas d’un balisage mal écrit",
+        "Le suivi dans la Search Console évite de refaire ce travail au prochain changement de thème",
+      ],
+    },
+    {
+      title: "Ce qu’il faut retenir",
+      paragraphs: [
+        "Tester son balisage Schema.org prend dix minutes par gabarit et évite des mois de signal perdu. Les outils sont gratuits, officiels et complémentaires.",
+      ],
+      bullets: [
+        "Le Schema Markup Validator vérifie la syntaxe et le vocabulaire, pour tous les types",
+        "Le test des résultats enrichis vérifie ce que Google peut afficher, avec les propriétés obligatoires",
+        "La Search Console surveille l’ensemble du site et date chaque problème",
+        "Un balisage valide n’est pas forcément affiché : FAQ et HowTo en sont la preuve depuis 2023",
+        "Pour les moteurs IA, le seul test est la cohérence entre balisage et texte visible, puis l’essai manuel",
+        "Pour un contrôle complet de vos pages, découvrez [notre offre](/offre) d’audit SEO / GEO",
+      ],
+    },
+  ],
+};
+
 export const septemberArticles: Record<string, BlogArticle> = {
   [suivreVisibilite.slug]: suivreVisibilite,
   [agentIaSurMesure.slug]: agentIaSurMesure,
@@ -3409,6 +3645,7 @@ export const septemberArticles: Record<string, BlogArticle> = {
   [visibiliteAiOverviews.slug]: visibiliteAiOverviews,
   [agentIaTelephonique.slug]: agentIaTelephonique,
   [agentIaArtisan.slug]: agentIaArtisan,
+  [testerSchemaOrg.slug]: testerSchemaOrg,
 };
 
 export const septemberPosts: BlogPostMeta[] = [
@@ -3537,5 +3774,14 @@ export const septemberPosts: BlogPostMeta[] = [
     date: agentIaArtisan.date,
     readingTime: agentIaArtisan.readingTime,
     category: agentIaArtisan.category,
+  },
+  {
+    slug: testerSchemaOrg.slug,
+    title: testerSchemaOrg.title,
+    seoTitle: testerSchemaOrg.seoTitle,
+    description: testerSchemaOrg.description,
+    date: testerSchemaOrg.date,
+    readingTime: testerSchemaOrg.readingTime,
+    category: testerSchemaOrg.category,
   },
 ];
