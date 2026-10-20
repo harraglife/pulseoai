@@ -66,6 +66,15 @@ function buildMentions(names: Array<keyof typeof mentionUrls>): ArticleMention[]
 }
 
 export const articleMetadataBySlug: Record<string, ArticleSchemaEnhancement> = {
+  "agent-ia-vs-chatbot-difference-pme": {
+    about: {
+      "@type": "Thing",
+      name: "Agent IA vs chatbot",
+      description:
+        "Ce qui distingue un chatbot, un assistant IA et un agent IA pour une PME : accès aux outils, autonomie, cas où un chatbot suffit, cas qui demandent un agent, règles de transparence et de protection des données.",
+    },
+    mentions: buildMentions(["OpenAI", "ChatGPT", "Google", "Claude"]),
+  },
   "tester-balisage-schema-org-validateur": {
     about: {
       "@type": "Thing",
