@@ -3630,6 +3630,249 @@ const testerSchemaOrg: ArticleWithTables = {
   ],
 };
 
+const agentIaVsChatbot: ArticleWithTables = {
+  slug: "agent-ia-vs-chatbot-difference-pme",
+  title: "Agent IA vs chatbot : quelle différence pour une PME ?",
+  seoTitle: "Agent IA ou chatbot : lequel choisir pour sa PME",
+  description:
+    "Chatbot, assistant IA, agent IA : ce qui les distingue, quand un chatbot suffit, quand il faut un agent, et les règles à respecter en PME.",
+  date: "20 octobre 2026",
+  dateModified: "20 octobre 2026",
+  readingTime: "10 min",
+  category: "Agents IA",
+  articleSection: "Agents IA",
+  keywords: [
+    "agent IA vs chatbot",
+    "différence agent IA chatbot",
+    "chatbot IA PME",
+    "agent IA PME",
+    "assistant IA ou agent IA",
+    "chatbot ou agent IA",
+    "automatisation IA PME",
+    "agent IA service client",
+  ],
+  intro:
+    "Les éditeurs appellent désormais « agent IA » tout ce qui répond à un message, et beaucoup de PME se retrouvent avec un chatbot rebaptisé. La différence n’est pourtant pas une question de vocabulaire : un chatbot répond, un agent agit dans vos outils. Cet article explique ce qui les sépare, quand l’un suffit, quand l’autre s’impose, et ce que la loi impose dans les deux cas.",
+  quickAnswer: {
+    question: "Quelle est la différence entre un agent IA et un chatbot ?",
+    answer:
+      "Un chatbot est un programme qui répond à des questions dans une fenêtre de conversation, à partir de scénarios ou d’un modèle de langage, sans agir ensuite. Un agent IA reçoit un objectif, décide des étapes, utilise vos outils (messagerie, CRM, logiciel de devis, agenda) et exécute une tâche de bout en bout, avec un niveau d’autonomie que vous réglez. Pour une PME, le chatbot sert à informer et qualifier ; l’agent sert à traiter : qualifier une demande, préparer un devis, relancer, mettre à jour une fiche client.",
+  },
+  contextualLinks: [
+    { label: "nos agents IA pour PME", href: "/agents-ia" },
+    { label: "l’agent IA sur mesure", href: "/blog/agent-ia-sur-mesure-pme" },
+    { label: "l’agent IA téléphonique", href: "/blog/agent-ia-telephonique-pme" },
+    { label: "choisir une agence agents IA", href: "/blog/agence-agents-ia-comment-choisir-prestataire" },
+    { label: "les outils IA pour PME", href: "/blog/outils-ia-pme" },
+  ],
+  bodyCta: {
+    intro: "Vous hésitez entre un chatbot et un agent pour votre activité ?",
+    linkLabel: "Décrivez-nous vos demandes entrantes",
+    href: "/agents-ia",
+    outro: ", on vous dit en un échange ce qu’un chatbot couvre et ce qui demande un agent.",
+  },
+  relatedSlugs: [
+    "agent-ia-sur-mesure-pme",
+    "agent-ia-telephonique-pme",
+    "agence-agents-ia-comment-choisir-prestataire",
+    "outils-ia-pme",
+  ],
+  faqTitle: "FAQ : agent IA ou chatbot pour une PME",
+  faqItems: [
+    {
+      question: "Un chatbot peut-il devenir un agent IA plus tard ?",
+      answer:
+        "Oui, si le chatbot repose sur un modèle de langage et si vos outils offrent un accès à leurs données. On lui ajoute alors des actions, une par une : créer une fiche, envoyer un devis, planifier un rendez-vous. Un chatbot à scénarios fixes, lui, doit être remplacé.",
+    },
+    {
+      question: "Un agent IA remplace-t-il un salarié ?",
+      answer:
+        "Non. Il absorbe les tâches répétitives qui s’accumulent autour d’un poste : tri des demandes, relances, saisie, préparation de documents. Le salarié garde les décisions, les exceptions et la relation client. C’est ce découpage qui rend l’agent rentable sans dégrader le service.",
+    },
+    {
+      question: "Faut-il un développeur pour mettre en place un chatbot ou un agent ?",
+      answer:
+        "Pour un chatbot d’information, non : les outils du marché se configurent sans code. Pour un agent connecté à vos logiciels, il faut au minimum quelqu’un qui sache brancher les accès et écrire les règles, en interne ou via un prestataire.",
+    },
+    {
+      question: "Quel budget prévoir pour commencer ?",
+      answer:
+        "Un chatbot d’information se lance avec un abonnement mensuel modeste. Un agent demande un travail de cadrage et d’intégration initial, puis un coût d’usage lié au volume traité. Le bon réflexe est de chiffrer d’abord le temps perdu chaque semaine sur la tâche visée.",
+    },
+    {
+      question: "Mes clients doivent-ils savoir qu’ils parlent à une IA ?",
+      answer:
+        "Oui. Le règlement européen sur l’IA impose d’informer les personnes qu’elles interagissent avec un système d’IA, sauf quand c’est évident. Un message clair en début de conversation suffit, et il rassure plus qu’il n’inquiète.",
+    },
+  ],
+  sections: [
+    {
+      title: "Quelle est la différence entre un agent IA et un chatbot ?",
+      paragraphs: [
+        "La différence tient à trois mots : objectif, outils, autonomie. Un chatbot reçoit une question et produit une réponse. Un agent IA reçoit un objectif, choisit les étapes pour l’atteindre, utilise des outils et vérifie le résultat avant de rendre la main.",
+        "Anthropic formalise cette distinction dans son guide [Building effective agents](https://www.anthropic.com/research/building-effective-agents) : les workflows orchestrent un modèle et des outils selon des chemins prédéfinis, tandis que les agents laissent le modèle diriger lui-même son processus et son usage des outils.",
+        "Pour une PME, cette définition se traduit simplement. Le chatbot informe et oriente ; l’agent traite le dossier. Notre page [agents IA pour PME](/agents-ia) détaille les tâches concernées, et notre guide sur [l’agent IA sur mesure](/blog/agent-ia-sur-mesure-pme) explique comment un agent se construit autour de vos outils.",
+      ],
+      table: {
+        caption: "Chatbot, assistant IA et agent IA : ce qui les distingue",
+        headers: ["Critère", "Chatbot", "Assistant IA", "Agent IA"],
+        rows: [
+          ["Point de départ", "Une question", "Une demande ponctuelle", "Un objectif à atteindre"],
+          ["Accès à vos outils", "Aucun ou lecture seule", "Lecture, parfois rédaction", "Lecture et actions : CRM, devis, agenda, messagerie"],
+          ["Autonomie", "Nulle, suit un scénario ou répond", "Faible, attend chaque instruction", "Réglable, de la proposition à l’exécution"],
+          ["Résultat", "Une réponse", "Un brouillon, un résumé", "Une tâche terminée, avec compte rendu"],
+          ["Cas type en PME", "FAQ sur le site, horaires, suivi de commande", "Rédaction d’emails, synthèse de documents", "Qualification, devis, relances, prise de rendez-vous"],
+        ],
+      },
+    },
+    {
+      title: "C’est quoi un chatbot IA ?",
+      paragraphs: [
+        "Un chatbot IA est un programme de conversation qui comprend une question en langage courant et y répond, dans une fenêtre sur votre site, sur WhatsApp ou par SMS. Les premiers suivaient des arbres de décision ; les actuels s’appuient sur un modèle de langage et sur vos documents.",
+        "Son périmètre reste la réponse. Il peut expliquer vos offres, donner un horaire, orienter vers un formulaire, parfois collecter un email. Il ne crée pas la fiche client, n’envoie pas le devis et ne rappelle pas le prospect trois jours plus tard.",
+        "C’est aussi l’usage le plus répandu. Le [Baromètre France Num 2026](https://www.entreprises.gouv.fr/espace-presse/barometre-france-num-2026-quatre-tpe-pme-sur-dix-utilisent-desormais-lintelligence) publié par la DGE compte 24 % de TPE-PME qui utilisent des chatbots, assistants ou outils de recherche d’information, en hausse de 10 points en un an.",
+      ],
+      subsections: [
+        {
+          title: "Quelle est la différence entre un chatbot et un bot ?",
+          paragraphs: [
+            "Un bot est un programme automatique quelconque : il peut publier, surveiller, relancer, sans conversation. Un chatbot est un bot spécialisé dans l’échange avec une personne. Tous les chatbots sont des bots ; l’inverse est faux.",
+            "Un agent IA emprunte aux deux. Il converse comme un chatbot quand il a besoin d’une information, et agit comme un bot quand il exécute une tâche dans vos outils. La nouveauté est qu’il décide lui-même de l’enchaînement.",
+          ],
+        },
+        {
+          title: "Quelle est la différence entre ChatGPT et un chatbot ?",
+          paragraphs: [
+            "ChatGPT est un assistant généraliste : il répond à tout, mais ne connaît ni vos tarifs ni vos clients, et n’agit pas dans vos logiciels. Un chatbot d’entreprise est limité à votre périmètre, branché sur vos contenus, et affiché là où vos clients vous cherchent.",
+            "Beaucoup de chatbots d’entreprise utilisent d’ailleurs un modèle d’OpenAI, de Google, d’Anthropic ou de Mistral en coulisses. Ce qui change, c’est le cadre : vos données, vos règles, votre ton, et les actions autorisées.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "C’est quoi un agent IA ?",
+      paragraphs: [
+        "Un agent IA est un logiciel qui reçoit un objectif, par exemple « traiter cette demande de devis », et qui enchaîne lui-même les étapes : lire l’email, poser les questions manquantes, consulter la grille tarifaire, préparer le devis, l’envoyer après validation, planifier la relance.",
+        "Ce qui le rend possible, c’est l’accès aux outils. Un agent lit et écrit dans votre messagerie, votre CRM, votre logiciel de facturation, votre agenda. Sans ces accès, il redevient un chatbot, aussi brillant soit le modèle qui l’anime.",
+        "Ce qui le rend sûr, c’est le réglage de l’autonomie. En PME, l’agent prépare et propose ; une personne valide les envois sensibles. Notre article sur [l’agent IA pour artisan](/blog/agent-ia-artisan-devis-relances) montre ce découpage sur les devis et les relances.",
+      ],
+      bullets: [
+        "Un objectif plutôt qu’une question",
+        "Des outils connectés plutôt qu’une base de réponses",
+        "Une suite d’actions plutôt qu’un message",
+        "Un compte rendu plutôt qu’une conversation qui s’arrête",
+      ],
+      subsections: [
+        {
+          title: "Quelle est la différence entre un agent d’IA et un assistant IA ?",
+          paragraphs: [
+            "L’assistant IA travaille avec vous, instruction par instruction : « résume ce document », « rédige cette réponse ». Il accélère une personne, mais ne fait rien sans elle. L’agent IA travaille pour vous : il reçoit l’objectif, puis revient avec le résultat.",
+            "La frontière bouge vite, car les assistants gagnent des actions. Le critère pratique reste le même : si l’outil peut terminer une tâche pendant que vous êtes en rendez-vous, c’est un agent. S’il attend votre prochaine phrase, c’est un assistant.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Pourquoi la question se pose maintenant pour les PME ?",
+      paragraphs: [
+        "Parce que l’usage de l’IA a basculé en un an. Le [Baromètre France Num 2026](https://www.entreprises.gouv.fr/espace-presse/barometre-france-num-2026-quatre-tpe-pme-sur-dix-utilisent-desormais-lintelligence) mesure 40 % de TPE-PME utilisatrices de solutions d’IA, en hausse de 14 points, et 11 % qui automatisent des tâches, en hausse de 6 points.",
+        "Les clients ont pris les devants. D’après le [Baromètre du numérique 2026 de l’Arcep](https://www.arcep.fr/actualites/actualites-et-communiques/detail/n/equipements-et-usages-du-numerique-090226.html), 48 % de la population utilise l’IA générative, soit 15 points de plus en un an. Ils attendent une réponse immédiate, y compris le soir.",
+        "Les grandes entreprises passent déjà à l’échelle. L’enquête [State of AI 2026 de McKinsey](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai) indique que 40 % des répondants des grandes organisations déploient des agents à l’échelle, contre 22 % dans les organisations plus petites, une part restée stable.",
+        "L’écart de taille est ancien. Selon [Eurostat](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Use_of_artificial_intelligence_in_enterprises), 17 % des petites entreprises de l’Union utilisaient l’IA en 2025, contre 30,36 % des moyennes et 55,03 % des grandes. Les agents sont l’occasion de réduire cet écart sans recruter.",
+      ],
+    },
+    {
+      title: "Quand un chatbot suffit-il à une PME ?",
+      paragraphs: [
+        "Un chatbot suffit quand le besoin est d’informer vite et souvent, sans suite à donner dans vos outils. Les questions sont répétitives, les réponses sont stables, et l’action qui suit reste simple : cliquer sur un lien, remplir un formulaire, appeler.",
+        "C’est le cas des horaires, des conditions de livraison, du suivi de commande, des questions sur une offre, du premier tri d’une demande de support. Le chatbot décharge le téléphone et l’email, et il travaille la nuit.",
+        "Il montre ses limites dès que la demande exige une action : créer un dossier, vérifier un stock, proposer un créneau réel, envoyer un document personnalisé. À ce moment, le chatbot renvoie vers un humain, et la file d’attente recommence.",
+      ],
+      bullets: [
+        "Vous répondez dix fois par jour aux mêmes questions",
+        "Les réponses se trouvent dans vos pages ou vos documents",
+        "Aucune action dans un logiciel n’est nécessaire après la réponse",
+        "Le volume justifie une présence 24 h/24 sans astreinte",
+      ],
+    },
+    {
+      title: "Quand faut-il un agent IA ?",
+      paragraphs: [
+        "Il faut un agent quand la valeur se trouve dans l’action, pas dans la réponse. Une demande de devis non traitée sous 48 heures, une facture non relancée, une fiche client non mise à jour coûtent plus cher qu’une question restée sans réponse.",
+        "L’agent s’impose aussi quand la tâche traverse plusieurs outils. Lire l’email, consulter le CRM, préparer le document, planifier le rendez-vous, informer le client : un chatbot s’arrête à la première étape, l’agent les enchaîne.",
+        "Le téléphone est un cas particulier. Un [agent IA téléphonique](/blog/agent-ia-telephonique-pme) décroche, qualifie, prend rendez-vous et transfère les urgences. Il ne se contente pas de répondre : il agit dans l’agenda et dans le CRM pendant l’appel.",
+      ],
+      bullets: [
+        "La tâche a un début, une fin et un résultat vérifiable",
+        "Elle demande de lire et d’écrire dans au moins deux outils",
+        "Les règles sont connues : délais, tarifs, zones, exceptions",
+        "Une validation humaine reste possible avant les envois sensibles",
+      ],
+      subsections: [
+        {
+          title: "Peut-on combiner un chatbot et un agent IA ?",
+          paragraphs: [
+            "Oui, et c’est souvent la bonne architecture. Le chatbot tient la conversation en façade, répond aux questions simples et collecte ce qui manque. Dès qu’une action est nécessaire, il passe la main à l’agent, qui travaille en coulisses et revient avec le résultat.",
+            "Cette répartition évite de donner trop d’autonomie à l’outil visible du client, tout en traitant réellement les demandes. Notre guide [comment utiliser l’IA dans son entreprise](/blog/comment-utiliser-ia-entreprise) décrit cette progression par étapes.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Quel est le meilleur agent IA ?",
+      paragraphs: [
+        "Il n’existe pas de meilleur agent IA en général, seulement un agent adapté à une tâche, à vos outils et à votre niveau de contrôle. Comparer des agents sur leurs démonstrations revient à comparer des recrutements sur l’entretien d’embauche.",
+        "La prudence est de mise sur le marché. Dans un [communiqué du 25 juin 2025](https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027), Gartner estime que plus de 40 % des projets d’agents IA seront abandonnés d’ici fin 2027, et que seuls 130 fournisseurs environ, sur des milliers, proposent de vrais agents.",
+        "Le même communiqué décrit l’« agent washing », le fait de renommer un chatbot ou un assistant en agent. Le même cabinet prévoit pourtant qu’au moins 15 % des décisions quotidiennes de travail seront prises de façon autonome par des agents IA d’ici 2028. Le marché est réel, les étiquettes le sont moins.",
+        "Pour trancher, posez trois questions à chaque solution : à quels outils se connecte-t-elle réellement, quelles actions peut-elle exécuter seule, et comment je valide ou j’annule. Notre guide sur les [outils IA pour PME](/blog/outils-ia-pme) et notre article pour [choisir une agence agents IA](/blog/agence-agents-ia-comment-choisir-prestataire) complètent cette grille.",
+      ],
+      bullets: [
+        "Demandez une démonstration sur vos propres emails et vos propres documents",
+        "Exigez la liste exacte des actions possibles et des accès requis",
+        "Vérifiez qu’un humain peut reprendre la main à tout moment",
+        "Commencez par une tâche, mesurez, puis étendez",
+      ],
+    },
+    {
+      title: "Quelles règles s’appliquent aux chatbots et aux agents IA en PME ?",
+      paragraphs: [
+        "La première règle est la transparence. L’[article 50 du règlement européen sur l’IA](https://artificialintelligenceact.eu/article/50/) impose aux systèmes conçus pour interagir avec des personnes de les informer qu’elles ont affaire à une IA, sauf si c’est évident. Cette obligation entre en application le 2 août 2026.",
+        "La deuxième est la protection des données. Un agent qui lit vos emails et votre CRM traite des données personnelles : limitez ses accès au strict nécessaire, documentez ce qu’il fait, et choisissez un fournisseur qui n’entraîne pas ses modèles sur vos données.",
+        "La troisième est la responsabilité. Un devis, un engagement de délai ou une réponse à un litige envoyés par un agent engagent votre entreprise comme s’ils venaient d’un salarié. D’où l’importance de la validation humaine sur les envois sensibles.",
+      ],
+    },
+    {
+      title: "Scénario illustratif : une PME de services B2B passe du chatbot à l’agent",
+      paragraphs: [
+        "Ce scénario est illustratif : il décrit une progression plausible, pas un résultat garanti. Une société de maintenance industrielle de 18 personnes a installé un chatbot sur son site il y a un an. Il répond aux questions sur les zones et les délais, puis renvoie vers un formulaire que personne ne traite avant le lendemain.",
+        "Semaines 1 et 2 : cadrage. L’équipe liste les demandes des trois derniers mois et constate que 70 % relèvent de trois cas : demande d’intervention, demande de devis, question sur une facture. Les règles de priorité et de tarification sont écrites noir sur blanc.",
+        "Semaines 3 à 5 : l’agent est branché sur la messagerie, le CRM et l’outil de planification. Il qualifie chaque demande, crée le dossier, propose un créneau d’intervention ou un brouillon de devis, et signale les urgences par SMS au responsable. Le chatbot reste en façade.",
+        "Semaines 6 à 8 : le délai moyen de première réponse passe d’un jour ouvré à moins d’une heure, et les demandes perdues entre le formulaire et le CRM disparaissent. Le responsable valide les devis chaque soir en vingt minutes. Le chiffre d’affaires, lui, dépend toujours de la qualité des interventions.",
+      ],
+      bullets: [
+        "Le chatbot n’a pas été jeté : il a été relié à un agent",
+        "Le premier gain est le délai de réponse et la fin des demandes perdues",
+        "Le cadrage des règles a pris plus de temps que la technique",
+      ],
+    },
+    {
+      title: "Ce qu’il faut retenir",
+      paragraphs: [
+        "Chatbot et agent IA ne sont pas deux générations du même outil, mais deux fonctions différentes : répondre et agir. La bonne question n’est pas « lequel est le plus avancé », mais « où se perd le temps dans mon entreprise ».",
+      ],
+      bullets: [
+        "Un chatbot répond à des questions ; un agent IA atteint un objectif en agissant dans vos outils",
+        "Un assistant IA accélère une personne ; un agent travaille pendant son absence",
+        "Le chatbot suffit pour informer ; l’agent s’impose dès qu’une action dans un logiciel est nécessaire",
+        "Les deux se combinent : le chatbot en façade, l’agent en coulisses",
+        "Méfiez-vous des étiquettes : exigez la liste des actions réelles et un contrôle humain",
+        "Informez vos clients qu’ils parlent à une IA, et limitez les accès aux données",
+        "Pour cadrer votre premier périmètre, découvrez [nos agents IA](/agents-ia) et [notre offre](/offre)",
+      ],
+    },
+  ],
+};
+
 export const septemberArticles: Record<string, BlogArticle> = {
   [suivreVisibilite.slug]: suivreVisibilite,
   [agentIaSurMesure.slug]: agentIaSurMesure,
@@ -3646,6 +3889,7 @@ export const septemberArticles: Record<string, BlogArticle> = {
   [agentIaTelephonique.slug]: agentIaTelephonique,
   [agentIaArtisan.slug]: agentIaArtisan,
   [testerSchemaOrg.slug]: testerSchemaOrg,
+  [agentIaVsChatbot.slug]: agentIaVsChatbot,
 };
 
 export const septemberPosts: BlogPostMeta[] = [
@@ -3783,5 +4027,14 @@ export const septemberPosts: BlogPostMeta[] = [
     date: testerSchemaOrg.date,
     readingTime: testerSchemaOrg.readingTime,
     category: testerSchemaOrg.category,
+  },
+  {
+    slug: agentIaVsChatbot.slug,
+    title: agentIaVsChatbot.title,
+    seoTitle: agentIaVsChatbot.seoTitle,
+    description: agentIaVsChatbot.description,
+    date: agentIaVsChatbot.date,
+    readingTime: agentIaVsChatbot.readingTime,
+    category: agentIaVsChatbot.category,
   },
 ];
