@@ -1128,7 +1128,7 @@ const newArticles: Record<string, BlogArticle> = {
         title: "Combien coûte un référencement ChatGPT ?",
         paragraphs: [
           "Il n'existe pas de prix standard pour un référencement ChatGPT. Le budget dépend entièrement de votre point de départ : votre visibilité actuelle dans les IA, votre secteur, vos concurrents déjà cités et l'ampleur du travail sur vos contenus et vos sources externes. La seule façon d'obtenir un chiffre fiable est de mesurer d'abord votre situation.",
-          "Une chose est certaine : le référencement ChatGPT ne s'achète pas. Il n'existe aucune publicité ni placement payant dans les réponses de ChatGPT, Perplexity ou Gemini. L'investissement sert à construire ce que les IA recherchent réellement : un site lisible, des contenus qui répondent aux questions, des sources externes qui citent votre marque et un suivi de votre visibilité.",
+          "Une chose est certaine : le référencement ChatGPT ne s'achète pas. Il n'existe aucune publicité ni placement payant dans les réponses de ChatGPT, Perplexity ou Gemini. L'investissement sert à construire ce que les IA recherchent réellement : un site lisible, des contenus qui répondent aux questions, des sources externes qui citent votre marque et un suivi de votre visibilité. Ce suivi se construit avec un jeu de prompts relevé chaque semaine, comme expliqué dans [suivre sa visibilité dans ChatGPT](/blog/suivre-visibilite-chatgpt-ia).",
           "Méfiez-vous des grilles tarifaires standardisées : deux entreprises du même secteur peuvent avoir des besoins radicalement différents selon ce que les IA disent déjà d'elles. Le bon réflexe est de commencer par un audit de visibilité IA : il révèle où vous apparaissez, quels concurrents sont cités à votre place et quels leviers auront le plus d'impact. C'est sur cette base qu'un accompagnement sérieux se construit.",
         ],
       },
@@ -1380,7 +1380,7 @@ const newArticles: Record<string, BlogArticle> = {
         title: "Pourquoi cette méthode aide à décider",
         paragraphs: [
           "Un bon audit SEO / GEO ne livre pas seulement un constat. Il hiérarchise les priorités. Quelles pages revoir, quels contenus créer, quelles sources renforcer et quels concurrents surveiller.",
-          "Pour un dirigeant ou un responsable marketing, c’est ce qui rend la visibilité IA mesurable, pilotable et plus utile au business.",
+          "Pour un dirigeant ou un responsable marketing, c’est ce qui rend la visibilité IA mesurable, pilotable et plus utile au business. Une fois l’audit livré, la mesure se poursuit chaque semaine avec un jeu de prompts fixe : nous décrivons cette routine dans [suivre sa visibilité dans ChatGPT, Perplexity et Gemini](/blog/suivre-visibilite-chatgpt-ia).",
         ],
         bullets: [
           "Actions à lancer en premier",
@@ -1957,7 +1957,7 @@ const newArticles: Record<string, BlogArticle> = {
       {
         title: "Comment savoir si vos concurrents sont mentionnés dans les réponses IA ?",
         paragraphs: [
-          "Pour savoir si vos concurrents sont mentionnés dans les réponses IA, posez à ChatGPT, Perplexity et Gemini les questions que vos clients posent réellement, en navigation privée. Relevez les marques citées, leur ordre d’apparition et les sources utilisées. Répétez le test chaque mois pour suivre l’évolution de votre visibilité.",
+          "Pour savoir si vos concurrents sont mentionnés dans les réponses IA, posez à ChatGPT, Perplexity et Gemini les questions que vos clients posent réellement, en navigation privée. Relevez les marques citées, leur ordre d’apparition et les sources utilisées. Répétez le test chaque mois pour suivre l’évolution de votre visibilité. La méthode détaillée, avec les indicateurs à noter et les outils qui automatisent le relevé, est dans [suivre sa visibilité dans ChatGPT, Perplexity et Gemini](/blog/suivre-visibilite-chatgpt-ia).",
           "La méthode la plus fiable reste le test manuel. Ouvrez ChatGPT, Perplexity et Gemini sans être connecté à un compte, ou en navigation privée, pour limiter l’influence de votre historique. Posez ensuite les questions qu’un client poserait avant d’acheter.",
           "Quelques exemples de prompts à tester : « quel est le meilleur [votre service] à [votre ville] ? », « quelle entreprise recommandes-tu pour [le problème que vous résolvez] ? », « compare [votre marque] et [votre concurrent] ». Adaptez les formulations à votre secteur : un hôtel testera « où dormir à [ville] », un e-commerçant « quel [produit] choisir ».",
           "Notez chaque résultat dans un tableau de suivi : la requête testée, l’IA interrogée, les marques citées, votre présence ou absence, et les sources mentionnées dans la réponse. Les réponses des IA varient d’une session à l’autre : testez chaque prompt deux ou trois fois avant de tirer une conclusion.",
