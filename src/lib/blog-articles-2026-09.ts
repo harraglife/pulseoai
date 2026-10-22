@@ -25,10 +25,10 @@ const suivreVisibilite: ArticleWithTables = {
   title: "Suivre sa visibilité dans ChatGPT, Perplexity et Gemini : méthode et outils",
   seoTitle: "Suivre sa visibilité dans ChatGPT : méthode et outils",
   description:
-    "Méthode manuelle avec un jeu de prompts, indicateurs à suivre, comparatif des outils et ce que la Search Console mesure vraiment sur AI Overviews et AI Mode.",
+    "Méthode avec un jeu de prompts, indicateurs, comparatif des outils 2026, suivi multi-villes et agences, GA4 et ce que mesure la Search Console.",
   date: "12 septembre 2026",
-  dateModified: "12 septembre 2026",
-  readingTime: "12 min",
+  dateModified: "22 octobre 2026",
+  readingTime: "17 min",
   category: "SEO IA",
   articleSection: "SEO IA",
   keywords: [
@@ -39,19 +39,25 @@ const suivreVisibilite: ArticleWithTables = {
     "outil suivi ChatGPT",
     "Share of Model",
     "AI Overviews",
+    "suivre présence de marque ChatGPT",
+    "outil visibilité IA",
+    "comparer visibilité concurrents ChatGPT",
   ],
   intro:
     "Vous avez tapé le nom de votre entreprise dans ChatGPT, vous avez vu une réponse, et vous ne savez toujours pas si vous êtes visible. C’est normal : une réponse d’IA n’est ni une position ni un classement. Elle change d’un jour à l’autre, d’un compte à l’autre, d’un moteur à l’autre. Voici comment la mesurer proprement, à la main puis avec un outil.",
   quickAnswer: {
     question: "Comment suivre sa visibilité dans ChatGPT ?",
     answer:
-      "Suivre sa visibilité dans ChatGPT consiste à poser régulièrement le même jeu de questions, celles que vos clients posent réellement, puis à noter si votre entreprise est mentionnée, si votre site est cité comme source, et qui apparaît à votre place. La mesure se répète chaque semaine sur plusieurs moteurs (ChatGPT, Perplexity, Gemini) pour dégager une tendance. Un outil de suivi automatise cette répétition, mais la méthode manuelle suffit pour démarrer.",
+      "Suivre sa visibilité dans ChatGPT consiste à poser chaque semaine le même jeu de 20 à 30 questions, celles que vos clients posent réellement, puis à noter si votre entreprise est mentionnée, si votre site est cité comme source et quels concurrents apparaissent à votre place. On obtient une part de présence, comparable dans le temps et face aux concurrents, sur ChatGPT, Perplexity et Gemini. Un outil de suivi automatise le relevé, les rapports et le multi-villes ; un tableur suffit pour démarrer.",
   },
   contextualLinks: [
     { label: "notre agence de référencement ChatGPT", href: "/" },
     { label: "auditer sa visibilité IA", href: "/blog/audit-seo-geo-visibilite-ia" },
     { label: "apparaître sur ChatGPT", href: "/blog/referencement-chatgpt-apparaitre-ia" },
     { label: "notre offre GEO", href: "/offre" },
+    { label: "suivre sa visibilité dans l’AI Mode de Google", href: "/blog/suivre-visibilite-ai-mode-google" },
+    { label: "choisir entre suite SEO et plateforme GEO dédiée", href: "/blog/outil-geo-suite-seo-ou-plateforme-dediee" },
+    { label: "comprendre pourquoi ChatGPT recommande un concurrent", href: "/blog/chatgpt-recommande-concurrent-pourquoi" },
   ],
   bodyCta: {
     intro: "Vous voulez savoir où vous en êtes avant de construire votre suivi ?",
@@ -63,6 +69,8 @@ const suivreVisibilite: ArticleWithTables = {
     "audit-seo-geo-visibilite-ia",
     "sources-citees-ia-site-ne-suffit-pas",
     "google-ai-overviews-entreprises-comprendre",
+    "suivre-visibilite-ai-mode-google",
+    "outil-geo-suite-seo-ou-plateforme-dediee",
   ],
   faqTitle: "FAQ : suivre sa visibilité dans les IA",
   faqItems: [
@@ -90,6 +98,16 @@ const suivreVisibilite: ArticleWithTables = {
       question: "La Search Console suffit-elle pour mesurer sa visibilité IA ?",
       answer:
         "Non. Elle mesure uniquement les impressions de vos pages dans les fonctionnalités IA de Google (AI Overviews et AI Mode), sans les clics ni les requêtes. Elle ne dit rien de ChatGPT, Perplexity ou Gemini. C’est une brique du suivi, pas le suivi.",
+    },
+    {
+      question: "Un outil peut-il mesurer la visibilité de plusieurs villes ou établissements séparément ?",
+      answer:
+        "Oui, à condition de construire un jeu de prompts par ville ou par établissement, avec le nom de la ville dans chaque question. Les plateformes de suivi permettent de choisir le pays et souvent la localisation simulée, puis de comparer les résultats établissement par établissement. En manuel, un onglet de tableur par ville suffit.",
+    },
+    {
+      question: "Mon site est sur WordPress : faut-il un outil de suivi particulier ?",
+      answer:
+        "Non. Les outils de suivi de visibilité IA interrogent les moteurs, pas votre site, donc votre CMS n’a aucune importance. WordPress compte seulement pour la partie action : vérifier que le fichier robots.txt n’exclut pas les robots des IA, publier des pages qui répondent aux prompts et ajouter un balisage Schema.org via une extension.",
     },
   ],
   sections: [
@@ -155,39 +173,103 @@ const suivreVisibilite: ArticleWithTables = {
       ],
     },
     {
+      title: "Comment suivre la présence de marque dans ChatGPT ?",
+      paragraphs: [
+        "La présence de marque regroupe tout ce que ChatGPT dit de vous quand il vous nomme : à quelle fréquence, dans quel ordre, avec quelles informations et à partir de quelles sources. Elle se suit avec les mêmes prompts que la visibilité, mais on y ajoute une lecture qualitative.",
+        "Depuis l’arrivée de la recherche intégrée, [ChatGPT lance une recherche web dès qu’une question peut en bénéficier](https://help.openai.com/en/articles/9237897-chatgpt-search) et affiche des citations dans sa réponse. Ces citations sont la matière première du suivi de marque : elles disent d’où vient ce que l’IA raconte sur vous.",
+      ],
+      subsections: [
+        {
+          title: "Comment mesurer la visibilité de la marque sur ChatGPT ?",
+          paragraphs: [
+            "Cinq indicateurs suffisent pour une PME. Ils se calculent chaque semaine à partir du tableur, ou se lisent directement dans un outil de suivi. Le premier est le seul indispensable, les quatre autres expliquent ses variations.",
+          ],
+          bullets: [
+            "Part de présence : nombre de prompts où vous êtes nommé, divisé par le nombre total de prompts testés.",
+            "Taux de citation : nombre de prompts où votre site apparaît comme source cliquable, sur le total des prompts.",
+            "Rang moyen de mention : quand plusieurs entreprises sont citées, à quelle place vous apparaissez en moyenne.",
+            "Exactitude : les informations données sur vous (adresse, horaires, services, tarifs) sont-elles justes et à jour ?",
+            "Sources dominantes : les trois pages tierces que l’IA cite le plus souvent sur vos prompts, à travailler en priorité.",
+          ],
+        },
+        {
+          title: "Comment suivre les mentions de marque par ChatGPT ?",
+          paragraphs: [
+            "Les prompts de marque (« que vaut l’entreprise X ? », « avis sur X », « X ou Y ? ») se traitent à part. On note la réponse complète, pas seulement oui ou non, car c’est ici que les erreurs factuelles et les comparaisons défavorables apparaissent.",
+            "Relisez ces réponses une fois par mois. Une adresse obsolète, un service que vous ne proposez plus ou un concurrent présenté comme « plus abordable » sont des signaux d’action : corriger la fiche Google, la page concernée du site et les annuaires qui servent de sources.",
+          ],
+        },
+        {
+          title: "Pourquoi ChatGPT donne des réponses différentes à la même question, et comment mesurer malgré tout ?",
+          paragraphs: [
+            "ChatGPT génère chaque réponse à la volée. Deux personnes qui posent la même question au même moment n’obtiennent pas le même texte, et la liste des entreprises citées change d’une génération à l’autre. Ce n’est pas un bug, c’est le fonctionnement d’un modèle de langage.",
+            "La parade est statistique : un prompt se relance plusieurs fois, et l’on compte la proportion de réponses qui vous citent. Les outils de suivi relancent chaque prompt quotidiennement et moyennent les résultats sur la période. En manuel, trois relances par prompt et par semaine donnent déjà un chiffre lisible.",
+            "La localisation ajoute une seconde source de variation : [ChatGPT collecte une localisation générale à partir de l’adresse IP](https://help.openai.com/en/articles/9237897-chatgpt-search) et peut la transmettre aux moteurs de recherche qu’il interroge. Un prompt local testé depuis Nantes et depuis Paris peut donc donner deux réponses différentes, d’où l’intérêt de nommer la ville dans la question.",
+          ],
+        },
+      ],
+    },
+    {
       title: "Comment analyser la visibilité IA de ses concurrents ?",
       paragraphs: [
         "C’est la partie la plus rentable du suivi, et la plus négligée. Votre tableur contient déjà l’information : la colonne « concurrents nommés ». Au bout de quatre semaines, comptez les occurrences. Vous obtenez la liste des trois ou quatre entreprises que les IA recommandent à votre place, et sur quels types de prompts.",
         "Ensuite, regardez pourquoi. Ouvrez les sources citées par l’IA sur ces prompts. Dans la grande majorité des cas, ce ne sont pas les sites des concurrents mais des pages tierces : annuaires, comparatifs, articles de presse locale, fiches Google, avis. Le concurrent est visible parce que des tiers parlent de lui. C’est là que se joue l’écart, et c’est exactement ce que nous décrivons dans notre méthode pour [apparaître sur ChatGPT](/blog/referencement-chatgpt-apparaitre-ia). Les six bases à vérifier avant d’agir sont résumées dans [comment se référencer sur ChatGPT](/blog/apparaitre-chatgpt-client-cherche-entreprise).",
       ],
+      subsections: [
+        {
+          title: "Comment comparer sa visibilité à celle de ses concurrents dans ChatGPT ?",
+          paragraphs: [
+            "La comparaison se fait sur le même jeu de prompts, le même moteur et la même période, sinon elle ne vaut rien. Choisissez trois concurrents au maximum : ceux que l’IA nomme le plus souvent sur vos prompts de découverte, pas ceux que vous considérez comme vos rivaux historiques.",
+            "Le tableau ci-dessous montre le format minimal d’une comparaison hebdomadaire. Les chiffres sont fictifs et servent uniquement à illustrer la lecture : l’écart sur les prompts de découverte est le plus important, car ce sont ceux qui apportent de nouveaux clients.",
+          ],
+          table: {
+            caption: "Exemple de comparaison sur 20 prompts, un moteur, une semaine (chiffres fictifs)",
+            headers: ["Entreprise", "Découverte (10 prompts)", "Comparaison (6 prompts)", "Marque (4 prompts)", "Part de présence"],
+            rows: [
+              ["Vous", "2", "3", "4", "45 %"],
+              ["Concurrent A", "7", "5", "1", "65 %"],
+              ["Concurrent B", "4", "2", "0", "30 %"],
+              ["Concurrent C", "1", "1", "0", "10 %"],
+            ],
+          },
+        },
+        {
+          title: "Que faire quand ChatGPT recommande un concurrent à votre place ?",
+          paragraphs: [
+            "Ouvrez les sources citées sur ces prompts et classez-les : avis, annuaires, presse, comparatifs, site du concurrent. Chaque catégorie désigne une action différente, et dans la plupart des cas le concurrent ne fait rien de spécial, il est simplement mieux documenté par des tiers.",
+            "Nous détaillons les causes les plus fréquentes et la façon d’y répondre dans [pourquoi ChatGPT recommande un concurrent](/blog/chatgpt-recommande-concurrent-pourquoi). Le suivi sert ensuite à vérifier, semaine après semaine, que l’écart se réduit.",
+          ],
+        },
+      ],
     },
     {
       title: "Quel outil pour suivre sa visibilité dans ChatGPT, Gemini et Perplexity au même endroit ?",
       paragraphs: [
-        "Dès que le jeu de prompts dépasse une trentaine de questions, ou que vous suivez plusieurs villes, la méthode manuelle prend trop de temps. Les outils ci-dessous automatisent le relevé : ils posent vos prompts chaque jour, détectent les mentions, listent les sources citées et tracent l’évolution. Les caractéristiques indiquées viennent des pages officielles des éditeurs au moment de la publication ; les tarifs changent souvent, vérifiez-les sur leur site.",
+        "Dès que le jeu de prompts dépasse une trentaine de questions, ou que vous suivez plusieurs villes, la méthode manuelle prend trop de temps. Les outils ci-dessous automatisent le relevé : ils posent vos prompts chaque jour, détectent les mentions, listent les sources citées et tracent l’évolution. Les caractéristiques indiquées viennent des pages officielles des éditeurs, relues en octobre 2026 ; les tarifs changent souvent, vérifiez-les sur leur site.",
+        "Le choix dépend moins du prix que de trois questions : combien de prompts et de moteurs vous suivez, combien de marques ou de villes vous gérez, et qui lira les rapports. Nous développons l’arbitrage entre suite SEO et plateforme spécialisée dans [outil GEO : suite SEO ou plateforme dédiée](/blog/outil-geo-suite-seo-ou-plateforme-dediee).",
       ],
       table: {
-        caption: "Comparatif des principaux outils de suivi de visibilité IA (septembre 2026)",
+        caption: "Comparatif des principaux outils de suivi de visibilité IA (relu en octobre 2026)",
         headers: ["Outil", "Ce que dit la page officielle", "Pour qui"],
         rows: [
           [
             "[Qwairy](https://www.qwairy.co/pricing)",
-            "Outil français. Plan Starter facturé 790 € HT par an, 1 300 crédits par mois, 1 espace de travail, connexion Search Console et Bing Webmaster Tools.",
+            "Outil français. Plan Starter à 79 € HT par mois, ou 790 € HT par an, 2 500 crédits par mois (1 crédit par prompt, par moteur et par relevé), prompts illimités, 1 espace de travail. Plan Growth à 199 € par mois avec 2 espaces et 10 000 crédits.",
             "PME française qui veut un outil en français et un budget annuel connu d’avance.",
           ],
           [
             "[Peec AI](https://peec.ai/pricing)",
-            "Éditeur allemand. Plan Starter : 50 prompts, 3 modèles au choix, utilisateurs illimités, relevé quotidien, 1 projet.",
+            "Éditeur allemand. Plan Starter : 50 prompts, 3 modèles au choix, utilisateurs illimités, relevé quotidien, 1 projet. Plan Pro : 150 prompts et 2 projets. Plan Advanced : 350 prompts, 5 projets, multi-pays et connexion Looker Studio.",
             "Équipe marketing qui suit une marque sur plusieurs moteurs avec un relevé quotidien.",
           ],
           [
             "[Profound](https://www.tryprofound.com/pricing)",
-            "Plan Starter : suivi de ChatGPT uniquement, 50 prompts. Plan Growth : 3 moteurs, 100 prompts. Enterprise : jusqu’à 9 moteurs.",
+            "Essai gratuit : 50 prompts relevés chaque jour pendant 7 jours sur ChatGPT, Gemini et AI Overviews. Ensuite offre Enterprise sur devis, jusqu’à 9 moteurs suivis, et offre agence avec 400 crédits par mois et par espace client.",
             "Grands comptes et agences qui gèrent plusieurs marques et pays.",
           ],
           [
             "[Semrush](https://www.semrush.com/pricing/)",
-            "Module de visibilité IA intégré aux abonnements de la suite SEO, à partir du plan orienté « recherche organique et IA ».",
+            "Plan Starter « SEO + AI Search » à 199 $ par mois, ou 165,17 $ par mois en annuel : 50 prompts suivis chaque jour et 1 domaine pour la performance de marque dans les IA. Plan Pro+ à 299 $ par mois avec 100 prompts.",
             "Entreprise déjà équipée Semrush qui ne veut pas ajouter un outil.",
           ],
           [
@@ -197,6 +279,55 @@ const suivreVisibilite: ArticleWithTables = {
           ],
         ],
       },
+      subsections: [
+        {
+          title: "L’outil interroge-t-il l’API d’OpenAI ou l’application que voient vos clients ?",
+          paragraphs: [
+            "C’est la question technique à poser avant de signer. Certains outils passent par l’API des modèles, d’autres pilotent l’interface grand public. Les deux ne donnent pas toujours les mêmes réponses, car l’application ajoute la recherche web, la localisation et des réglages propres.",
+            "Pour une PME, l’enjeu est simple : ce qui compte est ce que voit un client dans l’application. Demandez à l’éditeur quelle méthode il utilise, dans quel pays les prompts sont lancés et s’il active la recherche web. Un outil honnête répond précisément.",
+          ],
+        },
+        {
+          title: "Comment recevoir des rapports automatiques sur sa visibilité IA sans interroger ChatGPT chaque semaine ?",
+          paragraphs: [
+            "Tous les outils du tableau relancent vos prompts sans intervention et envoient un rapport périodique par e-mail ou dans un tableau de bord. Le travail se concentre donc sur la configuration initiale : choix des prompts, des concurrents, des moteurs et des villes.",
+            "Comptez une demi-journée pour configurer correctement un compte, puis une heure par mois pour lire le rapport et décider des actions. Un outil qui demande plus de temps que cela après sa mise en place est mal paramétré, en général parce que le jeu de prompts est trop large ou trop vague.",
+            "Si vous préférez déléguer entièrement le relevé et l’interprétation, c’est précisément ce que couvre [notre offre GEO](/offre) : un rapport mensuel lisible par un dirigeant, avec les actions à mener.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Comment mesurer sa visibilité IA pour plusieurs villes ou plusieurs établissements ?",
+      paragraphs: [
+        "Une entreprise qui possède plusieurs agences, cabinets ou magasins ne peut pas se contenter d’un jeu de prompts national. Les IA répondent localement : la question « quel plombier à Rennes ? » et la question « quel plombier à Brest ? » mobilisent des sources différentes et citent des entreprises différentes.",
+        "La méthode consiste à dupliquer le jeu de prompts de découverte pour chaque ville, en nommant la ville dans la question, et à tenir une part de présence par établissement. Dix prompts par ville suffisent au départ. Un onglet de tableur par ville, ou un projet par établissement dans l’outil.",
+        "Les plateformes du comparatif gèrent cette dimension différemment : Qwairy annonce une couverture de plus de 240 pays et 45 langues sur sa [page tarifaire](https://www.qwairy.co/pricing), Peec AI réserve le multi-pays à son plan Advanced selon sa [grille](https://peec.ai/pricing). Vérifiez que la localisation simulée descend bien à la ville, pas seulement au pays.",
+        "La lecture par établissement révèle souvent un déséquilibre : un site visible dans la ville du siège et invisible ailleurs. La cause est presque toujours la même, une fiche Google et des pages locales incomplètes pour les établissements secondaires. Notre guide sur le [référencement local dans ChatGPT](/blog/referencement-local-chatgpt-apparaitre-ville) et le [GEO local](/blog/geo-local-guide-entreprises) détaillent les actions.",
+      ],
+    },
+    {
+      title: "Quelle plateforme pour une agence qui suit la visibilité de plusieurs clients ?",
+      paragraphs: [
+        "Une agence a trois besoins qu’une PME n’a pas : suivre des centaines de prompts répartis sur plusieurs marques, isoler les données de chaque client, et montrer l’évolution dans un rapport que le client comprend sans explication. Le critère déterminant devient donc le nombre d’espaces de travail et la qualité de l’export.",
+        "Sur ce point, les pages tarifaires sont explicites. Qwairy propose 2 espaces de travail en plan Growth et 5 en plan Business d’après sa [grille](https://www.qwairy.co/pricing), Peec AI va jusqu’à 5 projets avec connexion Looker Studio en plan Advanced selon sa [page de prix](https://peec.ai/pricing), et Profound affiche une offre agence à 400 crédits par mois et par espace client sur sa [page tarifaire](https://www.tryprofound.com/pricing).",
+        "Le rapport client idéal tient sur une page : part de présence par moteur, évolution sur huit semaines, trois concurrents, trois sources à travailler et les actions du mois. C’est le format que nous utilisons, et c’est aussi ce qu’il faut exiger d’une [agence de référencement ChatGPT](/blog/agence-referencement-chatgpt-comment-choisir) avant de signer.",
+      ],
+      bullets: [
+        "Un espace ou un projet par client, jamais plusieurs marques mélangées dans le même jeu de prompts.",
+        "Des prompts validés avec le client, dans ses mots, et figés pour au moins huit semaines.",
+        "Un export ou un tableau de bord partageable, pour que le client voie la tendance sans se connecter à l’outil.",
+        "Une relecture humaine des réponses de marque chaque mois, que l’outil ne fait pas à votre place.",
+      ],
+    },
+    {
+      title: "Comment relier la visibilité IA au trafic réel dans Google Analytics 4 ?",
+      paragraphs: [
+        "La mesure de présence dit si l’IA parle de vous. Elle ne dit pas si des clients cliquent. Pour cela, Google Analytics 4 dispose désormais d’un canal dédié : d’après la [documentation du groupe de canaux par défaut](https://support.google.com/analytics/answer/9756891), le canal « AI Assistant » regroupe les visiteurs venus de sources comme ChatGPT, Gemini, Deepseek, Copilot ou Grok, et exclut les AI Overviews et l’AI Mode de Google.",
+        "Concrètement, ouvrez le rapport d’acquisition de trafic, filtrez sur ce canal et regardez les pages d’atterrissage. Vous obtenez la liste des pages que les IA font cliquer, à rapprocher des pages citées dans vos relevés. Quand une page est citée sans générer de visites, c’est souvent que la réponse de l’IA suffit au client, ou que le lien est mal positionné.",
+        "Ce trafic mérite d’être suivi à part, car il ne se comporte pas comme le trafic Google classique. Dans son [étude sur le trafic issu de la recherche IA](https://www.semrush.com/blog/ai-search-seo-traffic-study/) publiée le 21 juillet 2025, Semrush estime qu’un visiteur venu d’un moteur IA hors Google vaut en moyenne 4,4 fois un visiteur organique classique. Côté Google, la [documentation sur les fonctionnalités IA](https://developers.google.com/search/docs/appearance/ai-features) indique que les clics issus de pages avec AI Overviews sont de meilleure qualité, avec un temps passé plus long sur le site.",
+        "Le tableau de bord complet d’une PME tient donc en trois lignes par semaine : part de présence sur les prompts, impressions IA dans la Search Console, visites du canal AI Assistant dans GA4. Les trois ne bougent pas en même temps, et c’est normal : la présence précède les impressions, qui précèdent les visites.",
+      ],
     },
     {
       title: "Que mesure la Search Console sur AI Overviews et AI Mode ?",
@@ -205,6 +336,30 @@ const suivreVisibilite: ArticleWithTables = {
         "Ce rapport donne cinq dimensions : les impressions, les pages concernées, les pays, les appareils et les dates, avec une granularité qui descend à l’heure, comme l’indique la [documentation officielle du rapport](https://support.google.com/webmasters/answer/16984139). Il ne donne ni les clics, ni les requêtes qui ont déclenché l’apparition. Vous savez qu’une page a nourri une réponse IA, vous ne savez pas laquelle ni si quelqu’un a cliqué.",
         "Pour un site français, ce rapport a pris du sens le 22 juillet 2026, date à laquelle [Google a déployé les AI Overviews et l’AI Mode en France](https://www.abondance.com/20260722-2640402-lancement-officielle-ai-overviews-france.html), deux ans après les États-Unis. Nous expliquons ce que cela change dans notre article sur [Google AI Overviews pour les entreprises](/blog/google-ai-overviews-entreprises-comprendre).",
         "Retenez la limite : la Search Console mesure Google, et seulement Google. Pour ChatGPT, Perplexity et Gemini, il n’existe aucun rapport officiel. C’est précisément pour cela que le jeu de prompts reste indispensable.",
+        "Pour l’AI Mode, le mode conversationnel de Google, la lecture demande une méthode à part : dans le rapport Performances classique, ces apparitions sont comptées dans le type de recherche « Web », mélangées à la recherche traditionnelle, comme l’indique la [documentation de Google sur les fonctionnalités IA](https://developers.google.com/search/docs/appearance/ai-features). Nous l’avons détaillée dans [suivre sa visibilité dans l’AI Mode de Google](/blog/suivre-visibilite-ai-mode-google). La même documentation précise qu’aucune exigence supplémentaire ni fichier spécifique n’est nécessaire pour y apparaître.",
+      ],
+    },
+    {
+      title: "Comment être visible sur ChatGPT une fois la mesure en place ?",
+      paragraphs: [
+        "Le suivi n’a d’intérêt que s’il déclenche des actions. Après quatre relevés, vous savez sur quels prompts vous êtes absent, qui apparaît à votre place et quelles sources le portent. La suite consiste à travailler ces sources, puis à vérifier l’effet dans les relevés suivants.",
+        "L’enjeu n’est plus marginal : d’après le [Baromètre du numérique 2026 de l’Arcep](https://www.arcep.fr/actualites/actualites-et-communiques/detail/n/equipements-et-usages-du-numerique-090226.html), 48 % de la population utilise l’IA générative, soit 15 points de plus en un an. Une part croissante de vos prospects pose donc ses questions à une IA avant de taper quoi que ce soit dans Google.",
+      ],
+      subsections: [
+        {
+          title: "Comment améliorer votre présence si vous n’apparaissez pas ?",
+          paragraphs: [
+            "Commencez par la base technique : OpenAI indique sur sa [page consacrée à ses robots](https://developers.openai.com/docs/bots) que les sites qui bloquent OAI-SearchBot ne sont pas affichés dans les réponses de recherche de ChatGPT, et recommande de l’autoriser dans le fichier robots.txt. Un site bloqué ne peut pas être cité, quelle que soit la qualité de son contenu.",
+            "Ensuite, répondez aux prompts de découverte sur votre site avec des pages claires, une question par page, et renforcez les tiers qui servent de sources : fiche Google, avis, annuaires de référence, presse locale. Les six bases sont détaillées dans [comment se référencer sur ChatGPT](/blog/apparaitre-chatgpt-client-cherche-entreprise) et les leviers avancés dans [apparaître sur ChatGPT et toutes les IA](/blog/referencement-chatgpt-apparaitre-ia).",
+          ],
+          bullets: [
+            "Autoriser OAI-SearchBot et les robots des autres moteurs IA dans robots.txt, puis vérifier que les pages clés répondent en 200.",
+            "Publier une page par prompt de découverte, avec une réponse directe dans les 60 premiers mots.",
+            "Compléter la fiche Google et obtenir des avis récents, car ce sont les sources locales les plus citées.",
+            "Obtenir une mention dans un annuaire ou un média que l’IA cite déjà sur vos prompts.",
+            "Refaire le relevé quatre semaines plus tard, sans changer les prompts, pour mesurer l’effet.",
+          ],
+        },
       ],
     },
     {
@@ -242,6 +397,9 @@ const suivreVisibilite: ArticleWithTables = {
         "La colonne « concurrents nommés » est la plus utile : elle désigne la prochaine action.",
         "La Search Console mesure Google uniquement, en impressions, sans clics ni requêtes.",
         "Comptez quatre à huit semaines entre une action et son effet mesurable dans les réponses.",
+        "Multi-villes et agences : un jeu de prompts par ville ou par client, un espace de travail par marque, jamais de mélange.",
+        "Le canal « AI Assistant » de GA4 complète le suivi : il montre quelles pages les IA font réellement cliquer.",
+        "Un site qui bloque OAI-SearchBot ne peut pas être cité dans ChatGPT : vérifiez le robots.txt avant tout le reste.",
       ],
     },
   ],
