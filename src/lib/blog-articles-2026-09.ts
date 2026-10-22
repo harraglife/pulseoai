@@ -4031,6 +4031,257 @@ const agentIaVsChatbot: ArticleWithTables = {
   ],
 };
 
+const coutAgentIa: ArticleWithTables = {
+  slug: "combien-coute-agent-ia-pme",
+  title: "Combien coûte un agent IA pour une PME ? Budget et ROI 2026",
+  seoTitle: "Prix d’un agent IA pour PME : budget réel et ROI",
+  description:
+    "Quatre postes de coût, prix réel des appels au modèle, no-code ou sur mesure, aides publiques et méthode simple de calcul du ROI d’un agent IA.",
+  date: "22 octobre 2026",
+  dateModified: "22 octobre 2026",
+  readingTime: "12 min",
+  category: "Agents IA",
+  articleSection: "Agents IA",
+  keywords: [
+    "combien coûte un agent IA",
+    "prix agent IA",
+    "tarif agent IA",
+    "coût agent IA PME",
+    "budget agent IA",
+    "ROI agent IA",
+    "agent IA PME",
+    "prix token IA",
+  ],
+  intro:
+    "Les devis d’agents IA vont de quelques dizaines d’euros par mois à plusieurs dizaines de milliers d’euros, et un dirigeant de PME ne sait pas ce qui justifie l’écart. La réponse tient dans la structure du coût, pas dans la technologie. Cet article décompose les quatre postes, donne les prix publics vérifiés et propose une méthode de calcul du retour sur investissement.",
+  quickAnswer: {
+    question: "Combien coûte un agent IA pour une PME ?",
+    answer:
+      "Le coût d’un agent IA pour une PME se compose de quatre postes : le cadrage du processus, la construction de l’agent, les appels au modèle de langage facturés à l’usage, puis l’hébergement et la maintenance. Un agent simple monté sur une plateforme no-code coûte quelques dizaines d’euros par mois. Un agent sur mesure connecté au CRM se chiffre sur devis selon les outils à relier et la sensibilité des actions. Les appels au modèle restent en général le plus petit poste.",
+  },
+  contextualLinks: [
+    { label: "nos agents IA pour PME", href: "/agents-ia" },
+    { label: "l’agent IA sur mesure", href: "/blog/agent-ia-sur-mesure-pme" },
+    { label: "choisir une agence agents IA", href: "/blog/agence-agents-ia-comment-choisir-prestataire" },
+    { label: "agent IA ou chatbot", href: "/blog/agent-ia-vs-chatbot-difference-pme" },
+    { label: "notre offre", href: "/offre" },
+  ],
+  bodyCta: {
+    intro: "Vous voulez un chiffrage honnête pour votre premier agent ?",
+    linkLabel: "Décrivez-nous le processus à automatiser",
+    href: "/contact",
+    outro: ", nous revenons vers vous avec les postes de coût détaillés.",
+  },
+  relatedSlugs: [
+    "agent-ia-sur-mesure-pme",
+    "agence-agents-ia-comment-choisir-prestataire",
+    "agent-ia-vs-chatbot-difference-pme",
+  ],
+  faqTitle: "FAQ : le prix d’un agent IA",
+  faqItems: [
+    {
+      question: "Un agent IA coûte-t-il moins cher qu’un salarié ?",
+      answer:
+        "La comparaison est trompeuse. Un agent IA ne remplace pas un poste, il absorbe une partie répétitive d’un processus : tri, qualification, relance, saisie. Le bon calcul compare le coût de l’agent au temps libéré sur ces tâches, valorisé au coût horaire réel de la personne qui les faisait.",
+    },
+    {
+      question: "Faut-il payer un abonnement chaque mois ?",
+      answer:
+        "Oui, dans presque tous les cas. Même un agent développé sur mesure consomme des appels au modèle, un hébergement et une maintenance. Un prestataire qui annonce un coût unique sans frais récurrents oublie un poste, ou le facturera plus tard.",
+    },
+    {
+      question: "Combien de temps faut-il pour rentabiliser un agent IA ?",
+      answer:
+        "Cela dépend du volume de la tâche automatisée. Un agent qui traite chaque jour des dizaines de demandes se rentabilise en quelques mois. Un agent qui tourne trois fois par semaine sur un processus marginal peut ne jamais se rentabiliser, même s’il fonctionne parfaitement.",
+    },
+    {
+      question: "Peut-on commencer avec un petit budget ?",
+      answer:
+        "Oui, à condition de choisir un processus étroit et bien documenté. Un premier agent sur une plateforme no-code, limité à une tâche, permet de mesurer le gain réel avant d’investir dans une version connectée à vos outils métier.",
+    },
+    {
+      question: "Le prix dépend-il du nombre d’utilisateurs ?",
+      answer:
+        "Rarement pour un agent sur mesure, qui se paie à la construction et à l’usage. Souvent pour un agent proposé en SaaS, facturé par siège ou par volume de conversations. Lisez la grille tarifaire jusqu’au bout avant de comparer deux offres.",
+    },
+  ],
+  sections: [
+    {
+      title: "Combien coûte un agent IA pour une PME ?",
+      paragraphs: [
+        "Un agent IA coûte ce que coûte le processus qu’il prend en charge. Plus ce processus touche d’outils, de données sensibles et de décisions, plus le cadrage, la construction et la maintenance pèsent. La technologie elle-même, c’est-à-dire le modèle de langage, est devenue le poste le moins cher.",
+        "C’est pour cela qu’il n’existe pas de prix catalogue. Deux PME qui demandent « un agent pour les devis » peuvent recevoir des devis très différents, parce que l’une a un CRM propre avec une API et l’autre gère ses devis dans des fichiers dispersés.",
+        "Le marché, lui, avance vite. D’après le [Baromètre France Num 2026](https://www.entreprises.gouv.fr/espace-presse/barometre-france-num-2026-quatre-tpe-pme-sur-dix-utilisent-desormais-lintelligence) publié par la DGE le 28 septembre 2026, 40 % des TPE-PME utilisent désormais des solutions d’IA, soit 14 points de plus en un an, mais 19 % seulement paient pour ces solutions, une part qui monte à 32 % chez les PME.",
+        "Autrement dit, la majorité des entreprises en est encore aux outils gratuits. Le passage à un agent qui agit dans vos outils est la marche suivante, et c’est celle qui demande un vrai budget. Nous décrivons ce que fait concrètement un [agent IA sur mesure pour PME](/blog/agent-ia-sur-mesure-pme) dans un article dédié.",
+      ],
+    },
+    {
+      title: "Quel est le tarif d’un agent IA ?",
+      paragraphs: [
+        "Le tarif se lit en quatre lignes, et un devis sérieux les affiche séparément. Si un prestataire ne donne qu’un chiffre global, demandez la ventilation : c’est le seul moyen de comparer deux offres et de savoir ce que vous paierez encore dans un an.",
+      ],
+      subsections: [
+        {
+          title: "Les quatre postes de coût d’un agent IA",
+          paragraphs: [
+            "Le cadrage vient en premier. Il consiste à décrire le processus, ses exceptions, les outils concernés et les règles de décision. C’est un travail de quelques jours, souvent facturé au forfait, et c’est celui qui évite les mauvaises surprises ensuite.",
+            "La construction couvre la connexion aux outils, l’écriture des instructions de l’agent, les tests sur des cas réels et la mise en production. Son prix dépend presque entièrement du nombre d’outils à relier et de la qualité de leurs interfaces.",
+            "Les appels au modèle sont facturés à l’usage par le fournisseur d’IA, en fonction du volume de texte traité. L’hébergement et la maintenance, enfin, couvrent le serveur ou la plateforme, la surveillance des erreurs et les ajustements quand vos outils ou vos règles changent.",
+          ],
+        },
+        {
+          title: "Quel est le salaire d’un agent IA ?",
+          paragraphs: [
+            "Un agent IA n’a pas de salaire : il n’est ni un employé ni un prestataire. Son coût se résume aux quatre postes ci-dessus, dont trois sont récurrents. La question utile est plutôt : combien d’heures de travail humain l’agent libère-t-il chaque mois, et que coûtent ces heures aujourd’hui ?",
+            "C’est cette comparaison, et non un « salaire » fictif, qui sert de base au calcul du retour sur investissement détaillé plus bas.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Combien coûtent les appels au modèle de langage ?",
+      paragraphs: [
+        "Les fournisseurs facturent au million de tokens, un token correspondant à un fragment de mot. Le texte envoyé au modèle (entrée) et le texte produit (sortie) ont des prix différents, la sortie coûtant nettement plus cher que l’entrée, comme le montrent les grilles ci-dessous. Les prix indiqués sont ceux publiés par les éditeurs au moment de la rédaction.",
+        "Chez Anthropic, la [grille tarifaire officielle](https://platform.claude.com/docs/en/about-claude/pricing) affiche Claude Opus 5.5 à 4 $ par million de tokens en entrée et 20 $ en sortie, Claude Sonnet 5.5 à 2 $ et 10 $, et Claude Haiku 5.5 à 0,10 $ et 0,50 $ pour les requêtes de moins de 100 000 tokens.",
+        "Chez Mistral AI, la [page tarifaire](https://mistral.ai/pricing) indique Mistral Large à 0,5 $ par million de tokens en entrée et 1,5 $ en sortie, avec une remise de 50 % en traitement par lots et jusqu’à 90 % de réduction sur les tokens d’entrée mis en cache.",
+      ],
+      table: {
+        caption: "Prix publics des modèles au million de tokens, relevés en octobre 2026 sur les pages des éditeurs",
+        headers: ["Modèle", "Entrée (1 M tokens)", "Sortie (1 M tokens)", "Usage type en PME"],
+        rows: [
+          ["[Claude Haiku 5.5](https://platform.claude.com/docs/en/about-claude/pricing)", "0,10 $", "0,50 $", "Tri, classification, extraction de champs, réponses courtes"],
+          ["[Mistral Large](https://mistral.ai/pricing)", "0,5 $", "1,5 $", "Rédaction courante, résumé, qualification, hébergement européen"],
+          ["[Claude Sonnet 5.5](https://platform.claude.com/docs/en/about-claude/pricing)", "2 $", "10 $", "Agents qui enchaînent plusieurs outils et décisions"],
+          ["[Claude Opus 5.5](https://platform.claude.com/docs/en/about-claude/pricing)", "4 $", "20 $", "Cas complexes, analyse de documents longs, raisonnement"],
+        ],
+      },
+      subsections: [
+        {
+          title: "Exemple de calcul pour un agent qui traite 1 000 e-mails par mois",
+          paragraphs: [
+            "Prenons un agent qui lit chaque e-mail entrant, en extrait la demande et prépare une réponse. Supposons 3 000 tokens en entrée (l’e-mail, l’historique et les instructions) et 500 tokens en sortie par message, soit 3 millions de tokens d’entrée et 0,5 million de sortie pour 1 000 e-mails.",
+            "Avec les prix d’Anthropic cités plus haut, cet agent coûte environ 0,55 $ par mois en Haiku 5.5, 11 $ en Sonnet 5.5 et 22 $ en Opus 5.5. Avec Mistral Large, le même volume revient à 2,25 $. Ces montants sont des ordres de grandeur calculés à partir des grilles publiques, hors cadrage, construction et hébergement.",
+            "La conclusion surprend souvent : le modèle n’est pas ce qui coûte cher. Ce qui coûte, c’est le travail humain pour cadrer, connecter et maintenir. Un prestataire qui met en avant le prix du modèle détourne l’attention des vrais postes.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Agent no-code, SaaS métier ou sur mesure : quel budget pour quel niveau ?",
+      paragraphs: [
+        "Trois façons d’obtenir un agent coexistent, et elles ne s’adressent pas aux mêmes besoins. La bonne question n’est pas « laquelle est la moins chère ? » mais « laquelle couvre mon processus sans le simplifier à l’excès ? ».",
+        "La plateforme no-code convient à un processus linéaire avec peu d’exceptions. La [page de tarifs de n8n](https://n8n.io/pricing/), par exemple, affiche un plan Starter à 20 € par mois en facturation annuelle pour 2 500 exécutions de workflows, et un plan Pro à 50 € par mois pour 10 000 exécutions. Le coût du modèle s’ajoute, et surtout le temps de la personne qui construit et entretient le workflow.",
+        "Le SaaS métier, comme un standard téléphonique IA ou un assistant de prise de rendez-vous, se paie par abonnement et se déploie vite. Il couvre un cas précis et ne s’adapte pas à vos particularités. Nous avons détaillé ce format pour l’[agent IA téléphonique](/blog/agent-ia-telephonique-pme).",
+        "L’agent sur mesure se construit autour de votre processus et de vos outils. Il se chiffre sur devis selon les quatre postes, et c’est lui qui justifie une vraie réflexion sur le retour attendu. Pour savoir quoi demander à un prestataire, lisez [comment choisir une agence agents IA](/blog/agence-agents-ia-comment-choisir-prestataire).",
+      ],
+      table: {
+        caption: "Trois niveaux d’agent IA et ce que chacun implique pour une PME",
+        headers: ["Niveau", "Coût de départ", "Coûts récurrents", "Pour quel besoin"],
+        rows: [
+          ["Plateforme no-code", "Votre temps de construction", "Abonnement plateforme, appels au modèle", "Processus linéaire, peu d’exceptions, un ou deux outils"],
+          ["SaaS métier", "Paramétrage, souvent inclus", "Abonnement par siège ou par volume", "Cas standard : standard téléphonique, prise de rendez-vous, FAQ"],
+          ["Agent sur mesure", "Cadrage et construction sur devis", "Hébergement, maintenance, appels au modèle", "Processus propre à l’entreprise, plusieurs outils, actions sensibles"],
+        ],
+      },
+    },
+    {
+      title: "Quelle IA pour une PME ?",
+      paragraphs: [
+        "Le choix du modèle se fait tâche par tâche, pas une fois pour toutes. Un agent bien conçu utilise un petit modèle pour trier et classer, un modèle intermédiaire pour rédiger et décider, et réserve le modèle le plus puissant aux cas qui le justifient. Cette répartition divise la facture sans dégrader le résultat.",
+        "Le lieu d’hébergement compte aussi. Un éditeur européen comme Mistral AI, ou un hébergement des données en Europe chez les autres fournisseurs, simplifie la conformité au RGPD pour un agent qui lit des e-mails clients. Posez la question dès le cadrage, pas après la mise en production.",
+        "Enfin, le modèle n’est qu’une brique. Notre guide des [outils IA pour PME](/blog/outils-ia-pme) et l’article sur [comment utiliser l’IA dans son entreprise](/blog/comment-utiliser-ia-entreprise) aident à choisir le reste de la chaîne, du CRM à la messagerie.",
+      ],
+    },
+    {
+      title: "Quel est l’intérêt d’un agent IA ?",
+      paragraphs: [
+        "L’intérêt d’un agent IA se mesure en heures libérées et en délais raccourcis, pas en prouesse technique. Un agent qui qualifie les demandes entrantes avant l’ouverture du bureau, relance les devis sans réponse ou prépare les dossiers avant un rendez-vous rend du temps aux personnes qui faisaient ces tâches à la main.",
+        "Les PME françaises commencent tout juste. Le [Baromètre France Num 2026](https://www.entreprises.gouv.fr/espace-presse/barometre-france-num-2026-quatre-tpe-pme-sur-dix-utilisent-desormais-lintelligence) compte 24 % de TPE-PME qui utilisent des chatbots, assistants ou outils de recherche d’information, mais 11 % seulement qui automatisent des tâches, en hausse de 6 points en un an.",
+        "À l’échelle mondiale, le passage à l’échelle reste l’exception. Dans son [State of AI 2026](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai) publié le 25 août 2026, McKinsey relève que 22 % des répondants issus de petites organisations déclarent déployer des agents IA à l’échelle, contre 40 % dans les grandes, et que 37 % des répondants attribuent au moins une partie de leur résultat d’exploitation à l’IA.",
+        "Pour un dirigeant de PME, l’avantage existe encore, parce que la majorité des concurrents de sa taille n’a pas franchi le pas. Il se gagne sur un processus précis, pas sur une transformation générale.",
+      ],
+    },
+    {
+      title: "Comment calculer le ROI d’un agent IA ?",
+      paragraphs: [
+        "Le calcul tient en une formule : gain mensuel moins coût mensuel, divisé par le coût de mise en place, ce qui donne le nombre de mois avant d’avoir récupéré l’investissement. Le gain se compose du temps libéré, valorisé au coût horaire réel, et des revenus récupérés quand l’agent évite des demandes perdues.",
+        "La difficulté n’est pas la formule, c’est le point de départ. Avant de construire l’agent, comptez pendant deux semaines le temps passé sur la tâche et les demandes restées sans réponse. Sans cette mesure, impossible de savoir si l’agent a servi.",
+      ],
+      bullets: [
+        "Temps libéré par mois, en heures, multiplié par le coût horaire chargé de la personne concernée.",
+        "Revenus récupérés : demandes traitées qui étaient perdues, devis relancés qui se signent.",
+        "Coût mensuel : appels au modèle, hébergement, maintenance, abonnement éventuel.",
+        "Coût de mise en place : cadrage et construction, payés une fois.",
+        "Délai de retour : coût de mise en place divisé par (gain mensuel moins coût mensuel).",
+      ],
+      subsections: [
+        {
+          title: "Scénario illustratif : un cabinet de courtage en assurance sur huit semaines",
+          paragraphs: [
+            "Le cas ci-dessous est un scénario type, construit pour montrer la mécanique du calcul. Les chiffres sont fictifs et ne proviennent pas d’un client réel.",
+            "Un cabinet de courtage de six personnes reçoit chaque mois environ 400 demandes par e-mail et formulaire : devis, modifications de contrat, sinistres, questions diverses. Une collaboratrice y passe près de deux heures par jour, temps mesuré pendant deux semaines avant le projet.",
+            "Semaines 1 et 2 : cadrage avec le prestataire, description des sept types de demandes et des règles de réponse, connexion à la messagerie et au logiciel de gestion. L’agent tourne en mode « proposition » : il classe, prépare un brouillon, et la collaboratrice valide.",
+            "Semaines 3 à 5 : le taux de brouillons acceptés sans modification passe de la moitié à plus des trois quarts, à mesure que les règles sont ajustées. Les demandes de modification simples sont saisies directement dans le logiciel de gestion après validation d’un clic.",
+            "Semaines 6 à 8 : le temps de traitement quotidien tombe à une quarantaine de minutes, consacrées aux cas complexes et aux sinistres. Les demandes du week-end reçoivent un accusé de réception avec les pièces à fournir, ce qui réduit les relances du lundi.",
+            "Le calcul final compare le temps libéré, un peu plus d’une heure par jour, au coût mensuel et au coût de mise en place. Le retour se mesure en mois, pas en semaines, ce qui est crédible pour un premier agent.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Quelles aides publiques pour financer un agent IA ?",
+      paragraphs: [
+        "L’État a fait de l’adoption de l’IA par les PME un objectif chiffré. La [page du plan Osez l’IA](https://www.entreprises.gouv.fr/osez-lia) de la Direction générale des Entreprises vise un taux de diffusion de l’IA, à horizon 2030, dans 100 % des grandes entreprises et 80 % des PME et ETI.",
+        "Le dispositif le plus directement utile avant un projet d’agent est le diagnostic. Selon la même page, les Diags Data IA sont mis en œuvre par Bpifrance Conseil pour le compte de l’État, coûtent 10 000 euros HT avec une prise en charge de 40 % par France 2030, et sont ouverts aux PME et ETI de 10 à 2 000 salariés immatriculées au RCS.",
+        "Le [communiqué de la DGE du 17 juin 2026](https://www.entreprises.gouv.fr/espace-presse/renforcement-du-plan-national-osez-lia-pour-sensibiliser-les-entreprises) précise que ce diagnostic représente une prestation de 8 jours-hommes, que les diagnostics sont financés à hauteur de 9,6 millions d’euros par France 2030, et que les actions de sensibilisation du plan ont déjà touché plus de 35 000 entreprises.",
+        "Pour une TPE sous le seuil de 10 salariés, ces dispositifs ne s’appliquent pas, mais le réseau des ambassadeurs de l’IA et les chambres consulaires proposent des sensibilisations gratuites. Le même communiqué compte 615 ambassadeurs répartis dans 20 régions et collectivités.",
+      ],
+    },
+    {
+      title: "Pourquoi 40 % des projets d’agents IA échouent-ils, et comment éviter de payer pour rien ?",
+      paragraphs: [
+        "Le risque principal n’est pas de payer trop cher, c’est de payer pour un agent qui ne sert pas. Dans son [communiqué du 25 juin 2025](https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027), Gartner prévoit que plus de 40 % des projets d’IA agentique seront abandonnés d’ici fin 2027, en raison de coûts croissants, d’une valeur métier floue ou de contrôles de risque insuffisants.",
+        "Le même communiqué estime que seuls environ 130 fournisseurs d’IA agentique, sur des milliers, proposent de réelles capacités agentiques, et décrit une pratique d’« agent washing » qui consiste à rebaptiser des chatbots ou des automatisations existantes. Nous expliquons comment faire la différence dans [agent IA vs chatbot](/blog/agent-ia-vs-chatbot-difference-pme).",
+        "Les trois causes d’échec citées par Gartner se traduisent en quatre réflexes avant de signer.",
+      ],
+      bullets: [
+        "Exiger un devis en quatre postes, avec les coûts récurrents à douze mois.",
+        "Choisir un processus unique, mesuré avant le projet, plutôt qu’une « transformation IA ».",
+        "Démarrer en mode proposition avec validation humaine, puis élargir l’autonomie.",
+        "Prévoir dès le départ qui surveille l’agent et combien de temps cela prend chaque semaine.",
+      ],
+    },
+    {
+      title: "Comment créer un agent IA gratuitement ?",
+      paragraphs: [
+        "On peut construire un premier agent sans dépenser d’argent, mais pas sans dépenser du temps. Les plateformes no-code proposent des paliers gratuits limités en volume, et les fournisseurs de modèles offrent des crédits d’essai. C’est suffisant pour tester un processus sur quelques dizaines de cas.",
+        "La limite arrive vite : dès que l’agent doit tourner chaque jour, se connecter à votre messagerie ou à votre CRM et traiter des données clients, il faut un plan payant, un hébergement sérieux et quelqu’un qui surveille. « Gratuit » décrit la phase de test, pas la mise en production. Utilisez-la pour mesurer : vingt cas réels, les erreurs comptées, les corrections chronométrées, et vous saurez si le processus mérite un budget.",
+      ],
+      subsections: [
+        {
+          title: "Quel est le meilleur agent IA gratuit ?",
+          paragraphs: [
+            "Il n’existe pas de « meilleur agent gratuit » en général, parce qu’un agent se juge sur un processus donné. Un outil excellent pour trier des e-mails peut être inutilisable pour gérer des devis. Comparez les offres gratuites sur votre cas, avec vos données, et sur une durée suffisante pour voir les erreurs.",
+            "Pour un artisan, le cas le plus rentable est souvent la relance de devis ; pour un cabinet, la qualification des demandes entrantes. Nous avons détaillé le premier dans [agent IA pour artisan](/blog/agent-ia-artisan-devis-relances), et vous trouverez les autres cas sur notre page [agents IA pour PME](/agents-ia).",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Ce qu’il faut retenir",
+      paragraphs: [],
+      bullets: [
+        "Quatre postes : cadrage, construction, appels au modèle, hébergement et maintenance. Exigez-les séparément sur le devis.",
+        "Le modèle est le poste le moins cher : un agent qui traite 1 000 e-mails par mois coûte quelques dollars à quelques dizaines de dollars d’appels, selon le modèle.",
+        "No-code pour un processus linéaire, SaaS pour un cas standard, sur mesure pour un processus propre à l’entreprise et plusieurs outils.",
+        "Mesurez le temps passé sur la tâche pendant deux semaines avant le projet : sans point de départ, pas de ROI.",
+        "Les Diags Data IA d’Osez l’IA couvrent 40 % d’un diagnostic à 10 000 € HT pour les PME de 10 à 2 000 salariés.",
+        "Plus de 40 % des projets d’agents seront abandonnés d’ici fin 2027 selon Gartner : un processus unique, mesuré et validé par un humain évite d’en faire partie.",
+      ],
+    },
+  ],
+};
+
 export const septemberArticles: Record<string, BlogArticle> = {
   [suivreVisibilite.slug]: suivreVisibilite,
   [agentIaSurMesure.slug]: agentIaSurMesure,
@@ -4048,6 +4299,7 @@ export const septemberArticles: Record<string, BlogArticle> = {
   [agentIaArtisan.slug]: agentIaArtisan,
   [testerSchemaOrg.slug]: testerSchemaOrg,
   [agentIaVsChatbot.slug]: agentIaVsChatbot,
+  [coutAgentIa.slug]: coutAgentIa,
 };
 
 export const septemberPosts: BlogPostMeta[] = [
@@ -4194,5 +4446,14 @@ export const septemberPosts: BlogPostMeta[] = [
     date: agentIaVsChatbot.date,
     readingTime: agentIaVsChatbot.readingTime,
     category: agentIaVsChatbot.category,
+  },
+  {
+    slug: coutAgentIa.slug,
+    title: coutAgentIa.title,
+    seoTitle: coutAgentIa.seoTitle,
+    description: coutAgentIa.description,
+    date: coutAgentIa.date,
+    readingTime: coutAgentIa.readingTime,
+    category: coutAgentIa.category,
   },
 ];
