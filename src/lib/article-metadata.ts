@@ -38,6 +38,9 @@ const mentionUrls = {
   "Google AI Overviews": "https://www.google.com/search/howsearchworks/",
   Gemini: "https://gemini.google.com",
   Claude: "https://claude.ai",
+  Anthropic: "https://www.anthropic.com",
+  "Mistral AI": "https://mistral.ai",
+  Bpifrance: "https://www.bpifrance.fr",
   Perplexity: "https://www.perplexity.ai",
   "SEO IA": "https://www.pulseoai.fr/offre",
   GEO: "https://www.pulseoai.fr/offre",
@@ -66,6 +69,15 @@ function buildMentions(names: Array<keyof typeof mentionUrls>): ArticleMention[]
 }
 
 export const articleMetadataBySlug: Record<string, ArticleSchemaEnhancement> = {
+  "combien-coute-agent-ia-pme": {
+    about: {
+      "@type": "Thing",
+      name: "Coût d’un agent IA pour une PME",
+      description:
+        "Les quatre postes de coût d’un agent IA (cadrage, construction, appels au modèle, hébergement et maintenance), les prix publics des modèles, les niveaux no-code, SaaS et sur mesure, les aides du plan Osez l’IA et la méthode de calcul du retour sur investissement.",
+    },
+    mentions: buildMentions(["Anthropic", "Claude", "Mistral AI", "Bpifrance", "OpenAI"]),
+  },
   "agent-ia-vs-chatbot-difference-pme": {
     about: {
       "@type": "Thing",
