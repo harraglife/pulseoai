@@ -69,6 +69,24 @@ function buildMentions(names: Array<keyof typeof mentionUrls>): ArticleMention[]
 }
 
 export const articleMetadataBySlug: Record<string, ArticleSchemaEnhancement> = {
+  "agent-ia-service-client-pme": {
+    about: {
+      "@type": "Thing",
+      name: "Agent IA pour le service client d’une PME",
+      description:
+        "Ce qu’un agent IA service client prend en charge dans une PME : tri et priorisation des demandes, réponses aux questions courantes, brouillons à valider, actions dans les outils, canaux couverts (e-mail, tickets, chat, messageries, téléphone), seuils de transfert à un humain, obligations CNIL et AI Act, méthode de mise en place et scénario illustratif.",
+    },
+    mentions: buildMentions(["Anthropic", "Claude", "OpenAI", "ChatGPT"]),
+  },
+  "utiliser-chatgpt-pour-le-seo": {
+    about: {
+      "@type": "Thing",
+      name: "ChatGPT comme outil SEO",
+      description:
+        "Ce que ChatGPT fait bien pour le référencement d’une PME (regroupement de mots-clés, plans en questions, balises, FAQ, réécriture answer-first), six prompts, ses limites (chiffres inventés, absence de données, entraînement), les règles de Google sur le contenu généré et la différence avec être cité par ChatGPT.",
+    },
+    mentions: buildMentions(["ChatGPT", "OpenAI", "Google", "Claude", "Gemini", "GEO"]),
+  },
   "combien-coute-agent-ia-pme": {
     about: {
       "@type": "Thing",
