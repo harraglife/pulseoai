@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://www.pulseoai.fr/blog/referencement-chatgpt-apparaitre-ia",
     type: "article",
     publishedTime: "2026-06-04",
-    modifiedTime: "2026-06-12",
+    modifiedTime: "2026-10-29",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: article?.title }],
   },
   twitter: {
