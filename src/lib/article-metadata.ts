@@ -69,6 +69,15 @@ function buildMentions(names: Array<keyof typeof mentionUrls>): ArticleMention[]
 }
 
 export const articleMetadataBySlug: Record<string, ArticleSchemaEnhancement> = {
+  "agent-ia-rgpd-ai-act-pme": {
+    about: {
+      "@type": "Thing",
+      name: "Agent IA et RGPD dans une PME",
+      description:
+        "Les obligations d’une PME qui déploie un agent IA : principes du RGPD (finalité, base légale, minimisation, conservation, information, droits, sécurité), rôles de responsable et de sous-traitant, choix d’un modèle qui n’entraîne pas sur les données, hébergement, transparence et calendrier de l’AI Act, analyse d’impact, checklist de déploiement en six étapes et scénario illustratif.",
+    },
+    mentions: buildMentions(["OpenAI", "ChatGPT", "Anthropic", "Claude"]),
+  },
   "agent-ia-service-client-pme": {
     about: {
       "@type": "Thing",
