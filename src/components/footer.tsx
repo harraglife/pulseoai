@@ -41,7 +41,7 @@ export function Footer() {
             </p>
             <div className="mt-5 flex items-center gap-4">
               <a
-                href="https://www.linkedin.com/company/pulseoai"
+                href="https://www.linkedin.com/company/pulseoai-fr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/58 transition-colors hover:text-cyan"
@@ -107,7 +107,7 @@ export function Footer() {
               <p>Nantes, France</p>
               <p>
                 <a
-                  href="https://www.linkedin.com/company/pulseoai"
+                  href="https://www.linkedin.com/company/pulseoai-fr"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="transition-colors hover:text-cyan"
