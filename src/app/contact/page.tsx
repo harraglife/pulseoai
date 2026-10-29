@@ -159,7 +159,7 @@ export default function ContactPage() {
                   <div>
                     <p className="text-sm font-medium text-navy/60">LinkedIn</p>
                     <a
-                      href="https://www.linkedin.com/company/pulseoai"
+                      href="https://www.linkedin.com/company/pulseoai-fr"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-navy font-medium hover:text-cyan transition-colors"
