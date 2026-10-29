@@ -4782,6 +4782,257 @@ const agentIaServiceClient: ArticleWithTables = {
   ],
 };
 
+const agentIaRgpd: ArticleWithTables = {
+  slug: "agent-ia-rgpd-ai-act-pme",
+  title: "Agent IA et RGPD : les obligations d’une PME en 2026",
+  seoTitle: "Agent IA conforme RGPD et AI Act : le guide PME 2026",
+  description:
+    "Ce qu’une PME doit vérifier avant de déployer un agent IA : principes RGPD, choix du modèle, sous-traitance, transparence AI Act et checklist.",
+  date: "29 octobre 2026",
+  dateModified: "29 octobre 2026",
+  readingTime: "11 min",
+  category: "Agents IA",
+  articleSection: "Agents IA",
+  keywords: [
+    "agent IA RGPD",
+    "agent IA conforme RGPD",
+    "AI Act PME",
+    "agent IA données personnelles",
+    "CNIL agent IA",
+    "transparence IA",
+    "sous-traitant IA",
+    "agent IA PME",
+  ],
+  intro:
+    "Un agent IA qui lit vos e-mails, relance vos clients ou répond au téléphone traite des données personnelles toute la journée. Le RGPD s’applique donc dès le premier jour, et l’AI Act y ajoute depuis août 2026 des obligations de transparence. Cet article explique ce qu’une PME doit vérifier avant de déployer un agent IA, sans jargon juridique et sans renoncer au projet.",
+  quickAnswer: {
+    question: "Un agent IA peut-il être conforme au RGPD dans une PME ?",
+    answer:
+      "Oui, à condition de traiter l’agent IA comme n’importe quel traitement de données personnelles. La PME doit définir une finalité précise, choisir une base légale, limiter les données que l’agent lit, fixer une durée de conservation, informer les personnes et signer un contrat de sous-traitance avec l’éditeur du modèle. L’AI Act impose en plus, depuis le 2 août 2026, d’indiquer clairement qu’on échange avec une IA. Aucune de ces règles n’interdit le projet : elles fixent son cadre.",
+  },
+  contextualLinks: [
+    { label: "nos agents IA pour PME", href: "/agents-ia" },
+    { label: "l’agent IA sur mesure", href: "/blog/agent-ia-sur-mesure-pme" },
+    { label: "l’agent IA service client", href: "/blog/agent-ia-service-client-pme" },
+    { label: "choisir une agence d’agents IA", href: "/blog/agence-agents-ia-comment-choisir-prestataire" },
+    { label: "le coût d’un agent IA", href: "/blog/combien-coute-agent-ia-pme" },
+    { label: "notre offre", href: "/offre" },
+  ],
+  bodyCta: {
+    intro: "Vous voulez savoir si votre projet d’agent IA tient la route côté RGPD avant de le lancer ?",
+    linkLabel: "Décrivez-nous le cas d’usage en quelques lignes",
+    href: "/contact",
+    outro: ", nous vous rendons la liste des points à régler et dans quel ordre.",
+  },
+  relatedSlugs: [
+    "agent-ia-sur-mesure-pme",
+    "agent-ia-service-client-pme",
+    "agence-agents-ia-comment-choisir-prestataire",
+    "agent-ia-vs-chatbot-difference-pme",
+  ],
+  faqTitle: "FAQ : agent IA, RGPD et AI Act",
+  faqItems: [
+    {
+      question: "Faut-il déclarer un agent IA à la CNIL ?",
+      answer:
+        "Non, il n’existe plus de déclaration préalable depuis le RGPD. En revanche, le traitement doit figurer dans votre registre, et une analyse d’impact est nécessaire si le traitement présente un risque élevé pour les personnes, par exemple un suivi systématique ou des données sensibles à grande échelle.",
+    },
+    {
+      question: "Un agent IA hébergé aux États-Unis est-il interdit ?",
+      answer:
+        "Non, mais le transfert doit être encadré par un mécanisme reconnu et mentionné dans votre information aux personnes. Beaucoup d’éditeurs proposent désormais un hébergement ou un traitement en Europe : demandez-le, c’est souvent la solution la plus simple pour une PME.",
+    },
+    {
+      question: "Mes salariés doivent-ils être informés qu’un agent IA lit leurs e-mails ?",
+      answer:
+        "Oui. Les salariés sont des personnes concernées comme les autres. Une note d’information, une mise à jour du registre et, selon la taille de l’entreprise, une consultation des représentants du personnel sont attendues avant la mise en service.",
+    },
+    {
+      question: "Un chatbot sans compte client est-il concerné par le RGPD ?",
+      answer:
+        "Oui, dès qu’une personne peut écrire son nom, son e-mail ou décrire sa situation dans la conversation. Même sans compte, le contenu des échanges constitue des données personnelles qu’il faut conserver pour une durée limitée et protéger.",
+    },
+    {
+      question: "Qui est responsable si l’agent IA commet une erreur sur des données ?",
+      answer:
+        "L’entreprise qui déploie l’agent reste responsable du traitement vis-à-vis des personnes. L’éditeur du modèle ou l’intégrateur est sous-traitant et répond de ses propres manquements, selon le contrat. D’où l’importance de lire ce contrat avant de signer.",
+    },
+  ],
+  sections: [
+    {
+      title: "Un agent IA peut-il être conforme au RGPD ?",
+      paragraphs: [
+        "Oui. Un agent IA n’est ni interdit ni exempté : c’est un traitement de données personnelles comme un autre, avec un logiciel qui lit, décide et agit. Le RGPD s’applique à la PME qui le déploie, quel que soit l’éditeur du modèle utilisé.",
+        "La CNIL le rappelle sur sa [page consacrée à la conformité des systèmes d’IA](https://www.cnil.fr/fr/intelligence-artificielle/ia-professionnels-comment-se-mettre-en-conformite) : la collecte et l’utilisation de données via un système d’IA doivent respecter le RGPD et les droits des personnes.",
+        "Ce qui change avec un agent, par rapport à un logiciel classique, c’est l’étendue de ce qu’il peut lire et le fait qu’il agisse seul. Les règles sont les mêmes, mais les questions de périmètre et de contrôle deviennent centrales, comme nous l’expliquons dans [agent IA sur mesure pour PME](/blog/agent-ia-sur-mesure-pme).",
+      ],
+    },
+    {
+      title: "Qui a obligation d’appliquer RGPD ?",
+      paragraphs: [
+        "Toute organisation qui traite des données de personnes situées dans l’Union européenne, quelle que soit sa taille. Une PME de cinq salariés qui branche un agent IA sur sa boîte mail est concernée exactement comme un grand groupe.",
+        "Deux rôles existent. Le responsable de traitement décide des finalités et des moyens : c’est vous, la PME qui déploie l’agent. Le sous-traitant traite les données pour votre compte : c’est l’éditeur du modèle, l’hébergeur ou l’intégrateur.",
+        "Cette répartition compte, parce que les obligations diffèrent. Le responsable répond devant les personnes et la CNIL ; le sous-traitant répond de ses engagements contractuels et de la sécurité. Le choix du prestataire est donc aussi une décision de conformité, comme détaillé dans [comment choisir une agence d’agents IA](/blog/agence-agents-ia-comment-choisir-prestataire).",
+      ],
+    },
+    {
+      title: "Quelles sont les utilisations d’un agent d’IA ?",
+      paragraphs: [
+        "Presque toutes les utilisations d’un agent IA en PME touchent des données personnelles. La question n’est pas de savoir si le RGPD s’applique, mais quelles données l’agent lit, pour quoi faire et pendant combien de temps.",
+      ],
+      bullets: [
+        "Service client : noms, e-mails, numéros de commande, contenu des réclamations. Voir [agent IA service client](/blog/agent-ia-service-client-pme).",
+        "Relances et devis : coordonnées, historique d’achats, montants, échéances.",
+        "Accueil téléphonique : voix, numéro appelant, motif de l’appel. Voir [agent IA téléphonique](/blog/agent-ia-telephonique-pme).",
+        "Prise de rendez-vous : identité, créneaux, parfois motif de consultation, donc potentiellement des données de santé.",
+        "Ressources humaines : CV, entretiens, évaluations. C’est le domaine le plus encadré, par le RGPD comme par l’AI Act.",
+      ],
+      subsections: [
+        {
+          title: "Quels sont les cas d’usage de l’IA en entreprise ?",
+          paragraphs: [
+            "Les PME françaises adoptent vite. D’après le [Baromètre France Num 2026](https://www.entreprises.gouv.fr/espace-presse/barometre-france-num-2026-quatre-tpe-pme-sur-dix-utilisent-desormais-lintelligence) publié par la DGE le 28 septembre 2026, 40 % des TPE-PME utilisent des solutions d’IA, 24 % pour des chatbots ou assistants et 11 % pour automatiser des tâches.",
+            "Le même baromètre indique que 53 % des dirigeants craignent de perdre ou de se faire pirater leurs données. La conformité RGPD d’un agent IA répond précisément à cette crainte, puisqu’elle oblige à savoir où vont les données et qui y accède.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Quels principes du RGPD s’appliquent à un agent IA ?",
+      paragraphs: [
+        "La CNIL détaille sur sa page [IA : comment être en conformité avec le RGPD](https://www.cnil.fr/fr/intelligence-artificielle/ia-comment-etre-en-conformite-avec-le-rgpd) les principes à respecter : une finalité bien définie, une base légale choisie avant la mise en œuvre, des données limitées à ce qui est nécessaire, une durée de conservation fixée, une information claire et des droits exerçables.",
+        "Le tableau suivant traduit chaque principe en décision concrète pour un agent IA de PME. C’est la grille que nous utilisons au cadrage d’un projet.",
+      ],
+      table: {
+        caption: "Les principes du RGPD traduits pour un agent IA de PME",
+        headers: ["Principe", "Ce que cela impose à l’agent", "Exemple concret"],
+        rows: [
+          ["Finalité", "Un objectif écrit, précis, fixé avant le déploiement", "« Répondre aux questions sur l’état des commandes », pas « améliorer la relation client »"],
+          ["Base légale", "Choisie avant la mise en service : contrat, intérêt légitime ou consentement", "Relancer un devis signé relève du contrat ; prospecter à froid demande une autre base"],
+          ["Minimisation", "L’agent ne lit que les champs utiles à sa tâche", "Accès au statut de commande, pas à l’historique bancaire complet"],
+          ["Conservation", "Une durée fixée et appliquée automatiquement", "Conversations effacées après la clôture du dossier, sauf réclamation en cours"],
+          ["Information", "Les personnes savent qu’un agent traite leurs données et pourquoi", "Mention dans la politique de confidentialité et en début de conversation"],
+          ["Droits", "Accès, rectification, effacement, opposition prévus dès la conception", "Un bouton ou une adresse pour demander la suppression d’un échange"],
+          ["Sécurité", "Accès restreints, journalisation, chiffrement", "Un compte dédié à l’agent, avec les seuls droits nécessaires"],
+        ],
+      },
+    },
+    {
+      title: "Quelle IA RGPD ?",
+      paragraphs: [
+        "Il n’existe pas de modèle « certifié RGPD ». La conformité dépend du contrat, des réglages et de l’usage, bien plus que de la marque du modèle. Trois questions permettent toutefois de trier rapidement les options.",
+        "Première question : l’éditeur utilise-t-il vos données pour entraîner ses modèles ? Deuxième question : où les données sont-elles traitées et combien de temps sont-elles conservées ? Troisième question : un contrat de sous-traitance conforme à l’article 28 du RGPD est-il proposé ?",
+        "Les offres professionnelles répondent généralement mieux que les versions grand public. Un abonnement individuel à un assistant, utilisé avec des données clients, est le cas le plus fréquent de non-conformité que nous rencontrons dans les PME.",
+      ],
+      subsections: [
+        {
+          title: "Vos données servent-elles à entraîner le modèle ?",
+          paragraphs: [
+            "Les grands éditeurs ont clarifié ce point pour leurs offres professionnelles. OpenAI indique sur sa [page consacrée à la confidentialité en entreprise](https://openai.com/enterprise-privacy/) ne pas entraîner ses modèles sur les données professionnelles de ses clients.",
+            "Anthropic précise dans son [centre de confidentialité](https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training) que, par défaut, les entrées et sorties de ses produits commerciaux, dont l’API et Claude for Work, ne servent pas à entraîner ses modèles.",
+            "Dans les deux cas, cela vaut pour les offres professionnelles et l’API, pas forcément pour les comptes gratuits ou individuels. Vérifiez le réglage exact de l’offre que vous signez, et faites-le écrire dans le contrat.",
+          ],
+        },
+        {
+          title: "Faut-il un hébergement en Europe ?",
+          paragraphs: [
+            "Ce n’est pas une obligation absolue, mais c’est la solution la plus simple. Un traitement en Europe évite d’avoir à documenter un transfert hors Union et rassure les clients qui posent la question.",
+            "Si l’éditeur traite les données hors Union, le contrat doit préciser le mécanisme utilisé et votre information aux personnes doit le mentionner. Un modèle open source hébergé chez un prestataire français est une alternative crédible pour les cas sensibles.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Que change l’AI Act pour un agent IA dans une PME ?",
+      paragraphs: [
+        "L’AI Act est le règlement européen sur l’intelligence artificielle. D’après la [page de la Commission européenne sur le cadre réglementaire de l’IA](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai), il est entré en vigueur le 1er août 2024 et devient pleinement applicable le 2 août 2026, avec quelques exceptions.",
+        "La même page précise que les pratiques interdites et les obligations de maîtrise de l’IA s’appliquent depuis le 2 février 2025, et qu’un accord politique du 7 mai 2026 a fixé l’application des règles sur les systèmes à haut risque de certains domaines au 2 décembre 2027.",
+        "Pour une PME qui déploie un agent IA, trois points comptent vraiment : la transparence envers les personnes, la formation des équipes qui utilisent l’agent, et la vérification que l’usage ne relève pas d’un domaine à haut risque.",
+      ],
+      subsections: [
+        {
+          title: "Faut-il dire aux clients qu’ils parlent à une IA ?",
+          paragraphs: [
+            "Oui. L’[article 50 de l’AI Act](https://ai-act-service-desk.ec.europa.eu/fr/ai-act/article-50) prévoit que les personnes soient informées qu’elles interagissent avec un système d’IA, sauf si cela ressort clairement du contexte. La Commission indique que ces règles de transparence s’appliquent à partir d’août 2026.",
+            "En pratique, une phrase en début de conversation, en signature d’e-mail ou en ouverture d’appel suffit. Les PME qui l’ont mise en place constatent que les clients l’acceptent bien quand la réponse est rapide et juste, comme nous l’observons sur les projets d’[agent IA service client](/blog/agent-ia-service-client-pme).",
+          ],
+        },
+        {
+          title: "Un agent IA de PME est-il un système à haut risque ?",
+          paragraphs: [
+            "Rarement. Un agent qui répond aux questions sur les commandes, relance des devis ou prend des rendez-vous n’entre pas dans les domaines à haut risque. Le recrutement, l’évaluation des salariés, l’accès au crédit ou à l’assurance en font partie.",
+            "Si votre agent trie des candidatures ou note des collaborateurs, le cadre devient nettement plus lourd : documentation, surveillance humaine, gestion des risques. Dans ce cas, faites-vous accompagner avant de déployer, et commencez plutôt par un cas d’usage hors de ces domaines.",
+          ],
+        },
+        {
+          title: "Quelles sanctions prévoit l’AI Act ?",
+          paragraphs: [
+            "Selon l’[article 99 du règlement](https://artificialintelligenceact.eu/article/99/), les pratiques interdites exposent à des amendes jusqu’à 35 millions d’euros ou 7 % du chiffre d’affaires mondial, et les autres manquements jusqu’à 15 millions d’euros ou 3 %, le montant le plus élevé étant retenu.",
+            "Le même article prévoit que, pour les PME et les start-up, c’est au contraire le montant le plus bas des deux qui s’applique. Le risque réel pour une PME reste surtout la perte de confiance des clients et un contrôle de la CNIL sur le volet données personnelles.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Faut-il une analyse d’impact (AIPD) avant de déployer un agent IA ?",
+      paragraphs: [
+        "Pas toujours. Le RGPD impose une analyse d’impact quand un traitement est susceptible d’engendrer un risque élevé pour les personnes. Un agent qui répond aux questions sur les horaires d’ouverture n’en a pas besoin ; un agent qui lit des dossiers de santé ou profile des clients, si.",
+        "Même quand elle n’est pas obligatoire, une analyse courte est utile. Elle oblige à écrire les données lues, les risques et les mesures prises, ce qui constitue déjà l’essentiel de la documentation attendue en cas de question.",
+        "Pour les chatbots, la [CNIL recommande depuis le 19 février 2021](https://www.cnil.fr/fr/chatbots-les-conseils-de-la-cnil-pour-respecter-les-droits-des-personnes) de conserver les données pour la durée nécessaire à la finalité et d’afficher, avant toute utilisation, une mise en garde invitant à ne pas communiquer de données sensibles. Ces deux mesures s’appliquent telles quelles à un agent IA.",
+      ],
+    },
+    {
+      title: "Comment déployer un agent IA conforme au RGPD en six étapes ?",
+      paragraphs: [
+        "La conformité se construit pendant le cadrage, pas après la mise en service. Voici l’ordre que nous suivons sur les projets d’[agents IA pour PME](/agents-ia), du plus structurant au plus technique.",
+      ],
+      bullets: [
+        "Écrire la finalité en une phrase et lister les données strictement nécessaires : c’est le périmètre de l’agent.",
+        "Choisir la base légale et inscrire le traitement au registre, avec la durée de conservation décidée.",
+        "Sélectionner l’éditeur et l’hébergement, puis signer le contrat de sous-traitance avant d’envoyer la moindre donnée réelle.",
+        "Configurer les accès : un compte dédié à l’agent, les seuls droits nécessaires, un journal de chaque action.",
+        "Rédiger l’information : politique de confidentialité mise à jour, mention IA en début d’échange, note aux salariés.",
+        "Tester sur des données fictives, puis sur un échantillon réel avec validation humaine, avant toute autonomie.",
+      ],
+    },
+    {
+      title: "Quelles erreurs font échouer la conformité d’un agent IA ?",
+      paragraphs: [
+        "Les manquements que nous rencontrons sont rarement techniques. Ils viennent d’un périmètre flou ou d’un outil choisi trop vite. Les cinq suivants reviennent dans la majorité des audits.",
+      ],
+      bullets: [
+        "Brancher l’agent sur toute la boîte mail alors que sa tâche ne concerne que les demandes de devis.",
+        "Utiliser un compte grand public d’assistant IA avec des données clients, sans contrat ni réglage d’entraînement.",
+        "Ne fixer aucune durée de conservation, et laisser les conversations s’accumuler sans purge.",
+        "Oublier les salariés dans l’information, alors que l’agent lit leurs échanges professionnels.",
+        "Ne pas prévoir de transfert vers un humain, ce qui prive les personnes d’un interlocuteur quand l’agent se trompe. Le [coût de ce transfert](/blog/combien-coute-agent-ia-pme) est faible au regard du risque.",
+      ],
+    },
+    {
+      title: "Scénario illustratif : une agence immobilière de neuf personnes sur six semaines",
+      paragraphs: [
+        "Ce scénario est illustratif : il décrit un déroulé type, pas un client nommé. Une agence immobilière de neuf personnes veut un agent IA qui qualifie les demandes entrantes de locataires et propose des créneaux de visite.",
+        "Semaine 1 : finalité écrite, données listées (nom, e-mail, téléphone, type de bien, budget). Les justificatifs de revenus sont exclus du périmètre de l’agent, qui se contente de les demander et de les transmettre.",
+        "Semaines 2 et 3 : choix d’une offre professionnelle avec traitement en Europe, contrat de sous-traitance signé, registre mis à jour, durée de conservation fixée à la fin de la recherche du locataire.",
+        "Semaines 4 et 5 : mention IA ajoutée en début de conversation et dans la politique de confidentialité, note d’information aux salariés, tests sur des demandes fictives puis sur vingt demandes réelles validées à la main.",
+        "Semaine 6 : mise en service sur les demandes de visite uniquement. Résultat plausible : l’agent qualifie la majorité des demandes simples, transfère les cas particuliers, et l’agence dispose d’un dossier de conformité d’une dizaine de pages. Rien d’extraordinaire, mais un projet qui tient face à une question client ou à un contrôle.",
+      ],
+    },
+    {
+      title: "Ce qu’il faut retenir",
+      paragraphs: [],
+      bullets: [
+        "Un agent IA est un traitement de données personnelles : le RGPD s’applique à la PME qui le déploie, dès le premier jour.",
+        "Finalité, base légale, minimisation, conservation, information et droits se décident au cadrage, pas après.",
+        "Choisissez une offre professionnelle, vérifiez l’absence d’entraînement sur vos données et signez le contrat de sous-traitance avant toute donnée réelle.",
+        "Depuis le 2 août 2026, l’AI Act impose d’informer les personnes qu’elles échangent avec une IA ; les sanctions sont plafonnées au montant le plus bas pour les PME.",
+        "Évitez les domaines à haut risque (recrutement, évaluation, crédit) pour un premier agent.",
+        "Une analyse d’impact courte, même non obligatoire, constitue l’essentiel de votre documentation. Notre [offre](/offre) inclut ce cadrage.",
+      ],
+    },
+  ],
+};
+
 export const septemberArticles: Record<string, BlogArticle> = {
   [suivreVisibilite.slug]: suivreVisibilite,
   [agentIaSurMesure.slug]: agentIaSurMesure,
@@ -4802,6 +5053,7 @@ export const septemberArticles: Record<string, BlogArticle> = {
   [coutAgentIa.slug]: coutAgentIa,
   [chatgptPourLeSeo.slug]: chatgptPourLeSeo,
   [agentIaServiceClient.slug]: agentIaServiceClient,
+  [agentIaRgpd.slug]: agentIaRgpd,
 };
 
 export const septemberPosts: BlogPostMeta[] = [
@@ -4975,5 +5227,14 @@ export const septemberPosts: BlogPostMeta[] = [
     date: agentIaServiceClient.date,
     readingTime: agentIaServiceClient.readingTime,
     category: agentIaServiceClient.category,
+  },
+  {
+    slug: agentIaRgpd.slug,
+    title: agentIaRgpd.title,
+    seoTitle: agentIaRgpd.seoTitle,
+    description: agentIaRgpd.description,
+    date: agentIaRgpd.date,
+    readingTime: agentIaRgpd.readingTime,
+    category: agentIaRgpd.category,
   },
 ];
