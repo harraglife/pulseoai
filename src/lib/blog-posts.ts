@@ -663,7 +663,7 @@ const newArticles: Record<string, BlogArticle> = {
           {
             title: "La vérification croisée",
             paragraphs: [
-              "Les IA privilégient les informations confirmées par plusieurs sources indépendantes. Si votre entreprise est mentionnée sur votre site, sur un blog local, dans un annuaire et sur une fiche Google avec des avis récents, l'information est jugée fiable. Si la seule source est votre propre fiche, le signal est trop faible.",
+              "Les IA privilégient les informations confirmées par plusieurs sources indépendantes. Si votre entreprise est mentionnée sur votre site, sur un blog local, dans un annuaire et sur une fiche Google avec des avis récents, l'information est jugée fiable. Si la seule source est votre propre fiche, le signal est trop faible. Cette logique de sources multiples est le premier des cinq leviers décrits dans notre guide du [référencement ChatGPT](/blog/referencement-chatgpt-apparaitre-ia).",
             ],
           },
           {
@@ -984,8 +984,8 @@ const newArticles: Record<string, BlogArticle> = {
     description:
       "Comment faire apparaître votre entreprise sur ChatGPT, Perplexity, Gemini et Claude. Les 5 leviers du référencement IA (GEO) expliqués.",
     date: "4 juin 2026",
-    dateModified: "12 juin 2026",
-    readingTime: "11 min",
+    dateModified: "29 octobre 2026",
+    readingTime: "16 min",
     category: "ChatGPT",
     articleSection: "Référencement ChatGPT",
     keywords: [
@@ -998,12 +998,16 @@ const newArticles: Record<string, BlogArticle> = {
       "Gemini",
       "Claude",
       "Google AI Overviews",
+      "référencement ChatGPT entreprise",
+      "positionnement ChatGPT",
+      "SearchGPT",
+      "référencement local ChatGPT",
     ],
     faqTitle: "FAQ : Référencement ChatGPT",
     quickAnswer: {
       question: "Qu'est-ce que le référencement ChatGPT ?",
       answer:
-        "Le référencement ChatGPT désigne l'ensemble des techniques permettant à une entreprise d'apparaître dans les réponses générées par ChatGPT lorsqu'un utilisateur pose une question liée à son secteur. Il ne s'agit pas d'obtenir une position dans une liste de liens, mais d'être cité directement dans la réponse, comme une recommandation.",
+        "Le référencement ChatGPT désigne l’ensemble des techniques qui permettent à une entreprise d’être citée dans les réponses de ChatGPT quand un utilisateur pose une question liée à son secteur. Il ne s’agit pas d’obtenir une position dans une liste de liens, mais d’être recommandé dans la réponse elle-même. Cela repose sur cinq leviers : présence sur les sources que les IA consultent, contenu structuré en réponses courtes, données Schema.org, fichier llms.txt et robots IA autorisés. Les mêmes leviers servent pour Perplexity, Gemini, Claude et les aperçus IA de Google.",
     },
     contextualLinks: [
       { label: "notre agence de référencement ChatGPT", href: "/" },
@@ -1015,6 +1019,10 @@ const newArticles: Record<string, BlogArticle> = {
       { label: "Guide llms.txt", href: "/blog/llms-txt-guide-pratique" },
       { label: "Sources citées par les IA", href: "/blog/sources-citees-ia-site-ne-suffit-pas" },
       { label: "Référencement Gemini", href: "/blog/comment-se-referencer-sur-gemini" },
+      { label: "Suivre sa visibilité dans ChatGPT", href: "/blog/suivre-visibilite-chatgpt-ia" },
+      { label: "Référencement SearchGPT", href: "/blog/referencement-searchgpt-chatgpt-search" },
+      { label: "Référencement local ChatGPT", href: "/blog/referencement-local-chatgpt-apparaitre-ville" },
+      { label: "Choisir une agence de référencement ChatGPT", href: "/blog/agence-referencement-chatgpt-comment-choisir" },
     ],
     bodyCta: {
       intro: "Vous voulez savoir où votre entreprise en est sur ChatGPT et les autres IA ? Demandez un",
@@ -1029,6 +1037,9 @@ const newArticles: Record<string, BlogArticle> = {
       "comment-se-referencer-sur-perplexity",
       "sources-citees-ia-site-ne-suffit-pas",
       "comment-utiliser-ia-entreprise",
+      "referencement-searchgpt-chatgpt-search",
+      "suivre-visibilite-chatgpt-ia",
+      "agence-referencement-chatgpt-comment-choisir",
     ],
     intro:
       "En 2026, une part croissante de vos futurs clients ne cherche plus sur Google. Ils posent une question à une IA et obtiennent une réponse directe avec des recommandations de marques et de prestataires. Si votre entreprise n'apparaît pas dans ces réponses, elle n'existe pas pour ces prospects.",
@@ -1037,13 +1048,17 @@ const newArticles: Record<string, BlogArticle> = {
         title: "Qu'est-ce que le référencement ChatGPT ?",
         paragraphs: [
           "Le [référencement ChatGPT](/) désigne l'ensemble des techniques permettant à une entreprise d'apparaître dans les réponses générées par ChatGPT lorsqu'un utilisateur pose une question liée à son secteur. Contrairement au SEO Google, il ne s'agit pas d'obtenir une position dans une liste de liens, mais d'être cité directement dans la réponse, comme une recommandation.",
+          "Le terme recouvre deux réalités que vous devez distinguer. ChatGPT peut vous citer de mémoire, à partir de ce que le modèle a appris, ou vous citer après une recherche web, avec un lien vers votre page.",
+          "Dans les deux cas, il n’existe pas de classement officiel ni de « position 3 » à viser. On mesure plutôt une fréquence de mention sur un panel de questions, comme expliqué dans notre guide pour [suivre sa visibilité dans ChatGPT](/blog/suivre-visibilite-chatgpt-ia).",
         ],
       },
       {
         title: "Pourquoi apparaître sur ChatGPT est devenu indispensable en 2026 ?",
         paragraphs: [
-          "En 2026, ChatGPT dépasse 700 millions d'utilisateurs actifs mensuels. Selon Google I/O 2026, AI Mode (le moteur de recherche IA de Google) a franchi le milliard d'utilisateurs mensuels. Perplexity, Claude et Gemini suivent la même courbe.",
+          "Selon [TechCrunch](https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users), OpenAI a annoncé le 27 février 2026 que ChatGPT atteignait 900 millions d’utilisateurs actifs par semaine. Côté Google, Sundar Pichai a indiqué à l’I/O du 19 mai 2026 que [AI Mode dépassait 1 milliard d’utilisateurs mensuels](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) et les aperçus IA 2,5 milliards. Perplexity, Claude et Gemini suivent la même courbe.",
           "Résultat : une part croissante de vos futurs clients ne cherche plus sur Google. Ils posent une question à une IA et obtiennent une réponse directe avec des recommandations de marques, de prestataires, de produits. Si votre entreprise n'apparaît pas dans ces réponses, elle n'existe pas pour ces prospects.",
+          "En France, le mouvement est déjà massif. D’après le [Baromètre du numérique 2026 de l’Arcep](https://www.arcep.fr/actualites/actualites-et-communiques/detail/n/equipements-et-usages-du-numerique-090226.html), l’IA générative est utilisée par 48 % de la population, soit 15 points de plus en un an.",
+          "Ce trafic est aussi plus qualifié. Une étude [Semrush publiée le 21 juillet 2025](https://www.semrush.com/blog/ai-search-seo-traffic-study/) estime qu’une visite issue de la recherche IA vaut 4,4 fois une visite organique classique, sur la base du taux de conversion.",
         ],
       },
       {
@@ -1059,6 +1074,35 @@ const newArticles: Record<string, BlogArticle> = {
         ],
       },
       {
+        title: "ChatGPT utilise-t-il Bing ou Google pour ses réponses ?",
+        paragraphs: [
+          "Ni l’un ni l’autre directement. D’après la [documentation d’OpenAI sur ChatGPT search](https://help.openai.com/en/articles/9237897-chatgpt-search), ChatGPT lance automatiquement une recherche web quand la question en a besoin, et peut partager des requêtes anonymisées avec des fournisseurs tiers comme Bing.",
+          "Les réponses issues d’une recherche contiennent des citations en ligne, et un bouton « Sources » liste toutes les pages utilisées. C’est là que votre site peut apparaître, à condition d’avoir été exploré par le robot de recherche d’OpenAI.",
+          "La [page d’OpenAI dédiée à ses robots](https://developers.openai.com/docs/bots) précise que les sites ayant bloqué OAI-SearchBot ne sont pas affichés dans les réponses de recherche de ChatGPT. Être bien positionné sur Bing aide, mais ne suffit pas : ChatGPT reformule, croise plusieurs sources et ne garde que ce qu’il comprend.",
+        ],
+      },
+      {
+        title: "Comment se référencer sur ChatGPT ?",
+        paragraphs: [
+          "Pour une entreprise, le référencement ChatGPT se construit en quatre étapes, toujours dans le même ordre. Chacune prépare la suivante, et sauter la première est l’erreur la plus fréquente que nous voyons en audit.",
+        ],
+        bullets: [
+          "Mesurer : relevez 20 à 30 questions que vos clients posent réellement et notez qui ChatGPT cite aujourd’hui, vous ou vos concurrents.",
+          "Exister sur les sources : fiche Google Business Profile complète, annuaires de votre métier, avis clients, presse locale, fiche Wikidata si votre entreprise s’y prête.",
+          "Rendre votre site lisible : une réponse directe en tête de chaque page, des données Schema.org cohérentes, des robots IA autorisés.",
+          "Suivre et ajuster : refaites le relevé chaque semaine et complétez les pages qui ne répondent pas encore aux questions où vous êtes absent.",
+        ],
+        subsections: [
+          {
+            title: "Comment référencer son entreprise quand elle n’a aucune présence IA ?",
+            paragraphs: [
+              "Commencez par les sources externes, pas par votre site. Une entreprise absente de Google Business Profile, des annuaires de son secteur et des sites d’avis n’a presque aucune chance d’être citée, quelle que soit la qualité de son contenu.",
+              "Ensuite seulement, travaillez vos pages de services avec la méthode décrite dans [comment se référencer sur ChatGPT](/blog/apparaitre-chatgpt-client-cherche-entreprise). Notre [offre SEO / GEO](/offre) suit exactement cet ordre.",
+            ],
+          },
+        ],
+      },
+      {
         title: "Les 5 leviers pour apparaître sur ChatGPT et les autres IA",
         paragraphs: [],
         subsections: [
@@ -1067,13 +1111,16 @@ const newArticles: Record<string, BlogArticle> = {
             paragraphs: [
               "ChatGPT cite en priorité les entreprises présentes sur Wikipedia, Wikidata, les annuaires de référence de votre secteur, les forums spécialisés et les sites d'avis. Avant même de toucher à votre site, assurez-vous d'exister sur ces sources externes.",
               "Concrètement : fiche Wikidata complète, profil Google Business Profile enrichi, présence sur les annuaires sectoriels que les IA consultent (Pages Jaunes, annuaires métier, guides spécialisés).",
+              "Les avis clients comptent doublement. Ils nourrissent les sources que les IA lisent, et ils donnent au modèle des phrases concrètes sur vos services. Répondez aux avis et demandez-en régulièrement, comme détaillé dans [pourquoi les sources citées par les IA ne se limitent pas à votre site](/blog/sources-citees-ia-site-ne-suffit-pas).",
+              "Les contenus publiés sur YouTube ou LinkedIn aident aussi, à condition qu’ils décrivent précisément ce que vous faites et pour qui. Une vidéo intitulée « expert-comptable pour restaurateurs à Lyon » est une source bien plus utile qu’un post d’humeur.",
             ],
           },
           {
             title: "2. Structurer votre contenu en mode « answer-first »",
             paragraphs: [
               "Les IA extraient des passages courts et autonomes, ce qu'on appelle des capsules de réponse. Pour être cité, chaque section de votre site doit répondre directement à une question en 40 à 60 mots, sans avoir besoin du contexte environnant.",
-              "Selon l'étude GEO publiée à KDD 2024 par des chercheurs de Princeton, l'ajout de statistiques et de citations de sources dans un contenu peut augmenter sa visibilité dans les réponses des moteurs IA jusqu'à 40 %. Un contenu structuré en réponses courtes et autonomes, placé dans le premier tiers de la page, reste le format le plus facilement extrait par les IA.",
+              "Selon l’[étude GEO publiée à KDD 2024 par des chercheurs de Princeton](https://arxiv.org/abs/2311.09735), l’ajout de statistiques et de citations de sources dans un contenu peut augmenter sa visibilité dans les réponses des moteurs IA jusqu’à 40 %. Un contenu structuré en réponses courtes et autonomes, placé dans le premier tiers de la page, reste le format le plus facilement extrait par les IA.",
+              "Vous pouvez d’ailleurs utiliser ChatGPT lui-même pour repérer les questions à couvrir et vérifier qu’un paragraphe se comprend hors contexte. Notre guide [utiliser ChatGPT pour le SEO](/blog/utiliser-chatgpt-pour-le-seo) donne les prompts qui fonctionnent.",
             ],
           },
           {
@@ -1081,6 +1128,7 @@ const newArticles: Record<string, BlogArticle> = {
             paragraphs: [
               "Les données structurées permettent aux IA de comprendre précisément votre activité sans interpréter votre contenu. Pour une entreprise, les types les plus importants sont : Organization, WebSite, Service, FAQPage et LocalBusiness pour les commerces locaux.",
               "Sans ces données, les IA doivent deviner ce que vous faites, et elles se trompent souvent, ou ignorent votre site.",
+              "Google précise dans sa [documentation sur les fonctionnalités IA de la recherche](https://developers.google.com/search/docs/appearance/ai-features?hl=fr) qu’aucune donnée structurée particulière n’est requise pour les aperçus IA, mais que vos données structurées doivent correspondre au texte visible. Le guide [Schema.org pour le GEO](/blog/schema-org-guide-complet-geo) et l’article [tester son balisage Schema.org](/blog/tester-balisage-schema-org-validateur) couvrent la mise en place et le contrôle.",
             ],
           },
           {
@@ -1088,12 +1136,20 @@ const newArticles: Record<string, BlogArticle> = {
             paragraphs: [
               "Le fichier llms.txt est l'équivalent du robots.txt pour les moteurs IA. Placé à la racine de votre site (votresite.fr/llms.txt), il explique en langage naturel qui vous êtes, quels sont vos services, et quelles pages consulter. ChatGPT, Claude et Perplexity le lisent en priorité lors de l'indexation.",
               "Un fichier llms.txt bien rédigé augmente significativement la probabilité d'être cité directement plutôt que via une source tierce.",
+              "Une nuance s’impose. La [documentation d’OpenAI sur ses robots](https://developers.openai.com/docs/bots) décrit GPTBot, OAI-SearchBot et ChatGPT-User et ne mentionne que le robots.txt comme moyen de contrôle, et la [page d’Anthropic sur ses robots](https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler) ne cite pas le llms.txt. Traitez-le comme un complément peu coûteux, jamais comme le levier principal. Notre [guide llms.txt](/blog/llms-txt-guide-pratique) explique comment le rédiger en vingt minutes.",
             ],
           },
           {
             title: "5. Autoriser explicitement les robots IA dans votre robots.txt",
             paragraphs: [
               "Par défaut, certains sites bloquent les robots IA sans le savoir. GPTBot (OpenAI), ClaudeBot (Anthropic), PerplexityBot et OAI-SearchBot doivent être explicitement autorisés dans votre fichier robots.txt. Sans cette autorisation, les IA ne peuvent pas indexer votre site, et ne peuvent pas vous citer.",
+              "Chaque éditeur distingue en réalité plusieurs robots, avec des rôles différents. Voici ceux à vérifier dans votre robots.txt, d’après les documentations officielles.",
+            ],
+            bullets: [
+              "OpenAI : d’après la [documentation des robots d’OpenAI](https://developers.openai.com/docs/bots), OAI-SearchBot sert à afficher les sites dans les résultats de recherche de ChatGPT, ChatGPT-User récupère une page à la demande d’un utilisateur, et GPTBot collecte du contenu pour l’entraînement des modèles.",
+              "Anthropic : selon la [page d’aide d’Anthropic](https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler), ClaudeBot collecte du contenu pour l’entraînement, Claude-User répond aux requêtes des utilisateurs et Claude-SearchBot améliore la qualité des résultats de recherche.",
+              "Perplexity : la [documentation de Perplexity](https://docs.perplexity.ai/guides/bots) indique que PerplexityBot sert à faire remonter et lier les sites dans ses résultats, et que Perplexity-User visite une page quand un utilisateur pose une question.",
+              "Vous pouvez bloquer les robots d’entraînement (GPTBot, ClaudeBot) tout en autorisant les robots de recherche (OAI-SearchBot, Claude-SearchBot, PerplexityBot). C’est le réglage que nous recommandons aux entreprises qui veulent être citées sans nourrir les modèles.",
             ],
           },
         ],
@@ -1111,10 +1167,73 @@ const newArticles: Record<string, BlogArticle> = {
         ],
       },
       {
+        title: "Comment se faire référencer sur l'IA ?",
+        paragraphs: [
+          "La bonne nouvelle, c’est que l’essentiel du travail est commun à toutes les IA. Sources externes cohérentes, pages qui répondent directement, données structurées justes et robots autorisés servent ChatGPT, Perplexity, Gemini et Claude en même temps.",
+          "Le reste dépend du moteur. Nous avons un guide dédié pour chacun : [se référencer sur Gemini](/blog/comment-se-referencer-sur-gemini), [se référencer sur Perplexity](/blog/comment-se-referencer-sur-perplexity) et [être visible dans les aperçus IA de Google](/blog/etre-visible-google-ai-overviews).",
+          "Si vous devez choisir un ordre, commencez par ChatGPT et Google. Ce sont les deux moteurs que vos clients utilisent le plus, et les signaux construits pour eux profitent ensuite aux autres.",
+        ],
+      },
+      {
+        title: "Comment être référencé sur SearchGPT (ChatGPT Search) ?",
+        paragraphs: [
+          "SearchGPT est le nom donné au mode recherche de ChatGPT, aujourd’hui intégré à l’application. C’est lui qui affiche des liens et des citations dans les réponses, et donc lui qui peut envoyer du trafic vers votre site.",
+          "Trois conditions sont indispensables : OAI-SearchBot autorisé dans votre robots.txt, des pages qui se chargent vite sans dépendre de JavaScript pour afficher le texte, et un titre de page qui reprend la question de l’utilisateur.",
+          "Le détail des optimisations, des cas où ChatGPT préfère les sources récentes et des erreurs qui font disparaître un site se trouve dans notre article [référencement SearchGPT : comment être cité dans ChatGPT Search](/blog/referencement-searchgpt-chatgpt-search).",
+        ],
+      },
+      {
+        title: "Comment connaître son positionnement sur ChatGPT ?",
+        paragraphs: [
+          "Il n’existe aucun outil officiel d’OpenAI équivalent à la Search Console. Le positionnement sur ChatGPT se mesure donc à la main ou avec un outil tiers, toujours sur un panel de questions fixes.",
+          "La méthode la plus simple tient en trois gestes. Listez 20 à 30 questions que vos clients posent, posez chacune plusieurs fois dans une session vierge, et notez si votre entreprise est citée, en quelle position et avec quel lien.",
+          "Refaites l’exercice chaque semaine et suivez le taux de mention plutôt qu’une position. Les outils, les tableaux de suivi et les pièges à éviter sont détaillés dans [suivre sa visibilité dans ChatGPT, Perplexity et Gemini](/blog/suivre-visibilite-chatgpt-ia).",
+        ],
+        subsections: [
+          {
+            title: "Comment être mentionné par ChatGPT plutôt qu’un concurrent ?",
+            paragraphs: [
+              "Quand ChatGPT recommande un concurrent, c’est presque toujours parce qu’il est mieux décrit que vous sur les sources que l’IA consulte, pas parce qu’il est meilleur. Comparez vos fiches, vos avis et vos pages de services aux siennes.",
+              "Reprenez ensuite une à une les questions où il est cité et vous non, et publiez une réponse plus précise. Notre analyse [pourquoi ChatGPT recommande un concurrent](/blog/chatgpt-recommande-concurrent-pourquoi) détaille les causes les plus fréquentes.",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Référencement ChatGPT à Toulouse, Strasbourg ou Nantes : comment être cité localement ?",
+        paragraphs: [
+          "Les requêtes locales sont celles où une PME a le plus de chances d’être citée rapidement. ChatGPT croise la ville mentionnée dans la question, ou la localisation approximative de l’utilisateur, avec les sources locales qu’il connaît.",
+          "D’après la [documentation d’OpenAI](https://help.openai.com/en/articles/9237897-chatgpt-search), ChatGPT collecte en effet une localisation générale à partir de l’adresse IP pour améliorer la pertinence des résultats. Une question posée depuis Toulouse n’obtient donc pas la même réponse qu’à Strasbourg.",
+          "Les leviers sont les mêmes partout en France : une fiche Google Business Profile complète avec la ville dans la description, des avis récents, une page par ville ou par zone sur votre site, et des mentions dans la presse ou les annuaires locaux.",
+          "Nous avons détaillé la méthode ville par ville dans [référencement local ChatGPT : apparaître dans sa ville](/blog/referencement-local-chatgpt-apparaitre-ville). Pour un accompagnement de proximité, notre [agence GEO à Nantes](/agence-seo-geo-nantes) travaille avec des entreprises de toute la France.",
+        ],
+      },
+      {
+        title: "Quels sont les 3 piliers du référencement ?",
+        paragraphs: [
+          "En SEO classique, on parle de trois piliers : la technique, le contenu et l’autorité. Ils restent valables pour ChatGPT, mais chacun change de nature quand c’est une IA, et non un algorithme de classement, qui lit votre site.",
+        ],
+        bullets: [
+          "Technique : robots IA autorisés, texte accessible sans JavaScript, données structurées cohérentes avec le contenu visible, temps de chargement maîtrisé.",
+          "Contenu : des réponses courtes et autonomes à des questions réelles, des chiffres sourcés, des pages de services qui disent précisément pour qui vous travaillez.",
+          "Autorité : des sources externes qui parlent de vous de façon cohérente, des avis, des mentions dans la presse et les annuaires, une fiche Wikidata si votre notoriété le permet.",
+        ],
+      },
+      {
         title: "Combien de temps pour apparaître sur ChatGPT ?",
         paragraphs: [
           "Les premiers résultats apparaissent généralement entre 6 et 12 semaines après la mise en place des optimisations techniques et des sources externes. La vitesse dépend de trois facteurs : l'autorité actuelle de votre domaine, la concurrence dans votre secteur, et la richesse de votre écosystème de sources.",
           "Contrairement au SEO Google qui peut prendre 6 à 12 mois, le GEO produit des résultats plus rapides sur les requêtes de niche, notamment les secteurs où peu de concurrents ont déjà optimisé leur présence IA.",
+        ],
+      },
+      {
+        title: "Scénario illustratif : 8 semaines pour un cabinet de conseil de 12 personnes",
+        paragraphs: [
+          "Ce scénario est illustratif : il reprend un déroulé type, pas un cas client nommé. Un cabinet de conseil en gestion de 12 personnes, basé à Toulouse, veut être cité quand un dirigeant demande à ChatGPT un conseil pour restructurer sa trésorerie.",
+          "Semaines 1 et 2 : relevé de 25 questions, résultat de départ de 2 mentions sur 25. Fiche Google Business Profile complétée, inscription sur deux annuaires professionnels, dix avis clients demandés.",
+          "Semaines 3 à 5 : réécriture de quatre pages de services en mode réponse directe, ajout des données Schema.org Organization et Service, robots de recherche IA autorisés, fichier llms.txt publié.",
+          "Semaines 6 à 8 : publication de deux articles qui répondent aux questions les plus fréquentes du relevé, puis nouveau relevé. Résultat plausible : 7 à 9 mentions sur 25, concentrées sur les questions locales et de niche.",
+          "Ce n’est pas un miracle, et les questions génériques restent dominées par de grandes marques. Mais sur son marché réel, le cabinet est désormais cité, ce qui n’était pas le cas huit semaines plus tôt.",
         ],
       },
       {
@@ -1125,11 +1244,31 @@ const newArticles: Record<string, BlogArticle> = {
         ],
       },
       {
+        title: "Faut-il un référenceur ChatGPT ou une agence pour y arriver ?",
+        paragraphs: [
+          "Pas forcément. Une PME avec une personne disponible une demi-journée par semaine peut faire seule le relevé, les fiches et les avis. Ce sont les leviers les plus rentables et les moins techniques.",
+          "Un référenceur ChatGPT ou une agence GEO devient utile pour les données structurées, la réécriture des pages, le suivi outillé et l’arbitrage des priorités. Les critères pour choisir sans se tromper sont dans [comment choisir une agence de référencement ChatGPT](/blog/agence-referencement-chatgpt-comment-choisir).",
+          "Méfiez-vous de toute promesse de « position garantie » dans ChatGPT. Il n’existe ni position, ni garantie, ni placement payant : un prestataire sérieux parle de taux de mention, de sources et de délais.",
+        ],
+      },
+      {
         title: "Combien coûte un référencement ChatGPT ?",
         paragraphs: [
           "Il n'existe pas de prix standard pour un référencement ChatGPT. Le budget dépend entièrement de votre point de départ : votre visibilité actuelle dans les IA, votre secteur, vos concurrents déjà cités et l'ampleur du travail sur vos contenus et vos sources externes. La seule façon d'obtenir un chiffre fiable est de mesurer d'abord votre situation.",
           "Une chose est certaine : le référencement ChatGPT ne s'achète pas. Il n'existe aucune publicité ni placement payant dans les réponses de ChatGPT, Perplexity ou Gemini. L'investissement sert à construire ce que les IA recherchent réellement : un site lisible, des contenus qui répondent aux questions, des sources externes qui citent votre marque et un suivi de votre visibilité. Ce suivi se construit avec un jeu de prompts relevé chaque semaine, comme expliqué dans [suivre sa visibilité dans ChatGPT](/blog/suivre-visibilite-chatgpt-ia).",
           "Méfiez-vous des grilles tarifaires standardisées : deux entreprises du même secteur peuvent avoir des besoins radicalement différents selon ce que les IA disent déjà d'elles. Le bon réflexe est de commencer par un audit de visibilité IA : il révèle où vous apparaissez, quels concurrents sont cités à votre place et quels leviers auront le plus d'impact. C'est sur cette base qu'un accompagnement sérieux se construit.",
+        ],
+      },
+      {
+        title: "Ce qu’il faut retenir",
+        paragraphs: [],
+        bullets: [
+          "Le référencement ChatGPT ne donne pas une position mais une fréquence de mention, mesurée sur un panel de questions.",
+          "Les sources externes (fiches, avis, annuaires, presse) pèsent plus que votre site : commencez par elles.",
+          "Vos pages doivent répondre en 40 à 60 mots à des questions réelles, avec des données Schema.org fidèles au texte visible.",
+          "Autorisez les robots de recherche IA (OAI-SearchBot, Claude-SearchBot, PerplexityBot) ; les robots d’entraînement sont un choix séparé.",
+          "Les requêtes locales et de niche sont les plus accessibles : comptez 6 à 12 semaines pour les premiers résultats.",
+          "Aucun placement payant n’existe : méfiez-vous des positions garanties et demandez un [audit GEO gratuit](/contact) pour partir d’une mesure réelle.",
         ],
       },
     ],
@@ -1158,6 +1297,16 @@ const newArticles: Record<string, BlogArticle> = {
         question: "Le référencement ChatGPT fonctionne-t-il pour une petite entreprise ?",
         answer:
           "Oui, et souvent mieux que pour les grandes marques. Sur des requêtes locales ou de niche, les IA citent volontiers des entreprises bien décrites et cohérentes sur leurs sources, même petites. Les places sont encore largement à prendre.",
+      },
+      {
+        question: "Mon site est déjà bien référencé sur Google, est-ce suffisant pour ChatGPT ?",
+        answer:
+          "C’est un bon point de départ, mais pas une garantie. ChatGPT s’appuie sur des sources tierces et sur des passages courts qu’il peut extraire, pas sur votre position Google. Un site premier sur Google avec des pages longues et sans réponse directe peut rester absent des réponses de ChatGPT.",
+      },
+      {
+        question: "Comment référencer son entreprise sur ChatGPT sans site web ?",
+        answer:
+          "C’est possible pour les requêtes locales grâce aux sources externes : fiche Google Business Profile complète, avis clients réguliers, annuaires de votre métier et mentions dans la presse locale. Un site reste toutefois nécessaire pour être cité avec un lien et pour répondre aux questions précises de vos clients.",
       },
     ],
   },
@@ -2329,7 +2478,7 @@ const newArticles: Record<string, BlogArticle> = {
         title: "Le GEO intervient au niveau de la recommandation",
         paragraphs: [
           "Le GEO cherche à faire citer votre marque dans une réponse déjà formulée par une IA. Ici, le sujet n’est plus seulement d’être trouvé. Il s’agit d’être recommandé, comparé favorablement ou choisi comme option crédible.",
-          "Cela implique un travail sur les prompts clients, les citations IA, les sources utilisées et la compréhension globale de votre entité.",
+          "Cela implique un travail sur les prompts clients, les citations IA, les sources utilisées et la compréhension globale de votre entité. Les leviers concrets sont détaillés dans notre guide [référencement ChatGPT : comment apparaître sur toutes les IA](/blog/referencement-chatgpt-apparaitre-ia).",
         ],
         bullets: [
           "Prompts clients",
