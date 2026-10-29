@@ -18,7 +18,7 @@ export const ORG_LNG = -1.6499;
 export const ORG_PHONE = "+33695771783";
 
 export const SAME_AS: string[] = [
-  "https://www.linkedin.com/company/pulseoai",
+  "https://www.linkedin.com/company/pulseoai-fr",
   "https://fr.linkedin.com/in/romaindcl",
   "https://share.google/TzGlBcQm6UkgBdpDF",
   // Ajouter : Wikidata, Pages Jaunes, X/Twitter
