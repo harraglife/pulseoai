@@ -69,6 +69,15 @@ function buildMentions(names: Array<keyof typeof mentionUrls>): ArticleMention[]
 }
 
 export const articleMetadataBySlug: Record<string, ArticleSchemaEnhancement> = {
+  "agent-ia-prospection-commerciale-pme": {
+    about: {
+      "@type": "Thing",
+      name: "Agent IA de prospection commerciale pour une PME",
+      description:
+        "Ce qu’un agent IA de prospection commerciale automatise dans une PME : ciblage sur signaux, qualification des prospects, messages personnalisés, relances, mise à jour du CRM ; différence entre agent, workflow et assistant, méthode de mise en place en six étapes, outils du marché ou sur mesure, règles CNIL de la prospection B2B, transparence AI Act, repères de coût, scénario illustratif et erreurs à éviter.",
+    },
+    mentions: buildMentions(["Anthropic", "Claude", "OpenAI", "ChatGPT"]),
+  },
   "consultant-geo-role-missions-choisir": {
     about: {
       "@type": "Thing",
