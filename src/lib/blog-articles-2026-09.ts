@@ -5325,6 +5325,236 @@ const consultantGeo: ArticleWithTables = {
   ],
 };
 
+const agentIaProspection: ArticleWithTables = {
+  slug: "agent-ia-prospection-commerciale-pme",
+  title: "Agent IA de prospection commerciale : ce qu’il fait pour une PME",
+  seoTitle: "Agent IA prospection commerciale : le guide PME 2026",
+  description:
+    "Ce qu’un agent IA de prospection automatise vraiment dans une PME : ciblage, scoring, messages, relances, CRM. Règles CNIL, coûts et erreurs.",
+  date: "3 novembre 2026",
+  dateModified: "3 novembre 2026",
+  readingTime: "11 min",
+  category: "Agents IA",
+  articleSection: "Agents IA",
+  keywords: [
+    "agent IA prospection commerciale",
+    "agent IA prospection",
+    "automatiser la prospection avec l’IA",
+    "prospection IA PME",
+    "agent IA commercial",
+    "automatiser les relances",
+    "agent IA PME",
+    "IA pour prospecter",
+  ],
+  intro:
+    "Un agent IA de prospection commerciale lit vos sources, repère les bons prospects, rédige des messages adaptés et relance au bon moment, puis écrit tout dans votre CRM. Pour une PME sans équipe de SDR, c’est la promesse de retrouver du temps de vente. Cet article explique ce que cet agent fait réellement, ce qu’il doit laisser à l’humain, et comment le mettre en place sans casser votre réputation.",
+  quickAnswer: {
+    question: "Qu’est-ce qu’un agent IA de prospection commerciale ?",
+    answer:
+      "Un agent IA de prospection commerciale est un logiciel qui enchaîne seul les tâches répétitives d’un commercial : constituer une liste de prospects selon vos critères, les qualifier à partir de données publiques et de votre CRM, préparer des messages personnalisés, programmer les relances et mettre à jour les fiches. Il travaille à partir d’un modèle de langage et d’accès à vos outils. Le commercial garde la décision d’envoi, l’appel et le rendez-vous. Il convient aux PME qui ont une cible claire et une base de données propre.",
+  },
+  contextualLinks: [
+    { label: "nos agents IA pour PME", href: "/agents-ia" },
+    { label: "l’agent IA sur mesure", href: "/blog/agent-ia-sur-mesure-pme" },
+    { label: "l’agent IA service client", href: "/blog/agent-ia-service-client-pme" },
+    { label: "agent IA et RGPD", href: "/blog/agent-ia-rgpd-ai-act-pme" },
+    { label: "le coût d’un agent IA", href: "/blog/combien-coute-agent-ia-pme" },
+    { label: "notre offre", href: "/offre" },
+  ],
+  bodyCta: {
+    intro: "Vous voulez savoir quelle partie de votre prospection un agent IA peut reprendre dès maintenant ?",
+    linkLabel: "Décrivez-nous votre cycle de vente en quelques lignes",
+    href: "/contact",
+    outro: ", nous vous rendons la liste des tâches automatisables et celles à garder en main.",
+  },
+  relatedSlugs: [
+    "agent-ia-sur-mesure-pme",
+    "agent-ia-service-client-pme",
+    "agent-ia-rgpd-ai-act-pme",
+    "combien-coute-agent-ia-pme",
+    "agent-ia-vs-chatbot-difference-pme",
+  ],
+  faqTitle: "FAQ : agent IA et prospection commerciale",
+  faqItems: [
+    {
+      question: "Un agent IA de prospection peut-il envoyer les e-mails tout seul ?",
+      answer:
+        "Techniquement oui, mais nous le déconseillons au démarrage. Faites-le préparer les messages et les relances, puis validez chaque envoi pendant les premières semaines. Une fois que le ton et la pertinence sont stables, vous pouvez autoriser l’envoi automatique sur les relances simples, jamais sur le premier contact avec un compte stratégique.",
+    },
+    {
+      question: "Faut-il un CRM pour utiliser un agent IA de prospection ?",
+      answer:
+        "Oui, ou au minimum une base de contacts structurée. L’agent lit et écrit dans cet outil : statut, historique, prochaine action. Sans base propre, il travaille sur des données fausses et produit des messages hors sujet. Un tableur bien tenu suffit pour un test, un CRM pour un déploiement.",
+    },
+    {
+      question: "Un agent IA peut-il prospecter sur LinkedIn ?",
+      answer:
+        "Il peut préparer des messages à partir d’un profil et suivre les réponses, mais l’automatisation des actions directement sur LinkedIn est encadrée par les conditions d’utilisation de la plateforme. La pratique la plus sûre consiste à laisser le commercial envoyer lui-même les messages préparés par l’agent.",
+    },
+    {
+      question: "L’agent IA remplace-t-il un commercial ou un SDR ?",
+      answer:
+        "Non. Il reprend la partie répétitive du travail d’un SDR : recherche, qualification, préparation, relance, saisie. La découverte du besoin, la négociation et la relation restent humaines. Dans une PME, le gain est de rendre du temps de vente aux personnes déjà en place plutôt que de remplacer un poste.",
+    },
+    {
+      question: "Combien de temps faut-il pour mettre en place un agent IA de prospection ?",
+      answer:
+        "Comptez quatre à huit semaines pour un premier périmètre : définition de la cible, nettoyage de la base, connexion au CRM, rédaction des règles, tests sur un échantillon, puis mise en production progressive. Le délai dépend surtout de l’état de vos données et de la clarté de votre cible.",
+    },
+  ],
+  sections: [
+    {
+      title: "Qu’est-ce qu’un agent IA de prospection commerciale ?",
+      paragraphs: [
+        "Un agent IA de prospection commerciale est un programme qui exécute, dans l’ordre et sans intervention à chaque étape, les tâches répétitives d’un commercial : chercher des comptes, qualifier des contacts, rédiger des messages, relancer, renseigner le CRM. Il s’appuie sur un modèle de langage et sur des accès à vos outils.",
+        "La différence avec un logiciel de séquences classique tient à la lecture. L’agent lit une page d’entreprise, une offre d’emploi, un profil, un échange d’e-mails, puis en tire une conclusion utile à la vente. Un outil de séquences se contente d’envoyer ce qu’on lui a donné.",
+        "Le sujet n’est plus confidentiel. L’étude [Focus sur les ventes de Salesforce](https://www.salesforce.com/fr/news/press-releases/2026/02/23/les-equipes-commerciales-francaises-font-de-lia-et-des-agents-leurs-nouveaux-accelerateurs-de-croissance-pour-2026-selon-une-etude-de-salesforce/), publiée le 23 février 2026, indique que 36 % des commerciaux français ont déjà utilisé des agents IA et que 87 % des organisations commerciales utilisent déjà l’IA.",
+      ],
+      subsections: [
+        {
+          title: "Agent IA, workflow ou simple ChatGPT : quelle différence pour prospecter ?",
+          paragraphs: [
+            "Anthropic distingue dans son guide [Building effective agents](https://www.anthropic.com/research/building-effective-agents) les workflows, où les étapes sont fixées à l’avance par du code, et les agents, où le modèle décide lui-même de l’enchaînement. Le guide recommande de chercher la solution la plus simple et de n’ajouter de la complexité qu’en cas de besoin.",
+            "Pour une PME, cela se traduit ainsi : ChatGPT seul aide à rédiger un message ; un workflow enchaîne qualification, message et relance sur des règles fixes ; un agent adapte l’enchaînement à chaque prospect. La plupart des projets commencent par un workflow, comme nous l’expliquons dans [agent IA vs chatbot](/blog/agent-ia-vs-chatbot-difference-pme).",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Comment utiliser l’IA pour prospecter ?",
+      paragraphs: [
+        "France Num, le service public de la transformation numérique des TPE-PME, décrit dans sa [fiche sur l’IA au service de la prospection](https://www.francenum.gouv.fr/guides-et-conseils/intelligence-artificielle/comprendre-et-adopter-lia/lintelligence-artificielle-4) du 9 mars 2026 cinq usages observés chez des PME : qualifier les prospects, préparer la prise de contact, relancer, répondre via un chatbot et enrichir la base client.",
+        "Dans la même fiche, un agent de préparation de rendez-vous et de messages personnalisés a apporté 10 % de productivité en plus aux commerciaux et 8 points de conversion supplémentaires. Ce sont des ordres de grandeur réalistes, loin des promesses de pipeline multiplié par dix.",
+        "Le tableau ci-dessous répartit les tâches de prospection entre ce qu’un agent IA fait bien et ce qui doit rester au commercial. C’est la grille que nous utilisons au cadrage d’un projet.",
+      ],
+      table: {
+        caption: "Prospection commerciale : ce que fait l’agent IA, ce que garde le commercial",
+        headers: ["Étape", "Ce que fait l’agent IA", "Ce que garde le commercial"],
+        rows: [
+          ["Ciblage", "Constitue une liste de comptes selon vos critères et des signaux publics", "Valide les critères et retire les comptes sensibles"],
+          ["Qualification", "Note chaque contact à partir du site, des offres d’emploi, du CRM", "Décide du seuil à partir duquel on contacte"],
+          ["Premier message", "Rédige un brouillon adapté au contexte de l’entreprise visée", "Relit, ajuste, envoie"],
+          ["Relances", "Programme et rédige les relances selon les réponses reçues", "Intervient dès qu’un prospect répond"],
+          ["Rendez-vous", "Propose des créneaux, envoie la confirmation, prépare un dossier", "Mène l’échange"],
+          ["CRM", "Met à jour statut, historique et prochaine action", "Vérifie une fois par semaine"],
+        ],
+      },
+    },
+    {
+      title: "Comment puis-je automatiser ma prospection ?",
+      paragraphs: [
+        "L’automatisation se construit dans un ordre précis, et l’ordre compte plus que l’outil. Une PME qui branche un agent sur une base mal tenue obtient des messages hors sujet envoyés aux mauvaises personnes, avec sa signature en bas.",
+      ],
+      bullets: [
+        "Définir la cible par écrit : secteur, taille, zone, fonction du contact, signal qui déclenche le contact (recrutement, ouverture, levée de fonds, nouveau site).",
+        "Nettoyer la base : doublons, contacts partis, adresses invalides, statuts à jour. L’agent lira cette base comme une vérité.",
+        "Connecter le CRM en lecture et en écriture, avec un compte dédié à l’agent et les seuls droits nécessaires.",
+        "Écrire les règles : quand qualifier, quand écrire, combien de relances, à quel rythme, quand s’arrêter, quand transférer à un humain.",
+        "Tester sur un échantillon de 30 à 50 comptes avec validation manuelle de chaque message, puis élargir.",
+        "Mesurer chaque semaine : taux de réponse, rendez-vous obtenus, désinscriptions, erreurs relevées à la relecture.",
+      ],
+      subsections: [
+        {
+          title: "Outil du marché ou agent IA sur mesure ?",
+          paragraphs: [
+            "Les grands éditeurs de CRM proposent désormais leurs propres agents : [l’agent de prospection de HubSpot](https://www.hubspot.fr/products/sales/ai-prospecting-agent) identifie des leads, personnalise des e-mails et automatise le suivi dans le CRM ; [celui de Salesforce](https://www.salesforce.com/fr/sales/prospecting/agent/) établit une liste hiérarchisée de comptes et de contacts.",
+            "Ces outils conviennent si vous utilisez déjà leur CRM et si votre cible est standard. Dès que la prospection dépend de données métier, d’un outil maison ou de règles particulières, [l’agent IA sur mesure](/blog/agent-ia-sur-mesure-pme) devient plus adapté, parce qu’il se branche sur ce que vous avez déjà.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Comment automatiser les tâches avec l’IA ?",
+      paragraphs: [
+        "La méthode vaut pour la prospection comme pour le reste de l’entreprise. On liste les tâches répétitives, on note pour chacune la fréquence, le temps passé et le risque d’erreur, puis on commence par celles qui sont fréquentes, longues et peu risquées.",
+        "En prospection, la recherche d’informations et la saisie CRM arrivent en tête de cette liste. Les commerciaux français ne consacrent que 36 % de leur temps à la vente d’après l’étude Salesforce citée plus haut, et les agents devraient réduire de 37 % le temps de recherche de prospects une fois déployés.",
+        "La règle à ne pas oublier : garder un humain dans la boucle sur tout ce qui engage la réputation. France Num rappelle dans sa fiche que les retours terrain montrent qu’une automatisation trop poussée, par exemple de l’intégralité des conversations, peut nuire à la confiance des prospects.",
+      ],
+      subsections: [
+        {
+          title: "Quelles tâches de prospection automatiser en premier ?",
+          paragraphs: [],
+          bullets: [
+            "La veille de signaux : nouveaux recrutements, ouvertures d’agence, appels d’offres, changements de dirigeant sur votre cible.",
+            "Le dossier avant rendez-vous : activité, actualité, interlocuteurs, historique avec votre entreprise, en une page.",
+            "Les relances sur devis envoyés et sur contacts rencontrés en salon, avec un message qui rappelle le contexte précis.",
+            "La saisie CRM après chaque échange : compte rendu, prochaine action, date.",
+            "La qualification des demandes entrantes, déjà décrite dans [agent IA service client](/blog/agent-ia-service-client-pme).",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Quelle est la technique de prospection la plus efficace ?",
+      paragraphs: [
+        "Il n’existe pas de technique universelle, et un agent IA ne change pas cette réalité. Ce qui fonctionne le mieux reste un message précis, envoyé à la bonne personne, au moment où elle a un problème que vous résolvez. L’agent sert à rendre cette précision possible à l’échelle d’une PME.",
+        "La prospection multicanale, qui combine e-mail, téléphone et LinkedIn, tire le meilleur parti d’un agent : il prépare le contexte commun aux trois canaux, et le commercial choisit celui qui convient à chaque compte. L’appel reste le canal où la voix humaine fait la différence, comme nous l’expliquons dans [agent IA téléphonique](/blog/agent-ia-telephonique-pme).",
+        "La personnalisation est le levier le plus documenté. Dans la fiche France Num, les deux startups citées ont construit leur solution précisément sur ce point : analyser l’entreprise et le contact avant d’écrire, plutôt que d’envoyer le même message à tout un fichier.",
+      ],
+    },
+    {
+      title: "Un agent IA de prospection est-il légal en France ?",
+      paragraphs: [
+        "Oui, à condition de respecter les règles de la prospection électronique et du RGPD, qui s’appliquent à l’agent comme à un commercial. La CNIL résume ces règles dans [les règles d’or de la prospection par courrier électronique](https://www.cnil.fr/fr/les-regles-dor-de-la-prospection-par-courrier-electronique-0).",
+        "En B2B, le consentement préalable n’est pas exigé lorsque l’objet de la sollicitation est en rapport avec les fonctions exercées à titre professionnel par le destinataire, à condition qu’il ait été informé et qu’il puisse s’opposer gratuitement. Pour les particuliers, le consentement préalable reste la règle.",
+        "L’AI Act ajoute une obligation de transparence. La Commission européenne indique sur sa [page consacrée au cadre réglementaire de l’IA](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai) que le règlement est applicable depuis le 2 août 2026 et que les personnes doivent savoir qu’elles interagissent avec une machine. Si l’agent répond lui-même à un prospect, dites-le.",
+      ],
+      subsections: [
+        {
+          title: "Quelles précautions RGPD pour un agent IA qui enrichit des fiches prospects ?",
+          paragraphs: [
+            "L’enrichissement à partir de sources publiques reste un traitement de données personnelles : finalité écrite, données limitées à ce qui sert la prospection, durée de conservation, information des personnes et droit d’opposition respecté dès la première demande.",
+            "Nous détaillons ces points, le contrat de sous-traitance avec l’éditeur du modèle et l’analyse d’impact dans [agent IA et RGPD](/blog/agent-ia-rgpd-ai-act-pme). Un agent qui prospecte sans ces garde-fous expose la PME, pas l’éditeur.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Combien coûte un agent IA de prospection pour une PME ?",
+      paragraphs: [
+        "Le coût dépend de trois choses : le nombre d’outils à connecter, la part de sur mesure dans les règles et le volume de prospects traités chaque mois. Un agent qui lit un CRM standard et prépare des messages coûte peu ; un agent qui croise cinq sources et gère des relances multicanales coûte davantage.",
+        "Pour un repère public, la fiche France Num citée plus haut décrit un agent de qualification de leads déployé dans une PME pour moins de 20 000 euros, avec une amélioration de l’identification des opportunités et du suivi des conversions.",
+        "Nous détaillons les postes de coût, les abonnements aux modèles et le calcul du retour sur investissement dans [combien coûte un agent IA pour une PME](/blog/combien-coute-agent-ia-pme). Le bon calcul compare le coût de l’agent au temps de vente qu’il rend, pas au salaire d’un commercial.",
+      ],
+    },
+    {
+      title: "Scénario illustratif : une PME industrielle de 25 personnes sur six semaines",
+      paragraphs: [
+        "Ce scénario est illustratif : il décrit un déroulé type, pas un client nommé. Un fabricant de mobilier professionnel de 25 personnes a deux commerciaux qui passent leurs matinées à chercher des contacts et à mettre à jour un CRM qu’ils n’aiment pas.",
+        "Semaine 1 : la cible est écrite, avec trois signaux qui déclenchent un contact : ouverture d’un établissement, recrutement d’un responsable achats, appel d’offres publié. La base de 1 800 contacts est nettoyée, 400 fiches sont archivées.",
+        "Semaines 2 et 3 : l’agent est connecté au CRM avec un compte dédié. Il surveille les signaux, qualifie les comptes et prépare un brouillon de premier message et deux relances par compte. Chaque message est validé à la main par un commercial.",
+        "Semaines 4 à 6 : l’envoi des relances simples est automatisé, le premier message reste validé. Résultat plausible : 120 comptes contactés, 14 réponses, 6 rendez-vous, et deux heures par jour rendues à chaque commercial. Rien de spectaculaire, mais un pipeline qui se remplit sans heures supplémentaires.",
+      ],
+    },
+    {
+      title: "Quelles erreurs éviter avec un agent IA de prospection ?",
+      paragraphs: [
+        "Les échecs que nous observons tiennent rarement à la technologie. Ils tiennent à la cible, aux données et au niveau d’autonomie accordé trop tôt. Les PME françaises s’équipent vite : d’après le [Baromètre France Num 2026](https://www.entreprises.gouv.fr/espace-presse/barometre-france-num-2026-quatre-tpe-pme-sur-dix-utilisent-desormais-lintelligence) de la DGE, 40 % des TPE-PME utilisent l’IA et 11 % l’emploient pour automatiser des tâches, ce qui laisse peu de place à l’improvisation.",
+      ],
+      bullets: [
+        "Lancer l’agent sur toute la base au lieu d’un échantillon : une erreur de ton se répète alors des centaines de fois.",
+        "Laisser l’agent inventer un contexte quand il ne trouve rien : imposez une règle « pas d’information, pas de personnalisation ».",
+        "Multiplier les relances : trois messages espacés suffisent, au-delà on nuit à la marque.",
+        "Oublier le lien de désinscription et le registre des oppositions : une plainte à la CNIL coûte plus qu’un rendez-vous.",
+        "Ne pas relire les fiches CRM mises à jour par l’agent pendant le premier mois.",
+        "Choisir un prestataire sans vérifier qui construit et qui maintient l’agent, comme nous l’expliquons dans [agence agents IA : comment choisir](/blog/agence-agents-ia-comment-choisir-prestataire).",
+      ],
+    },
+    {
+      title: "Ce qu’il faut retenir",
+      paragraphs: [],
+      bullets: [
+        "Un agent IA de prospection commerciale enchaîne ciblage, qualification, messages, relances et saisie CRM ; le commercial garde l’envoi du premier contact, l’appel et le rendez-vous.",
+        "Commencez par un workflow à règles fixes et un échantillon de 30 à 50 comptes, puis élargissez l’autonomie quand le ton est stable.",
+        "La base de données propre et la cible écrite comptent plus que le choix de l’outil.",
+        "En B2B, pas de consentement préalable exigé si le message est lié à la fonction du destinataire et qu’il peut s’opposer ; en B2C, consentement obligatoire ; depuis le 2 août 2026, dites qu’une IA répond.",
+        "Attendez des gains de temps et quelques points de conversion, pas un pipeline multiplié par dix.",
+        "[Nos agents IA pour PME](/agents-ia) et [notre offre](/offre) démarrent par ce cadrage avant toute ligne de code.",
+      ],
+    },
+  ],
+};
+
 export const septemberArticles: Record<string, BlogArticle> = {
   [suivreVisibilite.slug]: suivreVisibilite,
   [agentIaSurMesure.slug]: agentIaSurMesure,
@@ -5347,6 +5577,7 @@ export const septemberArticles: Record<string, BlogArticle> = {
   [agentIaServiceClient.slug]: agentIaServiceClient,
   [agentIaRgpd.slug]: agentIaRgpd,
   [consultantGeo.slug]: consultantGeo,
+  [agentIaProspection.slug]: agentIaProspection,
 };
 
 export const septemberPosts: BlogPostMeta[] = [
@@ -5538,5 +5769,14 @@ export const septemberPosts: BlogPostMeta[] = [
     date: consultantGeo.date,
     readingTime: consultantGeo.readingTime,
     category: consultantGeo.category,
+  },
+  {
+    slug: agentIaProspection.slug,
+    title: agentIaProspection.title,
+    seoTitle: agentIaProspection.seoTitle,
+    description: agentIaProspection.description,
+    date: agentIaProspection.date,
+    readingTime: agentIaProspection.readingTime,
+    category: agentIaProspection.category,
   },
 ];
