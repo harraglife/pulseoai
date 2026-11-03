@@ -69,6 +69,15 @@ function buildMentions(names: Array<keyof typeof mentionUrls>): ArticleMention[]
 }
 
 export const articleMetadataBySlug: Record<string, ArticleSchemaEnhancement> = {
+  "consultant-geo-role-missions-choisir": {
+    about: {
+      "@type": "Thing",
+      name: "Consultant GEO pour une PME",
+      description:
+        "Le rôle d’un consultant GEO (Generative Engine Optimization) : relevé initial sur un corpus de questions, audit GEO, contenus answer-first, technique, sources externes et suivi ; différence SEO / GEO, faut-il payer une prestation GEO, comparaison consultant freelance, agence et équipe interne, dix questions pour choisir, repères de tarifs, scénario illustratif sur huit semaines.",
+    },
+    mentions: buildMentions(["ChatGPT", "OpenAI", "Google", "Google AI Overviews", "Gemini", "Perplexity", "GEO"]),
+  },
   "agent-ia-rgpd-ai-act-pme": {
     about: {
       "@type": "Thing",
