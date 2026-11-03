@@ -5033,6 +5033,298 @@ const agentIaRgpd: ArticleWithTables = {
   ],
 };
 
+const consultantGeo: ArticleWithTables = {
+  slug: "consultant-geo-role-missions-choisir",
+  title: "Consultant GEO : rôle, missions et comment le choisir",
+  seoTitle: "Consultant GEO : que fait-il et comment le choisir en 2026",
+  description:
+    "Ce qu’un consultant GEO fait vraiment pour une PME : audit, contenus, sources, mesure. Freelance ou agence, questions à poser, signaux d’alerte.",
+  date: "3 novembre 2026",
+  dateModified: "3 novembre 2026",
+  readingTime: "12 min",
+  category: "SEO / GEO",
+  articleSection: "SEO / GEO",
+  keywords: [
+    "consultant GEO",
+    "consultant référencement ChatGPT",
+    "consultant visibilité IA",
+    "prestation GEO",
+    "freelance GEO",
+    "audit GEO",
+    "agence GEO",
+    "expert GEO",
+    "choisir un consultant GEO",
+  ],
+  intro:
+    "Un consultant GEO est la personne qu’une PME appelle quand ChatGPT, Gemini ou Perplexity recommandent ses concurrents et jamais elle. Le métier est récent, les offres se multiplient et les promesses sont difficiles à vérifier. Cet article décrit ce que fait réellement un consultant GEO, ce qu’il coûte, et comment le choisir sans se tromper.",
+  quickAnswer: {
+    question: "Qu’est-ce qu’un consultant GEO ?",
+    answer:
+      "Un consultant GEO (Generative Engine Optimization) est un spécialiste qui aide une entreprise à être citée dans les réponses des moteurs IA comme ChatGPT, Gemini, Perplexity et les AI Overviews de Google. Il mesure la visibilité de départ sur un corpus de questions clients, puis agit sur les contenus, la structure du site et les sources externes qui alimentent les IA. On le choisit sur sa méthode de mesure, ses livrables et sa capacité à dire ce qu’il ne garantit pas.",
+  },
+  contextualLinks: [
+    { label: "notre agence SEO / GEO à Nantes", href: "/agence-seo-geo-nantes" },
+    { label: "l’audit SEO / GEO", href: "/blog/audit-seo-geo-visibilite-ia" },
+    { label: "choisir une agence de référencement ChatGPT", href: "/blog/agence-referencement-chatgpt-comment-choisir" },
+    { label: "suivre sa visibilité dans ChatGPT", href: "/blog/suivre-visibilite-chatgpt-ia" },
+    { label: "apparaître sur ChatGPT", href: "/blog/referencement-chatgpt-apparaitre-ia" },
+    { label: "notre offre GEO", href: "/offre" },
+  ],
+  bodyCta: {
+    intro: "Vous hésitez entre faire seul, un consultant ou une agence ?",
+    linkLabel: "Décrivez-nous votre situation en quelques lignes",
+    href: "/contact",
+    outro: ", nous vous disons ce qui est utile dans votre cas, et ce qui ne l’est pas.",
+  },
+  relatedSlugs: [
+    "agence-referencement-chatgpt-comment-choisir",
+    "audit-seo-geo-visibilite-ia",
+    "suivre-visibilite-chatgpt-ia",
+    "outil-geo-suite-seo-ou-plateforme-dediee",
+    "chatgpt-recommande-concurrent-pourquoi",
+  ],
+  faqTitle: "FAQ : consultant GEO",
+  faqItems: [
+    {
+      question: "Un consultant SEO peut-il faire du GEO ?",
+      answer:
+        "Souvent oui, parce que les bases sont les mêmes : contenus utiles, site explorable, autorité. La différence se joue sur la mesure, qui ne repose plus sur des positions, et sur le travail des sources externes citées par les IA. Demandez-lui comment il mesure une mention dans ChatGPT avant de signer.",
+    },
+    {
+      question: "Combien de temps dure une mission de consultant GEO ?",
+      answer:
+        "Un audit se livre en deux à quatre semaines. Un accompagnement se mesure plutôt en mois, parce que les contenus doivent être publiés, repris par les sources externes puis explorés par les moteurs avant d’apparaître dans les réponses. Les premiers signaux arrivent généralement entre un et trois mois.",
+    },
+    {
+      question: "Un consultant GEO peut-il garantir que ChatGPT me citera ?",
+      answer:
+        "Non, et c’est un signal d’alerte s’il le promet. Personne ne contrôle les modèles, leurs mises à jour ni les contenus publiés par vos concurrents. Un consultant sérieux s’engage sur ses actions, sa méthode de mesure et ses relevés, pas sur une présence systématique.",
+    },
+    {
+      question: "Faut-il un consultant GEO différent pour ChatGPT, Gemini et Perplexity ?",
+      answer:
+        "Non. Les trois moteurs s’appuient sur des signaux proches : contenus clairs, sources tierces, cohérence des informations sur votre entreprise. Un seul consultant couvre les trois, à condition de les mesurer séparément, car vous pouvez être cité sur l’un et absent de l’autre.",
+    },
+    {
+      question: "Une petite entreprise locale a-t-elle besoin d’un consultant GEO ?",
+      answer:
+        "Pas toujours. Une fiche Google Business Profile complète, des avis réguliers et une page qui répond aux questions de vos clients suffisent souvent à démarrer. Le consultant devient utile quand un concurrent est cité à votre place sur vos requêtes les plus rentables et que vous ne comprenez pas pourquoi.",
+    },
+  ],
+  sections: [
+    {
+      title: "Qu’est-ce qu’un consultant GEO ?",
+      paragraphs: [
+        "Un consultant GEO est un spécialiste de la visibilité dans les moteurs de réponse à base d’IA. Son objectif n’est pas de classer votre site dans une liste de liens, mais de faire citer votre entreprise dans la réponse rédigée par ChatGPT, Gemini, Perplexity ou le Mode IA de Google.",
+        "Le métier vient du SEO. La plupart des consultants GEO sont d’anciens consultants en référencement naturel qui ont ajouté la mesure des réponses IA et le travail des sources externes à leur méthode, comme nous l’expliquons dans [SEO classique vs GEO](/blog/seo-classique-vs-geo-acquisition-client).",
+        "Le besoin, lui, est récent et massif. D’après [TechCrunch](https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users), ChatGPT a atteint 900 millions d’utilisateurs hebdomadaires en février 2026, et Google indiquait en mai 2026 sur [son blog](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) que le Mode IA dépassait le milliard d’utilisateurs mensuels.",
+      ],
+      subsections: [
+        {
+          title: "Quelle est la définition de GEO ?",
+          paragraphs: [
+            "GEO signifie Generative Engine Optimization, soit optimisation pour les moteurs génératifs. France Num, le service public de la transformation numérique des TPE-PME, le définit dans son [dossier consacré au GEO](https://www.francenum.gouv.fr/guides-et-conseils/communication-et-publicite/referencement/optimisation-pour-les-moteurs) comme l’ensemble des pratiques qui augmentent la probabilité qu’un contenu soit utilisé, cité ou repris par un moteur de recherche fondé sur l’IA générative.",
+            "La nuance compte : être « utilisé » comme source, être « cité » avec un lien et être « recommandé » par son nom sont trois résultats différents. Un bon consultant GEO les mesure séparément dès le premier relevé.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "C’est quoi le rôle d’un consultant ?",
+      paragraphs: [
+        "Le rôle d’un consultant GEO tient en quatre temps : mesurer la situation de départ, diagnostiquer pourquoi les IA ne vous citent pas, agir sur ce qui dépend de vous, puis suivre l’évolution avec la même méthode.",
+        "Le tableau suivant résume les missions courantes et le livrable à attendre pour chacune. Si une mission n’a pas de livrable identifiable, demandez pourquoi.",
+      ],
+      table: {
+        caption: "Les missions d’un consultant GEO et leurs livrables",
+        headers: ["Mission", "Ce que fait le consultant", "Livrable attendu"],
+        rows: [
+          ["Relevé initial", "Pose 20 à 50 questions clients à ChatGPT, Gemini, Perplexity et note qui est cité", "Tableau daté : question, moteur, mention, source, lien"],
+          ["Audit GEO", "Analyse vos pages, vos données structurées, vos sources externes et vos concurrents", "Rapport avec causes identifiées et actions classées par priorité"],
+          ["Contenus", "Réécrit ou crée des pages qui répondent directement aux questions testées", "Pages publiées, plan éditorial, briefs"],
+          ["Technique", "Vérifie l’exploration par les robots IA, le balisage, la cohérence des informations", "Liste de corrections validées avec votre développeur"],
+          ["Sources externes", "Travaille les annuaires, avis, comparatifs et médias que les IA reprennent", "Liste des mentions obtenues, avec dates"],
+          ["Suivi", "Rejoue le même corpus de questions chaque mois", "Rapport comparant la part de présence d’une période à l’autre"],
+        ],
+      },
+      subsections: [
+        {
+          title: "Que fait concrètement un consultant GEO sur votre site ?",
+          paragraphs: [
+            "Sur le site, il restructure les pages clés pour qu’elles donnent une réponse directe dès les premières lignes, ajoute les questions que vos clients posent réellement et vérifie que les robots des IA peuvent lire le contenu.",
+            "Il ne touche pas que le site. Les IA construisent leurs réponses à partir de plusieurs sources, et votre site seul ne suffit pas, comme nous le détaillons dans [sources citées par les IA](/blog/sources-citees-ia-site-ne-suffit-pas). Une part importante de la mission se joue donc chez les autres : avis, annuaires, articles, comparatifs.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Quelle est la différence entre le SEO et le GEO ?",
+      paragraphs: [
+        "Le SEO vise une position dans une liste de résultats. Le GEO vise une place dans une réponse rédigée, qui peut varier d’une question à l’autre et d’un moteur à l’autre. La mesure change, les leviers se recoupent largement.",
+        "Google l’écrit noir sur blanc dans sa [documentation sur les fonctionnalités IA de la recherche](https://developers.google.com/search/docs/appearance/ai-features?hl=fr) : aucune exigence supplémentaire ni optimisation spéciale n’est requise pour apparaître dans les aperçus IA ou le Mode IA, et aucune donnée structurée particulière n’est nécessaire.",
+        "Pour ChatGPT, la logique est proche. OpenAI précise dans son [centre d’aide](https://help.openai.com/en/articles/9237897-chatgpt-search) que ChatGPT peut transmettre les requêtes de recherche à des fournisseurs tiers comme Bing et que les réponses contiennent des citations en ligne. Un consultant GEO sérieux travaille donc aussi votre référencement sur Bing.",
+      ],
+      subsections: [
+        {
+          title: "Consultant SEO vs consultant GEO : quelles différences ?",
+          paragraphs: [
+            "Le consultant SEO raisonne en positions, en clics et en pages. Le consultant GEO raisonne en questions, en mentions et en sources. Les deux travaillent les mêmes fondamentaux : contenus utiles, site explorable, autorité externe.",
+            "La vraie différence est la mesure. Il n’existe pas de classement officiel dans ChatGPT, donc le consultant GEO doit construire son propre corpus de questions et le rejouer régulièrement, méthode que nous décrivons dans [suivre sa visibilité dans ChatGPT](/blog/suivre-visibilite-chatgpt-ia).",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Faut-il payer une prestation GEO ?",
+      paragraphs: [
+        "Pas toujours. France Num rappelle dans sa [fiche pratique du 28 septembre 2026](https://www.francenum.gouv.fr/guides-et-conseils/communication-et-publicite/referencement/etre-visible-dans-les-reponses-des-ia) que les TPE-PME peuvent agir seules pour gagner en visibilité sur les moteurs IA, et propose un test de dix minutes à faire avant toute dépense.",
+        "La question devient sérieuse quand vos clients utilisent ces outils pour choisir un prestataire. La même fiche cite le baromètre de l’Obsoco de juin 2026 : 40 % des Français déclarent avoir utilisé une IA générative pour préparer un achat dans l’année, contre 28 % en septembre 2025.",
+        "Côté usage général, le [Baromètre du numérique 2026 de l’Arcep](https://www.arcep.fr/actualites/actualites-et-communiques/detail/n/equipements-et-usages-du-numerique-090226.html) indique que l’IA générative est utilisée par 48 % de la population, en hausse de 15 points en un an. Si votre marché est là, la prestation se justifie ; sinon, elle attend.",
+      ],
+      bullets: [
+        "Faites seul si vous avez une seule activité, une zone locale et un concurrent déjà cité : commencez par votre fiche Google Business Profile, vos avis et une page de réponses, comme dans [GEO local](/blog/geo-local-guide-entreprises).",
+        "Payez un audit si des concurrents sont cités à votre place sur vos requêtes rentables et que vous ne savez pas pourquoi.",
+        "Payez un accompagnement si vous avez plusieurs services, plusieurs villes ou un cycle de vente long, où chaque mention compte.",
+        "Ne payez pas une prestation qui repose sur un seul fichier ou un seul balisage présenté comme indispensable : France Num et Google disent le contraire.",
+      ],
+      subsections: [
+        {
+          title: "Pourquoi le trafic IA pèse plus lourd que son volume ?",
+          paragraphs: [
+            "Les moteurs IA envoient encore peu de visiteurs. Le dossier GEO de France Num estime qu’ils représentent moins de 20 % des recherches et 1 % du trafic généré vers les sites, avec une progression rapide.",
+            "Mais ces visiteurs valent cher. Selon l’[étude Semrush sur le trafic issu de la recherche IA](https://www.semrush.com/blog/ai-search-seo-traffic-study/), un visiteur venu d’un LLM vaut 4,4 fois un visiteur venu de la recherche organique classique, et la recherche IA pourrait dépasser la recherche traditionnelle en trafic d’ici début 2028.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Consultant GEO, agence GEO ou freelance : qui choisir ?",
+      paragraphs: [
+        "Les trois formats existent et aucun n’est meilleur par principe. Le bon choix dépend du volume de contenus à produire et de la durée d’accompagnement souhaitée. Le tableau ci-dessous les compare ; les critères propres aux agences sont dans [agence de référencement ChatGPT : comment choisir](/blog/agence-referencement-chatgpt-comment-choisir).",
+      ],
+      table: {
+        caption: "Consultant freelance, agence ou équipe interne : comparaison",
+        headers: ["Critère", "Consultant GEO freelance", "Agence GEO", "Équipe interne"],
+        rows: [
+          ["Interlocuteur", "Une seule personne, senior en général", "Chef de projet plus équipe", "Un salarié formé"],
+          ["Production de contenus", "Limitée à ce qu’il rédige lui-même", "Rédacteurs, développeurs, relations presse", "Dépend du temps disponible"],
+          ["Engagement", "Mission ou forfait mensuel court", "Souvent 6 à 12 mois", "Permanent"],
+          ["Points forts", "Méthode, réactivité, coût maîtrisé", "Capacité d’exécution, suivi outillé", "Connaissance métier"],
+          ["Points de vigilance", "Disponibilité, dépendance à une personne", "Qui fait vraiment le travail, conditions de sortie", "Veille et formation continues"],
+          ["Pour qui", "PME avec un site déjà solide", "PME multi-services ou multi-villes", "Entreprise avec équipe marketing"],
+        ],
+      },
+      subsections: [
+        {
+          title: "Faut-il un consultant GEO à Nantes, à Toulouse ou à Paris ?",
+          paragraphs: [
+            "La localisation du consultant compte peu pour le travail lui-même, qui se fait à distance. Elle compte pour la connaissance de votre marché local et pour les sources régionales que les IA reprennent : presse locale, réseaux d’entreprises, annuaires de ville.",
+            "Pour une entreprise de l’Ouest, [notre agence SEO / GEO à Nantes](/agence-seo-geo-nantes) combine les deux. Pour les autres villes, la méthode de [référencement local sur ChatGPT](/blog/referencement-local-chatgpt-apparaitre-ville) s’applique partout.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Qui peut réaliser un audit GEO ?",
+      paragraphs: [
+        "Un audit GEO peut être réalisé par un consultant GEO, une agence SEO qui a ajouté la mesure IA à sa méthode, ou par vous-même pour une première version. L’important est la méthode, pas le titre.",
+        "France Num conseille de démarrer par un test en dix minutes : noter cinq questions qu’un prospect poserait sans citer votre nom, les poser à ChatGPT, au Mode IA de Google et à Mistral, puis relever si votre entreprise est mentionnée, si votre site est cité et si un lien est proposé.",
+        "Un audit professionnel élargit ce test à un corpus stable de questions, ajoute l’analyse des concurrents cités, des sources qu’ils occupent et de vos pages. Nous décrivons ce contenu dans [l’audit SEO / GEO](/blog/audit-seo-geo-visibilite-ia).",
+      ],
+      subsections: [
+        {
+          title: "Quels signaux un audit GEO doit-il mesurer ?",
+          paragraphs: [],
+          bullets: [
+            "Présence : votre entreprise est-elle citée, et sur combien de questions du corpus ?",
+            "Source : votre site est-il utilisé comme référence, avec ou sans lien ?",
+            "Concurrents : qui est cité à votre place, et à partir de quelles sources ?",
+            "Cohérence : nom, adresse, services et horaires sont-ils identiques partout ?",
+            "Exploration : les robots d’OpenAI, Google et Perplexity peuvent-ils lire vos pages ?",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Comment choisir son consultant GEO ?",
+      paragraphs: [
+        "France Num liste dans sa fiche pratique dix questions à poser à un prestataire en référencement IA. Nous les avons regroupées en six vérifications, applicables à un consultant comme à une agence.",
+      ],
+      bullets: [
+        "Le résultat attendu est-il défini ? Mention, citation comme source ou lien ne produisent pas les mêmes effets. Exigez des indicateurs écrits.",
+        "Sur quels moteurs et quelles questions ? Le corpus doit ressembler aux questions de vos clients, sans votre nom dedans.",
+        "Comment mesure-t-il le point de départ ? Un relevé daté, pas une capture d’écran isolée.",
+        "Qu’est-ce qui relève déjà du SEO ? Ne payez pas deux fois les mêmes actions sous deux noms.",
+        "Quelles preuves ? Au moins un cas daté, avec le secteur, la période, les questions testées et le résultat.",
+        "Que ne garantit-il pas ? Un consultant qui promet une présence systématique dans ChatGPT ne contrôle pas ce qu’il promet.",
+      ],
+      subsections: [
+        {
+          title: "Quels sont les signaux d’alerte avec un consultant GEO ?",
+          paragraphs: [
+            "Les signaux d’alerte : une « visibilité IA » sans indicateur, un pourcentage spectaculaire sans point de départ, un fichier llms.txt vendu comme la clé du succès, un tableau de bord dont personne n’explique la source des données.",
+            "Ajoutez le devis flou. France Num recommande de vérifier qui reste propriétaire des contenus, des données recueillies et des comptes créés, et ce qu’il advient de vos données si vous changez de prestataire.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Quel est le salaire moyen d’un consultant ?",
+      paragraphs: [
+        "La question sert surtout à estimer le coût d’une mission. Les repères publics concernent les consultants SEO indépendants et varient beaucoup selon le niveau.",
+        "Sur la place de marché [Codeur.com](https://www.codeur.com/consultant/seo/tarif), le tarif journalier moyen affiché par les consultants SEO freelances est de 185 € en octobre 2026, avec un palier à 280 € pour les profils seniors. Les consultants GEO spécialisés se situent au-dessus de ces repères généralistes, sans qu’il existe encore de baromètre dédié.",
+        "Pour une PME, le bon raisonnement n’est pas le tarif journalier mais le coût de l’absence : chaque mois où un concurrent est recommandé à votre place sur vos requêtes rentables se chiffre en devis non reçus.",
+      ],
+      subsections: [
+        {
+          title: "Comment se facture une prestation GEO ?",
+          paragraphs: [
+            "Trois formats dominent. L’audit ponctuel, facturé au forfait, livre un diagnostic et un plan d’action. L’accompagnement mensuel couvre les contenus, le suivi et les sources externes. La formation permet à votre équipe de reprendre la main ensuite.",
+            "Quel que soit le format, le devis doit détailler les livrables, les échéances, les coûts récurrents et les conditions de sortie. [Notre offre](/offre) suit cette logique, de l’audit à l’accompagnement.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Consultant référencement ChatGPT : est-ce la même chose qu’un consultant GEO ?",
+      paragraphs: [
+        "Oui, à un détail près. Le consultant référencement ChatGPT se concentre sur un seul moteur ; le consultant GEO couvre ChatGPT, Gemini, Perplexity, Claude et les aperçus IA de Google. Comme les signaux se recoupent, le second fait le travail du premier.",
+        "Le poids de Google plaide pour la vision large. Son blog indiquait en mai 2026 que les AI Overviews dépassaient 2,5 milliards d’utilisateurs mensuels, et France Num signale que la Search Console propose depuis le 31 août 2026 un rapport dédié aux performances dans les fonctionnalités IA de Google.",
+        "En pratique, demandez un consultant qui mesure chaque moteur séparément. Vous pouvez être cité dans ChatGPT et absent de Gemini, comme nous l’expliquons dans [apparaître sur ChatGPT](/blog/referencement-chatgpt-apparaitre-ia) et [se référencer sur Gemini](/blog/comment-se-referencer-sur-gemini).",
+      ],
+    },
+    {
+      title: "Scénario illustratif : une PME de services accompagnée pendant huit semaines",
+      paragraphs: [
+        "Ce scénario est illustratif : il décrit un déroulé type, pas un client nommé. Un cabinet de conseil en gestion de douze personnes constate que ChatGPT recommande trois concurrents sur « quel cabinet pour restructurer une PME » et jamais lui.",
+        "Semaines 1 et 2 : le consultant GEO construit un corpus de 30 questions, les pose à ChatGPT, Gemini et Perplexity, relève 2 mentions sur 90 réponses, identifie les sources citées : deux annuaires professionnels, un média économique régional et les pages « expertises » des concurrents.",
+        "Semaines 3 à 5 : trois pages d’expertise sont réécrites en mode réponse directe, une FAQ de douze questions est publiée, la fiche Google Business Profile est complétée, deux annuaires et le média régional sont contactés avec une étude de cas.",
+        "Semaines 6 à 8 : le corpus est rejoué chaque semaine. Résultat plausible : 11 mentions sur 90 réponses, le site cité comme source sur Perplexity, toujours absent sur Gemini. Deux demandes de rendez-vous arrivent avec la réponse « vu sur ChatGPT » à la question « comment nous avez-vous connus ? ».",
+      ],
+    },
+    {
+      title: "Quels résultats attendre d’un consultant GEO, et en combien de temps ?",
+      paragraphs: [
+        "Attendez des résultats mesurables, pas des garanties. Les premiers signaux apparaissent généralement entre un et trois mois, le temps que les contenus soient publiés, repris par des sources tierces et explorés.",
+        "Les PME ont tout intérêt à relier ces résultats à leur activité. Le [Baromètre France Num 2026](https://www.entreprises.gouv.fr/espace-presse/barometre-france-num-2026-quatre-tpe-pme-sur-dix-utilisent-desormais-lintelligence) de la DGE indique que 46 % des TPE-PME déclarent qu’au moins 5 % de leurs clients proviennent d’internet, et que 83 % disposent d’au moins une solution de visibilité en ligne.",
+        "Le bon livrable final est donc triple : une part de présence par moteur, un trafic attribuable et des contacts qui citent l’IA comme origine. Si votre consultant ne parle que de visibilité, demandez les deux autres.",
+      ],
+    },
+    {
+      title: "Ce qu’il faut retenir",
+      paragraphs: [],
+      bullets: [
+        "Un consultant GEO fait citer votre entreprise dans les réponses de ChatGPT, Gemini, Perplexity et des aperçus IA de Google ; il vient du SEO et en garde les fondamentaux.",
+        "Son rôle : mesurer un point de départ sur un corpus de questions, auditer, agir sur les contenus, la technique et les sources externes, puis rejouer la même mesure.",
+        "Payer une prestation GEO se justifie quand des concurrents sont cités à votre place sur des requêtes rentables ; une TPE locale peut souvent démarrer seule.",
+        "Freelance, agence ou interne : choisissez selon le volume de contenus à produire et la durée d’accompagnement, pas selon le titre.",
+        "Exigez des indicateurs écrits, un relevé initial daté, des preuves documentées et la liste de ce qui n’est pas garanti.",
+        "Mesurez chaque moteur séparément et reliez la visibilité au trafic et aux contacts. [Notre offre](/offre) et [notre audit](/blog/audit-seo-geo-visibilite-ia) sont construits sur cette méthode.",
+      ],
+    },
+  ],
+};
+
 export const septemberArticles: Record<string, BlogArticle> = {
   [suivreVisibilite.slug]: suivreVisibilite,
   [agentIaSurMesure.slug]: agentIaSurMesure,
@@ -5054,6 +5346,7 @@ export const septemberArticles: Record<string, BlogArticle> = {
   [chatgptPourLeSeo.slug]: chatgptPourLeSeo,
   [agentIaServiceClient.slug]: agentIaServiceClient,
   [agentIaRgpd.slug]: agentIaRgpd,
+  [consultantGeo.slug]: consultantGeo,
 };
 
 export const septemberPosts: BlogPostMeta[] = [
@@ -5236,5 +5529,14 @@ export const septemberPosts: BlogPostMeta[] = [
     date: agentIaRgpd.date,
     readingTime: agentIaRgpd.readingTime,
     category: agentIaRgpd.category,
+  },
+  {
+    slug: consultantGeo.slug,
+    title: consultantGeo.title,
+    seoTitle: consultantGeo.seoTitle,
+    description: consultantGeo.description,
+    date: consultantGeo.date,
+    readingTime: consultantGeo.readingTime,
+    category: consultantGeo.category,
   },
 ];
