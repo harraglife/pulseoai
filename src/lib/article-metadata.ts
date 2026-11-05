@@ -69,6 +69,15 @@ function buildMentions(names: Array<keyof typeof mentionUrls>): ArticleMention[]
 }
 
 export const articleMetadataBySlug: Record<string, ArticleSchemaEnhancement> = {
+  "agent-ia-comptabilite-pme": {
+    about: {
+      "@type": "Thing",
+      name: "Agent IA comptabilité pour une PME",
+      description:
+        "Ce qu’un agent IA comptabilité automatise dans une PME : lecture et pré-saisie des factures fournisseurs, relance des factures impayées, rapprochement bancaire, préparation de la clôture avec l’expert-comptable ; choix entre IA intégrée au logiciel, assistant généraliste et agent sur mesure, impact de la facturation électronique obligatoire 2026-2027, méthode de mise en place en six étapes, règles RGPD et AI Act, repères de coût et scénario illustratif.",
+    },
+    mentions: buildMentions(["Anthropic", "Claude", "OpenAI", "ChatGPT", "Gemini", "Mistral AI"]),
+  },
   "agent-ia-prospection-commerciale-pme": {
     about: {
       "@type": "Thing",
