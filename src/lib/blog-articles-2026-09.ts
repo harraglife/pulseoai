@@ -5916,6 +5916,229 @@ const agentIaComptabilite: ArticleWithTables = {
   ],
 };
 
+const serpLocale: ArticleWithTables = {
+  slug: "serp-locale-definition-apparaitre",
+  title: "SERP locale : définition et comment y apparaître en 2026",
+  seoTitle: "SERP locale Google : pack local, facteurs de classement, leviers",
+  description:
+    "Ce qu’est une SERP locale, ce qu’elle contient (pack local, carte, avis), comment Google classe les entreprises et les leviers pour y apparaître.",
+  date: "10 novembre 2026",
+  dateModified: "10 novembre 2026",
+  readingTime: "9 min",
+  category: "SEO IA",
+  articleSection: "SEO IA",
+  keywords: [
+    "SERP locale",
+    "pack local Google",
+    "SEO local",
+    "fiche d’établissement Google",
+    "résultats de recherche locaux",
+    "positionnement SERP",
+    "avis Google",
+    "GEO local",
+  ],
+  intro:
+    "Une SERP locale est la page de résultats que Google affiche quand il estime qu’une requête a une intention de proximité, par exemple « plombier » ou « restaurant italien Nantes ». Elle se distingue d’une page de résultats classique par le pack local, la carte et les fiches d’établissement, qui passent avant les sites web. Voici ce qu’elle contient, ce qui déclenche son affichage, comment Google y classe les entreprises et les leviers concrets pour y figurer.",
+  quickAnswer: {
+    question: "Qu’est-ce qu’une SERP locale ?",
+    answer:
+      "Une SERP locale est une page de résultats Google adaptée à la position de l’internaute, affichée quand la requête exprime un besoin de proximité. Elle contient un pack local avec une carte et trois fiches d’établissement, puis des résultats organiques eux aussi localisés. Google y classe les entreprises selon trois facteurs : pertinence, distance et proéminence. Pour y apparaître, il faut une fiche d’établissement complète, des avis récents, des informations identiques partout et des pages locales bien structurées.",
+  },
+  contextualLinks: [
+    { label: "notre agence SEO et GEO à Nantes", href: "/agence-seo-geo-nantes" },
+    { label: "le guide du GEO local", href: "/blog/geo-local-guide-entreprises" },
+    { label: "le référencement local sur ChatGPT", href: "/blog/referencement-local-chatgpt-apparaitre-ville" },
+    { label: "la veille concurrentielle sur les SERP locales", href: "/blog/veille-concurrentielle-seo-ia-serp-locales" },
+  ],
+  bodyCta: {
+    intro: "Vous ne savez pas pourquoi vos concurrents apparaissent dans le pack local et pas vous ?",
+    linkLabel: "Demandez un relevé de vos SERP locales",
+    href: "/contact",
+    outro: ", on regarde vos requêtes, vos villes et les fiches qui passent devant la vôtre.",
+  },
+  relatedSlugs: [
+    "geo-local-guide-entreprises",
+    "referencement-local-chatgpt-apparaitre-ville",
+    "veille-concurrentielle-seo-ia-serp-locales",
+    "schema-org-guide-complet-geo",
+  ],
+  faqTitle: "FAQ : SERP locale",
+  faqItems: [
+    {
+      question: "Pourquoi je ne vois pas les mêmes résultats que mon client sur la même requête ?",
+      answer:
+        "Parce que Google adapte la page à la position de chacun, à son appareil et à son historique. Deux personnes situées à dix kilomètres l’une de l’autre voient souvent un pack local différent. Pour comparer, il faut tester depuis la ville du client, avec un outil de simulation ou en ajoutant la ville dans la requête.",
+    },
+    {
+      question: "Faut-il un site web pour apparaître dans le pack local ?",
+      answer:
+        "Non, une fiche d’établissement suffit techniquement, mais le site renforce la pertinence et la proéminence. Une page locale claire, avec adresse, services et balisage, aide Google à relier la fiche à votre activité. Sans site, vous dépendez entièrement de la fiche et des avis.",
+    },
+    {
+      question: "Les avis comptent-ils vraiment pour le classement local ?",
+      answer:
+        "Oui. Les avis nourrissent le facteur de proéminence, et leur note, leur nombre et leur fraîcheur pèsent dans le choix des internautes. Répondre à chaque avis, y compris aux avis négatifs, fait partie du travail. Acheter des avis expose la fiche à une suspension.",
+    },
+    {
+      question: "Une entreprise sans adresse ouverte au public peut-elle apparaître ?",
+      answer:
+        "Oui, en déclarant une zone de service dans la fiche d’établissement au lieu d’une adresse visible. L’entreprise apparaît alors sur les requêtes émises dans cette zone, avec une distance calculée depuis la zone déclarée. C’est le cas des artisans, des livreurs et des services à domicile.",
+    },
+    {
+      question: "La SERP locale concerne-t-elle aussi ChatGPT et les réponses IA ?",
+      answer:
+        "Indirectement. Les moteurs IA s’appuient sur les mêmes signaux : fiche complète, avis, cohérence des informations, pages locales lisibles. Une entreprise bien placée dans le pack local a de meilleures chances d’être citée quand un client demande une recommandation locale à une IA.",
+    },
+  ],
+  sections: [
+    {
+      title: "C’est quoi un SERP ?",
+      paragraphs: [
+        "SERP signifie Search Engine Results Page, la page de résultats d’un moteur de recherche. C’est tout ce que Google affiche après une requête : liens organiques, annonces, carte, questions fréquentes, images, aperçus IA. Chaque élément autre qu’un lien classique s’appelle une fonctionnalité SERP.",
+        "Une SERP locale est une version de cette page construite autour de la position de l’internaute. Google l’affiche quand il estime que la requête cherche quelque chose à proximité, même sans nom de ville. Elle met en avant des établissements avant les sites web.",
+        "Pour une PME, c’est souvent la page qui compte le plus, car elle capte les clients prêts à se déplacer ou à appeler. Nous l’intégrons dans chaque [audit SEO / GEO](/blog/audit-seo-geo-visibilite-ia), aux côtés de la visibilité dans les moteurs IA.",
+      ],
+      subsections: [
+        {
+          title: "Qu’est-ce que la SERP en SEO ?",
+          paragraphs: [
+            "En SEO, la SERP est le terrain de jeu : on y mesure la position d’une page sur une requête, la présence dans les fonctionnalités et le trafic qui en découle. Le référencement local ajoute une dimension, la géographie, qui fait varier la page d’un quartier à l’autre.",
+            "[Google indique que les résultats de recherche à proximité sont principalement basés sur la pertinence, la distance et la popularité](https://support.google.com/business/answer/7091?hl=fr). Une stratégie de SEO local travaille donc ces trois facteurs, pas seulement le contenu du site.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Qu’est-ce qu’une SERP sur Google ?",
+      paragraphs: [
+        "Sur Google, la page de résultats n’est plus une simple liste de dix liens bleus. Elle empile des blocs choisis selon l’intention détectée : un pack local pour une requête de proximité, un carrousel vidéo pour un tutoriel, un aperçu IA pour une question complexe.",
+        "Pour une requête locale, la page suit presque toujours le même ordre : annonces éventuelles, pack local avec la carte, résultats organiques localisés, puis questions fréquentes et annuaires. [Semrush précise que le pack local apparaît habituellement en haut de la SERP, au-dessus des annonces, mais peut aussi apparaître sous les annonces](https://fr.semrush.com/kb/1340-serp-features-local-pack).",
+        "La position de l’internaute change la page entière, pas seulement le pack local. Les résultats organiques sous la carte sont eux aussi filtrés par la zone géographique, ce qui explique pourquoi un même site peut être premier dans une ville et absent dans la voisine.",
+      ],
+    },
+    {
+      title: "Qu’est-ce qui déclenche une SERP locale ?",
+      paragraphs: [
+        "Google déclenche une SERP locale dans deux cas : la requête contient un lieu explicite, comme « coiffeur Rennes », ou elle désigne un service que l’on cherche naturellement près de soi, comme « pharmacie de garde » ou « garage ». Dans le second cas, Google ajoute la position de l’internaute à la requête.",
+        "[Semrush rappelle que Google utilise aussi la géolocalisation de l’internaute pour déterminer les résultats à afficher, même si ce dernier n’a pas précisé de lieu dans sa requête](https://fr.semrush.com/kb/1340-serp-features-local-pack). Une requête comme « restaurant » suffit donc à produire une page entièrement localisée.",
+        "Pour connaître cette position, [Google s’appuie sur la position exacte de l’appareil, sur l’adresse IP, sur les adresses de domicile et de travail enregistrées et sur l’activité précédente](https://support.google.com/websearch/answer/179386?hl=fr). Chaque source est une approximation plus ou moins fine.",
+      ],
+      bullets: [
+        "Lieu explicite dans la requête : « avocat droit du travail Lyon », « hôtel Saint-Malo centre ».",
+        "Service de proximité implicite : « plombier », « boulangerie ouverte », « dentiste urgence ».",
+        "Formule « près de moi » ou « à proximité », traitée comme une position de l’appareil.",
+        "Requête de marque locale : le nom d’une enseigne qui a plusieurs établissements.",
+      ],
+    },
+    {
+      title: "Que contient une SERP locale de Google ?",
+      paragraphs: [
+        "Le bloc le plus visible est le pack local, aussi appelé map pack. [Semrush décrit ses éléments : une carte de la région avec des épingles, une note pour chaque lieu, trois résultats de recherche, l’adresse et un bouton pour afficher plus de résultats](https://fr.semrush.com/kb/1340-serp-features-local-pack). Le bouton ouvre le local finder, la liste complète des établissements.",
+        "Sous le pack local viennent les résultats organiques localisés : pages de sites d’entreprises, annuaires, articles de presse régionale. Une page bien construite peut apparaître ici même si la fiche n’est pas dans le pack, et inversement.",
+        "Les fonctionnalités SERP complètent la page : questions fréquentes, fiche info de l’entreprise si la requête est une marque, images, et de plus en plus souvent un aperçu IA qui résume les options. Nous détaillons cette couche IA dans [le guide du GEO local](/blog/geo-local-guide-entreprises).",
+      ],
+      table: {
+        caption: "Les blocs d’une SERP locale et ce qui les alimente",
+        headers: ["Bloc", "Ce qu’il affiche", "Ce qui l’alimente"],
+        rows: [
+          ["Pack local", "Carte, trois établissements, note, adresse, horaires", "Fiche d’établissement, avis, distance, cohérence des informations"],
+          ["Local finder", "Liste complète des établissements avec filtres", "Mêmes signaux que le pack local, plus les catégories et attributs"],
+          ["Résultats organiques localisés", "Pages de sites, annuaires, presse locale", "Contenu de la page, balisage, liens, mentions locales"],
+          ["Fiche info de marque", "Panneau à droite avec l’entreprise, ses avis, ses liens", "Fiche d’établissement, site, données structurées"],
+          ["Aperçu IA et questions fréquentes", "Synthèse des options, questions liées", "Sources citées, pages answer-first, avis, annuaires"],
+        ],
+      },
+      subsections: [
+        {
+          title: "Qu’est-ce qu’une fonctionnalité SERP et comment la développer ?",
+          paragraphs: [
+            "Une fonctionnalité SERP est tout bloc enrichi qui s’ajoute aux liens classiques : pack local, questions fréquentes, extraits optimisés, avis, images, aperçu IA. On ne la « développe » pas directement, on fournit à Google les données qui lui permettent de l’afficher.",
+            "Pour le pack local, cette donnée est la fiche d’établissement. Pour les avis sous un lien, les horaires ou la fiche info, ce sont les données structurées. [Google explique que le balisage LocalBusiness permet d’indiquer les horaires d’ouverture et que le nom et l’adresse postale sont obligatoires](https://developers.google.com/search/docs/appearance/structured-data/local-business?hl=fr). Notre [guide Schema.org](/blog/schema-org-guide-complet-geo) détaille la mise en place et [l’outil de test](/blog/tester-balisage-schema-org-validateur) permet de vérifier le résultat.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Comment Google classe-t-il les entreprises dans le pack local ?",
+      paragraphs: [
+        "Le classement local n’utilise pas le même algorithme que le classement des sites. [Google l’explique avec trois facteurs : la pertinence définit dans quelle mesure une fiche correspond à la requête, la distance correspond à l’éloignement entre l’établissement et le client, et la proéminence indique si l’établissement est connu du grand public](https://support.google.com/business/answer/7091?hl=fr).",
+        "La pertinence dépend des catégories, des services et de la description de la fiche, mais aussi du site qui lui est rattaché. La distance ne se travaille pas, sauf en ouvrant un établissement ou en déclarant une zone de service. La proéminence vient des avis, des mentions sur le web, des liens et des annuaires.",
+        "[La même page de Google précise qu’il n’existe aucun moyen d’obtenir une meilleure place au classement local sur demande ou contre rémunération](https://support.google.com/business/answer/7091?hl=fr). Les annonces locales existent, mais elles s’affichent comme des annonces, au-dessus du pack.",
+      ],
+      subsections: [
+        {
+          title: "Qu’est-ce que le positionnement SERP ?",
+          paragraphs: [
+            "Le positionnement SERP est la place qu’occupe votre entreprise ou votre page sur une requête donnée, dans un lieu donné. En local, il faut toujours préciser le lieu : « troisième du pack local à Nantes centre » n’a rien à voir avec « absent du pack à Rezé ».",
+            "Ce positionnement se mesure sur un jeu de requêtes et de points géographiques, puis se suit dans le temps. [Les rapports de performances de la Search Console se découpent par requêtes, pages, pays, appareils, apparence et dates](https://support.google.com/webmasters/answer/7576553?hl=fr), sans découpage par ville : il faut donc un relevé complémentaire, décrit dans [notre méthode de veille sur les SERP locales](/blog/veille-concurrentielle-seo-ia-serp-locales).",
+          ],
+        },
+      ],
+    },
+    {
+      title: "C’est quoi un SEO local ?",
+      paragraphs: [
+        "Le SEO local regroupe les actions qui améliorent la présence d’une entreprise dans les SERP locales : fiche d’établissement, avis, pages locales, cohérence des coordonnées, mentions dans les annuaires et la presse régionale. Il vise les requêtes où le client veut se déplacer, appeler ou réserver.",
+        "Les avis en sont le cœur. [L’enquête Local Consumer Review Survey 2026 de BrightLocal indique que 97 % des consommateurs lisent les avis des entreprises locales et que 68 % n’utilisent qu’une entreprise notée quatre étoiles ou plus](https://www.brightlocal.com/research/local-consumer-review-survey/). [La même enquête relève que 47 % n’utiliseront pas une entreprise ayant moins de 20 avis et que 74 % cherchent des avis rédigés au cours des trois derniers mois](https://www.brightlocal.com/research/local-consumer-review-survey/).",
+        "Le SEO local déborde aujourd’hui sur les moteurs IA. [BrightLocal mesure que l’usage de ChatGPT et des autres outils d’IA générative pour trouver des recommandations locales est passé de 6 % à 45 % en un an, et que 40 % des consommateurs font confiance aux plateformes IA pour ces recommandations](https://www.brightlocal.com/research/local-consumer-review-survey/). Nous traitons ce volet dans [le référencement local sur ChatGPT](/blog/referencement-local-chatgpt-apparaitre-ville).",
+      ],
+    },
+    {
+      title: "Comment apparaître dans une SERP locale ?",
+      paragraphs: [
+        "Les leviers suivent les trois facteurs de Google. Ils se mettent en place en quelques semaines et se mesurent requête par requête, ville par ville. Voici l’ordre que nous appliquons avec [notre agence SEO et GEO à Nantes](/agence-seo-geo-nantes).",
+      ],
+      bullets: [
+        "Compléter la fiche d’établissement : catégorie principale exacte, catégories secondaires, services, horaires, photos récentes, description qui reprend les termes des clients.",
+        "Rendre les coordonnées identiques partout : nom, adresse, téléphone sur le site, la fiche, les annuaires et les réseaux sociaux, au caractère près.",
+        "Obtenir des avis régulièrement et répondre à chacun, car la note, le nombre et la fraîcheur pèsent à la fois sur la proéminence et sur le choix des clients.",
+        "Publier une page locale par établissement ou par ville desservie, avec l’adresse, les services, les questions locales et un balisage LocalBusiness.",
+        "Obtenir des mentions locales : annuaires sérieux, presse régionale, partenaires, associations, chambres consulaires.",
+        "Mesurer depuis les villes visées, pas depuis votre bureau, et corriger ce qui bloque.",
+      ],
+      subsections: [
+        {
+          title: "Comment voir la SERP locale d’une autre ville ?",
+          paragraphs: [
+            "Depuis votre bureau, vous voyez la page de votre position, pas celle de vos clients. La méthode la plus simple consiste à ajouter la ville dans la requête, mais elle ne reproduit pas la page d’un internaute sur place qui tape le service seul.",
+            "[Google propose dans Google Ads l’outil de prévisualisation et de diagnostic des annonces, qui montre comment une page de résultats s’affiche en temps réel sans que cela ait un impact sur vos données d’impression](https://support.google.com/google-ads/answer/148778?hl=fr). Il permet de choisir un lieu et un appareil, et il affiche aussi le pack local et les résultats organiques.",
+            "Les outils de suivi de position local font la même chose à grande échelle, avec une grille de points autour de chaque établissement. Ils révèlent les quartiers où la fiche décroche, ce qui oriente les actions bien mieux qu’un relevé unique.",
+          ],
+        },
+        {
+          title: "Quel est le prix d’un SEO local ?",
+          paragraphs: [
+            "Le coût dépend du nombre d’établissements, du nombre de villes visées et de l’état de départ : une fiche jamais complétée demande plus de travail qu’une fiche active avec des avis. Les postes récurrents sont le suivi des avis, les contenus locaux et le relevé des positions.",
+            "Une partie du travail ne coûte que du temps : compléter la fiche, répondre aux avis, harmoniser les coordonnées. L’accompagnement se justifie quand il faut plusieurs pages locales, des mentions externes et un suivi dans Google et dans les moteurs IA, comme décrit sur notre page [offre](/offre).",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Scénario illustratif : un cabinet de kinésithérapie sur six semaines",
+      paragraphs: [
+        "Le cas suivant est un scénario type, construit pour montrer un rythme réaliste. Les chiffres sont illustratifs et ne proviennent pas d’un client réel de PulseoAI.",
+        "Un cabinet de trois praticiens installé dans une ville moyenne apparaît dans le pack local uniquement dans son quartier. Sur « kiné » et « kinésithérapeute » depuis le reste de la ville, trois cabinets concurrents occupent le pack, et le site du cabinet n’est pas dans les dix premiers résultats organiques.",
+        "Semaines 1 et 2 : relevé des positions sur neuf points autour du cabinet, correction de la catégorie principale de la fiche, ajout des services et des photos, harmonisation de l’adresse sur les six annuaires où elle différait.",
+        "Semaines 3 et 4 : mise en place d’une demande d’avis après chaque fin de traitement, réponse aux avis existants, publication d’une page par spécialité avec l’adresse et un balisage LocalBusiness, puis test du balisage.",
+        "Semaines 5 et 6 : le cabinet entre dans le pack local sur cinq des neuf points de la grille au lieu de deux, et sa page « kiné du sport » apparaît dans les résultats organiques localisés. Les quartiers restants dépendent de la distance et resteront difficiles sans second établissement.",
+      ],
+    },
+    {
+      title: "Ce qu’il faut retenir",
+      paragraphs: [],
+      bullets: [
+        "Une SERP locale est une page de résultats adaptée à la position de l’internaute, déclenchée par un lieu explicite ou un service de proximité.",
+        "Elle contient le pack local, la carte, trois fiches d’établissement, puis des résultats organiques eux aussi localisés.",
+        "Google classe les fiches selon la pertinence, la distance et la proéminence, et aucune place ne s’achète.",
+        "Les avis, la fiche d’établissement, la cohérence des coordonnées et les pages locales balisées sont les leviers principaux.",
+        "Mesurez depuis les villes de vos clients, avec un outil de simulation ou une grille de points, pas depuis votre bureau.",
+        "Les mêmes signaux alimentent les recommandations locales des moteurs IA, qui prennent une part croissante des recherches.",
+      ],
+    },
+  ],
+};
+
 export const septemberArticles: Record<string, BlogArticle> = {
   [suivreVisibilite.slug]: suivreVisibilite,
   [agentIaSurMesure.slug]: agentIaSurMesure,
@@ -5940,6 +6163,7 @@ export const septemberArticles: Record<string, BlogArticle> = {
   [consultantGeo.slug]: consultantGeo,
   [agentIaProspection.slug]: agentIaProspection,
   [agentIaComptabilite.slug]: agentIaComptabilite,
+  [serpLocale.slug]: serpLocale,
 };
 
 export const septemberPosts: BlogPostMeta[] = [
@@ -6149,5 +6373,14 @@ export const septemberPosts: BlogPostMeta[] = [
     date: agentIaComptabilite.date,
     readingTime: agentIaComptabilite.readingTime,
     category: agentIaComptabilite.category,
+  },
+  {
+    slug: serpLocale.slug,
+    title: serpLocale.title,
+    seoTitle: serpLocale.seoTitle,
+    description: serpLocale.description,
+    date: serpLocale.date,
+    readingTime: serpLocale.readingTime,
+    category: serpLocale.category,
   },
 ];
