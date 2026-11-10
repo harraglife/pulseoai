@@ -6139,6 +6139,264 @@ const serpLocale: ArticleWithTables = {
   ],
 };
 
+const agentIaOutlook: ArticleWithTables = {
+  slug: "agent-ia-outlook-gestion-emails-pme",
+  title: "Agent IA pour Outlook : trier, répondre et relancer ses e-mails",
+  seoTitle: "Agent IA Outlook et boîte mail : ce qu’il fait dans une PME",
+  description:
+    "Ce qu’un agent IA fait dans Outlook ou Gmail pour une PME : tri, brouillons, résumés, relances, extraction vers le CRM, limites et règles.",
+  date: "10 novembre 2026",
+  dateModified: "10 novembre 2026",
+  readingTime: "11 min",
+  category: "Agents IA",
+  articleSection: "Agents IA",
+  keywords: [
+    "agent IA Outlook",
+    "agent IA e-mails",
+    "IA pour gérer ses mails",
+    "Copilot Outlook",
+    "Claude pour Outlook",
+    "Gemini dans Gmail",
+    "automatiser la gestion des e-mails",
+    "agent IA PME",
+  ],
+  intro:
+    "Un agent IA pour Outlook lit votre boîte de réception, trie ce qui demande une action, prépare des brouillons de réponse, résume les longs fils et relance ce qui traîne, dans Outlook ou Gmail, sans changer d’outil. Il ne remplace ni votre jugement ni votre signature : il propose, vous validez. Voici ce qu’il fait réellement dans une PME, les options du marché en 2026, ce qu’il ne doit jamais faire seul et comment le mettre en place en quelques semaines.",
+  quickAnswer: {
+    question: "Qu’est-ce qu’un agent IA pour Outlook ?",
+    answer:
+      "Un agent IA pour Outlook est un programme connecté à la boîte mail d’une entreprise qui lit les messages, les classe par priorité, rédige des brouillons de réponse dans le style de l’utilisateur, résume les fils, prépare les relances et extrait les informations utiles vers le CRM ou l’outil de gestion. Il existe sous trois formes : l’assistant intégré à la messagerie, un assistant généraliste connecté, ou un agent sur mesure qui enchaîne plusieurs outils. Dans tous les cas, un humain valide ce qui part vers un client.",
+  },
+  contextualLinks: [
+    { label: "nos agents IA pour PME", href: "/agents-ia" },
+    { label: "l’agent IA sur mesure pour PME", href: "/blog/agent-ia-sur-mesure-pme" },
+    { label: "l’agent IA pour le service client", href: "/blog/agent-ia-service-client-pme" },
+    { label: "agent IA et RGPD", href: "/blog/agent-ia-rgpd-ai-act-pme" },
+  ],
+  bodyCta: {
+    intro: "Votre boîte mail déborde et vos relances partent en retard ?",
+    linkLabel: "Parlons de votre boîte de réception",
+    href: "/contact",
+    outro: ", on regarde vos volumes, vos outils et ce qu’un agent peut prendre en charge en premier.",
+  },
+  relatedSlugs: [
+    "agent-ia-sur-mesure-pme",
+    "agent-ia-service-client-pme",
+    "agent-ia-vs-chatbot-difference-pme",
+    "combien-coute-agent-ia-pme",
+  ],
+  faqTitle: "FAQ : agent IA pour Outlook et la boîte mail",
+  faqItems: [
+    {
+      question: "Un agent IA peut-il envoyer des e-mails à ma place ?",
+      answer:
+        "Techniquement oui, mais ce n’est pas recommandé pour les messages adressés à des clients ou des partenaires. Les assistants intégrés à Outlook déposent des brouillons que vous envoyez vous-même. Un agent sur mesure peut envoyer seul des messages à faible enjeu, comme un accusé de réception, à condition d’une règle écrite et d’un journal des envois.",
+    },
+    {
+      question: "Faut-il Microsoft 365 pour utiliser un agent IA dans Outlook ?",
+      answer:
+        "Pour les assistants intégrés, oui : Copilot comme Claude pour Outlook s’appuient sur une boîte hébergée dans Microsoft 365. Une boîte Gmail passe par Gemini ou par un connecteur. Un agent sur mesure se connecte à la messagerie par son API, quel que soit l’hébergeur, mais la mise en place est plus simple sur Microsoft 365 et Google Workspace.",
+    },
+    {
+      question: "Mes e-mails sont-ils lus par l’éditeur de l’IA ?",
+      answer:
+        "Le contenu transmis au modèle est traité par l’éditeur selon ses conditions, avec une durée de conservation et des engagements à vérifier dans le contrat. Les offres professionnelles excluent en général l’entraînement des modèles sur vos données. Limitez le périmètre aux dossiers utiles et excluez les messages sensibles.",
+    },
+    {
+      question: "Un agent IA peut-il se faire piéger par un e-mail malveillant ?",
+      answer:
+        "Oui. Un message peut contenir des instructions cachées destinées à l’IA, pour lui faire transférer un fil ou rédiger une réponse non demandée. C’est pourquoi l’agent ne doit pas envoyer seul, doit avoir des accès limités et chaque action doit être relue, surtout pour les expéditeurs externes.",
+    },
+    {
+      question: "Par quoi commencer dans une PME ?",
+      answer:
+        "Par le tri et les brouillons sur une seule boîte, souvent la boîte contact ou celle du dirigeant. Mesurez le temps passé avant et après pendant quatre semaines, puis ajoutez les relances et l’extraction vers le CRM. L’automatisation sans validation vient en dernier, sur les messages les moins risqués.",
+    },
+  ],
+  sections: [
+    {
+      title: "Qu’est-ce qu’un agent IA pour Outlook ?",
+      paragraphs: [
+        "Un agent IA pour Outlook est un programme qui accède à votre boîte mail et à votre agenda, comprend le contenu des messages et exécute des tâches à votre place : classer, résumer, rédiger, relancer, planifier, extraire.",
+        "La différence avec un filtre classique tient à la compréhension du texte. [France Num rappelle qu’un filtre sur le mot-clé « prospect » sera inopérant si le mail parle de « clients potentiels »](https://www.francenum.gouv.fr/guides-et-conseils/pilotage-de-lentreprise/numerisation-des-processus/automatiser-la-gestion-des-e), là où une IA lit l’intention du message.",
+        "La différence avec un simple assistant tient à l’autonomie. [Anthropic distingue les workflows, qui suivent des chemins prédéfinis, des agents, qui dirigent eux-mêmes leurs étapes et l’usage de leurs outils](https://www.anthropic.com/research/building-effective-agents). Notre page [agents IA pour PME](/agents-ia) et notre guide de [l’agent IA sur mesure](/blog/agent-ia-sur-mesure-pme) détaillent cette distinction.",
+      ],
+    },
+    {
+      title: "Pourquoi la boîte mail est-elle le premier chantier d’une PME ?",
+      paragraphs: [
+        "Parce que c’est là que le temps part. [France Num indique qu’un salarié reçoit en moyenne 144 mails par semaine, trois fois plus pour les dirigeants, et que la lecture et le traitement des mails occuperaient 30 % du temps de travail](https://www.francenum.gouv.fr/guides-et-conseils/pilotage-de-lentreprise/numerisation-des-processus/automatiser-la-gestion-des-e).",
+        "Les données de Microsoft vont dans le même sens. [Le Work Trend Index 2025 mesure que le travailleur moyen reçoit 117 e-mails par jour et qu’il est interrompu toutes les deux minutes par une réunion, un e-mail ou une notification, soit 275 fois par jour](https://www.microsoft.com/en-us/worklab/work-trend-index/breaking-down-infinite-workday).",
+        "Dans une PME, la boîte mail porte aussi les processus : devis, commandes, réclamations et factures arrivent par ce canal. Un agent qui la traite mieux améliore la vente, le service client et la trésorerie.",
+      ],
+    },
+    {
+      title: "Que fait concrètement un agent IA dans Outlook ?",
+      paragraphs: [
+        "Six usages concentrent l’essentiel de la valeur. Ils sont répétitifs, mesurables et tolèrent une validation humaine rapide, ce qui en fait de bons premiers chantiers.",
+      ],
+      subsections: [
+        {
+          title: "Trier la boîte de réception par priorité",
+          paragraphs: [
+            "L’agent lit les messages non lus et les range en trois groupes : ce qui demande une action de votre part, ce qu’il peut préparer seul et ce qui peut être archivé. [Anthropic décrit ce tri dans Claude pour Outlook : actions pour vous, éléments que Claude peut traiter pour votre relecture, et bruit à archiver en une sélection](https://claude.com/docs/office-agents/outlook).",
+            "Chaque élément porte une raison en une ligne, ce qui évite de rouvrir le message pour comprendre pourquoi il est prioritaire.",
+          ],
+        },
+        {
+          title: "Rédiger des brouillons de réponse dans votre style",
+          paragraphs: [
+            "Vous dites en une phrase ce que vous voulez répondre, l’agent rédige le message complet, dans le ton de vos messages envoyés, et le dépose dans la fenêtre de composition sans l’envoyer. Vous relisez, vous ajustez, vous cliquez.",
+            "[Google décrit la même logique dans Gmail avec « M’aider à écrire », qui rédige de nouveaux e-mails ou améliore un texte existant à partir d’un prompt, et des suggestions de réponses détaillées en bas d’un fil](https://support.google.com/mail/answer/16831098?hl=fr).",
+          ],
+        },
+        {
+          title: "Résumer les longs fils et les pièces jointes",
+          paragraphs: [
+            "Sur un fil de vingt messages, l’agent extrait ce qui a été décidé, ce qui reste ouvert et qui doit quoi à qui, avec un renvoi vers chaque message source. Il lit aussi les pièces jointes Word et Excel sans que vous les ouvriez.",
+            "[Gemini dans Gmail propose un résumé des longues conversations avec les points clés et les réponses](https://support.google.com/mail/answer/16831098?hl=fr), et [Claude pour Outlook lit les pièces jointes .docx et .xlsx en ligne](https://claude.com/docs/office-agents/outlook).",
+          ],
+        },
+        {
+          title: "Relancer ce qui attend une réponse",
+          paragraphs: [
+            "L’agent repère les messages envoyés restés sans réponse, les devis en attente et les factures échues, puis prépare une relance adaptée à l’ancienneté et au destinataire. C’est l’usage le plus rentable pour une PME, décrit dans [l’agent IA d’un artisan](/blog/agent-ia-artisan-devis-relances).",
+            "Les relances de premier niveau partent après validation groupée, les litiges et les clients stratégiques restent écrits par une personne.",
+          ],
+        },
+        {
+          title: "Extraire les informations vers le CRM ou l’ERP",
+          paragraphs: [
+            "Une demande de devis reçue en texte libre devient une fiche structurée : nom, société, besoin, quantité, délai. [France Num donne l’exemple d’un e-mail transformé en « nom : Jean Dupont ; quantité produit voulue : 2 » puis stocké dans un tableur ou un CRM](https://www.francenum.gouv.fr/guides-et-conseils/pilotage-de-lentreprise/numerisation-des-processus/automatiser-la-gestion-des-e).",
+            "Cette extraction supprime les copier-coller et fiabilise le suivi commercial. Elle alimente aussi [l’agent IA de prospection](/blog/agent-ia-prospection-commerciale-pme).",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Quelle IA pour Outlook ?",
+      paragraphs: [
+        "Trois familles d’outils coexistent en 2026, et une PME en combine souvent deux. Le choix dépend de l’hébergement de la messagerie, du niveau d’automatisation souhaité et de ce que l’entreprise accepte de confier à un éditeur.",
+      ],
+      table: {
+        caption: "Trois façons d’utiliser l’IA dans Outlook ou Gmail",
+        headers: ["Famille", "Exemples", "Ce qu’elle fait bien", "Limites"],
+        rows: [
+          ["Assistant intégré à la messagerie", "Copilot dans Outlook, Gemini dans Gmail, Claude pour Outlook", "Tri, brouillons, résumés, agenda, sans quitter la boîte", "Vous lancez chaque action ; pas de traitement automatique entre plusieurs outils"],
+          ["Assistant généraliste connecté", "ChatGPT, Claude ou Mistral reliés à Gmail ou Outlook par un connecteur", "Analyser une boîte, préparer des synthèses, tâches planifiées simples", "Contexte à redonner, fiabilité à vérifier, périmètre d’accès large"],
+          ["Agent sur mesure", "Workflow no-code ou agent développé pour l’entreprise", "Traiter chaque e-mail reçu, extraire vers le CRM, relancer selon des règles", "Cadrage, connecteurs et validation humaine indispensables"],
+        ],
+      },
+      subsections: [
+        {
+          title: "Comment mettre Copilot dans Outlook ?",
+          paragraphs: [
+            "Copilot est disponible dans Outlook pour les boîtes hébergées sur Microsoft 365. [Microsoft indique que Copilot Chat dans Outlook et Teams fait partie de l’expérience de base incluse avec les licences Microsoft 365 éligibles, et que la licence complémentaire Microsoft 365 Copilot donne accès à l’expérience complète](https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-overview).",
+            "[La page de l’offre Microsoft 365 Copilot Business affiche 21,84 € HT par utilisateur et par mois en facturation mensuelle, et 15,60 € HT par utilisateur et par mois en engagement annuel](https://www.microsoft.com/fr-fr/microsoft-365/copilot/business). L’administrateur attribue la licence, puis le bouton Copilot apparaît dans les messages.",
+          ],
+        },
+        {
+          title: "Claude pour Outlook : ce que fait le complément d’Anthropic",
+          paragraphs: [
+            "[Anthropic propose Claude pour Outlook, un complément en bêta disponible pour les forfaits Pro, Max, Team et Enterprise, qui fonctionne sur Outlook web, Windows et Mac avec un abonnement Microsoft 365](https://claude.com/docs/office-agents/outlook). Il s’installe depuis Microsoft AppSource ou se déploie par l’administrateur.",
+            "[La même documentation précise que Claude n’envoie jamais de courrier ni d’invitation de lui-même, que le complément ne demande pas l’autorisation d’envoi et que chaque brouillon reste non envoyé jusqu’à votre clic](https://claude.com/docs/office-agents/outlook).",
+            "Pour les équipes qui veulent interroger leur messagerie depuis Claude plutôt que l’inverse, [Anthropic a ouvert le 16 octobre 2025 un connecteur Microsoft 365 pour les forfaits Team et Enterprise, qui couvre Outlook, Teams, SharePoint et OneDrive](https://claude.com/resources/articles/productivity-platforms).",
+          ],
+        },
+        {
+          title: "Gemini dans Gmail pour les entreprises sous Google Workspace",
+          paragraphs: [
+            "[Google liste les fonctions de Gemini dans Gmail : une boîte de réception IA qui fait ressortir les priorités, des résumés de conversations, un aperçu IA dans la recherche, la rédaction avec « M’aider à écrire » et des réponses suggérées](https://support.google.com/mail/answer/16831098?hl=fr).",
+            "[La même page indique que les utilisateurs disposant d’un forfait Google AI ou Google Workspace éligible peuvent accéder à ces fonctionnalités](https://support.google.com/mail/answer/16831098?hl=fr). Pour une PME déjà sous Workspace, c’est le premier pas, sans nouvel outil.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Quelle IA pour gérer mes mails ?",
+      paragraphs: [
+        "La bonne réponse dépend de ce que vous attendez. Si vous voulez gagner du temps à titre personnel, l’assistant intégré à votre messagerie suffit, et il se met en place en une journée. Si vous voulez que la boîte contact se traite seule jusqu’au CRM, il faut un agent.",
+        "[France Num propose la même progression en trois niveaux : les règles de filtrage de la messagerie pour débuter, un assistant IA intégré ou connecté au niveau intermédiaire, puis une plateforme no-code associée à une IA au niveau avancé](https://www.francenum.gouv.fr/guides-et-conseils/pilotage-de-lentreprise/numerisation-des-processus/automatiser-la-gestion-des-e).",
+        "Le guide précise aussi que [la plupart des plateformes IA n’offrent qu’une automatisation partielle, l’utilisateur restant à l’initiative de chaque traitement](https://www.francenum.gouv.fr/guides-et-conseils/pilotage-de-lentreprise/numerisation-des-processus/automatiser-la-gestion-des-e). C’est la limite qui pousse une PME vers l’agent sur mesure quand les volumes montent. Nous comparons les deux approches dans [agent IA vs chatbot](/blog/agent-ia-vs-chatbot-difference-pme).",
+      ],
+      subsections: [
+        {
+          title: "Quel est le meilleur outil de gestion des emails ?",
+          paragraphs: [
+            "Il n’existe pas de classement neutre : le meilleur outil est celui qui s’intègre à votre messagerie existante sans ajouter de boîte parallèle. Avant de choisir, vérifiez la possibilité de limiter l’accès à certains dossiers, la conservation des données chez l’éditeur et la présence d’un journal des actions, comme dans notre guide des [outils IA pour PME](/blog/outils-ia-pme).",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Comment gérer ses mails professionnels avec un agent sans perdre le contrôle ?",
+      paragraphs: [
+        "Le risque principal n’est pas la panne, c’est l’action non voulue : un message envoyé trop vite, un fil transféré au mauvais destinataire. Quatre règles simples l’écartent.",
+        "[France Num recommande de privilégier la génération de brouillons relus par un humain avant envoi à une automatisation totale des réponses](https://www.francenum.gouv.fr/guides-et-conseils/pilotage-de-lentreprise/numerisation-des-processus/automatiser-la-gestion-des-e). C’est la règle numéro un.",
+        "[Le même guide décrit l’injection de prompt, où un pirate envoie un mail demandant à l’IA de transmettre des informations, et rappelle qu’un assistant ayant accès aux mails ne devrait pas être autorisé à répondre automatiquement ou ne devrait avoir accès qu’à très peu de données](https://www.francenum.gouv.fr/guides-et-conseils/pilotage-de-lentreprise/numerisation-des-processus/automatiser-la-gestion-des-e).",
+      ],
+      bullets: [
+        "Règle 1 : l’agent propose, un humain envoie, au moins pour tout message adressé à l’extérieur.",
+        "Règle 2 : accès limités à la boîte ou aux dossiers nécessaires, sans droit d’envoi tant que la fiabilité n’est pas mesurée.",
+        "Règle 3 : journal de toutes les actions, lisible par quelqu’un qui n’a pas participé au projet.",
+        "Règle 4 : exclusion des messages sensibles, par exemple RH, juridique ou santé, du périmètre traité par l’IA.",
+      ],
+    },
+    {
+      title: "Comment mettre en place un agent IA ?",
+      paragraphs: [
+        "La mise en place réussit quand elle part d’une boîte, d’un usage et d’une mesure. Comptez quatre à huit semaines pour un agent sur mesure, une journée pour un assistant intégré.",
+      ],
+      bullets: [
+        "Étape 1 : choisir une boîte à fort volume et faible risque, souvent la boîte contact ou commandes.",
+        "Étape 2 : écrire les règles : catégories de tri, ton des réponses, seuils de validation, messages à ne jamais traiter.",
+        "Étape 3 : connecter l’agent en lecture seule, puis lui ouvrir les brouillons, jamais l’envoi direct au départ.",
+        "Étape 4 : faire tourner l’agent en mode proposition pendant deux à quatre semaines, chaque brouillon relu.",
+        "Étape 5 : mesurer le temps de traitement, le délai de première réponse et le taux de corrections, puis décider ce qui passe en automatique.",
+        "Étape 6 : élargir à la boîte suivante ou à l’extraction vers le CRM, et revoir les règles chaque trimestre.",
+      ],
+      subsections: [
+        {
+          title: "Quelles règles RGPD et AI Act s’appliquent ?",
+          paragraphs: [
+            "Une boîte mail contient des données personnelles de clients, de fournisseurs et de salariés. Brancher un nouvel outil dessus est un traitement à documenter. [France Num conseille de limiter les transferts de données d’un outil à un autre, de vérifier la conformité de l’outil et de mettre à jour ses conditions générales](https://www.francenum.gouv.fr/guides-et-conseils/pilotage-de-lentreprise/numerisation-des-processus/automatiser-la-gestion-des-e).",
+            "[La Commission européenne indique que le règlement sur l’IA est applicable depuis le 2 août 2026 et que les personnes doivent savoir qu’elles interagissent avec une machine](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai). Un message envoyé seul par un agent doit donc pouvoir être identifié comme tel. Nos obligations détaillées sont dans [agent IA et RGPD](/blog/agent-ia-rgpd-ai-act-pme).",
+          ],
+        },
+        {
+          title: "Quel est le prix d’un agent IA ?",
+          paragraphs: [
+            "Pour un assistant intégré, le prix est celui de la licence par utilisateur, affiché publiquement par Microsoft, Google ou Anthropic. [France Num situe ce niveau à quelques dizaines d’euros par mois pour l’abonnement à une plateforme d’IA ou la licence d’un outil bureautique intégrant l’IA](https://www.francenum.gouv.fr/guides-et-conseils/pilotage-de-lentreprise/numerisation-des-processus/automatiser-la-gestion-des-e).",
+            "Pour un agent sur mesure, le coût dépend du cadrage, des connecteurs, des appels au modèle et du temps de validation. Nous détaillons ces postes dans [combien coûte un agent IA pour une PME](/blog/combien-coute-agent-ia-pme) et sur notre page [offre](/offre).",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Scénario illustratif : une PME de services de 25 personnes sur huit semaines",
+      paragraphs: [
+        "Le cas suivant est un scénario type, construit pour montrer un rythme réaliste. Les chiffres sont illustratifs et ne proviennent pas d’un client réel de PulseoAI.",
+        "Une société de maintenance industrielle reçoit environ 180 e-mails par jour sur sa boîte contact et celles de ses deux chargés d’affaires. Les demandes urgentes se perdent parmi le reste, et la première réponse part en moyenne le lendemain.",
+        "Semaines 1 et 2 : activation de l’assistant intégré à Outlook pour les deux chargés d’affaires, règles de tri écrites, mesure du temps passé et du délai de première réponse. Un agent est connecté en lecture seule à la boîte contact.",
+        "Semaines 3 à 5 : l’agent trie la boîte contact chaque heure, prépare un brouillon pour les demandes d’intervention et les questions de facturation, et crée une fiche dans le CRM pour chaque demande de devis. Une assistante valide les brouillons deux fois par jour.",
+        "Semaines 6 à 8 : les accusés de réception partent seuls, les relances de devis à J+7 sont validées en lot, le délai de première réponse passe en dessous de la demi-journée et les chargés d’affaires traitent leur boîte en une heure au lieu de deux. Les litiges et les demandes RH restent hors périmètre.",
+      ],
+    },
+    {
+      title: "Ce qu’il faut retenir",
+      paragraphs: [],
+      bullets: [
+        "Un agent IA pour Outlook trie, résume, rédige des brouillons, relance et extrait les informations vers le CRM, dans la messagerie existante.",
+        "Trois familles existent : assistant intégré (Copilot, Gemini, Claude pour Outlook), assistant généraliste connecté, agent sur mesure.",
+        "La boîte mail est le premier chantier d’une PME, parce qu’elle porte les devis, les commandes, les réclamations et les relances.",
+        "L’agent propose, un humain envoie : c’est la règle qui protège contre les erreurs et les e-mails malveillants.",
+        "Commencer par une boîte, écrire les règles, mesurer pendant quatre semaines, puis élargir.",
+        "RGPD, transparence de l’AI Act et limitation des accès s’appliquent dès le premier jour.",
+      ],
+    },
+  ],
+};
+
 export const septemberArticles: Record<string, BlogArticle> = {
   [suivreVisibilite.slug]: suivreVisibilite,
   [agentIaSurMesure.slug]: agentIaSurMesure,
@@ -6164,6 +6422,7 @@ export const septemberArticles: Record<string, BlogArticle> = {
   [agentIaProspection.slug]: agentIaProspection,
   [agentIaComptabilite.slug]: agentIaComptabilite,
   [serpLocale.slug]: serpLocale,
+  [agentIaOutlook.slug]: agentIaOutlook,
 };
 
 export const septemberPosts: BlogPostMeta[] = [
@@ -6382,5 +6641,14 @@ export const septemberPosts: BlogPostMeta[] = [
     date: serpLocale.date,
     readingTime: serpLocale.readingTime,
     category: serpLocale.category,
+  },
+  {
+    slug: agentIaOutlook.slug,
+    title: agentIaOutlook.title,
+    seoTitle: agentIaOutlook.seoTitle,
+    description: agentIaOutlook.description,
+    date: agentIaOutlook.date,
+    readingTime: agentIaOutlook.readingTime,
+    category: agentIaOutlook.category,
   },
 ];
