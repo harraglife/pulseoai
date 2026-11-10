@@ -40,6 +40,10 @@ const mentionUrls = {
   Claude: "https://claude.ai",
   Anthropic: "https://www.anthropic.com",
   "Mistral AI": "https://mistral.ai",
+  Microsoft: "https://www.microsoft.com",
+  "Microsoft Copilot": "https://copilot.microsoft.com",
+  Outlook: "https://outlook.office.com",
+  Gmail: "https://mail.google.com",
   Bpifrance: "https://www.bpifrance.fr",
   Perplexity: "https://www.perplexity.ai",
   "SEO IA": "https://www.pulseoai.fr/offre",
@@ -69,6 +73,15 @@ function buildMentions(names: Array<keyof typeof mentionUrls>): ArticleMention[]
 }
 
 export const articleMetadataBySlug: Record<string, ArticleSchemaEnhancement> = {
+  "agent-ia-outlook-gestion-emails-pme": {
+    about: {
+      "@type": "Thing",
+      name: "Agent IA pour Outlook et la boîte mail d’une PME",
+      description:
+        "Ce qu’un agent IA fait dans Outlook ou Gmail pour une PME : tri de la boîte de réception par priorité, brouillons de réponse dans le style de l’utilisateur, résumés de fils et de pièces jointes, relances, extraction vers le CRM ; comparaison des assistants intégrés (Microsoft Copilot, Claude pour Outlook, Gemini dans Gmail), des assistants connectés et de l’agent sur mesure ; règles de validation humaine, injection de prompt, RGPD et AI Act, méthode de mise en place en six étapes, repères de coût et scénario illustratif.",
+    },
+    mentions: buildMentions(["Microsoft", "Microsoft Copilot", "Outlook", "Gmail", "Anthropic", "Claude", "Gemini", "Google", "OpenAI", "ChatGPT", "Mistral AI"]),
+  },
   "serp-locale-definition-apparaitre": {
     about: {
       "@type": "Thing",
