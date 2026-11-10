@@ -69,6 +69,15 @@ function buildMentions(names: Array<keyof typeof mentionUrls>): ArticleMention[]
 }
 
 export const articleMetadataBySlug: Record<string, ArticleSchemaEnhancement> = {
+  "serp-locale-definition-apparaitre": {
+    about: {
+      "@type": "Thing",
+      name: "SERP locale Google",
+      description:
+        "Ce qu’est une SERP locale : définition de la SERP et de ses fonctionnalités, ce qui déclenche l’affichage local (lieu explicite, service de proximité, géolocalisation de l’internaute), ce que contient la page (pack local, carte, local finder, résultats organiques localisés, aperçu IA), les trois facteurs de classement de Google (pertinence, distance, proéminence), les leviers de SEO local (fiche d’établissement, avis, cohérence des coordonnées, pages locales balisées LocalBusiness), comment voir la SERP d’une autre ville, repères de prix et scénario illustratif.",
+    },
+    mentions: buildMentions(["Google", "Google Maps", "SEO local", "GEO", "Schema.org", "ChatGPT", "Google AI Overviews"]),
+  },
   "agent-ia-comptabilite-pme": {
     about: {
       "@type": "Thing",
