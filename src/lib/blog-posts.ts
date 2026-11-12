@@ -1725,8 +1725,8 @@ const newArticles: Record<string, BlogArticle> = {
     description:
       "Découvrez comment se référencer sur ChatGPT : SEO, GEO, contenus answer-first, Schema.org, citations, sources de confiance et suivi des requêtes IA.",
     date: "10 mai 2026",
-    dateModified: "15 octobre 2026",
-    readingTime: "12 min",
+    dateModified: "12 novembre 2026",
+    readingTime: "17 min",
     category: "ChatGPT",
     articleSection: "Référencement ChatGPT",
     keywords: [
@@ -1741,12 +1741,16 @@ const newArticles: Record<string, BlogArticle> = {
       "ChatGPT search",
       "OAI-SearchBot",
       "suivre la présence de marque dans ChatGPT",
+      "référencement sur l’IA",
+      "Business Hub ChatGPT",
+      "connaître son positionnement sur ChatGPT",
+      "agence de référencement ChatGPT",
     ],
     faqTitle: "FAQ sur le référencement ChatGPT",
     quickAnswer: {
       question: "Comment se référencer sur ChatGPT ?",
       answer:
-        "Se référencer sur ChatGPT consiste à rendre votre entreprise compréhensible, crédible et citable par l’IA. Concrètement : un site accessible aux robots d’OpenAI, des pages qui répondent directement aux questions de vos clients, des données Schema.org cohérentes et des sources externes qui confirment votre expertise. Ajoutez un suivi régulier des questions où vos prospects cherchent une solution. ChatGPT s’appuie sur des moteurs de recherche tiers et sur les sites qu’il juge fiables : votre visibilité se construit sur Google, sur votre site et sur le reste du web.",
+        "Se référencer sur ChatGPT consiste à rendre votre entreprise compréhensible, crédible et citable par l’IA : un site ouvert au robot OAI-SearchBot, des pages qui répondent directement aux questions de vos clients, des données Schema.org cohérentes et des sources externes qui confirment votre expertise. Depuis novembre 2026, vous pouvez aussi réclamer votre fiche entreprise dans Business Hub pour corriger vos informations et suivre vos mentions. Cette fiche ne garantit aucune recommandation : votre visibilité se construit toujours sur Google, sur votre site et sur le reste du web.",
     },
     contextualLinks: [
       { label: "notre agence de référencement ChatGPT", href: "/" },
@@ -1762,6 +1766,8 @@ const newArticles: Record<string, BlogArticle> = {
       { label: "ChatGPT recommande votre concurrent", href: "/blog/chatgpt-recommande-concurrent-pourquoi" },
       { label: "Référencement local ChatGPT", href: "/blog/referencement-local-chatgpt-apparaitre-ville" },
       { label: "Choisir une agence de référencement ChatGPT", href: "/blog/agence-referencement-chatgpt-comment-choisir" },
+      { label: "Consultant GEO : rôle et missions", href: "/blog/consultant-geo-role-missions-choisir" },
+      { label: "Utiliser ChatGPT pour le SEO", href: "/blog/utiliser-chatgpt-pour-le-seo" },
     ],
     bodyCta: {
       intro: "Pour savoir si votre entreprise apparaît déjà dans les réponses IA, vous pouvez demander un",
@@ -1777,6 +1783,8 @@ const newArticles: Record<string, BlogArticle> = {
       "sources-citees-ia-site-ne-suffit-pas",
       "suivre-visibilite-chatgpt-ia",
       "chatgpt-recommande-concurrent-pourquoi",
+      "agence-referencement-chatgpt-comment-choisir",
+      "consultant-geo-role-missions-choisir",
     ],
     intro:
       "Quand un prospect demande à ChatGPT quelle entreprise choisir, la réponse ne sort pas de nulle part. Elle repose sur des signaux que votre marque peut renforcer. Se référencer sur ChatGPT demande donc un travail de clarté, de structure, de sources et de suivi des requêtes.",
@@ -1788,12 +1796,49 @@ const newArticles: Record<string, BlogArticle> = {
           "Cette évolution ne remplace pas Google. Elle ajoute un nouveau moment de décision dans lequel la visibilité dépend autant de la clarté de votre marque que de sa capacité à être citée.",
           "Les chiffres confirment ce basculement. D’après le [Baromètre du numérique 2026 publié par l’Arcep](https://www.arcep.fr/actualites/actualites-et-communiques/detail/n/equipements-et-usages-du-numerique-090226.html), 48 % de la population utilise l’IA générative, et 73 % des utilisateurs s’en servent pour chercher une information.",
           "La confiance suit le même mouvement. Selon l’étude Havas Market relayée par [CB News](https://www.cbnews.fr/node/101763), 34 % des utilisateurs jugent les IA génératives plus fiables que les moteurs de recherche et les médias traditionnels.",
-          "À l’échelle mondiale, OpenAI annonce plus de 900 millions d’utilisateurs actifs chaque semaine pour ChatGPT, d’après [KultureGeek](https://kulturegeek.fr/news-347951/chatgpt-rapproche-milliard-dutilisateurs-hebdomadaires). Une partie de ces conversations porte sur le choix d’un prestataire, d’un hôtel ou d’un cabinet.",
+          "À l’échelle mondiale, OpenAI annonçait déjà plus de 900 millions d’utilisateurs actifs chaque semaine pour ChatGPT, d’après [KultureGeek](https://kulturegeek.fr/news-347951/chatgpt-rapproche-milliard-dutilisateurs-hebdomadaires). Dans [son annonce de Businesses in ChatGPT du 10 novembre 2026](https://openai.com/index/introducing-businesses-chatgpt/), OpenAI parle désormais de 1,2 milliard de personnes qui utilisent ChatGPT chaque semaine. Une partie de ces conversations porte sur le choix d’un prestataire, d’un hôtel ou d’un cabinet.",
+          "L’achat se prépare aussi dans ces conversations. Selon [la fiche pratique de France Num sur la visibilité dans les réponses des IA](https://www.francenum.gouv.fr/guides-et-conseils/communication-et-publicite/referencement/etre-visible-dans-les-reponses-des-ia), 40 % des Français déclarent avoir utilisé une IA générative pour préparer un projet d’achat sur douze mois, contre 28 % en septembre 2025.",
         ],
         bullets: [
           "Nouveaux parcours de recherche conversationnelle",
           "Réponses directes avant le clic",
           "Comparaison de plusieurs marques dans la même réponse",
+        ],
+      },
+      {
+        title: "Qu’est-ce que le référencement sur l’IA ?",
+        paragraphs: [
+          "Le référencement sur l’IA, aussi appelé GEO pour Generative Engine Optimization, désigne le travail qui augmente la probabilité qu’un contenu soit utilisé, cité ou repris dans une réponse générée. Il s’applique à ChatGPT, au Mode IA de Google, à Perplexity ou à Mistral.",
+          "Cette discipline ne repart pas de zéro. [France Num](https://www.francenum.gouv.fr/guides-et-conseils/communication-et-publicite/referencement/etre-visible-dans-les-reponses-des-ia) rappelle que les critères du référencement classique restent pertinents, car beaucoup de moteurs IA s’appuient au moins en partie sur les index des moteurs de recherche existants.",
+          "La différence tient à la forme du résultat. Une réponse rédigée remplace une liste de liens, la formulation de la question change le résultat, et la visibilité devient plus difficile à mesurer qu’une position Google.",
+          "France Num insiste sur une distinction utile : visibilité, trafic et résultats commerciaux sont trois choses différentes. Une mention ne génère pas forcément une visite, et une visite ne produit pas automatiquement un devis.",
+        ],
+        bullets: [
+          "Le SEO vise une position dans une liste de résultats",
+          "Le référencement sur l’IA vise une mention, une citation ou un lien dans une réponse rédigée",
+          "Les deux partagent la même base : contenu utile, site accessible, sources externes cohérentes",
+        ],
+        subsections: [
+          {
+            title: "Quels sont les 3 piliers du référencement ?",
+            paragraphs: [
+              "Les trois piliers du référencement sont la technique, le contenu et la popularité. La technique rend vos pages accessibles, le contenu répond aux questions, et la popularité se construit par les liens et les mentions obtenus ailleurs.",
+              "Google les résume dans son [guide de démarrage SEO](https://developers.google.com/search/docs/fundamentals/seo-starter-guide) : le robot doit accéder aux mêmes ressources que le navigateur, il découvre les pages surtout par des liens, et un contenu utile pèse plus que tout le reste.",
+              "Pour ChatGPT, ces piliers se transposent sans changer de nature. La technique inclut l’accès de OAI-SearchBot, le contenu devient answer-first, et la popularité se mesure en sources tierces qui décrivent votre entreprise de façon cohérente.",
+            ],
+          },
+          {
+            title: "Comment faire le référencement ?",
+            paragraphs: [
+              "Faire son référencement commence par un état des lieux : quelles questions posent vos clients, sur quelles réponses vous apparaissez déjà, et qui est cité à votre place. Cet audit fixe les priorités avant toute production de contenu.",
+              "Ensuite, corrigez la technique, réécrivez les pages de services en commençant par la réponse, puis travaillez les sources externes : fiche Google, avis, annuaires, presse locale. Notre [audit SEO / GEO](/blog/audit-seo-geo-visibilite-ia) suit exactement cet ordre.",
+            ],
+            bullets: [
+              "Semaine 1 : audit technique, robots.txt et relevé de 20 questions clients",
+              "Semaines 2 à 4 : pages answer-first et données structurées",
+              "Ensuite, en continu : sources externes, avis et suivi hebdomadaire des mentions",
+            ],
+          },
         ],
       },
       {
@@ -1808,6 +1853,16 @@ const newArticles: Record<string, BlogArticle> = {
           "Sources externes cohérentes",
           "Mentions de marque et signaux de confiance",
         ],
+        subsections: [
+          {
+            title: "Comment fonctionne ChatGPT pour vous citer ?",
+            paragraphs: [
+              "ChatGPT vous cite en trois temps. Il reformule la question du client, lance une recherche web quand la réponse demande des informations récentes, puis rédige une réponse à partir des pages qu’il a lues, en nommant les entreprises que ces pages décrivent le mieux.",
+              "Il n’y a donc pas de classement caché à conquérir. Chaque réponse est reconstruite à partir des sources disponibles au moment de la question, ce qui explique les variations d’un jour ou d’un compte à l’autre.",
+              "Pour une entreprise, le levier est simple à formuler : être présent dans les pages que ChatGPT lit, avec une description claire, des preuves et une cohérence entre toutes les sources. Nous détaillons ce mécanisme dans [pourquoi ChatGPT recommande votre concurrent](/blog/chatgpt-recommande-concurrent-pourquoi).",
+            ],
+          },
+        ],
       },
       {
         title: "Comment fonctionne la recherche dans ChatGPT et d’où viennent ses sources ?",
@@ -1821,6 +1876,37 @@ const newArticles: Record<string, BlogArticle> = {
           "GPTBot sert à l’entraînement des modèles, OAI-SearchBot à la recherche : bloquer le premier n’empêche pas d’apparaître dans ChatGPT search",
           "ChatGPT-User intervient quand un utilisateur demande la lecture d’une page précise",
           "Une page absente de Google et de Bing a peu de chances d’être trouvée par ChatGPT",
+        ],
+      },
+      {
+        title: "Faut-il réclamer sa fiche entreprise dans ChatGPT (Business Hub) ?",
+        paragraphs: [
+          "Oui, dès que votre entreprise y est éligible, car la fiche vous permet de corriger ce que ChatGPT affiche à votre sujet. Le 10 novembre 2026, OpenAI a lancé en bêta [Businesses in ChatGPT](https://openai.com/index/introducing-businesses-chatgpt/) : via Business Hub, une entreprise réclame sa fiche, met à jour ses informations et consulte des statistiques d’engagement.",
+          "La réclamation se fait depuis la barre latérale de ChatGPT. D’après [le centre d’aide d’OpenAI](https://help.openai.com/en/articles/20001635-setting-up-your-business-on-chatgpt), la vérification passe par le téléphone de l’entreprise, son e-mail professionnel, un enregistrement DNS sur le domaine ou une boutique Shopify, puis par une vérification d’identité avec Persona avant toute publication.",
+          "Une fois vérifiée, la fiche accepte un site, une description, une catégorie, un logo, des politiques de livraison et de retour, et un flux produits avec prix et disponibilités. OpenAI relit chaque modification avant publication et précise que ChatGPT peut continuer à utiliser d’autres sources.",
+          "Ne confondez pas cette fiche avec un levier de classement. La FAQ officielle indique que réclamer sa fiche ne garantit aucune visibilité supplémentaire et ne donne aucun contrôle direct sur les recommandations indépendantes de ChatGPT. La publicité n’influence pas non plus ces réponses.",
+        ],
+        bullets: [
+          "Réclamer la fiche ne coûte rien et ne demande ni compte publicitaire ni contrat Enterprise",
+          "Les Business Agents, ces agents de conversation sponsorisables, restent réservés à l’e-commerce et aux services en ligne aux États-Unis",
+          "La fiche complète vos pages, vos sources externes et votre suivi : elle ne les remplace pas",
+        ],
+        subsections: [
+          {
+            title: "Que mesurent les statistiques de mentions et de clics de Business Hub ?",
+            paragraphs: [
+              "L’onglet Insights affiche une activité agrégée sur les 28 derniers jours : nombre de mentions, clics vers le site et sujets de découverte, c’est-à-dire les thèmes des réponses qui ont cité votre entreprise, selon [la documentation d’OpenAI](https://help.openai.com/en/articles/20001635-setting-up-your-business-on-chatgpt).",
+              "La définition d’une mention compte. Pour une entreprise en ligne, ChatGPT doit référencer votre site web, le nom seul ne suffit pas. Pour un commerce local, la mention est comptée dès que votre établissement apparaît dans un résultat.",
+              "Un chiffre vide ne signifie pas zéro activité : OpenAI n’affiche les données qu’au-dessus d’un seuil de conversations. Les entreprises ne reçoivent jamais les prompts individuels ni les conversations des utilisateurs.",
+            ],
+          },
+          {
+            title: "Une PME française peut-elle déjà créer sa fiche ?",
+            paragraphs: [
+              "Une entreprise en ligne peut réclamer ou ajouter sa fiche partout où ChatGPT est disponible et où la vérification est prise en charge, selon [le centre d’aide d’OpenAI](https://help.openai.com/en/articles/20001635-setting-up-your-business-on-chatgpt). Les commerces et restaurants, eux, ne peuvent pour l’instant réclamer qu’une fiche existante aux États-Unis.",
+              "Pour un restaurant ou un artisan en France, le levier reste donc la fiche Google, les avis et les sources locales, décrits dans notre guide [référencement local ChatGPT](/blog/referencement-local-chatgpt-apparaitre-ville). OpenAI annonce une extension progressive à d’autres marchés, sans calendrier.",
+            ],
+          },
         ],
       },
       {
@@ -1847,7 +1933,7 @@ const newArticles: Record<string, BlogArticle> = {
             title: "3. Structurer votre site avec Schema.org",
             paragraphs: [
               "Les données structurées aident Google et les moteurs IA à comprendre vos pages, vos services, vos FAQ et votre organisation.",
-              "Google rappelle dans sa [documentation sur les fonctionnalités IA](https://developers.google.com/search/docs/appearance/ai-features) qu’aucun balisage spécial n’est requis, mais que les données structurées doivent correspondre au texte visible. Notre [guide Schema.org pour le GEO](/blog/schema-org-guide-complet-geo) liste les types utiles par métier.",
+              "Google rappelle dans sa [documentation sur les fonctionnalités IA](https://developers.google.com/search/docs/appearance/ai-features) qu’aucun balisage spécial n’est requis, mais que les données structurées doivent correspondre au texte visible. Notre [guide Schema.org pour le GEO](/blog/schema-org-guide-complet-geo) liste les types utiles par métier, et notre article sur [le test du balisage Schema.org](/blog/tester-balisage-schema-org-validateur) explique comment vérifier chaque page avant publication.",
             ],
           },
           {
@@ -1882,7 +1968,8 @@ const newArticles: Record<string, BlogArticle> = {
           {
             title: "Est-il possible de se référencer directement dans ChatGPT ?",
             paragraphs: [
-              "Non, il n’existe ni inscription ni soumission d’URL. Comme indiqué plus haut, OpenAI précise que tout site peut apparaître dans ChatGPT search, à condition de ne pas bloquer OAI-SearchBot dans son robots.txt.",
+              "Non pour les réponses elles-mêmes : il n’existe ni soumission d’URL ni inscription payante qui ferait apparaître votre site dans ChatGPT search. OpenAI précise que tout site peut y apparaître, à condition de ne pas bloquer OAI-SearchBot dans son robots.txt.",
+              "La seule inscription possible concerne votre fiche entreprise dans Business Hub, lancée le 10 novembre 2026. Elle corrige vos informations et affiche vos mentions, mais [OpenAI](https://help.openai.com/en/articles/20001635-setting-up-your-business-on-chatgpt) indique qu’elle ne garantit aucune visibilité supplémentaire dans les réponses.",
               "Le levier direct est donc technique et éditorial : un site accessible, rapide, indexé par Google et Bing, avec des pages qui répondent clairement. Le reste se construit par vos sources externes et vos mentions.",
             ],
           },
@@ -1903,8 +1990,24 @@ const newArticles: Record<string, BlogArticle> = {
             title: "Comment être référencé localement sur ChatGPT ?",
             paragraphs: [
               "Sur une question locale, ChatGPT nomme les entreprises dont la ville, la zone d’intervention et les avis sont clairement visibles. Une fiche Google à jour, une page par ville ou par zone et des avis récents pèsent plus qu’un long texte générique.",
+              "La méthode est la même à Toulouse, à Nantes, à Pau ou à Strasbourg : ce qui change, c’est la concurrence locale et les sources que ChatGPT trouve pour chaque ville. Les blocs locaux de Google qu’il réutilise sont décrits dans notre article sur la [SERP locale](/blog/serp-locale-definition-apparaitre).",
               "Notre guide sur le [référencement local ChatGPT](/blog/referencement-local-chatgpt-apparaitre-ville) décrit la méthode pour apparaître dans sa ville. La partie ChatGPT search, l’ancien SearchGPT, est traitée dans [notre article sur le référencement SearchGPT](/blog/referencement-searchgpt-chatgpt-search).",
               "Si un concurrent est déjà recommandé à votre place, lisez [ChatGPT recommande votre concurrent : pourquoi et que faire](/blog/chatgpt-recommande-concurrent-pourquoi) pour poser le diagnostic.",
+            ],
+          },
+          {
+            title: "Comment être recommandé par ChatGPT ?",
+            paragraphs: [
+              "Être recommandé va plus loin qu’être mentionné : ChatGPT vous propose comme réponse à un besoin précis. Cela demande des pages qui disent clairement pour qui vous travaillez, dans quelle zone, à quelles conditions et avec quelles preuves.",
+              "Les recommandations s’appuient sur un faisceau de sources concordantes. Des avis récents, une fiche Google complète, des annuaires professionnels et un ou deux articles de presse locale qui décrivent la même activité renforcent la confiance de l’IA.",
+              "Évitez les pages qui promettent tout à tout le monde. Une page « expert-comptable pour restaurateurs à Lyon » a plus de chances d’être recommandée sur cette question qu’une page générique sur la comptabilité.",
+            ],
+          },
+          {
+            title: "Un petit site peut-il passer devant un gros concurrent sur ChatGPT ?",
+            paragraphs: [
+              "Oui sur les questions précises et locales, rarement sur les requêtes nationales génériques. ChatGPT reconstruit chaque réponse à partir des pages disponibles : une PME qui répond mieux à une question ciblée peut être nommée avant un acteur national.",
+              "Le scénario illustratif plus bas montre cette dynamique. Les premiers signaux arrivent sur les questions locales, parce qu’un grand groupe décrit rarement ses services ville par ville avec des avis et des preuves locales.",
             ],
           },
         ],
@@ -1954,6 +2057,20 @@ const newArticles: Record<string, BlogArticle> = {
               "Évolution mensuelle après chaque publication ou action",
             ],
           },
+          {
+            title: "Comment connaître son positionnement sur ChatGPT ?",
+            paragraphs: [
+              "Il n’existe pas de position sur ChatGPT comme sur Google. Votre positionnement se lit en fréquence : sur combien de questions clients vous êtes mentionné, cité en source ou lié, et comment l’IA vous décrit par rapport aux concurrents.",
+              "[France Num](https://www.francenum.gouv.fr/guides-et-conseils/communication-et-publicite/referencement/etre-visible-dans-les-reponses-des-ia) propose un test de dix minutes : notez cinq questions qu’un prospect poserait sans citer votre nom, posez-les à ChatGPT, au Mode IA de Google et à Mistral, puis notez la mention, la citation et le lien dans un tableau.",
+              "Deux sources officielles complètent ce relevé. Depuis le 31 août 2026, la Google Search Console propose un rapport sur les fonctionnalités IA de Google Search, toujours selon France Num, et Business Hub affiche vos mentions dans ChatGPT sur 28 jours.",
+            ],
+            bullets: [
+              "Taux de mention sur un corpus fixe de 20 à 30 questions",
+              "Part des réponses où votre site est cité en source ou lié",
+              "Mentions et clics Business Hub sur 28 jours, une fois la fiche vérifiée",
+              "Impressions du rapport IA de la Search Console pour la partie Google",
+            ],
+          },
         ],
       },
       {
@@ -1969,11 +2086,33 @@ const newArticles: Record<string, BlogArticle> = {
         ],
         subsections: [
           {
+            title: "Peut-on connecter ChatGPT à ses outils SEO (MCP, Ahrefs, Copilot) ?",
+            paragraphs: [
+              "Oui, par le protocole MCP (Model Context Protocol), qui permet à un assistant IA d’interroger un outil tiers. [Ahrefs documente](https://docs.ahrefs.com/mcp/docs/introduction) un serveur MCP hébergé, disponible à partir du forfait Lite, qui se connecte à ChatGPT, à Claude, à Copilot Studio ou au Chat de Mistral.",
+              "Concrètement, vous demandez à ChatGPT la liste des pages d’un concurrent citées par les IA ou les mots-clés d’une page, et il interroge l’outil pour répondre avec des données réelles. Chaque appel consomme des unités d’API de votre forfait.",
+              "Pour une PME, ce branchement est utile si quelqu’un exploite déjà un outil SEO payant. Sinon, la Search Console et un relevé manuel suffisent, comme le montre notre guide pour [utiliser ChatGPT pour le SEO](/blog/utiliser-chatgpt-pour-le-seo).",
+            ],
+          },
+          {
             title: "Comment organiser sa veille autour de ChatGPT ?",
             paragraphs: [
               "Les moteurs IA changent vite : nouveaux robots, nouvelles fonctions de recherche, nouvelles règles d’usage. Notre méthode de [veille SEO](/blog/veille-seo-methode-outils) liste les sources officielles et les outils à suivre pour ne pas optimiser sur des informations dépassées.",
             ],
           },
+        ],
+      },
+      {
+        title: "Faut-il passer par une agence de référencement ChatGPT ?",
+        paragraphs: [
+          "Pas forcément. [France Num](https://www.francenum.gouv.fr/guides-et-conseils/communication-et-publicite/referencement/etre-visible-dans-les-reponses-des-ia) rappelle qu’une TPE ou une PME peut agir seule sur les leviers de base : relevé de questions, fiche Google, avis, pages de services. Une agence devient utile quand le temps manque ou quand la concurrence impose des leviers plus techniques.",
+          "Avant de signer, posez les dix questions listées par France Num : quel résultat concret attendre, sur quels moteurs et quelles questions, comment la visibilité est mesurée avant de commencer, quelles preuves de résultats passés et quels résultats ne peuvent pas être garantis.",
+          "Méfiez-vous des promesses de position ou de présence systématique dans les réponses. Aucun prestataire ne contrôle les modèles, leurs mises à jour ni les contenus de vos concurrents. Notre guide pour [choisir une agence de référencement ChatGPT](/blog/agence-referencement-chatgpt-comment-choisir) détaille les critères et les signaux d’alerte.",
+          "Entre faire seul et déléguer, un [consultant GEO](/blog/consultant-geo-role-missions-choisir) peut aussi cadrer la méthode, former l’équipe et auditer la situation de départ. [Notre offre](/offre) couvre l’audit, les pages, les sources et le suivi.",
+        ],
+        bullets: [
+          "Exigez un relevé initial daté sur un corpus de questions validé avec vous",
+          "Demandez la part de SEO déjà en place pour ne pas payer deux fois les mêmes actions",
+          "Refusez toute garantie de position ou de résultat chiffré sans méthode",
         ],
       },
       {
@@ -1997,7 +2136,9 @@ const newArticles: Record<string, BlogArticle> = {
         ],
         bullets: [
           "ChatGPT s’appuie sur des moteurs de recherche tiers et sur les sites qu’il peut lire : vérifiez que OAI-SearchBot n’est pas bloqué",
-          "Il n’existe aucune inscription directe : la visibilité se construit par des pages answer-first, des données structurées et des sources externes cohérentes",
+          "Aucune inscription ne fait apparaître votre site dans les réponses : la visibilité se construit par des pages answer-first, des données structurées et des sources externes cohérentes",
+          "Depuis le 10 novembre 2026, Business Hub permet de réclamer sa fiche entreprise, de corriger ses informations et de lire ses mentions sur 28 jours, sans garantie de recommandation",
+          "Votre positionnement sur ChatGPT se lit en fréquence de mention, complétée par le rapport IA de la Search Console et les statistiques de Business Hub",
           "Le SEO reste la base, le GEO ajoute l’entité, les sources et le suivi des questions clients",
           "Mesurez une fréquence de mention sur un jeu fixe de questions, chaque semaine, jamais une réponse isolée",
           "Les résultats arrivent d’abord sur les questions locales et précises, en quelques semaines, puis s’élargissent avec les sources",
