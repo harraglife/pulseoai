@@ -73,6 +73,15 @@ function buildMentions(names: Array<keyof typeof mentionUrls>): ArticleMention[]
 }
 
 export const articleMetadataBySlug: Record<string, ArticleSchemaEnhancement> = {
+  "agent-ia-restaurant-reservations-avis": {
+    about: {
+      "@type": "Thing",
+      name: "Agent IA pour restaurant",
+      description:
+        "Ce qu’un agent IA fait pour un restaurant : réponse aux appels et prise de réservations pendant le service, rappels et liste d’attente contre les no-show, réponses aux avis Google et TripAdvisor, réponses aux questions sur la carte, les allergènes et les horaires, aide au planning et aux achats ; comparaison du module IA de la plateforme de réservation, de l’assistant généraliste et de l’agent sur mesure, où trouver un agent, repères de tarif, règles RGPD et AI Act en France, méthode de mise en place en six étapes et scénario illustratif.",
+    },
+    mentions: buildMentions(["OpenAI", "ChatGPT", "Perplexity", "Anthropic", "Claude", "Mistral AI", "Google", "TripAdvisor"]),
+  },
   "agent-ia-outlook-gestion-emails-pme": {
     about: {
       "@type": "Thing",
