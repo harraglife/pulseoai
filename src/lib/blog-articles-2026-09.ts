@@ -1207,7 +1207,7 @@ const referencementLocalChatgpt: ArticleWithTables = {
       paragraphs: [
         "Le [référencement local ChatGPT](/) désigne l’ensemble des actions qui augmentent la probabilité que ChatGPT nomme votre entreprise quand un utilisateur cherche un prestataire dans une ville ou un quartier. C’est la déclinaison locale du GEO, l’optimisation pour les moteurs génératifs.",
         "La différence avec Google est la forme de la réponse. Google affiche une carte et une liste, ChatGPT écrit un paragraphe qui recommande deux ou trois établissements avec une phrase de justification.",
-        "Cette recommandation vient de sources que l’assistant consulte en temps réel. Nous détaillons la logique générale dans notre guide pour [apparaître sur ChatGPT](/blog/referencement-chatgpt-apparaitre-ia) ; cet article se concentre sur les requêtes locales.",
+        "Cette recommandation vient de sources que l’assistant consulte en temps réel. Nous détaillons la logique générale dans notre guide pour [apparaître sur ChatGPT](/blog/referencement-chatgpt-apparaitre-ia) ; cet article se concentre sur les requêtes locales. Les bases communes à toutes les requêtes, de l’accès des robots à la fiche entreprise Business Hub, sont dans [comment se référencer sur ChatGPT](/blog/apparaitre-chatgpt-client-cherche-entreprise).",
         "L’enjeu est mesurable côté consommateurs. Selon [l’enquête Local Consumer Review Survey 2026 de BrightLocal, menée auprès de 1 002 consommateurs américains, l’usage de ChatGPT et des IA génératives pour trouver une entreprise locale est passé de 6 % à 45 %](https://www.brightlocal.com/research/local-consumer-review-survey/).",
       ],
     },
@@ -2465,7 +2465,7 @@ const referencementSearchgpt: ArticleWithTables = {
       title: "Qu’est-ce que le référencement SearchGPT ?",
       paragraphs: [
         "Le référencement SearchGPT regroupe les actions qui augmentent la probabilité qu’une page soit lue, reprise et citée en source quand ChatGPT effectue une recherche sur le web pour répondre à un utilisateur.",
-        "C’est une branche du GEO, l’optimisation pour les moteurs génératifs, centrée sur un seul moteur : celui d’OpenAI. Nous présentons la logique générale de ces moteurs dans [notre guide pour apparaître sur ChatGPT](/blog/referencement-chatgpt-apparaitre-ia).",
+        "C’est une branche du GEO, l’optimisation pour les moteurs génératifs, centrée sur un seul moteur : celui d’OpenAI. Nous présentons la logique générale de ces moteurs dans [notre guide pour apparaître sur ChatGPT](/blog/referencement-chatgpt-apparaitre-ia). Les six bases à poser avant d’optimiser pour ChatGPT search, dont la nouvelle fiche entreprise Business Hub, sont détaillées dans [comment se référencer sur ChatGPT](/blog/apparaitre-chatgpt-client-cherche-entreprise).",
         "L’audience justifie l’effort, puisque [ChatGPT a atteint 900 millions d’utilisateurs actifs hebdomadaires, selon l’annonce d’OpenAI rapportée par TechCrunch le 27 février 2026](https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users). Pour être accompagné sur ce sujet, découvrez notre [agence de référencement ChatGPT](/).",
       ],
     },
@@ -5414,7 +5414,7 @@ const consultantGeo: ArticleWithTables = {
       paragraphs: [
         "Oui, à un détail près. Le consultant référencement ChatGPT se concentre sur un seul moteur ; le consultant GEO couvre ChatGPT, Gemini, Perplexity, Claude et les aperçus IA de Google. Comme les signaux se recoupent, le second fait le travail du premier.",
         "Le poids de Google plaide pour la vision large. Son blog indiquait en mai 2026 que les AI Overviews dépassaient 2,5 milliards d’utilisateurs mensuels, et France Num signale que la Search Console propose depuis le 31 août 2026 un rapport dédié aux performances dans les fonctionnalités IA de Google.",
-        "En pratique, demandez un consultant qui mesure chaque moteur séparément. Vous pouvez être cité dans ChatGPT et absent de Gemini, comme nous l’expliquons dans [apparaître sur ChatGPT](/blog/referencement-chatgpt-apparaitre-ia) et [se référencer sur Gemini](/blog/comment-se-referencer-sur-gemini).",
+        "En pratique, demandez un consultant qui mesure chaque moteur séparément. Vous pouvez être cité dans ChatGPT et absent de Gemini, comme nous l’expliquons dans [apparaître sur ChatGPT](/blog/referencement-chatgpt-apparaitre-ia) et [se référencer sur Gemini](/blog/comment-se-referencer-sur-gemini). Pour ChatGPT, le consultant doit aussi maîtriser les bases décrites dans [comment se référencer sur ChatGPT](/blog/apparaitre-chatgpt-client-cherche-entreprise), y compris la fiche entreprise Business Hub.",
       ],
     },
     {
