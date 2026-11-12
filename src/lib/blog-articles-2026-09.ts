@@ -6397,6 +6397,286 @@ const agentIaOutlook: ArticleWithTables = {
   ],
 };
 
+const agentIaRestaurant: ArticleWithTables = {
+  slug: "agent-ia-restaurant-reservations-avis",
+  title: "Agent IA pour restaurant : réservations, appels, avis et no-show",
+  seoTitle: "Agent IA restaurant : usages, limites et règles en France",
+  description:
+    "Ce qu’un agent IA fait pour un restaurant : appels, réservations, rappels anti no-show, réponses aux avis, limites et règles en France.",
+  date: "12 novembre 2026",
+  dateModified: "12 novembre 2026",
+  readingTime: "12 min",
+  category: "Agents IA",
+  articleSection: "Agents IA",
+  keywords: [
+    "agent IA pour restaurant",
+    "agent IA restaurant",
+    "IA réservation restaurant",
+    "agent vocal IA restaurant",
+    "no-show restaurant IA",
+    "réponse aux avis IA",
+    "IA dans la restauration",
+    "agent IA PME",
+  ],
+  intro:
+    "Un agent IA pour restaurant décroche les appels pendant le service, prend les réservations, envoie les rappels qui limitent les no-show et prépare les réponses aux avis. Il répond aussi aux questions récurrentes sur la carte, les allergènes ou le parking, à toute heure. Voici ce qu’il sait faire pour un établissement indépendant, où il trébuche encore et quelles règles françaises s’appliquent.",
+  quickAnswer: {
+    question: "Qu’est-ce qu’un agent IA pour restaurant ?",
+    answer:
+      "Un agent IA pour restaurant est un programme connecté à votre système de réservation, à votre téléphone et à vos avis en ligne. Il répond aux appels et aux messages, enregistre ou modifie une réservation, envoie les rappels avant le service, prépare les réponses aux avis et répond aux questions sur la carte ou les horaires. Il travaille à toute heure et transfère à l’équipe ce qu’il ne sait pas traiter. Il doit annoncer qu’il est une IA et ne remplace pas l’accueil en salle.",
+  },
+  contextualLinks: [
+    { label: "nos agents IA pour PME", href: "/agents-ia" },
+    { label: "l’agent IA sur mesure pour PME", href: "/blog/agent-ia-sur-mesure-pme" },
+    { label: "l’agent IA téléphonique", href: "/blog/agent-ia-telephonique-pme" },
+    { label: "GEO pour l’hôtellerie et la restauration", href: "/geo-hotellerie" },
+  ],
+  bodyCta: {
+    intro: "Vous perdez des appels pendant le service et les no-show pèsent sur vos soirées ?",
+    linkLabel: "Parlons de votre restaurant",
+    href: "/contact",
+    outro: ", on regarde vos canaux de réservation, vos outils et ce qu’un agent peut prendre en charge en premier.",
+  },
+  relatedSlugs: [
+    "agent-ia-telephonique-pme",
+    "agent-ia-sur-mesure-pme",
+    "agent-ia-service-client-pme",
+    "combien-coute-agent-ia-pme",
+  ],
+  faqTitle: "FAQ : agent IA pour restaurant",
+  faqItems: [
+    {
+      question: "Un agent IA peut-il prendre les réservations par téléphone ?",
+      answer:
+        "Oui. Un agent vocal connecté à votre logiciel de réservation comprend la demande, vérifie les disponibilités, enregistre la table et confirme par SMS. Il transfère à l’équipe les demandes inhabituelles, comme un groupe ou une privatisation.",
+    },
+    {
+      question: "L’agent IA remplace-t-il la plateforme de réservation ?",
+      answer:
+        "Non. Il s’appuie sur elle. La plateforme reste la source des disponibilités et des fiches clients ; l’agent ajoute un canal de prise en charge par téléphone, messagerie ou site, et automatise les rappels et les réponses.",
+    },
+    {
+      question: "Que se passe-t-il si l’agent ne comprend pas un client ?",
+      answer:
+        "Il doit le dire et proposer une solution : transfert vers un membre de l’équipe, rappel à un horaire précis ou prise de message. Un agent bien réglé ne devine jamais une réservation ou une allergie.",
+    },
+    {
+      question: "Faut-il prévenir les clients qu’ils parlent à une IA ?",
+      answer:
+        "Oui. Le règlement européen sur l’IA impose d’informer les personnes qu’elles interagissent avec une IA. L’agent l’annonce au début de l’appel ou de la conversation, de façon claire et sans détour.",
+    },
+    {
+      question: "Un petit restaurant indépendant peut-il s’équiper ?",
+      answer:
+        "Oui, en commençant par le module IA de son logiciel de réservation ou par un agent téléphonique, sur un seul cas d’usage. Un agent sur mesure vient ensuite, quand plusieurs outils doivent être reliés.",
+    },
+  ],
+  sections: [
+    {
+      title: "Qu’est-ce qu’un agent IA pour restaurant ?",
+      paragraphs: [
+        "Un agent IA pour restaurant est un programme qui comprend une demande en langage naturel, consulte vos outils et agit dans un cadre défini. Il prend une réservation, modifie un horaire, envoie un rappel ou prépare une réponse à un avis.",
+        "La différence avec un simple chatbot tient à l’action. Le chatbot répond à partir d’un script ; l’agent consulte le plan de salle, enregistre la table et prévient la cuisine d’une allergie signalée. Nous détaillons cette distinction dans [agent IA vs chatbot](/blog/agent-ia-vs-chatbot-difference-pme).",
+        "[Anthropic distingue les workflows, où les étapes sont prédéfinies dans le code, des agents, où le modèle dirige lui-même ses actions et ses outils](https://www.anthropic.com/engineering/building-effective-agents). Dans un restaurant, les deux coexistent : un rappel automatique avant le service est un workflow, une conversation de réservation est un agent.",
+      ],
+      bullets: [
+        "Il décroche les appels et les messages quand l’équipe est en service",
+        "Il lit et écrit dans le logiciel de réservation, jamais à côté",
+        "Il transfère à un humain tout ce qui sort de son périmètre",
+        "Il annonce qu’il est une IA dès le début de l’échange",
+      ],
+    },
+    {
+      title: "Quelle est la meilleure IA pour un restaurant ?",
+      paragraphs: [
+        "La meilleure IA pour un restaurant est celle qui s’intègre à votre logiciel de réservation et traite d’abord le problème qui vous coûte le plus : appels manqués, no-show ou avis sans réponse. Il n’existe pas de solution universelle, mais trois familles.",
+        "La première famille regroupe les modules IA des plateformes de réservation, qui répondent aux appels et aux avis directement dans l’outil. La deuxième est l’assistant généraliste, ChatGPT, Mistral ou Claude, utile pour rédiger et analyser mais qui n’agit pas seul.",
+        "La troisième famille est l’agent sur mesure, construit sur vos outils et vos règles, décrit dans notre guide de [l’agent IA sur mesure pour PME](/blog/agent-ia-sur-mesure-pme). Elle convient aux groupes de plusieurs établissements ou aux restaurants qui relient réservation, caisse, téléphonie et avis.",
+      ],
+      table: {
+        caption: "Trois familles d’IA pour un restaurant indépendant ou un petit groupe",
+        headers: ["Famille", "Ce qu’elle fait", "Pour qui", "Limite principale"],
+        rows: [
+          ["Module IA du logiciel de réservation", "Répond aux appels, confirme les tables, propose des réponses aux avis", "Restaurant indépendant déjà équipé d’une plateforme", "Limité aux fonctions prévues par l’éditeur"],
+          ["Assistant généraliste (ChatGPT, Mistral, Claude)", "Rédige réponses aux avis, menus, messages, analyse des commentaires", "Toute équipe, pour gagner du temps sur l’écrit", "N’agit pas dans vos outils, demande une relecture"],
+          ["Agent sur mesure", "Relie téléphone, réservation, caisse, avis et messagerie avec vos règles", "Groupes, restaurants à forte activité téléphonique", "Mise en place et suivi à prévoir"],
+        ],
+      },
+      subsections: [
+        {
+          title: "Agent IA ou chatbot de réservation : quelle différence pour un restaurant ?",
+          paragraphs: [
+            "Un chatbot de réservation suit un formulaire : date, heure, nombre de couverts. Il bloque dès que le client demande une table en terrasse pour un anniversaire avec une poussette, ce qu’un agent comprend et traite.",
+            "L’agent sait aussi dire non. Si la salle est complète, il propose un autre créneau ou une liste d’attente, puis consigne la demande. Le chatbot, lui, renvoie souvent vers le téléphone, que personne ne décroche pendant le service.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Comment utiliser l’IA dans la restauration ?",
+      paragraphs: [
+        "L’IA s’utilise dans la restauration sur cinq postes concrets : les appels et les réservations, la lutte contre les no-show, les avis clients, les questions récurrentes et l’organisation interne. Chaque poste peut démarrer seul, avec un outil que vous avez déjà.",
+        "[France Num rappelle que 16 % des entreprises de l’hôtellerie-restauration ont recours à l’IA générative, contre 22 % pour l’ensemble des secteurs, et que 10 % ont investi dans un assistant de type chatbot](https://www.francenum.gouv.fr/guides-et-conseils/intelligence-artificielle/comprendre-et-adopter-lia/lia-generative-pour). La marge de progression est donc large pour un établissement qui s’organise.",
+      ],
+      subsections: [
+        {
+          title: "Répondre aux appels et prendre les réservations pendant le service",
+          paragraphs: [
+            "Le premier usage est le téléphone. Entre 12 h et 14 h, personne ne décroche, et le client appelle le restaurant suivant. Un agent vocal répond, vérifie les disponibilités dans votre logiciel et confirme la table par SMS.",
+            "Il gère aussi les modifications et les annulations, qui libèrent des places pour d’autres clients. Les demandes de groupe, de privatisation ou de menu spécial sont transférées à l’équipe avec un résumé. Le fonctionnement détaillé est dans notre article sur [l’agent IA téléphonique pour PME](/blog/agent-ia-telephonique-pme).",
+          ],
+        },
+        {
+          title: "Réduire les no-show avec des rappels et une liste d’attente",
+          paragraphs: [
+            "[Selon Économie Matin, qui cite les dirigeants de Zenchef et de TheFork, environ 10 % des réservations ne sont pas honorées en France, 70 % des restaurants sont concernés et les pertes atteignent jusqu’à 15 % du chiffre d’affaires pour certains établissements](https://www.economiematin.fr/reservation-non-honoree-restaurant-thefork-ia).",
+            "[Le même article indique que les rappels par e-mail et SMS réduisent les no-show de 30 % selon TheFork, et qu’un algorithme attribue à chaque client un score de risque qui déclenche rappels et empreinte bancaire](https://www.economiematin.fr/reservation-non-honoree-restaurant-thefork-ia).",
+            "Un agent IA va un cran plus loin : il envoie le rappel, lit la réponse du client, annule la table si besoin et propose aussitôt le créneau à la liste d’attente. Chaque place libérée est remise en vente sans intervention de l’équipe.",
+          ],
+          bullets: [
+            "Rappel la veille avec demande de confirmation en un mot",
+            "Relance le jour même pour les tables de six couverts et plus",
+            "Annulation enregistrée et créneau proposé à la liste d’attente",
+            "Signalement des clients absents à répétition, selon vos règles",
+          ],
+        },
+        {
+          title: "Répondre aux avis Google et TripAdvisor sans y passer ses soirées",
+          paragraphs: [
+            "[France Num indique que 44 % des professionnels de l’hôtellerie qui utilisent l’IA s’en servent pour analyser les avis en ligne, et 74 % pour générer du contenu, selon une étude de l’UMIH](https://www.francenum.gouv.fr/guides-et-conseils/intelligence-artificielle/comprendre-et-adopter-lia/lia-generative-pour).",
+            "Un agent lit chaque nouvel avis, repère le point critique, attente, bruit, plat froid, et prépare une réponse personnalisée dans le ton de la maison. Le restaurateur relit, ajuste et publie. Les avis négatifs sensibles restent toujours validés par un humain.",
+            "Les avis nourrissent aussi votre visibilité dans les moteurs IA. Un restaurant bien noté, avec des réponses régulières, a plus de chances d’être recommandé, comme nous l’expliquons dans notre page [GEO pour l’hôtellerie et la restauration](/geo-hotellerie).",
+          ],
+        },
+        {
+          title: "Répondre aux questions sur la carte, les allergènes et les horaires",
+          paragraphs: [
+            "Les mêmes questions reviennent chaque jour : terrasse chauffée, menu enfant, options sans gluten, parking, chien accepté. Un agent connecté à une base de connaissances répond sur le site, par WhatsApp ou par téléphone, sans mobiliser la salle.",
+            "[France Num cite une étude Quicktext selon laquelle les établissements équipés d’assistants de ce type enregistrent une hausse de satisfaction client de 10 à 15 points](https://www.francenum.gouv.fr/guides-et-conseils/intelligence-artificielle/comprendre-et-adopter-lia/lia-generative-pour). Sur les allergènes, l’agent répond à partir de votre fiche validée et renvoie au chef en cas de doute.",
+            "Cette couche de service client est la même que pour toute PME. Nous décrivons les garde-fous et les scripts de transfert dans [l’agent IA pour le service client](/blog/agent-ia-service-client-pme).",
+          ],
+        },
+        {
+          title: "Aider le planning, les achats et la communication",
+          paragraphs: [
+            "Hors salle, l’IA aide à préparer les plannings à partir des disponibilités de l’équipe, à comparer des devis fournisseurs et à rédiger les publications pour une soirée spéciale. [France Num décrit six cas d’usage de ce type, avec les prompts à utiliser](https://www.francenum.gouv.fr/guides-et-conseils/intelligence-artificielle/comprendre-et-adopter-lia/lia-generative-pour).",
+            "Ces usages passent souvent par un assistant généraliste, sans agent. Ils ne demandent qu’une règle : aucune donnée personnelle de client ou de salarié dans un outil grand public, et une relecture avant toute publication.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Pourquoi les restaurants s’équipent maintenant ?",
+      paragraphs: [
+        "Les restaurants s’équipent parce que le téléphone, les avis et les réservations en ligne saturent des équipes déjà réduites, et parce que la découverte des établissements bascule vers les assistants IA. Deux mouvements qui se renforcent.",
+        "[D’après l’étude de l’UMIH relayée par France Num, 76 % des hôteliers qui utilisent l’IA générative constatent un gain de temps, 54 % une meilleure communication et 51 % une efficacité opérationnelle accrue](https://www.francenum.gouv.fr/guides-et-conseils/intelligence-artificielle/comprendre-et-adopter-lia/lia-generative-pour).",
+        "[OpenTable explique que son assistant Concierge répond aux questions des clients sur les profils de plus de 70 000 restaurants partenaires, que la plateforme a été le premier partenaire restauration de l’agent Operator d’OpenAI, et que son partenariat avec Perplexity affiche les disponibilités en temps réel dans les réponses](https://www.opentable.fr/restaurant-solutions/resources/best-restaurant-ai-tools/).",
+        "Autrement dit, vos futurs clients demandent déjà à ChatGPT ou à Perplexity « un italien chaleureux près de la gare ». Être réservable depuis ces réponses devient un canal à part entière, décrit dans notre guide sur le [référencement local dans ChatGPT](/blog/referencement-local-chatgpt-apparaitre-ville).",
+      ],
+      bullets: [
+        "Côté exploitation : moins d’appels perdus, moins de no-show, des avis traités",
+        "Côté acquisition : des assistants IA qui recommandent et réservent",
+        "Côté équipe : du temps rendu à la salle et à la cuisine",
+      ],
+    },
+    {
+      title: "Où trouver des agents IA ?",
+      paragraphs: [
+        "On trouve des agents IA pour restaurant à trois endroits : dans votre logiciel de réservation, chez les éditeurs spécialisés en téléphonie ou en avis, et chez les agences qui construisent un agent sur mesure relié à vos outils.",
+        "Commencez par votre plateforme actuelle. Zenchef, TheFork, OpenTable ou votre logiciel de caisse proposent souvent un module d’appels IA, de réponse aux avis ou de rappels. Il s’active en quelques jours et ne demande aucun développement.",
+        "Si vos besoins dépassent ces modules, un prestataire relie l’ensemble. Notre guide pour [choisir une agence d’agents IA](/blog/agence-agents-ia-comment-choisir-prestataire) liste les questions à poser, et notre page [agents IA pour PME](/agents-ia) décrit notre façon de travailler.",
+      ],
+      bullets: [
+        "Module IA de la plateforme de réservation : le plus rapide à activer",
+        "Éditeur spécialisé : agent vocal, gestion des avis, messagerie",
+        "Agence : agent sur mesure quand plusieurs outils doivent dialoguer",
+      ],
+    },
+    {
+      title: "Quel est le tarif d’un agent IA ?",
+      paragraphs: [
+        "Le tarif d’un agent IA pour restaurant dépend de trois choses : le canal couvert, téléphone, messagerie ou avis, le volume mensuel de conversations et le niveau d’intégration avec vos outils. Un module de plateforme se paie à l’abonnement, un agent sur mesure se chiffre en projet puis en suivi.",
+        "Avant de comparer des prix, comparez ce qui est inclus : minutes d’appel, nombre de réservations, connexion au logiciel, transfert vers un humain, journal des conversations. Deux offres au même tarif peuvent couvrir des périmètres très différents.",
+        "Nous détaillons les modèles de facturation, les coûts cachés et les questions à poser dans [combien coûte un agent IA pour une PME](/blog/combien-coute-agent-ia-pme). Le bon repère reste le coût d’un appel manqué ou d’une table vide un samedi soir.",
+      ],
+    },
+    {
+      title: "Quelles règles respecter en France pour un agent IA en restauration ?",
+      paragraphs: [
+        "Un agent IA qui parle à vos clients relève de deux textes : le RGPD, dès qu’il traite un nom, un téléphone ou une allergie, et le règlement européen sur l’IA, qui impose la transparence. Le droit de la consommation continue de s’appliquer.",
+        "[France Num précise que les obligations de transparence de l’article 50 du règlement européen sur l’IA s’appliquent depuis le 2 août 2026 : si vous utilisez une IA qui échange avec vos clients, ceux-ci doivent être informés qu’ils interagissent avec une IA](https://www.francenum.gouv.fr/guides-et-conseils/intelligence-artificielle/regles-juridiques-ia-commercants-artisans).",
+        "[La Commission européenne formule la même règle : lorsqu’un système d’IA comme un chatbot est utilisé, les personnes doivent savoir qu’elles interagissent avec une machine](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai). Dans un restaurant, l’agent l’annonce dès la première phrase de l’appel.",
+        "[La même fiche France Num rappelle que vous restez responsable des informations erronées produites par l’IA, par exemple une mauvaise recommandation ou une erreur de tarification, vis-à-vis du consommateur](https://www.francenum.gouv.fr/guides-et-conseils/intelligence-artificielle/regles-juridiques-ia-commercants-artisans). Une allergie mal renseignée engage donc le restaurant, pas l’outil.",
+      ],
+      bullets: [
+        "Annonce claire de l’IA au début de chaque appel ou conversation",
+        "Information des clients sur les données collectées et leur durée de conservation",
+        "Fiche allergènes validée par le chef, jamais improvisée par l’agent",
+        "Journal des conversations conservé pour vérifier et corriger",
+      ],
+      subsections: [
+        {
+          title: "Quelles données un agent de réservation peut-il traiter ?",
+          paragraphs: [
+            "Le strict nécessaire : nom, téléphone, date, nombre de couverts, demande particulière. Une allergie est une donnée de santé, à traiter avec prudence et à ne pas conserver au-delà du service. Le cadre complet est dans notre article [agent IA, RGPD et AI Act](/blog/agent-ia-rgpd-ai-act-pme).",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Comment mettre en place un agent IA dans son restaurant ?",
+      paragraphs: [
+        "La mise en place suit six étapes, du cas d’usage prioritaire au suivi hebdomadaire. [Anthropic conseille de chercher la solution la plus simple possible et de n’ajouter de la complexité que lorsqu’elle améliore nettement les résultats](https://www.anthropic.com/engineering/building-effective-agents). Un restaurant commence donc par un seul canal.",
+      ],
+      bullets: [
+        "1. Mesurer une semaine : appels manqués, no-show, avis sans réponse, questions répétées",
+        "2. Choisir un seul cas d’usage, souvent le téléphone pendant le service",
+        "3. Écrire les règles : horaires, créneaux, taille maximale de groupe, ce qui est transféré",
+        "4. Connecter l’agent au logiciel de réservation et tester en interne pendant une semaine",
+        "5. Ouvrir au public avec annonce de l’IA et relecture quotidienne des conversations",
+        "6. Ajouter un canal par mois : rappels, avis, messagerie, puis mesurer à nouveau",
+      ],
+      subsections: [
+        {
+          title: "Quelles erreurs éviter au démarrage ?",
+          paragraphs: [
+            "La première erreur est de laisser l’agent inventer : une disponibilité, un plat, une allergie. La seconde est de l’ouvrir sans transfert humain prévu. La troisième est de ne jamais relire ses conversations, alors que c’est là que se corrigent le ton et les règles.",
+            "Évitez aussi de brancher cinq canaux le premier mois. Un agent qui gère bien le téléphone vaut mieux qu’un agent moyen partout. [Notre offre](/offre) démarre toujours par un audit des flux avant tout déploiement.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Scénario illustratif : une brasserie de 60 couverts qui perd des appels",
+      paragraphs: [
+        "Le scénario suivant est illustratif : il montre une progression plausible, pas un résultat garanti. Une brasserie de 60 couverts, 9 salariés, reçoit la plupart de ses appels entre 11 h 30 et 14 h, quand personne ne peut décrocher. Les avis Google s’accumulent sans réponse.",
+        "Semaines 1 et 2 : relevé des appels manqués et des no-show, activation de l’agent vocal du logiciel de réservation sur le créneau du midi, rédaction des règles de transfert et de la fiche allergènes validée par le chef.",
+        "Semaines 3 à 5 : rappels automatiques la veille avec confirmation, liste d’attente activée, agent de réponse aux avis en relecture par la responsable de salle. Ajustement du ton après lecture des conversations.",
+        "Semaines 6 à 8 : la majorité des appels du midi sont pris en charge sans intervention, les no-show du week-end reculent, chaque avis reçoit une réponse sous 48 heures. L’équipe garde la main sur les groupes et les réclamations.",
+      ],
+      bullets: [
+        "Les premiers gains viennent du téléphone, sur le créneau le plus chargé",
+        "Les rappels et la liste d’attente produisent un effet dès la troisième semaine",
+        "La relecture quotidienne reste nécessaire pendant tout le déploiement",
+      ],
+    },
+    {
+      title: "Ce qu’il faut retenir",
+      paragraphs: [
+        "Un agent IA pour restaurant ne remplace pas l’accueil, il protège le service. Voici l’essentiel avant de choisir un outil ou un prestataire.",
+      ],
+      bullets: [
+        "Un agent agit dans vos outils : réservation, rappels, avis, questions ; un chatbot ne fait que répondre",
+        "Commencez par le téléphone pendant le service, puis ajoutez les rappels anti no-show et les avis",
+        "Le module IA de votre plateforme de réservation suffit souvent au départ ; l’agent sur mesure vient quand plusieurs outils doivent dialoguer",
+        "Annoncez l’IA dès la première phrase, limitez les données collectées et validez vous-même les allergènes",
+        "Relisez les conversations chaque jour le premier mois et mesurez appels pris, no-show et avis traités",
+        "Un [audit de vos flux](/contact) fixe le point de départ, et [nos agents IA pour PME](/agents-ia) couvrent la mise en place",
+      ],
+    },
+  ],
+};
+
 export const septemberArticles: Record<string, BlogArticle> = {
   [suivreVisibilite.slug]: suivreVisibilite,
   [agentIaSurMesure.slug]: agentIaSurMesure,
@@ -6423,6 +6703,7 @@ export const septemberArticles: Record<string, BlogArticle> = {
   [agentIaComptabilite.slug]: agentIaComptabilite,
   [serpLocale.slug]: serpLocale,
   [agentIaOutlook.slug]: agentIaOutlook,
+  [agentIaRestaurant.slug]: agentIaRestaurant,
 };
 
 export const septemberPosts: BlogPostMeta[] = [
@@ -6650,5 +6931,14 @@ export const septemberPosts: BlogPostMeta[] = [
     date: agentIaOutlook.date,
     readingTime: agentIaOutlook.readingTime,
     category: agentIaOutlook.category,
+  },
+  {
+    slug: agentIaRestaurant.slug,
+    title: agentIaRestaurant.title,
+    seoTitle: agentIaRestaurant.seoTitle,
+    description: agentIaRestaurant.description,
+    date: agentIaRestaurant.date,
+    readingTime: agentIaRestaurant.readingTime,
+    category: agentIaRestaurant.category,
   },
 ];
