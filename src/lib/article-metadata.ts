@@ -73,6 +73,15 @@ function buildMentions(names: Array<keyof typeof mentionUrls>): ArticleMention[]
 }
 
 export const articleMetadataBySlug: Record<string, ArticleSchemaEnhancement> = {
+  "schema-org-organization-baliser-entreprise": {
+    about: {
+      "@type": "Thing",
+      name: "Balisage Schema.org Organization d’une entreprise",
+      description:
+        "Ce qu’est le balisage Schema.org Organization et à quoi il sert pour une entreprise : identification de l’entité par Google et les moteurs IA, logo et fiche info, limites selon Google pour les Aperçus IA ; choix entre Organization, LocalBusiness, Corporation, ProfessionalService et OnlineStore, cas du siège avec plusieurs établissements ; propriétés à renseigner (name, alternateName, url, logo, description, address, contactPoint, foundingDate, numberOfEmployees, iso6523Code avec le SIREN, vatID, sameAs) ; où placer le bloc JSON-LD et comment relier Organization, WebSite et WebPage avec des @id ; tests avec le Schema Markup Validator, le test des résultats enrichis et la Search Console ; erreurs fréquentes et scénario illustratif.",
+    },
+    mentions: buildMentions(["Schema.org", "JSON-LD", "Google", "Google AI Overviews", "ChatGPT", "GEO"]),
+  },
   "agent-ia-restaurant-reservations-avis": {
     about: {
       "@type": "Thing",
