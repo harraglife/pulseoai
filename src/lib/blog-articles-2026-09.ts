@@ -6938,6 +6938,277 @@ const schemaOrganization: ArticleWithTables = {
   ],
 };
 
+const coutIntegrationIa: ArticleWithTables = {
+  slug: "cout-integration-ia-pme-budget",
+  title: "Coût d’intégration de l’IA dans une PME : le budget complet",
+  seoTitle: "Intégrer l’IA dans une PME : combien ça coûte en 2026",
+  description:
+    "Coût d’intégration de l’IA dans une PME : licences par salarié, formation, données, conformité, agent sur mesure, coûts cachés et aides.",
+  date: "17 novembre 2026",
+  dateModified: "17 novembre 2026",
+  readingTime: "11 min",
+  category: "Agents IA",
+  articleSection: "Agents IA",
+  keywords: [
+    "coût intégration IA PME",
+    "budget IA PME",
+    "budget IA TPE",
+    "coût IA entreprise",
+    "prix intégration IA",
+    "coût assistant IA PME",
+    "tarif accompagnement IA PME",
+    "aides IA PME",
+    "agent IA PME",
+  ],
+  intro:
+    "Le coût d’intégration de l’IA dans une PME ne se résume pas à un abonnement par salarié. Il additionne des licences, du temps de formation, de la préparation de données, de la conformité et, parfois, un agent sur mesure relié à vos outils. Voici les postes à budgéter, les repères publics vérifiables et les aides qui réduisent la facture.",
+  quickAnswer: {
+    question: "Combien coûte l’intégration de l’IA dans une PME ?",
+    answer:
+      "Le coût d’intégration de l’IA dans une PME se compose de cinq postes : les licences d’assistants, facturées par utilisateur et par mois, la formation des équipes, la préparation des données, la conformité RGPD et AI Act, puis l’intégration éventuelle d’un agent relié aux outils métier. Une TPE qui équipe quelques postes d’un assistant généraliste dépense quelques dizaines d’euros par personne et par mois ; une PME qui déploie un agent sur mesure engage un projet, puis un suivi mensuel. Des aides publiques financent une partie du diagnostic.",
+  },
+  contextualLinks: [
+    { label: "nos agents IA pour PME", href: "/agents-ia" },
+    { label: "l’agent IA sur mesure pour PME", href: "/blog/agent-ia-sur-mesure-pme" },
+    { label: "combien coûte un agent IA", href: "/blog/combien-coute-agent-ia-pme" },
+    { label: "quels outils IA pour une PME", href: "/blog/outils-ia-pme" },
+    { label: "comment utiliser l’IA dans son entreprise", href: "/blog/comment-utiliser-ia-entreprise" },
+  ],
+  bodyCta: {
+    intro: "Vous voulez un budget IA réaliste avant de signer quoi que ce soit ?",
+    linkLabel: "Parlons de votre projet",
+    href: "/contact",
+    outro: ", on chiffre ensemble les postes, les aides mobilisables et le premier cas d’usage à lancer.",
+  },
+  relatedSlugs: [
+    "combien-coute-agent-ia-pme",
+    "agent-ia-sur-mesure-pme",
+    "outils-ia-pme",
+    "comment-utiliser-ia-entreprise",
+    "agence-agents-ia-comment-choisir-prestataire",
+  ],
+  faqTitle: "FAQ : coût d’intégration de l’IA dans une PME",
+  faqItems: [
+    {
+      question: "Peut-on intégrer l’IA dans une PME sans budget dédié ?",
+      answer:
+        "On peut démarrer avec les versions gratuites des assistants pour tester des usages, mais pas déployer. Dès que des données clients ou internes circulent, il faut une offre professionnelle, avec administration des comptes et engagement sur la non-utilisation des données pour l’entraînement.",
+    },
+    {
+      question: "Faut-il payer un diagnostic avant d’investir ?",
+      answer:
+        "C’est recommandé dès que le projet dépasse l’abonnement à un assistant. Un diagnostic liste les cas d’usage, les données disponibles et les contraintes, puis les classe par valeur. Il évite de financer un outil que personne n’utilisera, et il est en partie subventionné pour les PME éligibles.",
+    },
+    {
+      question: "Un agent IA sur mesure est-il réservé aux grandes PME ?",
+      answer:
+        "Non. Il devient pertinent dès qu’un processus répétitif relie plusieurs outils, par exemple la boîte mail, le CRM et la facturation. Le budget se justifie par le volume traité chaque mois, pas par la taille de l’entreprise.",
+    },
+    {
+      question: "Quels coûts reviennent chaque mois après le déploiement ?",
+      answer:
+        "Les licences par utilisateur, la consommation des modèles pour un agent, l’hébergement éventuel, le suivi et les corrections du prestataire, et le temps interne de relecture. Un budget IA se pense en coût mensuel complet, pas en projet ponctuel.",
+    },
+    {
+      question: "Comment éviter que le budget IA dérape ?",
+      answer:
+        "En commençant par un seul cas d’usage mesuré, en fixant un indicateur avant le lancement, en limitant les licences aux personnes formées et en relisant chaque mois les usages réels. Les projets qui dérapent sont ceux qui démarrent par l’outil plutôt que par le problème.",
+    },
+  ],
+  sections: [
+    {
+      title: "Quel est le coût d’une intégration IA dans une entreprise ?",
+      paragraphs: [
+        "Le coût d’une intégration IA dans une entreprise dépend du niveau choisi : équiper les équipes d’assistants, brancher des fonctions IA dans les logiciels existants, ou construire un agent sur mesure. Chaque niveau ajoute des postes de dépense, et un coût mensuel durable.",
+        "Le premier niveau se paie à l’abonnement, par utilisateur et par mois. Le deuxième s’appuie sur les modules IA de vos logiciels, souvent inclus ou facturés en option. Le troisième engage un projet d’intégration, décrit dans notre guide de [l’agent IA sur mesure pour PME](/blog/agent-ia-sur-mesure-pme), puis un suivi.",
+        "[D’après le Baromètre France Num 2026, 40 % des TPE et PME utilisent désormais des solutions d’IA, 14 points de plus en un an, et 19 % utilisent des solutions payantes, une proportion qui atteint 32 % chez les PME](https://www.entreprises.gouv.fr/espace-presse/barometre-france-num-2026-quatre-tpe-pme-sur-dix-utilisent-desormais-lintelligence).",
+        "La bonne question n’est pas « combien coûte l’IA » mais « combien coûte le problème que je veux résoudre ». Un budget IA se compare au temps perdu, aux relances oubliées ou aux appels manqués qu’il remplace.",
+      ],
+      bullets: [
+        "Niveau 1 : assistants généralistes, abonnement par utilisateur, mise en place en quelques jours",
+        "Niveau 2 : fonctions IA des logiciels métier, option ou palier supérieur de l’abonnement",
+        "Niveau 3 : agent sur mesure relié aux outils, projet puis suivi mensuel",
+      ],
+    },
+    {
+      title: "Quels sont les coûts de l’IA pour les entreprises ?",
+      paragraphs: [
+        "Les coûts de l’IA pour une entreprise se répartissent en six postes : licences, formation, données et accès, intégration, conformité et suivi. Les deux premiers concernent toutes les PME ; les quatre autres apparaissent dès qu’on dépasse l’assistant individuel.",
+        "Les licences sont visibles et faciles à comparer. Les autres postes sont souvent oubliés dans le devis initial, alors qu’ils pèsent davantage sur un projet d’agent : préparer les données, relier les outils, documenter les règles et relire les résultats prennent du temps interne.",
+        "[Le même baromètre montre que, parmi les entreprises utilisant l’IA, 68 % considèrent qu’elle a un impact positif sur leur activité, et 85 % pour les utilisateurs de solutions payantes](https://www.entreprises.gouv.fr/espace-presse/barometre-france-num-2026-quatre-tpe-pme-sur-dix-utilisent-desormais-lintelligence).",
+      ],
+      table: {
+        caption: "Les six postes de coût d’une intégration IA en PME",
+        headers: ["Poste", "Ce qu’il recouvre", "Quand il apparaît", "Nature du coût"],
+        rows: [
+          ["Licences", "Assistants par utilisateur, options IA des logiciels", "Dès le premier usage professionnel", "Mensuel, par poste"],
+          ["Formation", "Prise en main, règles d’usage, prompts métier", "Dès le déploiement à une équipe", "Ponctuel, puis rappels"],
+          ["Données et accès", "Nettoyage, droits, bases de connaissances", "Dès qu’un outil lit vos documents", "Temps interne, parfois prestation"],
+          ["Intégration", "Connexion CRM, mail, facturation, téléphonie", "Projet d’agent", "Projet, puis maintenance"],
+          ["Conformité", "RGPD, information des clients, registre, AI Act", "Dès qu’un client ou un salarié est concerné", "Temps interne, conseil éventuel"],
+          ["Suivi", "Relecture, corrections, mesure des résultats", "Toute la durée d’exploitation", "Mensuel, souvent sous-estimé"],
+        ],
+      },
+      subsections: [
+        {
+          title: "Combien coûtent les licences d’assistants IA par salarié ?",
+          paragraphs: [
+            "Les offres professionnelles des grands assistants se situent dans une même fourchette, facturée par utilisateur et par mois, avec une remise pour un engagement annuel. Les prix publics ci-dessous sont ceux affichés par les éditeurs à la date de rédaction.",
+            "[ChatGPT Business affiche un poste Standard à 21 euros par mois avec facturation annuelle, ou 26 euros par mois avec facturation mensuelle](https://chatgpt.com/fr-FR/pricing/). [Le forfait Team de Claude est proposé à 20 dollars par poste et par mois avec facturation annuelle, ou 25 dollars avec facturation mensuelle](https://www.anthropic.com/pricing).",
+            "[Mistral facture son offre Team 24,99 dollars par utilisateur et par mois, hors taxes](https://mistral.ai/pricing). [Microsoft 365 Copilot Business est affiché à partir de 15,60 euros HT par utilisateur et par mois en paiement annuel](https://www.microsoft.com/fr-fr/microsoft-365/copilot/business), en complément d’un abonnement Microsoft 365 existant.",
+            "Le choix se fait moins sur le prix que sur l’intégration à vos outils, l’administration des comptes et les garanties sur les données. Notre comparatif [quels outils IA pour une PME](/blog/outils-ia-pme) détaille ces critères.",
+          ],
+          table: {
+            caption: "Prix publics des offres professionnelles, par utilisateur et par mois (tarifs éditeurs à la date de rédaction)",
+            headers: ["Offre", "Prix affiché", "Facturation", "Source"],
+            rows: [
+              ["ChatGPT Business, poste Standard", "21 € (annuel) ou 26 € (mensuel)", "Par utilisateur et par mois", "chatgpt.com"],
+              ["Claude Team, poste Standard", "20 $ (annuel) ou 25 $ (mensuel)", "Par poste et par mois", "anthropic.com"],
+              ["Mistral Team", "24,99 $ HT", "Par utilisateur et par mois", "mistral.ai"],
+              ["Microsoft 365 Copilot Business", "à partir de 15,60 € HT", "Par utilisateur et par mois, paiement annuel", "microsoft.com"],
+            ],
+          },
+        },
+        {
+          title: "Combien coûte la formation des équipes ?",
+          paragraphs: [
+            "La formation est le poste le plus rentable et le plus souvent sacrifié. Une licence sans formation finit inutilisée au bout de quelques semaines. Comptez une demi-journée de prise en main par équipe, puis des ateliers courts par métier, avec des cas réels de l’entreprise.",
+            "[Le Baromètre France Num 2026 indique que la formation figure parmi les priorités numériques de 21 % des TPE et PME pour 2026-2027, et l’intelligence artificielle de 18 %](https://www.entreprises.gouv.fr/espace-presse/barometre-france-num-2026-quatre-tpe-pme-sur-dix-utilisent-desormais-lintelligence).",
+            "Une partie de la formation peut être prise en charge par votre opérateur de compétences, selon la branche et la taille de l’entreprise. Vérifiez les conditions avant de budgéter le plein tarif.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Quel est le prix d’une IA ?",
+      paragraphs: [
+        "Le prix d’une IA dépend de ce qu’on achète : un accès à un modèle, un logiciel qui l’embarque, ou un service construit autour. Pour une PME, trois modèles de facturation coexistent, parfois sur le même projet.",
+        "L’abonnement par utilisateur couvre les assistants et les modules des logiciels. Le paiement à l’usage concerne les appels au modèle quand un agent travaille pour vous : on paie le volume traité, pas le nombre de personnes. Le projet au forfait, enfin, paie la conception et l’intégration.",
+        "Notre article [combien coûte un agent IA pour une PME](/blog/combien-coute-agent-ia-pme) détaille le coût des appels aux modèles et la façon de les estimer.",
+      ],
+      bullets: [
+        "Abonnement par utilisateur : prévisible, adapté aux assistants",
+        "Paiement à l’usage : proportionnel au volume, adapté aux agents",
+        "Projet au forfait : conception, intégration, tests, puis maintenance mensuelle",
+      ],
+    },
+    {
+      title: "Combien coûte la création d’une IA ?",
+      paragraphs: [
+        "Une PME ne crée pas une IA au sens d’un nouveau modèle : ce travail relève des laboratoires qui entraînent les modèles. Ce qu’une PME crée, c’est un assistant ou un agent construit sur un modèle existant, relié à ses données et à ses outils.",
+        "Le coût de cette création se décompose en conception des règles, connexion aux logiciels, préparation d’une base de connaissances, tests et mise en production. La part de développement pur est souvent plus faible que la part de cadrage et de tests.",
+        "C’est pourquoi un agent sur mesure se chiffre d’abord en jours de travail, les vôtres et ceux du prestataire, avant de se chiffrer en licences. Notre page [agents IA pour PME](/agents-ia) décrit ce que recouvre un tel projet et ce que nous livrons.",
+      ],
+      subsections: [
+        {
+          title: "Quel repère public pour le coût d’une journée d’expert IA ?",
+          paragraphs: [
+            "[Le plan national Osez l’IA décrit les Diagnostics Data IA comme une prestation de 8 jours-hommes au coût de 10 000 euros HT, avec une prise en charge de 40 % par France 2030](https://www.entreprises.gouv.fr/osez-lia), soit 1 250 euros HT par jour-homme et un reste à charge de 6 000 euros HT pour l’entreprise.",
+            "Ce repère public donne un ordre de grandeur du tarif journalier d’un expert sélectionné par l’État.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Quel budget IA prévoir selon la taille de la PME ?",
+      paragraphs: [
+        "Le budget IA se construit en partant des licences par personne, puis en ajoutant la formation, puis le projet d’agent si un processus le justifie. Les calculs ci-dessous appliquent les prix publics cités plus haut ; ils donnent un ordre de grandeur, pas un devis.",
+        "[Au prix annuel de 21 euros par mois affiché pour un poste Standard ChatGPT Business](https://chatgpt.com/fr-FR/pricing/), cinq postes représentent 105 euros par mois et vingt postes 420 euros par mois. [Au tarif de 15,60 euros HT par utilisateur et par mois de Microsoft 365 Copilot Business](https://www.microsoft.com/fr-fr/microsoft-365/copilot/business), vingt postes représentent 312 euros HT par mois.",
+        "À ces licences s’ajoute la formation, ponctuelle, puis l’éventuel agent. Pour une TPE, le budget tient dans les licences et une demi-journée de formation. Pour une PME de 50 personnes, le poste principal devient le projet d’agent et son suivi, pas les abonnements.",
+      ],
+      table: {
+        caption: "Repères de construction du budget IA selon la taille (ordre de grandeur, à partir des prix publics cités)",
+        headers: ["Taille", "Licences", "Formation", "Agent sur mesure", "Poste dominant"],
+        rows: [
+          ["TPE, 1 à 10 salariés", "Quelques postes d’assistant, moins de 100 € par mois pour 4 postes au tarif annuel ChatGPT Business", "Une demi-journée collective", "Rarement au départ", "Licences et temps du dirigeant"],
+          ["PME, 10 à 50 salariés", "10 à 20 postes, de 210 à 420 € par mois au même tarif", "Ateliers par métier", "Un premier agent sur un processus mesuré", "Projet et suivi de l’agent"],
+          ["PME, 50 à 250 salariés", "Licences par équipe, pas pour tous", "Référents internes formés", "Plusieurs agents, gouvernance des données", "Intégration, conformité, suivi"],
+        ],
+      },
+    },
+    {
+      title: "Quels sont les coûts cachés d’une intégration IA ?",
+      paragraphs: [
+        "Les coûts cachés d’une intégration IA sont le temps interne, la qualité des données, la conformité et les usages non encadrés. Aucun n’apparaît sur la facture de l’éditeur, et chacun peut doubler le coût réel d’un projet mal cadré.",
+        "Le temps interne vient en premier : décrire les processus, valider les règles, relire les premières semaines de résultats. Puis les données : un agent qui lit des fiches clients incomplètes produit des réponses incomplètes, et le nettoyage se paie en jours.",
+        "La conformité est un coût réel mais maîtrisable. [France Num rappelle que les obligations de transparence de l’article 50 du règlement européen sur l’IA s’appliquent depuis le 2 août 2026 : les personnes doivent être informées qu’elles interagissent avec une IA](https://www.francenum.gouv.fr/guides-et-conseils/intelligence-artificielle/regles-juridiques-ia-commercants-artisans). Nous détaillons les obligations dans [agent IA, RGPD et AI Act](/blog/agent-ia-rgpd-ai-act-pme).",
+        "Enfin, les usages non encadrés : des salariés qui collent des données clients dans un outil gratuit créent un risque sans aucune ligne budgétaire.",
+      ],
+      bullets: [
+        "Temps interne de cadrage, de validation et de relecture",
+        "Nettoyage des données et gestion des droits d’accès",
+        "Information des clients, registre des traitements, clauses avec le prestataire",
+        "Licences achetées mais inutilisées faute de formation",
+        "Outils gratuits utilisés avec des données sensibles",
+      ],
+    },
+    {
+      title: "Quelles aides publiques réduisent la facture ?",
+      paragraphs: [
+        "Les aides publiques couvrent surtout le diagnostic et l’accompagnement, pas les licences. [Le plan Osez l’IA, lancé en juillet 2025, vise un taux de diffusion de l’IA à l’horizon 2030 dans 100 % des grandes entreprises, 80 % des PME et ETI et 50 % des TPE](https://www.entreprises.gouv.fr/osez-lia).",
+        "[Les Diagnostics Data IA du plan sont ouverts aux PME et ETI de 10 à 2 000 salariés immatriculées au RCS, avec un expert qui réalise un état des lieux, identifie des cas d’usage et les priorise selon leur valeur](https://www.entreprises.gouv.fr/osez-lia). Pour une PME qui hésite, c’est le point d’entrée le moins risqué.",
+        "Les régions, les chambres consulaires et les opérateurs de compétences complètent ce dispositif avec des aides à la formation ou au conseil, variables selon le territoire.",
+      ],
+      bullets: [
+        "Diagnostic subventionné : état des lieux, cas d’usage, priorisation",
+        "Formation : prise en charge possible selon la branche",
+        "Conseil : aides régionales variables, à vérifier avant le devis",
+      ],
+    },
+    {
+      title: "Comment maîtriser le budget d’un projet IA en PME ?",
+      paragraphs: [
+        "On maîtrise un budget IA en partant d’un problème mesuré, pas d’un outil. Six étapes suffisent pour passer de l’intention à un coût mensuel connu, avec un indicateur qui dit si la dépense est justifiée.",
+        "Notre guide [comment utiliser l’IA dans son entreprise](/blog/comment-utiliser-ia-entreprise) détaille la méthode côté usages ; voici la version côté budget.",
+      ],
+      bullets: [
+        "1. Chiffrer le problème : heures perdues, relances oubliées, appels manqués par mois",
+        "2. Choisir un seul cas d’usage et un indicateur de réussite avant tout achat",
+        "3. Équiper uniquement les personnes formées, au tarif annuel si l’usage est acquis",
+        "4. Demander à chaque prestataire le nombre de jours, le modèle de facturation et le coût mensuel après livraison",
+        "5. Prévoir la conformité dès le cadrage : information des clients, données traitées, clauses",
+        "6. Relire chaque mois les usages réels et couper ce qui ne sert pas",
+      ],
+      subsections: [
+        {
+          title: "Faut-il un prestataire ou un référent interne ?",
+          paragraphs: [
+            "Les deux, à des moments différents. Un référent interne porte les usages quotidiens et la formation ; un prestataire intervient pour l’intégration et le cadrage. Notre guide pour [choisir une agence d’agents IA](/blog/agence-agents-ia-comment-choisir-prestataire) liste les questions à poser avant de signer.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Scénario illustratif : une PME de négoce de 35 salariés",
+      paragraphs: [
+        "Le scénario suivant est illustratif : il montre une progression plausible sur huit semaines, pas un résultat garanti. Une PME de négoce de 35 salariés, 6 personnes à l’administration des ventes, veut réduire le temps passé sur les demandes de devis et les relances, sans recruter.",
+        "Semaines 1 et 2 : mesure du temps consacré aux devis et aux relances, inventaire des outils, choix d’un premier cas d’usage, la qualification des demandes entrantes. Douze licences d’assistant au tarif annuel pour les équipes commerciales et administratives, une demi-journée de formation.",
+        "Semaines 3 à 5 : cadrage d’un agent relié à la boîte mail et au CRM, règles écrites avec l’équipe, information des clients, tests sur un mois de demandes passées.",
+        "Semaines 6 à 8 : mise en production sur les demandes entrantes, relecture quotidienne par l’administration des ventes, premier bilan : temps de réponse réduit, relances plus régulières, licences inutilisées retirées.",
+      ],
+      bullets: [
+        "Les licences sont le plus petit poste ; le projet d’agent et le temps interne dominent",
+        "La formation précède l’équipement, ce qui évite les abonnements dormants",
+        "Le bilan à huit semaines fixe le coût mensuel réel et décide de la suite",
+      ],
+    },
+    {
+      title: "Ce qu’il faut retenir",
+      paragraphs: [
+        "Le coût d’intégration de l’IA dans une PME se pilote comme n’importe quel budget : par poste, par mois et par résultat. Voici l’essentiel avant de signer.",
+      ],
+      bullets: [
+        "Six postes : licences, formation, données, intégration, conformité, suivi ; seuls les deux premiers concernent toutes les PME",
+        "Les offres professionnelles des grands assistants se facturent par utilisateur et par mois, avec remise annuelle ; comparez l’intégration et les garanties, pas seulement le prix",
+        "Une PME ne crée pas un modèle : elle construit un agent sur un modèle existant, et le coût se compte en jours de cadrage et d’intégration",
+        "Les coûts cachés sont le temps interne, les données, la conformité et les usages non encadrés",
+        "Le diagnostic est en partie subventionné pour les PME éligibles ; commencez par là si le projet dépasse l’abonnement",
+        "Un seul cas d’usage mesuré, un indicateur, un bilan mensuel : [nos agents IA pour PME](/agents-ia) suivent cette méthode, et [notre offre](/offre) démarre toujours par un cadrage",
+      ],
+    },
+  ],
+};
+
 export const septemberArticles: Record<string, BlogArticle> = {
   [suivreVisibilite.slug]: suivreVisibilite,
   [agentIaSurMesure.slug]: agentIaSurMesure,
@@ -6966,6 +7237,7 @@ export const septemberArticles: Record<string, BlogArticle> = {
   [agentIaOutlook.slug]: agentIaOutlook,
   [agentIaRestaurant.slug]: agentIaRestaurant,
   [schemaOrganization.slug]: schemaOrganization,
+  [coutIntegrationIa.slug]: coutIntegrationIa,
 };
 
 export const septemberPosts: BlogPostMeta[] = [
@@ -7211,5 +7483,14 @@ export const septemberPosts: BlogPostMeta[] = [
     date: schemaOrganization.date,
     readingTime: schemaOrganization.readingTime,
     category: schemaOrganization.category,
+  },
+  {
+    slug: coutIntegrationIa.slug,
+    title: coutIntegrationIa.title,
+    seoTitle: coutIntegrationIa.seoTitle,
+    description: coutIntegrationIa.description,
+    date: coutIntegrationIa.date,
+    readingTime: coutIntegrationIa.readingTime,
+    category: coutIntegrationIa.category,
   },
 ];
