@@ -73,6 +73,15 @@ function buildMentions(names: Array<keyof typeof mentionUrls>): ArticleMention[]
 }
 
 export const articleMetadataBySlug: Record<string, ArticleSchemaEnhancement> = {
+  "cout-integration-ia-pme-budget": {
+    about: {
+      "@type": "Thing",
+      name: "Coût d’intégration de l’IA dans une PME",
+      description:
+        "Ce que coûte l’intégration de l’IA dans une PME : les trois niveaux (assistants, fonctions IA des logiciels, agent sur mesure), les six postes de coût (licences, formation, données, intégration, conformité, suivi), les prix publics des offres professionnelles ChatGPT Business, Claude Team, Mistral Team et Microsoft 365 Copilot Business, les modèles de facturation, ce que coûte la création d’un agent sur un modèle existant, le budget selon la taille de l’entreprise, les coûts cachés (temps interne, données, AI Act et RGPD, usages non encadrés), les aides du plan Osez l’IA et les Diagnostics Data IA, une méthode en six étapes et un scénario illustratif.",
+    },
+    mentions: buildMentions(["OpenAI", "ChatGPT", "Anthropic", "Claude", "Mistral AI", "Microsoft", "Microsoft Copilot"]),
+  },
   "schema-org-organization-baliser-entreprise": {
     about: {
       "@type": "Thing",
