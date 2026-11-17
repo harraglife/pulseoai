@@ -6677,6 +6677,267 @@ const agentIaRestaurant: ArticleWithTables = {
   ],
 };
 
+const schemaOrganization: ArticleWithTables = {
+  slug: "schema-org-organization-baliser-entreprise",
+  title: "Schema.org Organization : le balisage de votre entreprise",
+  seoTitle: "Balisage Organization Schema.org : guide entreprise 2026",
+  description:
+    "Balisage Schema.org Organization pour une entreprise : utilité, Organization ou LocalBusiness, propriétés, SIREN, sameAs, tests et erreurs.",
+  date: "17 novembre 2026",
+  dateModified: "17 novembre 2026",
+  readingTime: "11 min",
+  category: "SEO IA",
+  articleSection: "SEO IA",
+  keywords: [
+    "schema.org organization",
+    "schema organisation",
+    "balisage Organization",
+    "schema corporation",
+    "Organization ou LocalBusiness",
+    "données structurées entreprise",
+    "JSON-LD Organization",
+    "sameAs schema.org",
+    "entité de marque",
+    "GEO",
+  ],
+  intro:
+    "Le balisage Schema.org Organization est la carte d’identité de votre entreprise pour Google, Bing et les moteurs IA. Il dit, dans un format que les machines lisent sans ambiguïté, qui vous êtes, où vous êtes et par quels profils officiels vous reconnaître. Voici comment le choisir, le remplir, le placer et le tester, sans jargon de développeur.",
+  quickAnswer: {
+    question: "Qu’est-ce que le balisage Schema.org Organization ?",
+    answer:
+      "Le balisage Schema.org Organization est un bloc de données structurées, le plus souvent en JSON-LD, qui décrit une entreprise ou une organisation : nom officiel, URL, logo, description, adresse, contact, date de création, identifiants comme le SIREN et profils officiels via sameAs. Placé sur la page d’accueil ou la page À propos, il aide Google à distinguer votre entité, à afficher votre logo et votre fiche info, et donne aux moteurs IA une source fiable pour vous décrire. LocalBusiness en est le sous-type pour un établissement physique.",
+  },
+  contextualLinks: [
+    { label: "le guide Schema.org pour le GEO", href: "/blog/schema-org-guide-complet-geo" },
+    { label: "tester son balisage Schema.org", href: "/blog/tester-balisage-schema-org-validateur" },
+    { label: "se référencer sur ChatGPT", href: "/blog/apparaitre-chatgpt-client-cherche-entreprise" },
+    { label: "notre offre de référencement IA", href: "/offre" },
+    { label: "les sources citées par les IA", href: "/blog/sources-citees-ia-site-ne-suffit-pas" },
+  ],
+  bodyCta: {
+    intro: "Vous ne savez pas si votre entreprise est correctement décrite aux moteurs IA ?",
+    linkLabel: "Demandez un audit SEO / GEO",
+    href: "/contact",
+    outro: ", on vérifie votre balisage Organization, vos profils et la cohérence de vos informations.",
+  },
+  relatedSlugs: [
+    "schema-org-guide-complet-geo",
+    "tester-balisage-schema-org-validateur",
+    "sources-citees-ia-site-ne-suffit-pas",
+    "geo-local-guide-entreprises",
+    "audit-seo-geo-visibilite-ia",
+  ],
+  faqTitle: "FAQ : balisage Schema.org Organization",
+  faqItems: [
+    {
+      question: "Le balisage Organization est-il obligatoire pour être référencé ?",
+      answer:
+        "Non. Un site sans balisage est indexé et classé normalement. Le balisage Organization lève les ambiguïtés sur votre identité, facilite l’affichage du logo et de la fiche info, et donne aux moteurs IA une description fiable. C’est un levier de clarté, pas une condition d’indexation.",
+    },
+    {
+      question: "Faut-il choisir Organization ou LocalBusiness ?",
+      answer:
+        "Organization décrit l’entreprise comme entité juridique et de marque. LocalBusiness décrit un lieu physique qui reçoit des clients, avec adresse, horaires et zone desservie. Une entreprise avec un établissement peut utiliser LocalBusiness, ou un sous-type plus précis, et le relier à l’Organization qui la détient.",
+    },
+    {
+      question: "Peut-on mettre le balisage Organization sur toutes les pages ?",
+      answer:
+        "Le bloc complet a sa place sur la page d’accueil ou la page À propos. Sur les autres pages, on se contente de désigner l’organisation comme éditeur, via une référence courte à son identifiant, sans répéter l’intégralité des propriétés.",
+    },
+    {
+      question: "Combien de temps avant de voir un effet ?",
+      answer:
+        "Google relit la page à sa prochaine exploration, souvent en quelques jours, et peut mettre plusieurs semaines à répercuter le logo ou la fiche info. Les moteurs IA qui s’appuient sur l’index de recherche suivent le même rythme. Le test d’URL dans la Search Console confirme que le balisage est lu.",
+    },
+    {
+      question: "Un plugin WordPress suffit-il pour le balisage Organization ?",
+      answer:
+        "Souvent, oui, pour le socle : nom, logo, URL, profils sociaux. Les plugins SEO courants génèrent un bloc Organization à partir de leurs réglages. Il faut ensuite vérifier le résultat dans un validateur et compléter ce que le plugin ne gère pas, comme les identifiants d’entreprise ou le lien entre siège et établissements.",
+    },
+  ],
+  sections: [
+    {
+      title: "Qu’est-ce que le balisage Schema.org Organization ?",
+      paragraphs: [
+        "Le balisage Schema.org Organization est une fiche descriptive de votre entreprise, écrite dans le vocabulaire Schema.org et insérée dans le code de votre site. Les moteurs de recherche et les IA la lisent pour identifier votre entité sans deviner.",
+        "Schema.org est le vocabulaire commun des données structurées sur le web. [Le site Schema.org indique que son vocabulaire compte aujourd’hui 826 types et 1 540 propriétés](https://schema.org/docs/schemas.html), et Organization est l’un des types les plus utilisés par les entreprises.",
+        "[Schema.org précise que ce vocabulaire est né d’une initiative des entreprises fondatrices Google, Microsoft, Yahoo et Yandex, puis s’est ouvert à la communauté du web](https://schema.org/docs/about.html). C’est ce qui en fait un standard lu par tous les moteurs, et non une spécificité de Google.",
+        "Concrètement, le bloc prend la forme d’un script JSON-LD dans l’en-tête de la page. Notre [guide Schema.org pour le GEO](/blog/schema-org-guide-complet-geo) replace ce type parmi les autres balisages utiles.",
+      ],
+      bullets: [
+        "Un type : Organization, ou un sous-type comme LocalBusiness, Corporation ou ProfessionalService",
+        "Des propriétés : nom, URL, logo, description, adresse, contact, identifiants, profils",
+        "Un format : JSON-LD, recommandé par Google, lisible sans toucher au HTML visible",
+      ],
+    },
+    {
+      title: "À quoi sert le balisage Organization pour une entreprise ?",
+      paragraphs: [
+        "Le balisage Organization sert à lever toute ambiguïté sur votre identité : quelle entreprise édite ce site, sous quel nom exact, avec quel logo, quelles coordonnées et quels profils officiels.",
+        "[Google explique que l’ajout de données structurées Organization à la page d’accueil l’aide à comprendre les informations administratives de l’entreprise et à la distinguer dans les résultats, certaines propriétés servant en coulisses à différencier les organisations et d’autres influençant le logo affiché et la fiche info](https://developers.google.com/search/docs/appearance/structured-data/organization?hl=fr).",
+        "[Google indique aussi s’appuyer sur les données structurées trouvées sur le web pour recueillir des informations sur le monde en général, par exemple les personnes, les livres ou les entreprises incluses dans le balisage](https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data?hl=fr).",
+        "Pour une PME, l’enjeu est simple : un nom d’entreprise mal orthographié, deux adresses contradictoires ou un logo introuvable, et le moteur hésite.",
+      ],
+      subsections: [
+        {
+          title: "Le balisage Organization aide-t-il à être cité par ChatGPT et les IA ?",
+          paragraphs: [
+            "Il y contribue, sans garantie. Les moteurs IA qui citent des entreprises s’appuient sur des index de recherche et sur des sources tierces. Une entité clairement identifiée, avec un nom, une adresse et des profils cohérents, est plus facile à retenir et à décrire correctement.",
+            "Il faut rester honnête sur le périmètre. [Google écrit que les bonnes pratiques SEO restent pertinentes pour les Aperçus IA et le Mode IA, qu’aucune optimisation spéciale n’est requise, et qu’il n’est pas nécessaire d’ajouter de données structurées Schema.org particulières pour y apparaître](https://developers.google.com/search/docs/appearance/ai-features?hl=fr). Le balisage est une aide à la compréhension, pas un sésame.",
+            "L’usage, lui, progresse vite. [D’après France Num, près d’un Français sur deux utilise désormais l’IA générative, 48 % selon le Baromètre du numérique 2026, et 85 % des 18-24 ans y ont recours](https://www.francenum.gouv.fr/guides-et-conseils/communication-et-publicite/referencement/etre-visible-dans-les-reponses-des-ia). Être décrit correctement par ces outils devient un sujet d’entreprise, détaillé dans notre guide pour [se référencer sur ChatGPT](/blog/apparaitre-chatgpt-client-cherche-entreprise).",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Schema Organization ou LocalBusiness : lequel choisir ?",
+      paragraphs: [
+        "Organization décrit l’entreprise en tant qu’entité : sa raison sociale, sa marque, son site. LocalBusiness, qui est un sous-type d’Organization, décrit un lieu physique où cette entreprise reçoit des clients : un magasin, un cabinet, une agence, un restaurant.",
+        "La règle pratique tient en une question : des clients viennent-ils dans vos locaux ? Si oui, votre établissement mérite un LocalBusiness, avec adresse, horaires, téléphone et zone desservie. Si non, par exemple pour un éditeur de logiciel ou une boutique en ligne sans magasin, Organization suffit.",
+        "[La documentation Google sur LocalBusiness rend la propriété address obligatoire pour ce type, et recommande d’inclure autant de propriétés que possible pour améliorer le résultat proposé aux utilisateurs](https://developers.google.com/search/docs/appearance/structured-data/local-business?hl=fr). À l’inverse, [pour Organization, Google précise qu’aucune propriété n’est obligatoire et recommande d’ajouter celles qui sont pertinentes](https://developers.google.com/search/docs/appearance/structured-data/organization?hl=fr).",
+        "Une entreprise à plusieurs établissements combine les deux : un bloc Organization pour le siège et la marque, puis un LocalBusiness par établissement, chacun relié à l’Organization par la propriété parentOrganization. Notre guide [GEO local](/blog/geo-local-guide-entreprises) détaille le cas des réseaux et des franchises.",
+      ],
+      table: {
+        caption: "Organization ou LocalBusiness : repères de choix",
+        headers: ["Situation", "Type recommandé", "Propriétés clés", "Page d’accueil"],
+        rows: [
+          ["Entreprise sans accueil du public (SaaS, conseil à distance, e-commerce pur)", "Organization, ou OnlineStore pour une boutique", "name, url, logo, description, sameAs, identifiants", "Bloc Organization complet"],
+          ["Un établissement qui reçoit des clients", "LocalBusiness ou sous-type (Dentist, Restaurant, Plumber)", "address, telephone, openingHoursSpecification, geo", "Bloc LocalBusiness, qui hérite d’Organization"],
+          ["Siège plus plusieurs établissements", "Organization pour le siège, LocalBusiness par lieu", "parentOrganization, @id partagés, address par lieu", "Organization sur l’accueil, LocalBusiness sur chaque page locale"],
+          ["Profession réglementée ou service sur rendez-vous", "ProfessionalService, ou le sous-type métier s’il existe", "address, areaServed, telephone, sameAs", "Un seul bloc, sur l’accueil ou la page À propos"],
+        ],
+      },
+      subsections: [
+        {
+          title: "Corporation, ProfessionalService, OnlineStore : quel sous-type ?",
+          paragraphs: [
+            "Corporation désigne une société au sens juridique ; il est utile pour un groupe ou une société cotée, moins pour une PME. ProfessionalService convient à un cabinet, une agence ou un prestataire de services. OnlineStore cible une boutique en ligne et accepte les conditions de livraison et de retour.",
+            "[Google recommande d’utiliser le sous-type Schema.org d’Organization le plus spécifique qui corresponde à votre organisation](https://developers.google.com/search/docs/appearance/structured-data/organization?hl=fr). En cas de doute, un sous-type juste vaut mieux qu’un sous-type flatteur : un plombier déclare Plumber, pas Corporation.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Quelles propriétés renseigner dans le balisage Organization ?",
+      paragraphs: [
+        "Les propriétés à renseigner sont celles qui identifient l’entreprise sans ambiguïté et que vos autres supports confirment : nom officiel, URL, logo, description, adresse, contact, date de création, nombre de salariés, identifiants et profils. Toutes doivent correspondre à ce que le site affiche.",
+        "[Dans sa liste de propriétés recommandées, Google cite notamment address, alternateName, contactPoint, description, email, foundingDate, iso6523Code, logo, numberOfEmployees et sameAs, et précise que plus vous fournissez de propriétés, plus le résultat proposé aux utilisateurs sera de bonne qualité](https://developers.google.com/search/docs/appearance/structured-data/organization?hl=fr).",
+        "Le piège classique est de remplir pour remplir. Une description de trois lignes qui reprend la page À propos vaut mieux qu’un paragraphe marketing, et un numéro de téléphone au format international vaut mieux que trois numéros dont un obsolète.",
+      ],
+      table: {
+        caption: "Les propriétés Organization les plus utiles pour une PME française",
+        headers: ["Propriété", "Ce qu’on y met", "Pourquoi c’est utile"],
+        rows: [
+          ["name et alternateName", "Raison sociale exacte, puis nom commercial ou sigle", "Évite la confusion avec un homonyme"],
+          ["url et logo", "URL canonique du site, logo en image carrée ou rectangulaire bien visible", "Logo affiché dans les résultats et la fiche info"],
+          ["description", "Deux ou trois phrases factuelles : activité, clients, zone", "Sert de description de référence aux moteurs et aux IA"],
+          ["address et contactPoint", "Adresse postale complète, téléphone avec indicatif, e-mail de contact", "Cohérence avec la fiche d’établissement Google"],
+          ["foundingDate et numberOfEmployees", "Date de création au format AAAA-MM-JJ, effectif ou fourchette", "Signaux d’ancienneté et de taille"],
+          ["iso6523Code, vatID", "SIREN ou SIRET préfixé, numéro de TVA intracommunautaire", "Identifiants officiels, sans équivoque"],
+          ["sameAs", "Liens vers vos profils officiels : LinkedIn, fiche Wikidata, annuaires de référence", "Relie l’entité à ses autres traces sur le web"],
+        ],
+      },
+      subsections: [
+        {
+          title: "Faut-il indiquer son SIREN ou son numéro de TVA ?",
+          paragraphs: [
+            "Oui, c’est le moyen le plus sûr de désigner votre entreprise sans confusion possible. [Google recommande d’utiliser la propriété iso6523Code, composée d’un préfixe ICD qui désigne le système d’identification suivi de l’identifiant lui-même, et propose vatID pour le numéro de TVA](https://developers.google.com/search/docs/appearance/structured-data/organization?hl=fr).",
+            "[Dans la liste officielle des codes ICD publiée par Peppol, le préfixe 0002 correspond au répertoire SIRENE et le préfixe 0009 au code SIRET](https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/). Un SIREN se déclare donc sous la forme 0002: suivi des neuf chiffres, et un SIRET sous la forme 0009: suivi des quatorze chiffres.",
+          ],
+        },
+        {
+          title: "À quoi sert la propriété sameAs ?",
+          paragraphs: [
+            "La propriété sameAs relie votre bloc Organization aux pages qui parlent officiellement de vous ailleurs : profil LinkedIn de l’entreprise, page Facebook, fiche Wikidata, annuaire professionnel de référence. Le moteur comprend que toutes ces traces désignent la même entité.",
+            "Choisissez des profils actifs et cohérents avec le site : même nom, même adresse, même logo. Une fiche Wikidata n’est pertinente que si votre entreprise est documentée par des tiers : [Wikidata réserve ses entrées aux entités clairement identifiables qui peuvent être décrites à partir de références sérieuses et publiquement disponibles](https://www.wikidata.org/wiki/Wikidata:Notability).",
+            "C’est aussi là que le balisage rejoint la stratégie de sources : les IA croisent votre site avec ce que disent les tiers, comme l’explique notre article sur [les sources citées par les IA](/blog/sources-citees-ia-site-ne-suffit-pas).",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Où placer le balisage Organization sur son site ?",
+      paragraphs: [
+        "Le bloc complet se place sur la page d’accueil, ou sur la page qui décrit l’entreprise, comme la page À propos. [Google recommande de placer ces informations sur la page d’accueil ou sur une page décrivant l’organisation](https://developers.google.com/search/docs/appearance/structured-data/organization?hl=fr).",
+        "Sur les autres pages, l’organisation apparaît comme éditeur ou auteur des contenus, via une référence courte. Un article de blog porte un balisage Article ou BlogPosting dont la propriété publisher pointe vers l’Organization, sans recopier l’adresse et les identifiants.",
+        "Techniquement, le JSON-LD se loge dans l’en-tête HTML ou en fin de page, selon votre CMS. Sous WordPress, les extensions SEO génèrent le bloc à partir de leurs réglages ; sur un site sur mesure, le développeur l’intègre dans le gabarit de la page d’accueil.",
+      ],
+      bullets: [
+        "Page d’accueil ou page À propos : bloc Organization complet",
+        "Pages de contenu : référence courte à l’Organization comme publisher",
+        "Pages d’établissement : LocalBusiness relié à l’Organization",
+      ],
+      subsections: [
+        {
+          title: "Faut-il relier Organization, WebSite et WebPage avec des @id ?",
+          paragraphs: [
+            "C’est une bonne pratique qui simplifie la lecture par les moteurs. Chaque entité reçoit un identifiant stable, par exemple l’URL du site suivie de #organization, et les autres blocs y font référence au lieu de répéter les propriétés.",
+            "Le bénéfice est la cohérence : une seule source de vérité pour le nom et le logo, répercutée sur toutes les pages.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Comment tester son balisage Organization ?",
+      paragraphs: [
+        "On teste un balisage Organization en trois temps : validation de la syntaxe, lecture par Google, puis contrôle dans la Search Console après indexation.",
+        "Le [Schema Markup Validator](https://validator.schema.org/) vérifie que le JSON-LD est bien formé et que les propriétés existent dans le vocabulaire. Le [test des résultats enrichis de Google](https://search.google.com/test/rich-results) montre ce que Google détecte sur la page, avec les erreurs et les avertissements. Notre article [tester son balisage Schema.org](/blog/tester-balisage-schema-org-validateur) compare ces outils en détail.",
+        "[Google conseille de valider le code avec l’outil de test des résultats enrichis, de corriger les erreurs critiques, puis de déployer quelques pages et d’utiliser l’outil d’inspection d’URL pour voir comment Google lit la page](https://developers.google.com/search/docs/appearance/structured-data/organization?hl=fr).",
+      ],
+      bullets: [
+        "1. Valider la syntaxe dans le Schema Markup Validator",
+        "2. Vérifier la détection dans le test des résultats enrichis",
+        "3. Publier, puis inspecter l’URL dans la Search Console",
+        "4. Relire tous les trimestres : adresse, téléphone, effectif, profils",
+      ],
+    },
+    {
+      title: "Quelles erreurs éviter avec le balisage Organization ?",
+      paragraphs: [
+        "Les erreurs les plus fréquentes ne sont pas techniques : elles tiennent à des informations fausses, contradictoires ou invisibles. Un balisage impeccable qui annonce une adresse différente de celle du pied de page fait plus de mal qu’une absence de balisage.",
+        "[Google demande que les données structurées correspondent au texte visible sur la page](https://developers.google.com/search/docs/appearance/ai-features?hl=fr). Tout ce que vous déclarez dans le bloc doit se retrouver quelque part sur le site, lisible par un visiteur.",
+        "Vient ensuite la tentation d’en mettre trop : des avis dans Organization alors qu’ils relèvent du produit ou de l’établissement, dix profils sameAs dont la moitié sont vides, un sous-type prestigieux qui ne correspond pas à l’activité.",
+      ],
+      bullets: [
+        "Adresse, téléphone ou nom différents du site ou de la fiche d’établissement",
+        "Logo en lien cassé, ou image trop petite pour être exploitée",
+        "Bloc Organization complet copié sur toutes les pages, sans identifiant commun",
+        "Profils sameAs abandonnés ou ne correspondant pas à l’entreprise",
+        "Sous-type choisi pour l’image plutôt que pour l’exactitude",
+        "Balisage jamais relu après un déménagement ou un changement de nom",
+      ],
+    },
+    {
+      title: "Scénario illustratif : un cabinet d’expertise comptable de 15 personnes",
+      paragraphs: [
+        "Le scénario suivant est illustratif : il montre une progression plausible sur huit semaines, pas un résultat garanti. Un cabinet d’expertise comptable de 15 personnes, deux bureaux dans la même région, constate que Google affiche un ancien logo et qu’un assistant IA le confond avec un cabinet homonyme d’une autre ville.",
+        "Semaines 1 et 2 : inventaire des informations officielles, raison sociale, SIREN, adresses, téléphones, profils actifs. Choix de la structure : un bloc Organization pour le cabinet, un LocalBusiness de sous-type AccountingService par bureau, identifiants @id partagés.",
+        "Semaines 3 et 4 : rédaction du bloc avec name, alternateName, logo mis à jour, description factuelle, iso6523Code avec le SIREN, sameAs vers LinkedIn et l’annuaire de l’Ordre. Validation dans le validateur, test des résultats enrichis, publication, inspection d’URL dans la Search Console.",
+        "Semaines 5 à 8 : mise en cohérence de la fiche d’établissement Google et du profil LinkedIn avec le site, relecture des pages locales. Le logo se met à jour dans les résultats, le test d’inspection confirme la lecture du balisage, et les réponses d’IA testées sur le nom du cabinet cessent de mentionner l’homonyme. Un [audit SEO / GEO](/blog/audit-seo-geo-visibilite-ia) fixe ensuite le point de départ pour la suite.",
+      ],
+      bullets: [
+        "Le gain vient autant de la mise en cohérence des sources que du balisage lui-même",
+        "Les identifiants officiels, SIREN et adresses, règlent les cas d’homonymie",
+        "Le suivi dans la Search Console confirme la lecture avant tout jugement sur l’effet",
+      ],
+    },
+    {
+      title: "Ce qu’il faut retenir",
+      paragraphs: [
+        "Le balisage Schema.org Organization est la fiche d’identité officielle de votre entreprise pour les moteurs et les IA. Voici l’essentiel pour le mettre en place sans erreur.",
+      ],
+      bullets: [
+        "Organization décrit l’entité, LocalBusiness décrit un lieu qui reçoit des clients ; les deux se combinent pour un réseau",
+        "Aucune propriété n’est obligatoire chez Google pour Organization, mais plus elles sont nombreuses et exactes, meilleur est le résultat",
+        "Renseignez nom officiel, URL, logo, description, adresse, contact, date de création, SIREN via iso6523Code et profils via sameAs",
+        "Placez le bloc complet sur la page d’accueil ou la page À propos, et référencez-le ailleurs avec un @id",
+        "Validez la syntaxe, testez la détection par Google, puis inspectez l’URL dans la Search Console",
+        "Tout ce qui est déclaré doit être visible sur le site et cohérent avec vos autres profils ; [notre offre de référencement IA](/offre) inclut cette mise en cohérence",
+      ],
+    },
+  ],
+};
+
 export const septemberArticles: Record<string, BlogArticle> = {
   [suivreVisibilite.slug]: suivreVisibilite,
   [agentIaSurMesure.slug]: agentIaSurMesure,
@@ -6704,6 +6965,7 @@ export const septemberArticles: Record<string, BlogArticle> = {
   [serpLocale.slug]: serpLocale,
   [agentIaOutlook.slug]: agentIaOutlook,
   [agentIaRestaurant.slug]: agentIaRestaurant,
+  [schemaOrganization.slug]: schemaOrganization,
 };
 
 export const septemberPosts: BlogPostMeta[] = [
@@ -6940,5 +7202,14 @@ export const septemberPosts: BlogPostMeta[] = [
     date: agentIaRestaurant.date,
     readingTime: agentIaRestaurant.readingTime,
     category: agentIaRestaurant.category,
+  },
+  {
+    slug: schemaOrganization.slug,
+    title: schemaOrganization.title,
+    seoTitle: schemaOrganization.seoTitle,
+    description: schemaOrganization.description,
+    date: schemaOrganization.date,
+    readingTime: schemaOrganization.readingTime,
+    category: schemaOrganization.category,
   },
 ];
