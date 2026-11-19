@@ -73,6 +73,15 @@ function buildMentions(names: Array<keyof typeof mentionUrls>): ArticleMention[]
 }
 
 export const articleMetadataBySlug: Record<string, ArticleSchemaEnhancement> = {
+  "agent-ia-agence-immobiliere-contacts-visites": {
+    about: {
+      "@type": "Thing",
+      name: "Agent IA pour agence immobilière",
+      description:
+        "Ce qu’un agent IA fait pour une agence immobilière : réponse aux demandes de contact des portails, du site et du téléphone, qualification des acquéreurs et des locataires (projet, budget, financement, délai), proposition et confirmation des rendez-vous de visite dans l’agenda des négociateurs, relances des vendeurs et des contacts sans réponse, rédaction d’annonces et de comptes rendus à partir des fiches de biens ; comparaison du module IA du logiciel de transaction, de l’assistant généraliste et de l’agent sur mesure ; règles en France (interdiction du démarchage téléphonique non consenti depuis le 11 août 2026, mentions DPE obligatoires dans les annonces, transparence AI Act, RGPD) ; repères de tarif, méthode de mise en place en six étapes et scénario illustratif.",
+    },
+    mentions: buildMentions(["Anthropic", "Claude", "OpenAI", "ChatGPT", "Google"]),
+  },
   "cout-integration-ia-pme-budget": {
     about: {
       "@type": "Thing",
