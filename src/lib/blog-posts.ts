@@ -640,7 +640,7 @@ const newArticles: Record<string, BlogArticle> = {
         title: "Pourquoi les entreprises locales sont absentes des réponses IA",
         paragraphs: [
           "Le constat est net. La grande majorité des commerces indépendants, des artisans, des restaurants, des hôtels et des PME ne sont jamais cités par ChatGPT, Gemini ou Claude sur une question locale. La raison est simple : un modèle de langage ne peut recommander que ce qu'il connaît, et il ne connaît que ce qui est structuré, documenté et vérifiable en ligne.",
-          "Une entreprise qui possède seulement une page Facebook et une fiche Google mal remplie n'envoie presque aucun signal exploitable. L'IA ne dispose ni d'une description factuelle, ni de données structurées, ni de citations sur des sources tierces. Elle n'a donc aucune matière pour vous recommander, même si votre établissement est excellent et apprécié de vos clients.",
+          "Une entreprise qui possède seulement une page Facebook et une fiche Google mal remplie n'envoie presque aucun signal exploitable. L'IA ne dispose ni d'une description factuelle, ni de données structurées, ni de citations sur des sources tierces. Elle n'a donc aucune matière pour vous recommander, même si votre établissement est excellent et apprécié de vos clients. Pour savoir où vous en êtes avant d’agir, notre méthode d’[audit SEO / GEO](/blog/audit-seo-geo-visibilite-ia) relève ce que les IA répondent sur votre ville et quels concurrents elles citent.",
         ],
         bullets: [
           "L'absence de site clair et structuré, avec un contenu factuel sur votre activité.",
@@ -1418,7 +1418,7 @@ const newArticles: Record<string, BlogArticle> = {
       {
         title: "Les premières actions à prioriser",
         paragraphs: [
-          "Commencez par auditer les prompts clients réellement posés, identifier les concurrents recommandés et repérer les sources citées par les IA. C’est la base d’un audit SEO / GEO utile.",
+          "Commencez par auditer les prompts clients réellement posés, identifier les concurrents recommandés et repérer les sources citées par les IA. C’est la base d’un audit SEO / GEO utile. Nous détaillons les six étapes, les outils et le contenu du rapport dans notre méthode d’[audit SEO / GEO](/blog/audit-seo-geo-visibilite-ia).",
           "Ensuite, améliorez vos pages prioritaires, clarifiez votre positionnement, enrichissez vos contenus optimisés pour les IA et renforcez les sources externes qui aident Google, ChatGPT et Gemini à vous comprendre.",
         ],
         bullets: [
@@ -1464,7 +1464,8 @@ const newArticles: Record<string, BlogArticle> = {
     description:
       "Comment analyser vos positions sur Google, vos citations dans ChatGPT, les concurrents recommandés et les sources utilisées par les moteurs IA.",
     date: "6 mai 2026",
-    readingTime: "7 min",
+    dateModified: "19 novembre 2026",
+    readingTime: "13 min",
     category: "Audit SEO / GEO",
     articleSection: "Audit SEO / GEO",
     keywords: [
@@ -1474,16 +1475,25 @@ const newArticles: Record<string, BlogArticle> = {
       "concurrents cités",
       "sources citées par les IA",
       "monitoring IA",
+      "audit GEO",
+      "audit visibilité ChatGPT",
+      "comment faire un audit GEO",
+      "outil audit GEO",
+      "tarif audit GEO",
+      "audit GEO local",
     ],
     quickAnswer: {
       question: "À quoi sert un audit SEO / GEO ?",
       answer:
-        "Un audit SEO / GEO mesure votre visibilité sur Google et dans les moteurs IA. Il identifie les requêtes où votre marque apparaît, les concurrents cités à votre place, les sources utilisées par les IA et les actions à prioriser.",
+        "Un audit SEO / GEO mesure votre visibilité sur Google et dans les moteurs IA comme ChatGPT, Gemini, Perplexity et les Aperçus IA. Il part d’un jeu de 20 à 30 questions que vos clients posent réellement, relève si votre entreprise est citée, quels concurrents apparaissent à votre place et quelles sources les IA utilisent, puis vérifie votre site : contenus, données structurées, accès des robots IA. Il se conclut par des actions classées par impact, et sert de point de départ au suivi mensuel.",
     },
     contextualLinks: [
       { label: "Demander un audit SEO / GEO", href: "/contact" },
       { label: "Comprendre le SEO / GEO", href: "/blog/seo-classique-vs-geo-acquisition-client" },
       { label: "Apparaître dans ChatGPT", href: "/blog/apparaitre-chatgpt-client-cherche-entreprise" },
+      { label: "Le rôle d’un consultant GEO", href: "/blog/consultant-geo-role-missions-choisir" },
+      { label: "Choisir un outil GEO", href: "/blog/outil-geo-suite-seo-ou-plateforme-dediee" },
+      { label: "Suivre sa visibilité dans ChatGPT", href: "/blog/suivre-visibilite-chatgpt-ia" },
     ],
     bodyCta: {
       intro: "Chez PulseoAI, nous transformons cette lecture en plan d’action avec une méthode de",
@@ -1496,15 +1506,75 @@ const newArticles: Record<string, BlogArticle> = {
       "apparaitre-chatgpt-client-cherche-entreprise",
       "seo-classique-vs-geo-acquisition-client",
       "sources-citees-ia-site-ne-suffit-pas",
+      "consultant-geo-role-missions-choisir",
+      "outil-geo-suite-seo-ou-plateforme-dediee",
+      "suivre-visibilite-chatgpt-ia",
+    ],
+    faqTitle: "FAQ : audit SEO / GEO",
+    faqItems: [
+      {
+        question: "Combien de temps dure un audit SEO / GEO ?",
+        answer:
+          "Comptez une à trois semaines selon le nombre de moteurs, de villes et de concurrents suivis. Le relevé des prompts se fait sur plusieurs jours pour lisser les variations des réponses, puis l’analyse du site et des sources prend quelques jours de plus.",
+      },
+      {
+        question: "Peut-on faire un audit GEO soi-même ?",
+        answer:
+          "Oui, pour un premier état des lieux : une liste de questions clients, trois ou quatre moteurs, un tableur. Un prestataire apporte le volume, la régularité, la lecture des sources citées et un plan d’action priorisé. Les deux approches se complètent.",
+      },
+      {
+        question: "Quelle différence entre un audit GEO et un suivi de visibilité IA ?",
+        answer:
+          "L’audit est une photographie complète à un instant donné, avec diagnostic du site et des sources. Le suivi est la mesure répétée du même jeu de prompts, chaque semaine ou chaque mois, pour voir si les actions produisent un effet.",
+      },
+      {
+        question: "L’audit couvre-t-il aussi Google et le SEO classique ?",
+        answer:
+          "Oui, c’est le sens du double intitulé. Les positions Google, la Search Console et l’état technique du site font partie de l’audit, parce que les moteurs IA s’appuient largement sur les mêmes pages et les mêmes signaux.",
+      },
+      {
+        question: "Un audit GEO garantit-il d’être cité par ChatGPT ?",
+        answer:
+          "Non. Il mesure et explique, puis hiérarchise les actions. Aucune méthode ne garantit une citation, parce que les réponses des IA varient d’une session à l’autre et dépendent de sources que vous ne contrôlez pas toutes.",
+      },
+      {
+        question: "À quelle fréquence refaire un audit SEO / GEO ?",
+        answer:
+          "Un audit complet une fois par an, ou après un changement important : refonte du site, nouvelle offre, nouveau marché. Entre deux audits, le suivi mensuel des prompts suffit à détecter les évolutions.",
+      },
     ],
     intro:
       "Un audit SEO / GEO sert à transformer un sujet flou en lecture exploitable. L’objectif n’est pas seulement de savoir si votre marque est visible. Il s’agit de comprendre sur quelles requêtes elle apparaît, qui prend la place, quelles sources sont citées et quelles actions donneront le plus d’impact.",
     sections: [
       {
+        title: "Qu’est-ce qu’un audit GEO ?",
+        paragraphs: [
+          "Un audit GEO, pour Generative Engine Optimization, est l’état des lieux de la présence d’une entreprise dans les réponses des moteurs IA : ChatGPT, Gemini, Perplexity, Claude et les Aperçus IA de Google. Il mesure, explique et hiérarchise.",
+          "Il répond à quatre questions : sur quelles demandes clients votre entreprise est-elle citée, quels concurrents apparaissent à votre place, quelles sources les IA utilisent pour répondre, et que faut-il changer sur votre site et autour de lui.",
+          "L’enjeu grandit vite. [D’après France Num, près d’un Français sur deux utilise désormais l’IA générative, 48 % selon le Baromètre du numérique 2026, et 40 % des Français déclarent avoir utilisé une IA générative pour préparer un projet d’achat au cours des douze derniers mois, contre 28 % en septembre 2025](https://www.francenum.gouv.fr/guides-et-conseils/communication-et-publicite/referencement/etre-visible-dans-les-reponses-des-ia).",
+          "Les entreprises suivent le mouvement. [Le Baromètre France Num 2026 indique que 40 % des TPE et PME utilisent désormais des solutions d’IA, 14 points de plus en un an, et 53 % chez les PME](https://www.entreprises.gouv.fr/espace-presse/barometre-france-num-2026-quatre-tpe-pme-sur-dix-utilisent-desormais-lintelligence). Vos clients comme vos concurrents interrogent donc ces moteurs : l’audit dit ce qu’ils y trouvent.",
+        ],
+        bullets: [
+          "Mesure : présence, part de voix, sources citées, par moteur",
+          "Diagnostic : contenus, données structurées, accès des robots IA, cohérence des informations",
+          "Priorités : actions classées par impact, avec un point de départ chiffré",
+        ],
+        subsections: [
+          {
+            title: "Quelle différence entre un audit SEO et un audit GEO ?",
+            paragraphs: [
+              "L’audit SEO mesure des positions sur des mots-clés dans Google et analyse la technique, le contenu et les liens. L’audit GEO mesure des citations dans des réponses générées, à partir de questions complètes, et analyse en plus les sources tierces que les IA reprennent.",
+              "Les deux se recoupent largement : une page bien construite pour Google est souvent celle que les IA citent. [Google rappelle que les bonnes pratiques SEO restent pertinentes pour les Aperçus IA et le Mode IA, et qu’aucune optimisation spéciale n’est requise pour y apparaître](https://developers.google.com/search/docs/appearance/ai-features?hl=fr). D’où notre choix de les auditer ensemble, comme nous l’expliquons dans [SEO classique vs GEO](/blog/seo-classique-vs-geo-acquisition-client).",
+            ],
+          },
+        ],
+      },
+      {
         title: "Mesurer Google et les moteurs IA",
         paragraphs: [
           "L’audit commence par un constat double : visibilité Google et visibilité IA. Il faut savoir comment votre site ressort dans les recherches classiques, mais aussi comment ChatGPT, Gemini, Claude, Perplexity ou Google AI Overviews parlent de votre entreprise.",
           "Cette double lecture permet de voir si votre problème vient d’un manque de référencement naturel, d’un manque de clarté pour les IA, ou des deux.",
+          "Côté Google, la Search Console donne désormais une partie de la réponse. [Google précise que les sites qui apparaissent dans les Aperçus IA et le Mode IA sont inclus dans le trafic de recherche global de la Search Console, dans le rapport sur les performances, type de recherche Web](https://developers.google.com/search/docs/appearance/ai-features?hl=fr). [France Num ajoute que, depuis le 31 août 2026, la Search Console propose un rapport consacré aux performances d’un site dans les fonctionnalités d’IA générative de Google Search](https://www.francenum.gouv.fr/guides-et-conseils/communication-et-publicite/referencement/etre-visible-dans-les-reponses-des-ia).",
         ],
         bullets: [
           "Positions Google sur les requêtes clés",
@@ -1517,6 +1587,7 @@ const newArticles: Record<string, BlogArticle> = {
         paragraphs: [
           "Un audit de visibilité IA regarde les prompts clients, les concurrents cités, le ton des réponses, les sources mentionnées, vos contenus importants, vos fiches locales, vos avis et les éléments qui construisent votre crédibilité.",
           "Il permet aussi d’identifier les pages qui peuvent être renforcées en priorité pour améliorer votre capacité à être cité par les IA.",
+          "Les sources tierces pèsent autant que votre site. [Google indique s’appuyer sur les données structurées trouvées sur le web pour recueillir des informations sur le monde en général, par exemple les entreprises incluses dans le balisage](https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data?hl=fr). Nous détaillons ce point dans [les sources citées par les IA](/blog/sources-citees-ia-site-ne-suffit-pas) et dans le guide du [balisage Schema.org Organization](/blog/schema-org-organization-baliser-entreprise).",
         ],
         bullets: [
           "Prompts clients réellement posés",
@@ -1526,15 +1597,124 @@ const newArticles: Record<string, BlogArticle> = {
         ],
       },
       {
+        title: "Comment faire un audit géo ?",
+        paragraphs: [
+          "Un audit GEO se fait en six étapes : construire le jeu de questions, relever les réponses de chaque moteur, classer les sources citées, auditer le site, comparer aux concurrents, puis hiérarchiser les actions. Chaque étape produit un livrable précis.",
+          "[France Num propose un test en dix minutes pour un premier état des lieux : l’objectif n’est pas d’obtenir un classement, mais de voir ce que perçoivent vos prospects quand ils interrogent une IA, avec un corpus de questions à réutiliser à intervalles réguliers](https://www.francenum.gouv.fr/guides-et-conseils/communication-et-publicite/referencement/etre-visible-dans-les-reponses-des-ia). L’audit complet reprend cette logique avec plus de questions, plus de moteurs et une analyse des causes.",
+        ],
+        bullets: [
+          "1. Lister 20 à 30 questions clients : découverte, comparaison, prix, local, marque",
+          "2. Les poser sur ChatGPT, Gemini, Perplexity et le Mode IA de Google, sur plusieurs jours, sans compte connecté",
+          "3. Noter pour chaque réponse : mention de votre entreprise, concurrents cités, sources liées",
+          "4. Auditer le site : pages réponses, données structurées, robots IA autorisés, cohérence des coordonnées",
+          "5. Comparer avec deux ou trois concurrents : contenus, profils, avis, présence dans les comparatifs",
+          "6. Classer les actions par impact et par effort, avec un indicateur de départ",
+        ],
+        subsections: [
+          {
+            title: "Comment auditer sa visibilité dans ChatGPT ?",
+            paragraphs: [
+              "Un audit de visibilité ChatGPT isole ce moteur : mêmes questions, posées avec la recherche web activée et sans historique, en notant si votre entreprise est nommée, si votre site est cité comme source et quels concurrents reviennent. Le relevé se répète trois fois pour lisser les variations.",
+              "[OpenAI indique que Business Hub fournit aux entreprises des statistiques agrégées sur la façon dont les utilisateurs interagissent avec elles dans ChatGPT, dont le nombre de mentions et de clics vers leur site, ainsi que les sujets de découverte](https://openai.com/index/introducing-businesses-chatgpt/). Ce tableau de bord complète l’audit manuel ; il ne le remplace pas, puisqu’il ne montre ni les concurrents cités ni les sources. Notre guide pour [se référencer sur ChatGPT](/blog/apparaitre-chatgpt-client-cherche-entreprise) détaille la marche à suivre.",
+            ],
+          },
+          {
+            title: "Qu’est-ce qu’un audit de prompts GEO ?",
+            paragraphs: [
+              "L’audit de prompts est le cœur de la méthode : un jeu fixe de questions, formulées comme vos clients les posent, réparties entre découverte, comparaison, prix, local et marque. Il sert de thermomètre, puis de base au suivi, décrit dans [suivre sa visibilité dans ChatGPT, Perplexity et Gemini](/blog/suivre-visibilite-chatgpt-ia).",
+            ],
+          },
+          {
+            title: "Comment faire un audit GEO local ?",
+            paragraphs: [
+              "Un audit GEO local ajoute la ville à chaque question et vérifie trois choses : la fiche d’établissement Google, la cohérence des coordonnées sur le web et les sources locales reprises par les IA, annuaires, avis, presse régionale. Notre guide [GEO local](/blog/geo-local-guide-entreprises) détaille ces leviers, et [l’audit de la SERP locale](/blog/serp-locale-definition-apparaitre) complète le volet Google.",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Quel est le meilleur outil GEO ?",
+        paragraphs: [
+          "Il n’y a pas de meilleur outil GEO dans l’absolu : il y a le bon outil pour votre volume. Un tableur suffit pour un audit ponctuel sur un marché local ; une plateforme devient utile dès qu’on suit plusieurs moteurs, plusieurs villes et des concurrents chaque semaine.",
+          "Les outils gratuits couvrent le socle : la Search Console pour Google et ses fonctionnalités d’IA, le [test des résultats enrichis](https://search.google.com/test/rich-results) pour les données structurées, le Business Hub de ChatGPT pour les mentions. Les plateformes payantes automatisent le relevé des prompts et les rapports.",
+          "Avant de choisir, lisez notre comparatif [module IA de sa suite SEO ou plateforme GEO dédiée](/blog/outil-geo-suite-seo-ou-plateforme-dediee), et nos méthodes de suivi pour [ChatGPT](/blog/suivre-visibilite-chatgpt-ia) et pour [le Mode IA de Google](/blog/suivre-visibilite-ai-mode-google). L’outil mesure ; l’audit interprète.",
+        ],
+        bullets: [
+          "Audit ponctuel, marché local : tableur et relevé manuel",
+          "Suivi régulier, plusieurs villes ou moteurs : plateforme de suivi des prompts",
+          "Dans tous les cas : Search Console, test des résultats enrichis, fiche d’établissement",
+        ],
+      },
+      {
+        title: "Quel est le tarif d’un audit GEO ?",
+        paragraphs: [
+          "Le tarif d’un audit GEO dépend de quatre paramètres : le nombre de questions et de moteurs relevés, le nombre de villes, le nombre de concurrents analysés et la profondeur de l’audit du site. Un audit pour une PME sur un marché local coûte moins cher qu’un audit multi-pays.",
+          "Demandez toujours ce qui est livré : relevé brut des prompts, liste des sources citées, diagnostic technique, plan d’action priorisé, et si un premier mois de suivi est inclus. Deux devis au même prix peuvent couvrir des périmètres très différents.",
+          "Notre article sur le [consultant GEO](/blog/consultant-geo-role-missions-choisir) donne des repères de tarifs et les questions à poser avant de signer. Pour notre part, chaque mission de [stratégie SEO / GEO](/offre) commence par cet audit.",
+        ],
+        subsections: [
+          {
+            title: "Qui peut réaliser un audit GEO ?",
+            paragraphs: [
+              "Un consultant SEO formé au GEO, une agence de référencement IA ou une équipe interne outillée. Le critère n’est pas le titre mais la méthode : un jeu de prompts explicite, des relevés datés, des sources citées et un plan d’action mesurable.",
+              "[France Num liste dix questions à poser à un prestataire en référencement pour les moteurs IA afin de décrypter ses promesses, et signale comme alerte les pourcentages spectaculaires dont la méthode ou le point de départ ne sont pas expliqués](https://www.francenum.gouv.fr/guides-et-conseils/communication-et-publicite/referencement/etre-visible-dans-les-reponses-des-ia). Nos guides pour choisir une [agence de référencement ChatGPT](/blog/agence-referencement-chatgpt-comment-choisir) et notre [agence SEO / GEO à Nantes](/agence-seo-geo-nantes) reprennent ces critères.",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Que contient le rapport d’un audit SEO / GEO ?",
+        paragraphs: [
+          "Un rapport d’audit SEO / GEO contient cinq blocs : la part de présence par moteur et par famille de questions, les concurrents cités avec leur fréquence, les sources utilisées par les IA classées par type, le diagnostic du site, et le plan d’action classé par impact.",
+          "Le rapport doit permettre de refaire la mesure. Les prompts, les dates et les captures sont fournis, pour que le relevé suivant soit comparable. Sans cela, impossible de dire si la visibilité a progressé ou si la réponse a simplement varié.",
+        ],
+        bullets: [
+          "Part de présence par moteur : ChatGPT, Gemini, Perplexity, Mode IA",
+          "Concurrents cités et fréquence, par famille de questions",
+          "Sources citées par type : site, avis, annuaires, presse, comparatifs",
+          "Diagnostic du site : contenus, Schema.org, robots IA, cohérence",
+          "Plan d’action priorisé et indicateur de départ",
+        ],
+      },
+      {
         title: "Pourquoi cette méthode aide à décider",
         paragraphs: [
           "Un bon audit SEO / GEO ne livre pas seulement un constat. Il hiérarchise les priorités. Quelles pages revoir, quels contenus créer, quelles sources renforcer et quels concurrents surveiller.",
           "Pour un dirigeant ou un responsable marketing, c’est ce qui rend la visibilité IA mesurable, pilotable et plus utile au business. Une fois l’audit livré, la mesure se poursuit chaque semaine avec un jeu de prompts fixe : nous décrivons cette routine dans [suivre sa visibilité dans ChatGPT, Perplexity et Gemini](/blog/suivre-visibilite-chatgpt-ia).",
+          "Quand l’audit révèle qu’un concurrent est systématiquement cité à votre place, la cause se lit dans les sources : il est souvent mieux documenté par des tiers. Notre article [ChatGPT recommande votre concurrent : pourquoi et que faire](/blog/chatgpt-recommande-concurrent-pourquoi) détaille cette lecture.",
         ],
         bullets: [
           "Actions à lancer en premier",
           "Contenus à produire ou à reprendre",
           "Sources à renforcer pour gagner des citations IA",
+        ],
+      },
+      {
+        title: "Scénario illustratif : un cabinet d’expertise comptable de 20 personnes",
+        paragraphs: [
+          "Le scénario suivant est illustratif : il montre une progression plausible sur huit semaines, pas un résultat garanti. Un cabinet d’expertise comptable de 20 personnes, bien placé sur Google dans sa ville, n’apparaît presque jamais quand un dirigeant demande à ChatGPT ou à Perplexity un cabinet pour sa création d’entreprise.",
+          "Semaines 1 et 2 : audit. Jeu de 25 questions, relevé sur quatre moteurs et trois jours, lecture des sources : deux annuaires professionnels et un comparatif reviennent dans la majorité des réponses, le site du cabinet n’est jamais cité, deux confrères le sont régulièrement.",
+          "Semaines 3 à 5 : actions issues du plan. Réécriture de trois pages de services en réponse directe, ajout du balisage Organization et FAQPage, mise à jour des deux annuaires, demande d’avis clients, publication d’une page par type de client.",
+          "Semaines 6 à 8 : second relevé avec le même jeu de questions. Le cabinet apparaît sur une partie des questions locales et de comparaison, son site est cité comme source sur plusieurs réponses, les deux confrères restent présents. Le suivi mensuel prend le relais, avec l’indicateur de départ fixé par l’audit.",
+        ],
+        bullets: [
+          "L’audit a désigné les sources à travailler avant tout changement sur le site",
+          "Le second relevé est comparable parce que le jeu de questions n’a pas bougé",
+          "Les gains viennent d’abord des questions locales et de comparaison",
+        ],
+      },
+      {
+        title: "Ce qu’il faut retenir",
+        paragraphs: [
+          "Un audit SEO / GEO est une mesure, un diagnostic et un plan d’action, dans cet ordre. Voici l’essentiel avant de lancer le vôtre.",
+        ],
+        bullets: [
+          "Il mesure la présence de votre entreprise dans Google et dans les réponses des IA, à partir de questions clients réelles",
+          "Il explique les écarts par les sources citées et par l’état du site, puis classe les actions par impact",
+          "Un test de dix minutes donne un premier repère ; l’audit complet ajoute le volume, les concurrents et les causes",
+          "Le bon outil dépend du volume à suivre ; la Search Console et le Business Hub de ChatGPT couvrent le socle gratuit",
+          "Le tarif dépend du périmètre : questions, moteurs, villes, concurrents, profondeur technique",
+          "Le rapport doit permettre de refaire la mesure à l’identique ; [demandez un audit SEO / GEO](/contact) pour fixer votre point de départ",
         ],
       },
     ],
@@ -2632,7 +2812,7 @@ const newArticles: Record<string, BlogArticle> = {
         title: "Pourquoi l’acquisition devient plus complète",
         paragraphs: [
           "En combinant SEO et GEO, une entreprise couvre davantage de moments de recherche. Elle peut être visible sur Google, mais aussi présente dans les réponses de ChatGPT, Gemini, Claude, Perplexity et Google AI Overviews.",
-          "Cette complémentarité aide à générer une acquisition organique plus robuste et moins dépendante d’un seul canal.",
+          "Cette complémentarité aide à générer une acquisition organique plus robuste et moins dépendante d’un seul canal. Le point de départ reste la mesure : un [audit SEO / GEO](/blog/audit-seo-geo-visibilite-ia) dit où vous êtes visible, sur Google comme dans les réponses des IA, avant de choisir les actions.",
         ],
         bullets: [
           "Plus de visibilité sur Google",
