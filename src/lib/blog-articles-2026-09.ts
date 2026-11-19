@@ -7209,6 +7209,248 @@ const coutIntegrationIa: ArticleWithTables = {
   ],
 };
 
+const agentIaImmobilier: ArticleWithTables = {
+  slug: "agent-ia-agence-immobiliere-contacts-visites",
+  title: "Agent IA pour agence immobilière : contacts, visites, relances",
+  seoTitle: "Agent IA immobilier : ce qu’il fait pour une agence",
+  description:
+    "Agent IA pour agence immobilière : qualification des contacts, rendez-vous de visite, relances vendeurs, annonces et règles en France.",
+  date: "19 novembre 2026",
+  dateModified: "19 novembre 2026",
+  readingTime: "12 min",
+  category: "Agents IA",
+  articleSection: "Agents IA",
+  keywords: [
+    "agent IA agence immobilière",
+    "agent IA immobilier",
+    "IA pour agent immobilier",
+    "qualification acquéreurs IA",
+    "prise de rendez-vous visite IA",
+    "relance vendeurs IA",
+    "annonce immobilière IA",
+    "agent IA PME",
+  ],
+  intro:
+    "Un agent IA pour agence immobilière répond aux demandes de contact, qualifie les acquéreurs et les locataires, propose des créneaux de visite et relance les vendeurs sans mandat. Il prépare aussi les annonces et les comptes rendus, dans le respect des mentions obligatoires. Voici ce qu’il sait faire pour une agence indépendante, où il s’arrête et quelles règles françaises encadrent son usage.",
+  quickAnswer: {
+    question: "Qu’est-ce qu’un agent IA pour agence immobilière ?",
+    answer:
+      "Un agent IA pour agence immobilière est un programme relié au téléphone, à la messagerie, au logiciel de transaction et à l’agenda de l’agence. Il répond aux demandes sur une annonce, pose les questions de qualification, projet, budget, financement, délai, propose un créneau de visite, relance les vendeurs et prépare annonces et comptes rendus. Il travaille à toute heure, transfère au négociateur ce qu’il ne sait pas traiter, annonce qu’il est une IA et ne démarche jamais sans consentement.",
+  },
+  contextualLinks: [
+    { label: "nos agents IA pour PME", href: "/agents-ia" },
+    { label: "l’agent IA sur mesure pour PME", href: "/blog/agent-ia-sur-mesure-pme" },
+    { label: "l’agent IA téléphonique", href: "/blog/agent-ia-telephonique-pme" },
+    { label: "l’agent IA de prospection commerciale", href: "/blog/agent-ia-prospection-commerciale-pme" },
+    { label: "agent IA, RGPD et AI Act", href: "/blog/agent-ia-rgpd-ai-act-pme" },
+  ],
+  bodyCta: {
+    intro: "Vos négociateurs passent leurs soirées à répondre aux mêmes demandes de visite ?",
+    linkLabel: "Parlons de votre agence",
+    href: "/contact",
+    outro: ", on regarde vos canaux de contact, votre logiciel et ce qu’un agent peut prendre en charge en premier.",
+  },
+  relatedSlugs: [
+    "agent-ia-telephonique-pme",
+    "agent-ia-sur-mesure-pme",
+    "agent-ia-prospection-commerciale-pme",
+    "agent-ia-service-client-pme",
+    "cout-integration-ia-pme-budget",
+  ],
+  faqTitle: "FAQ : agent IA pour agence immobilière",
+  faqItems: [
+    {
+      question: "Un agent IA peut-il répondre aux appels sur une annonce ?",
+      answer:
+        "Oui. Un agent vocal relié à votre logiciel reconnaît l’annonce concernée, répond aux questions factuelles, pose les questions de qualification et propose un créneau de visite dans l’agenda du négociateur. Il transfère à l’équipe toute demande inhabituelle ou toute négociation.",
+    },
+    {
+      question: "L’agent IA remplace-t-il le logiciel de transaction ?",
+      answer:
+        "Non. Il s’appuie sur lui. Le logiciel reste la source des biens, des contacts et des rendez-vous ; l’agent ajoute un canal de prise en charge par téléphone, messagerie ou site, et automatise les relances et les comptes rendus.",
+    },
+    {
+      question: "L’agent peut-il démarcher des propriétaires pour rentrer des mandats ?",
+      answer:
+        "Pas par téléphone sans accord préalable : le démarchage téléphonique non consenti est désormais interdit en France. L’agent peut en revanche relancer les propriétaires qui vous ont sollicités, répondre à ceux qui demandent une estimation et nourrir vos contenus de prospection.",
+    },
+    {
+      question: "Que se passe-t-il si l’agent ne sait pas répondre ?",
+      answer:
+        "Il doit le dire et proposer une solution : transfert vers un négociateur, rappel à un horaire précis ou prise de message. Un agent bien réglé ne devine jamais une surface, un prix, une charge ou une classe énergie.",
+    },
+    {
+      question: "Une agence indépendante à trois personnes peut-elle s’équiper ?",
+      answer:
+        "Oui, en commençant par un seul canal, souvent le téléphone et les demandes de contact des portails, avec le module IA de son logiciel ou un agent téléphonique. L’agent sur mesure vient ensuite, quand plusieurs outils doivent être reliés.",
+    },
+  ],
+  sections: [
+    {
+      title: "Qu’est-ce qu’un agent IA pour agence immobilière ?",
+      paragraphs: [
+        "Un agent IA pour agence immobilière est un programme qui comprend une demande en langage naturel, consulte vos outils et agit dans un cadre défini. Il qualifie un acquéreur, enregistre un rendez-vous de visite, relance un vendeur ou rédige la première version d’un compte rendu.",
+        "La différence avec un simple chatbot tient à l’action. Le chatbot répond à partir d’un script ; l’agent consulte la fiche du bien, vérifie l’agenda du négociateur, enregistre le créneau et met à jour le contact. Nous détaillons cette distinction dans [agent IA vs chatbot](/blog/agent-ia-vs-chatbot-difference-pme).",
+        "[Anthropic distingue les workflows, où les étapes sont prédéfinies dans le code, des agents, où le modèle dirige lui-même ses actions et ses outils](https://www.anthropic.com/engineering/building-effective-agents). Dans une agence, les deux coexistent : un rappel automatique avant une visite est un workflow, une conversation de qualification est un agent.",
+      ],
+      bullets: [
+        "Il lit : annonces, fiches de biens, agendas, historique des contacts",
+        "Il agit : qualification, prise de rendez-vous, relance, rédaction de brouillons",
+        "Il s’arrête : estimation chiffrée, négociation, engagement contractuel, données sensibles",
+      ],
+    },
+    {
+      title: "Comment utiliser l’IA pour l’immobilier ?",
+      paragraphs: [
+        "On utilise l’IA dans une agence immobilière sur cinq tâches répétitives : la réponse aux demandes de contact, la qualification des acquéreurs et des locataires, la prise de rendez-vous de visite, les relances et la rédaction. Chacune se mesure en heures gagnées par semaine.",
+        "Le volume justifie l’effort. [D’après la note de conjoncture des Notaires de France de juillet 2026, le nombre de transactions de logements anciens sur douze mois atteint 949 000 ventes à fin mai 2026, en hausse de 5,7 % sur un an, avec des prix quasi stables, +0,2 % au premier trimestre 2026](https://acte3.notaires.fr/wp-content/uploads/2026/09/Note-de-conjoncture-n°72-Juillet-2026.pdf). Plus de transactions, c’est plus de demandes à trier.",
+        "[Le Baromètre France Num 2026 indique que 40 % des TPE et PME utilisent désormais des solutions d’IA, 14 points de plus en un an](https://www.entreprises.gouv.fr/espace-presse/barometre-france-num-2026-quatre-tpe-pme-sur-dix-utilisent-desormais-lintelligence). Les agences qui s’équipent le font d’abord pour l’accueil et la rédaction, puis pour la relance.",
+      ],
+      subsections: [
+        {
+          title: "Répondre aux demandes de contact et qualifier les acquéreurs",
+          paragraphs: [
+            "Chaque annonce génère des demandes par portail, formulaire, e-mail et téléphone, souvent le soir et le week-end. L’agent répond dans la minute, confirme la disponibilité du bien et pose les questions utiles : projet, budget, financement, secteur, délai, situation actuelle.",
+            "Le négociateur reçoit une fiche qualifiée au lieu d’un message brut. Les demandes hors critères, bien déjà sous offre ou budget trop éloigné, reçoivent une réponse polie et une proposition de biens proches, sans mobiliser l’équipe.",
+          ],
+        },
+        {
+          title: "Proposer et confirmer les rendez-vous de visite",
+          paragraphs: [
+            "Relié à l’agenda du négociateur, l’agent propose deux ou trois créneaux, enregistre la visite, envoie la confirmation avec l’adresse de rendez-vous et un rappel la veille. Il gère les reports et prévient l’équipe en cas d’annulation.",
+            "C’est le même mécanisme que pour un [agent IA téléphonique](/blog/agent-ia-telephonique-pme), appliqué aux visites : moins d’allers-retours, moins de visites manquées, un agenda qui reste la seule source de vérité.",
+          ],
+        },
+        {
+          title: "Relancer les vendeurs et les contacts sans réponse",
+          paragraphs: [
+            "Un propriétaire qui a demandé une estimation, un acquéreur qui n’a pas donné suite après une visite, un vendeur dont le mandat arrive à échéance : l’agent relance au bon moment, avec un message adapté, et remonte au négociateur ceux qui répondent.",
+            "Ces relances concernent des personnes qui vous ont déjà sollicités. Pour la prospection de nouveaux contacts, les règles sont différentes et nous les détaillons plus bas, ainsi que dans notre guide de [l’agent IA de prospection commerciale](/blog/agent-ia-prospection-commerciale-pme).",
+          ],
+        },
+        {
+          title: "Rédiger annonces, comptes rendus et courriers",
+          paragraphs: [
+            "À partir de la fiche du bien et des notes de visite, l’agent prépare une première version d’annonce, un compte rendu de visite pour le vendeur ou une réponse à une question de gestion locative. Le négociateur relit, corrige et publie.",
+            "La règle est de ne jamais laisser l’agent inventer une information absente de la fiche : surface, charges, travaux, diagnostics. Ce qui manque est signalé, pas comblé.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Quelle IA pour un agent immobilier ?",
+      paragraphs: [
+        "Le choix se fait entre trois niveaux : le module IA de votre logiciel de transaction, un assistant généraliste pour la rédaction, et un agent sur mesure relié à l’ensemble de vos outils. Le bon niveau dépend du volume de demandes et du nombre d’outils à faire dialoguer.",
+        "Le module du logiciel s’active vite et couvre souvent la rédaction d’annonces et les réponses automatiques. L’assistant généraliste aide à écrire, sans accès à vos données. L’agent sur mesure, décrit dans notre guide de [l’agent IA sur mesure pour PME](/blog/agent-ia-sur-mesure-pme), relie téléphone, portails, logiciel et agenda.",
+      ],
+      table: {
+        caption: "Module du logiciel, assistant généraliste ou agent sur mesure : repères pour une agence",
+        headers: ["Besoin", "Module IA du logiciel", "Assistant généraliste", "Agent sur mesure"],
+        rows: [
+          ["Rédiger annonces et comptes rendus", "Souvent inclus, à relire", "Oui, sans accès aux fiches", "Oui, à partir des fiches et des notes"],
+          ["Répondre aux demandes des portails", "Réponses types", "Non", "Réponse qualifiée, dans la minute, tous canaux"],
+          ["Répondre au téléphone", "Rarement", "Non", "Agent vocal relié à l’agenda"],
+          ["Prendre les rendez-vous de visite", "Parfois, sur le site", "Non", "Oui, avec confirmation et rappel"],
+          ["Relancer vendeurs et acquéreurs", "Scénarios simples", "Brouillons à envoyer soi-même", "Relances déclenchées par les événements du logiciel"],
+          ["Mise en place", "Quelques jours", "Immédiate", "Projet de quelques semaines, puis suivi"],
+        ],
+      },
+      subsections: [
+        {
+          title: "Quel est l’impact de l’IA dans le secteur de l’immobilier ?",
+          paragraphs: [
+            "L’impact le plus net se joue sur le premier contact et sur la découverte des agences. Les acquéreurs posent leurs questions à des assistants IA avant d’appeler, et une partie des demandes arrive déjà préqualifiée. L’agence qui répond en premier, et bien, garde l’avantage.",
+            "Être recommandée par ces assistants devient un enjeu à part entière, distinct de l’agent IA interne. Nous l’abordons dans notre guide sur le [référencement local dans ChatGPT](/blog/referencement-local-chatgpt-apparaitre-ville). Côté métier, l’IA ne remplace ni l’estimation, ni la visite, ni la négociation : elle libère du temps pour les trois.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Quelles règles respecter en France pour un agent IA en agence immobilière ?",
+      paragraphs: [
+        "Un agent IA qui parle à vos clients relève de quatre cadres : l’interdiction du démarchage téléphonique non consenti, les mentions obligatoires des annonces, le règlement européen sur l’IA et le RGPD. Aucun n’interdit l’agent ; tous encadrent ce qu’il a le droit de faire.",
+        "[Service-Public précise que, depuis le 11 août 2026, le démarchage téléphonique commercial est interdit sauf accord préalable exprimé par un acte positif clair, valable au plus un an, ou lorsque l’appel concerne un contrat en cours, et que même avec accord les appels ne sont permis que du lundi au vendredi, de 10 h à 13 h et de 14 h à 20 h](https://entreprendre.service-public.gouv.fr/actualites/A18384?lang=fr). Un agent vocal ne peut donc pas appeler des propriétaires à froid pour rentrer des mandats.",
+        "[Service-Public rappelle aussi qu’une annonce de vente ou de location doit mentionner les classes énergie et climat du bien, sous peine d’une amende pouvant atteindre 3 000 euros, portée à 15 000 euros pour une personne morale, et que les DPE réalisés depuis le 1er juillet 2021 sont valables 10 ans](https://www.service-public.gouv.fr/particuliers/vosdroits/F16096). Une annonce rédigée par l’agent doit donc partir d’une fiche complète et relue.",
+        "[France Num précise que les obligations de transparence de l’article 50 du règlement européen sur l’IA s’appliquent depuis le 2 août 2026 : les personnes doivent être informées qu’elles interagissent avec une IA](https://www.francenum.gouv.fr/guides-et-conseils/intelligence-artificielle/regles-juridiques-ia-commercants-artisans). L’agent l’annonce dès la première phrase, au téléphone comme par écrit.",
+      ],
+      bullets: [
+        "Pas d’appel sortant sans consentement préalable daté, hors contrat en cours",
+        "Annonce de l’IA au début de chaque appel ou conversation",
+        "Mentions obligatoires des annonces issues de la fiche du bien, jamais improvisées",
+        "Données de qualification limitées au nécessaire : projet, budget, délai, coordonnées",
+        "Journal des conversations conservé pour vérifier et corriger",
+      ],
+      subsections: [
+        {
+          title: "Quelles données un agent de qualification peut-il traiter ?",
+          paragraphs: [
+            "Le strict nécessaire pour qualifier : coordonnées, projet, budget, mode de financement, délai, secteur. La situation familiale ou professionnelle détaillée n’a pas sa place à ce stade, et les pièces d’un dossier de location se traitent dans un outil sécurisé, pas dans une conversation. Le cadre complet est dans notre article [agent IA, RGPD et AI Act](/blog/agent-ia-rgpd-ai-act-pme).",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Quel est le tarif d’un agent IA ?",
+      paragraphs: [
+        "Le tarif d’un agent IA pour agence immobilière dépend de trois choses : les canaux couverts, téléphone, portails, messagerie, le volume mensuel de demandes et le niveau d’intégration avec votre logiciel de transaction. Un module de logiciel se paie à l’abonnement ; un agent sur mesure se chiffre en projet, puis en suivi mensuel.",
+        "Avant de comparer des prix, comparez ce qui est inclus : minutes d’appel, nombre de conversations, connexion au logiciel et à l’agenda, transfert vers un négociateur, journal des échanges. Le bon repère reste le coût d’un contact perdu ou d’une visite manquée un samedi.",
+        "Nous détaillons les modèles de facturation dans [combien coûte un agent IA pour une PME](/blog/combien-coute-agent-ia-pme), et le budget complet d’une intégration, licences, formation, conformité, dans [coût d’intégration de l’IA dans une PME](/blog/cout-integration-ia-pme-budget).",
+      ],
+    },
+    {
+      title: "Comment mettre en place un agent IA dans son agence ?",
+      paragraphs: [
+        "La mise en place suit six étapes, du canal prioritaire au suivi hebdomadaire. [Anthropic conseille de chercher la solution la plus simple possible et de n’ajouter de la complexité que lorsqu’elle améliore nettement les résultats](https://www.anthropic.com/engineering/building-effective-agents). Une agence commence donc par un seul canal, souvent les demandes des portails.",
+      ],
+      bullets: [
+        "1. Mesurer deux semaines : demandes reçues par canal, délai de première réponse, appels manqués, visites annulées",
+        "2. Choisir un seul cas d’usage, souvent la réponse et la qualification des demandes de portails",
+        "3. Écrire les règles : questions de qualification, créneaux de visite, ce qui est transféré, ce que l’agent ne dit jamais",
+        "4. Connecter l’agent au logiciel de transaction et à l’agenda, tester en interne sur un mois de demandes passées",
+        "5. Ouvrir au public avec annonce de l’IA et relecture quotidienne des conversations par un négociateur",
+        "6. Ajouter un canal par mois : téléphone, relances, comptes rendus, puis mesurer à nouveau",
+      ],
+      subsections: [
+        {
+          title: "Quelles erreurs éviter au démarrage ?",
+          paragraphs: [
+            "La première erreur est de laisser l’agent estimer un bien ou annoncer un prix de négociation : ces sujets reviennent au négociateur. La deuxième est de l’ouvrir sans transfert humain prévu. La troisième est de ne jamais relire ses conversations, alors que c’est là que se corrigent le ton et les règles.",
+            "Évitez aussi de brancher tous les canaux le premier mois. Un agent qui traite bien les demandes de portails vaut mieux qu’un agent moyen partout. Notre guide pour [choisir une agence d’agents IA](/blog/agence-agents-ia-comment-choisir-prestataire) liste les questions à poser, et [notre offre](/offre) démarre toujours par un audit des flux.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Scénario illustratif : une agence indépendante de 5 personnes",
+      paragraphs: [
+        "Le scénario suivant est illustratif : il montre une progression plausible sur huit semaines, pas un résultat garanti. Une agence indépendante de 5 personnes, 60 mandats en portefeuille, reçoit la plupart de ses demandes le soir et le week-end, et répond souvent le lendemain, quand l’acquéreur a déjà visité ailleurs.",
+        "Semaines 1 et 2 : relevé des demandes par canal et des délais de réponse, choix du cas d’usage prioritaire, la réponse et la qualification des demandes de portails. Rédaction des questions de qualification et des règles de transfert avec les négociateurs.",
+        "Semaines 3 à 5 : connexion de l’agent au logiciel de transaction et aux agendas, tests sur les demandes du mois précédent, ouverture au public avec annonce de l’IA. Les négociateurs relisent chaque matin les conversations de la veille et ajustent le ton.",
+        "Semaines 6 à 8 : la majorité des demandes de portails reçoivent une réponse qualifiée dans la minute, les visites sont posées directement dans les agendas, les rappels de la veille réduisent les absences. L’équipe garde la main sur les estimations, les offres et les dossiers de location. Le téléphone est le canal suivant.",
+      ],
+      bullets: [
+        "Les premiers gains viennent du délai de première réponse, le soir et le week-end",
+        "Les rappels de visite produisent un effet dès la troisième semaine",
+        "La relecture quotidienne reste nécessaire pendant tout le déploiement",
+      ],
+    },
+    {
+      title: "Ce qu’il faut retenir",
+      paragraphs: [
+        "Un agent IA pour agence immobilière ne remplace pas le négociateur, il protège son temps. Voici l’essentiel avant de choisir un outil ou un prestataire.",
+      ],
+      bullets: [
+        "Un agent agit dans vos outils : qualification, rendez-vous, relances, brouillons ; un chatbot ne fait que répondre",
+        "Commencez par les demandes de portails, puis ajoutez le téléphone, les relances et les comptes rendus",
+        "Le module IA de votre logiciel suffit souvent au départ ; l’agent sur mesure vient quand plusieurs outils doivent dialoguer",
+        "Pas de démarchage téléphonique sans consentement, annonce de l’IA dès la première phrase, mentions des annonces issues de la fiche du bien",
+        "Relisez les conversations chaque jour le premier mois et mesurez délai de réponse, visites posées et absences",
+        "Un [audit de vos flux](/contact) fixe le point de départ, et [nos agents IA pour PME](/agents-ia) couvrent la mise en place",
+      ],
+    },
+  ],
+};
+
 export const septemberArticles: Record<string, BlogArticle> = {
   [suivreVisibilite.slug]: suivreVisibilite,
   [agentIaSurMesure.slug]: agentIaSurMesure,
@@ -7238,6 +7480,7 @@ export const septemberArticles: Record<string, BlogArticle> = {
   [agentIaRestaurant.slug]: agentIaRestaurant,
   [schemaOrganization.slug]: schemaOrganization,
   [coutIntegrationIa.slug]: coutIntegrationIa,
+  [agentIaImmobilier.slug]: agentIaImmobilier,
 };
 
 export const septemberPosts: BlogPostMeta[] = [
@@ -7492,5 +7735,14 @@ export const septemberPosts: BlogPostMeta[] = [
     date: coutIntegrationIa.date,
     readingTime: coutIntegrationIa.readingTime,
     category: coutIntegrationIa.category,
+  },
+  {
+    slug: agentIaImmobilier.slug,
+    title: agentIaImmobilier.title,
+    seoTitle: agentIaImmobilier.seoTitle,
+    description: agentIaImmobilier.description,
+    date: agentIaImmobilier.date,
+    readingTime: agentIaImmobilier.readingTime,
+    category: agentIaImmobilier.category,
   },
 ];
