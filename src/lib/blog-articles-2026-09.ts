@@ -7451,6 +7451,257 @@ const agentIaImmobilier: ArticleWithTables = {
   ],
 };
 
+const etreCiteParChatgpt: ArticleWithTables = {
+  slug: "etre-cite-par-chatgpt-devenir-source",
+  title: "Être cité par ChatGPT : comment devenir une de ses sources",
+  seoTitle: "Comment être cité par ChatGPT et les IA en 2026",
+  description:
+    "Comment être cité par ChatGPT : fonctionnement des citations, critères observés, robots.txt et OAI-SearchBot, sources tierces et suivi.",
+  date: "24 novembre 2026",
+  dateModified: "24 novembre 2026",
+  readingTime: "12 min",
+  category: "SEO IA",
+  articleSection: "SEO IA",
+  keywords: [
+    "être cité par ChatGPT",
+    "comment être cité par ChatGPT",
+    "cité par les IA",
+    "source citée par IA",
+    "citation ChatGPT",
+    "OAI-SearchBot",
+    "robots.txt ChatGPT",
+    "Business Hub ChatGPT",
+    "GEO",
+    "référencement ChatGPT",
+  ],
+  intro:
+    "Être cité par ChatGPT, c’est voir son site apparaître parmi les liens numérotés qui appuient une réponse, ou son entreprise nommée comme solution à la question posée. Ce n’est ni une position ni un classement, mais le résultat d’un tri que ChatGPT opère entre des dizaines de pages lues en quelques secondes. Voici ce que l’on sait de ce tri, ce qui se vérifie avec des données publiques, et la méthode GEO pour devenir une source citée.",
+  quickAnswer: {
+    question: "Comment être cité par ChatGPT ?",
+    answer:
+      "Pour être cité par ChatGPT, une page doit d’abord être accessible à son robot de recherche OAI-SearchBot et bien indexée, puis répondre directement à une question précise avec un titre et une URL explicites, des faits datés et vérifiables. ChatGPT lit des dizaines de pages par requête et n’en cite qu’une partie, en privilégiant son index de recherche, les contenus récents et les entreprises décrites de façon cohérente par des sources tierces. On mesure ensuite les citations avec Business Hub et un jeu de questions suivi chaque semaine.",
+  },
+  contextualLinks: [
+    { label: "se référencer sur ChatGPT", href: "/blog/apparaitre-chatgpt-client-cherche-entreprise" },
+    { label: "apparaître sur ChatGPT et les autres IA", href: "/blog/referencement-chatgpt-apparaitre-ia" },
+    { label: "les sources citées par les IA", href: "/blog/sources-citees-ia-site-ne-suffit-pas" },
+    { label: "suivre sa visibilité dans ChatGPT", href: "/blog/suivre-visibilite-chatgpt-ia" },
+    { label: "notre offre de référencement IA", href: "/offre" },
+    { label: "le fichier llms.txt", href: "/blog/llms-txt-guide-pratique" },
+  ],
+  bodyCta: {
+    intro: "Vous voulez savoir si ChatGPT vous cite déjà, et sur quelles questions ?",
+    linkLabel: "Demandez un audit de visibilité IA",
+    href: "/contact",
+    outro: ", on relève vos citations, celles de vos concurrents et les sources qu’il utilise.",
+  },
+  relatedSlugs: [
+    "apparaitre-chatgpt-client-cherche-entreprise",
+    "referencement-chatgpt-apparaitre-ia",
+    "sources-citees-ia-site-ne-suffit-pas",
+    "suivre-visibilite-chatgpt-ia",
+    "chatgpt-recommande-concurrent-pourquoi",
+  ],
+  faqTitle: "FAQ : être cité par ChatGPT",
+  faqItems: [
+    {
+      question: "Peut-on payer pour être cité par ChatGPT ?",
+      answer:
+        "Non. Les citations qui accompagnent une réponse ne s’achètent pas. Les emplacements sponsorisés annoncés par OpenAI sont identifiés comme tels et séparés des réponses. Une page devient une source citée parce qu’elle est accessible, pertinente, récente et corroborée par d’autres sites, pas parce qu’elle a été payée.",
+    },
+    {
+      question: "Combien de temps faut-il pour être cité par ChatGPT ?",
+      answer:
+        "Il faut d’abord que la page soit explorée et indexée, ce qui prend de quelques jours à quelques semaines selon le site. Les premières citations sur des questions précises arrivent souvent dans les deux mois qui suivent la publication d’un contenu répondant directement à ces questions. Les questions concurrentielles demandent plus de temps et plus de sources externes.",
+    },
+    {
+      question: "Un petit site peut-il être cité par ChatGPT ?",
+      answer:
+        "Oui, surtout sur des questions précises et locales où les grands médias n’ont rien publié. Un site de dix pages qui répond clairement à une question de métier peut être cité devant un site de mille pages qui l’évoque vaguement. La condition est d’être trouvable, clair et cohérent avec les autres sources qui parlent de vous.",
+    },
+    {
+      question: "Faut-il un fichier llms.txt pour être cité par ChatGPT ?",
+      answer:
+        "Ce n’est pas une condition. OpenAI documente ses robots et le fichier robots.txt, pas le fichier llms.txt. Il reste un complément peu coûteux pour présenter vos pages clés aux moteurs IA, à condition que le reste du site soit déjà accessible et bien structuré.",
+    },
+    {
+      question: "Être cité par ChatGPT remplace-t-il le référencement Google ?",
+      answer:
+        "Non, les deux se renforcent. ChatGPT s’appuie sur un index de recherche pour trouver ses sources, et une page bien référencée sur Google et Bing a plus de chances d’être lue puis citée. Le travail de contenu, de structure et de sources externes sert aux deux moteurs à la fois.",
+    },
+  ],
+  sections: [
+    {
+      title: "Qu’est-ce qu’être cité par ChatGPT ?",
+      paragraphs: [
+        "Être cité par ChatGPT signifie que votre page apparaît comme source dans une réponse, sous la forme d’un lien numéroté, ou que votre entreprise est nommée dans le texte comme réponse à la question posée.",
+        "Les deux cas ne se travaillent pas tout à fait de la même façon. La citation d’une page récompense un contenu qui répond à une question. La mention d’une entreprise récompense une entité connue et décrite de façon cohérente sur le web.",
+        "Dans les deux cas, ChatGPT ne consulte pas un annuaire. Il lance une recherche, lit des pages, puis décide lesquelles méritent d’apparaître. Notre guide pour [se référencer sur ChatGPT](/blog/apparaitre-chatgpt-client-cherche-entreprise) détaille la partie entreprise ; cet article se concentre sur la citation des pages.",
+      ],
+      subsections: [
+        {
+          title: "Mention, citation, recommandation : quelle différence ?",
+          paragraphs: [
+            "Une mention, c’est votre nom dans la réponse. Une citation, c’est votre page dans la liste des sources. Une recommandation, c’est votre entreprise présentée comme un choix à retenir pour le besoin exprimé.",
+            "Une entreprise peut être citée sans être recommandée, par exemple quand son article explique un sujet. Elle peut aussi être recommandée sans que son site soit cité, parce que ChatGPT s’est appuyé sur un annuaire ou un média.",
+          ],
+          bullets: [
+            "Mention : votre nom apparaît dans le texte de la réponse",
+            "Citation : votre URL figure parmi les sources numérotées",
+            "Recommandation : votre entreprise est proposée comme solution",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Comment ChatGPT choisit-il les sources qu’il cite ?",
+      paragraphs: [
+        "ChatGPT choisit ses sources en deux temps : il interroge un index de recherche pour collecter des pages, puis il ne retient qu’une partie de ce qu’il a lu pour appuyer sa réponse.",
+        "[Une étude d’Ahrefs portant sur 1,4 million de prompts montre que ChatGPT parcourt des dizaines de pages pour une seule requête mais n’en cite qu’environ 50 %, et que 88 % des URL finalement citées proviennent directement de son index de recherche](https://ahrefs.com/blog/fr/pourquoi-chatgpt-cite-pages/).",
+        "Ce point change la stratégie. Être lu ne suffit pas, il faut être retenu. [La même étude relève que Reddit, pourtant très présent dans les pages récupérées, n’est cité qu’à un taux de 1,93 % et représente 67,8 % des URL non citées](https://ahrefs.com/blog/fr/pourquoi-chatgpt-cite-pages/).",
+        "La recherche elle-même passe par un robot dédié. [OpenAI explique que OAI-SearchBot sert à faire remonter les sites dans les résultats de recherche de ChatGPT, et que les sites qui le bloquent n’apparaissent pas dans ses réponses de recherche](https://developers.openai.com/api/docs/bots).",
+      ],
+      subsections: [
+        {
+          title: "Quels sites ChatGPT cite-t-il le plus ?",
+          paragraphs: [
+            "Les sources de référence dominent, mais leur poids reste limité en volume. [D’après Ahrefs, Wikipédia est en tête des domaines les plus cités par ChatGPT en France avec 4,88 % des mentions, sur un échantillon de 957 000 prompts ChatGPT](https://ahrefs.com/blog/fr/top-domaines-cites-par-ia/).",
+            "Autrement dit, plus de 95 % des citations vont à d’autres sites, dont des médias, des annuaires, des sites d’entreprises et des blogs spécialisés. La place existe pour une PME qui publie des réponses précises sur son métier.",
+            "[La même analyse note que ChatGPT montre une nette préférence pour les sites d’actualité, avec des parts comprises entre 4 % et 2,6 % pour des médias comme Reuters](https://ahrefs.com/blog/fr/top-domaines-cites-par-ia/). Être repris par un média de votre secteur compte donc deux fois : pour la notoriété et pour la citation.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Comment être cité par les IA ?",
+      paragraphs: [
+        "Pour être cité par les IA, il faut réunir trois conditions dans cet ordre : être accessible aux robots des moteurs IA, répondre directement aux questions que posent vos clients, et être confirmé par des sources extérieures à votre site.",
+        "Chaque condition a ses actions concrètes, c’est le cœur du GEO, le référencement pour les moteurs IA. Les trois sous-sections qui suivent reprennent les questions les plus posées à Google sur le sujet, avec la réponse pratique pour une PME.",
+      ],
+      subsections: [
+        {
+          title: "Comment se faire référencer par ChatGPT ?",
+          paragraphs: [
+            "Se faire référencer par ChatGPT commence par le fichier robots.txt. [OpenAI recommande d’autoriser OAI-SearchBot dans ce fichier et d’accepter les requêtes venant de ses plages d’adresses IP publiées pour que le site apparaisse dans les résultats de recherche](https://developers.openai.com/api/docs/bots).",
+            "La prise en compte n’est pas immédiate. [OpenAI précise qu’il faut compter environ 24 heures après une modification du robots.txt pour que ses systèmes s’ajustent](https://developers.openai.com/api/docs/bots). Vérifiez ensuite que vos pages clés répondent vite et sans erreur.",
+            "Il faut aussi être présent dans les index de recherche classiques, puisque ChatGPT s’appuie sur une recherche web avant de répondre. Un site bien indexé sur Google et Bing, avec un sitemap à jour, part avec une longueur d’avance.",
+          ],
+          bullets: [
+            "Autoriser OAI-SearchBot dans le robots.txt et ne pas bloquer ses adresses IP",
+            "Garder un sitemap à jour et des pages qui répondent en moins d’une seconde",
+            "Publier le contenu dans le HTML, pas uniquement dans des scripts ou des images",
+          ],
+        },
+        {
+          title: "Comment apparaître dans ChatGPT ?",
+          paragraphs: [
+            "Apparaître dans ChatGPT demande des pages qui répondent à une question précise dès les premières lignes, puis développent avec des faits datés, des chiffres sourcés et des listes claires.",
+            "Le titre compte autant que le texte. [Ahrefs observe que la pertinence du titre par rapport aux requêtes dérivées est un facteur important de citation, et que les pages dont l’URL est rédigée en langage naturel obtiennent un taux de citation de 89,78 % contre 81,11 % pour les autres](https://ahrefs.com/blog/fr/pourquoi-chatgpt-cite-pages/).",
+            "La fraîcheur pèse aussi. [Selon Ahrefs, ChatGPT cite des URL vieilles de 458 jours de moins que les résultats organiques de Google, et l’âge médian des pages citées est tombé à 500 jours](https://ahrefs.com/blog/fr/pourquoi-chatgpt-cite-pages/). Mettre à jour un guide vaut souvent mieux qu’en écrire un nouveau.",
+            "Notre article sur la façon d’[apparaître sur ChatGPT et les autres IA](/blog/referencement-chatgpt-apparaitre-ia) détaille la structure answer-first et le rôle du [fichier llms.txt](/blog/llms-txt-guide-pratique).",
+          ],
+        },
+        {
+          title: "Comment se faire référencer par les IA ?",
+          paragraphs: [
+            "Se faire référencer par les IA, au-delà de ChatGPT, repose sur la cohérence de votre entité. Nom, adresse, activité, dirigeants et profils doivent se retrouver identiques sur votre site, vos annuaires, vos réseaux et la presse.",
+            "Les moteurs IA cherchent de la convergence entre plusieurs sources avant de nommer une entreprise. Notre analyse des [sources citées par les IA](/blog/sources-citees-ia-site-ne-suffit-pas) montre pourquoi un site seul, même excellent, ne suffit pas.",
+            "Pour Google, le message officiel est clair. [Google écrit que les bonnes pratiques SEO restent pertinentes pour les Aperçus IA et le Mode IA, et qu’aucune exigence supplémentaire ni optimisation spéciale n’est requise pour y apparaître](https://developers.google.com/search/docs/appearance/ai-features?hl=fr).",
+            "Un balisage [Schema.org Organization](/blog/schema-org-organization-baliser-entreprise) propre, des avis récents et quelques articles dans des médias de votre secteur forment le socle commun à tous les moteurs.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Quel contenu ChatGPT cite-t-il en priorité ?",
+      paragraphs: [
+        "ChatGPT cite en priorité les pages dont le titre colle à la question, dont l’URL est lisible, dont le contenu est récent et qui proviennent de son index de recherche plutôt que de forums ou de plateformes vidéo.",
+        "[L’étude d’Ahrefs indique que les verticales spécialisées comme YouTube ou les archives académiques sont intégrées à grande échelle mais ne remontent presque jamais en tant que citations réelles](https://ahrefs.com/blog/fr/pourquoi-chatgpt-cite-pages/). Une page web classique reste le format le plus cité.",
+        "Le tableau ci-dessous résume les critères observés et l’action correspondante pour une PME.",
+      ],
+      table: {
+        caption: "Critères de citation observés et actions pour une PME",
+        headers: ["Critère observé", "Ce que montrent les données", "Action concrète"],
+        rows: [
+          ["Origine de la page", "La majorité des citations vient de l’index de recherche", "Être indexé sur Google et Bing, autoriser OAI-SearchBot"],
+          ["Titre et URL", "Titre proche de la question, URL en langage naturel", "Un titre en question, une URL courte avec les mots du sujet"],
+          ["Fraîcheur", "Pages citées plus récentes que les résultats Google", "Mettre à jour les guides clés et afficher la date de modification"],
+          ["Format", "Pages web citées, vidéos et forums rarement", "Publier des articles de fond en HTML, pas seulement des vidéos"],
+          ["Réponse directe", "Les pages retenues répondent à la requête dérivée", "Une réponse de 60 à 90 mots en tête de page, puis le détail"],
+          ["Cohérence de l’entité", "Les IA cherchent la convergence entre sources", "Mêmes informations partout, balisage Organization, avis"],
+        ],
+      },
+    },
+    {
+      title: "Faut-il bloquer ou autoriser les robots d’OpenAI ?",
+      paragraphs: [
+        "Il faut autoriser le robot de recherche si vous voulez être cité, et décider séparément pour le robot d’entraînement. OpenAI distingue ses robots précisément pour permettre ce choix.",
+        "[OpenAI indique que chaque réglage est indépendant : un site peut autoriser OAI-SearchBot pour apparaître dans les résultats de recherche tout en bloquant GPTBot pour signaler que son contenu ne doit pas servir à l’entraînement des modèles](https://developers.openai.com/api/docs/bots).",
+        "Un troisième agent intervient quand un utilisateur demande à ChatGPT de lire une page. [OpenAI précise que ChatGPT-User n’explore pas le web de façon automatique, que les règles du robots.txt peuvent ne pas s’appliquer à ses actions, et qu’il ne sert pas à décider si un contenu apparaît dans la recherche](https://developers.openai.com/api/docs/bots).",
+        "Pour une PME qui cherche des clients, bloquer OAI-SearchBot revient à fermer la porte. Le blocage de GPTBot est un choix éditorial qui n’empêche pas la citation.",
+      ],
+      bullets: [
+        "OAI-SearchBot : à autoriser pour être cité dans les réponses de recherche",
+        "GPTBot : concerne l’entraînement des modèles, choix indépendant",
+        "ChatGPT-User : visites déclenchées par un utilisateur, hors robots.txt",
+      ],
+    },
+    {
+      title: "Comment savoir si ChatGPT vous cite ?",
+      paragraphs: [
+        "On sait si ChatGPT vous cite en combinant trois relevés : les statistiques officielles de Business Hub, un jeu de questions posé chaque semaine, et les visites venant de ChatGPT dans votre outil d’analyse.",
+        "[OpenAI a lancé Entreprises dans ChatGPT en version bêta et indique que Business Hub fournit des statistiques agrégées incluant le nombre de mentions de l’entreprise, les clics vers son site et les sujets de découverte, c’est-à-dire les thèmes des conversations où le site est cité](https://openai.com/fr-FR/index/introducing-businesses-chatgpt/).",
+        "L’enjeu justifie l’effort. [OpenAI présente ce service comme un moyen d’entrer en contact avec les 1,2 milliard de personnes qui utilisent ChatGPT chaque semaine](https://openai.com/fr-FR/index/introducing-businesses-chatgpt/).",
+        "Le relevé manuel reste utile pour les questions sans votre nom. [France Num propose un test en dix minutes : noter cinq questions qu’un prospect poserait sans citer votre entreprise, puis les poser à ChatGPT, au Mode IA de Google et à Mistral](https://www.francenum.gouv.fr/guides-et-conseils/communication-et-publicite/referencement/etre-visible-dans-les-reponses-des-ia).",
+        "Notre méthode pour [suivre sa visibilité dans ChatGPT](/blog/suivre-visibilite-chatgpt-ia) transforme ce test en relevé hebdomadaire, avec une part de présence comparable dans le temps et face aux concurrents.",
+      ],
+    },
+    {
+      title: "Une petite entreprise peut-elle être citée par ChatGPT ?",
+      paragraphs: [
+        "Oui, une petite entreprise peut être citée par ChatGPT, surtout sur des questions précises, locales ou de niche où les grands sites n’ont rien publié de clair.",
+        "Le public est là. [France Num rapporte que près d’un Français sur deux utilise désormais l’IA générative, 48 % selon le Baromètre du numérique 2026, contre 20 % en 2023](https://www.francenum.gouv.fr/guides-et-conseils/communication-et-publicite/referencement/etre-visible-dans-les-reponses-des-ia). Une partie de ces usages concerne le choix d’un professionnel.",
+        "La difficulté n’est pas la taille mais la méthode. Beaucoup de PME publient des pages de présentation qui ne répondent à aucune question. ChatGPT ne peut pas citer une page qui n’affirme rien de précis.",
+        "Si vous confiez ce travail à un prestataire, [France Num conseille de demander la liste des services d’IA étudiés et le corpus de questions retenu, et signale comme alerte une évaluation reposant surtout sur des questions contenant déjà le nom de votre entreprise](https://www.francenum.gouv.fr/guides-et-conseils/communication-et-publicite/referencement/etre-visible-dans-les-reponses-des-ia). Notre guide pour [choisir une agence de référencement ChatGPT](/blog/agence-referencement-chatgpt-comment-choisir) reprend ces critères.",
+      ],
+      subsections: [
+        {
+          title: "Que faire quand ChatGPT cite un concurrent et pas vous ?",
+          paragraphs: [
+            "Commencez par lire la source que ChatGPT a citée pour le concurrent. Souvent, ce n’est pas son site mais un annuaire, un comparatif ou un média où vous n’êtes pas présent.",
+            "Ensuite, publiez la page qui manque : la réponse directe à la question posée, avec vos éléments de preuve. Notre article sur [ChatGPT qui recommande un concurrent](/blog/chatgpt-recommande-concurrent-pourquoi) décrit les causes les plus fréquentes et les corrections.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Scénario illustratif : un cabinet de conseil RH de 8 personnes",
+      paragraphs: [
+        "Ce scénario est illustratif. Il ne décrit pas un client réel mais une trajectoire crédible sur huit semaines pour un cabinet de conseil RH de huit personnes, basé à Nantes, absent des réponses de ChatGPT au départ.",
+        "Semaine 1 : relevé initial sur 25 questions sans le nom du cabinet. Le cabinet n’est ni mentionné ni cité. Trois concurrents apparaissent, sourcés par deux annuaires professionnels et un média RH.",
+        "Semaines 2 et 3 : le robots.txt autorise OAI-SearchBot, le sitemap est corrigé, le balisage Organization est posé. Quatre pages de services sont réécrites avec une réponse directe en tête et une FAQ.",
+        "Semaines 4 à 6 : publication de trois guides qui répondent mot pour mot aux questions relevées, mise à jour datée de deux anciens articles, inscription sur les deux annuaires cités et proposition d’une tribune au média RH.",
+        "Semaines 7 et 8 : nouveau relevé. Le cabinet est cité comme source sur 4 des 25 questions, mentionné sur 2, et Business Hub commence à afficher des mentions. Les questions les plus concurrentielles restent dominées par les médias nationaux.",
+        "Ce résultat est modeste et c’est normal. Les citations arrivent d’abord sur les questions précises, puis s’étendent avec les sources externes. Notre [offre de référencement IA](/offre) suit ce rythme, sans promesse de miracle.",
+      ],
+    },
+    {
+      title: "Ce qu’il faut retenir",
+      paragraphs: [
+        "Être cité par ChatGPT se travaille avec des données publiques, une méthode GEO et de la patience. Voici l’essentiel.",
+      ],
+      bullets: [
+        "ChatGPT lit des dizaines de pages par requête et n’en cite qu’une partie, surtout issues de son index de recherche",
+        "Autorisez OAI-SearchBot dans le robots.txt ; le blocage de GPTBot est un choix séparé qui n’empêche pas la citation",
+        "Un titre en question, une URL lisible, une réponse directe en tête et une date récente augmentent les chances d’être retenu",
+        "Les pages web classiques sont citées, les vidéos et les forums très rarement",
+        "Votre site ne suffit pas : annuaires, médias et avis doivent confirmer la même entité",
+        "Mesurez avec Business Hub, un jeu de questions hebdomadaire et les visites venant de ChatGPT, puis [demandez un audit](/contact) pour fixer le point de départ",
+      ],
+    },
+  ],
+};
+
 export const septemberArticles: Record<string, BlogArticle> = {
   [suivreVisibilite.slug]: suivreVisibilite,
   [agentIaSurMesure.slug]: agentIaSurMesure,
@@ -7481,6 +7732,7 @@ export const septemberArticles: Record<string, BlogArticle> = {
   [schemaOrganization.slug]: schemaOrganization,
   [coutIntegrationIa.slug]: coutIntegrationIa,
   [agentIaImmobilier.slug]: agentIaImmobilier,
+  [etreCiteParChatgpt.slug]: etreCiteParChatgpt,
 };
 
 export const septemberPosts: BlogPostMeta[] = [
@@ -7744,5 +7996,14 @@ export const septemberPosts: BlogPostMeta[] = [
     date: agentIaImmobilier.date,
     readingTime: agentIaImmobilier.readingTime,
     category: agentIaImmobilier.category,
+  },
+  {
+    slug: etreCiteParChatgpt.slug,
+    title: etreCiteParChatgpt.title,
+    seoTitle: etreCiteParChatgpt.seoTitle,
+    description: etreCiteParChatgpt.description,
+    date: etreCiteParChatgpt.date,
+    readingTime: etreCiteParChatgpt.readingTime,
+    category: etreCiteParChatgpt.category,
   },
 ];
