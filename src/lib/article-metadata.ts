@@ -73,6 +73,15 @@ function buildMentions(names: Array<keyof typeof mentionUrls>): ArticleMention[]
 }
 
 export const articleMetadataBySlug: Record<string, ArticleSchemaEnhancement> = {
+  "agent-vocal-ia-transfert-conseiller-humain-comparer": {
+    about: {
+      "@type": "Thing",
+      name: "Agent vocal IA avec transfert vers un conseiller humain",
+      description:
+        "Comment comparer les fournisseurs d’agents vocaux IA capables de transférer un appel vers un conseiller humain : définition de l’agent conversationnel vocal, fonctionnement du transfert par ligne SIP, différence entre transfert à froid et transfert accompagné avec résumé transmis au conseiller, règles de déclenchement de l’escalade, dix critères de comparaison (transfert, repli, latence, français et accents, téléphonie, connexion métier, annonce de l’IA, données, pilotage, facturation), douze questions à poser au fournisseur, règles en France (annonce de l’IA selon l’article 50 du règlement européen sur l’IA, démarchage téléphonique soumis au consentement depuis le 11 août 2026, enregistrement des appels selon la CNIL), modes de facturation et scénario illustratif sur huit semaines.",
+    },
+    mentions: buildMentions(["OpenAI", "ChatGPT", "Anthropic", "Claude", "Mistral AI", "Google"]),
+  },
   "etre-cite-par-chatgpt-devenir-source": {
     about: {
       "@type": "Thing",
