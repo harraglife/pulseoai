@@ -73,6 +73,15 @@ function buildMentions(names: Array<keyof typeof mentionUrls>): ArticleMention[]
 }
 
 export const articleMetadataBySlug: Record<string, ArticleSchemaEnhancement> = {
+  "etre-cite-par-chatgpt-devenir-source": {
+    about: {
+      "@type": "Thing",
+      name: "Être cité par ChatGPT",
+      description:
+        "Comment être cité par ChatGPT et les moteurs IA : différence entre mention, citation et recommandation ; comment ChatGPT choisit ses sources (index de recherche, part des pages citées, domaines les plus cités en France d’après Ahrefs) ; rôle des robots OAI-SearchBot, GPTBot et ChatGPT-User dans le robots.txt ; critères de citation observés (titre, URL en langage naturel, fraîcheur, format, réponse directe, cohérence de l’entité) ; mesure des citations avec Business Hub d’OpenAI, un jeu de questions hebdomadaire et le test en dix minutes de France Num ; cas des petites entreprises et scénario illustratif sur huit semaines.",
+    },
+    mentions: buildMentions(["ChatGPT", "OpenAI", "GEO", "SEO IA", "robots.txt", "Google", "Google AI Overviews", "Wikipedia", "Reddit"]),
+  },
   "agent-ia-agence-immobiliere-contacts-visites": {
     about: {
       "@type": "Thing",
