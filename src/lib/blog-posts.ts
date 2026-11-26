@@ -909,7 +909,7 @@ const newArticles: Record<string, BlogArticle> = {
           {
             title: "4. Publier des contenus clairs et structurés",
             paragraphs: [
-              "Des pages qui répondent directement aux questions de vos clients, avec des titres nets et une réponse dès les premières lignes, sont plus faciles à comprendre et à reprendre pour l'IA.",
+              "Des pages qui répondent directement aux questions de vos clients, avec des titres nets et une réponse dès les premières lignes, sont plus faciles à comprendre et à reprendre pour l'IA. Si vous publiez aussi un [fichier llms.txt](/blog/llms-txt-guide-pratique), gardez en tête que Google indique ne pas l’utiliser : il complète ces pages, il ne les remplace pas.",
             ],
           },
           {
