@@ -7945,6 +7945,239 @@ const agentVocalTransfertHumain: ArticleWithTables = {
   ],
 };
 
+const agentIaRecrutement: ArticleWithTables = {
+  slug: "agent-ia-recrutement-pme-trier-candidatures",
+  title: "Agent IA recrutement PME : trier, répondre, planifier sans dérive",
+  seoTitle: "Agent IA pour le recrutement en PME : le guide 2026",
+  description:
+    "Ce qu’un agent IA de recrutement fait pour une PME : tri des candidatures, réponses, entretiens, limites, règles Code du travail, CNIL et AI Act.",
+  date: "26 novembre 2026",
+  dateModified: "26 novembre 2026",
+  readingTime: "10 min",
+  category: "Agents IA",
+  articleSection: "Agents IA",
+  keywords: [
+    "agent IA recrutement",
+    "agent IA recrutement PME",
+    "IA recrutement PME",
+    "trier les candidatures avec l’IA",
+    "préqualification des candidats",
+    "IA dans les RH",
+    "AI Act recrutement",
+    "CNIL recrutement",
+    "ATS PME",
+    "automatiser le recrutement",
+  ],
+  intro:
+    "Recruter dans une PME, c’est souvent le dirigeant ou l’assistante qui trie des dizaines de candidatures le soir, répond en retard et perd les meilleurs profils en route. Un agent IA de recrutement reprend ces tâches répétitives : lecture des candidatures, réponses, prise de rendez-vous, préparation des entretiens. Il ne choisit pas pour vous, et c’est précisément ce qui le rend légal et utile.",
+  quickAnswer: {
+    question: "Qu’est-ce qu’un agent IA de recrutement pour une PME ?",
+    answer:
+      "Un agent IA de recrutement est un programme qui lit les candidatures reçues, les compare aux critères du poste, répond aux candidats, propose des créneaux d’entretien et prépare une grille de questions, en se connectant à votre boîte mail, votre agenda et votre outil de suivi. Dans une PME, il fait gagner les heures passées à trier et à relancer, mais la décision de retenir ou d’écarter un candidat reste humaine : le tri automatisé des CV est classé à haut risque par le règlement européen sur l’IA.",
+  },
+  contextualLinks: [
+    { label: "nos agents IA pour PME", href: "/agents-ia" },
+    { label: "un agent IA sur mesure pour PME", href: "/blog/agent-ia-sur-mesure-pme" },
+    { label: "les obligations RGPD et AI Act d’un agent IA", href: "/blog/agent-ia-rgpd-ai-act-pme" },
+    { label: "la différence entre agent IA et chatbot", href: "/blog/agent-ia-vs-chatbot-difference-pme" },
+    { label: "le coût d’un agent IA", href: "/blog/combien-coute-agent-ia-pme" },
+    { label: "comment choisir une agence agents IA", href: "/blog/agence-agents-ia-comment-choisir-prestataire" },
+  ],
+  bodyCta: {
+    intro: "Vous recrutez sans service RH et les candidatures s’empilent ?",
+    linkLabel: "Demandez un diagnostic de votre processus de recrutement",
+    href: "/contact",
+    outro: ", on liste les tâches qu’un agent IA peut reprendre chez vous et celles qui doivent rester humaines.",
+  },
+  relatedSlugs: [
+    "agent-ia-sur-mesure-pme",
+    "agent-ia-rgpd-ai-act-pme",
+    "agent-ia-outlook-gestion-emails-pme",
+    "combien-coute-agent-ia-pme",
+    "agence-agents-ia-comment-choisir-prestataire",
+  ],
+  faqTitle: "FAQ : agent IA et recrutement en PME",
+  faqItems: [
+    {
+      question: "Un agent IA peut-il refuser un candidat à ma place ?",
+      answer:
+        "Non, et il ne doit pas le faire. Le tri automatisé des candidatures figure parmi les usages à haut risque du règlement européen sur l’IA, et le Code du travail impose des méthodes pertinentes et annoncées aux candidats. L’agent prépare un classement argumenté, signale les critères manquants et rédige les réponses ; une personne valide chaque refus et chaque convocation.",
+    },
+    {
+      question: "Faut-il prévenir les candidats qu’une IA traite leur candidature ?",
+      answer:
+        "Oui. Le Code du travail prévoit que le candidat soit informé, avant leur mise en œuvre, des méthodes et techniques d’aide au recrutement utilisées à son égard. Une phrase claire dans l’annonce et dans l’accusé de réception suffit, en précisant qu’une personne prend la décision finale.",
+    },
+    {
+      question: "Quelles données un agent IA de recrutement a-t-il le droit de lire ?",
+      answer:
+        "Uniquement celles qui servent à évaluer la capacité à occuper le poste : parcours, compétences, disponibilités, autorisation de travailler. La CNIL rappelle que la situation familiale, le lieu de naissance ou les salaires passés n’ont pas à être collectés. Configurez l’agent pour ignorer ces informations, même si le candidat les mentionne.",
+    },
+    {
+      question: "Une PME sans service RH peut-elle utiliser un agent IA de recrutement ?",
+      answer:
+        "Oui, c’est même le cas le plus fréquent. L’agent se branche sur la boîte mail de recrutement, l’agenda et, s’il existe, l’outil de suivi des candidatures. Le dirigeant ou l’assistante garde la main sur les décisions et consacre son temps aux entretiens plutôt qu’au tri.",
+    },
+    {
+      question: "Combien de temps faut-il pour mettre en place un agent IA de recrutement ?",
+      answer:
+        "Pour un poste type et une boîte mail dédiée, comptez quelques jours de configuration et deux à trois semaines de rodage avec relecture humaine systématique. Un agent relié à un ATS, à plusieurs agendas et à des grilles d’entretien par métier demande plutôt un à deux mois, le temps de fiabiliser chaque étape.",
+    },
+  ],
+  sections: [
+    {
+      title: "Qu’est-ce qu’un agent IA de recrutement pour une PME ?",
+      paragraphs: [
+        "Un agent IA de recrutement est un programme qui exécute, à votre place, les étapes répétitives d’un recrutement : lire les candidatures, les rapprocher de la fiche de poste, répondre aux candidats, proposer des créneaux, préparer les entretiens et rédiger les comptes rendus.",
+        "Il se distingue d’un simple assistant conversationnel par sa capacité à agir dans vos outils. Il ouvre les mails reçus sur recrutement@votre-entreprise.fr, crée une fiche dans votre tableau de suivi, pose un rendez-vous dans l’agenda et envoie la confirmation. Notre article sur [la différence entre agent IA et chatbot](/blog/agent-ia-vs-chatbot-difference-pme) détaille cette frontière.",
+        "Ce qu’il ne fait pas compte autant que ce qu’il fait. Il ne décide pas de retenir ou d’écarter une personne, il ne note pas la voix ni le visage d’un candidat, et il ne collecte pas plus de données que le poste ne l’exige. Ces trois limites viennent du droit, pas d’une prudence excessive, et nous y revenons plus bas.",
+        "Pour une PME, l’intérêt est simple : le tri et les relances absorbent des heures que personne n’a, alors que les entretiens et la décision demandent justement du temps humain. Un [agent IA sur mesure pour PME](/blog/agent-ia-sur-mesure-pme) déplace le temps du premier bloc vers le second.",
+      ],
+    },
+    {
+      title: "Quelle est la relation entre l’intelligence artificielle et les PME ?",
+      paragraphs: [
+        "Les PME françaises recrutent beaucoup et recrutent difficilement. [D’après l’enquête Besoins en main-d’œuvre 2026 de France Travail, les entreprises déclarent 2,275 millions d’intentions de recrutement, dont deux sur trois dans les PME et TPE, et 43,8 % des projets sont jugés difficiles](https://www.francetravail.org/accueil/actualites/2026/enquete-bmo-2026-france-travail-deploie-sa-strategie-sectorielle-face-a-pres-de-2-3-millions-de-projets-de-recrutement.html?type=article).",
+        "Les difficultés varient selon les métiers. [La même enquête note 54 % de projets jugés difficiles dans la santé, le social et les services à la personne, et 44 % dans l’hôtellerie-restauration](https://www.francetravail.org/accueil/actualites/2026/enquete-bmo-2026-france-travail-deploie-sa-strategie-sectorielle-face-a-pres-de-2-3-millions-de-projets-de-recrutement.html?type=article). Dans ces secteurs, répondre vite à chaque candidat devient un avantage concurrentiel.",
+        "Côté outils, l’IA s’installe. [Le Baromètre France Num 2026 de la Direction générale des entreprises indique que 40 % des TPE et PME utilisent des solutions d’intelligence artificielle, soit 14 points de plus en un an, et 53 % des PME](https://www.entreprises.gouv.fr/espace-presse/barometre-france-num-2026-quatre-tpe-pme-sur-dix-utilisent-desormais-lintelligence). Le recrutement est l’un des premiers usages qui justifie un agent plutôt qu’un simple assistant.",
+        "La relation reste pourtant asymétrique : la PME a le besoin, mais rarement le temps de cadrer un projet IA. D’où l’importance de partir d’un processus précis, le recrutement, plutôt que d’un outil générique. Notre guide sur [comment utiliser l’IA en entreprise](/blog/comment-utiliser-ia-entreprise) décrit cette approche par usage.",
+      ],
+    },
+    {
+      title: "Comment utiliser l’IA dans les RH ?",
+      paragraphs: [
+        "Dans une PME, l’IA en ressources humaines commence presque toujours par le recrutement, parce que c’est la tâche la plus répétitive et la plus urgente. Voici les cinq étapes qu’un agent IA peut prendre en charge, dans l’ordre où elles se présentent.",
+      ],
+      subsections: [
+        {
+          title: "Rédiger et diffuser l’annonce",
+          paragraphs: [
+            "L’agent part de votre fiche de poste et de deux ou trois annonces précédentes pour rédiger un texte clair, sans jargon ni critère discriminant. Il adapte le format aux sites d’emploi que vous utilisez et prépare la version courte pour LinkedIn ou votre site.",
+            "Vous relisez et vous publiez. Le gain se situe surtout dans la cohérence : chaque annonce rappelle les mêmes informations sur le poste, le lieu, les horaires et la rémunération, ce qui réduit les candidatures hors cible.",
+          ],
+        },
+        {
+          title: "Trier et préqualifier les candidatures",
+          paragraphs: [
+            "C’est le cœur de l’agent IA de recrutement. Il lit chaque candidature reçue, vérifie les critères objectifs du poste (diplôme exigé, permis, disponibilité, zone géographique, autorisation de travailler) et produit un tableau avec, pour chaque candidat, les critères remplis, les critères manquants et les points à vérifier en entretien.",
+            "Il ne classe pas les personnes par un score opaque. Il présente les faits et vous laisse décider qui rencontrer. Cette règle, « l’agent prépare, l’humain décide », est celle qui tient face au Code du travail et au règlement européen sur l’IA, et nous la détaillons dans la partie sur les règles.",
+            "En pratique, l’agent envoie chaque matin la liste des nouvelles candidatures avec son tableau, et vous cochez celles à convoquer. Notre article sur [un agent IA pour gérer les emails dans Outlook](/blog/agent-ia-outlook-gestion-emails-pme) montre comment cette lecture de boîte mail fonctionne.",
+          ],
+        },
+        {
+          title: "Répondre aux candidats et planifier les entretiens",
+          paragraphs: [
+            "Chaque candidat reçoit un accusé de réception le jour même, qui indique les étapes et le délai de réponse. Pour les profils que vous avez retenus, l’agent propose des créneaux à partir de votre agenda, confirme le rendez-vous, envoie l’adresse ou le lien de visioconférence et rappelle la veille.",
+            "Pour les candidats non retenus, l’agent prépare une réponse personnalisée que vous validez avant envoi. Répondre à tout le monde, vite et poliment, protège votre réputation d’employeur dans un bassin d’emploi où tout le monde se connaît.",
+          ],
+        },
+        {
+          title: "Préparer l’entretien",
+          paragraphs: [
+            "À partir de la fiche de poste et du tableau de préqualification, l’agent rédige une grille d’entretien : mêmes questions pour tous les candidats, points à creuser propres à chaque parcours, mises en situation liées au poste. Après l’entretien, il met au propre vos notes dictées et les range dans la fiche du candidat.",
+            "La limite est nette : l’agent n’écoute pas l’entretien pour évaluer le ton, la confiance ou les émotions du candidat. Ce type d’analyse relève des usages à haut risque, voire interdits, du règlement européen sur l’IA, et n’apporte rien de fiable à une PME.",
+          ],
+        },
+        {
+          title: "Préparer l’intégration",
+          paragraphs: [
+            "Une fois le contrat signé, le même agent prépare la liste des documents à demander, les accès à créer, le planning de la première semaine et le message de bienvenue à l’équipe. Il relance les personnes concernées si un élément manque la veille de l’arrivée.",
+            "Cette étape est souvent oubliée alors qu’elle conditionne la période d’essai. Un nouvel arrivant qui trouve son poste, ses accès et un programme le premier jour reste plus volontiers.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Que doit faire l’agent, et que doit garder l’humain ?",
+      paragraphs: [
+        "Le partage des rôles n’est pas une question de confort, c’est ce qui rend le dispositif conforme. Le tableau suivant résume, pour chaque tâche, ce que l’agent IA de recrutement peut prendre en charge et ce qui reste à une personne de l’entreprise.",
+      ],
+      table: {
+        caption: "Répartition des tâches entre l’agent IA et l’équipe dans un recrutement de PME.",
+        headers: ["Tâche", "Ce que fait l’agent IA", "Ce que garde l’humain", "Point de vigilance"],
+        rows: [
+          ["Annonce", "Rédige, adapte aux sites d’emploi, vérifie l’absence de critère discriminant", "Valide le contenu et publie", "Rémunération et conditions réelles, pas de promesse floue"],
+          ["Tri des candidatures", "Vérifie les critères objectifs, produit un tableau par candidat", "Décide qui convoquer et qui écarter", "Aucun score opaque, aucune donnée hors poste"],
+          ["Réponses aux candidats", "Accusé de réception, relances, réponses négatives préparées", "Valide les refus avant envoi", "Informer que des outils d’aide au recrutement sont utilisés"],
+          ["Entretiens", "Propose les créneaux, confirme, prépare la grille, met les notes au propre", "Conduit l’entretien et évalue", "Pas d’analyse de la voix, du visage ou des émotions"],
+          ["Décision", "Rassemble les éléments factuels dans un dossier", "Prend la décision et la motive", "Garder une trace des critères utilisés"],
+          ["Intégration", "Liste des documents, accès, planning, relances", "Accueille et accompagne", "Données du salarié limitées au nécessaire"],
+        ],
+      },
+    },
+    {
+      title: "Quelles règles s’appliquent à un agent IA de recrutement en 2026 ?",
+      paragraphs: [
+        "Trois textes encadrent l’usage d’un agent IA dans un recrutement en France : le Code du travail, le RGPD tel que la CNIL l’applique au recrutement, et le règlement européen sur l’IA. Aucun n’interdit l’agent ; tous imposent la façon de s’en servir.",
+      ],
+      subsections: [
+        {
+          title: "Le Code du travail : informer les candidats et rester pertinent",
+          paragraphs: [
+            "[L’article L1221-8 du Code du travail prévoit que le candidat à un emploi est expressément informé, préalablement à leur mise en œuvre, des méthodes et techniques d’aide au recrutement utilisées à son égard, et que ces méthodes doivent être pertinentes au regard de la finalité poursuivie](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006900847).",
+            "Concrètement, votre annonce et votre accusé de réception mentionnent qu’un outil d’aide au recrutement trie les critères objectifs et prépare les échanges, et qu’une personne prend les décisions. La pertinence interdit les critères sans lien avec le poste, par exemple un test de personnalité pour un poste de préparateur de commandes.",
+          ],
+        },
+        {
+          title: "Le RGPD et la CNIL : collecter le minimum",
+          paragraphs: [
+            "[La CNIL publie un guide du recrutement en 19 fiches et rappelle que seules des données adéquates, pertinentes et strictement nécessaires à la sélection du candidat et au déroulement de l’entretien peuvent être collectées](https://www.cnil.fr/fr/le-guide-du-recrutement). L’agent doit donc être configuré pour ne retenir que ces données, même si une candidature en contient davantage.",
+            "La CNIL contrôle ce point. [Dans une mise en demeure publiée sur son site, elle a rappelé qu’un recruteur ne peut pas exiger le lieu de naissance, les informations sur la famille ou le montant des salaires passés d’un candidat](https://www.cnil.fr/fr/recrutement-la-cnil-met-en-demeure-une-societe-de-minimiser-la-collecte-de-donnees-personnelles-de). Un agent qui résume une candidature doit ignorer ces éléments, et la durée de conservation des dossiers doit être fixée à l’avance.",
+            "Notre article sur [les obligations RGPD et AI Act d’un agent IA](/blog/agent-ia-rgpd-ai-act-pme) donne la liste des documents à préparer : registre des traitements, information des candidats, contrat avec le prestataire, durée de conservation.",
+          ],
+        },
+        {
+          title: "L’AI Act : le tri des CV est un usage à haut risque",
+          paragraphs: [
+            "[La Commission européenne classe parmi les usages à haut risque les outils d’IA pour l’emploi et la gestion des travailleurs, en citant les logiciels de tri de CV pour le recrutement](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai). Ces systèmes devront respecter des obligations d’évaluation des risques, de qualité des données, de traçabilité, de documentation et de supervision humaine.",
+            "Le calendrier a bougé. [D’après la même page de la Commission, le règlement de simplification dit « AI Omnibus » est entré en vigueur le 27 juillet 2026, et les règles pour les systèmes à haut risque dans l’emploi s’appliquent à partir du 2 décembre 2027](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai). Les obligations de transparence, elles, s’appliquent depuis août 2026, et l’obligation de formation à l’IA depuis février 2025.",
+            "Pour une PME, la conclusion est pratique : un agent qui prépare et qui informe, sans décider ni noter les personnes, reste hors du cœur du haut risque, et les règles du Code du travail et du RGPD s’appliquent déjà. Un agent qui classerait seul les candidats devrait, lui, respecter les obligations complètes fin 2027.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Quel outil choisir : ATS avec IA, assistant généraliste ou agent sur mesure ?",
+      paragraphs: [
+        "Trois options existent, et le bon choix dépend du volume de recrutements et des outils déjà en place. Un logiciel de suivi des candidatures (ATS) avec fonctions IA convient si vous recrutez chaque mois et acceptez de changer vos habitudes. Un assistant généraliste suffit pour rédiger une annonce ou une grille, mais il n’agit pas dans vos outils.",
+        "L’agent sur mesure se justifie quand vous voulez garder votre boîte mail, votre agenda et votre tableau de suivi, et relier le recrutement au reste : planning, paie, intégration. Il coûte plus cher au départ, mais il s’adapte à vos règles plutôt que l’inverse. Notre guide sur [le coût d’un agent IA pour une PME](/blog/combien-coute-agent-ia-pme) détaille les postes de dépense.",
+        "Dans tous les cas, exigez du fournisseur trois garanties écrites : où sont hébergées les données des candidats, quelles données l’outil lit et ignore, et comment une personne garde la main sur chaque décision. Notre article sur [comment choisir une agence agents IA](/blog/agence-agents-ia-comment-choisir-prestataire) donne la liste complète des questions à poser.",
+      ],
+      bullets: [
+        "Hébergement et sous-traitants : localisation des données des candidats, durée de conservation, suppression sur demande",
+        "Périmètre de lecture : critères objectifs du poste uniquement, exclusion des données familiales, de santé ou de nationalité détaillée",
+        "Supervision : chaque refus et chaque convocation validés par une personne, trace des critères utilisés",
+        "Information des candidats : texte prêt à insérer dans l’annonce et l’accusé de réception",
+        "Réversibilité : export des dossiers et arrêt de l’agent sans perte de l’historique",
+      ],
+    },
+    {
+      title: "Scénario illustratif : une PME industrielle recrute trois techniciens en huit semaines",
+      paragraphs: [
+        "Ce scénario est illustratif : il décrit une mise en place type, pas un résultat garanti. Une PME de mécanique de 35 salariés doit recruter trois techniciens de maintenance. Le dirigeant et son assistante gèrent seuls les candidatures, qui arrivent par mail et par un site d’emploi.",
+        "Semaines 1 et 2 : cadrage. On liste les critères objectifs du poste (habilitation électrique, permis, horaires en équipe), on rédige l’information des candidats, on fixe la durée de conservation des dossiers et on branche l’agent sur la boîte recrutement et l’agenda du dirigeant.",
+        "Semaines 3 à 5 : rodage. L’agent lit 84 candidatures, produit chaque matin un tableau par candidat et des accusés de réception. L’assistante relit tout la première semaine, corrige deux erreurs de lecture sur les habilitations, puis passe à une relecture par échantillon. 19 candidats sont convoqués, les créneaux sont posés sans échange de mails.",
+        "Semaines 6 à 8 : entretiens et décision. Le dirigeant conduit les entretiens avec une grille commune, dicte ses notes que l’agent met au propre. Trois techniciens sont retenus, deux acceptent, le troisième poste est relancé avec une annonce ajustée sur les horaires, point remonté par plusieurs candidats.",
+        "Bilan à huit semaines : le délai moyen de première réponse passe de six jours à moins d’un jour, le temps de tri de l’assistante tombe d’environ cinq heures à une heure par semaine, et chaque refus a été envoyé avec une réponse personnalisée. Le troisième poste n’est pas pourvu : l’agent accélère le processus, il ne crée pas de candidats.",
+      ],
+    },
+    {
+      title: "Ce qu’il faut retenir",
+      paragraphs: [
+        "Un agent IA de recrutement est un bon premier projet IA pour une PME, à condition de tracer la frontière dès le départ. Voici l’essentiel.",
+      ],
+      bullets: [
+        "L’agent lit, trie sur critères objectifs, répond, planifie et prépare ; une personne décide, conduit les entretiens et motive les refus",
+        "Informez les candidats des outils utilisés dès l’annonce, comme le Code du travail l’impose, et limitez les données lues à ce que le poste exige",
+        "Le tri automatisé des CV est un usage à haut risque du règlement européen sur l’IA, avec des obligations complètes à partir de décembre 2027 ; un agent qui prépare sans décider reste en dehors de ce cœur",
+        "Aucune analyse de la voix, du visage ou des émotions : inutile pour une PME et juridiquement risqué",
+        "Commencez par un poste et une boîte mail, relisez tout pendant deux semaines, puis élargissez",
+        "Exigez du prestataire l’hébergement, le périmètre de lecture, la supervision et la réversibilité par écrit ; [nos agents IA pour PME](/agents-ia) sont construits sur ces quatre garanties",
+      ],
+    },
+  ],
+};
+
 export const septemberArticles: Record<string, BlogArticle> = {
   [suivreVisibilite.slug]: suivreVisibilite,
   [agentIaSurMesure.slug]: agentIaSurMesure,
@@ -7977,6 +8210,7 @@ export const septemberArticles: Record<string, BlogArticle> = {
   [agentIaImmobilier.slug]: agentIaImmobilier,
   [etreCiteParChatgpt.slug]: etreCiteParChatgpt,
   [agentVocalTransfertHumain.slug]: agentVocalTransfertHumain,
+  [agentIaRecrutement.slug]: agentIaRecrutement,
 };
 
 export const septemberPosts: BlogPostMeta[] = [
@@ -8258,5 +8492,14 @@ export const septemberPosts: BlogPostMeta[] = [
     date: agentVocalTransfertHumain.date,
     readingTime: agentVocalTransfertHumain.readingTime,
     category: agentVocalTransfertHumain.category,
+  },
+  {
+    slug: agentIaRecrutement.slug,
+    title: agentIaRecrutement.title,
+    seoTitle: agentIaRecrutement.seoTitle,
+    description: agentIaRecrutement.description,
+    date: agentIaRecrutement.date,
+    readingTime: agentIaRecrutement.readingTime,
+    category: agentIaRecrutement.category,
   },
 ];
