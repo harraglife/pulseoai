@@ -4518,7 +4518,7 @@ const chatgptPourLeSeo: ArticleWithTables = {
           title: "Construire un plan en questions",
           paragraphs: [
             "Donnez la requête cible, les questions « Autres questions posées » relevées dans Google et les titres des pages qui se classent devant vous. Demandez un plan dont chaque titre est une question, avec une réponse directe en première phrase de chaque section.",
-            "Ce format, que nous appliquons sur tous nos articles, sert autant Google que les moteurs IA. Il correspond à ce que Google décrit dans son [guide sur les fonctionnalités d’IA](https://developers.google.com/search/docs/appearance/ai-features) : aucune exigence supplémentaire, aucun balisage spécial, mais un contenu qui répond clairement.",
+            "Ce format, que nous appliquons sur tous nos articles, sert autant Google que les moteurs IA. Il correspond à ce que Google décrit dans son [guide sur les fonctionnalités d’IA](https://developers.google.com/search/docs/appearance/ai-features) : aucune exigence supplémentaire, aucun balisage spécial, mais un contenu qui répond clairement. Le même guide range les fichiers llms.txt parmi les éléments que la recherche Google ignore ; notre [guide pratique du llms.txt](/blog/llms-txt-guide-pratique) détaille ce qu’il peut encore apporter ailleurs.",
           ],
         },
         {
@@ -6895,7 +6895,7 @@ const schemaOrganization: ArticleWithTables = {
       title: "Quelles erreurs éviter avec le balisage Organization ?",
       paragraphs: [
         "Les erreurs les plus fréquentes ne sont pas techniques : elles tiennent à des informations fausses, contradictoires ou invisibles. Un balisage impeccable qui annonce une adresse différente de celle du pied de page fait plus de mal qu’une absence de balisage.",
-        "[Google demande que les données structurées correspondent au texte visible sur la page](https://developers.google.com/search/docs/appearance/ai-features?hl=fr). Tout ce que vous déclarez dans le bloc doit se retrouver quelque part sur le site, lisible par un visiteur.",
+        "[Google demande que les données structurées correspondent au texte visible sur la page](https://developers.google.com/search/docs/appearance/ai-features?hl=fr). Tout ce que vous déclarez dans le bloc doit se retrouver quelque part sur le site, lisible par un visiteur. Notre [guide du fichier llms.txt](/blog/llms-txt-guide-pratique) explique pourquoi ce balisage passe avant tout fichier texte destiné aux IA.",
         "Vient ensuite la tentation d’en mettre trop : des avis dans Organization alors qu’ils relèvent du produit ou de l’établissement, dix profils sameAs dont la moitié sont vides, un sous-type prestigieux qui ne correspond pas à l’activité.",
       ],
       bullets: [
