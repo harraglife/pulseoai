@@ -73,6 +73,15 @@ function buildMentions(names: Array<keyof typeof mentionUrls>): ArticleMention[]
 }
 
 export const articleMetadataBySlug: Record<string, ArticleSchemaEnhancement> = {
+  "agent-ia-recrutement-pme-trier-candidatures": {
+    about: {
+      "@type": "Thing",
+      name: "Agent IA pour le recrutement en PME",
+      description:
+        "Ce qu’un agent IA de recrutement fait pour une PME : rédaction et diffusion de l’annonce, tri et préqualification des candidatures sur critères objectifs, réponses aux candidats et planification des entretiens, préparation des grilles d’entretien et de l’intégration ; partage des rôles entre l’agent et l’humain ; règles en France (information préalable des candidats selon l’article L1221-8 du Code du travail, minimisation des données selon le guide du recrutement de la CNIL, tri des CV classé à haut risque par le règlement européen sur l’IA avec application au 2 décembre 2027) ; choix entre ATS avec IA, assistant généraliste et agent sur mesure ; questions à poser au prestataire et scénario illustratif sur huit semaines.",
+    },
+    mentions: buildMentions(["OpenAI", "ChatGPT", "Anthropic", "Claude", "Mistral AI", "Microsoft", "Outlook"]),
+  },
   "agent-vocal-ia-transfert-conseiller-humain-comparer": {
     about: {
       "@type": "Thing",
